@@ -129,12 +129,7 @@ export default function About() {
                 >
                   Follow on Pinterest
                 </a>
-                {/* <a
-                  href="#subscribe"
-                  className="border-2 border-charcoal-800 text-charcoal-800 px-8 py-3 rounded-full font-semibold hover:bg-charcoal-800 hover:text-white transition-colors duration-300"
-                >
-                  Subscribe to Newsletter
-                </a> */}
+          
               </div>
             </div>
           </div>

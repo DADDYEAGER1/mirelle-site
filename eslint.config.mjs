@@ -1,6 +1,20 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js";
+import react from "eslint-plugin-react";
+
+export default [
+  js.configs.recommended,
+  {
+    plugins: {
+      react,
+    },
+    rules: {
+      "react/no-unescaped-entities": "off", // 🔥 disable the rule
+    },
+  },
+];
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

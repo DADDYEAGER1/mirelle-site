@@ -32,7 +32,7 @@ export default function About() {
                   Welcome to Mirellé
                 </h2>
                 <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
-                  Hi, I'm Mirelle, and I'm passionate about helping you discover the 
+                  Hi, I&apos;m Mirelle, and I&apos;m passionate about helping you discover the 
                   perfect nail looks that express your unique personality. What started 
                   as a personal journey to find the best nail care routines and most 
                   stunning designs has evolved into a comprehensive resource for nail 
@@ -41,7 +41,7 @@ export default function About() {
                 <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
                   My mission is simple: to curate modern nail ideas, seasonal inspirations, 
                   and essential care tips that make you feel confident and beautiful. 
-                  Whether you're a nail art novice or a seasoned pro, I believe everyone 
+                  Whether you&apos;re a nail art novice or a seasoned pro, I believe everyone 
                   deserves access to expert advice and stunning inspiration.
                 </p>
               </div>
@@ -59,7 +59,7 @@ export default function About() {
                 My Philosophy
               </h3>
               <p className="text-lg text-charcoal-600 leading-relaxed">
-                Nails are more than just a beauty accessory – they're a form of self-expression, 
+                Nails are more than just a beauty accessory – they&apos;re a form of self-expression, 
                 a way to showcase your personality, and a small but powerful detail that can 
                 complete any look. I believe that great nail care and beautiful designs should 
                 be accessible to everyone, regardless of skill level or budget.
@@ -69,7 +69,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <h3 className="font-serif text-xl font-bold text-charcoal-800 mb-4">
-                  What You'll Find Here
+                  What You&apos;ll Find Here
                 </h3>
                 <ul className="space-y-3 text-charcoal-600">
                   <li className="flex items-start">
@@ -100,13 +100,13 @@ export default function About() {
                 </h3>
                 <p className="text-charcoal-600 mb-4">
                   Every piece of content I create is carefully researched, tested, and 
-                  designed to help you achieve beautiful, healthy nails. I'm committed 
+                  designed to help you achieve beautiful, healthy nails. I&apos;m committed 
                   to providing honest, practical advice that you can trust and implement 
                   in your own nail care routine.
                 </p>
                 <p className="text-charcoal-600">
-                  Whether you're looking for a quick fix or a complete nail transformation, 
-                  I'm here to guide you every step of the way.
+                  Whether you&apos;re looking for a quick fix or a complete nail transformation, 
+                  I&apos;m here to guide you every step of the way.
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function About() {
               </h3>
               <p className="text-lg text-charcoal-600 mb-8 max-w-2xl mx-auto">
                 Follow along on Pinterest for daily inspiration, subscribe to our newsletter 
-                for exclusive tips, and don't hesitate to reach out with your questions or 
+                for exclusive tips, and don&apos;t hesitate to reach out with your questions or 
                 favorite nail looks!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

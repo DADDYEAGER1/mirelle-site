@@ -32,8 +32,8 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" sizes="any" />
         <link rel="icon" type="image/png" href="/logo.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
-         {/* AdSense verification meta tag */}
-        <meta name="google-site-verification" content="YOUR_ADSENSE_CODE_HERE" />
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
+     crossorigin="anonymous"></script>
       </head>
       <body className="antialiased">
         <Header />

@@ -86,7 +86,7 @@ const winterProducts = [
     id: 10,
     name: "Christmas Press On Nails",
     price: "$9.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image: "https://m.media-amazon.com/images/I/71KOe+czVTL._SL1500_.jpg",
     description: "Elegant pearl finish for sophisticated winter nails",
     cta: "Get This Look",
     affiliateUrl: "https://amzn.to/484RQQP"

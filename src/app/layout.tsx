@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   verification: {
-    google-adsense-account: "ca-pub-1145734682794444", // ← Paste your Google site verification code here
+    google: "ca-pub-1145734682794444", // ← Paste your Google site verification code here
   },
 };
 

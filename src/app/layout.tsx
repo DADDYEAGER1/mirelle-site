@@ -32,6 +32,8 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" sizes="any" />
         <link rel="icon" type="image/png" href="/logo.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
+         {/* AdSense verification meta tag */}
+        <meta name="google-site-verification" content="YOUR_ADSENSE_CODE_HERE" />
       </head>
       <body className="antialiased">
         <Header />

@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     description: "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
     type: "website",
   },
-  verification: {
-    google: "ca-pub-1145734682794444", // ← Paste your Google site verification code here
-  },
+  // verification: {
+  //   google: "ca-pub-1145734682794444", // ← Paste your Google site verification code here
+  // },
 };
 
 export default function RootLayout({
@@ -35,6 +35,9 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" sizes="any" />
         <link rel="icon" type="image/png" href="/logo.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
+        crossorigin="anonymous">
+        </script>
       </head>
       <body className="antialiased">
         <Header />

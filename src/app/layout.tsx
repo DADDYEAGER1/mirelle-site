@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";  // ✅ Import Script here
 
 export const metadata: Metadata = {
   title: "Mirelle - Modern Nail Ideas & Trends for Every Mood",
-  description: "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle. Your go-to destination for Pinterest-worthy nail art and trends.",
+  description: "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
   keywords: "nail art, nail ideas, nail care, seasonal nails, nail trends, Pinterest nails, nail inspiration",
   authors: [{ name: "Mirelle" }],
   openGraph: {
@@ -13,16 +14,13 @@ export const metadata: Metadata = {
     description: "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
     type: "website",
   },
-  // verification: {
-  //   google: "ca-pub-1145734682794444", // ← Paste your Google site verification code here
-  // },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <head>
@@ -35,15 +33,15 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" sizes="any" />
         <link rel="icon" type="image/png" href="/logo.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
-        crossorigin="anonymous">
-        </script>
+
+        {/* ✅ AdSense verification meta tag injected safely */}
+        <Script id="adsense-meta" strategy="beforeInteractive">
+          {`document.head.insertAdjacentHTML("beforeend", '<meta name="google-adsense-account" content="ca-pub-1145734682794444">')`}
+        </Script>
       </head>
       <body className="antialiased">
         <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

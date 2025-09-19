@@ -25,25 +25,25 @@ export default function SubscribeSection() {
           and seasonal inspiration delivered to you
         </p>
 
-        {!isSubscribed ? (
-          // <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-          //   <div className="flex flex-col sm:flex-row gap-4">
-          //     <input
-          //       type="email"
-          //       value={email}
-          //       onChange={(e) => setEmail(e.target.value)}
-          //       placeholder="Enter your email address"
-          //       required
-          //       className="flex-1 px-6 py-3 rounded-full border-2 border-white focus:border-blush-300 focus:outline-none text-charcoal-800 placeholder-charcoal-400"
-          //     />
-          //     <button
-          //       type="submit"
-          //       className="bg-charcoal-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal-700 transition-colors duration-300 whitespace-nowrap"
-          //     >
-          //       Subscribe
-          //     </button>
-          //   </div>
-          // </form>
+{/*         {!isSubscribed ? (
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email address"
+                required
+                className="flex-1 px-6 py-3 rounded-full border-2 border-white focus:border-blush-300 focus:outline-none text-charcoal-800 placeholder-charcoal-400"
+              />
+              <button
+                type="submit"
+                className="bg-charcoal-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal-700 transition-colors duration-300 whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
         ) : (
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-md mx-auto">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -62,7 +62,7 @@ export default function SubscribeSection() {
 
         <p className="text-sm text-charcoal-500 mt-6">
           No spam, just beautiful nail inspiration.
-        </p>
+        </p> */}
       </div>
     </section>
   );

@@ -40,12 +40,12 @@ export default function ModernWomen() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
               <a
-                href="https://hatake21.gumroad.com/l/nailcareguide"
+                href="https://hatake21.gumroad.com/l/mirellenailartguide1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-blush-500 to-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:from-blush-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                Get Style Guide - $15.99
+                Get Style Guide - $19.99
               </a>
               <span className="text-sm text-charcoal-500">or read free content below ↓</span>
             </div>

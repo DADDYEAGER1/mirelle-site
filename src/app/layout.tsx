@@ -44,6 +44,18 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-WPW9XBW8');
           `}
         </Script>
+        {/* ✅ GA4 gtag.js */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4BZ9QKQZ73"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4BZ9QKQZ73');
+          `}
 
         {/* ✅ AdSense verification meta tag injected safely */}
         <Script id="adsense-meta" strategy="beforeInteractive">

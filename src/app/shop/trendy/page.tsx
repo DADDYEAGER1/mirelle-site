@@ -104,7 +104,7 @@ const trendyProducts = [
     id: 12,
     name: "Blue Floral Petal",
     price: "$9.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image: "https://m.media-amazon.com/images/I/61LgGnIaL5L._SX679_.jpg",
     description: "Transform any polish into a trendy matte finish",
     cta: "Nail The Trend",
     affiliateUrl: "https://amzn.to/3Vm51VU"

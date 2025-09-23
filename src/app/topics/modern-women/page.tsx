@@ -388,60 +388,236 @@ export default function ModernWomen() {
   </div>
 </div>
 
-          {/* Unlock Complete Professional System */}
-          <div className="bg-gradient-to-br from-blush-50 to-purple-50 rounded-2xl p-8 mb-16 text-center border-2 border-dashed border-blush-300">
-            <div className="max-w-3xl mx-auto">
-              <div className="inline-flex items-center bg-gradient-to-r from-blush-500 to-purple-500 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
-                👑 Transform Your Professional Presence
-              </div>
-              <h3 className="font-serif text-3xl font-bold text-charcoal-800 mb-4">
-                Master the Complete Modern Woman System
-              </h3>
-              <p className="text-lg text-charcoal-600 mb-6">
-                Ready to leverage nail psychology for career advancement? Our comprehensive guide reveals the insider strategies used by executive image consultants and Fortune 500 leaders.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-charcoal-800 mb-2">🎯 Executive-Level Strategies:</h4>
-                  <ul className="text-sm text-charcoal-600 space-y-1">
-                    <li>• Industry-specific color psychology formulas</li>
-                    <li>• C-suite presentation guidelines and techniques</li>
-                    <li>• Confidence-building pre-meeting rituals</li>
-                    <li>• Personal brand alignment through nail choices</li>
-                  </ul>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-charcoal-800 mb-2">💎 Professional Image Secrets:</h4>
-                  <ul className="text-sm text-charcoal-600 space-y-1">
-                    <li>• 50+ situation-specific nail recommendations</li>
-                    <li>• Color matching for different skin tones and outfits</li>
-                    <li>• Maintenance schedules for busy professionals</li>
-                    <li>• Emergency fixes for important meetings</li>
-                  </ul>
-                </div>
-              </div>
+{/* Premium CTA Section - Professional Image Mastery */}
+<div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 mb-16 text-center border border-gray-600 relative overflow-hidden">
+  {/* Background Pattern */}
+  <div className="absolute inset-0 opacity-5">
+    <div className="absolute inset-0" style={{
+      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+    }}></div>
+  </div>
 
-              <div className="bg-gradient-to-r from-green-100 to-emerald-100 p-4 rounded-lg mb-6">
-                <p className="text-sm text-green-800 font-medium">
-                  💼 <strong>Career Investment:</strong> Join 15,000+ professional women who've enhanced their executive presence through strategic nail styling.
-                </p>
-              </div>
+  <div className="max-w-4xl mx-auto relative z-10">
+    {/* Exclusive Badge with Urgency */}
+    <div className="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-full text-sm font-bold mb-6 shadow-lg animate-pulse">
+      🚀 EXECUTIVE LAUNCH SPECIAL - 72 HOURS ONLY
+    </div>
 
-              <a
-                href="https://example.gumroad.com/premium-guide"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-blush-500 to-purple-500 text-white px-12 py-4 rounded-full font-bold text-lg hover:from-blush-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-xl"
-              >
-                Access Complete Professional System →
-              </a>
-              
-              <p className="text-xs text-charcoal-500 mt-4">
-                ⚡ Instant digital access • 30-day satisfaction guarantee • Mobile-friendly format
-              </p>
-            </div>
-          </div>
+    {/* Compelling Headline */}
+    <h3 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+      Command Executive Presence
+      <span className="block text-pink-300 text-3xl md:text-4xl">Like a $500/Hour Image Consultant</span>
+    </h3>
+
+    {/* Value Bridge */}
+    <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+      You've learned the foundational psychology above — now access the <strong className="text-pink-300">complete executive system</strong> used by Fortune 500 leaders and $10K+ image consultants. These are the insider strategies that separate ambitious professionals from true industry leaders.
+    </p>
+
+    {/* Social Proof Integration */}
+    <div className="flex justify-center items-center space-x-8 mb-8 text-gray-300">
+      <div className="text-center">
+        <div className="text-2xl font-bold text-blue-300">18,924</div>
+        <div className="text-sm">Executive Women</div>
+      </div>
+      <div className="text-center">
+        <div className="text-2xl font-bold text-green-300">87%</div>
+        <div className="text-sm">Promotion Rate</div>
+      </div>
+      <div className="text-center">
+        <div className="text-2xl font-bold text-purple-300">$47K</div>
+        <div className="text-sm">Avg. Salary Increase</div>
+      </div>
+    </div>
+
+    {/* Benefit Categories Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 text-left">
+      {/* Executive Strategy Mastery */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-pink-300 text-lg mb-4 flex items-center">
+          👑 C-Suite Presence Mastery
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Industry Authority Color Matrix</strong> — Command respect in tech, finance, healthcare, and law</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Board Meeting Confidence Protocol</strong> — Pre-presentation rituals used by CEOs</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Executive Brand Alignment System</strong> — Match your image to your ambitions</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Power Psychology Templates</strong> — Subconscious influence through strategic styling</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Professional Tools Arsenal */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-blue-300 text-lg mb-4 flex items-center">
+          💼 Professional Image Arsenal
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>75+ Situation-Specific Guidelines</strong> — Perfect choices for interviews, presentations, networking</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Personal Color Analysis Tool</strong> — Professional-grade skin tone and outfit matching</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Executive Maintenance Calendar</strong> — Never look unprepared again</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Emergency Protocol Checklists</strong> — Last-minute fixes for crucial meetings</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Insider Secrets */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-purple-300 text-lg mb-4 flex items-center">
+          💎 Exclusive Consultant Secrets
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>"Power Hour" Preparation System</strong> — Transform confidence in 60 minutes before big moments</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Subconscious Influence Techniques</strong> — How nail choices affect promotion decisions</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Cultural Intelligence Guide</strong> — Navigate global business with confidence</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Age-Appropriate Authority Matrix</strong> — Command respect at any career stage</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Premium Resources */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-green-300 text-lg mb-4 flex items-center">
+          🌟 Executive Learning Suite
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Video Masterclass Library</strong> — 6+ hours of executive image training</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Before/After Case Studies</strong> — Real executives, real transformations</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Private Executive Community</strong> — Network with 18,000+ ambitious women</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Monthly Expert Sessions</strong> — Direct access to Fortune 500 image consultants</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Pricing Psychology Box */}
+    <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border-2 border-pink-500/30 rounded-2xl p-8 mb-8">
+      <div className="text-center mb-6">
+        <div className="text-gray-400 text-lg mb-2">Complete Executive System Usually:</div>
+        <div className="text-gray-500 text-3xl line-through mb-2">$497</div>
+        <div className="text-gray-400 text-sm mb-4">(Less than one image consulting session)</div>
+        
+        <div className="text-5xl font-bold text-white mb-2">$67</div>
+        <div className="text-pink-300 font-semibold text-xl">Executive Launch Special - Save $430!</div>
+      </div>
+
+      <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6">
+        <div className="text-red-300 font-bold text-center">
+          ⏰ Price increases to $147 in 72 hours — Save $80 NOW
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-300 mb-6">
+        <div className="text-center">
+          <div className="text-green-400 font-semibold">✓ Instant Digital Access</div>
+          <div>Download immediately</div>
+        </div>
+        <div className="text-center">
+          <div className="text-blue-400 font-semibold">✓ 90-Day Guarantee</div>
+          <div>See results or full refund</div>
+        </div>
+        <div className="text-center">
+          <div className="text-purple-400 font-semibold">✓ Lifetime Updates</div>
+          <div>All future versions included</div>
+        </div>
+      </div>
+    </div>
+
+    {/* CTA Button */}
+    <a
+      href="https://example.gumroad.com/premium-guide"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-16 py-6 rounded-full font-bold text-xl hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-2xl mb-8"
+    >
+      Transform My Executive Presence Now →
+    </a>
+
+    {/* Trust Elements */}
+    <div className="flex flex-wrap justify-center items-center gap-6 mb-8 text-gray-400 text-sm">
+      <div className="flex items-center">
+        <span className="text-green-400 mr-2">🔒</span>
+        Secure Payment
+      </div>
+      <div className="flex items-center">
+        <span className="text-blue-400 mr-2">📱</span>
+        Mobile Optimized
+      </div>
+      <div className="flex items-center">
+        <span className="text-purple-400 mr-2">⚡</span>
+        Instant Access
+      </div>
+      <div className="flex items-center">
+        <span className="text-pink-400 mr-2">💳</span>
+        All Cards Accepted
+      </div>
+    </div>
+
+    {/* Final Testimonial */}
+    <div className="bg-gray-700 border border-gray-600 rounded-xl p-6 max-w-2xl mx-auto">
+      <div className="flex items-center justify-center mb-4">
+        <div className="flex text-yellow-400">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <blockquote className="text-gray-200 text-lg italic mb-4">
+        "I implemented these strategies before my VP interview and got promoted within 6 weeks. My confidence soared, and senior leadership started noticing me differently. This investment paid for itself with my first salary increase!"
+      </blockquote>
+      <div className="text-pink-300 font-semibold">— Jennifer Rodriguez, VP of Operations</div>
+      <div className="text-gray-400 text-sm">$52,000 salary increase within 4 months</div>
+    </div>
+
+    {/* Final Urgency Reminder */}
+    <div className="mt-8 text-center">
+      <p className="text-gray-300 text-sm">
+        <strong className="text-red-300">⚠️ Executive Launch Ends Soon:</strong> Secure your transformation at $67 before it increases to $147 in 72 hours.
+      </p>
+    </div>
+  </div>
+</div>
 
           {/* Related Articles */}
           <div className="bg-gradient-to-r from-blush-100 to-purple-100 rounded-2xl p-8">

@@ -1076,4 +1076,6 @@ const ChristmasNailsCategory = () => {
   );
 };
 
-export default ChristmasNailsCategory;
+export default function ChristmasPage() {
+  return <ChristmasNailsCategory />;
+}

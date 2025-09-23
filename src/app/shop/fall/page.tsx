@@ -1041,39 +1041,48 @@ const FallNailsCategory = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Explore More Collections
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                name: "Winter Nails",
+                name: "Halloween",
+                displayName: "Halloween Nails",
+                image: "https://images.unsplash.com/photo-1603893781141-b67498723e83?w=400&h=300&fit=crop",
+                gradient: "from-orange-600 to-purple-700"
+              },
+              {
+                name: "new-year",
+                displayName: "New Year Nails",
+                image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop",
+                gradient: "from-yellow-400 to-pink-600"
+              },
+              {
+                name: "trendy",
+                displayName: "Trendy Nails",
+                image: "https://images.unsplash.com/photo-1604991405679-98d08f7fbb08?w=400&h=300&fit=crop",
+                gradient: "from-pink-500 to-violet-600"
+              },
+              {
+                name: "winter",
+                displayName: "Winter Nails",
                 image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
                 gradient: "from-blue-500 to-indigo-600"
-              },
-              {
-                name: "Holiday Nails",
-                image: "https://images.unsplash.com/photo-1577628921313-67b5b0a4bcd1?w=400&h=300&fit=crop",
-                gradient: "from-green-500 to-red-600"
-              },
-              {
-                name: "halloween",
-                image: "https://images.unsplash.com/photo-1599948128020-9a44be2b0040?w=400&h=300&fit=crop",
-                gradient: "from-gray-600 to-gray-800"
               }
             ].map((category, index) => (
               <Link
                 key={index}
-                href={`/shop/${category.name.toLowerCase().replace(' ', '-')}`}
+                href={`/shop/${category.name}`}
                 className="category-card relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2 group"
               >
                 <div className="aspect-[4/3] relative">
                   <img
                     src={category.image}
-                    alt={category.name}
+                    alt={category.displayName}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-r ${category.gradient} opacity-60`} />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <h3 className="text-2xl font-bold text-white text-center">
-                      {category.name}
+                      {category.displayName}
                     </h3>
                   </div>
                 </div>

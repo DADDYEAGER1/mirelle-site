@@ -1054,7 +1054,7 @@ const FallNailsCategory = () => {
                 gradient: "from-green-500 to-red-600"
               },
               {
-                name: "Classic Nails",
+                name: "halloween",
                 image: "https://images.unsplash.com/photo-1599948128020-9a44be2b0040?w=400&h=300&fit=crop",
                 gradient: "from-gray-600 to-gray-800"
               }

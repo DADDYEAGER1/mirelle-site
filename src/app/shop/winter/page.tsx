@@ -753,23 +753,24 @@ const testimonials: Testimonial[] = [
 ];
 
 // Related categories data
+
 const relatedCategories = [
   {
     name: "Fall",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500",
-    link: "/fall",
+    link: "/app/shop/fall", // Changed from "/fall"
     description: "Autumn-inspired nail designs"
   },
   {
-    name: "Trendy",
+    name: "Trendy", 
     image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500",
-    link: "/trendy", 
+    link: "/app/shop/trendy", // Changed from "/trendy"
     description: "Latest trending nail styles"
   },
   {
     name: "Christmas",
-    image: "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=500",
-    link: "/christmas",
+    image: "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=500", 
+    link: "/app/shop/christmas", // Changed from "/christmas"
     description: "Festive holiday nail collections"
   }
 ];
@@ -846,7 +847,7 @@ const WinterNailsCategory = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white backdrop-blur-sm bg-white/10 p-8 rounded-3xl border border-white/20">
             <Link 
-              href="/" 
+              href="/app/shop"
               className="absolute top-4 left-4 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all duration-200 backdrop-blur-sm"
             >
               ← Back to Shop

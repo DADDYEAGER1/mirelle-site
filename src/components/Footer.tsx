@@ -20,7 +20,7 @@ export default function Footer() {
               href="https://www.pinterest.com/mirelle_inspo/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
+              className="text-black hover:text-blush-400 transition-colors"
             >
               <span className="sr-only">Pinterest</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -33,11 +33,11 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-charcoal-700 text-center text-black">
           <p>&copy; 2024 Mirelle. All rights reserved.</p>
           <div className="mt-2 space-x-4">
-            <Link href="/app/privacy-policy" className="hover:text-blush-400">
+            <Link href="/privacy-policy" className="hover:text-blush-400">
               Privacy Policy
             </Link>
             <span>|</span>
-            <Link href="/app/terms" className="hover:text-blush-400">
+            <Link href="/terms" className="hover:text-blush-400">
               Terms & Conditions
             </Link>
           </div>

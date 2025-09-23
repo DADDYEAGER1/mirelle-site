@@ -283,7 +283,7 @@ const HalloweenNailsCategory = () => {
       name: "Horror Ghost Acrylic Nails ",
       price: "$5.49",
       originalPrice: "$50.99",
-      image: "https://m.media-amazon.com/images/I/71yMdeTuOKL._SY450_.jpg",
+      image: "https://m.media-amazon.com/images/I/61eA1CUKuCL._SY450_.jpg",
       description: "Halloween Fake Nail Star Moon Stripe Full Cover Black Stick on Nail Set for Women",
       reviewCount: 129,
       isNew: true,
@@ -703,7 +703,7 @@ const HalloweenNailsCategory = () => {
             </button>
           ) : (
             <a
-              href="https://example-affiliate-store.com/halloween-nails"
+              href="https://amzn.to/46muXa4"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button bg-gradient-to-r from-orange-500 via-purple-500 to-orange-500 text-white font-semibold py-4 px-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl inline-block"

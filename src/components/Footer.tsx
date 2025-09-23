@@ -30,14 +30,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-charcoal-700 text-center text-charcoal-600">
+        <div className="mt-8 pt-8 border-t border-charcoal-700 text-center text-black">
           <p>&copy; 2024 Mirelle. All rights reserved.</p>
           <div className="mt-2 space-x-4">
-            <Link href="/privacy-policy" className="hover:text-blush-400">
+            <Link href="/app/privacy-policy" className="hover:text-blush-400">
               Privacy Policy
             </Link>
             <span>|</span>
-            <Link href="/terms" className="hover:text-blush-400">
+            <Link href="/app/terms" className="hover:text-blush-400">
               Terms & Conditions
             </Link>
           </div>

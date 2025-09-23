@@ -766,25 +766,25 @@ const HalloweenNailsCategory = () => {
               {
                 name: "new-year",
                 displayName: "New Year Nails",
-                image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop",
+                image: "https://m.media-amazon.com/images/I/41u-DhfQE3L._SY300_SX300_QL70_FMwebp_.jpg",
                 gradient: "from-yellow-400 to-pink-600"
               },
               {
                 name: "trendy",
                 displayName: "Trendy Nails",
-                image: "https://images.unsplash.com/photo-1604991405679-98d08f7fbb08?w=400&h=300&fit=crop",
+                image: "https://m.media-amazon.com/images/I/41uJNmo7p2L._SY300_SX300_QL70_FMwebp_.jpg",
                 gradient: "from-pink-500 to-violet-600"
               },
               {
                 name: "winter",
                 displayName: "Winter Nails",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+                image: "https://m.media-amazon.com/images/I/41TJrC7mFPL._SY300_SX300_QL70_FMwebp_.jpg",
                 gradient: "from-blue-500 to-indigo-600"
               },
               {
                 name: "christmas",
                 displayName: "Christmas Nails",
-                image: "https://images.unsplash.com/photo-1608312594799-9c5aef5b39fb?w=400&h=300&fit=crop",
+                image: "https://m.media-amazon.com/images/I/51TFe-PA42L._SY300_SX300_QL70_FMwebp_.jpg",
                 gradient: "from-green-500 to-red-600"
               }
             ].map((category, index) => (

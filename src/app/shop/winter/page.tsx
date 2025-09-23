@@ -753,24 +753,23 @@ const testimonials: Testimonial[] = [
 ];
 
 // Related categories data
-
 const relatedCategories = [
   {
     name: "Fall",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500",
-    link: "/app/shop/fall", // Changed from "/fall"
+    link: "/shop/fall",
     description: "Autumn-inspired nail designs"
   },
   {
     name: "Trendy", 
     image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500",
-    link: "/app/shop/trendy", // Changed from "/trendy"
+    link: "/shop/trendy",
     description: "Latest trending nail styles"
   },
   {
     name: "Christmas",
     image: "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=500", 
-    link: "/app/shop/christmas", // Changed from "/christmas"
+    link: "/shop/christmas",
     description: "Festive holiday nail collections"
   }
 ];
@@ -780,6 +779,13 @@ const WinterNailsCategory = () => {
   const [currentFilter, setCurrentFilter] = useState<string>("All Products");
   const [showLoadMore, setShowLoadMore] = useState<boolean>(true);
   const [showAffiliateButton, setShowAffiliateButton] = useState<boolean>(false);
+
+  // Calculate discount percentage
+  const calculateDiscount = (original: string, discounted: string): number => {
+    const originalPrice = parseFloat(original.slice(1));
+    const discountedPrice = parseFloat(discounted.slice(1));
+    return Math.round(((originalPrice - discountedPrice) / originalPrice) * 100);
+  };
 
   // Filter products based on selected filter
   const filterProducts = (filter: string): void => {
@@ -838,16 +844,24 @@ const WinterNailsCategory = () => {
         
         {/* Floating winter elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-20 animate-bounce text-white text-2xl">❄️</div>
-          <div className="absolute top-32 right-32 animate-pulse text-white text-3xl">🔮</div>
-          <div className="absolute bottom-40 left-1/4 animate-bounce text-white text-2xl">✨</div>
-          <div className="absolute top-16 right-16 animate-pulse text-white text-2xl">💎</div>
+          <div className="absolute top-20 left-20 animate-bounce">
+            <div className="w-8 h-8 bg-white/20 rounded-full blur-sm"></div>
+          </div>
+          <div className="absolute top-32 right-32 animate-pulse">
+            <div className="w-12 h-12 bg-blue-300/30 rounded-full blur-sm"></div>
+          </div>
+          <div className="absolute bottom-40 left-1/4 animate-bounce" style={{ animationDelay: '1s' }}>
+            <div className="w-10 h-10 bg-purple-300/30 rounded-full blur-sm"></div>
+          </div>
+          <div className="absolute top-16 right-16 animate-pulse" style={{ animationDelay: '2s' }}>
+            <div className="w-6 h-6 bg-indigo-300/30 rounded-full blur-sm"></div>
+          </div>
         </div>
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white backdrop-blur-sm bg-white/10 p-8 rounded-3xl border border-white/20">
             <Link 
-              href="/app/shop"
+              href="/shop"
               className="absolute top-4 left-4 bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-full transition-all duration-200 backdrop-blur-sm"
             >
               ← Back to Shop
@@ -858,16 +872,9 @@ const WinterNailsCategory = () => {
             <p className="text-xl mb-6 text-blue-100">
               Embrace the magic of winter with our crystalline collection of icy elegance and cozy sophistication
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button className="cta-button bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600">
-                Winter Wonder
-              </button>
-              <button className="cta-button bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600">
-                Cozy Vibes
-              </button>
-              <button className="cta-button bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600">
-                Ice Queen
-              </button>
+            <div className="flex items-center justify-center bg-white/20 px-6 py-2 rounded-full text-white text-sm">
+              <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+              50+ Winter Designs Available
             </div>
           </div>
         </div>
@@ -881,10 +888,10 @@ const WinterNailsCategory = () => {
               <button
                 key={filter}
                 onClick={() => filterProducts(filter)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
+                className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 min-w-[120px] ${
                   currentFilter === filter
-                    ? "bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white shadow-lg"
-                    : "bg-white text-gray-700 border border-gray-300 hover:border-indigo-300 hover:shadow-md"
+                    ? "bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white shadow-lg transform scale-105"
+                    : "bg-white text-gray-700 border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600"
                 }`}
               >
                 {filter}
@@ -896,73 +903,93 @@ const WinterNailsCategory = () => {
 
       {/* Products Grid */}
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="text-center mb-16">
+          <h2 className="font-serif text-4xl font-bold text-gray-800 mb-4">
+            Mirelle's Winter Collection
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Embrace the magic of winter with our crystalline collection of icy elegance and cozy sophistication
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-12">
           {displayedProducts.map((product) => (
-            <div key={product.id} className="product-card group">
-              <div className="relative aspect-[3/4] overflow-hidden rounded-t-2xl">
+            <div key={product.id} className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.03] hover:-translate-y-2 overflow-hidden border border-gray-100 hover:border-gray-200">
+              <div className="relative aspect-[3/4] overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 {product.hoverImage && (
                   <img
                     src={product.hoverImage}
                     alt={`${product.name} alternate`}
-                    className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   />
                 )}
                 
                 {/* Status badges */}
-                <div className="absolute top-3 left-3 flex flex-col gap-2">
+                <div className="absolute top-4 left-4 flex flex-col gap-2">
                   {product.isNew && (
-                    <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white text-xs px-2 py-1 rounded-full font-medium">
+                    <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold">
                       NEW
                     </span>
                   )}
                   {product.isTrending && (
-                    <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white text-xs px-2 py-1 rounded-full font-medium">
+                    <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">
                       TRENDING
                     </span>
                   )}
                   {product.stockStatus === "low-stock" && (
-                    <span className="bg-yellow-500 text-white text-xs px-2 py-1 rounded-full font-medium">
+                    <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold">
                       LOW STOCK
                     </span>
                   )}
                 </div>
 
                 {/* Stock status indicator */}
-                <div className="absolute top-3 right-3">
-                  <div className={`w-3 h-3 rounded-full ${getStockColor(product.stockStatus)}`} />
+                <div className="absolute top-4 right-4 flex items-center gap-2">
+                  <div className={`w-3 h-3 rounded-full ${getStockColor(product.stockStatus)}`}></div>
                 </div>
+
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
               </div>
 
               <div className="p-6">
-                <h3 className="font-semibold text-lg mb-2 text-gray-900 line-clamp-2">
+                <h3 className="font-serif text-xl font-bold text-gray-800 mb-3 line-clamp-2">
                   {product.name}
                 </h3>
-                <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                
+                <p className="text-gray-600 mb-4 text-sm line-clamp-2">
                   {product.description}
                 </p>
-                
-                {/* Price display */}
-                <div className="price-display mb-3">
-                  <span className="original-price">{product.originalPrice}</span>
-                  <span className="discounted-price">{product.price}</span>
+
+                {/* Price display with strikethrough and discount */}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-gray-400 line-through text-sm">
+                      {product.originalPrice}
+                    </span>
+                    <span className="text-2xl font-bold text-gray-900">
+                      {product.price}
+                    </span>
+                  </div>
+                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
+                    SAVE {calculateDiscount(product.originalPrice, product.price)}%
+                  </span>
                 </div>
 
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm text-gray-600">
-                    {product.reviewCount} reviews
-                  </span>
+                <div className="text-sm text-gray-600 mb-4">
+                  {product.reviewCount} reviews
                 </div>
 
                 <a
                   href={product.affiliateUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cta-button bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 w-full text-center block"
+                  className="w-full bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white py-4 px-6 rounded-2xl font-semibold hover:from-blue-700 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center block"
                 >
                   {product.cta}
                 </a>
@@ -972,25 +999,27 @@ const WinterNailsCategory = () => {
         </div>
 
         {/* Load More / Affiliate Button */}
-        <div className="text-center mt-12">
-          {showLoadMore && (
+        <div className="text-center">
+          {showLoadMore ? (
             <button
               onClick={loadMoreProducts}
-              className="cta-button bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-lg px-8 py-4"
+              className="inline-flex items-center bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-blue-700 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Load More Winter Collections
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </button>
-          )}
-          
-          {showAffiliateButton && (
-            <a
-              href="https://example-affiliate-store.com/winter-nails"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-lg px-8 py-4 inline-block"
+          ) : (
+            <button
+              onClick={() => window.open('https://example-affiliate-store.com/winter-nails', '_blank')}
+              className="inline-flex items-center bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white px-12 py-4 rounded-2xl font-bold text-lg hover:from-blue-700 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
             >
-              Shop Complete Winter Collection →
-            </a>
+              ❄️ Shop Complete Winter Collection
+              <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
           )}
         </div>
       </div>
@@ -1003,19 +1032,23 @@ const WinterNailsCategory = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-gray-50 rounded-2xl p-6 shadow-lg">
+              <div key={index} className="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400 mr-2">
-                    {"★".repeat(5)}
+                  <div className="flex text-yellow-400 mr-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
                   </div>
                   {testimonial.verified && (
-                    <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
+                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
                       Verified Purchase
                     </span>
                   )}
                 </div>
                 <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
-                <p className="font-semibold text-gray-900">- {testimonial.name}</p>
+                <p className="font-semibold text-gray-800">- {testimonial.name}</p>
               </div>
             ))}
           </div>
@@ -1033,18 +1066,21 @@ const WinterNailsCategory = () => {
               <Link
                 key={index}
                 href={category.link}
-                className="category-card group block"
+                className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2 aspect-[4/3]"
               >
-                <div className="relative h-64 overflow-hidden rounded-t-3xl">
-                  <img
-                    src={category.image}
-                    alt={category.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-xl font-bold mb-1">{category.name}</h3>
-                    <p className="text-sm opacity-90">{category.description}</p>
+                <img
+                  src={category.image}
+                  alt={category.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">{category.name}</h3>
+                  <div className="flex items-center text-white/90">
+                    <span className="text-sm">{category.description}</span>
+                    <svg className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </div>
                 </div>
               </Link>

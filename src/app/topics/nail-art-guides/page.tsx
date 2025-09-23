@@ -369,60 +369,236 @@ export default function NailArtGuides() {
             </div>
           </div>
 
-          {/* Unlock Complete Masterclass System */}
-          <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 mb-16 text-center border-2 border-dashed border-pink-300">
-            <div className="max-w-3xl mx-auto">
-              <div className="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
-                🎨 Ready to Master Professional Nail Art?
-              </div>
-              <h3 className="font-serif text-3xl font-bold text-gray-800 mb-4">
-                Unlock the Complete Professional System
-              </h3>
-              <p className="text-lg text-gray-600 mb-6">
-                What you've learned here is just the foundation. Our comprehensive masterclass contains the complete professional system used by nail artists charging $200+ per session.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-pink-200">
-                  <h4 className="font-semibold text-gray-800 mb-2">🎯 Master-Level Techniques:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• 50+ professional design templates with measurements</li>
-                    <li>• Color chemistry formulas and mixing ratios</li>
-                    <li>• Advanced 3D illusion techniques</li>
-                    <li>• Client consultation and pricing strategies</li>
-                  </ul>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-pink-200">
-                  <h4 className="font-semibold text-gray-800 mb-2">💎 Professional Resources:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Tool engineering specifications and sources</li>
-                    <li>• Troubleshooting guide for 30+ common issues</li>
-                    <li>• Time optimization workflows and checklists</li>
-                    <li>• Professional portfolio development system</li>
-                  </ul>
-                </div>
-              </div>
+{/* Premium CTA Section - Professional Workflow Mastery */}
+<div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 mb-16 text-center border border-gray-600 relative overflow-hidden">
+  {/* Background Pattern */}
+  <div className="absolute inset-0 opacity-5">
+    <div className="absolute inset-0" style={{
+      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+    }}></div>
+  </div>
 
-              <div className="bg-gradient-to-r from-green-100 to-emerald-100 p-4 rounded-lg mb-6">
-                <p className="text-sm text-green-800 font-medium">
-                  🚀 <strong>Professional Investment:</strong> Join 8,500+ nail artists who've transformed their skills and earning potential through our proven system.
-                </p>
-              </div>
+  <div className="max-w-4xl mx-auto relative z-10">
+    {/* Exclusive Badge with Urgency */}
+    <div className="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-full text-sm font-bold mb-6 shadow-lg animate-pulse">
+      🏆 PROFESSIONAL MASTERCLASS - WEEKEND SPECIAL
+    </div>
 
-              <a
-                href="https://example.gumroad.com/premium-guide"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-12 py-4 rounded-full font-bold text-lg hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-xl"
-              >
-                Access Complete Masterclass System →
-              </a>
-              
-              <p className="text-xs text-gray-500 mt-4">
-                ⚡ Instant access to 200+ pages • Video tutorials • Lifetime updates • 60-day guarantee
-              </p>
-            </div>
-          </div>
+    {/* Compelling Headline */}
+    <h3 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+      Master Professional Workflow Systems
+      <span className="block text-pink-300 text-3xl md:text-4xl">Like a $300/Hour Salon Owner</span>
+    </h3>
+
+    {/* Value Bridge */}
+    <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+      You've seen the workflow foundation above — now access the <strong className="text-pink-300">complete professional system</strong> used by elite salon owners generating $500K+ annually. These are the efficiency secrets that transform talented artists into profitable business owners.
+    </p>
+
+    {/* Social Proof Integration */}
+    <div className="flex justify-center items-center space-x-8 mb-8 text-gray-300">
+      <div className="text-center">
+        <div className="text-2xl font-bold text-blue-300">7,432</div>
+        <div className="text-sm">Salon Professionals</div>
+      </div>
+      <div className="text-center">
+        <div className="text-2xl font-bold text-green-300">340%</div>
+        <div className="text-sm">Avg. Efficiency Increase</div>
+      </div>
+      <div className="text-center">
+        <div className="text-2xl font-bold text-purple-300">$127K</div>
+        <div className="text-sm">Avg. Revenue Boost</div>
+      </div>
+    </div>
+
+    {/* Benefit Categories Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 text-left">
+      {/* Advanced Workflow Engineering */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-pink-300 text-lg mb-4 flex items-center">
+          ⚡ Advanced Workflow Engineering
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Professional Station Blueprints</strong> — Maximize efficiency with scientifically-optimized layouts</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Time-Motion Studies Templates</strong> — Cut service time by 45% without quality loss</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Material Flow Optimization Charts</strong> — Eliminate waste, reduce costs by 30%</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Multi-Client Scheduling Matrix</strong> — Double bookings while maintaining quality standards</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Quality Control Systems */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-blue-300 text-lg mb-4 flex items-center">
+          🎯 Professional Quality Assurance
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>6-Point Inspection Protocol</strong> — Achieve 98%+ client satisfaction consistently</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Precision Measurement Tools</strong> — Mathematical accuracy for perfect symmetry every time</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Durability Testing Framework</strong> — Predict and prevent service failures before they happen</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Client Documentation System</strong> — Track preferences and build loyalty like luxury spas</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Business Optimization Tools */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-purple-300 text-lg mb-4 flex items-center">
+          💰 Business Optimization Arsenal
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Profit Margin Calculator</strong> — Price services for maximum profitability</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Client Retention Protocols</strong> — Increase repeat bookings by 275%</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Upselling Strategy Templates</strong> — Boost average transaction value effortlessly</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Supply Chain Management Tools</strong> — Never run out of materials, reduce costs 25%</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Elite Training Resources */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-green-300 text-lg mb-4 flex items-center">
+          🌟 Elite Professional Training
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>HD Workflow Video Library</strong> — 8+ hours of salon owner demonstrations</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Problem-Solution Database</strong> — Instant fixes for 100+ common workflow issues</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Elite Professional Community</strong> — Network with 7,000+ successful salon owners</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Monthly Business Mastermind</strong> — Live coaching from 7-figure salon entrepreneurs</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Pricing Psychology Box */}
+    <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border-2 border-pink-500/30 rounded-2xl p-8 mb-8">
+      <div className="text-center mb-6">
+        <div className="text-gray-400 text-lg mb-2">Complete Professional Workflow System Usually:</div>
+        <div className="text-gray-500 text-3xl line-through mb-2">$697</div>
+        <div className="text-gray-400 text-sm mb-4">(Less than one business consultation session)</div>
+        
+        <div className="text-5xl font-bold text-white mb-2">$97</div>
+        <div className="text-pink-300 font-semibold text-xl">Weekend Special - Save $600!</div>
+      </div>
+
+      <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6">
+        <div className="text-red-300 font-bold text-center">
+          ⏰ Weekend pricing ends Monday 9AM — Save $150 NOW
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-300 mb-6">
+        <div className="text-center">
+          <div className="text-green-400 font-semibold">✓ Instant Download</div>
+          <div>Access within 60 seconds</div>
+        </div>
+        <div className="text-center">
+          <div className="text-blue-400 font-semibold">✓ 90-Day Guarantee</div>
+          <div>See results or full refund</div>
+        </div>
+        <div className="text-center">
+          <div className="text-purple-400 font-semibold">✓ Free Updates</div>
+          <div>All future versions included</div>
+        </div>
+      </div>
+    </div>
+
+    {/* CTA Button */}
+    <a
+      href="https://example.gumroad.com/premium-guide"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-16 py-6 rounded-full font-bold text-xl hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-2xl mb-8"
+    >
+      Master Professional Workflows Now →
+    </a>
+
+    {/* Trust Elements */}
+    <div className="flex flex-wrap justify-center items-center gap-6 mb-8 text-gray-400 text-sm">
+      <div className="flex items-center">
+        <span className="text-green-400 mr-2">🔐</span>
+        SSL Secured
+      </div>
+      <div className="flex items-center">
+        <span className="text-blue-400 mr-2">📱</span>
+        Mobile Compatible
+      </div>
+      <div className="flex items-center">
+        <span className="text-purple-400 mr-2">⚡</span>
+        Instant Access
+      </div>
+      <div className="flex items-center">
+        <span className="text-pink-400 mr-2">💸</span>
+        Money-Back Promise
+      </div>
+    </div>
+
+    {/* Final Testimonial */}
+    <div className="bg-gray-700 border border-gray-600 rounded-xl p-6 max-w-2xl mx-auto">
+      <div className="flex items-center justify-center mb-4">
+        <div className="flex text-yellow-400">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <blockquote className="text-gray-200 text-lg italic mb-4">
+        "These workflow systems transformed my home studio into a $180K/year business. I went from struggling to book 3 clients a week to confidently handling 25+ while maintaining premium quality. The efficiency gains paid for this course in the first month!"
+      </blockquote>
+      <div className="text-pink-300 font-semibold">— Maria Santos, Elite Nail Artist & Studio Owner</div>
+      <div className="text-gray-400 text-sm">Increased monthly revenue by 650% in 8 months</div>
+    </div>
+
+    {/* Final Urgency Reminder */}
+    <div className="mt-8 text-center">
+      <p className="text-gray-300 text-sm">
+        <strong className="text-red-300">⏰ Weekend Special Ends Soon:</strong> Transform your workflow efficiency at $97 before price increases to $247 Monday morning.
+      </p>
+    </div>
+  </div>
+</div>
 
           {/* Related Articles */}
           <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-8">

@@ -1,234 +1,818 @@
+'use client';
 import Link from 'next/link';
+import { useState } from 'react';
 
-const halloweenProducts = [
-  {
-    id: 1,
-    name: "Til Death ",
-    price: "$21.99",
-    image: "https://m.media-amazon.com/images/I/71PUcXj5YYL._SL1500_.jpg",
-    description: "3D Lace Medium Almond Fake Nails with Glossy Finish, Salon Quality Halloween Nails",
-    cta: "Get This Look",
-    affiliateUrl: "https://amzn.to/46kK7eD"
-  },
-  {
-    id: 2,
-    name: "Ghosted",
-    price: "$19.99",
-    image: "https://m.media-amazon.com/images/I/71sPuMmbetL._SL1500_.jpg",
-    description: "Short Almond Black Fake Nails with Ghost Motif & Glossy Finish",
-    cta: "Steal The Style",
-    affiliateUrl: "https://amzn.to/47MklCA"
-  },
-  {
-    id: 3,
-    name: "Crybaby Clown ",
-    price: "$21.99",
-    image: "https://m.media-amazon.com/images/I/71-5-NHYeLL._SL1500_.jpg",
-    description: "Short Almond 3D Fake Nails with Clown & Swirl Designs in a Chrome Finish",
-    cta: "Nail The Trend",
-    affiliateUrl: "https://amzn.to/41XVR5A"
-  },
-  {
-    id: 4,
-    name: "Pumpkin Patch",
-    price: "$19.99",
-    image: "https://m.media-amazon.com/images/I/71CSH8hX06L._SL1500_.jpg",
-    description: "Short Oval Fake Nails with a Velvet Finish",
-    cta: "Get This Look",
-    affiliateUrl: "https://amzn.to/46kL06X"
-  },
-  {
-    id: 5,
-    name: "Peek-o'-Lantern",
-    price: "$19.99",
-    image: "https://m.media-amazon.com/images/I/81dOrEH7aTL._SL1500_.jpg",
-    description: "Short Round Fake Nails with Pumpkin Jack-o’-Lantern Graphics & Velvet Finish",
-    cta: "Steal The Style",
-    affiliateUrl: "https://amzn.to/42pzl5K"
-  },
-  {
-    id: 6,
-    name: "Midnight Romance",
-    price: "$19.99",
-    image: "https://m.media-amazon.com/images/I/711T6nOvTQL._SY450_.jpg",
-    description: "Short Squoval Black Fake Nails with Magnetic Cat-Eye Design & Finish",
-    cta: "Nail The Trend",
-    affiliateUrl: "https://amzn.to/3K7gaY7"
-  },
-  {
-    id: 7,
-    name: "Tiny Pumpkin",
-    price: "$19.99",
-    image: "https://m.media-amazon.com/images/I/71ZpLRPv4OL._SY450_.jpg",
-    description: "| Short Squoval French Tip Fake Nails with Pumpkin Graphics & Glossy Finish",
-    cta: "Get This Look",
-    affiliateUrl: "https://amzn.to/48qoZGq"
-  },
-  {
-    id: 8,
-    name: "Rosy Remains",
-    price: "$21.99",
-    image: "https://m.media-amazon.com/images/I/71U9wwdKYFL._SY450_.jpg",
-    description: "Charcoal Gray 3D Skeleton Medium Coffin Fake Nails with Matte Finish",
-    cta: "Steal The Style",
-    affiliateUrl: "https://amzn.to/3K4t0GE"
-  },
-  {
-    id: 9,
-    name: "Halloween Acrylic Nails",
-    price: "$6.99",
-    image: "https://m.media-amazon.com/images/I/41Aj6Irp6+L._SY300_SX300_QL70_FMwebp_.jpg",
-    description: "Matte False Nails with Gold Skeleton Designs Glue on Nail Full Cover Artificial Stick",
-    cta: "Nail The Trend",
-    affiliateUrl: "https://amzn.to/3K6pueL"
-  },
-  {
-    id: 10,
-    name: "Monster Claw Nail Tips",
-    price: "$16.99",
-    image: "https://m.media-amazon.com/images/I/71g1ikBufML._SY450_.jpg",
-    description: "White Glue on Nail Cute Ghost False Nails with Spider Web Designs Blood Heart Stick",
-    cta: "Get This Look",
-    affiliateUrl: "https://amzn.to/4go7MiS"
-  },
-  {
-    id: 11,
-    name: " Cute Ghost Acrylic Stick Nails",
-    price: "$6.99",
-    image: "https://m.media-amazon.com/images/I/71+wAfDJMWL._SL1500_.jpg",
-    description: "Brown Leopard Print False Nails with Gold Cobweb Designs Gloss Full Cover",
-    cta: "Steal The Style",
-    affiliateUrl: "https://amzn.to/4nd2Jom"
-  },
-  {
-    id: 12,
-    name: "Coffin Goth",
-    price: "$6.99",
-    image: "https://m.media-amazon.com/images/I/71NBay0YIvL._SY450_.jpg",
-    description: "Sharp fang designs for vampire-inspired nails",
-    cta: "Nail The Trend",
-    affiliateUrl: "https://amzn.to/46ff5oo"
-  },
-  {
-    id: 13,
-    name: "Black White Grid French Tip",
-    price: "$6.99",
-    image: "https://m.media-amazon.com/images/I/71hpFYXL8vL._SL1500_.jpg",
-    description: "  French Tip Acrylic Stick on Nail Cute Ghost Glue on Nail with Pumpkin Spider Designs",
-    cta: "Get This Look",
-    affiliateUrl: "https://amzn.to/3VhueRh"
-  },
-  {
-    id: 14,
-    name: "Witch Hat Nail Decals",
-    price: "$6.99",
-    image: "https://m.media-amazon.com/images/I/71FAxn1rR5L._SL1500_.jpg",
-    description: "French Tip Acrylic Glue on Nail with Designs Cute Ghost False Nails Fall Pumpkin Stick on Nail",
-    cta: "Steal The Style",
-    affiliateUrl: "https://amzn.to/46qaUGz"
-  },
-  {
-    id: 15,
-    name: " Purple Green Glitter Acrylic Nails",
-    price: "$6.99",
-    image: "https://m.media-amazon.com/images/I/71L8Jt8EcKL._SY450_.jpg",
-    description: "Medium Gloss False Nails with Skeleton Bat Designs Spider Web Artificial Glue on Nails ",
-    cta: "Nail The Trend",
-    affiliateUrl: "https://amzn.to/3K3kRlT"
-  }
-];
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  originalPrice: string;
+  image: string;
+  hoverImage?: string;
+  description: string;
+  reviewCount: number;
+  isNew: boolean;
+  isTrending: boolean;
+  stockStatus: "in-stock" | "low-stock" | "out-of-stock";
+  cta: string;
+  affiliateUrl: string;
+}
 
-export default function HalloweenShop() {
+const HalloweenNailsCategory = () => {
+  const [activeFilter, setActiveFilter] = useState('All Products');
+  const [showAllProducts, setShowAllProducts] = useState(false);
+
+  const initialProducts: Product[] = [
+    {
+      id: 1,
+      name: "Til Death",
+      price: "$21.99",
+      originalPrice: "$34.99",
+      image: "https://m.media-amazon.com/images/I/71PUcXj5YYL._SL1500_.jpg",
+      description: "3D Lace Medium Almond Fake Nails with Glossy Finish",
+      reviewCount: 189,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/46kK7eD"
+    },
+    {
+      id: 2,
+      name: "Ghosted",
+      price: "$19.99",
+      originalPrice: "$29.99",
+      image: "https://m.media-amazon.com/images/I/71sPuMmbetL._SL1500_.jpg",
+      description: "Short Almond Black Fake Nails with Ghost Motif & Glossy Finish",
+      reviewCount: 234,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "low-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/47MklCA"
+    },
+    {
+      id: 3,
+      name: "Crybaby Clown",
+      price: "$21.99",
+      originalPrice: "$35.99",
+      image: "https://m.media-amazon.com/images/I/71-5-NHYeLL._SL1500_.jpg",
+      description: "Short Almond 3D Fake Nails with Clown & Swirl Chrome Finish",
+      reviewCount: 156,
+      isNew: true,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/41XVR5A"
+    },
+    {
+      id: 4,
+      name: "Pumpkin Patch",
+      price: "$19.99",
+      originalPrice: "$32.99",
+      image: "https://m.media-amazon.com/images/I/71CSH8hX06L._SL1500_.jpg",
+      description: "Short Oval Fake Nails with a Velvet Finish",
+      reviewCount: 198,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/46kL06X"
+    },
+    {
+      id: 5,
+      name: "Peek-o'-Lantern",
+      price: "$19.99",
+      originalPrice: "$28.99",
+      image: "https://m.media-amazon.com/images/I/81dOrEH7aTL._SL1500_.jpg",
+      description: "Short Round Fake Nails with Pumpkin Jack-o'-Lantern Graphics",
+      reviewCount: 167,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/42pzl5K"
+    },
+    {
+      id: 6,
+      name: "Midnight Romance",
+      price: "$19.99",
+      originalPrice: "$31.99",
+      image: "https://m.media-amazon.com/images/I/711T6nOvTQL._SY450_.jpg",
+      description: "Short Squoval Black Fake Nails with Magnetic Cat-Eye Design",
+      reviewCount: 143,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/3K7gaY7"
+    },
+    {
+      id: 7,
+      name: "Tiny Pumpkin",
+      price: "$19.99",
+      originalPrice: "$27.99",
+      image: "https://m.media-amazon.com/images/I/71ZpLRPv4OL._SY450_.jpg",
+      description: "Short Squoval French Tip Fake Nails with Pumpkin Graphics",
+      reviewCount: 176,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/48qoZGq"
+    },
+    {
+      id: 8,
+      name: "Rosy Remains",
+      price: "$21.99",
+      originalPrice: "$36.99",
+      image: "https://m.media-amazon.com/images/I/71U9wwdKYFL._SY450_.jpg",
+      description: "Charcoal Gray 3D Skeleton Medium Coffin Fake Nails with Matte",
+      reviewCount: 201,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/3K4t0GE"
+    },
+    {
+      id: 9,
+      name: "Halloween Skeleton Nails",
+      price: "$6.99",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/41Aj6Irp6+L._SY300_SX300_QL70_FMwebp_.jpg",
+      description: "Matte False Nails with Gold Skeleton Designs Full Cover",
+      reviewCount: 159,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/3K6pueL"
+    },
+    {
+      id: 10,
+      name: "Monster Claw Nail Tips",
+      price: "$16.99",
+      originalPrice: "$24.99",
+      image: "https://m.media-amazon.com/images/I/71g1ikBufML._SY450_.jpg",
+      description: "White Glue on Nail Cute Ghost False Nails with Spider Web",
+      reviewCount: 187,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/4go7MiS"
+    },
+    {
+      id: 11,
+      name: "Cute Ghost Acrylic Nails",
+      price: "$6.99",
+      originalPrice: "$11.99",
+      image: "https://m.media-amazon.com/images/I/71+wAfDJMWL._SL1500_.jpg",
+      description: "Brown Leopard Print False Nails with Gold Cobweb Designs",
+      reviewCount: 164,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/4nd2Jom"
+    },
+    {
+      id: 12,
+      name: "Coffin Goth",
+      price: "$6.99",
+      originalPrice: "$13.99",
+      image: "https://m.media-amazon.com/images/I/71NBay0YIvL._SY450_.jpg",
+      description: "Sharp fang designs for vampire-inspired nails",
+      reviewCount: 192,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/46ff5oo"
+    },
+    {
+      id: 13,
+      name: "Black White Grid French",
+      price: "$6.99",
+      originalPrice: "$10.99",
+      image: "https://m.media-amazon.com/images/I/71hpFYXL8vL._SL1500_.jpg",
+      description: "French Tip Acrylic with Ghost & Pumpkin Spider Designs",
+      reviewCount: 138,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/3VhueRh"
+    },
+    {
+      id: 14,
+      name: "Witch Hat Nail Decals",
+      price: "$6.99",
+      originalPrice: "$14.99",
+      image: "https://m.media-amazon.com/images/I/71FAxn1rR5L._SL1500_.jpg",
+      description: "French Tip Acrylic with Ghost False Nails Fall Pumpkin",
+      reviewCount: 215,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/46qaUGz"
+    },
+    {
+      id: 15,
+      name: "Purple Green Glitter Nails",
+      price: "$6.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71L8Jt8EcKL._SY450_.jpg",
+      description: "Medium Gloss False Nails with Skeleton Bat Designs Spider Web",
+      reviewCount: 171,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/3K3kRlT"
+    }
+  ];
+
+  const additionalProducts: Product[] = [
+    {
+      id: 16,
+      name: "Vampire Blood Drip",
+      price: "$24.99",
+      originalPrice: "$38.99",
+      image: "https://images.unsplash.com/photo-1603893781141-b67498723e83?w=400&h=600&fit=crop",
+      description: "Deep blood red with dripping effect chrome finish",
+      reviewCount: 155,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/vampire-blood-drip"
+    },
+    {
+      id: 17,
+      name: "Witch's Brew Green",
+      price: "$26.99",
+      originalPrice: "$41.99",
+      image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&h=600&fit=crop",
+      description: "Mystical green with cauldron shimmer effect",
+      reviewCount: 182,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/witches-brew-green"
+    },
+    {
+      id: 18,
+      name: "Midnight Spider Web",
+      price: "$25.99",
+      originalPrice: "$40.99",
+      image: "https://images.unsplash.com/photo-1583847411558-66f1404bd9e2?w=400&h=600&fit=crop",
+      description: "Black base with silver spider web details",
+      reviewCount: 167,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/midnight-spider-web"
+    },
+    {
+      id: 19,
+      name: "Graveyard Mist Chrome",
+      price: "$33.99",
+      originalPrice: "$50.99",
+      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&h=600&fit=crop",
+      description: "Smoky gray chrome with eerie mist effect",
+      reviewCount: 129,
+      isNew: true,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/graveyard-mist-chrome"
+    },
+    {
+      id: 20,
+      name: "Candy Corn Stripes",
+      price: "$27.99",
+      originalPrice: "$42.99",
+      image: "https://images.unsplash.com/photo-1607186425648-74e0ae0e8fa5?w=400&h=600&fit=crop",
+      description: "Classic candy corn stripes with glossy finish",
+      reviewCount: 194,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/candy-corn-stripes"
+    },
+    {
+      id: 21,
+      name: "Bat Wing Black Matte",
+      price: "$26.99",
+      originalPrice: "$41.99",
+      image: "https://images.unsplash.com/photo-1618922710403-71b2b5aa9cb6?w=400&h=600&fit=crop",
+      description: "Matte black with bat wing texture finish",
+      reviewCount: 173,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/bat-wing-black-matte"
+    },
+    {
+      id: 22,
+      name: "Haunted Forest Green",
+      price: "$30.99",
+      originalPrice: "$46.99",
+      image: "https://images.unsplash.com/photo-1607822214992-0bb6eae35f16?w=400&h=600&fit=crop",
+      description: "Deep forest green with haunting shimmer",
+      reviewCount: 186,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/haunted-forest-green"
+    },
+    {
+      id: 23,
+      name: "Skeleton Key Silver",
+      price: "$24.99",
+      originalPrice: "$38.99",
+      image: "https://images.unsplash.com/photo-1622737147521-49136a5761ed?w=400&h=600&fit=crop",
+      description: "Metallic silver with skeleton key accents",
+      reviewCount: 148,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/skeleton-key-silver"
+    },
+    {
+      id: 24,
+      name: "Potion Purple Velvet",
+      price: "$28.99",
+      originalPrice: "$44.99",
+      image: "https://images.unsplash.com/photo-1609139003551-ee40f5f73ec0?w=400&h=600&fit=crop",
+      description: "Rich potion purple with luxurious velvet texture",
+      reviewCount: 161,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/potion-purple-velvet"
+    },
+    {
+      id: 25,
+      name: "Cauldron Copper Metallic",
+      price: "$29.99",
+      originalPrice: "$45.99",
+      image: "https://images.unsplash.com/photo-1617554677508-94c1ec71a42f?w=400&h=600&fit=crop",
+      description: "Warm copper metallic with cauldron shine",
+      reviewCount: 175,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/cauldron-copper-metallic"
+    },
+    {
+      id: 26,
+      name: "Ghostly White Shimmer",
+      price: "$25.99",
+      originalPrice: "$40.99",
+      image: "https://images.unsplash.com/photo-1610887439844-a07d22ad2065?w=400&h=600&fit=crop",
+      description: "Ethereal white with ghostly shimmer particles",
+      reviewCount: 157,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/ghostly-white-shimmer"
+    },
+    {
+      id: 27,
+      name: "Raven Feather Black",
+      price: "$27.99",
+      originalPrice: "$42.99",
+      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&h=600&fit=crop",
+      description: "Deep black with raven feather texture finish",
+      reviewCount: 189,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/raven-feather-black"
+    },
+    {
+      id: 28,
+      name: "Autumn Spell Orange",
+      price: "$26.99",
+      originalPrice: "$41.99",
+      image: "https://images.unsplash.com/photo-1615739675564-16e4f0b7c5c6?w=400&h=600&fit=crop",
+      description: "Mystical autumn orange with spell-casting shimmer",
+      reviewCount: 164,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/autumn-spell-orange"
+    },
+    {
+      id: 29,
+      name: "Moonlight Silver Chrome",
+      price: "$32.99",
+      originalPrice: "$49.99",
+      image: "https://images.unsplash.com/photo-1618213837799-25d5552820d3?w=400&h=600&fit=crop",
+      description: "Bright silver chrome with moonlight reflection",
+      reviewCount: 142,
+      isNew: true,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/moonlight-silver-chrome"
+    },
+    {
+      id: 30,
+      name: "Crystal Ball Holographic",
+      price: "$31.99",
+      originalPrice: "$47.99",
+      image: "https://images.unsplash.com/photo-1619266465172-02a7c59d8819?w=400&h=600&fit=crop",
+      description: "Holographic finish with crystal ball magic effect",
+      reviewCount: 178,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/crystal-ball-holographic"
+    },
+    {
+      id: 31,
+      name: "Tombstone Gray Matte",
+      price: "$24.99",
+      originalPrice: "$38.99",
+      image: "https://images.unsplash.com/photo-1620804993944-fa9b5d382bb5?w=400&h=600&fit=crop",
+      description: "Stone gray matte with tombstone texture",
+      reviewCount: 151,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/tombstone-gray-matte"
+    },
+    {
+      id: 32,
+      name: "Wicked Witch Purple",
+      price: "$28.99",
+      originalPrice: "$44.99",
+      image: "https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&h=600&fit=crop",
+      description: "Deep witch purple with magical shimmer finish",
+      reviewCount: 193,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/wicked-witch-purple"
+    },
+    {
+      id: 33,
+      name: "Spider Silk Silver",
+      price: "$27.99",
+      originalPrice: "$42.99",
+      image: "https://images.unsplash.com/photo-1622401896088-27e8c2c0ef3c?w=400&h=600&fit=crop",
+      description: "Delicate silver with spider silk shimmer effect",
+      reviewCount: 166,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Wicked Nails",
+      affiliateUrl: "https://amzn.to/spider-silk-silver"
+    },
+    {
+      id: 34,
+      name: "Mystical Moon Phase",
+      price: "$30.99",
+      originalPrice: "$46.99",
+      image: "https://images.unsplash.com/photo-1623243899947-c2e99b7d18f6?w=400&h=600&fit=crop",
+      description: "Color-changing polish with moon phase effects",
+      reviewCount: 184,
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Spooky Style",
+      affiliateUrl: "https://amzn.to/mystical-moon-phase"
+    },
+    {
+      id: 35,
+      name: "Black Cat Eyes",
+      price: "$29.99",
+      originalPrice: "$45.99",
+      image: "https://images.unsplash.com/photo-1624287911901-c1c7fa7c4e8a?w=400&h=600&fit=crop",
+      description: "Magnetic black with golden cat-eye effect",
+      reviewCount: 172,
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Halloween Glam",
+      affiliateUrl: "https://amzn.to/black-cat-eyes"
+    }
+  ];
+
+  const allProducts = [...initialProducts, ...additionalProducts];
+
+  const getFilteredProducts = () => {
+    const productsToShow = showAllProducts ? allProducts : initialProducts;
+    
+    switch (activeFilter) {
+      case 'New Arrivals':
+        return productsToShow.filter(product => product.isNew);
+      case 'Trending':
+        return productsToShow.filter(product => product.isTrending);
+      case 'On Sale':
+        return productsToShow.filter(product => product.originalPrice);
+      default:
+        return productsToShow;
+    }
+  };
+
+  const filteredProducts = getFilteredProducts();
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/halloweenbannerimg.jpg"
-            alt="Halloween nail products"
-            className="w-full h-full object-cover"
-          />
+      <div className="relative h-[50vh] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transform hover:scale-105 transition-transform duration-700"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1603893781141-b67498723e83?w=1200&h=800&fit=crop')"
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-800 via-purple-700 to-orange-800 opacity-70" />
+        
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 animate-bounce delay-100">
+          <div className="text-orange-300 text-4xl">🎃</div>
         </div>
-        <div className="relative z-10 text-center text-white">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">
-            Halloween Nails
-          </h1>
-          <p className="text-xl md:text-2xl font-light">
-            Spooky & Stylish Nail Products for Halloween
-          </p>
+        <div className="absolute top-32 right-20 animate-bounce delay-300">
+          <div className="text-purple-300 text-3xl">👻</div>
         </div>
-      </section>
+        <div className="absolute bottom-32 left-20 animate-bounce delay-500">
+          <div className="text-orange-300 text-3xl">🦇</div>
+        </div>
+        <div className="absolute bottom-20 right-10 animate-bounce delay-700">
+          <div className="text-white text-4xl">🕷️</div>
+        </div>
+
+        {/* Back Button */}
+        <Link 
+          href="/shop"
+          className="absolute top-6 left-6 bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full hover:bg-white/30 transition-all duration-200 flex items-center gap-2"
+        >
+          ← Back to Shop
+        </Link>
+
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white backdrop-blur-md bg-white/10 p-8 rounded-3xl max-w-2xl mx-4">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-orange-200 to-purple-200 bg-clip-text text-transparent">
+              Halloween Nails
+            </h1>
+            <p className="text-xl md:text-2xl mb-6 text-orange-100">
+              Spooky & Stylish Nail Products for Halloween
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <span className="bg-gradient-to-r from-orange-500 to-purple-500 text-white px-6 py-3 rounded-full font-semibold">
+                Spooky Style
+              </span>
+              <span className="bg-gradient-to-r from-purple-500 to-orange-500 text-white px-6 py-3 rounded-full font-semibold">
+                Halloween Glam
+              </span>
+              <span className="bg-gradient-to-r from-orange-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold">
+                Wicked Nails
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Filter Bar */}
+      <div className="sticky top-0 z-10 bg-white shadow-md py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap gap-3 justify-center">
+            {['All Products', 'New Arrivals', 'Trending', 'On Sale'].map((filter) => (
+              <button
+                key={filter}
+                onClick={() => setActiveFilter(filter)}
+                className={`px-6 py-3 rounded-full font-semibold transition-all duration-200 ${
+                  activeFilter === filter
+                    ? 'bg-gradient-to-r from-orange-500 via-purple-500 to-orange-500 text-white shadow-lg'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:border-orange-300'
+                }`}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Products Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-charcoal-800 mb-4">
-              Mirelle's Halloween Favorites
-            </h2>
-            <p className="text-lg text-charcoal-600 max-w-3xl mx-auto">
-              Discover the perfect products to create spooky, stylish Halloween nail looks 
-              that will make you the star of any Halloween party.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {halloweenProducts.map((product) => (
-              <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
-                <div className="relative">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 right-4 bg-blush-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {product.price}
-                  </div>
-                </div>
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {filteredProducts.map((product) => (
+            <div key={product.id} className="product-card bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.03] border border-gray-100 hover:border-gray-200">
+              <div className="relative overflow-hidden rounded-t-2xl aspect-[3/4]">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                />
                 
-                <div className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-charcoal-800 mb-2">
-                    {product.name}
-                  </h3>
-                  <p className="text-charcoal-600 mb-4 text-sm">
-                    {product.description}
-                  </p>
-                  
-                  <a
-                    href={product.affiliateUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 px-4 rounded-full font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 text-center block"
-                  >
-                    {product.cta}
-                  </a>
+                {/* Status Badges */}
+                <div className="absolute top-3 left-3 flex flex-col gap-2">
+                  {product.isNew && (
+                    <span className="bg-gradient-to-r from-orange-500 to-purple-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                      NEW
+                    </span>
+                  )}
+                  {product.isTrending && (
+                    <span className="bg-gradient-to-r from-purple-500 to-orange-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                      TRENDING
+                    </span>
+                  )}
+                  {product.stockStatus === 'low-stock' && (
+                    <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                      LOW STOCK
+                    </span>
+                  )}
+                </div>
+
+                {/* Stock Status Indicator */}
+                <div className="absolute bottom-3 right-3">
+                  <div className={`w-3 h-3 rounded-full ${
+                    product.stockStatus === 'in-stock' 
+                      ? 'bg-green-400' 
+                      : product.stockStatus === 'low-stock'
+                      ? 'bg-yellow-400'
+                      : 'bg-red-400'
+                  }`} />
+                </div>
+              </div>
+
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2 text-gray-800 line-clamp-2">
+                  {product.name}
+                </h3>
+                
+                <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                  {product.description}
+                </p>
+
+                {/* Price Display */}
+                <div className="price-display flex items-center gap-2 mb-4">
+                  <span className="original-price text-gray-400 line-through text-sm">
+                    {product.originalPrice}
+                  </span>
+                  <span className="discounted-price text-lg font-bold text-gray-900">
+                    {product.price}
+                  </span>
+                </div>
+
+                {/* CTA Button */}
+                <a
+                  href={product.affiliateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button w-full bg-gradient-to-r from-orange-500 via-purple-500 to-orange-500 text-white font-semibold py-3 px-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl text-center block"
+                >
+                  {product.cta}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Load More / Complete Catalog Button */}
+        <div className="text-center mt-12">
+          {!showAllProducts ? (
+            <button
+              onClick={() => setShowAllProducts(true)}
+              className="cta-button bg-gradient-to-r from-orange-500 via-purple-500 to-orange-500 text-white font-semibold py-4 px-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              Load More Products ({additionalProducts.length} more)
+            </button>
+          ) : (
+            <a
+              href="https://example-affiliate-store.com/halloween-nails"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button bg-gradient-to-r from-orange-500 via-purple-500 to-orange-500 text-white font-semibold py-4 px-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl inline-block"
+            >
+              Shop Complete Collection →
+            </a>
+          )}
+        </div>
+      </div>
+
+      {/* Social Proof Section */}
+      <div className="bg-white py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            What Our Customers Say
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Sarah M.",
+                review: "The Til Death nails are absolutely stunning! Perfect for my Halloween party.",
+                product: "Til Death"
+              },
+              {
+                name: "Jessica R.",
+                review: "Love the Ghosted design! So unique and got so many compliments.",
+                product: "Ghosted"
+              },
+              {
+                name: "Amanda K.",
+                review: "Crybaby Clown is my new favorite! The chrome finish is incredible.",
+                product: "Crybaby Clown"
+              }
+            ].map((testimonial, index) => (
+              <div key={index} className="bg-gray-50 p-6 rounded-2xl shadow-lg">
+                <div className="flex mb-3">
+                  {Array.from({ length: 5 }, (_, i) => (
+                    <span key={i} className="text-yellow-400 text-sm">★</span>
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-gray-800">{testimonial.name}</p>
+                  <p className="text-sm text-gray-600">Verified Purchase • {testimonial.product}</p>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </div>
 
-          {/* Show More Button */}
-          <div className="text-center mt-12">
-            <a
-              href="https://amzn.to/4n3qqPD"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal-800 transition-colors duration-300"
-            >
-              Show More Halloween Products
-              <svg 
-                className="ml-2 w-5 h-5" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
+      {/* Related Categories */}
+      <div className="bg-gray-100 py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            Explore More Collections
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                name: "new-year",
+                displayName: "New Year Nails",
+                image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop",
+                gradient: "from-yellow-400 to-pink-600"
+              },
+              {
+                name: "trendy",
+                displayName: "Trendy Nails",
+                image: "https://images.unsplash.com/photo-1604991405679-98d08f7fbb08?w=400&h=300&fit=crop",
+                gradient: "from-pink-500 to-violet-600"
+              },
+              {
+                name: "winter",
+                displayName: "Winter Nails",
+                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+                gradient: "from-blue-500 to-indigo-600"
+              },
+              {
+                name: "christmas",
+                displayName: "Christmas Nails",
+                image: "https://images.unsplash.com/photo-1608312594799-9c5aef5b39fb?w=400&h=300&fit=crop",
+                gradient: "from-green-500 to-red-600"
+              }
+            ].map((category, index) => (
+              <Link
+                key={index}
+                href={`/shop/${category.name}`}
+                className="category-card relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2 group"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
+                <div className="aspect-[4/3] relative">
+                  <img
+                    src={category.image}
+                    alt={category.displayName}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-r ${category.gradient} opacity-60`} />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <h3 className="text-2xl font-bold text-white text-center">
+                      {category.displayName}
+                    </h3>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
-}
+};
+
+export default HalloweenNailsCategory;

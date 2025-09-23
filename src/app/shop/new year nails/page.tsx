@@ -521,7 +521,7 @@ export default function NewYearShop() {
     setShowAllProducts(true);
   };
 
-  const handleFilterChange = (filter) => {
+  const handleFilterChange = (filter: string) => {
     setActiveFilter(filter);
     
     let filteredProducts = newYearProducts;

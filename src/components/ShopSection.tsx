@@ -45,7 +45,7 @@ const shopCategories = [
     title: "New Year Nails",
     description: "Glamorous designs to sparkle into the new year",
     image: "/newyearsection.jpg",
-    href: "/shop/newyear",
+    href: "/shop/new-year",
     productCount: "15+ Products",
     color: "from-gold-400 to-yellow-500"
   }

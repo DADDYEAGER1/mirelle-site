@@ -289,49 +289,49 @@ export default function AtHomeHacks() {
             </div>
           </div>
 
-          {/* Advanced Troubleshooting */}
-          <div className="bg-gradient-to-r from-charcoal-800 to-charcoal-900 rounded-2xl p-8 mb-16 text-white">
-            <h3 className="font-serif text-2xl font-bold mb-6 text-center">Professional Troubleshooting Guide</h3>
-            <p className="text-center text-gray-300 mb-8 max-w-2xl mx-auto">
-              When things go wrong, professionals know exactly how to fix them. Here are the most common issues and their instant solutions.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold mb-3 text-blush-300">Polish Problems</h4>
-                <div className="space-y-3">
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-sm text-white mb-1">Bubbles in Polish</p>
-                    <p className="text-xs text-gray-300">Roll bottle, don't shake. Apply thinner coats in cooler room.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-sm text-white mb-1">Streaky Application</p>
-                    <p className="text-xs text-gray-300">Polish too thick. Add 1-2 drops thinner, work quickly in sections.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-sm text-white mb-1">Chips Within 24 Hours</p>
-                    <p className="text-xs text-gray-300">Nail bed had oils. Prep with alcohol, use dehydrating base coat.</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-3 text-purple-300">Application Issues</h4>
-                <div className="space-y-3">
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-sm text-white mb-1">Cuticle Flooding</p>
-                    <p className="text-xs text-gray-300">Use precision brush with acetone immediately. Work in good light.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-sm text-white mb-1">Uneven Coverage</p>
-                    <p className="text-xs text-gray-300">Maintain consistent pressure. Use 3-stroke method religiously.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-sm text-white mb-1">Dull Finish</p>
-                    <p className="text-xs text-gray-300">Top coat applied over wet color. Wait full 2 minutes between layers.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+{/* Advanced Troubleshooting */}
+<div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 mb-16 text-white">
+  <h3 className="font-serif text-2xl font-bold mb-6 text-center text-white">Professional Troubleshooting Guide</h3>
+  <p className="text-center text-gray-200 mb-8 max-w-2xl mx-auto">
+    When things go wrong, professionals know exactly how to fix them. Here are the most common issues and their instant solutions.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <h4 className="font-semibold mb-3 text-pink-300">Polish Problems</h4>
+      <div className="space-y-3">
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-sm text-white mb-1">Bubbles in Polish</p>
+          <p className="text-xs text-gray-200">Roll bottle, don't shake. Apply thinner coats in cooler room.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-sm text-white mb-1">Streaky Application</p>
+          <p className="text-xs text-gray-200">Polish too thick. Add 1-2 drops thinner, work quickly in sections.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-sm text-white mb-1">Chips Within 24 Hours</p>
+          <p className="text-xs text-gray-200">Nail bed had oils. Prep with alcohol, use dehydrating base coat.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4 className="font-semibold mb-3 text-purple-300">Application Issues</h4>
+      <div className="space-y-3">
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-sm text-white mb-1">Cuticle Flooding</p>
+          <p className="text-xs text-gray-200">Use precision brush with acetone immediately. Work in good light.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-sm text-white mb-1">Uneven Coverage</p>
+          <p className="text-xs text-gray-200">Maintain consistent pressure. Use 3-stroke method religiously.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-sm text-white mb-1">Dull Finish</p>
+          <p className="text-xs text-gray-200">Top coat applied over wet color. Wait full 2 minutes between layers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
           {/* Unlock Complete System CTA */}
           <div className="bg-gradient-to-br from-blush-50 to-purple-50 rounded-2xl p-8 mb-16 text-center border-2 border-dashed border-blush-300">

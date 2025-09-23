@@ -977,7 +977,8 @@ const WinterNailsCategory = () => {
                     </span>
                   </div>
                   <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
-                    SAVE {calculateDiscount(product.originalPrice, product.price)}%
+                    SAVE {Math.round(((parseFloat(product.originalPrice.slice(1)) - parseFloat(product.price.slice(1))) / parseFloat(product.originalPrice.slice(1))) * 100)}%
+
                   </span>
                 </div>
 

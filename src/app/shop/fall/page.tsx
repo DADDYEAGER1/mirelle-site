@@ -1044,12 +1044,6 @@ const FallNailsCategory = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                name: "Halloween",
-                displayName: "Halloween Nails",
-                image: "https://images.unsplash.com/photo-1603893781141-b67498723e83?w=400&h=300&fit=crop",
-                gradient: "from-orange-600 to-purple-700"
-              },
-              {
                 name: "new-year",
                 displayName: "New Year Nails",
                 image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop",

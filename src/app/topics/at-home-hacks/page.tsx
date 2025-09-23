@@ -333,60 +333,237 @@ export default function AtHomeHacks() {
   </div>
 </div>
 
-          {/* Unlock Complete System CTA */}
-          <div className="bg-gradient-to-br from-blush-50 to-purple-50 rounded-2xl p-8 mb-16 text-center border-2 border-dashed border-blush-300">
-            <div className="max-w-3xl mx-auto">
-              <div className="inline-flex items-center bg-gradient-to-r from-blush-500 to-purple-500 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
-                🚀 Ready for the Complete System?
-              </div>
-              <h3 className="font-serif text-3xl font-bold text-charcoal-800 mb-4">
-                Unlock the Full Professional Method
-              </h3>
-              <p className="text-lg text-charcoal-600 mb-6">
-                What you've learned here is just the foundation. Our comprehensive guide contains the complete professional system used in high-end salons worldwide.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-charcoal-800 mb-2">🎯 Advanced Techniques You'll Master:</h4>
-                  <ul className="text-sm text-charcoal-600 space-y-1">
-                    <li>• Salon-grade tool recommendations with exact model numbers</li>
-                    <li>• Professional color mixing formulas and ratios</li>
-                    <li>• Pressure point techniques for difficult nail shapes</li>
-                    <li>• Emergency fixes for major mistakes</li>
-                  </ul>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-charcoal-800 mb-2">💎 Exclusive Professional Secrets:</h4>
-                  <ul className="text-sm text-charcoal-600 space-y-1">
-                    <li>• The "humidity hack" that prevents bubbling</li>
-                    <li>• Temperature-specific timing adjustments</li>
-                    <li>• Brand compatibility charts (save hundreds on mistakes)</li>
-                    <li>• 30+ troubleshooting solutions with photo guides</li>
-                  </ul>
-                </div>
-              </div>
+{/* Premium CTA Section - High Converting */}
+<div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 mb-16 text-center border border-gray-600 relative overflow-hidden">
+  {/* Background Pattern */}
+  <div className="absolute inset-0 opacity-5">
+    <div className="absolute inset-0" style={{
+      backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+    }}></div>
+  </div>
 
-              <div className="bg-gradient-to-r from-green-100 to-emerald-100 p-4 rounded-lg mb-6">
-                <p className="text-sm text-green-800 font-medium">
-                  ⚡ <strong>Limited Time:</strong> Get instant access to over 50 pages of professional techniques, video demonstrations, and downloadable reference guides.
-                </p>
-              </div>
+  <div className="max-w-4xl mx-auto relative z-10">
+    {/* Exclusive Badge with Urgency */}
+    <div className="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-3 rounded-full text-sm font-bold mb-6 shadow-lg animate-pulse">
+      ⚡ LAUNCH WEEK EXCLUSIVE - 48 HOURS ONLY
+    </div>
 
-              <a
-                href="https://example.gumroad.com/premium-guide"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-blush-500 to-purple-500 text-white px-12 py-4 rounded-full font-bold text-lg hover:from-blush-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-xl"
-              >
-                Access Complete Professional System →
-              </a>
-              
-              <p className="text-xs text-charcoal-500 mt-4">
-                ⭐ Join 12,000+ nail enthusiasts who've transformed their at-home results
-              </p>
-            </div>
-          </div>
+    {/* Compelling Headline */}
+    <h3 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+      Master Professional Nail Artistry
+      <span className="block text-pink-300 text-3xl md:text-4xl">Like a $200/Hour Salon Pro</span>
+    </h3>
+
+    {/* Value Bridge */}
+    <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+      You've discovered the foundation techniques above — now access the <strong className="text-pink-300">complete professional system</strong> used by elite nail artists charging $150+ per appointment. These are the closely-guarded methods that separate hobbyists from professionals.
+    </p>
+
+    {/* Social Proof Integration */}
+    <div className="flex justify-center items-center space-x-8 mb-8 text-gray-300">
+      <div className="text-center">
+        <div className="text-2xl font-bold text-blue-300">12,847</div>
+        <div className="text-sm">Artists Trained</div>
+      </div>
+      <div className="text-center">
+        <div className="text-2xl font-bold text-green-300">$2.3M+</div>
+        <div className="text-sm">Client Revenue Generated</div>
+      </div>
+      <div className="text-center">
+        <div className="text-2xl font-bold text-purple-300">4.9★</div>
+        <div className="text-sm">Average Rating</div>
+      </div>
+    </div>
+
+    {/* Benefit Categories Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 text-left">
+      {/* Professional Techniques */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-pink-300 text-lg mb-4 flex items-center">
+          🎯 Professional Techniques Mastery
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Advanced Brush Control System</strong> — Master 12 professional grip techniques for flawless precision</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Pressure Point Mapping</strong> — Navigate difficult nail shapes with 95% accuracy every time</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Speed Techniques Playbook</strong> — Cut application time by 60% without sacrificing quality</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Professional Color Theory</strong> — Create custom shades like a $300/hour colorist</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Industry Secrets */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-blue-300 text-lg mb-4 flex items-center">
+          💎 Exclusive Industry Secrets
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>"Humidity Hack" Method</strong> — Eliminate bubbling in any weather (saves $200+ in product waste)</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Emergency Fix Protocols</strong> — Rescue any mistake in under 3 minutes</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Brand Compatibility Matrix</strong> — Never waste money on incompatible products again</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Temperature Timing Charts</strong> — Perfect results in any environment</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Professional Tools */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-purple-300 text-lg mb-4 flex items-center">
+          🛠️ Professional Tool Arsenal
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Exact Equipment Specifications</strong> — Model numbers and sources for salon-grade tools</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Professional Assessment Templates</strong> — Evaluate nail condition like a certified technician</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Timing & Formula Calculator</strong> — Custom calculations for any nail size or shape</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Quality Control Checklists</strong> — Ensure professional standards every time</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Advanced Resources */}
+      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <h4 className="font-bold text-green-300 text-lg mb-4 flex items-center">
+          🚀 Advanced Learning Resources
+        </h4>
+        <ul className="text-gray-200 space-y-2">
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>HD Video Masterclasses</strong> — 4+ hours of professional demonstrations</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Troubleshooting Photo Guide</strong> — Visual solutions for 50+ common problems</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Private Community Access</strong> — Connect with 12,000+ professional artists</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-400 mr-2">✓</span>
+            <span><strong>Monthly Expert Q&A Sessions</strong> — Direct access to industry professionals</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Pricing Psychology Box */}
+    <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border-2 border-pink-500/30 rounded-2xl p-8 mb-8">
+      <div className="text-center mb-6">
+        <div className="text-gray-400 text-lg mb-2">Complete Professional System Usually:</div>
+        <div className="text-gray-500 text-3xl line-through mb-2">$297</div>
+        <div className="text-gray-400 text-sm mb-4">(Less than one salon appointment)</div>
+        
+        <div className="text-5xl font-bold text-white mb-2">$47</div>
+        <div className="text-pink-300 font-semibold text-xl">Launch Week Special - Save $250!</div>
+      </div>
+
+      <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6">
+        <div className="text-red-300 font-bold text-center">
+          ⏰ Price increases to $97 in 48 hours — Save $50 NOW
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-300 mb-6">
+        <div className="text-center">
+          <div className="text-green-400 font-semibold">✓ Instant Digital Access</div>
+          <div>Download immediately</div>
+        </div>
+        <div className="text-center">
+          <div className="text-blue-400 font-semibold">✓ 60-Day Guarantee</div>
+          <div>Full money-back promise</div>
+        </div>
+        <div className="text-center">
+          <div className="text-purple-400 font-semibold">✓ Lifetime Updates</div>
+          <div>All future versions included</div>
+        </div>
+      </div>
+    </div>
+
+    {/* CTA Button */}
+    <a
+      href="https://example.gumroad.com/premium-guide"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-16 py-6 rounded-full font-bold text-xl hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-2xl mb-8"
+    >
+      Get Instant Access to Complete System →
+    </a>
+
+    {/* Trust Elements */}
+    <div className="flex flex-wrap justify-center items-center gap-6 mb-8 text-gray-400 text-sm">
+      <div className="flex items-center">
+        <span className="text-green-400 mr-2">🔒</span>
+        Secure Checkout
+      </div>
+      <div className="flex items-center">
+        <span className="text-blue-400 mr-2">📱</span>
+        Works on All Devices
+      </div>
+      <div className="flex items-center">
+        <span className="text-purple-400 mr-2">⚡</span>
+        Instant Download
+      </div>
+      <div className="flex items-center">
+        <span className="text-pink-400 mr-2">💳</span>
+        PayPal & Card Accepted
+      </div>
+    </div>
+
+    {/* Final Testimonial */}
+    <div className="bg-gray-700 border border-gray-600 rounded-xl p-6 max-w-2xl mx-auto">
+      <div className="flex items-center justify-center mb-4">
+        <div className="flex text-yellow-400">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+      <blockquote className="text-gray-200 text-lg italic mb-4">
+        "I went from struggling amateur to booking $180 appointments in just 3 weeks. These techniques are what separate the professionals from everyone else. My clients now ask how I got so good so fast!"
+      </blockquote>
+      <div className="text-pink-300 font-semibold">— Sarah Mitchell, Certified Nail Artist</div>
+      <div className="text-gray-400 text-sm">Increased booking rate by 340% in first month</div>
+    </div>
+
+    {/* Final Urgency Reminder */}
+    <div className="mt-8 text-center">
+      <p className="text-gray-300 text-sm">
+        <strong className="text-red-300">⚠️ Remember:</strong> Launch pricing ends in 48 hours. 
+        Secure your copy at $47 before it increases to $97.
+      </p>
+    </div>
+  </div>
+</div>
 
           {/* Related Articles */}
           <div className="bg-gradient-to-r from-blush-100 to-purple-100 rounded-2xl p-8">

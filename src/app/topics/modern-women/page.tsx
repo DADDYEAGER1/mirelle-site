@@ -344,49 +344,49 @@ export default function ModernWomen() {
             </div>
           </div>
 
-          {/* Seasonal Professional Strategies */}
-          <div className="bg-gradient-to-r from-charcoal-800 to-charcoal-900 rounded-2xl p-8 mb-16 text-white">
-            <h3 className="font-serif text-2xl font-bold mb-6 text-center">Seasonal Professional Strategies</h3>
-            <p className="text-center text-gray-300 mb-8 max-w-2xl mx-auto">
-              Strategic seasonal adjustments keep your professional image fresh while maintaining appropriate boundaries for your industry.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="font-semibold mb-4 text-blush-300">Spring/Summer Professional Palette</h4>
-                <div className="space-y-3">
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-white mb-1">Warm Weather Neutrals</p>
-                    <p className="text-xs text-gray-300">Lighter nudes and soft pinks that complement summer attire while maintaining professionalism.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-white mb-1">Coral and Peach Tones</p>
-                    <p className="text-xs text-gray-300">Sophisticated alternatives to bright colors that add warmth without compromising authority.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-white mb-1">Classic Red Updates</p>
-                    <p className="text-xs text-gray-300">Slightly brighter or coral-based reds that feel fresh and current.</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4 text-purple-300">Fall/Winter Authority Colors</h4>
-                <div className="space-y-3">
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-white mb-1">Deep Berry Tones</p>
-                    <p className="text-xs text-gray-300">Rich burgundies and deep plums that project confidence and sophistication.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-white mb-1">Sophisticated Grays</p>
-                    <p className="text-xs text-gray-300">Modern neutrals that complement fall/winter wardrobes and project contemporary style.</p>
-                  </div>
-                  <div className="bg-charcoal-700 p-3 rounded-lg">
-                    <p className="font-medium text-white mb-1">Classic Burgundy</p>
-                    <p className="text-xs text-gray-300">The power color of autumn, commanding respect while remaining appropriately professional.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         {/* Seasonal Professional Strategies */}
+<div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 mb-16 text-white">
+  <h3 className="font-serif text-2xl font-bold mb-6 text-center text-white">Seasonal Professional Strategies</h3>
+  <p className="text-center text-gray-200 mb-8 max-w-2xl mx-auto">
+    Strategic seasonal adjustments keep your professional image fresh while maintaining appropriate boundaries for your industry.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <h4 className="font-semibold mb-4 text-pink-300">Spring/Summer Professional Palette</h4>
+      <div className="space-y-3">
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-white mb-1">Warm Weather Neutrals</p>
+          <p className="text-xs text-gray-200">Lighter nudes and soft pinks that complement summer attire while maintaining professionalism.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-white mb-1">Coral and Peach Tones</p>
+          <p className="text-xs text-gray-200">Sophisticated alternatives to bright colors that add warmth without compromising authority.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-white mb-1">Classic Red Updates</p>
+          <p className="text-xs text-gray-200">Slightly brighter or coral-based reds that feel fresh and current.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4 className="font-semibold mb-4 text-purple-300">Fall/Winter Authority Colors</h4>
+      <div className="space-y-3">
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-white mb-1">Deep Berry Tones</p>
+          <p className="text-xs text-gray-200">Rich burgundies and deep plums that project confidence and sophistication.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-white mb-1">Sophisticated Grays</p>
+          <p className="text-xs text-gray-200">Modern neutrals that complement fall/winter wardrobes and project contemporary style.</p>
+        </div>
+        <div className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+          <p className="font-medium text-white mb-1">Classic Burgundy</p>
+          <p className="text-xs text-gray-200">The power color of autumn, commanding respect while remaining appropriately professional.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
           {/* Unlock Complete Professional System */}
           <div className="bg-gradient-to-br from-blush-50 to-purple-50 rounded-2xl p-8 mb-16 text-center border-2 border-dashed border-blush-300">

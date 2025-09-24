@@ -3,521 +3,484 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const newYearProducts = [
-  // Initial 15 products (visible on load)
+  // All 36 products from Google Sheet
   {
     id: 1,
-    name: "Midnight Sparkle Collection",
-    price: "$29.99",
-    originalPrice: "$34.99",
-    image: "https://m.media-amazon.com/images/I/71PUcXj5YYL._SL1500_.jpg",
-    hoverImage: "https://m.media-amazon.com/images/I/81dOrEH7aTL._SL1500_.jpg",
-    description: "Deep midnight black with silver and gold glitter explosion",
-    rating: 4.9,
-    reviewCount: 189,
+    name: "New Year Nails To Shine",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/41u-DhfQE3L._SY300_SX300_QL70_FMwebp_.jpg",
+    description: "Shine bright with trendy New Year nails.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear1"
+    affiliateUrl: "https://amzn.to/3Ki6fz6"
   },
   {
     id: 2,
-    name: "Champagne Bubbles Glam",
-    price: "$26.99",
-    image: "https://m.media-amazon.com/images/I/71sPuMmbetL._SL1500_.jpg",
-    description: "Luxurious champagne gold with bubble effect and pearl accents",
-    rating: 4.8,
-    reviewCount: 156,
+    name: "Sparkling Nails For Celebration",
+    price: "$6.83",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/71hOlKNWs3L._SY450_.jpg",
+    description: "Celebrate moments with sparkling nail designs.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear2"
+    affiliateUrl: "https://amzn.to/46E1sj5"
   },
   {
     id: 3,
-    name: "Fireworks Fantasy",
-    price: "$31.99",
-    originalPrice: "$36.99",
-    image: "https://m.media-amazon.com/images/I/71-5-NHYeLL._SL1500_.jpg",
-    description: "Multi-colored glitter explosion mimicking New Year fireworks",
-    rating: 4.9,
-    reviewCount: 203,
+    name: "Chic Nails For New Year",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71NImJe1uVL._SY450_.jpg",
+    description: "Chic nails perfect for your New Year look.",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear3"
+    affiliateUrl: "https://amzn.to/4nNkeev"
   },
   {
     id: 4,
-    name: "Golden Hour Elegance",
-    price: "$24.99",
-    image: "https://m.media-amazon.com/images/I/71CSH8hX06L._SL1500_.jpg",
-    description: "Rich golden metallic with sunset gradient and chrome finish",
-    rating: 4.7,
-    reviewCount: 142,
+    name: "Trendy Nails For Party Nights",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/61Kmsy54exL._SY450_.jpg",
+    description: "Trendy nails styled for festive parties.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear4"
+    affiliateUrl: "https://amzn.to/3W7BX4C"
   },
   {
     id: 5,
-    name: "Silver Stars Galaxy",
-    price: "$27.99",
-    image: "https://m.media-amazon.com/images/I/81dOrEH7aTL._SL1500_.jpg",
-    description: "Deep space black with silver stars and cosmic shimmer",
-    rating: 4.8,
-    reviewCount: 167,
+    name: "Stylish Nails For Countdown",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/717hWzQnkuL._SY450_.jpg",
+    description: "Nails ready to shine for the countdown.",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear5"
+    affiliateUrl: "https://amzn.to/480MTIK"
   },
   {
     id: 6,
-    name: "Rose Gold Celebration",
-    price: "$25.99",
-    image: "https://m.media-amazon.com/images/I/711T6nOvTQL._SY450_.jpg",
-    description: "Elegant rose gold with celebration confetti and glitter",
-    rating: 4.9,
-    reviewCount: 178,
+    name: "Elegant Nails For New Year",
+    price: "$6.83",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/71669MZxgsL._SY450_.jpg",
+    description: "Elegant nails to celebrate new beginnings.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear6"
+    affiliateUrl: "https://amzn.to/3IEQUrO"
   },
   {
     id: 7,
-    name: "Crystal Ball Dreams",
-    price: "$28.99",
-    originalPrice: "$33.99",
-    image: "https://m.media-amazon.com/images/I/71ZpLRPv4OL._SY450_.jpg",
-    description: "Clear crystal base with holographic effects and rainbow prisms",
-    rating: 4.8,
-    reviewCount: 134,
+    name: "Festive Nails For Special Moments",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71-2wbBCGXL._SY450_.jpg",
+    description: "Festive nail designs for your special moments.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear7"
+    affiliateUrl: "https://amzn.to/4no2s1Q"
   },
   {
     id: 8,
-    name: "Platinum Party Nails",
-    price: "$32.99",
-    image: "https://m.media-amazon.com/images/I/71U9wwdKYFL._SY450_.jpg",
-    description: "Premium platinum finish with diamond dust and luxury feel",
-    rating: 4.9,
-    reviewCount: 198,
+    name: "Nail Trends For New Year Eve",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71mZ3Rq7x1L._SY450_.jpg",
+    description: "Fresh nail trends styled for New Year eve.",
     isNew: true,
     isTrending: true,
     stockStatus: "low-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear8"
+    affiliateUrl: "https://amzn.to/4nnW7Ub"
   },
   {
     id: 9,
-    name: "Disco Ball Glitter",
-    price: "$23.99",
-    image: "https://m.media-amazon.com/images/I/41Aj6Irp6+L._SY300_SX300_QL70_FMwebp_.jpg",
-    description: "Mirror ball effect with multi-faceted glitter and shine",
-    rating: 4.6,
-    reviewCount: 121,
+    name: "Glitter Nails For New Year",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/61hzKX3tFRL._SY450_.jpg",
+    description: "Glittery nails that sparkle with style.",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear9"
+    affiliateUrl: "https://amzn.to/42I0TU1"
   },
   {
     id: 10,
-    name: "Countdown Confetti",
-    price: "$26.99",
-    image: "https://m.media-amazon.com/images/I/71g1ikBufML._SY450_.jpg",
-    description: "Colorful confetti patterns with countdown clock designs",
-    rating: 4.8,
-    reviewCount: 145,
+    name: "Fresh Nails For New Beginnings",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71Rr1Ua4EEL._SY450_.jpg",
+    description: "Fresh nails styled for new beginnings.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear10"
+    affiliateUrl: "https://amzn.to/42DhV5K"
   },
   {
     id: 11,
-    name: "Sapphire Midnight Magic",
-    price: "$30.99",
-    image: "https://m.media-amazon.com/images/I/71+wAfDJMWL._SL1500_.jpg",
-    description: "Deep sapphire blue with gold accents and star patterns",
-    rating: 4.7,
-    reviewCount: 113,
+    name: "Modern Nails For New Year Party",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71FASr5wjzL._SY450_.jpg",
+    description: "Modern nails ready for party vibes.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear11"
+    affiliateUrl: "https://amzn.to/3Itrb5G"
   },
   {
     id: 12,
-    name: "Golden Wishes Collection",
-    price: "$28.99",
-    originalPrice: "$33.99",
-    image: "https://m.media-amazon.com/images/I/71NBay0YIvL._SY450_.jpg",
-    description: "Pure gold finish with wish bone charms and luck symbols",
-    rating: 4.9,
-    reviewCount: 167,
+    name: "Celebrate With Sparkly Nail Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71tUVR5v9xL._SY450_.jpg",
+    description: "Celebrate the night with sparkling nails.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear12"
+    affiliateUrl: "https://amzn.to/4pFFzbI"
   },
   {
     id: 13,
-    name: "Aurora Borealis Nails",
-    price: "$27.99",
-    image: "https://m.media-amazon.com/images/I/71hpFYXL8vL._SL1500_.jpg",
-    description: "Northern lights effect with shifting colors and ethereal glow",
-    rating: 4.8,
-    reviewCount: 152,
+    name: "New Year Glow For Your Nails",
+    price: "$5.86",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/61FE547tfHL._SY450_.jpg",
+    description: "Nails glowing with New Year fashion.",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear13"
+    affiliateUrl: "https://amzn.to/3KlUzv6"
   },
   {
     id: 14,
-    name: "Sequin Party Perfect",
-    price: "$25.99",
-    image: "https://m.media-amazon.com/images/I/71FAxn1rR5L._SL1500_.jpg",
-    description: "Tiny sequin embellishments with party-ready sparkle finish",
-    rating: 4.7,
-    reviewCount: 139,
+    name: "Trendy Party Nails For You",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/41-uxUy3r2L._SY300_SX300_QL70_FMwebp_.jpg",
+    description: "Trendy party-ready nails styled for you.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear14"
+    affiliateUrl: "https://amzn.to/3Kk08dF"
   },
   {
     id: 15,
-    name: "Diamond Dust Luxury",
-    price: "$34.99",
-    image: "https://m.media-amazon.com/images/I/71L8Jt8EcKL._SY450_.jpg",
-    description: "Ultra-premium finish with real diamond dust particles",
-    rating: 4.9,
-    reviewCount: 201,
+    name: "Nails That Sparkle In Style",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/612oSpgFsZL._SX679_.jpg",
+    description: "Sparkling chic nails that shine bright.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear15"
-  }
-];
-
-// Additional 35 products for "Load More" functionality
-const additionalProducts = [
+    affiliateUrl: "https://amzn.to/4pvGHyu"
+  },
   {
     id: 16,
-    name: "Celestial New Beginnings",
-    price: "$33.99",
-    image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400",
-    description: "Cosmic design with planets, stars, and celestial elements",
-    rating: 4.9,
-    reviewCount: 187,
+    name: "Classic Yet Festive Nail Ideas",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/61LQqJMjG9L._SX679_.jpg",
+    description: "Classic yet festive looks for your nails.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear16"
+    affiliateUrl: "https://amzn.to/4gD0rw2"
   },
   {
     id: 17,
-    name: "Opal Dreams Collection",
-    price: "$35.99",
-    originalPrice: "$40.99",
-    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400",
-    description: "Iridescent opal finish with rainbow color shifts",
-    rating: 4.8,
-    reviewCount: 176,
-    isNew: true,
+    name: "Nails To Match New Year Mood",
+    price: "$5.36",
+    originalPrice: "$8.99",
+    image: "https://m.media-amazon.com/images/I/51bfFszAg3L._SY450_.jpg",
+    description: "Nails styled to match New Year mood.",
+    isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear17"
+    affiliateUrl: "https://amzn.to/46mXSuO"
   },
   {
     id: 18,
-    name: "Holographic Midnight",
-    price: "$29.99",
-    image: "https://images.unsplash.com/photo-1482685945432-29a7abf2f466?w=400",
-    description: "Deep black base with holographic rainbow overlay",
-    rating: 4.7,
-    reviewCount: 143,
-    isNew: false,
-    isTrending: true,
+    name: "Creative Looks For Festive Nails",
+    price: "$5.99",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/71uq456lbDL._SY450_.jpg",
+    description: "Creative designs styled for festive nails.",
+    isNew: true,
+    isTrending: false,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear18"
+    affiliateUrl: "https://amzn.to/46vWTIR"
   },
   {
     id: 19,
-    name: "Glitter Bomb Explosion",
-    price: "$24.99",
-    image: "https://m.media-amazon.com/images/I/71PUcXj5YYL._SL1500_.jpg",
-    description: "Maximum sparkle with mixed size glitter in gold and silver",
-    rating: 4.8,
-    reviewCount: 164,
-    isNew: true,
-    isTrending: false,
+    name: "Elegant New Year Nail Styles",
+    price: "$8.54",
+    originalPrice: "$13.99",
+    image: "https://m.media-amazon.com/images/I/71ze-6tO1ZL._SX679_.jpg",
+    description: "Elegant designs made for New Year style.",
+    isNew: false,
+    isTrending: true,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear19"
+    affiliateUrl: "https://amzn.to/480T9A2"
   },
   {
     id: 20,
-    name: "Starlight Serenade",
-    price: "$31.99",
-    originalPrice: "$36.99",
-    image: "https://m.media-amazon.com/images/I/71sPuMmbetL._SL1500_.jpg",
-    description: "Delicate star patterns with twinkling micro-glitter",
-    rating: 4.9,
-    reviewCount: 192,
-    isNew: false,
+    name: "Trendy Nails For Fresh Start",
+    price: "$5.55",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/51xcnfuyqSL._SY300_SX300_QL70_FMwebp_.jpg",
+    description: "Trendy nails styled for fresh beginnings.",
+    isNew: true,
     isTrending: true,
-    stockStatus: "low-stock",
+    stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear20"
+    affiliateUrl: "https://amzn.to/47Z6Yz5"
   },
   {
     id: 21,
-    name: "Midnight Kiss Collection",
-    price: "$27.99",
-    image: "https://m.media-amazon.com/images/I/71-5-NHYeLL._SL1500_.jpg",
-    description: "Romantic deep purples with kiss-shaped glitter accents",
-    rating: 4.6,
-    reviewCount: 128,
-    isNew: true,
+    name: "Nails To Shine Through Night",
+    price: "$5.55",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/71Ct2wmarVL._SX679_.jpg",
+    description: "Celebrate night with nails that shine.",
+    isNew: false,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear21"
+    affiliateUrl: "https://amzn.to/46E1OGr"
   },
   {
     id: 22,
-    name: "Champagne Toast Nails",
-    price: "$26.99",
-    image: "https://m.media-amazon.com/images/I/71CSH8hX06L._SL1500_.jpg",
-    description: "Bubbly champagne color with effervescent sparkle finish",
-    rating: 4.8,
-    reviewCount: 155,
-    isNew: false,
-    isTrending: true,
+    name: "Festive Touch For New Year Nails",
+    price: "$5.55",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/71-jslN7JTL._SX679_.jpg",
+    description: "Festive designs perfect for party nails.",
+    isNew: true,
+    isTrending: false,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear22"
+    affiliateUrl: "https://amzn.to/46Po1m1"
   },
   {
     id: 23,
-    name: "Time Square Lights",
-    price: "$32.99",
-    image: "https://m.media-amazon.com/images/I/81dOrEH7aTL._SL1500_.jpg",
-    description: "Neon-inspired colors with electric glow and city vibes",
-    rating: 4.7,
-    reviewCount: 171,
-    isNew: true,
+    name: "Bright Sparkly Nails For You",
+    price: "$5.55",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/6127EXGLQvL._SX679_.jpg",
+    description: "Bright sparkling nails styled for chic vibe.",
+    isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear23"
+    affiliateUrl: "https://amzn.to/3W7CaVs"
   },
   {
     id: 24,
-    name: "Confetti Cascade",
-    price: "$23.99",
-    image: "https://m.media-amazon.com/images/I/711T6nOvTQL._SY450_.jpg",
-    description: "Layered confetti pieces in festive celebration colors",
-    rating: 4.5,
-    reviewCount: 118,
-    isNew: false,
-    isTrending: false,
+    name: "Stylish New Year Nail Designs",
+    price: "$4.35",
+    originalPrice: "$7.99",
+    image: "https://m.media-amazon.com/images/I/61GBw7xcVSL._SX679_.jpg",
+    description: "Stylish nails perfect for the big night.",
+    isNew: true,
+    isTrending: true,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear24"
+    affiliateUrl: "https://amzn.to/46GZDlv"
   },
   {
     id: 25,
-    name: "Resolution Renewal",
-    price: "$28.99",
-    originalPrice: "$34.99",
-    image: "https://m.media-amazon.com/images/I/71ZpLRPv4OL._SY450_.jpg",
-    description: "Fresh white base with motivational gold script accents",
-    rating: 4.8,
-    reviewCount: 148,
-    isNew: true,
+    name: "Nail Art For Celebration Mood",
+    price: "$5.55",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/71yZpU9Q+eL._SX679_.jpg",
+    description: "Nail art styled to suit celebrations.",
+    isNew: false,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear25"
+    affiliateUrl: "https://amzn.to/46wFpuw"
   },
   {
     id: 26,
-    name: "Zodiac Constellation",
-    price: "$30.99",
-    image: "https://m.media-amazon.com/images/I/71U9wwdKYFL._SY450_.jpg",
-    description: "Astrological designs with constellation mapping and stars",
-    rating: 4.9,
-    reviewCount: 183,
-    isNew: false,
-    isTrending: true,
-    stockStatus: "low-stock",
+    name: "Fresh Festive Looks For Nails",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71rlFKkVYbL._SX679_.jpg",
+    description: "Fresh chic designs for festive nails.",
+    isNew: true,
+    isTrending: false,
+    stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear26"
+    affiliateUrl: "https://amzn.to/4mA6yTl"
   },
   {
     id: 27,
-    name: "Fireworks Finale",
-    price: "$25.99",
-    image: "https://m.media-amazon.com/images/I/41Aj6Irp6+L._SY300_SX300_QL70_FMwebp_.jpg",
-    description: "Grand finale firework patterns with explosive color bursts",
-    rating: 4.7,
-    reviewCount: 136,
-    isNew: true,
-    isTrending: false,
+    name: "Nails To Glow On New Year",
+    price: "$4.85",
+    originalPrice: "$8.99",
+    image: "https://m.media-amazon.com/images/I/61UpHfTPBML._SX679_.jpg",
+    description: "Glow with nails styled for New Year.",
+    isNew: false,
+    isTrending: true,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear27"
+    affiliateUrl: "https://amzn.to/3KksrIL"
   },
   {
     id: 28,
-    name: "Prosperity Gold Rush",
-    price: "$34.99",
-    image: "https://m.media-amazon.com/images/I/71g1ikBufML._SY450_.jpg",
-    description: "Luxurious gold leaf finish with prosperity symbols",
-    rating: 4.9,
-    reviewCount: 205,
-    isNew: false,
+    name: "Trendy Party Looks For Nails",
+    price: "$3.99",
+    originalPrice: "$6.99",
+    image: "https://m.media-amazon.com/images/I/51cQmqjxkbL._SY300_SX300_QL70_FMwebp_.jpg",
+    description: "Trendy looks perfect for party-ready nails.",
+    isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear28"
+    affiliateUrl: "https://amzn.to/3Vw9xBh"
   },
   {
     id: 29,
-    name: "Ball Drop Countdown",
-    price: "$27.99",
-    originalPrice: "$32.99",
-    image: "https://m.media-amazon.com/images/I/71+wAfDJMWL._SL1500_.jpg",
-    description: "Crystal ball design with countdown timer and NYC vibes",
-    rating: 4.8,
-    reviewCount: 159,
-    isNew: true,
+    name: "Creative Festive Nail Art Ideas",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/619+H66mcnL._SX679_.jpg",
+    description: "Creative designs for chic festive nails.",
+    isNew: false,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear29"
+    affiliateUrl: "https://amzn.to/3KkRJXh"
   },
   {
     id: 30,
-    name: "Midnight Masquerade",
-    price: "$31.99",
-    image: "https://m.media-amazon.com/images/I/71NBay0YIvL._SY450_.jpg",
-    description: "Elegant mask patterns with feather textures and pearls",
-    rating: 4.7,
-    reviewCount: 144,
-    isNew: false,
-    isTrending: true,
-    stockStatus: "low-stock",
-    cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear30"
-  },
-  // Products 31-50 would continue here...
-  {
-    id: 31,
-    name: "Sparkler Dreams",
-    price: "$26.99",
-    image: "https://m.media-amazon.com/images/I/71hpFYXL8vL._SL1500_.jpg",
-    description: "Hand-held sparkler effect with trailing light patterns",
-    rating: 4.6,
-    reviewCount: 122,
+    name: "New Year Trends For Chic Nails",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/61whagXRZLL._SX679_.jpg",
+    description: "New Year nail trends styled with flair.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
+    cta: "Ring It In",
+    affiliateUrl: "https://amzn.to/4pKmrJQ"
+  },
+  {
+    id: 31,
+    name: "Celebrate With Stylish Nail Art",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/61H8qsI8MAL._SX679_.jpg",
+    description: "Celebrate fresh beginnings with stylish nails.",
+    isNew: false,
+    isTrending: true,
+    stockStatus: "in-stock",
     cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear31"
+    affiliateUrl: "https://amzn.to/4pG0jA8"
   },
   {
     id: 32,
-    name: "Resolution Glitter",
-    price: "$24.99",
-    image: "https://m.media-amazon.com/images/I/71FAxn1rR5L._SL1500_.jpg",
-    description: "Motivational text overlay with inspiring glitter finish",
-    rating: 4.8,
-    reviewCount: 167,
+    name: "Elegant Festive Nails To Try",
+    price: "$8.16",
+    originalPrice: "$13.99",
+    image: "https://m.media-amazon.com/images/I/71mZAg7wHxL._SX679_.jpg",
+    description: "Elegant festive nails styled for parties.",
+    isNew: true,
+    isTrending: true,
+    stockStatus: "in-stock",
+    cta: "New Year Glow",
+    affiliateUrl: "https://amzn.to/4nM2DUr"
+  },
+  {
+    id: 33,
+    name: "Chic Sparkly Nails For Night",
+    price: "$10.66",
+    originalPrice: "$16.99",
+    image: "https://m.media-amazon.com/images/I/61glum3iVPS._SX679_.jpg",
+    description: "Chic sparkling nails for stylish nights.",
+    isNew: false,
+    isTrending: false,
+    stockStatus: "low-stock",
+    cta: "Ring It In",
+    affiliateUrl: "https://amzn.to/3KkoUug"
+  },
+  {
+    id: 34,
+    name: "Trendy Designs For Party Nails",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/61V0dpU7jhS._SX679_.jpg",
+    description: "Trendy chic designs styled for your nails.",
+    isNew: true,
+    isTrending: false,
+    stockStatus: "in-stock",
+    cta: "Sparkle Now",
+    affiliateUrl: "https://amzn.to/4pFAnEE"
+  },
+  {
+    id: 35,
+    name: "Nails That Shine On Countdown",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/61roaEvAfEL._SX679_.jpg",
+    description: "Countdown-ready nails that shine bright.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear32"
+    affiliateUrl: "https://amzn.to/4mx9P5G"
   },
   {
-    id: 33,
-    name: "Eternal Celebration",
-    price: "$35.99",
-    originalPrice: "$41.99",
-    image: "https://m.media-amazon.com/images/I/71L8Jt8EcKL._SY450_.jpg",
-    description: "Timeless elegance with eternal knot patterns and diamonds",
-    rating: 4.9,
-    reviewCount: 198,
+    id: 36,
+    name: "Premium New Year Collection",
+    price: "$9.99",
+    originalPrice: "$15.99",
+    image: "https://m.media-amazon.com/images/I/71PUcXj5YYL._SL1500_.jpg",
+    description: "Premium collection for New Year celebrations.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ring It In",
-    affiliateUrl: "https://amzn.to/newyear33"
-  },
-  {
-    id: 34,
-    name: "Neon Countdown",
-    price: "$28.99",
-    image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400",
-    description: "Electric neon colors with digital countdown clock design",
-    rating: 4.7,
-    reviewCount: 154,
-    isNew: false,
-    isTrending: false,
-    stockStatus: "low-stock",
-    cta: "Sparkle Now",
-    affiliateUrl: "https://amzn.to/newyear34"
-  },
-  {
-    id: 35,
-    name: "Lucky Penny Wishes",
-    price: "$22.99",
-    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400",
-    description: "Copper penny colors with luck symbols and wish elements",
-    rating: 4.5,
-    reviewCount: 113,
-    isNew: true,
-    isTrending: false,
-    stockStatus: "in-stock",
-    cta: "New Year Glow",
-    affiliateUrl: "https://amzn.to/newyear35"
+    affiliateUrl: "https://amzn.to/newyear36"
   }
 ];
 
 export default function NewYearShop() {
   const [showAllProducts, setShowAllProducts] = useState(false);
-  const [displayProducts, setDisplayProducts] = useState(newYearProducts);
+  const [displayProducts, setDisplayProducts] = useState(newYearProducts.slice(0, 15));
   const [activeFilter, setActiveFilter] = useState('all');
 
   const handleLoadMore = () => {
-    setDisplayProducts([...newYearProducts, ...additionalProducts]);
+    setDisplayProducts(newYearProducts);
     setShowAllProducts(true);
   };
 
@@ -540,7 +503,7 @@ export default function NewYearShop() {
         filteredProducts = newYearProducts;
     }
     
-    setDisplayProducts(showAllProducts ? [...filteredProducts, ...additionalProducts] : filteredProducts);
+    setDisplayProducts(showAllProducts ? filteredProducts : filteredProducts.slice(0, 15));
   };
 
   return (
@@ -571,10 +534,13 @@ export default function NewYearShop() {
             <p className="text-xl md:text-2xl font-light mb-6 text-yellow-100">
               Sparkling Celebrations & Glamorous Designs
             </p>
+            <p className="text-sm text-yellow-200 mb-4 italic">
+              Prices may vary with time - Shop now for best deals
+            </p>
             <div className="flex items-center justify-center space-x-6 text-sm">
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span>
-                50+ Premium Products
+                36 Premium Products
               </div>
               <div className="flex items-center">
                 <span className="w-2 h-2 bg-gold-400 rounded-full mr-2"></span>
@@ -619,7 +585,7 @@ export default function NewYearShop() {
                   : 'bg-white text-gray-600 border-2 border-gray-200 hover:border-yellow-400 hover:shadow-md'
               }`}
             >
-              All Products ({newYearProducts.length + additionalProducts.length})
+              All Products ({newYearProducts.length})
             </button>
             <button 
               onClick={() => handleFilterChange('new')}
@@ -664,17 +630,17 @@ export default function NewYearShop() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   
-                  {/* Hover Image */}
-                  {product.hoverImage && (
-                    <img
-                      src={product.hoverImage}
-                      alt={product.name}
-                      className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                    />
-                  )}
-                  
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Discount Badge */}
+                  {product.originalPrice && (
+                    <div className="absolute top-4 left-4 z-10">
+                      <div className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        SAVE {Math.round(((parseFloat(product.originalPrice.slice(1)) - parseFloat(product.price.slice(1))) / parseFloat(product.originalPrice.slice(1))) * 100)}%
+                      </div>
+                    </div>
+                  )}
                   
                   {/* Price Badge */}
                   <div className="absolute top-4 right-4 z-10">
@@ -689,7 +655,7 @@ export default function NewYearShop() {
                   </div>
                   
                   {/* Status Badges */}
-                  <div className="absolute top-4 left-4 space-y-2 z-10">
+                  <div className="absolute bottom-4 left-4 space-y-2 z-10">
                     {product.isNew && (
                       <div className="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         NEW
@@ -725,21 +691,15 @@ export default function NewYearShop() {
                 
                 {/* Product Info */}
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center">
-                      {[...Array(5)].map((_, i) => (
-                        <svg 
-                          key={i} 
-                          className={`w-4 h-4 ${i < Math.floor(product.rating) ? 'text-yellow-400' : 'text-gray-300'}`} 
-                          fill="currentColor" 
-                          viewBox="0 0 20 20"
-                        >
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                      <span className="text-sm text-gray-600 ml-2">({product.reviewCount})</span>
-                    </div>
-                    
+                  <h3 className="font-semibold text-lg text-gray-800 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors duration-200">
+                    {product.name}
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                    {product.description}
+                  </p>
+
+                  <div className="flex items-center justify-between mb-4">
                     {/* Stock Status Indicator */}
                     <div className="flex items-center">
                       <span className={`w-2 h-2 rounded-full mr-2 ${
@@ -751,14 +711,6 @@ export default function NewYearShop() {
                       </span>
                     </div>
                   </div>
-
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2 line-clamp-2 group-hover:text-purple-600 transition-colors duration-200">
-                    {product.name}
-                  </h3>
-                  
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                    {product.description}
-                  </p>
 
                   <div className="flex items-center justify-between">
                     <div className="text-right">
@@ -787,12 +739,12 @@ export default function NewYearShop() {
             <div className="text-center mt-16">
               <div className="mb-8">
                 <p className="text-gray-600 mb-4">
-                  Showing {displayProducts.length} of {newYearProducts.length + additionalProducts.length} products
+                  Showing {displayProducts.length} of {newYearProducts.length} products
                 </p>
                 <div className="w-full bg-gray-200 rounded-full h-2 max-w-md mx-auto">
                   <div 
                     className="bg-gradient-to-r from-yellow-500 to-purple-500 h-2 rounded-full transition-all duration-300"
-                    style={{ width: `${(displayProducts.length / (newYearProducts.length + additionalProducts.length)) * 100}%` }}
+                    style={{ width: `${(displayProducts.length / newYearProducts.length) * 100}%` }}
                   ></div>
                 </div>
               </div>
@@ -824,17 +776,8 @@ export default function NewYearShop() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                </div>
                 <p className="text-gray-700 mb-4 italic">
-                  "Perfect for New Year's Eve! The Midnight Sparkle Collection was absolutely stunning and lasted all night."
+                  "Perfect for New Year's Eve! The New Year Nails To Shine was absolutely stunning and lasted all night."
                 </p>
                 <div className="text-sm">
                   <div className="font-semibold text-gray-800">Sarah M.</div>
@@ -843,17 +786,8 @@ export default function NewYearShop() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                </div>
                 <p className="text-gray-700 mb-4 italic">
-                  "Quality is amazing! The Champagne Bubbles Glam made me feel so elegant at our celebration."
+                  "Quality is amazing! The Sparkling Nails For Celebration made me feel so elegant at our celebration."
                 </p>
                 <div className="text-sm">
                   <div className="font-semibold text-gray-800">Jessica R.</div>
@@ -862,17 +796,8 @@ export default function NewYearShop() {
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-lg">
-                <div className="flex items-center mb-4">
-                  <div className="flex text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                </div>
                 <p className="text-gray-700 mb-4 italic">
-                  "Fast shipping and gorgeous products. The Fireworks Fantasy collection exceeded my expectations!"
+                  "Fast shipping and gorgeous products. The Trendy Nails For Party Nights collection exceeded my expectations!"
                 </p>
                 <div className="text-sm">
                   <div className="font-semibold text-gray-800">Maria L.</div>

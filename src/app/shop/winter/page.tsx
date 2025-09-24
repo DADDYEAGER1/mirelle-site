@@ -11,7 +11,6 @@ interface Product {
   image: string;
   hoverImage?: string;
   description: string;
-  reviewCount: number;
   isNew: boolean;
   isTrending: boolean;
   stockStatus: "in-stock" | "low-stock" | "out-of-stock";
@@ -31,705 +30,654 @@ const allProducts: Product[] = [
   // Initial 15 products
   {
     id: 1,
-    name: "Frosted Glacier Collection",
-    price: "$24.99",
-    originalPrice: "$39.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    hoverImage: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Icy blue base with crystal shimmer and snowflake accents",
-    reviewCount: 187,
+    name: "Cozy Winter Nail Art Ideas",
+    price: "$3.99",
+    originalPrice: "$6.99",
+    image: "https://m.media-amazon.com/images/I/71ere-tv9LL._SX679_.jpg",
+    description: "Chic seasonal nail designs to elevate your winter style effortlessly.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-frosted-glacier"
+    affiliateUrl: "https://amzn.to/42645sr"
   },
   {
     id: 2,
-    name: "Midnight Snow Storm",
-    price: "$27.99",
-    originalPrice: "$42.99",
-    image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400",
-    description: "Deep navy with silver glitter and holographic finish",
-    reviewCount: 234,
+    name: "Frosted Winter Nail Design",
+    price: "$11.20",
+    originalPrice: "$16.99",
+    image: "https://m.media-amazon.com/images/I/41diirIwGpL._SY300_SX300_QL70_FMwebp_.jpg",
+    description: "Trendy winter nail inspiration with soft frosted hues for any occasion.",
     isNew: false,
     isTrending: true,
     stockStatus: "low-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-midnight-storm"
+    affiliateUrl: "https://amzn.to/3Vzrgrl"
   },
   {
     id: 3,
-    name: "Arctic Crystal Dreams",
-    price: "$22.99",
-    originalPrice: "$35.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Clear base with iridescent crystals and winter sparkle",
-    reviewCount: 156,
+    name: "Elegant Winter Nail Inspiration",
+    price: "$11.20",
+    originalPrice: "$16.99",
+    image: "https://m.media-amazon.com/images/I/71DKUaIzBtL._SX679_.jpg",
+    description: "Stylish cold-season nail looks that enhance your beauty every day.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-arctic-crystal"
+    affiliateUrl: "https://amzn.to/4gIk0mX"
   },
   {
     id: 4,
-    name: "Snowy Pine Forest",
-    price: "$26.99",
-    originalPrice: "$41.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Forest green with white tips and gold leaf details",
-    reviewCount: 198,
+    name: "Snowy White Winter Nails",
+    price: "$11.20",
+    originalPrice: "$16.99",
+    image: "https://m.media-amazon.com/images/I/71Vc13c3QOL._SX679_.jpg",
+    description: "Classic snowy shades that bring timeless charm to your winter nails.",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-snowy-pine"
+    affiliateUrl: "https://amzn.to/42asFbL"
   },
   {
     id: 5,
-    name: "Blizzard Elegance",
-    price: "$29.99",
-    originalPrice: "$44.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "White chrome finish with silver accents and pearl details",
-    reviewCount: 167,
+    name: "Modern Winter Nail Trends",
+    price: "$11.20",
+    originalPrice: "$16.99",
+    image: "https://m.media-amazon.com/images/I/71IHhqVdUeL._SX679_.jpg",
+    description: "Fresh nail ideas to keep your winter manicure updated and stylish.",
     isNew: true,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-blizzard-elegance"
+    affiliateUrl: "https://amzn.to/485awjn"
   },
   {
     id: 6,
-    name: "Frozen Lavender Dreams",
-    price: "$25.99",
-    originalPrice: "$38.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Soft lavender with ice crystal patterns and matte finish",
-    reviewCount: 143,
+    name: "Simple Winter Nail Styles",
+    price: "$5.98",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/81a3XbCzOvL._SY450_.jpg",
+    description: "Easy winter nail inspirations that combine comfort, elegance, and charm.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-frozen-lavender"
+    affiliateUrl: "https://amzn.to/4pzjNWZ"
   },
   {
     id: 7,
-    name: "Winter Berry Frost",
-    price: "$23.99",
-    originalPrice: "$37.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Deep burgundy with frosted tips and gold shimmer",
-    reviewCount: 211,
+    name: "Glamorous Winter Nail Looks",
+    price: "$5.98",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/81IEzE5aDPL._SY450_.jpg",
+    description: "Shiny and elegant nail options perfect for parties and celebrations.",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-winter-berry"
+    affiliateUrl: "https://amzn.to/4gL99bU"
   },
   {
     id: 8,
-    name: "Icicle Magic",
-    price: "$28.99",
-    originalPrice: "$43.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Translucent blue with hanging crystal drops effect",
-    reviewCount: 189,
+    name: "Chic Winter Nail Colors",
+    price: "$5.98",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/81Z4K2c196L._SY450_.jpg",
+    description: "Fashionable shades ideal for brightening up chilly winter months easily.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-icicle-magic"
+    affiliateUrl: "https://amzn.to/4gE5QD7"
   },
   {
     id: 9,
-    name: "Polar Star Collection",
-    price: "$31.99",
-    originalPrice: "$47.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Black base with silver stars and holographic accents",
-    reviewCount: 176,
+    name: "Winter Nail Art Inspiration",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/715ZBzAzbJL._SX679_.jpg",
+    description: "Beautiful designs to help express your personal style this winter.",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-polar-star"
+    affiliateUrl: "https://amzn.to/42JZBYH"
   },
   {
     id: 10,
-    name: "Snowflake Symphony",
-    price: "$26.99",
-    originalPrice: "$40.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Pearl white with delicate snowflake nail art designs",
-    reviewCount: 203,
+    name: "Classic Winter Nail Shades",
+    price: "$7.98",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71SqVKDpklL._SX679_.jpg",
+    description: "Traditional colors that stay relevant and stunning all through winter.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-snowflake-symphony"
+    affiliateUrl: "https://amzn.to/46Dek8S"
   },
   {
     id: 11,
-    name: "Frostbite Glam",
-    price: "$24.99",
-    originalPrice: "$36.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Icy pink with white gradient and crystal embellishments",
-    reviewCount: 158,
+    name: "Trendy Winter Nail Designs",
+    price: "$7.60",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/719YqRuZyEL._SX679_.jpg",
+    description: "Eye-catching patterns and shades for your perfect cold-season manicure.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-frostbite-glam"
+    affiliateUrl: "https://amzn.to/4nO0d7R"
   },
   {
     id: 12,
-    name: "Winter Moon Glow",
-    price: "$27.99",
-    originalPrice: "$41.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Silver chrome with blue undertones and lunar sparkle",
-    reviewCount: 192,
+    name: "Minimalist Winter Nail Ideas",
+    price: "$5.60",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/614DnjFLz1L._SX679_.jpg",
+    description: "Simple yet elegant nail designs that bring sophistication to winter.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-winter-moon"
+    affiliateUrl: "https://amzn.to/4nksymh"
   },
   {
     id: 13,
-    name: "Alpine Adventure",
-    price: "$25.99",
-    originalPrice: "$39.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Mountain-inspired design with snow caps and evergreen tips",
-    reviewCount: 174,
+    name: "Frosty Blue Winter Nails",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/71gu7-RqZnL._SX679_.jpg",
+    description: "Cool blue tones that reflect the essence of frosty winter mornings.",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-alpine-adventure"
+    affiliateUrl: "https://amzn.to/3IylEe6"
   },
   {
     id: 14,
-    name: "Crystal Cave Collection",
-    price: "$30.99",
-    originalPrice: "$45.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Deep purple with crystal formations and gem accents",
-    reviewCount: 165,
+    name: "Stylish Winter Nail Looks",
+    price: "$4.60",
+    originalPrice: "$8.99",
+    image: "https://m.media-amazon.com/images/I/71QaEe2Z4zL._SX679_.jpg",
+    description: "Chic designs to make your winter nails stand out gracefully.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-crystal-cave"
+    affiliateUrl: "https://amzn.to/4nhjPRN"
   },
   {
     id: 15,
-    name: "Frozen Fire",
-    price: "$28.99",
-    originalPrice: "$42.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Orange-red gradient with ice crystal overlay effect",
-    reviewCount: 147,
+    name: "Seasonal Winter Nail Inspiration",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/71QcSH4PulL._SL1500_.jpg",
+    description: "Perfectly curated nail designs suited for cozy winter days.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-frozen-fire"
+    affiliateUrl: "https://amzn.to/4nmAgMQ"
   },
   // Additional 35 products (16-50)
   {
     id: 16,
-    name: "Snowdrift Elegance",
-    price: "$26.99",
-    originalPrice: "$40.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Soft gray with white swirls and silver accents",
-    reviewCount: 139,
+    name: "Shimmery Winter Nail Styles",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/714f58-ImXL._SX679_.jpg",
+    description: "Sparkling shades to make your nails dazzle during cold months.",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-snowdrift"
+    affiliateUrl: "https://amzn.to/46jAtua"
   },
   {
     id: 17,
-    name: "Aurora Borealis",
-    price: "$32.99",
-    originalPrice: "$48.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Multi-colored shimmer mimicking northern lights display",
-    reviewCount: 221,
+    name: "Soft Winter Nail Colors",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/51Wib12LKbL.jpg",
+    description: "Gentle tones designed to complement your everyday winter outfits beautifully.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-aurora"
+    affiliateUrl: "https://amzn.to/3Ki7fDn"
   },
   {
     id: 18,
-    name: "Ice Palace Royal",
-    price: "$29.99",
-    originalPrice: "$44.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Regal blue with silver crown designs and jewel accents",
-    reviewCount: 183,
+    name: "Polished Winter Nail Designs",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/71McdeU-6DL._SX679_.jpg",
+    description: "Refined nail inspirations for a stylish and professional winter look.",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-ice-palace"
+    affiliateUrl: "https://amzn.to/4gDKvKd"
   },
   {
     id: 19,
-    name: "Cabin Fever Chic",
-    price: "$24.99",
-    originalPrice: "$37.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Warm brown with plaid patterns and cozy texture",
-    reviewCount: 156,
+    name: "Gleaming Winter Nail Ideas",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/714E0trqWWL._SX679_.jpg",
+    description: "Radiant shades to highlight your nails with a winter-ready charm.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-cabin-fever"
+    affiliateUrl: "https://amzn.to/3KhMpEa"
   },
   {
     id: 20,
-    name: "Glacier Mint Fresh",
-    price: "$23.99",
-    originalPrice: "$35.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Cool mint green with icy texture and fresh finish",
-    reviewCount: 167,
+    name: "Feminine Winter Nail Styles",
+    price: "$7.50",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71MLgTt1-AL._SX679_.jpg",
+    description: "Elegant nail choices crafted for a soft and feminine winter feel.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-glacier-mint"
+    affiliateUrl: "https://amzn.to/4gZ3Pln"
   },
   {
     id: 21,
-    name: "Velvet Winter Night",
-    price: "$27.99",
-    originalPrice: "$41.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Deep plum velvet finish with gold star accents",
-    reviewCount: 194,
+    name: "Modern Frost Nail Art",
+    price: "$8.80",
+    originalPrice: "$14.99",
+    image: "https://m.media-amazon.com/images/I/71Kzp5C6j+L._SX679_.jpg",
+    description: "Trendy frosted styles that perfectly capture the essence of winter.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-velvet-night"
+    affiliateUrl: "https://amzn.to/3If6iLz"
   },
   {
     id: 22,
-    name: "Frozen Rose Garden",
-    price: "$25.99",
-    originalPrice: "$38.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Dusty rose with frost effect and dried flower details",
-    reviewCount: 172,
+    name: "Classy Winter Nail Inspiration",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/714lyzhqppL._SX679_.jpg",
+    description: "Timeless nail looks that keep your manicure elegant all season.",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-frozen-rose"
+    affiliateUrl: "https://amzn.to/47UVUD1"
   },
   {
     id: 23,
-    name: "Icicle Drip Design",
-    price: "$28.99",
-    originalPrice: "$43.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Clear tips with blue drip effect and crystal details",
-    reviewCount: 148,
+    name: "Sparkling Winter Nail Trends",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/71Z-jPTxf3L._SX679_.jpg",
+    description: "Shimmery nail designs that add glamour to your seasonal style.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-icicle-drip"
+    affiliateUrl: "https://amzn.to/3VzrUVN"
   },
   {
     id: 24,
-    name: "Winter Storm Warning",
-    price: "$30.99",
-    originalPrice: "$46.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Stormy gray with lightning bolt designs and metallic finish",
-    reviewCount: 186,
+    name: "Neutral Winter Nail Ideas",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/710q8+yA1VL._SX679_.jpg",
+    description: "Versatile shades that effortlessly match all winter fashion trends.",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-storm-warning"
+    affiliateUrl: "https://amzn.to/4819ViE"
   },
   {
     id: 25,
-    name: "Cozy Fireplace Glow",
-    price: "$26.99",
-    originalPrice: "$40.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Warm amber with flickering flame effect and gold flakes",
-    reviewCount: 159,
+    name: "Cozy-Inspired Winter Nails",
+    price: "$6.36",
+    originalPrice: "$10.99",
+    image: "https://m.media-amazon.com/images/I/719dd+kNWTL._SX679_.jpg",
+    description: "Warm-toned nails that create a cozy feeling throughout colder days.",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-fireplace-glow"
+    affiliateUrl: "https://amzn.to/3IHAD5r"
   },
   {
     id: 26,
-    name: "Midnight Blizzard",
-    price: "$24.99",
-    originalPrice: "$36.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Black base with white snowflake stamps and silver glitter",
-    reviewCount: 203,
+    name: "Delicate Winter Nail Art",
+    price: "$5.50",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/71t0vKjNsGL._SX679_.jpg",
+    description: "Subtle and stylish nail inspirations that elevate your everyday winter look.",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-midnight-blizzard"
+    affiliateUrl: "https://amzn.to/3IylXWi"
   },
   {
     id: 27,
-    name: "Arctic Fox Luxury",
-    price: "$33.99",
-    originalPrice: "$49.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "White chrome with fox fur texture and premium finish",
-    reviewCount: 178,
+    name: "Frost Kissed Nail Designs",
+    price: "$5.50",
+    originalPrice: "$9.99",
+    image: "https://m.media-amazon.com/images/I/71IpsgNn2TL._SX679_.jpg",
+    description: "Soft icy touches bringing magical winter-inspired beauty to your nails.",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-arctic-fox"
+    affiliateUrl: "https://amzn.to/3IAowXK"
   },
   {
     id: 28,
-    name: "Frozen Waterfall",
-    price: "$27.99",
-    originalPrice: "$42.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Blue gradient with cascading crystal effect design",
-    reviewCount: 164,
+    name: "Christmas Press On Nails",
+    price: "$8.99",
+    originalPrice: "$14.99",
+    image: "https://m.media-amazon.com/images/I/41gIkx7G6TL._SY300_SX300_QL70_FMwebp_.jpg",
+    description: "Snowflake Rectangle Fake Nails, Reusable Artificial Nails For Women Glue On Nails 24 Pcs",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-frozen-waterfall"
+    affiliateUrl: "https://amzn.to/4pMjuZd"
   },
   {
     id: 29,
-    name: "Hot Cocoa Dreams",
-    price: "$25.99",
-    originalPrice: "$38.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Rich brown with marshmallow tips and cream swirls",
-    reviewCount: 191,
+    name: "Sparkling Rhinestones",
+    price: "$8.99",
+    originalPrice: "$14.99",
+    image: "https://m.media-amazon.com/images/I/71E9I+QidKL._SY450_.jpg",
+    description: "Sparkling Rhinestones, Black Reusable Artificial Nails, Women's Acrylic Nails for Christmas 24 pcs",
     isNew: true,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-hot-cocoa"
+    affiliateUrl: "https://amzn.to/46mcieD"
   },
   {
     id: 30,
-    name: "Diamond Dust Collection",
-    price: "$31.99",
-    originalPrice: "$47.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Clear base with fine diamond dust particles and sparkle",
-    reviewCount: 142,
+    name: "Santa Claus Pattern",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71D4TdOXdmL._SY450_.jpg",
+    description: "24 Pcs Red Long Pressed Nails, Santa Claus Pattern Acrylic Pressed Gel, Ballerina Manicure False Nails，Perfect for for Women and Girls Wear",
     isNew: false,
     isTrending: false,
     stockStatus: "low-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-diamond-dust"
+    affiliateUrl: "https://amzn.to/4nhkqmv"
   },
   {
     id: 31,
-    name: "Winter Wonderland Scene",
-    price: "$29.99",
-    originalPrice: "$44.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Scenic nail art with snow-covered trees and village",
-    reviewCount: 175,
+    name: "Snowflake Pattern Nude Acrylic Fake Nails",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71ub7T4DLJL._SY450_.jpg",
+    description: "Christmas Tip Nails, Almond Fake Short Nails, Snowflake Pattern Nude Acrylic Fake Nails, Christmas Nail Art",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-wonderland-scene"
+    affiliateUrl: "https://amzn.to/3VzseDZ"
   },
   {
     id: 32,
-    name: "Frost Kissed Petals",
-    price: "$26.99",
-    originalPrice: "$40.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Soft pink with frosted petal designs and pearl accents",
-    reviewCount: 153,
+    name: "Flesh Color Press-On Nails",
+    price: "$8.99",
+    originalPrice: "$14.99",
+    image: "https://m.media-amazon.com/images/I/71Aaows1WvL._SY450_.jpg",
+    description: "Flesh Color Press-On Nails, Long Fake Nails with Sparkling Rhinestones, Reusable Artificial Nails, Women's Artificial Nails",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-frost-petals"
+    affiliateUrl: "https://amzn.to/47ZJCJv"
   },
   {
     id: 33,
-    name: "Glacier Blue Depths",
-    price: "$28.99",
-    originalPrice: "$43.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Deep ocean blue with ice formations and crystal depths",
-    reviewCount: 168,
+    name: "Christmas Rectangle Fake Nails",
+    price: "$8.99",
+    originalPrice: "$14.99",
+    image: "https://m.media-amazon.com/images/I/71QEKyrCUbL._SY450_.jpg",
+    description: "Red Press On Nails, Christmas Rectangle Fake Nails, Reusable Artificial Nails For Women Glue On Nails 24 Pcs",
     isNew: true,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-glacier-depths"
+    affiliateUrl: "https://amzn.to/3IEKlpa"
   },
   {
     id: 34,
-    name: "Snowy Owl Elegance",
-    price: "$24.99",
-    originalPrice: "$37.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "White and brown feather patterns with gold eye accents",
-    reviewCount: 187,
+    name: "Colorful Wave Fake Nails",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71yQgbqb8uL._SL1500_.jpg",
+    description: "Medium Almond Nail, Colorful Wave Fake Nails, Glitter Artificial Nails for Women and Girls Daily Wear 24 Pcs",
     isNew: false,
     isTrending: true,
-    stockStatus: "low-stock",
+    stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-snowy-owl"
+    affiliateUrl: "https://amzn.to/3Id2cna"
   },
   {
     id: 35,
-    name: "Frozen Lightning",
-    price: "$32.99",
-    originalPrice: "$48.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Electric blue with silver lightning bolts and storm energy",
-    reviewCount: 196,
+    name: "Long Coffin French Pink Glitter Gel Fake Nails",
+    price: "$8.99",
+    originalPrice: "$14.99",
+    image: "https://m.media-amazon.com/images/I/71k2CbQtfZL._SY450_.jpg",
+    description: "Full Coverage Acrylic Fake Nails for Women Girls 24 pcs",
     isNew: true,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-frozen-lightning"
+    affiliateUrl: "https://amzn.to/4nDLsVD"
   },
   {
     id: 36,
-    name: "Winter Solstice Magic",
-    price: "$27.99",
-    originalPrice: "$41.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Deep purple with gold sun designs and celestial sparkle",
-    reviewCount: 161,
+    name: "Snowflake Deer Pattern Acrylic Nails",
+    price: "$7.99",
+    originalPrice: "$12.99",
+    image: "https://m.media-amazon.com/images/I/71YiYYewsxL._SY450_.jpg",
+    description: "Women's and Girls Glued Nails Suitable for Winter Christmas",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-solstice-magic"
+    affiliateUrl: "https://amzn.to/4nMgxFY"
   },
   {
     id: 37,
-    name: "Ice Castle Dreams",
-    price: "$30.99",
-    originalPrice: "$45.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Architectural nail art with crystal palace designs",
-    reviewCount: 174,
+    name: "Snowflake Pattern Acrylic Nails",
+    price: "$8.99",
+    originalPrice: "$14.99",
+    image: "https://m.media-amazon.com/images/I/71ufZIjMOqL._SY450_.jpg",
+    description: "Christmas Winter Ladies and Girls Glued Nails 24 pcs",
     isNew: true,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-ice-castle"
+    affiliateUrl: "https://amzn.to/3IFY7I6"
   },
   {
     id: 38,
-    name: "Powder Snow Fresh",
-    price: "$23.99",
-    originalPrice: "$35.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Matte white with textured powder finish and subtle shimmer",
-    reviewCount: 149,
+    name: "Cute Fake Nails with Multiple Colors",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71rw8iU3QbL._SY450_.jpg",
+    description: "Artificial Nails for Women and Girls for Daily and Christmas Wear 24 Pcs",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-powder-snow"
+    affiliateUrl: "https://amzn.to/4nSuouF"
   },
   {
     id: 39,
-    name: "Frosted Berry Crush",
-    price: "$25.99",
-    originalPrice: "$39.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Deep berry with frost overlay and crystal embellishments",
-    reviewCount: 182,
+    name: "Christmas Press on Nails",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71hTIKw2iBL._SX679_.jpg",
+    description: "Snowflake Star Designs Xmas Black French Tip False Nail Winter Acrylic Stick on Nail for Women 24 Pcs",
     isNew: true,
     isTrending: true,
-    stockStatus: "low-stock",
+    stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-berry-crush"
+    affiliateUrl: "https://amzn.to/4gE7m8h"
   },
   {
     id: 40,
-    name: "Winter Moon Phases",
-    price: "$28.99",
-    originalPrice: "$42.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Black base with silver moon phase progression design",
-    reviewCount: 166,
+    name: "Square Fake Nails with Snowflake Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/61lcaVBlsLL._SX679_.jpg",
+    description: "Snowflake Designs Pink Gradient Xmas False Nail Glitter Full Cover Winter Acrylic Stick on Nail for Women 24 Pcs",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-moon-phases"
+    affiliateUrl: "https://amzn.to/3IoZBqd"
   },
   {
     id: 41,
-    name: "Crystal Cavern Explorer",
-    price: "$31.99",
-    originalPrice: "$47.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Deep teal with crystal formations and gemstone accents",
-    reviewCount: 157,
+    name: "Gingerbread Man Candy Cane Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/61P58BNs4-L._SX679_.jpg",
+    description: "Xmas French Tip False Nails Full Cover Winter Stick on Nail for Women 24 Pcs",
     isNew: true,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-crystal-cavern"
+    affiliateUrl: "https://amzn.to/4nRpePB"
   },
   {
     id: 42,
-    name: "Frozen Ocean Waves",
-    price: "$26.99",
-    originalPrice: "$40.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Blue-green waves with white foam and ice crystal tips",
-    reviewCount: 193,
+    name: "Square Fake Nail with Snowflake Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/61DbXNPwuLL._SX679_.jpg",
+    description: "Xmas False Nails Pink Glitter Full Cover Winter Stick on Nail fo",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-frozen-waves"
+    affiliateUrl: "https://amzn.to/46DmO00"
   },
   {
     id: 43,
-    name: "Starlit Snowfall",
-    price: "$29.99",
-    originalPrice: "$44.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Dark navy with falling snow and twinkling star details",
-    reviewCount: 171,
+    name: "False Nails White Glitter",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71L-1ex+HZL._SX679_.jpg",
+    description: "Full Cover Winter Stick on Nail for Women",
     isNew: true,
     isTrending: true,
-    stockStatus: "low-stock",
+    stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-starlit-snowfall"
+    affiliateUrl: "https://amzn.to/3IEKgll"
   },
   {
     id: 44,
-    name: "Cozy Cable Knit",
-    price: "$24.99",
-    originalPrice: "$36.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Textured beige with cable knit pattern and matte finish",
-    reviewCount: 145,
+    name: "Almond Fake Nails with Snowflake Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71oy0bSC8RL._SX679_.jpg",
+    description: "French Tip False Nail Winter Acrylic Stick on Nail for Women 24 Pcs",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-cable-knit"
+    affiliateUrl: "https://amzn.to/4nSuwdD"
   },
   {
     id: 45,
-    name: "Glacier Mint Julep",
-    price: "$27.99",
-    originalPrice: "$41.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Refreshing mint with gold leaf and crystal ice cubes",
-    reviewCount: 188,
+    name: "Coffin Fake Nail with Box Stripe",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/7175Me-zLEL._SX679_.jpg",
+    description: "French Tip False Nails Glossy Full Cover Winter Stick on Nail for Women 24 Pcs",
     isNew: true,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-mint-julep"
+    affiliateUrl: "https://amzn.to/3ICgn5c"
   },
   {
     id: 46,
-    name: "Winter Phoenix Fire",
-    price: "$33.99",
-    originalPrice: "$49.99",
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-    description: "Orange-red flames with ice blue tips and mythical sparkle",
-    reviewCount: 179,
+    name: "Medium Almond Fake Nail",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71j6ahWMnGL._SX679_.jpg",
+    description: "Snowflake Designs Xmas Silver Glitter French Tip False Nails Winter Acrylic Stick on Nail for Women 24 Pcs",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-phoenix-fire"
+    affiliateUrl: "https://amzn.to/4nnWQVk"
   },
   {
     id: 47,
-    name: "Ice Princess Crown",
-    price: "$30.99",
-    originalPrice: "$45.99",
-    image: "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
-    description: "Royal blue with crown designs and jeweled accents",
-    reviewCount: 162,
+    name: "Snowflake Candy Gingerbread Man Bow Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/610ER0NYcEL._SX679_.jpg",
+    description: "Xmas False Nails Winter Acrylic Matte Stick on Nail for Women 24 Pcs",
     isNew: true,
     isTrending: true,
-    stockStatus: "low-stock",
+    stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-princess-crown"
+    affiliateUrl: "https://amzn.to/4mBvTMt"
   },
   {
     id: 48,
-    name: "Frozen Time Capsule",
-    price: "$26.99",
-    originalPrice: "$39.99",
-    image: "https://images.unsplash.com/photo-1607706189992-eae578626c86?w=400",
-    description: "Clear with suspended winter elements and vintage charm",
-    reviewCount: 154,
+    name: "Snowflake Christmas Tree Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/61+ixb7jKqL._SX679_.jpg",
+    description: "Xmas False Nail Winter Acrylic Stick on Nail for Women 24 Pcs",
     isNew: false,
     isTrending: false,
     stockStatus: "in-stock",
     cta: "Ice Queen",
-    affiliateUrl: "https://amazon.com/winter-nails-time-capsule"
+    affiliateUrl: "https://amzn.to/42OGm02"
   },
   {
     id: 49,
-    name: "Alpine Snow Peak",
-    price: "$28.99",
-    originalPrice: "$43.99",
-    image: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=400",
-    description: "Mountain peak design with snow caps and evergreen details",
-    reviewCount: 195,
+    name: "Short Square Fake Nails with Snowflake Box Designs",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/71oeaXQtEAL._SX679_.jpg",
+    description: "Xmas Hat French Tip False Nail Winter Pink Glitter Stick on Nail",
     isNew: true,
     isTrending: false,
-    stockStatus: "in-stock",
+    stockStatus: "low-stock",
     cta: "Winter Wonder",
-    affiliateUrl: "https://amazon.com/winter-nails-alpine-peak"
+    affiliateUrl: "https://amzn.to/4gBVsvC"
   },
   {
     id: 50,
-    name: "Midnight Aurora",
-    price: "$32.99",
-    originalPrice: "$48.99",
-    image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400",
-    description: "Dark base with dancing northern lights and cosmic shimmer",
-    reviewCount: 207,
+    name: "Green French Tip Medium Fake Nails",
+    price: "$6.99",
+    originalPrice: "$11.99",
+    image: "https://m.media-amazon.com/images/I/81vLh62a+5L._SY450_.jpg",
+    description: "Glossy Finished Reusable False Nails with Adhesive Glue Tabs",
     isNew: false,
     isTrending: true,
     stockStatus: "in-stock",
     cta: "Cozy Vibes",
-    affiliateUrl: "https://amazon.com/winter-nails-midnight-aurora"
+    affiliateUrl: "https://amzn.to/3IhECpj"
   }
 ];
 
@@ -737,17 +685,17 @@ const allProducts: Product[] = [
 const testimonials: Testimonial[] = [
   {
     name: "Sarah M.",
-    review: "The Frosted Glacier Collection is absolutely stunning! The quality exceeded my expectations and lasted weeks.",
+    review: "The Cozy Winter Nail Art Ideas are absolutely stunning! The quality exceeded my expectations and lasted weeks.",
     verified: true
   },
   {
     name: "Emma L.",
-    review: "Perfect winter vibes! The Arctic Crystal Dreams set got so many compliments at holiday parties.",
+    review: "Perfect winter vibes! The Frosted Winter Nail Design set got so many compliments at holiday parties.",
     verified: true
   },
   {
     name: "Jessica R.",
-    review: "Amazing customer service and beautiful packaging. The Winter Wonder designs are so unique and elegant.",
+    review: "Amazing customer service and beautiful packaging. The Elegant Winter Nail Inspiration designs are so unique and elegant.",
     verified: true
   }
 ];
@@ -756,19 +704,19 @@ const testimonials: Testimonial[] = [
 const relatedCategories = [
   {
     name: "Fall",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500",
+    image: "https://m.media-amazon.com/images/I/61n1fQ4Em7L._SY450_.jpg",
     link: "/shop/fall",
     description: "Autumn-inspired nail designs"
   },
   {
     name: "Trendy", 
-    image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500",
+    image: "https://m.media-amazon.com/images/I/41o9b6VRcmL._SY300_SX300_QL70_FMwebp_.jpg",
     link: "/shop/trendy",
     description: "Latest trending nail styles"
   },
   {
     name: "Christmas",
-    image: "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=500", 
+    image: "https://m.media-amazon.com/images/I/41XKiwAdVYL._SY300_SX300_QL70_FMwebp_.jpg", 
     link: "/shop/christmas",
     description: "Festive holiday nail collections"
   }
@@ -779,13 +727,6 @@ const WinterNailsCategory = () => {
   const [currentFilter, setCurrentFilter] = useState<string>("All Products");
   const [showLoadMore, setShowLoadMore] = useState<boolean>(true);
   const [showAffiliateButton, setShowAffiliateButton] = useState<boolean>(false);
-
-  // Calculate discount percentage
-  const calculateDiscount = (original: string, discounted: string): number => {
-    const originalPrice = parseFloat(original.slice(1));
-    const discountedPrice = parseFloat(discounted.slice(1));
-    return Math.round(((originalPrice - discountedPrice) / originalPrice) * 100);
-  };
 
   // Filter products based on selected filter
   const filterProducts = (filter: string): void => {
@@ -872,9 +813,12 @@ const WinterNailsCategory = () => {
             <p className="text-xl mb-6 text-blue-100">
               Embrace the magic of winter with our crystalline collection of icy elegance and cozy sophistication
             </p>
+            <p className="text-sm text-blue-200 mb-4 italic">
+              Prices may vary with time - Shop now for best deals
+            </p>
             <div className="flex items-center justify-center bg-white/20 px-6 py-2 rounded-full text-white text-sm">
               <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-              50+ Winter Designs Available
+              50 Winter Designs Available
             </div>
           </div>
         </div>
@@ -921,13 +865,6 @@ const WinterNailsCategory = () => {
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                {product.hoverImage && (
-                  <img
-                    src={product.hoverImage}
-                    alt={`${product.name} alternate`}
-                    className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  />
-                )}
                 
                 {/* Status badges */}
                 <div className="absolute top-4 left-4 flex flex-col gap-2">
@@ -948,8 +885,15 @@ const WinterNailsCategory = () => {
                   )}
                 </div>
 
+                {/* Discount Badge */}
+                <div className="absolute top-4 right-4">
+                  <span className="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                    SAVE {Math.round(((parseFloat(product.originalPrice.slice(1)) - parseFloat(product.price.slice(1))) / parseFloat(product.originalPrice.slice(1))) * 100)}%
+                  </span>
+                </div>
+
                 {/* Stock status indicator */}
-                <div className="absolute top-4 right-4 flex items-center gap-2">
+                <div className="absolute bottom-4 right-4 flex items-center gap-2">
                   <div className={`w-3 h-3 rounded-full ${getStockColor(product.stockStatus)}`}></div>
                 </div>
 
@@ -976,14 +920,6 @@ const WinterNailsCategory = () => {
                       {product.price}
                     </span>
                   </div>
-                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
-                    SAVE {Math.round(((parseFloat(product.originalPrice.slice(1)) - parseFloat(product.price.slice(1))) / parseFloat(product.originalPrice.slice(1))) * 100)}%
-
-                  </span>
-                </div>
-
-                <div className="text-sm text-gray-600 mb-4">
-                  {product.reviewCount} reviews
                 </div>
 
                 <a
@@ -1013,10 +949,10 @@ const WinterNailsCategory = () => {
             </button>
           ) : (
             <button
-              onClick={() => window.open('https://example-affiliate-store.com/winter-nails', '_blank')}
+              onClick={() => window.open('https://amzn.to/46wNejL')}
               className="inline-flex items-center bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white px-12 py-4 rounded-2xl font-bold text-lg hover:from-blue-700 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
             >
-              ❄️ Shop Complete Winter Collection
+              Shop Complete Winter Collection
               <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

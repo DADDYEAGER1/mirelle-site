@@ -10,8 +10,6 @@ interface Product {
   image: string;
   hoverImage?: string;
   description: string;
-  rating: number;
-  reviewCount: number;
   isNew: boolean;
   isTrending: boolean;
   stockStatus: "in-stock" | "low-stock" | "out-of-stock";
@@ -26,756 +24,448 @@ const FallNailsCategory = () => {
   const initialProducts: Product[] = [
     {
       id: 1,
-      name: "Autumn Maple Glaze Collection",
-      price: "$24.99",
-      originalPrice: "$39.99",
-      image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&h=600&fit=crop",
-      description: "Rich amber base with golden maple leaf shimmer finish",
-      rating: 4.8,
-      reviewCount: 156,
+      name: "Red French Tip Fake Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71CBJuoT6rL._SX679_.jpg",
+      description: "False Nails with Designs Cute Christmas Hat Snowflake Bow Glossy Glue on Nails for Women Girls 24 Pcs",
       isNew: true,
       isTrending: false,
       stockStatus: "in-stock",
       cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/fall-maple-glaze"
+      affiliateUrl: "https://amzn.to/3W95haQ"
     },
     {
       id: 2,
-      name: "Pumpkin Spice Matte Luxe",
-      price: "$27.99",
-      originalPrice: "$42.99",
-      image: "https://images.unsplash.com/photo-1583847411558-66f1404bd9e2?w=400&h=600&fit=crop",
-      description: "Warm terracotta matte with subtle copper undertones",
-      rating: 4.7,
-      reviewCount: 203,
+      name: "Full Cover Elk Holly False Nails",
+      price: "$6.99",
+      originalPrice: "$11.99",
+      image: "https://m.media-amazon.com/images/I/71EVLUzXlNL._SX679_.jpg",
+      description: "Full Cover Elk Holly False Nails with Designs Glossy Glue on Nails Cute Acrylic Nails Manicure Artificial Nails for Women Girls 24Pcs",
       isNew: false,
       isTrending: true,
       stockStatus: "low-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/pumpkin-spice-matte"
+      affiliateUrl: "https://amzn.to/46ShK95"
     },
     {
       id: 3,
-      name: "Burgundy Wine Velvet",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&h=600&fit=crop",
-      description: "Deep burgundy with velvet finish and wine-dark depth",
-      rating: 4.9,
-      reviewCount: 178,
+      name: "Medium Almond Winter Fake Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71EaoVoCteL._SX679_.jpg",
+      description: "French Tip Fake Nails with Xmas Hat Designs Glossy Glue on Nails Cute Acrylic Manicure",
       isNew: false,
       isTrending: true,
       stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/burgundy-wine-velvet"
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/46lXwVf"
     },
     {
       id: 4,
-      name: "Golden Harvest Shimmer",
-      price: "$23.99",
-      originalPrice: "$37.99",
-      image: "https://images.unsplash.com/photo-1607186425648-74e0ae0e8fa5?w=400&h=600&fit=crop",
-      description: "Warm gold with harvest wheat shimmer particles",
-      rating: 4.6,
-      reviewCount: 134,
+      name: "Christmas Press on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71v-89ByXIL._SX679_.jpg",
+      description: "Fake Nails Full Cover Red French Tip Fake Nails with Xmas Hat Designs Glossy Glue on Nails Cute Acrylic Manicure",
       isNew: true,
       isTrending: false,
       stockStatus: "in-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/golden-harvest-shimmer"
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/46GTvtp"
     },
     {
       id: 5,
-      name: "Cinnamon Bark Chrome",
-      price: "$29.99",
-      originalPrice: "$45.99",
-      image: "https://images.unsplash.com/photo-1618922710403-71b2b5aa9cb6?w=400&h=600&fit=crop",
-      description: "Chrome finish with warm cinnamon and bark textures",
-      rating: 4.8,
-      reviewCount: 189,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/cinnamon-bark-chrome"
+      name: "Xmas Hat Designs Glossy Glue on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71p4yAwhD4L._SX679_.jpg",
+      description: "French Tip Fake Nails with Xmas Hat Designs Glossy Glue on Nails Cute Acrylic Nails Artificial Nails for Women Girls 24Pcs",
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Cozy Vibes",
+      affiliateUrl: "https://amzn.to/4myfmZM"
     },
     {
       id: 6,
-      name: "Cranberry Jewel Tone",
-      price: "$25.99",
-      originalPrice: "$39.99",
-      image: "https://images.unsplash.com/photo-1607822214992-0bb6eae35f16?w=400&h=600&fit=crop",
-      description: "Rich cranberry with jewel-like depth and shine",
-      rating: 4.7,
-      reviewCount: 167,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/cranberry-jewel-tone"
+      name: "Christmas Tree Snowflake Swirl",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/719prULbaRL._SX679_.jpg",
+      description: "Red Fake Nails False Nails with Designs Christmas Tree Snowflake Swirl Glossy Glue on Nails Stick on Nails for Women Girls 24 Pcs",
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/3IrIRi4"
     },
     {
       id: 7,
-      name: "Forest Pine Magnetic",
-      price: "$31.99",
-      originalPrice: "$47.99",
-      image: "https://images.unsplash.com/photo-1622737147521-49136a5761ed?w=400&h=600&fit=crop",
-      description: "Deep forest green with magnetic cat-eye effect",
-      rating: 4.9,
-      reviewCount: 145,
-      isNew: false,
-      isTrending: true,
+      name: "Snowflake Shimmer Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71SYbKM4pPL._SX679_.jpg",
+      description: "French Tip Fake Nails Green False Nails with Designs Snowflake Shimmer Nails Glossy Glue on Nails Stick on Nails for Women Girls 24 Pcs",
+      isNew: true,
+      isTrending: false,
       stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/forest-pine-magnetic"
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/4pEm1o8"
     },
     {
       id: 8,
-      name: "Caramel Apple Gloss",
-      price: "$24.99",
-      originalPrice: "$38.99",
-      image: "https://images.unsplash.com/photo-1609139003551-ee40f5f73ec0?w=400&h=600&fit=crop",
-      description: "Sweet caramel with apple-red undertones and gloss",
-      rating: 4.6,
-      reviewCount: 198,
-      isNew: true,
-      isTrending: false,
+      name: "Cute Cake Candy Full Cover",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71xesbf7BxL._SX679_.jpg",
+      description: "Brown French Tip Fake Nails False Nails with Designs Cute Cake Candy Full Cover Glossy Glue on Nails Stick on Nails for Women Girls 24 Pcs",
+      isNew: false,
+      isTrending: true,
       stockStatus: "in-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/caramel-apple-gloss"
+      affiliateUrl: "https://amzn.to/46mFqlS"
     },
     {
       id: 9,
-      name: "Chestnut Brown Satin",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1617554677508-94c1ec71a42f?w=400&h=600&fit=crop",
-      description: "Warm chestnut brown with luxurious satin finish",
-      rating: 4.8,
-      reviewCount: 172,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/chestnut-brown-satin"
+      name: "White Bow Gingerbread Man",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71d5N2BQWJL._SX679_.jpg",
+      description: "Almond MABKJLF Cute Fake Nails False Nails with Designs White Bow Gingerbread Man Glossy Glue on Nails Stick on Nails for Women Girls 24 Pcs",
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/47XtY1p"
     },
     {
       id: 10,
-      name: "Copper Penny Metallic",
-      price: "$28.99",
-      originalPrice: "$43.99",
-      image: "https://images.unsplash.com/photo-1610887439844-a07d22ad2065?w=400&h=600&fit=crop",
-      description: "Brilliant copper metallic with penny-bright shimmer",
-      rating: 4.7,
-      reviewCount: 159,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/copper-penny-metallic"
+      name: "Candy Cane Glitter Glossy Glue on Nails",
+      price: "$7.77",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/71bK2wPRpCL._SX679_.jpg",
+      description: "Full Cover White Snow False Nails with Designs Candy Cane Glitter Glossy Glue on Nails Acrylic Manicure Artificial Nails for Women Girls",
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/4gCe6nj"
     },
     {
       id: 11,
-      name: "Plum Harvest Cream",
-      price: "$25.99",
-      originalPrice: "$40.99",
-      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&h=600&fit=crop",
-      description: "Deep plum with harvest cream undertones and smooth finish",
-      rating: 4.9,
-      reviewCount: 184,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/plum-harvest-cream"
-    },
-    {
-      id: 12,
-      name: "Rust Orange Matte",
-      price: "$23.99",
-      originalPrice: "$36.99",
-      image: "https://images.unsplash.com/photo-1615739675564-16e4f0b7c5c6?w=400&h=600&fit=crop",
-      description: "Warm rust orange with velvety matte texture",
-      rating: 4.6,
-      reviewCount: 141,
+      name: "Snowflake Rhinestones Glossy Glue on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/61GNYqpBJQL._SX679_.jpg",
+      description: "Pink & White Ombre Fake Nails False Nails with Designs Snowflake Rhinestones Glossy Glue on Nails Stick on Nails for Women Girls 24 Pcs",
       isNew: true,
       isTrending: false,
       stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/rust-orange-matte"
+      cta: "Cozy Vibes",
+      affiliateUrl: "https://amzn.to/4mszyMD"
     },
     {
-      id: 13,
-      name: "Mahogany Wood Stain",
-      price: "$27.99",
-      originalPrice: "$42.99",
-      image: "https://images.unsplash.com/photo-1618213837799-25d5552820d3?w=400&h=600&fit=crop",
-      description: "Rich mahogany with wood-stain depth and warmth",
-      rating: 4.8,
-      reviewCount: 167,
+      id: 12,
+      name: "Cute Christmas Hat",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/61SQxbJZJqL._SX679_.jpg",
+      description: "Christmas Press on Nails Medium Almond MABKJLF Red French Tip",
       isNew: false,
       isTrending: true,
       stockStatus: "in-stock",
       cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/mahogany-wood-stain"
+      affiliateUrl: "https://amzn.to/46v2g9O"
     },
     {
-      id: 14,
-      name: "Amber Honey Glaze",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1619266465172-02a7c59d8819?w=400&h=600&fit=crop",
-      description: "Golden amber with honey-sweet glaze and warmth",
-      rating: 4.7,
-      reviewCount: 195,
+      id: 13,
+      name: "Designs Silver Glitter Swirl Glossy Glue on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71QiUKO-nVL._SX679_.jpg",
+      description: "Christmas Press on Nails Medium Almond MABKJLF Red French Tip Fake Nails False Nails with Designs Silver Glitter Swirl Glossy Glue on Nails",
       isNew: true,
       isTrending: false,
       stockStatus: "low-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/amber-honey-glaze"
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/46J4kv8"
     },
     {
-      id: 15,
-      name: "Burnt Sienna Clay",
-      price: "$24.99",
-      originalPrice: "$38.99",
-      image: "https://images.unsplash.com/photo-1620804993944-fa9b5d382bb5?w=400&h=600&fit=crop",
-      description: "Earthy burnt sienna with clay-like matte finish",
-      rating: 4.9,
-      reviewCount: 153,
+      id: 14,
+      name: "Almond MABKJLF White French Tip",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71gyg085s7L._SX679_.jpg",
+      description: "Fake Nails False Nails with Designs Full Cover Glossy Glue on Nails Stick on Nails Acrylic Nails for Women Girls 24 Pcs",
       isNew: false,
       isTrending: true,
       stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/burnt-sienna-clay"
+      cta: "Cozy Vibes",
+      affiliateUrl: "https://amzn.to/4mwR7v5"
+    },
+    {
+      id: 15,
+      name: "Snowflake Rhinestones",
+      price: "$7.99",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/710prCczxCL._SX679_.jpg",
+      description: "Christmas Press on Nails Short Almond MABKJLF French Tip Fake Nails Pink False Nails with Designs Snowflake Rhinestones Full Cover Glossy",
+      isNew: true,
+      isTrending: false,
+      stockStatus: "in-stock",
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/4muIIbm"
     }
   ];
 
   const additionalProducts: Product[] = [
     {
       id: 16,
-      name: "Spiced Wine Velvet",
-      price: "$29.99",
-      originalPrice: "$45.99",
-      image: "https://images.unsplash.com/photo-1621607512214-68297480165e?w=400&h=600&fit=crop",
-      description: "Deep spiced wine with luxurious velvet texture",
-      rating: 4.8,
-      reviewCount: 176,
-      isNew: true,
-      isTrending: false,
+      name: "Wine Red Fake Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71FzNfKZKQL._SX679_.jpg",
+      description: "Christmas Press on Nails Short Almond MABKJLF Wine Red Fake Nails False Nails with Christmas Tree Designs Winter False Nails Glossy Glue on Nails Xmas Acrylic Nails for Women Girls 24 Pcs",
+      isNew: false,
+      isTrending: true,
       stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/spiced-wine-velvet"
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/42FYLvV"
     },
     {
       id: 17,
-      name: "Nutmeg Spice Shimmer",
-      price: "$25.99",
-      originalPrice: "$40.99",
-      image: "https://images.unsplash.com/photo-1622401896088-27e8c2c0ef3c?w=400&h=600&fit=crop",
-      description: "Warm nutmeg with spice-infused shimmer particles",
-      rating: 4.7,
-      reviewCount: 164,
-      isNew: false,
-      isTrending: true,
+      name: "Swirl Snowflake Red & White",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71PVXHeF6PL._SX679_.jpg",
+      description: "Christmas Press on Nails Medium Almond MABKJLF French Tip Fake Nails False Nails with Designs Swirl Snowflake Red & White Glossy Glue on Nails",
+      isNew: true,
+      isTrending: false,
       stockStatus: "low-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/nutmeg-spice-shimmer"
+      affiliateUrl: "https://amzn.to/4mQpEox"
     },
     {
       id: 18,
-      name: "Persimmon Sunset Glow",
-      price: "$27.99",
-      originalPrice: "$42.99",
-      image: "https://images.unsplash.com/photo-1623243899947-c2e99b7d18f6?w=400&h=600&fit=crop",
-      description: "Vibrant persimmon with sunset glow finish",
-      rating: 4.6,
-      reviewCount: 188,
-      isNew: true,
-      isTrending: false,
+      name: "Santa Hat Bow",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71DHBVnVTVL._SX679_.jpg",
+      description: "Christmas Press on Nails Medium Almond MABKJLF Red French Tip",
+      isNew: false,
+      isTrending: true,
       stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/persimmon-sunset-glow"
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/4mwReqv"
     },
     {
       id: 19,
-      name: "Smoky Quartz Chrome",
-      price: "$31.99",
-      originalPrice: "$47.99",
-      image: "https://images.unsplash.com/photo-1624287911901-c1c7fa7c4e8a?w=400&h=600&fit=crop",
-      description: "Smoky quartz with mirror chrome finish and depth",
-      rating: 4.9,
-      reviewCount: 142,
-      isNew: false,
+      name: "Nightmare Christmas Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71bdgB15-hL._SX679_.jpg",
+      description: "Christmas Press on Nails Medium Almond Winter Fake Nails Red Matte Full Cover Nightmare Christmas Nails",
+      isNew: true,
       isTrending: true,
       stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/smoky-quartz-chrome"
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/427kFIv"
     },
     {
       id: 20,
-      name: "Pecan Pie Bronze",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1625052896114-05b6a4d7c9ef?w=400&h=600&fit=crop",
-      description: "Rich pecan bronze with pie-crust warmth",
-      rating: 4.8,
-      reviewCount: 171,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
+      name: "Snowflake Reindeer Glossy Glue on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71hxowxKcyL._SX679_.jpg",
+      description: "Christmas Press on Nails Medium Almond MABKJLF Winter Fake Nails Nude Red False Nails with Designs Snowflake Reindeer Glossy Glue on Nails",
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/pecan-pie-bronze"
+      affiliateUrl: "https://amzn.to/4ndmXOF"
     },
     {
       id: 21,
-      name: "Mulberry Wine Stain",
-      price: "$28.99",
-      originalPrice: "$43.99",
-      image: "https://images.unsplash.com/photo-1626183404694-c2dbf6db4c24?w=400&h=600&fit=crop",
-      description: "Deep mulberry with wine-stain richness and depth",
-      rating: 4.7,
-      reviewCount: 156,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/mulberry-wine-stain"
+      name: "Reindeer Designs",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/716cur08RaL._SX679_.jpg",
+      description: "Winter Press on Nails - Medium Almond Nude Pink False Nails with Heart & Reindeer Designs, Silver Glitter, Glossy Finish",
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/4nmHznM"
     },
     {
       id: 22,
-      name: "Acorn Cap Brown",
-      price: "$24.99",
-      originalPrice: "$38.99",
-      image: "https://images.unsplash.com/photo-1627423067780-c5b9e7f02c6a?w=400&h=600&fit=crop",
-      description: "Natural acorn brown with cap-like matte finish",
-      rating: 4.6,
-      reviewCount: 143,
-      isNew: true,
-      isTrending: false,
+      name: "Stars Gnome Full Cover Glossy Glue on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71qt-mIiALL._SX679_.jpg",
+      description: "Purple Shimmer French Tip Fake Nails False Nails with Designs Stars Gnome Full Cover Glossy Glue on Nails Stick on Nails for Women",
+      isNew: false,
+      isTrending: true,
       stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/acorn-cap-brown"
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/4mwRfe3"
     },
     {
       id: 23,
-      name: "Pear Brandy Gloss",
-      price: "$27.99",
-      originalPrice: "$42.99",
-      image: "https://images.unsplash.com/photo-1628485568925-e67a5d6e8f43?w=400&h=600&fit=crop",
-      description: "Golden pear with brandy warmth and high gloss",
-      rating: 4.8,
-      reviewCount: 179,
-      isNew: false,
-      isTrending: true,
+      name: "Candy Stars Full Cover Glossy Glue on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71zyjYWtJ3L._SX679_.jpg",
+      description: "Christmas Press on Nails Short Almond MABKJLF French Tip Fake Nails",
+      isNew: true,
+      isTrending: false,
       stockStatus: "in-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/pear-brandy-gloss"
+      affiliateUrl: "https://amzn.to/4pEsPBY"
     },
     {
       id: 24,
-      name: "Cedar Wood Satin",
-      price: "$25.99",
-      originalPrice: "$40.99",
-      image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=400&h=600&fit=crop",
-      description: "Warm cedar wood with smooth satin texture",
-      rating: 4.9,
-      reviewCount: 162,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/cedar-wood-satin"
+      name: "Cover Candy Cane",
+      price: "$7.77",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/61PAybIalLL._SX679_.jpg",
+      description: "Christmas Press on Nails Short Almond Winter French Tip Fake Nails Red Full Cover Candy Cane False Nails with Designs Glossy Glue on Nails",
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/46PsbdA"
     },
     {
       id: 25,
-      name: "Butterscotch Swirl",
-      price: "$23.99",
-      originalPrice: "$36.99",
-      image: "https://images.unsplash.com/photo-1630728923585-c4f4e6b3e1aa?w=400&h=600&fit=crop",
-      description: "Sweet butterscotch with creamy swirl patterns",
-      rating: 4.7,
-      reviewCount: 187,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/butterscotch-swirl"
+      name: "Christmas Hat Snowflake Glossy Glue on Nails",
+      price: "$7.77",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/61zDTSQkOZL._SX679_.jpg",
+      description: "Red Fake Nails Winter False Nails with Designs Christmas Hat Snowflake Glossy Glue on Nails Xmas Acrylic Nails for Women Girls 24 Pcs",
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/46CmJJZ"
     },
     {
       id: 26,
-      name: "Espresso Bean Matte",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1631789235464-2c2e5c8b1f8d?w=400&h=600&fit=crop",
-      description: "Rich espresso bean with perfect matte finish",
-      rating: 4.8,
-      reviewCount: 154,
-      isNew: true,
-      isTrending: false,
+      name: "Candy Cane Holly False Nails with Xmas Lights",
+      price: "$7.77",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/71sK-E9116L._SX679_.jpg",
+      description: "Christmas Press on Nails Medium Almond Winter French Tip Fake Nails Candy Cane Holly False Nails with Xmas Lights",
+      isNew: false,
+      isTrending: true,
       stockStatus: "in-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/espresso-bean-matte"
+      affiliateUrl: "https://amzn.to/42NMx4v"
     },
     {
       id: 27,
-      name: "Hazelnut Cream Shimmer",
-      price: "$28.99",
-      originalPrice: "$43.99",
-      image: "https://images.unsplash.com/photo-1632847895123-f4d5c6e7b8aa?w=400&h=600&fit=crop",
-      description: "Creamy hazelnut with delicate shimmer finish",
-      rating: 4.6,
-      reviewCount: 168,
-      isNew: false,
-      isTrending: true,
+      name: "Cover Pink Swirl False Nails",
+      price: "$7.77",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/71u7SXnUFUL._SX679_.jpg",
+      description: "Cover Pink Swirl False Nails with Designs Glossy Glue on Nails White Acrylic Nails Artificial Nails for Women Girls 24Pcs",
+      isNew: true,
+      isTrending: false,
       stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/hazelnut-cream-shimmer"
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/48sqFiQ"
     },
     {
       id: 28,
-      name: "Cognac Leather Chrome",
-      price: "$30.99",
-      originalPrice: "$46.99",
-      image: "https://images.unsplash.com/photo-1633912345678-c4f5e6b9d2aa?w=400&h=600&fit=crop",
-      description: "Rich cognac with leather-like chrome finish",
-      rating: 4.9,
-      reviewCount: 139,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/cognac-leather-chrome"
+      name: "Christmas Hat Snowflake Bow Flames",
+      price: "$6.99",
+      originalPrice: "$11.99",
+      image: "https://m.media-amazon.com/images/I/61zDTSQkOZL._SX679_.jpg",
+      description: "Christmas Hat Snowflake Bow Flames Glossy Glue on Nails Acrylic Nails for Women Girls 24 Pcs",
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/46GUmu7"
     },
     {
       id: 29,
-      name: "Walnut Shell Brown",
-      price: "$24.99",
-      originalPrice: "$38.99",
-      image: "https://images.unsplash.com/photo-1634976543987-a1b2c3d4e5f6?w=400&h=600&fit=crop",
-      description: "Natural walnut shell with earthy brown tones",
-      rating: 4.7,
-      reviewCount: 175,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
+      name: "Cane Candy Bow Full Cover",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/71VhR5-HDOL._SX679_.jpg",
+      description: "Winter False Nails with Designs Cane Candy Bow Full Cover Glossy Glue on Nails Xmas Acrylic Nails for Women Girls 24 Pcs",
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/walnut-shell-brown"
+      affiliateUrl: "https://amzn.to/46wvjK4"
     },
     {
       id: 30,
-      name: "Cider Spice Glaze",
-      price: "$27.99",
-      originalPrice: "$42.99",
-      image: "https://images.unsplash.com/photo-1635041234567-b8c9d0e1f2aa?w=400&h=600&fit=crop",
-      description: "Warm cider with spice-infused glaze finish",
-      rating: 4.8,
-      reviewCount: 161,
-      isNew: true,
-      isTrending: false,
+      name: "Snowflake Glitter Blue White Glossy Glue on Nails",
+      price: "$5.99",
+      originalPrice: "$9.99",
+      image: "https://m.media-amazon.com/images/I/61P+c6iNJML._SX679_.jpg",
+      description: "French Tip Fake Nails Winter False Nails with Designs Snowflake Glitter Blue White Glossy Glue on Nails Xmas Acrylic Nails for Women Girls 24 Pcs",
+      isNew: false,
+      isTrending: true,
       stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/cider-spice-glaze"
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/4mAafbA"
     },
     {
       id: 31,
-      name: "Rust Leaf Metallic",
-      price: "$29.99",
-      originalPrice: "$45.99",
-      image: "https://images.unsplash.com/photo-1636105678901-d2e3f4b5c6aa?w=400&h=600&fit=crop",
-      description: "Autumn rust with fallen leaf metallic shimmer",
-      rating: 4.6,
-      reviewCount: 192,
-      isNew: false,
+      name: "Colorful Designs & Christmas Tree",
+      price: "$7.99",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/71+LAUHAt3L._SX679_.jpg",
+      description: "Christmas & Winter Glossy Glue on Nails - Medium Almond Acrylic French Tip False Nails with Colorful Designs",
+      isNew: true,
       isTrending: true,
       stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/rust-leaf-metallic"
+      cta: "Autumn Elegance",
+      affiliateUrl: "https://amzn.to/48y2PCd"
     },
     {
       id: 32,
-      name: "Bittersweet Chocolate",
-      price: "$25.99",
-      originalPrice: "$40.99",
-      image: "https://images.unsplash.com/photo-1637170123456-e7f8b9c0d1aa?w=400&h=600&fit=crop",
-      description: "Rich bittersweet chocolate with deep brown finish",
-      rating: 4.9,
-      reviewCount: 148,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
+      name: "Evergreen Bough Snowflake Mistletoe Glossy Glue on Nails",
+      price: "$7.99",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/7164iNvfQwL._SX679_.jpg",
+      description: "Evergreen Bough Snowflake Mistletoe Glossy Glue on Nails Xmas Acrylic Nails for Women Girls 24 Pcs",
+      isNew: false,
+      isTrending: true,
+      stockStatus: "in-stock",
       cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/bittersweet-chocolate"
+      affiliateUrl: "https://amzn.to/46GUoCf"
     },
     {
       id: 33,
-      name: "Smoky Topaz Gem",
-      price: "$31.99",
-      originalPrice: "$47.99",
-      image: "https://images.unsplash.com/photo-1638234567890-f5g6h7i8j9aa?w=400&h=600&fit=crop",
-      description: "Smoky topaz with precious gem-like depth",
-      rating: 4.8,
-      reviewCount: 173,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/smoky-topaz-gem"
+      name: "Christmas Tree Designs Glitter Full Cover",
+      price: "$7.99",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/71DIV+gUN3L._SX679_.jpg",
+      description: "Green French Tip False Nails with Christmas Tree Designs Glitter Full Cover Glossy Glue on Nails Xmas Acrylic Nails for Women Girls 24 Pcs",
+      isNew: true,
+      isTrending: false,
+      stockStatus: "low-stock",
+      cta: "Fall Glamour",
+      affiliateUrl: "https://amzn.to/4nNDdG1"
     },
     {
       id: 34,
-      name: "Clove Spice Satin",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1639298901234-g6h7i8j9k0aa?w=400&h=600&fit=crop",
-      description: "Warm clove spice with luxurious satin finish",
-      rating: 4.7,
-      reviewCount: 159,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/clove-spice-satin"
-    },
-    {
-      id: 35,
-      name: "Maple Syrup Gloss",
-      price: "$24.99",
-      originalPrice: "$38.99",
-      image: "https://images.unsplash.com/photo-1640362345678-h8i9j0k1l2aa?w=400&h=600&fit=crop",
-      description: "Sweet maple syrup with rich golden gloss",
-      rating: 4.6,
-      reviewCount: 186,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/maple-syrup-gloss"
-    },
-    {
-      id: 36,
-      name: "Burnt Umber Clay",
-      price: "$23.99",
-      originalPrice: "$36.99",
-      image: "https://images.unsplash.com/photo-1641426789012-i9j0k1l2m3aa?w=400&h=600&fit=crop",
-      description: "Natural burnt umber with earthy clay texture",
-      rating: 4.8,
-      reviewCount: 164,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/burnt-umber-clay"
-    },
-    {
-      id: 37,
-      name: "Toffee Caramel Chrome",
-      price: "$28.99",
-      originalPrice: "$43.99",
-      image: "https://images.unsplash.com/photo-1642490123456-j0k1l2m3n4aa?w=400&h=600&fit=crop",
-      description: "Rich toffee caramel with mirror chrome finish",
-      rating: 4.9,
-      reviewCount: 151,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/toffee-caramel-chrome"
-    },
-    {
-      id: 38,
-      name: "Sage Leaf Matte",
-      price: "$25.99",
-      originalPrice: "$40.99",
-      image: "https://images.unsplash.com/photo-1643554567890-k1l2m3n4o5aa?w=400&h=600&fit=crop",
-      description: "Muted sage leaf with natural matte finish",
-      rating: 4.7,
-      reviewCount: 177,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "in-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/sage-leaf-matte"
-    },
-    {
-      id: 39,
-      name: "Brandy Alexander Shimmer",
-      price: "$27.99",
-      originalPrice: "$42.99",
-      image: "https://images.unsplash.com/photo-1644618901234-l2m3n4o5p6aa?w=400&h=600&fit=crop",
-      description: "Classic brandy alexander with golden shimmer",
-      rating: 4.8,
-      reviewCount: 145,
+      name: "Sliver Glitter",
+      price: "$7.99",
+      originalPrice: "$12.99",
+      image: "https://m.media-amazon.com/images/I/712O25QpuLL._SX679_.jpg",
+      description: "Fake Nude Full Cover White Snow False With Designs Sliver Glitter Glossy Glue on Acrylic Manicure Artificial for Women Girls 24Pcs",
       isNew: false,
       isTrending: true,
       stockStatus: "in-stock",
       cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/brandy-alexander-shimmer"
-    },
-    {
-      id: 40,
-      name: "Chestnut Velvet Luxe",
-      price: "$30.99",
-      originalPrice: "$46.99",
-      image: "https://images.unsplash.com/photo-1645682345678-m3n4o5p6q7aa?w=400&h=600&fit=crop",
-      description: "Premium chestnut with luxury velvet texture",
-      rating: 4.6,
-      reviewCount: 163,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/chestnut-velvet-luxe"
-    },
-    {
-      id: 41,
-      name: "Paprika Spice Dust",
-      price: "$24.99",
-      originalPrice: "$38.99",
-      image: "https://images.unsplash.com/photo-1646746789012-n4o5p6q7r8aa?w=400&h=600&fit=crop",
-      description: "Warm paprika with spice dust finish",
-      rating: 4.9,
-      reviewCount: 189,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/paprika-spice-dust"
-    },
-    {
-      id: 42,
-      name: "Autumn Leaf Gradient",
-      price: "$29.99",
-      originalPrice: "$45.99",
-      image: "https://images.unsplash.com/photo-1647810123456-o5p6q7r8s9aa?w=400&h=600&fit=crop",
-      description: "Multi-tone autumn leaf with gradient effect",
-      rating: 4.8,
-      reviewCount: 172,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/autumn-leaf-gradient"
-    },
-    {
-      id: 43,
-      name: "Cocoa Bean Matte",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1648874567890-p6q7r8s9t0aa?w=400&h=600&fit=crop",
-      description: "Rich cocoa bean with perfect matte texture",
-      rating: 4.7,
-      reviewCount: 155,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/cocoa-bean-matte"
-    },
-    {
-      id: 44,
-      name: "Honey Oak Stain",
-      price: "$25.99",
-      originalPrice: "$40.99",
-      image: "https://images.unsplash.com/photo-1649938901234-q7r8s9t0u1aa?w=400&h=600&fit=crop",
-      description: "Golden honey oak with wood-stain depth",
-      rating: 4.6,
-      reviewCount: 168,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/honey-oak-stain"
-    },
-    {
-      id: 45,
-      name: "Ginger Snap Chrome",
-      price: "$28.99",
-      originalPrice: "$43.99",
-      image: "https://images.unsplash.com/photo-1650002345678-r8s9t0u1v2aa?w=400&h=600&fit=crop",
-      description: "Spicy ginger snap with mirror chrome finish",
-      rating: 4.8,
-      reviewCount: 174,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/ginger-snap-chrome"
-    },
-    {
-      id: 46,
-      name: "Saffron Gold Shimmer",
-      price: "$31.99",
-      originalPrice: "$47.99",
-      image: "https://images.unsplash.com/photo-1651066789012-s9t0u1v2w3aa?w=400&h=600&fit=crop",
-      description: "Precious saffron with gold shimmer particles",
-      rating: 4.9,
-      reviewCount: 141,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/saffron-gold-shimmer"
-    },
-    {
-      id: 47,
-      name: "Pumpkin Patch Gloss",
-      price: "$24.99",
-      originalPrice: "$38.99",
-      image: "https://images.unsplash.com/photo-1652130123456-t0u1v2w3x4aa?w=400&h=600&fit=crop",
-      description: "Warm pumpkin patch with glossy orange finish",
-      rating: 4.7,
-      reviewCount: 187,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/pumpkin-patch-gloss"
-    },
-    {
-      id: 48,
-      name: "Tobacco Leaf Satin",
-      price: "$27.99",
-      originalPrice: "$42.99",
-      image: "https://images.unsplash.com/photo-1653194567890-u1v2w3x4y5aa?w=400&h=600&fit=crop",
-      description: "Rich tobacco leaf with smooth satin finish",
-      rating: 4.8,
-      reviewCount: 159,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "low-stock",
-      cta: "Autumn Elegance",
-      affiliateUrl: "https://amzn.to/tobacco-leaf-satin"
-    },
-    {
-      id: 49,
-      name: "Burgundy Merlot Velvet",
-      price: "$29.99",
-      originalPrice: "$45.99",
-      image: "https://images.unsplash.com/photo-1654258901234-v2w3x4y5z6aa?w=400&h=600&fit=crop",
-      description: "Deep burgundy merlot with luxury velvet texture",
-      rating: 4.6,
-      reviewCount: 165,
-      isNew: false,
-      isTrending: true,
-      stockStatus: "in-stock",
-      cta: "Fall Glamour",
-      affiliateUrl: "https://amzn.to/burgundy-merlot-velvet"
-    },
-    {
-      id: 50,
-      name: "Caramel Macchiato Swirl",
-      price: "$26.99",
-      originalPrice: "$41.99",
-      image: "https://images.unsplash.com/photo-1655322345678-w3x4y5z6a7aa?w=400&h=600&fit=crop",
-      description: "Creamy caramel macchiato with swirl patterns",
-      rating: 4.9,
-      reviewCount: 193,
-      isNew: true,
-      isTrending: false,
-      stockStatus: "in-stock",
-      cta: "Cozy Vibes",
-      affiliateUrl: "https://amzn.to/caramel-macchiato-swirl"
+      affiliateUrl: "https://amzn.to/46F93hb"
     }
   ];
 
@@ -797,19 +487,6 @@ const FallNailsCategory = () => {
   };
 
   const filteredProducts = getFilteredProducts();
-
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <span
-        key={i}
-        className={`text-sm ${
-          i < Math.floor(rating) ? 'text-yellow-400' : 'text-gray-300'
-        }`}
-      >
-        ★
-      </span>
-    ));
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -853,6 +530,9 @@ const FallNailsCategory = () => {
             </h1>
             <p className="text-xl md:text-2xl mb-6 text-amber-100">
               Embrace autumn's warmth with rich, cozy nail colors that capture the season's beauty
+            </p>
+            <p className="text-sm text-amber-200 mb-4 italic">
+              Prices may vary with time - Shop now for best deals
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full font-semibold">
@@ -921,6 +601,13 @@ const FallNailsCategory = () => {
                   )}
                 </div>
 
+                {/* Discount Badge */}
+                <div className="absolute top-3 right-3">
+                  <span className="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                    SAVE {Math.round(((parseFloat(product.originalPrice.slice(1)) - parseFloat(product.price.slice(1))) / parseFloat(product.originalPrice.slice(1))) * 100)}%
+                  </span>
+                </div>
+
                 {/* Stock Status Indicator */}
                 <div className="absolute bottom-3 right-3">
                   <div className={`w-3 h-3 rounded-full ${
@@ -943,21 +630,13 @@ const FallNailsCategory = () => {
                 </p>
 
                 {/* Price Display */}
-                <div className="price-display flex items-center gap-2 mb-3">
+                <div className="price-display flex items-center gap-2 mb-4">
                   <span className="original-price text-gray-400 line-through text-sm">
                     {product.originalPrice}
                   </span>
                   <span className="discounted-price text-lg font-bold text-gray-900">
                     {product.price}
                   </span>
-                </div>
-
-                {/* Rating and Reviews */}
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex">
-                    {renderStars(product.rating)}
-                  </div>
-                  <span className="text-sm text-gray-500">({product.reviewCount})</span>
                 </div>
 
                 {/* CTA Button */}
@@ -985,7 +664,7 @@ const FallNailsCategory = () => {
             </button>
           ) : (
             <a
-              href="https://example-affiliate-store.com/fall-nails"
+              href="https://amzn.to/46v6tdC"
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white font-semibold py-4 px-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl inline-block"
@@ -1006,23 +685,25 @@ const FallNailsCategory = () => {
             {[
               {
                 name: "Sarah M.",
-                review: "The Autumn Maple Glaze is absolutely stunning! Perfect fall color that lasts for weeks.",
-                product: "Autumn Maple Glaze Collection"
+                review: "The Red French Tip Fake Nails are absolutely perfect for fall! Love the seasonal vibes.",
+                product: "Red French Tip Fake Nails"
               },
               {
                 name: "Jessica R.",
-                review: "Love the Burgundy Wine Velvet! The finish is so smooth and the color is rich and elegant.",
-                product: "Burgundy Wine Velvet"
+                review: "Full Cover Elk Holly False Nails are stunning! The finish is so smooth and elegant.",
+                product: "Full Cover Elk Holly False Nails"
               },
               {
                 name: "Amanda K.",
-                review: "Pumpkin Spice Matte is my new favorite! Perfect for the season and gets so many compliments.",
-                product: "Pumpkin Spice Matte Luxe"
+                review: "Medium Almond Winter Fake Nails are my new favorite! Perfect for autumn and gets so many compliments.",
+                product: "Medium Almond Winter Fake Nails"
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-gray-50 p-6 rounded-2xl shadow-lg">
                 <div className="flex mb-3">
-                  {renderStars(5)}
+                  {Array.from({ length: 5 }, (_, i) => (
+                    <span key={i} className="text-yellow-400 text-sm">★</span>
+                  ))}
                 </div>
                 <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
                 <div className="border-t pt-4">
@@ -1044,21 +725,27 @@ const FallNailsCategory = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
+                name: "christmas",
+                displayName: "Christmas Nails",
+                image: "https://m.media-amazon.com/images/I/41y5EdmY7-L._SY300_SX300_QL70_FMwebp_.jpg",
+                gradient: "from-green-600 to-red-600"
+              },
+              {
                 name: "new-year",
                 displayName: "New Year Nails",
-                image: "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400&h=300&fit=crop",
+                image: "https://m.media-amazon.com/images/I/51ohp79t54L._SY300_SX300_QL70_FMwebp_.jpg",
                 gradient: "from-yellow-400 to-pink-600"
               },
               {
                 name: "trendy",
                 displayName: "Trendy Nails",
-                image: "https://images.unsplash.com/photo-1604991405679-98d08f7fbb08?w=400&h=300&fit=crop",
+                image: "https://m.media-amazon.com/images/I/41DFcu1W7QL._SY300_SX300_QL70_FMwebp_.jpg",
                 gradient: "from-pink-500 to-violet-600"
               },
               {
                 name: "winter",
                 displayName: "Winter Nails",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+                image: "https://m.media-amazon.com/images/I/71ere-tv9LL._AC_UL480_FMwebp_QL65_.jpg",
                 gradient: "from-blue-500 to-indigo-600"
               }
             ].map((category, index) => (

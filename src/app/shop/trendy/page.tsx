@@ -694,17 +694,17 @@ const testimonials = [
 const relatedCategories = [
   {
     name: "Fall Collection",
-    image: "https://images.unsplash.com/photo-1570481662006-a3a1374699e8?w=400",
+    image: "https://m.media-amazon.com/images/I/61n1fQ4Em7L._SY450_.jpg",
     link: "/shop/fall"
   },
   {
     name: "Halloween Specials",
-    image: "https://images.unsplash.com/photo-1574273384019-ff66c65d7e8c?w=400",
+    image: "https://m.media-amazon.com/images/I/71PUcXj5YYL._SL1500_.jpg",
     link: "/shop/halloween"
   },
   {
     name: "Winter Wonderland",
-    image: "https://images.unsplash.com/photo-1605798577917-a65157d3320a?w=400",
+    image: "https://m.media-amazon.com/images/I/5110tzvHbOL._SY300_SX300_QL70_FMwebp_.jpg",
     link: "/shop/winter"
   }
 ];
@@ -733,7 +733,7 @@ export default function TrendyShop() {
   const handleLoadMore = () => {
     if (productsToShow >= 50) {
       // Redirect to complete collection
-      window.open('https://example-affiliate-store.com/trendy', '_blank');
+      window.open('https://amzn.to/4nN0gk8');
     } else {
       setProductsToShow(50);
       setShowAllProducts(true);

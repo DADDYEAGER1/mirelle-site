@@ -129,13 +129,13 @@ export default function ShopSection() {
         </div>
 
         {/* Call to Action Section */}
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <div className="inline-flex items-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
             <span className="mr-3">✨</span>
             <span>Explore All Collections</span>
             <span className="ml-3">✨</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

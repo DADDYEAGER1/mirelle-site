@@ -556,7 +556,7 @@ export default function NailCareGuide() {
                   </div>
 
                   <a
-                    href="https://example.gumroad.com/premium-guide"
+                    href="https://hatake21.gumroad.com/l/nailcareguide"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-2xl mb-4"

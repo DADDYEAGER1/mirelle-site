@@ -17,6 +17,7 @@ interface Product {
   affiliateUrl: string;
 }
 
+
 const trendyProducts: Product[] = [
   // Initial 15 products
   {

@@ -19,7 +19,7 @@ const shopCategories = [
   {
     title: "Winter Nails",
     description: "Cozy and elegant winter nail inspiration for the cold season",
-    image: "/winternail.bg",
+    image: "/winternail.jpg",
     href: "/shop/winter",
     productCount: "50+ Premium Products",
     color: "from-blue-400 via-cyan-300 to-indigo-500",
@@ -27,8 +27,8 @@ const shopCategories = [
     badgeColor: "bg-blue-500",
     previewImages: [
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100",
-      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=100",
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=100"
+      "https://m.media-amazon.com/images/I/71SqVKDpklL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71fyeVDIPgL._SX679_.jpg"
     ]
   },
   {
@@ -41,9 +41,9 @@ const shopCategories = [
     badge: "Hot Right Now",
     badgeColor: "bg-pink-500",
     previewImages: [
-      "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=100",
-      "https://images.unsplash.com/photo-1609205803428-7e0fb4b7b7be?w=100",
-      "https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?w=100"
+      "https://m.media-amazon.com/images/I/51Uugs4lrFL._SY300_SX300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/716nixDcZuL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71FCxS2K4HL._SX679_.jpg"
     ]
   },
   {
@@ -56,9 +56,9 @@ const shopCategories = [
     badge: "Holiday Special",
     badgeColor: "bg-green-500",
     previewImages: [
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=100",
-      "https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=100",
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+      "https://m.media-amazon.com/images/I/71EVLUzXlNL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71EaoVoCteL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71gyg085s7L._SX679_.jpg"
     ]
   },
   {
@@ -71,9 +71,9 @@ const shopCategories = [
     badge: "Autumn Collection",
     badgeColor: "bg-amber-500",
     previewImages: [
-      "https://images.unsplash.com/photo-1509909756405-be0199881695?w=100",
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=100",
-      "https://images.unsplash.com/photo-1476842634003-7dcca8f832de?w=100"
+      "https://m.media-amazon.com/images/I/61sxz4od20L._SY450_.jpg",
+      "https://m.media-amazon.com/images/I/71cFPu6G4yL._SY450_.jpg",
+      "https://m.media-amazon.com/images/I/71l0Zz5At7L._SY450_.jpg"
     ]
   },
   {
@@ -86,9 +86,9 @@ const shopCategories = [
     badge: "Limited Edition",
     badgeColor: "bg-yellow-500",
     previewImages: [
-      "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=100",
-      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=100",
-      "https://images.unsplash.com/photo-1482685945432-29a7abf2f466?w=100"
+      "https://m.media-amazon.com/images/I/51ftUOKwjiL._SY300_SX300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/71-2wbBCGXL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71tUVR5v9xL._SX679_.jpg"
     ]
   }
 ];

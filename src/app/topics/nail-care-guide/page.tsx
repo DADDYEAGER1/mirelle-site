@@ -569,10 +569,7 @@ export default function NailCareGuide() {
                       <span className="w-4 h-4 bg-green-500 rounded-full mr-2"></span>
                       Instant Digital Download
                     </span>
-                    <span className="flex items-center">
-                      <span className="w-4 h-4 bg-blue-500 rounded-full mr-2"></span>
-                      30-Day Money Back Guarantee
-                    </span>
+
                     <span className="flex items-center">
                       <span className="w-4 h-4 bg-purple-500 rounded-full mr-2"></span>
                       Lifetime Updates Included

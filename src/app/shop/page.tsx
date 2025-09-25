@@ -7,7 +7,7 @@ const shopCategories = [
     image: "halloweenbannerimg.jpg",
     href: "/shop/halloween",
     productCount: "50+ Premium Products",
-    color: "from-orange-500 via-red-500 to-purple-600",
+    color: "from-orange-400/30 via-red-400/25 to-purple-500/30",
     badge: "Trending Now",
     badgeColor: "bg-orange-500",
     previewImages: [
@@ -22,7 +22,7 @@ const shopCategories = [
     image: "/winternail.jpg",
     href: "/shop/winter",
     productCount: "50+ Premium Products",
-    color: "from-blue-400 via-cyan-300 to-indigo-500",
+    color: "from-blue-400/30 via-cyan-300/25 to-indigo-400/30",
     badge: "Seasonal Collection",
     badgeColor: "bg-blue-500",
     previewImages: [
@@ -37,7 +37,7 @@ const shopCategories = [
     image: "/trendsection.jpg",
     href: "/shop/trendy",
     productCount: "50+ Premium Products",
-    color: "from-pink-400 via-rose-400 to-purple-500",
+    color: "from-pink-400/30 via-rose-400/25 to-purple-400/30",
     badge: "Hot Right Now",
     badgeColor: "bg-pink-500",
     previewImages: [
@@ -52,7 +52,7 @@ const shopCategories = [
     image: "/christmas-nails-hero.jpg",
     href: "/shop/christmas",
     productCount: "50+ Premium Products",
-    color: "from-green-500 via-emerald-400 to-red-500",
+    color: "from-green-400/30 via-emerald-400/25 to-red-400/30",
     badge: "Holiday Special",
     badgeColor: "bg-green-500",
     previewImages: [
@@ -67,7 +67,7 @@ const shopCategories = [
     image: "/fall-nails-hero.jpg",
     href: "/shop/fall",
     productCount: "50+ Premium Products",
-    color: "from-amber-500 via-orange-400 to-red-400",
+    color: "from-amber-400/30 via-orange-400/25 to-red-400/30",
     badge: "Autumn Collection",
     badgeColor: "bg-amber-500",
     previewImages: [
@@ -82,7 +82,7 @@ const shopCategories = [
     image: "/new-year-nails-hero.jpg",
     href: "/shop/new-year",
     productCount: "50+ Premium Products",
-    color: "from-yellow-400 via-gold-400 to-purple-500",
+    color: "from-yellow-400/30 via-gold-400/25 to-purple-400/30",
     badge: "Limited Edition",
     badgeColor: "bg-yellow-500",
     previewImages: [
@@ -104,7 +104,7 @@ export default function Shop() {
             alt="Shop Mirelle's Premium Collection"
             className="w-full h-full object-cover scale-105 transition-transform duration-[10s] hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-transparent"></div>
         </div>
         
         {/* Floating Elements */}
@@ -115,7 +115,7 @@ export default function Shop() {
         </div>
 
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <div className="backdrop-blur-sm bg-white/5 rounded-3xl p-8 border border-white/10">
+          <div className="backdrop-blur-sm bg-white/10 rounded-3xl p-8 border border-white/20">
             <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Shop Mirellé's
               <span className="block bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300 bg-clip-text text-transparent">
@@ -164,7 +164,7 @@ export default function Shop() {
               <Link
                 key={index}
                 href={category.href}
-                className="group relative overflow-hidden rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2"
+                className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2 bg-white"
               >
                 <div className="relative h-96">
                   {/* Main Image */}
@@ -174,9 +174,14 @@ export default function Shop() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   
-                  {/* Gradient Overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-75 group-hover:opacity-85 transition-opacity duration-300`}></div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent group-hover:from-black/90 transition-all duration-300"></div>
+                  {/* Light Premium Overlays */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${category.color} group-hover:opacity-40 transition-opacity duration-300`}></div>
+                  
+                  {/* Glass Morphism Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-white/20 to-transparent group-hover:from-white/90 transition-all duration-300"></div>
+                  
+                  {/* Subtle Pattern Overlay */}
+                  <div className="absolute inset-0 opacity-20 bg-gradient-to-br from-white/40 via-transparent to-white/20"></div>
                   
                   {/* Glass Morphism Badge */}
                   <div className="absolute top-6 left-6">
@@ -186,14 +191,14 @@ export default function Shop() {
                   </div>
 
                   {/* Product Count Badge */}
-                  <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-bold text-charcoal-800 shadow-lg">
+                  <div className="absolute top-6 right-6 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-bold text-charcoal-800 shadow-lg border border-white/50">
                     {category.productCount}
                   </div>
 
                   {/* Preview Thumbnails */}
-                  <div className="absolute bottom-20 right-6 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                  <div className="absolute bottom-24 right-6 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200">
                     {category.previewImages.map((img, idx) => (
-                      <div key={idx} className="w-12 h-12 rounded-lg overflow-hidden border-2 border-white/50 backdrop-blur-sm">
+                      <div key={idx} className="w-12 h-12 rounded-xl overflow-hidden border-2 border-white/70 backdrop-blur-sm shadow-lg">
                         <img src={img} alt="" className="w-full h-full object-cover" />
                       </div>
                     ))}
@@ -201,35 +206,43 @@ export default function Shop() {
                 </div>
                 
                 {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <h3 className="font-serif text-3xl font-bold mb-3 group-hover:text-yellow-200 transition-colors duration-300">
-                    {category.title}
-                  </h3>
-                  <p className="text-white/90 mb-6 leading-relaxed">
-                    {category.description}
-                  </p>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  {/* Content Background */}
+                  <div className="absolute inset-0 bg-white/95 backdrop-blur-md rounded-t-2xl border-t border-white/50"></div>
                   
-                  {/* Enhanced CTA */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-white font-bold text-lg group-hover:translate-x-2 transition-transform duration-300">
-                      <span className="mr-2">Explore Collection</span>
-                      <svg 
-                        className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </div>
+                  <div className="relative z-10">
+                    <h3 className="font-serif text-3xl font-bold mb-3 text-charcoal-800 group-hover:text-purple-700 transition-colors duration-300">
+                      {category.title}
+                    </h3>
+                    <p className="text-charcoal-600 mb-6 leading-relaxed">
+                      {category.description}
+                    </p>
                     
-                    {/* Hover Stats */}
-                    <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 text-right">
-                      <div className="text-sm text-white/80">New Arrivals</div>
-                      <div className="text-xs text-white/60">Updated Weekly</div>
+                    {/* Enhanced CTA */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center text-charcoal-700 font-bold text-lg group-hover:translate-x-2 transition-transform duration-300">
+                        <span className="mr-2">Explore Collection</span>
+                        <svg 
+                          className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </div>
+                      
+                      {/* Hover Stats */}
+                      <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 delay-300 text-right">
+                        <div className="text-sm text-charcoal-600 font-medium">New Arrivals</div>
+                        <div className="text-xs text-charcoal-500">Updated Weekly</div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                {/* Hover Glow Effect */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-purple-200/30 via-pink-200/20 to-transparent pointer-events-none rounded-3xl"></div>
               </Link>
             ))}
           </div>
@@ -280,11 +293,6 @@ export default function Shop() {
                 </p>
               </div>
             </div>
-
-            {/* Trust Indicators */}
-            {/* <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-gray-200">
-
-            </div> */}
           </div>
         </div>
       </section>

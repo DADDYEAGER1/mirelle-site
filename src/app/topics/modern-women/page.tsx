@@ -537,16 +537,16 @@ export default function ModernWomen() {
     <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border-2 border-pink-500/30 rounded-2xl p-8 mb-8">
       <div className="text-center mb-6">
         <div className="text-gray-400 text-lg mb-2">Complete Executive System Usually:</div>
-        <div className="text-gray-500 text-3xl line-through mb-2">$497</div>
+        <div className="text-gray-500 text-3xl line-through mb-2">$99.99</div>
         <div className="text-gray-400 text-sm mb-4">(Less than one image consulting session)</div>
         
-        <div className="text-5xl font-bold text-white mb-2">$67</div>
-        <div className="text-pink-300 font-semibold text-xl">Executive Launch Special - Save $430!</div>
+        <div className="text-5xl font-bold text-white mb-2">$19.99</div>
+        <div className="text-pink-300 font-semibold text-xl">Executive Launch Special - Save $80!</div>
       </div>
 
       <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6">
         <div className="text-red-300 font-bold text-center">
-          ⏰ Price increases to $147 in 72 hours — Save $80 NOW
+          ⏰ Price increases to $49.99 in 72 hours — Save $30 NOW
         </div>
       </div>
 
@@ -554,10 +554,6 @@ export default function ModernWomen() {
         <div className="text-center">
           <div className="text-green-400 font-semibold">✓ Instant Digital Access</div>
           <div>Download immediately</div>
-        </div>
-        <div className="text-center">
-          <div className="text-blue-400 font-semibold">✓ 90-Day Guarantee</div>
-          <div>See results or full refund</div>
         </div>
         <div className="text-center">
           <div className="text-purple-400 font-semibold">✓ Lifetime Updates</div>
@@ -568,7 +564,7 @@ export default function ModernWomen() {
 
     {/* CTA Button */}
     <a
-      href="https://example.gumroad.com/premium-guide"
+      href="https://hatake21.gumroad.com/l/mirellenailartguide1"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-16 py-6 rounded-full font-bold text-xl hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-2xl mb-8"
@@ -613,7 +609,7 @@ export default function ModernWomen() {
     {/* Final Urgency Reminder */}
     <div className="mt-8 text-center">
       <p className="text-gray-300 text-sm">
-        <strong className="text-red-300">⚠️ Executive Launch Ends Soon:</strong> Secure your transformation at $67 before it increases to $147 in 72 hours.
+        <strong className="text-red-300">⚠️ Executive Launch Ends Soon:</strong> Secure your transformation at $19.99 before it increases to $49.99 in 72 hours.
       </p>
     </div>
   </div>

@@ -652,10 +652,7 @@ export default function SeasonalTrends() {
                     <span className="w-4 h-4 bg-green-500 rounded-full mr-2"></span>
                     Instant Digital Access
                   </span>
-                  <span className="flex items-center">
-                    <span className="w-4 h-4 bg-blue-500 rounded-full mr-2"></span>
-                    60-Day Money Back Guarantee
-                  </span>
+
                   <span className="flex items-center">
                     <span className="w-4 h-4 bg-purple-500 rounded-full mr-2"></span>
                     Works on All Devices

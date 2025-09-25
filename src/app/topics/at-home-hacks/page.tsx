@@ -482,16 +482,16 @@ export default function AtHomeHacks() {
     <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border-2 border-pink-500/30 rounded-2xl p-8 mb-8">
       <div className="text-center mb-6">
         <div className="text-gray-400 text-lg mb-2">Complete Professional System Usually:</div>
-        <div className="text-gray-500 text-3xl line-through mb-2">$297</div>
+        <div className="text-gray-500 text-3xl line-through mb-2">$120</div>
         <div className="text-gray-400 text-sm mb-4">(Less than one salon appointment)</div>
         
-        <div className="text-5xl font-bold text-white mb-2">$47</div>
-        <div className="text-pink-300 font-semibold text-xl">Launch Week Special - Save $250!</div>
+        <div className="text-5xl font-bold text-white mb-2">$15.99</div>
+        <div className="text-pink-300 font-semibold text-xl">Launch Week Special - Save $105!</div>
       </div>
 
       <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6">
         <div className="text-red-300 font-bold text-center">
-          ⏰ Price increases to $97 in 48 hours — Save $50 NOW
+          ⏰ Price increases to $55 in 48 hours — Save $40 NOW
         </div>
       </div>
 
@@ -499,10 +499,6 @@ export default function AtHomeHacks() {
         <div className="text-center">
           <div className="text-green-400 font-semibold">✓ Instant Digital Access</div>
           <div>Download immediately</div>
-        </div>
-        <div className="text-center">
-          <div className="text-blue-400 font-semibold">✓ 60-Day Guarantee</div>
-          <div>Full money-back promise</div>
         </div>
         <div className="text-center">
           <div className="text-purple-400 font-semibold">✓ Lifetime Updates</div>
@@ -513,7 +509,7 @@ export default function AtHomeHacks() {
 
     {/* CTA Button */}
     <a
-      href="https://example.gumroad.com/premium-guide"
+      href="https://hatake21.gumroad.com/l/nailcareguide"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-16 py-6 rounded-full font-bold text-xl hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-2xl mb-8"
@@ -559,7 +555,7 @@ export default function AtHomeHacks() {
     <div className="mt-8 text-center">
       <p className="text-gray-300 text-sm">
         <strong className="text-red-300">⚠️ Remember:</strong> Launch pricing ends in 48 hours. 
-        Secure your copy at $47 before it increases to $97.
+        Secure your copy at $15.99 before it increases to $55.
       </p>
     </div>
   </div>

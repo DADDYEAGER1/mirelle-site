@@ -725,10 +725,7 @@ export default function SkinTones() {
                     <span className="w-4 h-4 bg-green-500 rounded-full mr-2"></span>
                     Instant Download Access
                   </span>
-                  <span className="flex items-center">
-                    <span className="w-4 h-4 bg-blue-500 rounded-full mr-2"></span>
-                    90-Day Satisfaction Guarantee
-                  </span>
+
                   <span className="flex items-center">
                     <span className="w-4 h-4 bg-purple-500 rounded-full mr-2"></span>
                     Professional Certification Track

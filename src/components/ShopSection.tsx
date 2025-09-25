@@ -6,7 +6,7 @@ const shopCategories = [
     description: "Spooky and stylish nail designs for Halloween",
     image: "/halloweenbannerimg.jpg",
     href: "/shop/halloween",
-    productCount: "15+ Products",
+    productCount: "50+ Products",
     color: "from-orange-400 to-red-500"
   },
   {
@@ -14,7 +14,7 @@ const shopCategories = [
     description: "Cozy and elegant winter nail inspiration",
     image: "/wintersection.jpg",
     href: "/shop/winter",
-    productCount: "15+ Products",
+    productCount: "50+ Products",
     color: "from-blue-400 to-purple-500"
   },
   {
@@ -22,7 +22,7 @@ const shopCategories = [
     description: "Latest trending nail designs and colors",
     image: "/trendsection.jpg",
     href: "/shop/trendy",
-    productCount: "15+ Products",
+    productCount: "50+ Products",
     color: "from-pink-400 to-blush-500"
   },
   {
@@ -30,7 +30,7 @@ const shopCategories = [
     description: "Festive holiday nail art for Christmas cheer",
     image: "/christmassection.jpg",
     href: "/shop/christmas",
-    productCount: "15+ Products",
+    productCount: "50+ Products",
     color: "from-red-500 to-green-500"
   },
   {
@@ -38,7 +38,7 @@ const shopCategories = [
     description: "Warm autumn colors and cozy fall vibes",
     image: "/fallsection.jpg",
     href: "/shop/fall",
-    productCount: "15+ Products",
+    productCount: "50+ Products",
     color: "from-amber-400 to-orange-600"
   },
   {
@@ -46,7 +46,7 @@ const shopCategories = [
     description: "Glamorous designs to sparkle into the new year",
     image: "/newyearsection.jpeg",
     href: "/shop/new-year",
-    productCount: "15+ Products",
+    productCount: "50+ Products",
     color: "from-gold-400 to-yellow-500"
   }
 ];

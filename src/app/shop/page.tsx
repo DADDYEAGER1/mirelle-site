@@ -282,24 +282,9 @@ export default function Shop() {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center text-sm text-charcoal-600">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                Free Shipping Over $50
-              </div>
-              <div className="flex items-center text-sm text-charcoal-600">
-                <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                30-Day Returns
-              </div>
-              <div className="flex items-center text-sm text-charcoal-600">
-                <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                Expert Support
-              </div>
-              <div className="flex items-center text-sm text-charcoal-600">
-                <span className="w-2 h-2 bg-pink-500 rounded-full mr-2"></span>
-                Secure Checkout
-              </div>
-            </div>
+            {/* <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-gray-200">
+
+            </div> */}
           </div>
         </div>
       </section>

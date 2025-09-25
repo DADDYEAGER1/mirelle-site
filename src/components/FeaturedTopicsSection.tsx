@@ -6,8 +6,7 @@ const topics = [
     description: "Essential tips for healthy, beautiful nails",
     image: "/nailcare.jpg",
     href: "/topics/nail-care-guide",
-    color: "from-nude-400 to-nude-600",
-
+    color: "from-nude-400 to-nude-600"
   },
   {
     title: "For Skin Tones",
@@ -15,7 +14,6 @@ const topics = [
     image: "/skintone.jpg",
     href: "/topics/skin-tones",
     color: "from-blush-400 to-blush-600",
-
     trending: true
   },
   {
@@ -23,8 +21,7 @@ const topics = [
     description: "Step-by-step nail art tutorials and inspiration",
     image: "/nailart.jpg",
     href: "/topics/nail-art-guides",
-    color: "from-purple-400 to-purple-600",
-
+    color: "from-purple-400 to-purple-600"
   },
   {
     title: "Seasonal Trends",
@@ -32,7 +29,6 @@ const topics = [
     image: "/nailtrendsupdated.jpg",
     href: "/topics/seasonal-trends",
     color: "from-nude-500 to-blush-500",
-
     trending: true
   },
   {
@@ -40,15 +36,14 @@ const topics = [
     description: "Professional techniques you can do at home",
     image: "/athomeupdated.jpg",
     href: "/topics/at-home-hacks",
-    color: "from-blush-500 to-purple-500",
-
+    color: "from-blush-500 to-purple-500"
   },
   {
     title: "Modern Women Inspiration",
     description: "Empowering nail looks for the modern woman",
     image: "/modern.jpg",
     href: "/topics/modern-women",
-    color: "from-purple-500 to-nude-500",
+    color: "from-purple-500 to-nude-500"
   }
 ];
 

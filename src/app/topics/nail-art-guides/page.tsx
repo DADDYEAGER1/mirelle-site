@@ -518,16 +518,16 @@ export default function NailArtGuides() {
     <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border-2 border-pink-500/30 rounded-2xl p-8 mb-8">
       <div className="text-center mb-6">
         <div className="text-gray-400 text-lg mb-2">Complete Professional Workflow System Usually:</div>
-        <div className="text-gray-500 text-3xl line-through mb-2">$697</div>
+        <div className="text-gray-500 text-3xl line-through mb-2">$120</div>
         <div className="text-gray-400 text-sm mb-4">(Less than one business consultation session)</div>
         
-        <div className="text-5xl font-bold text-white mb-2">$97</div>
-        <div className="text-pink-300 font-semibold text-xl">Weekend Special - Save $600!</div>
+        <div className="text-5xl font-bold text-white mb-2">$19.99</div>
+        <div className="text-pink-300 font-semibold text-xl">Weekend Special - Save $100!</div>
       </div>
 
       <div className="bg-red-500/20 border border-red-500/50 rounded-lg p-4 mb-6">
         <div className="text-red-300 font-bold text-center">
-          ⏰ Weekend pricing ends Monday 9AM — Save $150 NOW
+          ⏰ Weekend pricing ends Monday 9AM — Save $100 NOW
         </div>
       </div>
 
@@ -536,10 +536,7 @@ export default function NailArtGuides() {
           <div className="text-green-400 font-semibold">✓ Instant Download</div>
           <div>Access within 60 seconds</div>
         </div>
-        <div className="text-center">
-          <div className="text-blue-400 font-semibold">✓ 90-Day Guarantee</div>
-          <div>See results or full refund</div>
-        </div>
+
         <div className="text-center">
           <div className="text-purple-400 font-semibold">✓ Free Updates</div>
           <div>All future versions included</div>
@@ -549,7 +546,7 @@ export default function NailArtGuides() {
 
     {/* CTA Button */}
     <a
-      href="https://example.gumroad.com/premium-guide"
+      href="https://hatake21.gumroad.com/l/mirellenailartguide1"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-16 py-6 rounded-full font-bold text-xl hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-2xl mb-8"
@@ -594,7 +591,7 @@ export default function NailArtGuides() {
     {/* Final Urgency Reminder */}
     <div className="mt-8 text-center">
       <p className="text-gray-300 text-sm">
-        <strong className="text-red-300">⏰ Weekend Special Ends Soon:</strong> Transform your workflow efficiency at $97 before price increases to $247 Monday morning.
+        <strong className="text-red-300">⏰ Weekend Special Ends Soon:</strong> Transform your workflow efficiency at $97 before price increases to $50 Monday morning.
       </p>
     </div>
   </div>

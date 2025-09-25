@@ -77,12 +77,7 @@ export default function FeaturedTopicsSection() {
                 </div>
               )}
               
-              {/* Product Count Badge */}
-              <div className="absolute top-4 right-4 z-20">
-                <span className="bg-white/90 backdrop-blur-sm text-gray-700 text-sm font-medium px-3 py-1 rounded-full shadow-lg">
-                  {topic.productCount}
-                </span>
-              </div>
+
               
               {/* Image Container */}
               <div className="relative h-72 overflow-hidden">

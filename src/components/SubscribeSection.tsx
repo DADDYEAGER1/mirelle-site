@@ -18,7 +18,7 @@ export default function SubscribeSection() {
     <section className="py-20 bg-gradient-to-br from-blush-100 to-purple-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-4">
-          Subscribe – It's Free
+          FOLLOW US – It's Free
         </h2>
         <p className="text-xl text-charcoal-600 mb-8 max-w-2xl mx-auto">
           Follow us on pinterest We'll keep you updated with the latest trends, exclusive nail art tutorials, 

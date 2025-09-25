@@ -208,13 +208,13 @@ export default function Shop() {
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   {/* Content Background */}
-                  <div className="absolute inset-0 bg-white/95 backdrop-blur-md rounded-t-2xl border-t border-white/50"></div>
+                  <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-t-2xl border-t border-white/20"></div>
                   
                   <div className="relative z-10">
-                    <h3 className="font-serif text-3xl font-bold mb-3 text-charcoal-800 group-hover:text-purple-700 transition-colors duration-300">
+                    <h3 className="font-serif text-3xl font-bold mb-3 text-charcoal-800 group-hover:text-purple-700 transition-colors duration-300 drop-shadow-sm">
                       {category.title}
                     </h3>
-                    <p className="text-charcoal-600 mb-6 leading-relaxed">
+                    <p className="text-charcoal-700 mb-6 leading-relaxed drop-shadow-sm">
                       {category.description}
                     </p>
                     

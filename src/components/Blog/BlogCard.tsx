@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { BlogMetadata } from '@/types/blog';
@@ -9,53 +8,59 @@ interface BlogCardProps {
 
 export default function BlogCard({ post }: BlogCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-      {post.image && (
-        <div className="relative h-48 w-full">
+    <div className="group relative h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        {post.image ? (
           <Image
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-110"
           />
-        </div>
-      )}
-      
-      <div className="p-6">
-        <div className="flex flex-wrap gap-2 mb-2">
-          {post.tags.map(tag => (
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400" />
+        )}
+        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors duration-300" />
+      </div>
+
+      {/* Content */}
+      <div className="relative h-full p-6 flex flex-col justify-between text-white">
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2">
+          {post.tags.slice(0, 2).map(tag => (
             <span 
               key={tag}
-              className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-sm"
+              className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded-full text-xs font-medium"
             >
               {tag}
             </span>
           ))}
         </div>
-        
-        <h2 className="text-xl font-bold mb-2 line-clamp-2">
-          {post.title}
-        </h2>
-        
-        <p className="text-gray-600 mb-4 line-clamp-3">
-          {post.excerpt}
-        </p>
-        
-        <div className="flex justify-between items-center text-sm text-gray-500 mb-4">
-          <span>By {post.author}</span>
-          <span>{post.readTime} min read</span>
-        </div>
-        
-        <div className="flex justify-between items-center">
-          <span className="text-sm text-gray-500">
-            {new Date(post.date).toLocaleDateString()}
-          </span>
+
+        {/* Bottom Content */}
+        <div>
+          <h3 className="text-2xl font-bold mb-2 line-clamp-2 group-hover:text-pink-200 transition-colors">
+            {post.title}
+          </h3>
           
+          <p className="text-white/90 mb-4 line-clamp-2 text-sm">
+            {post.excerpt}
+          </p>
+
+          <div className="flex justify-between items-center text-sm text-white/80 mb-4">
+            <span>{new Date(post.date).toLocaleDateString()}</span>
+            <span>{post.readTime} min read</span>
+          </div>
+
           <Link 
             href={`/blog/${post.slug}`}
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center text-white font-semibold hover:text-pink-200 transition-colors group"
           >
-            Read More
+            Read More 
+            <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
           </Link>
         </div>
       </div>

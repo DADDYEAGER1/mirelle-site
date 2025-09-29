@@ -39,7 +39,6 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.13",
     "typescript": "^5"
-    "gray-matter": "^4.0.3"
   },
   "description": "A premium, Pinterest-inspired website for the brand \"Mirelle\" focusing on nail ideas, nail care, seasonal looks, and product recommendations.",
   "main": "tailwind.config.js",

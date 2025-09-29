@@ -50,10 +50,55 @@ export default function BlogPost({ post }: BlogPostProps) {
         )}
       </div>
       
+      {/* HTML Content - no processing needed */}
       <div 
-        className="prose prose-lg max-w-none"
+        className="prose prose-lg max-w-none blog-content"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
+      
+      <style jsx>{`
+        .blog-content h2 {
+          color: #d63384;
+          font-size: 1.8em;
+          margin-top: 40px;
+          margin-bottom: 20px;
+          border-left: 4px solid #ff9a9e;
+          padding-left: 15px;
+        }
+        
+        .blog-content h3 {
+          color: #6f42c1;
+          font-size: 1.4em;
+          margin-top: 30px;
+          margin-bottom: 15px;
+        }
+        
+        .blog-content .trend-card {
+          background: #f8f9fa;
+          border-radius: 10px;
+          padding: 25px;
+          margin: 25px 0;
+          border-left: 5px solid #ff9a9e;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .blog-content .tip-box {
+          background: #e7f3ff;
+          border: 1px solid #b3d9ff;
+          border-radius: 8px;
+          padding: 20px;
+          margin: 20px 0;
+        }
+        
+        .blog-content .cta-section {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          padding: 30px;
+          border-radius: 15px;
+          text-align: center;
+          margin: 40px 0;
+        }
+      `}</style>
     </article>
   );
 }

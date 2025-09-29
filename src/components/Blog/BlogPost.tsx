@@ -50,55 +50,11 @@ export default function BlogPost({ post }: BlogPostProps) {
         )}
       </div>
       
-      {/* HTML Content - no processing needed */}
+      {/* HTML Content with Tailwind styling */}
       <div 
-        className="prose prose-lg max-w-none blog-content"
+        className="prose prose-lg max-w-none [&_h2]:text-pink-600 [&_h2]:text-3xl [&_h2]:mt-10 [&_h2]:mb-5 [&_h2]:border-l-4 [&_h2]:border-pink-400 [&_h2]:pl-4 [&_h3]:text-purple-600 [&_h3]:text-xl [&_h3]:mt-8 [&_h3]:mb-4 [&_.trend-card]:bg-gray-50 [&_.trend-card]:rounded-lg [&_.trend-card]:p-6 [&_.trend-card]:my-6 [&_.trend-card]:border-l-4 [&_.trend-card]:border-pink-400 [&_.trend-card]:shadow-lg [&_.tip-box]:bg-blue-50 [&_.tip-box]:border [&_.tip-box]:border-blue-200 [&_.tip-box]:rounded-lg [&_.tip-box]:p-5 [&_.tip-box]:my-5 [&_.cta-section]:bg-gradient-to-r [&_.cta-section]:from-indigo-500 [&_.cta-section]:to-purple-600 [&_.cta-section]:text-white [&_.cta-section]:p-8 [&_.cta-section]:rounded-2xl [&_.cta-section]:text-center [&_.cta-section]:my-10"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
-      
-      <style jsx>{`
-        .blog-content h2 {
-          color: #d63384;
-          font-size: 1.8em;
-          margin-top: 40px;
-          margin-bottom: 20px;
-          border-left: 4px solid #ff9a9e;
-          padding-left: 15px;
-        }
-        
-        .blog-content h3 {
-          color: #6f42c1;
-          font-size: 1.4em;
-          margin-top: 30px;
-          margin-bottom: 15px;
-        }
-        
-        .blog-content .trend-card {
-          background: #f8f9fa;
-          border-radius: 10px;
-          padding: 25px;
-          margin: 25px 0;
-          border-left: 5px solid #ff9a9e;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .blog-content .tip-box {
-          background: #e7f3ff;
-          border: 1px solid #b3d9ff;
-          border-radius: 8px;
-          padding: 20px;
-          margin: 20px 0;
-        }
-        
-        .blog-content .cta-section {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-          color: white;
-          padding: 30px;
-          border-radius: 15px;
-          text-align: center;
-          margin: 40px 0;
-        }
-      `}</style>
     </article>
   );
 }

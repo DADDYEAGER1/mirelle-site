@@ -1,8 +1,13 @@
-import { marked } from 'marked';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { BlogPost, BlogMetadata } from '@/types/blog';
+import { marked } from 'marked';
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+});
+
 
 const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
 

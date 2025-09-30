@@ -27,7 +27,12 @@ This year, Halloween nail designs are pushing boundaries with unexpected color c
 
 ### 1. Single Ghost Accent Nail
 
-![Single ghost accent nail design for Halloween 2025](/images/blog/single-ghost-accent-nail.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499497138/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/test.jpeg" alt="Single ghost accent nail design for Halloween 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 A classic French manicure with one playful ghost painted on your ring finger. Perfect for beginners.
 

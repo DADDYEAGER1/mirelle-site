@@ -103,7 +103,12 @@ Coat nails in matte black polish and add one chrome or glossy accent nail for co
 
 ### 6. Smiling Pumpkin Faces
 
-![Cute pumpkin face Halloween nail art design](/images/blog/pumpkin-face-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893193/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog6.png" alt="Cute pumpkin face Halloween nail art design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Mini jack-o'-lantern faces on orange bases. Adorable and instantly recognizable.
 
@@ -113,7 +118,12 @@ Mini jack-o'-lantern faces on orange bases. Adorable and instantly recognizable.
 
 ### 7. Blood Drip Tips
 
-![Blood drip Halloween vampire nail design](/images/blog/blood-drip-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893193/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog9.png" alt="Blood drip Halloween vampire nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Nude base with glossy red "blood" dripping from tips. Vampire vibes guaranteed.
 
@@ -123,7 +133,12 @@ Nude base with glossy red "blood" dripping from tips. Vampire vibes guaranteed.
 
 ### 8. Red Chrome with Black Accents
 
-![Red chrome Halloween nails with black geometric accents](/images/blog/red-chrome-black-accent.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893193/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog10.png" alt="Red chrome Halloween nails with black geometric accents" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Blood-red chrome finish with matte black tips or geometric patterns. Runway-ready.
 
@@ -133,7 +148,12 @@ Blood-red chrome finish with matte black tips or geometric patterns. Runway-read
 
 ### 9. Orange-to-Black Aura Gradient
 
-![Orange to black aura gradient Halloween nail design](/images/blog/orange-black-aura-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893193/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog7.png" alt="Orange to black aura gradient Halloween nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Soft gradient blending orange into black. Very 2025.
 
@@ -143,7 +163,12 @@ Soft gradient blending orange into black. Very 2025.
 
 ### 10. Glow-in-the-Dark Ghosts
 
-![Glow in the dark ghost Halloween nail design](/images/blog/glow-dark-ghost-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893193/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog8.png" alt="Glow in the dark ghost Halloween nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Special glow polish creates ghosts that appear only in darkness. Ultimate party trick.
 
@@ -153,7 +178,12 @@ Special glow polish creates ghosts that appear only in darkness. Ultimate party 
 
 ## DIY Tutorial: Easy Spider Web Nails in 5 Steps
 
-![Step by step spider web nail art tutorial for Halloween](/images/blog/spider-web-tutorial.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893193/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog11.png" alt="Step by step spider web nail art tutorial for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 **What You'll Need:**
 - Nude or grey base polish

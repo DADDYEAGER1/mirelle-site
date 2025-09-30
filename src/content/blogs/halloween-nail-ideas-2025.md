@@ -4,7 +4,7 @@ excerpt: "Discover the hottest Halloween nail ideas for 2025! From minimalist gh
 date: "2025-09-30"
 author: "Mirellé Professionals"
 tags: ["halloween nails", "nail art", "seasonal nails", "spooky nails", "fall 2025"]
-image: "/images/blog/halloween-nails-2025-hero.jpg"
+image: "/images/blog/halloween-nails-2025-hero.png"
 readTime: "6 min"
 slug: "halloween-nail-ideas-2025"
 ---

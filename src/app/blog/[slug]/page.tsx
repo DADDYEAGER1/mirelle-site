@@ -17,16 +17,28 @@ export async function generateStaticParams() {
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = params;
+  const post = await getBlogPost(slug);
   
-  try {
-    const post = await getBlogPost(slug);
-    
-    if (!post) {
-      notFound();
-    }
+  if (!post) notFound();
 
-    return <BlogPost post={post} />;
-  } catch (error) {
-    notFound();
-  }
+  // JSON-LD Schema
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://www.mirelleinspo.com${post.image}`,
+    "datePublished": post.date,
+    "author": { "@type": "Person", "name": post.author }
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <BlogPost post={post} />
+    </>
+  );
 }

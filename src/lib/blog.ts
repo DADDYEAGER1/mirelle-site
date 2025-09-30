@@ -46,7 +46,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       slug,
       title: data.title || 'Untitled',
       excerpt: data.excerpt || '',
-      content: markdownContent,
+      content: await marked(markdownContent),
       date: data.date || new Date().toISOString(),
       author: data.author || 'Anonymous',
       tags: data.tags || [],

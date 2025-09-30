@@ -28,8 +28,8 @@ This year, Halloween nail designs are pushing boundaries with unexpected color c
 ### 1. Single Ghost Accent Nail
 
 <div class="my-8 text-center">
-  <a href="https://www.pinterest.com/pin/913034524499497138/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/test.jpeg" alt="Single ghost accent nail design for Halloween 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+  <a href="https://www.pinterest.com/pin/913034524499893170/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog1.png" alt="Single ghost accent nail design for Halloween 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
   </a>
 </div>
@@ -42,7 +42,12 @@ A classic French manicure with one playful ghost painted on your ring finger. Pe
 
 ### 2. Black French Tips
 
-![Black French tip manicure Halloween nail ideas](/images/blog/black-french-tips-halloween.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893227/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog2.png" alt="Black French tip manicure Halloween nail ideas" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Swap white tips for glossy or matte black. Instantly Halloween-ready and works beyond October 31st.
 
@@ -52,7 +57,13 @@ Swap white tips for glossy or matte black. Instantly Halloween-ready and works b
 
 ### 3. Spider Web Corner Design
 
-![Spider web nail art corner design for Halloween](/images/blog/spider-web-corner-nails.jpg)
+
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893212/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog3.png" alt="Spider web nail art corner design for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Paint delicate spider webs in just one corner using a thin brush. Pair with nude or soft orange bases.
 
@@ -62,7 +73,12 @@ Paint delicate spider webs in just one corner using a thin brush. Pair with nude
 
 ### 4. Orange Tips with Nude Base
 
-![Orange French tip Halloween nail design on nude base](/images/blog/orange-tips-nude-base.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893204/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog4.png" alt="Orange French tip Halloween nail design on nude base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Classic and chic. Vibrant orange on just the tips captures autumn vibes perfectly.
 
@@ -72,7 +88,12 @@ Classic and chic. Vibrant orange on just the tips captures autumn vibes perfectl
 
 ### 5. Matte Black with Chrome Accent
 
-![Matte black Halloween nails with glossy accent](/images/blog/matte-black-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/pin/913034524499893193/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloweenblog5.png" alt="Matte black Halloween nails with glossy accent" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Coat nails in matte black polish and add one chrome or glossy accent nail for contrast.
 

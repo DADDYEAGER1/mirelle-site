@@ -5,53 +5,33 @@ interface BlogSidebarProps {
 
 export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSidebarProps) {
   return (
-    <aside className="w-full lg:w-80 space-y-6">
-      {/* Table of Contents */}
-      <div className="bg-pink-50 rounded-lg p-6 sticky top-24">
+    <div className="space-y-6">
+      {/* Table of Contents - Sticky */}
+      <div className="bg-pink-50 rounded-lg p-6 sticky top-4">
         <h3 className="text-lg font-bold text-gray-800 mb-4">Table of Contents</h3>
         <nav className="space-y-2">
           {tableOfContents.map((item) => (
-              <a>
+            
               key={item.id}
               href={`#${item.id}`}
-              className="block text-sm text-gray-600 hover:text-pink-600 transition-colors"
-            
+              className="block text-sm text-gray-700 hover:text-pink-600 transition-colors py-1"
+            >
               {item.title}
             </a>
           ))}
         </nav>
       </div>
 
-      {/* Internal Links */}
-      <div className="bg-white border border-gray-200 rounded-lg p-6">
-        <h3 className="text-lg font-bold text-gray-800 mb-4">Explore More</h3>
-        <ul className="space-y-3">
-          <li>
-            <a href="/topics/nail-care-guide" className="text-sm text-blue-600 hover:underline">
-              Nail Care Basics Guide
-            </a>
-          </li>
-          <li>
-            <a href="/shop" className="text-sm text-blue-600 hover:underline">
-              Shop Nail Products
-            </a>
-          </li>
-          <li>
-            <a href="/topics/seasonal-trends" className="text-sm text-blue-600 hover:underline">
-              Seasonal Nail Trends
-            </a>
-          </li>
-        </ul>
-      </div>
-
       {/* Pinterest Follow */}
       <div className="bg-gradient-to-br from-pink-100 to-purple-100 rounded-lg p-6 text-center">
         <h3 className="text-lg font-bold text-gray-800 mb-2">Follow Us</h3>
-        <p className="text-sm text-gray-600 mb-4">Get daily nail inspiration!</p>
-          <a>
+        <p className="text-sm text-gray-600 mb-4">Get daily nail inspiration</p>
+        
           href="https://in.pinterest.com/mirelle_inspo/"
           target="_blank"
+          rel="noopener"
           className="inline-block bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors"
+        >
           Follow on Pinterest
         </a>
       </div>
@@ -76,6 +56,6 @@ export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSideb
           </div>
         </div>
       )}
-    </aside>
+    </div>
   );
 }

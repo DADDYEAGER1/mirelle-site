@@ -11,7 +11,7 @@ export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSideb
         <h3 className="text-lg font-bold text-gray-800 mb-4">Table of Contents</h3>
         <nav className="space-y-2">
           {tableOfContents.map((item) => (
-            
+              <a>
               key={item.id}
               href={`#${item.id}`}
               className="block text-sm text-gray-600 hover:text-pink-600 transition-colors"

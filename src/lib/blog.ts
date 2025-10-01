@@ -4,24 +4,9 @@ import matter from 'gray-matter';
 import { BlogPost, BlogMetadata } from '@/types/blog';
 import { marked } from 'marked';
 
-// Custom renderer to add IDs to headings for Table of Contents
-const renderer = new marked.Renderer();
-const originalHeading = renderer.heading.bind(renderer);
-
-renderer.heading = function ({ text, depth }) {
-  const cleanText = text.replace(/<[^>]*>/g, ''); // Strip HTML tags
-  const id = cleanText
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
-  
-  return `<h${depth} id="${id}">${text}</h${depth}>`;
-};
-
 marked.setOptions({
   breaks: true,
   gfm: true,
-  renderer: renderer,
 });
 
 const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
@@ -62,8 +47,21 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     const fileContent = fs.readFileSync(filePath, 'utf8');
     const { data, content: markdownContent } = matter(fileContent);
     
-    // Convert markdown to HTML with custom renderer (adds IDs to headings)
-    const htmlContent = await marked(markdownContent);
+    // Convert markdown to HTML
+    let htmlContent = await marked(markdownContent);
+    
+    // Add IDs to H2 headings using regex (simpler approach)
+    htmlContent = htmlContent.replace(
+      /<h2>(.*?)<\/h2>/g,
+      (match, text) => {
+        const cleanText = text.replace(/<[^>]*>/g, '');
+        const id = cleanText
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+        return `<h2 id="${id}">${text}</h2>`;
+      }
+    );
     
     return {
       slug,

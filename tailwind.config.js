@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'blog-primary': '#f8b4d9', // Soft pink
+        'blog-secondary': '#fef3f7', // Light pink bg
+        'blog-accent': '#e91e63', // Bright pink
         // Premium Mirelle color palette
         nude: {
           50: '#fdf7f0',

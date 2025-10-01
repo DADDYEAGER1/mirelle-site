@@ -6,17 +6,29 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Mirelle - Modern Nail Ideas & Trends for Every Mood",
-  description: "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
-  keywords: "nail art, nail ideas, nail care, seasonal nails, nail trends, Pinterest nails, nail inspiration",
+  description:
+    "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
+  keywords:
+    "nail art, nail ideas, nail care, seasonal nails, nail trends, Pinterest nails, nail inspiration",
   authors: [{ name: "Mirelle" }],
   openGraph: {
     title: "Mirelle - Modern Nail Ideas & Trends for Every Mood",
-    description: "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
+    description:
+      "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
     type: "website",
+    url: "https://mirelleinspo.com",
+    images: [
+      {
+        url: "https://mirelleinspo.com/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Mirelle Logo",
+      },
+    ],
   },
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/favicon.png", // ✅ use favicon.png (square)
+    apple: "/favicon.png",
   },
 };
 
@@ -27,6 +39,50 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Favicon links */}
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+
+        {/* ✅ JSON-LD for logo recognition */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "url": "https://mirelleinspo.com",
+              "logo": "https://mirelleinspo.com/logo.png",
+              "name": "Mirelle",
+            }),
+          }}
+        />
+
+        {/* ✅ Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+
       <body className="antialiased">
         {/* ✅ Google Tag Manager (noscript fallback) */}
         <noscript>
@@ -56,14 +112,6 @@ export default function RootLayout({
         <Script id="adsense-meta" strategy="beforeInteractive">
           {`document.head.insertAdjacentHTML("beforeend", '<meta name="google-adsense-account" content="ca-pub-1145734682794444">')`}
         </Script>
-
-        {/* ✅ Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
 
         <Header />
         <main className="min-h-screen">{children}</main>

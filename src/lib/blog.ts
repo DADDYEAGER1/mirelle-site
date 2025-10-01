@@ -73,3 +73,24 @@ export async function getAllBlogSlugs(): Promise<string[]> {
     return [];
   }
 }
+
+
+// Custom renderer to add IDs to headings
+const renderer = new marked.Renderer();
+renderer.heading = function (text, level) {
+  const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  return `<h${level} id="${id}">${text}</h${level}>`;
+};
+
+marked.setOptions({ renderer });
+
+export async function getBlogPost(slug: string) {
+  // ... your existing code
+  
+  const htmlContent = marked(content);
+  
+  return {
+    // ... rest of your data
+    content: htmlContent,
+  };
+}

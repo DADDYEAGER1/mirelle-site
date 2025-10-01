@@ -6,14 +6,16 @@ import { marked } from 'marked';
 
 // Custom renderer to add IDs to headings for Table of Contents
 const renderer = new marked.Renderer();
-renderer.heading = function (text, level) {
-  const cleanText = typeof text === 'string' ? text : text.toString();
+const originalHeading = renderer.heading.bind(renderer);
+
+renderer.heading = function ({ text, depth }) {
+  const cleanText = text.replace(/<[^>]*>/g, ''); // Strip HTML tags
   const id = cleanText
     .toLowerCase()
-    .replace(/<[^>]*>/g, '') // Strip HTML tags
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
-  return `<h${level} id="${id}">${text}</h${level}>`;
+  
+  return `<h${depth} id="${id}">${text}</h${depth}>`;
 };
 
 marked.setOptions({

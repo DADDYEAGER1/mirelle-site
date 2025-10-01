@@ -11,7 +11,7 @@ export default function BlogPost({ post }: BlogPostProps) {
   // Extract headings for Table of Contents
   const tableOfContents = extractHeadings(post.content);
   
-  // Related posts (you can make this dynamic later based on tags)
+  // Related posts
   const relatedPosts = [
     {
       slug: 'halloween-nail-ideas-2025',
@@ -23,11 +23,10 @@ export default function BlogPost({ post }: BlogPostProps) {
       title: '18 Christmas Nail Designs 2025',
       image: '/images/blog/christmas-nail-designs-2025-hero.jpg'
     }
-  ].filter(p => p.slug !== post.slug); // Don't show current post
+  ].filter(p => p.slug !== post.slug);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      {/* Back Button */}
       <div className="mb-6">
         <Link 
           href="/blog"
@@ -48,7 +47,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           <span>•</span>
           <span>{new Date(post.date).toLocaleDateString()}</span>
           <span>•</span>
-          <span>{post.readTime} min read</span>
+          <span>{post.readTime} read</span>
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
@@ -74,10 +73,10 @@ export default function BlogPost({ post }: BlogPostProps) {
         )}
       </div>
 
-      {/* Two Column Layout: Content + Sidebar */}
-      <div className="flex flex-col lg:flex-row gap-12">
-        {/* Main Content */}
-        <article className="flex-1 max-w-3xl">
+      {/* Two Column Layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Content - Takes 8 columns on large screens */}
+        <article className="lg:col-span-8">
           <div 
             className="prose prose-lg max-w-none 
             [&_h2]:text-pink-600 [&_h2]:text-3xl [&_h2]:mt-12 [&_h2]:mb-6 [&_h2]:font-bold [&_h2]:scroll-mt-24
@@ -92,28 +91,36 @@ export default function BlogPost({ post }: BlogPostProps) {
           />
         </article>
 
-        {/* Sidebar */}
-        <BlogSidebar
-          tableOfContents={tableOfContents}
-          relatedPosts={relatedPosts}
-        />
+        {/* Sidebar - Takes 4 columns on large screens */}
+        <aside className="lg:col-span-4">
+          <BlogSidebar
+            tableOfContents={tableOfContents}
+            relatedPosts={relatedPosts}
+          />
+        </aside>
       </div>
     </div>
   );
 }
 
-// Helper function to extract H2 headings for Table of Contents
+// FIXED: Properly extract and clean heading text
 function extractHeadings(htmlContent: string): { id: string; title: string }[] {
   const headings: { id: string; title: string }[] = [];
-  const regex = /<h2[^>]*>(.*?)<\/h2>/gi;
+  const regex = /<h2[^>]*id="([^"]*)"[^>]*>(.*?)<\/h2>/gi;
   let match;
   
   while ((match = regex.exec(htmlContent)) !== null) {
-    const title = match[1].replace(/<[^>]*>/g, ''); // Strip HTML tags
-    const id = title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
+    const id = match[1];
+    const rawTitle = match[2];
+    // Strip ALL HTML tags and decode entities
+    const title = rawTitle
+      .replace(/<[^>]*>/g, '')
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .trim();
+    
     headings.push({ id, title });
   }
   

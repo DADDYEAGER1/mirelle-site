@@ -15,7 +15,7 @@ export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSideb
               key={item.id}
               href={`#${item.id}`}
               className="block text-sm text-gray-600 hover:text-pink-600 transition-colors"
-            >
+            
               {item.title}
             </a>
           ))}

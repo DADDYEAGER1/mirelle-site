@@ -8,10 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'blog-primary': '#f8b4d9', // Soft pink
-        'blog-secondary': '#fef3f7', // Light pink bg
-        'blog-accent': '#e91e63', // Bright pink
-        // Premium Mirelle color palette
+        'blog-primary': '#f8b4d9',
+        'blog-secondary': '#fef3f7',
+        'blog-accent': '#e91e63',
         nude: {
           50: '#fdf7f0',
           100: '#fae8d6',
@@ -71,5 +70,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://mirelleinspo.com",
     images: [
       {
-        url: "https://mirelleinspo.com/logo.png",
+        url: "https://mirelleinspo.com/apple-touch-icon.png",
         width: 512,
         height: 512,
         alt: "Mirelle Logo",
@@ -27,9 +27,11 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/favicon.png", // ✅ use favicon.png (square)
-    apple: "/favicon.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -40,32 +42,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Favicon links */}
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        {/* ✅ Favicon & App Icons */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
 
-        {/* ✅ JSON-LD for logo recognition */}
+        {/* ✅ Schema.org Logo JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "url": "https://mirelleinspo.com",
-              "logo": "https://mirelleinspo.com/logo.png",
-              "name": "Mirelle",
+              name: "Mirelle",
+              url: "https://mirelleinspo.com",
+              logo: "https://mirelleinspo.com/apple-touch-icon.png",
             }),
           }}
         />

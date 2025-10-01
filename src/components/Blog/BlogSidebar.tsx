@@ -52,7 +52,6 @@ export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSideb
           href="https://in.pinterest.com/mirelle_inspo/"
           target="_blank"
           className="inline-block bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors"
-        >
           Follow on Pinterest
         </a>
       </div>

@@ -104,6 +104,8 @@ export default function RootLayout({
         <Script id="adsense-meta" strategy="beforeInteractive">
         {`document.head.insertAdjacentHTML("beforeend", '<meta name="google-adsense-account" content="ca-pub-7363450946693589">')`}
         </Script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7363450946693589"
+         crossorigin="anonymous"></script>
 
         <Script
         id="adsense-script"

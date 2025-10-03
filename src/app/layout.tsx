@@ -7,16 +7,16 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 
 export const metadata: Metadata = {
-  title: "Mirelle - Modern Nail Ideas & Trends for Every Mood",
+  title: "Mirelle Inspo | Nail Art Ideas, Trends & Tutorials 2025",
   description:
-    "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
+    "Explore 2025's top nail art trends, DIY tutorials, seasonal nail designs, and expert tips. Get inspired for Pinterest-worthy nails every mood and occasion.",
   keywords:
-    "nail art, nail ideas, nail care, seasonal nails, nail trends, Pinterest nails, nail inspiration",
+    "nail art ideas, nail trends 2025, DIY nail tutorials, seasonal nail designs, Pinterest nails, modern nail inspiration, nail care tips",
   authors: [{ name: "Mirelle" }],
   openGraph: {
-    title: "Mirelle - Modern Nail Ideas & Trends for Every Mood",
+    title: "Mirelle Inspo | Nail Art Ideas, Trends & Tutorials 2025",
     description:
-      "Discover modern nail ideas, seasonal inspirations, nail care tips, and favorite product picks curated by Mirelle.",
+      "Discover the latest nail art trends, creative tutorials, seasonal designs, and Pinterest-inspired nail ideas curated by Mirelle.",
     type: "website",
     url: "https://mirelleinspo.com",
     images: [
@@ -24,9 +24,17 @@ export const metadata: Metadata = {
         url: "https://mirelleinspo.com/apple-touch-icon.png",
         width: 512,
         height: 512,
-        alt: "Mirelle Logo",
+        alt: "Mirelle Logo - Nail Inspiration",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mirelle Inspo | Nail Art Ideas & Tutorials 2025",
+    description:
+      "Stay ahead with 2025 nail trends, seasonal designs, and Pinterest-worthy tutorials. Expert tips and inspiration for every mood.",
+    images: ["https://mirelleinspo.com/apple-touch-icon.png"],
+    creator: "@MirelleNails",
   },
   icons: {
     icon: "/favicon.ico",
@@ -35,6 +43,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
 };
+
 
 export default function RootLayout({
   children,

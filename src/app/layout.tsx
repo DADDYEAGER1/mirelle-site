@@ -129,6 +129,20 @@ export default function RootLayout({
           name="google-adsense-account"
           content="ca-pub-7363450946693589"
         />
+          <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: `{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mirelle",
+      "url": "https://mirelleinspo.com",
+      "logo": "https://mirelleinspo.com/apple-touch-icon.png",
+      "sameAs": [
+        "https://www.instagram.com/yourprofile",
+        "https://www.pinterest.com/yourprofile"
+      ]
+    }` }}
+  />
 
 
         <Header />

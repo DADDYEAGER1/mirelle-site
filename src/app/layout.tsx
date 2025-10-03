@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import { Html, Head, Main, NextScript } from 'next/document'
+
 
 export const metadata: Metadata = {
   title: "Mirelle - Modern Nail Ideas & Trends for Every Mood",
@@ -111,6 +113,12 @@ export default function RootLayout({
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7363450946693589"
         crossOrigin="anonymous"
+        />
+
+                {/* ✅ Required for AdSense verification */}
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-7363450946693589"
         />
 
 

@@ -30,11 +30,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `${post.title} | Mirelle`,
-    description: post.excerpt || post.description || `Discover ${post.title} - expert nail tips, trends, and tutorials from Mirelle.`,
+    description: post.excerpt || `Discover ${post.title} - expert nail tips, trends, and tutorials from Mirelle.`,
     keywords: post.tags?.join(', ') || 'nail art, nail care, nail trends',
     openGraph: {
       title: `${post.title} | Mirelle`,
-      description: post.excerpt || post.description || '',
+      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
       type: 'article',
       url: `https://mirelleinspo.com/blog/${slug}`,
       images: post.image ? [{
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     twitter: {
       card: 'summary_large_image',
       title: `${post.title} | Mirelle`,
-      description: post.excerpt || post.description || '',
+      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
       images: post.image ? [`https://mirelleinspo.com${post.image}`] : [],
     },
   };

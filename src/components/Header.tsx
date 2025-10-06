@@ -33,6 +33,9 @@ export default function Header() {
             <Link href="/blog" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               Blog
             </Link>
+            <Link href="/shop" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+              shop
+            </Link>
             <Link href="/about" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               About
             </Link>

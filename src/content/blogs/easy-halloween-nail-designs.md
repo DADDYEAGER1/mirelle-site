@@ -45,7 +45,13 @@ Another huge trend? Mixing fall vibes with spooky elements. Think pumpkin spice 
 
 ### 1. Classic Ghost Nails
 
-![Ghost face halloween nail art on simple white base](/images/blog/easy-halloween-nail-designs-ghost-simple.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/easy-halloween-nail-designs-ghost-simple.jpg" alt="Ghost face halloween nail art on simple white base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
+
 
 okay but like... these might be the easiest halloween nails ever? Just paint your nails white (or nude), wait for them to dry completely, then use a black nail art pen or even a toothpick to draw tiny ghost faces. Two dots for eyes, one oval for the mouth. Done.
 
@@ -67,7 +73,12 @@ These easy halloween nail designs work on literally any nail length and you prob
 
 ### 2. Spider Web French Tips
 
-![Halloween spider web design on french manicure tips](/images/blog/halloween-spider-web-nails-easy.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/halloween-spider-web-nails-easy.jpg" alt="Halloween spider web design on french manicure tips" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 French tips but make them spooky. This is one of my favorite easy halloween nail designs because it's elegant enough for work but festive enough for parties. I did these on a bride once who was having a Halloween wedding, and she literally cried happy tears.
 
@@ -87,7 +98,12 @@ French tips but make them spooky. This is one of my favorite easy halloween nail
 
 ### 3. Pumpkin Spice Everything
 
-![Orange pumpkin nail art with green stem details](/images/blog/pumpkin-nail-art-halloween-orange.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/pumpkin-nail-art-halloween-orange.jpg" alt="Orange pumpkin nail art with green stem details" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 If you can't tell, I'm slightly obsessed with pumpkin nails. They're cute, they're festive, and they're super forgiving if you mess up because pumpkins aren't supposed to be perfect anyway.
 
@@ -109,7 +125,12 @@ These easy halloween nail designs are perfect for early October when you want fa
 
 ### 4. Black Cat Silhouette
 
-![Simple black cat silhouette on nude nail background](/images/blog/black-cat-halloween-nails-simple.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/black-cat-halloween-nails-simple.jpg" alt="Simple black cat silhouette on nude nail background" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Okay, confession time. The first time I tried to paint a cat, it looked like a deformed potato with ears. But then I learned this trick: silhouettes. Just the outline, no details needed, and suddenly everyone thinks you're a nail art genius.
 
@@ -129,7 +150,12 @@ Okay, confession time. The first time I tried to paint a cat, it looked like a d
 
 ### 5. Candy Corn Cuteness
 
-![Candy corn striped halloween nail designs in orange yellow white](/images/blog/candy-corn-halloween-nail-designs.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/candy-corn-halloween-nail-designs.jpg" alt="Candy corn striped halloween nail designs in orange yellow white" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 ngl these make me smile every time. They're giving retro Halloween vibes, and the best part? Even if your lines aren't perfect, candy corn is literally just three stripes. Nobody's judging.
 
@@ -149,7 +175,12 @@ ngl these make me smile every time. They're giving retro Halloween vibes, and th
 
 ### 6. Blood Drip Drama
 
-![Red blood drip effect on nude halloween nails](/images/blog/blood-drip-easy-halloween-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/blood-drip-easy-halloween-nails.jpg" alt="Red blood drip effect on nude halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These easy halloween nail designs look way harder than they actually are. Real talk: I learned this technique after binge-watching Dexter (don't judge me) and realized blood splatter is just... controlled chaos?
 
@@ -172,7 +203,12 @@ Real talk: I learned this the hard way after a client's gel lifted 2 hours befor
 
 ### 7. Witch Hat Magic
 
-![Purple witch hat nail art on simple base](/images/blog/witch-hat-simple-halloween-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/witch-hat-simple-halloween-nails.jpg" alt="Purple witch hat nail art on simple base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Purple is so underrated for Halloween. Everyone goes orange and black, but witch vibes are immaculate with deep purple. These are some of the easiest halloween nail designs if you can draw a triangle (spoiler: you can).
 
@@ -192,7 +228,12 @@ Purple is so underrated for Halloween. Everyone goes orange and black, but witch
 
 ### 8. Skeleton Hand
 
-![Skeleton bone details painted on black halloween nails](/images/blog/skeleton-hand-halloween-nail-art.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/skeleton-hand-halloween-nail-art.jpg" alt="Skeleton bone details painted on black halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Plot twist: these look INSANE but are actually beginner-friendly. It's just white lines on black. That's it. That's the whole design.
 
@@ -211,7 +252,13 @@ Plot twist: these look INSANE but are actually beginner-friendly. It's just whit
 
 ### 9. Mummy Wraps
 
-![White mummy bandage wraps on nude halloween nails](/images/blog/mummy-nails-halloween-easy-design.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/mummy-nails-halloween-easy-design.jpg" alt="White mummy bandage wraps on nude halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
+
 
 These easy halloween nail designs are so fun and literally forgiving of mistakes. Mummy wraps are SUPPOSED to look messy and chaotic. It's thematically appropriate.
 
@@ -230,7 +277,12 @@ These easy halloween nail designs are so fun and literally forgiving of mistakes
 
 ### 10. Frankenstein's Monster
 
-![Green frankenstein halloween nails with black stitches](/images/blog/frankenstein-halloween-nails-green.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/frankenstein-halloween-nails-green.jpg" alt="Green frankenstein halloween nails with black stitches" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 okay but hear me out... these are adorable? Like, scary-cute. And if you can draw a straight-ish line, you can do these easy halloween nail designs.
 
@@ -249,7 +301,12 @@ okay but hear me out... these are adorable? Like, scary-cute. And if you can dra
 
 ### 11. Bat Silhouettes
 
-![Black bat silhouettes on orange halloween nail background](/images/blog/bat-silhouette-halloween-nail-art.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/bat-silhouette-halloween-nail-art.jpg" alt="Black bat silhouettes on orange halloween nail background" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Bats are having a moment, and honestly? They're one of the easiest halloween nail designs to master. It's literally just a "W" shape with triangles. That's the whole bat.
 
@@ -268,7 +325,12 @@ Bats are having a moment, and honestly? They're one of the easiest halloween nai
 
 ### 12. Orange & Black Swirls
 
-![Orange and black marble swirl halloween nail designs](/images/blog/orange-black-swirl-halloween-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/orange-black-swirl-halloween-nails.jpg" alt="Orange and black marble swirl halloween nail designs" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These are so satisfying to create because you literally can't mess them up. Swirls are supposed to be random. I've done these on myself while watching TV—that's how easy they are.
 
@@ -287,7 +349,12 @@ These are so satisfying to create because you literally can't mess them up. Swir
 
 ### 13. Glitter Pumpkin Accent
 
-![Orange glitter pumpkin feature nail for halloween](/images/blog/glitter-pumpkin-halloween-nail-designs.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/glitter-pumpkin-halloween-nail-designs.jpg" alt="Orange glitter pumpkin feature nail for halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 If you want easy halloween nail designs that also feel a little glam? This is it. Glitter makes everything look more expensive and hides mistakes beautifully.
 
@@ -306,8 +373,12 @@ If you want easy halloween nail designs that also feel a little glam? This is it
 
 ### 14. Cobweb French
 
-![Delicate cobweb pattern on french tip halloween nails](/images/blog/cobweb-french-tip-halloween-nails.jpg)
-
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/cobweb-french-tip-halloween-nails.jpg" alt="Delicate cobweb pattern on french tip halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 French tips will never die, and I'm convinced they're perfect for easy halloween nail designs when you add one small spooky detail. This is office-appropriate but still festive.
 
 **Difficulty:** Medium | **Time:** 25 minutes | **Best For:** Almond or square nails
@@ -327,7 +398,12 @@ French tips will never die, and I'm convinced they're perfect for easy halloween
 
 ### 15. Vampire Fangs
 
-![White vampire fang details on red halloween nails](/images/blog/vampire-fang-halloween-nail-art.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/vampire-fang-halloween-nail-art.jpg" alt="White vampire fang details on red halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These are giving Twilight but make it chic. I did these on a client last year who was dressing as a vampire, and she got so many compliments she kept them for three weeks.
 
@@ -346,7 +422,12 @@ These are giving Twilight but make it chic. I did these on a client last year wh
 
 ### 16. Haunted House Scene
 
-![Spooky haunted house silhouette on orange halloween nails](/images/blog/haunted-house-halloween-nails-easy.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/haunted-house-halloween-nails-easy.jpg" alt="Spooky haunted house silhouette on orange halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 okay so these easy halloween nail designs require a slightly steadier hand, but the payoff is WORTH IT. People will think you went to a salon.
 
@@ -367,7 +448,12 @@ okay so these easy halloween nail designs require a slightly steadier hand, but 
 
 ### 17. Purple Witch Vibes
 
-![Deep purple witch-themed halloween nail designs with stars](/images/blog/purple-witch-halloween-nail-designs.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/purple-witch-halloween-nail-designs.jpg" alt="Deep purple witch-themed halloween nail designs with stars" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Purple is severely underrated for Halloween, and I will die on this hill. These easy halloween nail designs give off major mystical energy without being too literal.
 
@@ -386,7 +472,12 @@ Purple is severely underrated for Halloween, and I will die on this hill. These 
 
 ### 18. Zombie Decay
 
-![Green and grey zombie nail art with texture effects](/images/blog/zombie-nails-halloween-green-grey.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/zombie-nails-halloween-green-grey.jpg" alt="Green and grey zombie nail art with texture effects" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Not gonna lie, I was literally shaking the first time I tried this design on a real client. But you know what? It turned out perfect, and she posted it, and my DMs exploded. Sometimes the scariest designs are actually the most fun.
 
@@ -406,7 +497,12 @@ Not gonna lie, I was literally shaking the first time I tried this design on a r
 
 ### 19. Full Moon Magic
 
-![Yellow full moon on dark blue halloween night sky nails](/images/blog/full-moon-halloween-nail-art-simple.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/full-moon-halloween-nail-art-simple.jpg" alt="Yellow full moon on dark blue halloween night sky nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These easy halloween nail designs are so peaceful and pretty. Perfect if you want Halloween vibes without going full gore mode.
 
@@ -425,7 +521,12 @@ These easy halloween nail designs are so peaceful and pretty. Perfect if you wan
 
 ### 20. Eyeball Horror
 
-![Creepy eyeball nail art on white halloween nails](/images/blog/eyeball-halloween-nails-creepy.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/eyeball-halloween-nails-creepy.jpg" alt="Creepy eyeball nail art on white halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 okay but like... these are simultaneously creepy and kind of cute? Is that just me? These easy halloween nail designs always get reactions.
 
@@ -444,7 +545,12 @@ okay but like... these are simultaneously creepy and kind of cute? Is that just 
 
 ### 21. Jack-O'-Lantern Faces
 
-![Orange pumpkin jack-o-lantern faces on halloween nails](/images/blog/jack-o-lantern-halloween-nail-designs.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/jack-o-lantern-halloween-nail-designs.jpg" alt="Orange pumpkin jack-o-lantern faces on halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Classic for a reason. These easy halloween nail designs never go out of style, and you can make each face different for variety.
 
@@ -464,7 +570,13 @@ Classic for a reason. These easy halloween nail designs never go out of style, a
 
 ### 22. Ombre Orange to Black
 
-![Gradient ombre halloween nails from orange to black](/images/blog/ombre-halloween-nails-orange-black.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/ombre-halloween-nails-orange-black.jpg" alt="Gradient ombre halloween nails from orange to black" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
+
 
 Okay so get this—ombre looks complicated but it's actually one of the easiest halloween nail designs once you know the sponge trick. I literally do these while watching Netflix.
 
@@ -484,7 +596,13 @@ Okay so get this—ombre looks complicated but it's actually one of the easiest 
 
 ### 23. Chrome Spider Elegance
 
-![Metallic chrome spider web on dark halloween nails](/images/blog/chrome-spider-halloween-nail-art.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/chrome-spider-halloween-nail-art.jpg" alt="Metallic chrome spider web on dark halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
+
 
 Chrome everything is having a moment in 2025, and these easy halloween nail designs are giving expensive and editorial. People will ask where you got your nails done.
 
@@ -504,7 +622,12 @@ Chrome everything is having a moment in 2025, and these easy halloween nail desi
 
 ### 24. Dripping Blood Tips
 
-![Red blood drip from tips on nude halloween nails](/images/blog/dripping-blood-halloween-nails-red.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/dripping-blood-halloween-nails-red.jpg" alt="Red blood drip from tips on nude halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These are basically reverse French tips but make them creepy. One of my favorite easy halloween nail designs because they're sophisticated enough for work.
 
@@ -524,7 +647,12 @@ These are basically reverse French tips but make them creepy. One of my favorite
 
 ### 25. Graveyard Scene
 
-![Spooky graveyard silhouette on purple halloween nails](/images/blog/graveyard-scene-halloween-nail-designs.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/graveyard-scene-halloween-nail-designs.jpg" alt="Spooky graveyard silhouette on purple halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Real talk: I learned this after my viral fail video in 2023 where nails literally fell off mid-photoshoot. Two million views of pure embarrassment taught me to ALWAYS prep properly and choose designs that actually last. These easy halloween nail designs are tested and approved.
 
@@ -545,7 +673,12 @@ Real talk: I learned this after my viral fail video in 2023 where nails literall
 
 ### 26. Poison Bottle
 
-![Green poison bottle design on black halloween nails](/images/blog/poison-bottle-halloween-nails-green.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/poison-bottle-halloween-nails-green.jpg" alt="Green poison bottle design on black halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These easy halloween nail designs are giving witchy apothecary vibes. I'm obsessed with how simple they are but how much of a statement they make.
 
@@ -565,7 +698,12 @@ These easy halloween nail designs are giving witchy apothecary vibes. I'm obsess
 
 ### 27. Minimalist Ghost
 
-![Simple minimalist ghost dots on nude halloween nails](/images/blog/minimalist-ghost-halloween-nail-art.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/minimalist-ghost-halloween-nail-art.jpg" alt="Simple minimalist ghost dots on nude halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Sometimes less is actually more. These easy halloween nail designs are perfect if you want festive but subtle. Very "I have a corporate job but I still celebrate Halloween."
 
@@ -584,7 +722,12 @@ Sometimes less is actually more. These easy halloween nail designs are perfect i
 
 ### 28. Fall Plaid Pattern
 
-![Orange and black plaid pattern on halloween nails](/images/blog/plaid-halloween-nails-fall-pattern.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/plaid-halloween-nails-fall-pattern.jpg" alt="Orange and black plaid pattern on halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Plaid is so cozy and perfect for those easy halloween nail designs that work from October through Thanksgiving. Maximum mileage.
 
@@ -604,7 +747,12 @@ Plaid is so cozy and perfect for those easy halloween nail designs that work fro
 
 ### 29. Evil Eye Protection
 
-![Blue evil eye design on white halloween nails](/images/blog/evil-eye-halloween-nail-designs.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/evil-eye-halloween-nail-designs.jpg" alt="Blue evil eye design on white halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These easy halloween nail designs have mystical protection vibes. Also they're just really pretty, and I love how they look with gold jewelry.
 
@@ -626,7 +774,12 @@ These easy halloween nail designs have mystical protection vibes. Also they're j
 
 ### 30. Autumn Leaves
 
-![Orange and burgundy fall leaves on nude halloween nails](/images/blog/autumn-leaves-halloween-nails-orange.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/autumn-leaves-halloween-nails-orange.jpg" alt="Orange and burgundy fall leaves on nude halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 okay so technically these are fall nails, but they work perfectly as easy halloween nail designs if you want to stay festive without going full spooky.
 
@@ -646,7 +799,12 @@ okay so technically these are fall nails, but they work perfectly as easy hallow
 
 ### 31. Crystal Ball Mystic
 
-![Purple crystal ball with stars on halloween nails](/images/blog/crystal-ball-halloween-nail-art.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/crystal-ball-halloween-nail-art.jpg" alt="Purple crystal ball with stars on halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These easy halloween nail designs are perfect for fortune teller or mystic costume vibes. Plus they're just gorgeous even without a costume.
 
@@ -666,7 +824,12 @@ These easy halloween nail designs are perfect for fortune teller or mystic costu
 
 ### 32. Lightning Bolt Power
 
-![Electric purple lightning bolts on black halloween nails](/images/blog/lightning-bolt-halloween-nails-purple.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/lightning-bolt-halloween-nails-purple.jpg" alt="Electric purple lightning bolts on black halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 ngl these give me superhero vibes more than Halloween, but they work perfectly for storm witch or electric theme costumes. And they're genuinely some of the easiest halloween nail designs to freehand.
 
@@ -686,7 +849,12 @@ ngl these give me superhero vibes more than Halloween, but they work perfectly f
 
 ### 33. Coffin Shape Elegance
 
-![Elegant coffin-shaped nails with burgundy halloween design](/images/blog/coffin-shape-halloween-nail-designs.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/coffin-shape-halloween-nail-designs.jpg" alt="Elegant coffin-shaped nails with burgundy halloween design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 Okay so confession: I'm including this in easy halloween nail designs even though the nail SHAPE itself is the Halloween element. Sometimes the shape does the heavy lifting.
 
@@ -705,7 +873,12 @@ Okay so confession: I'm including this in easy halloween nail designs even thoug
 
 ### 34. Starry Night Mystery
 
-![Show Image](/images/blog/starry-night-halloween-nails.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/starry-night-halloween-nails.jpg" alt="Dark blue starry night celestial halloween nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">Watch Full Tutorial on Pinterest →</span>
+  </a>
+</div>
 
 These easy halloween nail designs are giving me major witchy celestial vibes. Perfect if you're going as a witch, fortune teller, or just love the mystical aesthetic.
 

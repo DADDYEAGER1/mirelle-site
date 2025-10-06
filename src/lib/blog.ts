@@ -31,6 +31,10 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           tags: data.tags || [],
           image: data.image || null,
           readTime: data.readTime || '5 min',
+          canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`, // ADD THIS LINE
+          faqItems: data.faqItems || undefined, // ADD THIS
+          tutorialSteps: data.tutorialSteps || undefined, // ADD THIS
+          tutorialMetadata: data.tutorialMetadata || undefined, // ADD THIS
         };
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -73,6 +77,10 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       tags: data.tags || [],
       image: data.image || null,
       readTime: data.readTime || '5 min',
+      canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`, // ADD THIS LINE
+      faqItems: data.faqItems || undefined, // ADD THIS
+      tutorialSteps: data.tutorialSteps || undefined, // ADD THIS
+      tutorialMetadata: data.tutorialMetadata || undefined, // ADD THIS
     };
   } catch (error) {
     console.error(`Error reading blog post ${slug}:`, error);

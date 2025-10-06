@@ -109,6 +109,9 @@ export default function Header() {
             <Link href="/blog" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               Blog
             </Link>
+            <Link href="/shop" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+              Shop
+            </Link>
             <Link href="/about" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               About
             </Link>

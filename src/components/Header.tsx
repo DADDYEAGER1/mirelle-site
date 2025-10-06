@@ -21,7 +21,7 @@ export default function Header() {
               className="h-12 w-auto"
             />
             <span className="font-serif text-2xl font-bold text-charcoal-800">
-              Mirelle Inspo
+              Mirellé
             </span>
           </Link>
 
@@ -44,7 +44,7 @@ export default function Header() {
             </Link>
             <Link 
               href="/#newsletter" 
-              className="bg-blush-400 text-black px-6 py-2 rounded-full hover:bg-blush-500 transition-colors font-semibold"
+              className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium"
             >
               Subscribe
             </Link>

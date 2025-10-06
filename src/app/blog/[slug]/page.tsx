@@ -233,6 +233,95 @@ export default async function BlogPostPage({ params }: PageProps) {
     };
   }
 
+  if (slug === 'easy-halloween-nail-designs') {
+    faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'How long do Halloween nail designs last?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Regular polish Halloween nail designs last 3-5 days with normal wear. Gel polish designs last 2-3 weeks. To extend wear time, apply top coat every 2-3 days and wear gloves when cleaning or doing dishes.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What are the easiest Halloween nail designs for beginners?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'The easiest Halloween nail designs for beginners include simple ghost faces (white base with black dots), solid orange pumpkin nails with vertical lines, black cat silhouettes, candy corn stripes, and basic dot patterns. These require only basic nail polish and a toothpick for detail work.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How do I make my Halloween nails last longer?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'To make Halloween nails last longer: properly prep nails by buffing and cleaning, apply thin coats of polish, let each layer dry completely, use quality base and top coats, reapply top coat every 2-3 days, and wear gloves when doing wet tasks. Gel polish lasts significantly longer than regular polish.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Can I do Halloween nails at home without special tools?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes, you can create most Halloween nail designs at home using only regular nail polish and a toothpick. A toothpick works as a dotting tool and detail brush for simple designs. For more options, invest in basic nail art brushes ($10), dotting tools ($5), and striping tape ($3).'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What nail polish colors are best for Halloween?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'The best nail polish colors for Halloween are orange, black, deep purple, burgundy red, and white. These classic colors can be combined to create hundreds of Halloween designs. In 2025, adding chrome finishes and metallic accents to traditional Halloween colors is trending.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How much do Halloween nails cost at a salon?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Halloween nails at a salon typically cost $45-65 for basic designs with gel polish, and $80-120 for intricate designs with 3D elements. DIY Halloween nails at home cost $20-30 in supplies that last for multiple manicures, making it a more budget-friendly option.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'When should I get my Halloween nails done?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Get Halloween nails done 3-5 days before your event if using gel or acrylics, or 1-2 days before if using regular polish. This timing allows nails to settle and any issues to appear before your event, giving you time to fix problems if needed.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How do I remove Halloween nail art without damaging my nails?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Remove regular Halloween nail polish with acetone and cotton balls after 30 seconds of contact. For gel polish, soak acetone-soaked cotton wrapped in foil for 10-15 minutes, then gently scrape off. Never peel off gel polish as it damages the nail bed. Apply cuticle oil after removal.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What are good Halloween nail ideas for short nails?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Good Halloween nail designs for short nails include simple dots (ghosts, pumpkins), minimalist lines like corner spiderwebs, solid colors with one accent nail, stamping plates, and nail stickers. Short nails work best with bold, simple designs rather than detailed scenes.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Do I need special tools for Halloween nail art?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'No special tools are required for basic Halloween nail art. You only need regular nail polish, a toothpick, and patience. Optional affordable tools include thin nail art brushes ($3), dotting tools ($5), striping tape ($3), and nail art pens ($5) for under $20 total.'
+          }
+        }
+      ]
+    };
+  }
+
   return (
     <>
       {/* Article Schema */}

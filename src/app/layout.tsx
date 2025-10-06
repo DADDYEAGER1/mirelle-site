@@ -44,13 +44,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  post,
 }: {
   children: React.ReactNode;
+  post?: {
+    title: string;
+    slug: string;
+    author: string;
+    publishedAt: string;
+  };
 }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ Schema.org Logo JSON-LD */}
+        {/* ✅ Organization Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -60,9 +67,41 @@ export default function RootLayout({
               name: "Mirelle",
               url: "https://mirelleinspo.com",
               logo: "https://mirelleinspo.com/apple-touch-icon.png",
+              sameAs: [
+                "https://www.instagram.com/yourprofile",
+                "https://www.pinterest.com/yourprofile",
+              ],
             }),
           }}
         />
+
+        {/* ✅ Article Schema for blog posts */}
+        {post && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Article",
+                headline: post.title,
+                author: { "@type": "Person", name: post.author },
+                publisher: {
+                  "@type": "Organization",
+                  name: "Mirelle",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://mirelleinspo.com/apple-touch-icon.png",
+                  },
+                },
+                datePublished: post.publishedAt,
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": `https://mirelleinspo.com/${post.slug}`,
+                },
+              }),
+            }}
+          />
+        )}
 
         {/* ✅ Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -102,11 +141,10 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* ✅ AdSense  */}
+        {/* ✅ AdSense */}
         <Script id="adsense-meta" strategy="beforeInteractive">
           {`document.head.insertAdjacentHTML("beforeend", '<meta name="google-adsense-account" content="ca-pub-1145734682794444">')`}
         </Script>
-
         <Script
           id="adsense-script"
           strategy="afterInteractive"
@@ -119,22 +157,6 @@ export default function RootLayout({
         <meta
           name="google-adsense-account"
           content="ca-pub-1145734682794444"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Mirelle",
-              "url": "https://mirelleinspo.com",
-              "logo": "https://mirelleinspo.com/apple-touch-icon.png",
-              "sameAs": [
-                "https://www.instagram.com/yourprofile",
-                "https://www.pinterest.com/yourprofile"
-              ]
-            }`,
-          }}
         />
 
         <Header />

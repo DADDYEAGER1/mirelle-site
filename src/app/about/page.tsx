@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white text-center px-4">
-            Hi, I'm Mirellé! 💅
+            Hi, guys!!
           </h1>
         </div>
       </div>

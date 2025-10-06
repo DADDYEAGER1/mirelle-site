@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { getBlogPost, getAllBlogSlugs } from '@/lib/blog';
 import BlogPost from '@/components/Blog/BlogPost';
 import type { Metadata } from 'next';
+import { generateSchemas } from '@/lib/generateSchemas';
+
 
 interface PageProps {
   params: {
@@ -17,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 // ✅ THIS IS THE FIX — Dynamic metadata per post
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const post = await getBlogPost(slug);
   
@@ -55,6 +57,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+
+  const schemas = generateSchemas({
+    post,
+    slug: params.slug,
+    faqItems: post.faqItems,
+    tutorialSteps: post.tutorialSteps,
+    tutorialMetadata: post.tutorialMetadata,
+  });
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.breadcrumbSchema) }} />
+      {schemas.faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.faqSchema) }} />}
+      {schemas.howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.howToSchema) }} />}
+      <BlogPost post={post} />
+    </>
+  );
+}
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = params;
   const post = await getBlogPost(slug);

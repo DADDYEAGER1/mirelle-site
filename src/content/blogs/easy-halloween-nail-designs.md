@@ -26,7 +26,12 @@ For more seasonal inspiration, check out our <a href='/blog/christmas-nail-desin
 
 ## What's Trending in Easy Halloween Nail Designs for 2025
 
-![Easy halloween nail designs featuring 35 doable spooky manicure ideas for 2025](/images/blog/easy-halloween-nail-designs-hero.jpg)
+<div class="my-8 text-center">
+  <a href="https://www.pinterest.com/mirelle_inspo/halloween-nails-2025/" target="_blank" rel="noopener" class="block">
+    <img src="/images/blog/easy-halloween-nail-designs-hero.jpg" alt="Easy halloween nail designs featuring 35 doable spooky manicure ideas for 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <span class="text-blue-600 underline mt-2 inline-block">See More Halloween Nail Ideas on Pinterest →</span>
+  </a>
+</div>
 
 Halloween nail art is having a MAJOR moment right now, and honestly? I'm obsessed. The trends for 2025 are leaning hard into chrome finishes, minimalist spooky vibes, and—thank goodness—designs that don't require a steady hand and three hours of your life.
 

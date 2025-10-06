@@ -1,3 +1,6 @@
+import { FAQItem, TutorialStep, TutorialMetadata } from '@/lib/generateSchemas';
+
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -8,6 +11,10 @@ export interface BlogPost {
   tags: string[];
   image?: string;
   readTime: number;
+  canonical: string;
+  faqItems?: FAQItem[];
+  tutorialSteps?: TutorialStep[];
+  tutorialMetadata?: TutorialMetadata;
 }
 
 export interface BlogMetadata {

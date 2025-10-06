@@ -44,7 +44,7 @@ export default function Header() {
             </Link>
             <Link 
               href="/#newsletter" 
-              className="bg-blush-400 text-white px-6 py-2 rounded-full hover:bg-blush-500 transition-colors font-semibold"
+              className="bg-blush-400 text-black px-6 py-2 rounded-full hover:bg-blush-500 transition-colors font-semibold"
             >
               Subscribe
             </Link>

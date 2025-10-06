@@ -3,8 +3,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-import { Html, Head, Main, NextScript } from 'next/document'
-
 
 export const metadata: Metadata = {
   title: "Mirelle Inspo | Nail Art Ideas, Trends & Tutorials 2025",
@@ -44,7 +42,6 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -53,12 +50,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Favicon & App Icons */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest" />
-
         {/* ✅ Schema.org Logo JSON-LD */}
         <script
           type="application/ld+json"
@@ -113,15 +104,15 @@ export default function RootLayout({
 
         {/* ✅ AdSense  */}
         <Script id="adsense-meta" strategy="beforeInteractive">
-        {`document.head.insertAdjacentHTML("beforeend", '<meta name="google-adsense-account" content="ca-pub-1145734682794444">')`}
+          {`document.head.insertAdjacentHTML("beforeend", '<meta name="google-adsense-account" content="ca-pub-1145734682794444">')`}
         </Script>
 
         <Script
-        id="adsense-script"
-        strategy="afterInteractive"
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
-        crossOrigin="anonymous"
+          id="adsense-script"
+          strategy="afterInteractive"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
+          crossOrigin="anonymous"
         />
 
         {/* ✅ Required for AdSense verification */}
@@ -129,21 +120,22 @@ export default function RootLayout({
           name="google-adsense-account"
           content="ca-pub-1145734682794444"
         />
-          <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: `{
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Mirelle",
-      "url": "https://mirelleinspo.com",
-      "logo": "https://mirelleinspo.com/apple-touch-icon.png",
-      "sameAs": [
-        "https://www.instagram.com/yourprofile",
-        "https://www.pinterest.com/yourprofile"
-      ]
-    }` }}
-  />
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Mirelle",
+              "url": "https://mirelleinspo.com",
+              "logo": "https://mirelleinspo.com/apple-touch-icon.png",
+              "sameAs": [
+                "https://www.instagram.com/yourprofile",
+                "https://www.pinterest.com/yourprofile"
+              ]
+            }`,
+          }}
+        />
 
         <Header />
         <main className="min-h-screen">{children}</main>

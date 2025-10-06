@@ -62,33 +62,32 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) notFound();
 
   // Article Schema (for all posts)
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.excerpt,
-    "image": `https://www.mirelleinspo.com${post.image}`,
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "author": {
-  "@type": "Person",
-  "name": post.author,
-  "url": "https://www.mirelleinspo.com/about"
-}
-    "publisher": {
-      "@type": "Organization",
-      "name": "Mirellé",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.mirelleinspo.com/logo.png"
-      }
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.title,
+  "description": post.excerpt,
+  "image": `https://www.mirelleinspo.com${post.image}`,
+  "datePublished": post.date,
+  "dateModified": post.date,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://www.mirelleinspo.com/blog/${slug}`
+  },
+  "author": {
+    "@type": "Person",
+    "name": post.author,
+    "url": "https://www.mirelleinspo.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mirellé",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.mirelleinspo.com/logo.png"
     }
-  };
-"mainEntityOfPage": {
-  "@type": "WebPage",
-  "@id": `https://www.mirelleinspo.com/blog/${slug}`
-}
-
+  }
+};
   // FAQ Schema (only for specific posts)
   let faqSchema = null;
 

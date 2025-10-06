@@ -1,48 +1,56 @@
 'use client';
-
 import { useState } from 'react';
 
-export default function SubscribeSection() {
-  const [email, setEmail] = useState('');
+export default function NewsletterSection() {
+  const [formData, setFormData] = useState({ name: '', email: '' });
   const [isSubscribed, setIsSubscribed] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the email to your backend
-    console.log('Email submitted:', email);
+    
+    // TODO: Replace with your backend endpoint
+    console.log('Subscriber:', formData);
+    
     setIsSubscribed(true);
-    setEmail('');
+    setFormData({ name: '', email: '' });
+    
+    setTimeout(() => setIsSubscribed(false), 5000);
   };
 
   return (
     <section className="py-20 bg-gradient-to-br from-blush-100 to-purple-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-4">
-          FOLLOW US – It's Free
+          Stay Inspired
         </h2>
         <p className="text-xl text-charcoal-600 mb-8 max-w-2xl mx-auto">
-          Follow us on pinterest We'll keep you updated with the latest trends, exclusive nail art tutorials, 
-          and seasonal inspiration delivered to you
+          Get exclusive nail art trends, seasonal looks, and beauty tips delivered to your inbox
         </p>
 
-{/*         {!isSubscribed ? (
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email address"
-                required
-                className="flex-1 px-6 py-3 rounded-full border-2 border-white focus:border-blush-300 focus:outline-none text-charcoal-800 placeholder-charcoal-400"
-              />
-              <button
-                type="submit"
-                className="bg-charcoal-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal-700 transition-colors duration-300 whitespace-nowrap"
-              >
-                Subscribe
-              </button>
-            </div>
+        {!isSubscribed ? (
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
+            <input
+              type="text"
+              value={formData.name}
+              onChange={(e) => setFormData({...formData, name: e.target.value})}
+              placeholder="Your Name"
+              required
+              className="w-full px-6 py-3 rounded-full border-2 border-white focus:border-blush-300 focus:outline-none text-charcoal-800"
+            />
+            <input
+              type="email"
+              value={formData.email}
+              onChange={(e) => setFormData({...formData, email: e.target.value})}
+              placeholder="Your Email"
+              required
+              className="w-full px-6 py-3 rounded-full border-2 border-white focus:border-blush-300 focus:outline-none text-charcoal-800"
+            />
+            <button
+              type="submit"
+              className="w-full bg-charcoal-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal-700 transition-colors"
+            >
+              Subscribe Now
+            </button>
           </form>
         ) : (
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-md mx-auto">
@@ -52,17 +60,17 @@ export default function SubscribeSection() {
               </svg>
             </div>
             <h3 className="font-serif text-2xl font-bold text-charcoal-800 mb-2">
-              Welcome to the Mirelle Family!
+              Welcome to Mirelle Inspo!
             </h3>
             <p className="text-charcoal-600">
-              Thank you for subscribing. Check your email for a special welcome message.
+              Check your email for your first dose of nail inspiration
             </p>
           </div>
         )}
-
+        
         <p className="text-sm text-charcoal-500 mt-6">
-          No spam, just beautiful nail inspiration.
-        </p> */}
+          Unsubscribe anytime. No spam, just beauty.
+        </p>
       </div>
     </section>
   );

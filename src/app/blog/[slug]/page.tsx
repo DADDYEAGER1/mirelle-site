@@ -71,9 +71,10 @@ export default async function BlogPostPage({ params }: PageProps) {
     "datePublished": post.date,
     "dateModified": post.date,
     "author": {
-      "@type": "Organization",
-      "name": post.author
-    },
+  "@type": "Person",
+  "name": post.author,
+  "url": "https://www.mirelleinspo.com/about"
+}
     "publisher": {
       "@type": "Organization",
       "name": "Mirellé",
@@ -83,6 +84,10 @@ export default async function BlogPostPage({ params }: PageProps) {
       }
     }
   };
+"mainEntityOfPage": {
+  "@type": "WebPage",
+  "@id": `https://www.mirelleinspo.com/blog/${slug}`
+}
 
   // FAQ Schema (only for specific posts)
   let faqSchema = null;

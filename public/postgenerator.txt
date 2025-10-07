@@ -141,8 +141,9 @@
         "anchor_text": "Descriptive with keyword variations",
         "format": "<a href='/url' class='text-blue-600 hover:text-blue-800 underline'>text</a>"
       },
-      "external_links": {
-        "minimum": "4-6 (UPDATED from 3-5)",
+	"external_links": {
+	  "minimum": "3-6 (flexible based on available quality sources)",
+	  "quality_over_quantity": "Better 3 high-authority links than 6 mediocre ones",
         "authority_domains": [
           "Medical/dermatology (.edu, .gov, medical journals)",
           "Industry publications (Allure, Vogue Beauty, Nailpro)",
@@ -153,10 +154,10 @@
       }
     },
 
-    "image_optimization": {
-      "requirements": {
-        "competitive_posts": "12-18 images (UPDATED from 10-15)",
-        "low_competition": "10-14 images (UPDATED from 8-12)",
+	"image_optimization": {
+  	"requirements": {
+  	"competitive_posts": "8-12 images (UPDATED for production efficiency)",
+   	"low_competition": "6-8 images (UPDATED for production efficiency)",
         "hero_image": "1200x630px, <100KB, WebP",
         "content_images": "800x800px, <80KB, WebP"
       },
@@ -238,7 +239,8 @@
       "philosophy": "Low-friction, playful touchpoints that feel like natural conversation—not formal feedback requests",
       
       "placement_strategy": {
-        "frequency": "2-3 per 2000-word post, 3-4 per 3000+ word post",
+	"frequency": "Maximum 3 CTAs per post regardless of length (quality over quantity)",
+	"spacing_rule": "Minimum 400 words between CTAs (was 300-400)",
         "trigger_points": [
           "After 25-30% of content (early engagement hook)",
           "Before/after complex tutorials (check understanding)",
@@ -679,7 +681,8 @@
       "faq_section_voice_search": {
         "format": "### [Question exactly as users search/speak it?]\n\n[Answer in 40-60 words following structure below]\n\n**Structure:**\n- Sentence 1: Direct answer to question\n- Sentence 2: Why/how explanation\n- Sentence 3: Pro tip from Avery's experience\n\n**Example:**\n### How long do Halloween nail designs last?\n\nGel Halloween designs last 2-3 weeks with proper care, while regular polish lasts 5-7 days. Gel lasts longer because it's cured under UV light, creating a harder finish that resists chipping. Pro tip: Apply cuticle oil daily to extend wear time and prevent lifting at the edges.",
         "requirements": [
-          "10-12 questions (UPDATED from 8-10)",
+  	"8-12 questions for high-search topics, 5-7 for moderate, 3-5 for niche",
+  	"Match FAQ depth to search demand (avoid FAQ fatigue)",
           "40-60 words per answer (OPTIMIZED for featured snippets)",
           "Use exact question phrasing from PAA/search queries",
           "Conversational tone (Avery's voice)",
@@ -875,6 +878,25 @@
         "emotional_sections": "Story templates, vulnerability, client breakthroughs",
         "authority_signals": "3+ per post (byline top + bottom + 1-2 in-content)"
       },
+	"voice_validation_checkpoint": {
+  	"frequency": "Every 500 words during generation",
+  	"validation_test": "Read last paragraph aloud. Does it sound like texting Avery?",
+  	"red_flags": [
+  	  "Sounds corporate or formal",
+  	  "Too robotic or AI-like",
+  	  "Generic advice without personality",
+  	  "Missing emotional authenticity",
+  	  "No signature phrases or Avery-isms"
+  	],
+  	"fix_if_needed": [
+    	"Inject signature phrase ('okay but', 'ngl', 'real talk')",
+    	"Add emotional beat or vulnerability",
+    	"Include specific product/client reference",
+    	"Switch to casual voice if too formal",
+    	"Add emoji or conversational punctuation"
+ 	 ],
+  	"pass_criteria": "Paragraph feels like Avery texting a friend, not writing an essay"
+	},
 
       "quality_checklist": [
         "2000-3000 words (competitive) / 1500-2000 (low)",
@@ -1049,7 +1071,8 @@
 
     "section_templates": {
       "paa_quick_answer_box": {
-        "format": "> **Quick Answer:** [Direct answer in 40-60 words optimized for featured snippets and voice search]\n\n[Section content continues...]",
+        "format": "> **Quick Answer:** [Direct answer in
+ 40-60 words optimized for featured snippets and voice search]\n\n[Section content continues...]",
         "placement": "Top of 3-5 major sections that answer PAA questions",
         "example": "> **Quick Answer:** Halloween nails should be done 3-5 days before the event for gel or acrylics. This timing allows the nails to fully cure and ensures they look fresh on Halloween night. Book early as nail salons get fully booked in late October.\n\n## When to Book Your Halloween Nails\n\n[Full section content...]"
       },
@@ -1057,7 +1080,8 @@
       "faq_section_voice_search": {
         "format": "### [Question exactly as users search/speak it?]\n\n[Answer in 40-60 words following structure below]\n\n**Structure:**\n- Sentence 1: Direct answer to question\n- Sentence 2: Why/how explanation\n- Sentence 3: Pro tip from Avery's experience\n\n**Example:**\n### How long do Halloween nail designs last?\n\nGel Halloween designs last 2-3 weeks with proper care, while regular polish lasts 5-7 days. Gel lasts longer because it's cured under UV light, creating a harder finish that resists chipping. Pro tip: Apply cuticle oil daily to extend wear time and prevent lifting at the edges.",
         "requirements": [
-          "10-12 questions (UPDATED from 8-10)",
+          "8-12 questions for high-search topics, 5-7 for moderate, 3-5 for niche",
+  	  "Match FAQ depth to search demand (avoid FAQ fatigue)",
           "40-60 words per answer (OPTIMIZED for featured snippets)",
           "Use exact question phrasing from PAA/search queries",
           "Conversational tone (Avery's voice)",

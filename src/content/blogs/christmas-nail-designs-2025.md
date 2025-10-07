@@ -470,11 +470,9 @@ Happy holidays, happy painting, and may your Christmas nails stay chip-free thro
 
 ## About the Author
 
-[Author photo reference placeholder]
-
 <a href='/about' class='text-blue-600 hover:text-blue-800 underline font-semibold text-lg'>Avery Chen</a> is a licensed nail technician who's helped 1,000+ clients achieve salon-quality nails at home. With 6 years of experience specializing in seasonal nail art and chrome finishes, Avery shares expert tips and honest product reviews on <a href='/' class='text-blue-600 hover:text-blue-800 underline'>mirelleinspo.com</a>.
 
-Follow for weekly nail inspiration: <a href='https://www.instagram.com/mirelle_inspo/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>@mirelle_inspo</a> (45K followers)
+Follow for weekly nail inspiration: <a href='https://www.instagram.com/mirelle_inspo/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>@mirelle_inspo</a>
 
 ---
 

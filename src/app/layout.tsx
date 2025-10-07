@@ -1,3 +1,4 @@
+<meta charSet="UTF-8" />
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -5,7 +6,7 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Mirelle Inspo | Nail Art Ideas, Trends & Tutorials 2025",
+  title: "Mirellé Inspo | Nail Art Ideas, Trends & Tutorials 2025",
   description:
     "Explore 2025's top nail art trends, DIY tutorials, seasonal nail designs, and expert tips. Get inspired for Pinterest-worthy nails every mood and occasion.",
   keywords:

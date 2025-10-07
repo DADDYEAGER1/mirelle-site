@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BlogPost as BlogPostType } from '@/types/blog';
 import BlogSidebar from './BlogSidebar';
+import CommentSection from '@/components/Blog/CommentSection'; // ← ADD THIS
 
 interface BlogPostProps {
   post: BlogPostType;
@@ -89,6 +90,9 @@ export default function BlogPost({ post }: BlogPostProps) {
             [&_hr]:my-8 [&_hr]:border-pink-200"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* ADD COMMENT SECTION HERE ↓ */}
+          <CommentSection postSlug={post.slug} postTitle={post.title} />
         </article>
 
         {/* Sidebar - Takes 4 columns on large screens */}

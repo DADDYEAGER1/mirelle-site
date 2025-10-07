@@ -357,32 +357,49 @@ want more seasonal inspo? check out <a href='/blog/easy-halloween-nail-designs' 
 
 ## Your Turn!
 
-<div style="border: 2px solid #e5e7eb; padding: 24px; border-radius: 8px; max-width: 600px; margin: 24px 0; background: #f9fafb;">
-  <h3 style="margin-top: 0;">💬 Share Your Thoughts!</h3>
-  <p style="margin-bottom: 16px;">Which of the 42 designs are you trying? Rate this guide and let me know!</p>
-  
-  <label style="display: block; margin-bottom: 8px; font-weight: 500;">⭐ Rating (1-5 stars):</label>
-  <select id="rating" style="width: 100%; padding: 10px; margin-bottom: 16px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 16px;">
-    <option value="">Select rating</option>
-    <option value="5">⭐⭐⭐⭐⭐ (5 stars)</option>
-    <option value="4">⭐⭐⭐⭐ (4 stars)</option>
-    <option value="3">⭐⭐⭐ (3 stars)</option>
-    <option value="2">⭐⭐ (2 stars)</option>
-    <option value="1">⭐ (1 star)</option>
-  </select>
-  
-  <label style="display: block; margin-bottom: 8px; font-weight: 500;">Your Name:</label>
-  <input type="text" id="name" placeholder="Enter your name" style="width: 100%; padding: 10px; margin-bottom: 16px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 16px; box-sizing: border-box;" />
-  
-  <label style="display: block; margin-bottom: 8px; font-weight: 500;">Your Email (optional):</label>
-  <input type="email" id="email" placeholder="your@email.com" style="width: 100%; padding: 10px; margin-bottom: 16px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 16px; box-sizing: border-box;" />
-  
-  <label style="display: block; margin-bottom: 8px; font-weight: 500;">Your Comment:</label>
-  <textarea id="comment" placeholder="Tell me which design you're trying, ask questions, or share your nail pics!" style="width: 100%; padding: 10px; margin-bottom: 16px; border: 1px solid #d1d5db; border-radius: 4px; min-height: 100px; font-size: 16px; font-family: inherit; box-sizing: border-box;"></textarea>
-  
-  <button onclick="submitComment()" style="background: #2563eb; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 500; width: 100%;">Submit Comment</button>
-  
-  <p id="status" style="margin-top: 16px; margin-bottom: 0; font-weight: 500;"></p>
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2px; border-radius: 16px; max-width: 650px; margin: 32px auto; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);">
+  <div style="background: white; padding: 32px; border-radius: 14px;">
+    <div style="text-align: center; margin-bottom: 24px;">
+      <h3 style="margin: 0 0 8px 0; font-size: 28px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">💬 Share Your Thoughts!</h3>
+      <p style="margin: 0; color: #6b7280; font-size: 15px;">Which of the 42 designs are you trying? Let me know!</p>
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+      <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #374151; font-size: 14px;">⭐ Rate This Guide</label>
+      <select id="rating" style="width: 100%; padding: 14px 16px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 15px; transition: all 0.3s; background: white; cursor: pointer; box-sizing: border-box;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'" onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+        <option value="">Select your rating</option>
+        <option value="5">⭐⭐⭐⭐⭐ Absolutely amazing!</option>
+        <option value="4">⭐⭐⭐⭐ Really helpful</option>
+        <option value="3">⭐⭐⭐ Pretty good</option>
+        <option value="2">⭐⭐ Could be better</option>
+        <option value="1">⭐ Needs improvement</option>
+      </select>
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+      <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #374151; font-size: 14px;">👤 Your Name</label>
+      <input type="text" id="name" placeholder="e.g., Sarah" style="width: 100%; padding: 14px 16px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 15px; transition: all 0.3s; box-sizing: border-box;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'" onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'" />
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+      <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #374151; font-size: 14px;">📧 Your Email</label>
+      <input type="email" id="email" placeholder="your@email.com" style="width: 100%; padding: 14px 16px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 15px; transition: all 0.3s; box-sizing: border-box;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'" onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'" />
+      <p style="margin: 6px 0 0 0; font-size: 12px; color: #9ca3af;">So I can reply to your questions personally!</p>
+    </div>
+    
+    <div style="margin-bottom: 24px;">
+      <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #374151; font-size: 14px;">💭 Your Comment</label>
+      <textarea id="comment" placeholder="Tell me which design you're trying, ask questions, or share your nail pics! I read every single one 💅" style="width: 100%; padding: 14px 16px; border: 2px solid #e5e7eb; border-radius: 10px; min-height: 120px; font-size: 15px; font-family: inherit; resize: vertical; transition: all 0.3s; box-sizing: border-box;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102, 126, 234, 0.1)'" onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'"></textarea>
+    </div>
+    
+    <button onclick="submitComment()" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 16px 32px; border: none; border-radius: 10px; cursor: pointer; font-size: 16px; font-weight: 600; width: 100%; transition: all 0.3s; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)'">
+      ✨ Submit Comment
+    </button>
+    
+    <p id="status" style="margin-top: 16px; margin-bottom: 0; font-weight: 600; text-align: center; padding: 12px; border-radius: 8px; display: none;"></p>
+    
+    <p style="text-align: center; margin-top: 20px; margin-bottom: 0; font-size: 13px; color: #6b7280;">🤝 I reply to <strong>everyone</strong> within 24 hours. That's a promise, not marketing fluff!</p>
+  </div>
 </div>
 
 <script>
@@ -393,40 +410,60 @@ function submitComment() {
   const comment = document.getElementById('comment').value;
   const status = document.getElementById('status');
   
-  if (!rating || !name || !comment) {
+  // Validation
+  if (!rating || !name || !email || !comment) {
+    status.style.display = 'block';
+    status.style.background = '#fee2e2';
     status.style.color = '#dc2626';
-    status.textContent = '⚠️ Please fill in rating, name, and comment fields.';
+    status.textContent = '⚠️ Please fill in all fields (rating, name, email, and comment).';
+    return;
+  }
+  
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    status.style.display = 'block';
+    status.style.background = '#fee2e2';
+    status.style.color = '#dc2626';
+    status.textContent = '⚠️ Please enter a valid email address.';
     return;
   }
   
   const data = { rating, name, email, comment };
   
+  status.style.display = 'block';
+  status.style.background = '#dbeafe';
   status.style.color = '#2563eb';
-  status.textContent = '📤 Submitting...';
+  status.textContent = '📤 Submitting your comment...';
   
-  fetch('YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE', {
+  fetch('https://script.google.com/macros/s/AKfycbxx6an1Nx1RGsaRULq0lRBlSBS3VTH0lZ62kE2FZstnwjBr7Hu5WCkP0HwNvB5GmdGh-w/exec', {
     method: 'POST',
     mode: 'no-cors',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   })
   .then(() => {
+    status.style.background = '#d1fae5';
     status.style.color = '#16a34a';
-    status.textContent = '✅ Thanks! Your comment has been submitted. I reply to everyone within 24 hours!';
+    status.textContent = '✅ Amazing! Your comment has been submitted. I\'ll reply to your email within 24 hours! 💌';
     document.getElementById('rating').value = '';
     document.getElementById('name').value = '';
     document.getElementById('email').value = '';
     document.getElementById('comment').value = '';
+    
+    // Hide success message after 5 seconds
+    setTimeout(() => {
+      status.style.display = 'none';
+    }, 5000);
   })
   .catch(error => {
+    status.style.background = '#fee2e2';
     status.style.color = '#dc2626';
-    status.textContent = '❌ Oops! Something went wrong. Please try again.';
+    status.textContent = '❌ Oops! Something went wrong. Please try again or email me directly at team.mirelle@email';
     console.error('Error:', error);
   });
 }
 </script>
-
-<p style="font-size: 14px; color: #6b7280; margin-top: 16px;">I reply to EVERYONE within 24 hours. That's a promise! 🤝</p>
 
 ---
 

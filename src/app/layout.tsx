@@ -50,20 +50,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Schema.org Logo JSON-LD */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Mirelle",
-              url: "https://mirelleinspo.com",
-              logo: "https://mirelleinspo.com/apple-touch-icon.png",
-            }),
-          }}
-        />
-
         {/* ✅ Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -130,7 +116,7 @@ export default function RootLayout({
               "logo": "https://mirelleinspo.com/apple-touch-icon.png",
               "sameAs": [
                 "https://www.instagram.com/yourprofile",
-                "https://www.pinterest.com/yourprofile"
+                "https://www.pinterest.com/mirelle_inspo"
               ]
             }`,
           }}

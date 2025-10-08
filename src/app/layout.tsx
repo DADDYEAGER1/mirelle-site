@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     "salon nail ideas",
     "at-home manicure"
   ],
-  authors: [{ name: "Mirelle", url: "https://mirelleinspo.com/about" }],
-  creator: "Mirelle",
+  authors: [{ name: "Avery chen", url: "https://mirelleinspo.com/about" }],
+  creator: "Avery chen",
   publisher: "Mirellé Inspo",
   formatDetection: {
     telephone: false,
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
     title: "Mirellé Inspo | Nail Art Ideas & Tutorials 2025",
     description: "Stay ahead with 2025 nail trends, seasonal designs, and Pinterest-worthy tutorials. Expert tips and inspiration for every mood.",
     images: ["/twitter-image.jpg"],
-    creator: "@MirelleNails",
-    site: "@MirelleNails",
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
   },
   robots: {
     index: true,
@@ -84,9 +84,6 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   alternates: {
     canonical: "https://mirelleinspo.com",
-  },
-  verification: {
-    google: "YOUR_GOOGLE_SEARCH_CONSOLE_CODE", // Add after GSC setup
   },
   category: "Beauty & Fashion",
 };

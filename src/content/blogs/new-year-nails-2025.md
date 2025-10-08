@@ -78,7 +78,7 @@ I have been doing New Year nails professionally for six years now, and let me te
 
 In this guide, I am breaking down 50+ New Year nail designs that actually last through midnight (and beyond), complete with application tutorials, product recommendations from my 1,000+ client appointments, and troubleshooting tips for common party-night disasters. from <a href='https://www.mirelleinspo.com/topics/at-home-hacks' class='text-blue-600 hover:text-blue-800 underline'>DIY at-home techniques</a> to salon-worthy chrome finishes, we are covering everything you need to ring in 2025 with flawless nails.
 
-![Stunning silver chrome new year nails 2025 with champagne glitter accents and metallic finish](/images/blog/silver-chrome-nye-nails.jpg)
+![Stunning silver chrome new year nails 2025 with champagne glitter accents and metallic finish](/images/blog/silver-chrome-nye-nails.png)
 
 ---
 
@@ -100,7 +100,7 @@ Color-wise, we are seeing a gorgeous shift toward **champagne neutrals, rose gol
 
 Want to explore more <a href='https://www.mirelleinspo.com/topics/seasonal-trends' class='text-blue-600 hover:text-blue-800 underline'>seasonal nail trends</a>? I have got guides for every celebration throughout the year.
 
-![Gold metallic manicure with confetti nail art perfect for NYE celebration](/images/blog/gold-glitter-manicure.jpg)
+![Gold metallic manicure with confetti nail art perfect for NYE celebration](/images/blog/gold-glitter-manicure.png)
 
 ---
 
@@ -180,7 +180,7 @@ If you are the type who believes more is more and subtlety is for other people, 
 
 **30. Mixed Texture Glitter:** Combine fine glitter with chunky pieces for depth and dimension. It looks professionally designed even when it is DIY.
 
-![Glitter gradient new year nails with silver and gold sparkle ombre effect](/images/blog/glitter-gradient-nails.jpg)
+![Glitter gradient new year nails with silver and gold sparkle ombre effect](/images/blog/glitter-gradient-nails.png)
 
 ### Minimalist Elegant Designs
 
@@ -239,7 +239,7 @@ For those who want their nails to be the main character of every NYE photo. Thes
 
 Check out our <a href='https://www.mirelleinspo.com/shop/new-year' class='text-blue-600 hover:text-blue-800 underline'>New Year nail supplies</a> for all the products you need to create these designs.
 
-![Bold metallic nail art with geometric patterns and mixed chrome finishes for NYE](/images/blog/bold-statement-nye-nails.jpg)
+![Bold metallic nail art with geometric patterns and mixed chrome finishes for NYE](/images/blog/bold-statement-nye-nails.png)
 
 ---
 
@@ -257,7 +257,7 @@ Push back your cuticles gently with a cuticle pusher. Do not cut them unless you
 
 Clean your nails thoroughly with rubbing alcohol on a lint-free wipe. This removes all oils, dust, and moisture that prevent gel from adhering properly. Your nails should feel slightly dry and squeaky clean. If they feel oily or slippery, wipe again.
 
-![Step-by-step nail prep tutorial showing buffing and cleaning process](/images/blog/nail-prep-tutorial.jpg)
+![Step-by-step nail prep tutorial showing buffing and cleaning process](/images/blog/nail-prep-tutorial.png)
 
 ### Apply Base Coat (Your Insurance Policy)
 
@@ -275,7 +275,7 @@ For chrome powder application, you will do this after color but before top coat.
 
 Tried this yet? 👀 Team Success ✨ or Team Hot Mess 🔥?
 
-![Tutorial showing metallic gel polish application technique with proper brush strokes](/images/blog/metallic-polish-application.jpg)
+![Tutorial showing metallic gel polish application technique with proper brush strokes](/images/blog/metallic-polish-application.png)
 
 ### Add Special Effects (Where the Magic Happens)
 
@@ -343,7 +343,7 @@ Super cheap base coats are also penny-wise and pound-foolish. They do not protec
 
 For complete product recommendations across all categories, check out our <a href='https://www.mirelleinspo.com/shop' class='text-blue-600 hover:text-blue-800 underline'>curated shop</a> with everything I actually use and trust.
 
-![Professional nail products and tools arranged for New Year nail application](/images/blog/nail-products-supplies.jpg)
+![Professional nail products and tools arranged for New Year nail application](/images/blog/nail-products-supplies.png)
 
 ---
 
@@ -439,7 +439,7 @@ Quality press-on nails are excellent for NYE and last 1-2 weeks with proper appl
 
 Work over a paper plate or tray to catch loose glitter. Use a small brush to apply glitter precisely instead of sprinkling. Try glitter gel polish in a bottle for mess-free application. Keep a lint roller nearby to clean up sparkle fallout. Apply glitter in the bathroom where tile floors make cleanup easier than carpet.
 
-![FAQ troubleshooting guide showing common New Year nail problems and solutions](/images/blog/nail-faq-troubleshooting.jpg)
+![FAQ troubleshooting guide showing common New Year nail problems and solutions](/images/blog/nail-faq-troubleshooting.png)
 
 ---
 
@@ -489,7 +489,7 @@ So as you plan your New Year nails, choose designs that genuinely excite you, no
 
 Explore more seasonal nail inspiration at our <a href='https://www.mirelleinspo.com/topics/seasonal-trends' class='text-blue-600 hover:text-blue-800 underline'>seasonal trends hub</a> for ideas throughout the year.
 
-![Behind the scenes photo of nail tech workspace with New Year nail supplies](/images/blog/nail-tech-workspace.jpg)
+![Behind the scenes photo of nail tech workspace with New Year nail supplies](/images/blog/nail-tech-workspace.png)
 
 ---
 

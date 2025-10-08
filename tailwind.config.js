@@ -68,9 +68,34 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '75ch',
+            color: '#3d3d3d',
+            a: {
+              color: '#e91e63',
+              '&:hover': {
+                color: '#d63c3c',
+              },
+            },
+            'h1, h2, h3, h4': {
+              fontFamily: 'Playfair Display, serif',
+              fontWeight: '600',
+            },
+            img: {
+              borderRadius: '0.5rem',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
   ],
+  // Performance optimizations
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 }

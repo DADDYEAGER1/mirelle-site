@@ -1,5 +1,4 @@
-import { FAQItem, TutorialStep, TutorialMetadata } from '@/lib/generateSchemas';
-
+import { FAQItem, TutorialStep, TutorialMetadata, VideoMetadata } from '@/lib/generateSchemas';
 
 export interface BlogPost {
   slug: string;
@@ -12,12 +11,12 @@ export interface BlogPost {
   image?: string;
   readTime: number;
   canonical: string;
+  updatedDate?: string;
+  category?: string;
   faqItems?: FAQItem[];
-  updatedDate?: string; // For dateModified
-  category?: string; // For article 
-  tutorialSteps?: TutorialStep[]; // Already in generateSchemas
-  tutorialMetadata?: TutorialMetadata; // Already in generateSchemas
-  videoMetadata?: VideoMetadata; // NEW - for video schema
+  tutorialSteps?: TutorialStep[];
+  tutorialMetadata?: TutorialMetadata;
+  videoMetadata?: VideoMetadata;
 }
 
 export interface BlogMetadata {

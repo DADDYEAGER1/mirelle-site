@@ -89,7 +89,7 @@ I've curated 42 designs from "I have five minutes" simple to "I'm entering a com
 
 Pro tip: mix warm and cool tones! burgundy with sage green accents creates dimension. check out <a href='/shop/fall' class='text-blue-600 hover:text-blue-800 underline'>our fall collection</a> for curated color sets.
 
-![Best thanksgiving nail colors including burgundy burnt orange and gold polish swatches](/images/blog/thanksgiving-nail-colors-2025.jpg)
+![Best thanksgiving nail colors including burgundy burnt orange and gold polish swatches](/images/blog/thanksgiving-nail-colors-2025.png)
 
 ---
 
@@ -129,7 +129,7 @@ Pro tip: mix warm and cool tones! burgundy with sage green accents creates dimen
 
 okay but which one made you screenshot? 📸 Drop the number!
 
-![Easy thanksgiving nail designs for short nails with fall colors](/images/blog/thanksgiving-short-nails.jpg)
+![Easy thanksgiving nail designs for short nails with fall colors](/images/blog/thanksgiving-short-nails.png)
 
 ### Intermediate Designs (16-30)
 
@@ -163,7 +163,7 @@ okay but which one made you screenshot? 📸 Drop the number!
 
 **30. Simple florals** - hand-painted fall flowers.
 
-![Thanksgiving nails on long almond shaped nails with intricate fall art](/images/blog/thanksgiving-long-nails-almond.jpg)
+![Thanksgiving nails on long almond shaped nails with intricate fall art](/images/blog/thanksgiving-long-nails-almond.png)
 
 ### Advanced & Salon-Worthy (31-42)
 
@@ -193,7 +193,7 @@ okay but which one made you screenshot? 📸 Drop the number!
 
 Team Simple or Team Extra? 💅
 
-![Thanksgiving ombre nails with fall color gradient from red to orange](/images/blog/thanksgiving-ombre-nails.jpg)
+![Thanksgiving ombre nails with fall color gradient from red to orange](/images/blog/thanksgiving-ombre-nails.png)
 
 ---
 
@@ -215,7 +215,7 @@ Team Simple or Team Extra? 💅
 
 Pro tip: imperfect leaves look MORE realistic. I messed this up spectacularly in 2020—posted it anyway, got 2M views. people appreciate realness over perfection.
 
-![Step by step thanksgiving nail art tutorial showing leaf design technique](/images/blog/thanksgiving-nails-tutorial.jpg)
+![Step by step thanksgiving nail art tutorial showing leaf design technique](/images/blog/thanksgiving-nails-tutorial.png)
 
 ---
 
@@ -243,8 +243,6 @@ Pro tip: imperfect leaves look MORE realistic. I messed this up spectacularly in
 - Blue Cross Cuticle Remover - $6, old school effective
 
 check out <a href='/shop/fall' class='text-blue-600 hover:text-blue-800 underline'>our fall collection</a> for curated bundles.
-
-![Best gel polish and nail products for thanksgiving nail designs 2025](/images/blog/thanksgiving-nail-polish-products.jpg)
 
 ---
 

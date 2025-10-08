@@ -66,7 +66,7 @@ okay so real talk... the first time a client asked me for vampire nails, I thoug
 
 The thing is, most vampire nail tutorials online are either way too basic (just paint your nails red, done!) or ridiculously complicated with techniques that require a PhD in nail art. I'm here to give you the real deal - 30+ vampire nail designs that actually work, a step-by-step tutorial you can do at home, and all the insider tips I've learned from perfecting this look on real human hands. We're talking blood red tips, dripping effects, coffin and stiletto shapes, gothic glam, and even how to make it work on short nails. If you want nails that look like you just stepped out of a vampire romance novel, you're in the right place.
 
-![Vampire nail colors blood red and midnight black palette](/images/blog/vampire-nail-colors-blood-red-black.jpg)
+![Vampire nail colors blood red and midnight black palette](/images/blog/vampire-nail-colors-blood-red-black.png)
 
 ## What's Trending in Vampire Nails for 2025
 
@@ -82,7 +82,7 @@ Another thing that's huge? **Mixing textures**. We're talking matte black bases 
 
 And honestly? **Short vampire nails** are finally getting their moment. For years, everyone assumed you needed long stiletto claws to pull off the vampire look, but I'm seeing more requests for <a href='https://www.mirelleinspo.com/topics/seasonal-trends' class='text-blue-600 hover:text-blue-800 underline'>short almond or oval vampire nails</a> with blood red polish and minimal art. It's way more practical for everyday life, and it still looks absolutely killer (pun intended).
 
-![Dripping blood vampire nail design with red tips](/images/blog/vampire-nail-designs-dripping-blood.jpg)
+![Dripping blood vampire nail design with red tips](/images/blog/vampire-nail-designs-dripping-blood.png)
 
 > **Quick Answer:** Vampire nails in 2025 feature coffin or stiletto shapes with blood red, black, and burgundy colors. Popular designs include dripping blood effects, minimalist gothic accents, matte-glossy texture mixing, and 3D embellishments. The trend leans toward sophisticated year-round wear rather than costume-only looks.
 
@@ -106,7 +106,7 @@ Listen, I've tried EVERY vampire nail design under the sun - some on willing cli
 
 **Blood Moon Nails:** Dark purple to black ombre base with a small red "moon" on accent nails. Add tiny gold stars or crosses for extra gothic romance vibes. This design is perfect for people who want vampire energy without being too literal about it.
 
-![Coffin shaped vampire nails with gothic nail art](/images/blog/coffin-shape-vampire-nails.jpg)
+![Coffin shaped vampire nails with gothic nail art](/images/blog/coffin-shape-vampire-nails.png)
 
 ### Bold and Dramatic
 
@@ -126,7 +126,7 @@ Listen, I've tried EVERY vampire nail design under the sun - some on willing cli
 
 Is this clicking yet or am I explaining like a robot? ⚡ Quick reaction: 💡 (got it) or 🤯 (wait what)
 
-![Stiletto vampire nails with fang accents and red polish](/images/blog/stiletto-vampire-nails-fangs.jpg)
+![Stiletto vampire nails with fang accents and red polish](/images/blog/stiletto-vampire-nails-fangs.png)
 
 ## The Best Colors for Vampire Nails (According to Someone Who's Mixed 300+ Custom Shades)
 
@@ -148,7 +148,7 @@ Here's my honest take after doing this for 6 years: you don't need to buy every 
 
 One more thing - and this is THE HILL I'LL DIE ON - always test your colors on a nail wheel or practice nail first. What looks perfect in the bottle can look completely different on your actual nails, especially if you have <a href='https://www.mirelleinspo.com/topics/skin-tones' class='text-blue-600 hover:text-blue-800 underline'>different skin tones</a>. Blood red can look gorgeous on one person and straight-up neon on another depending on your undertones.
 
-![Step by step vampire nail tutorial with gel polish](/images/blog/vampire-nail-tutorial-step-by-step.jpg)
+![Step by step vampire nail tutorial with gel polish](/images/blog/vampire-nail-tutorial-step-by-step.png)
 
 ## How to Do Vampire Nails at Home: The Tutorial Nobody Asked For But Everyone Needs
 
@@ -222,7 +222,7 @@ Massage cuticle oil into your cuticles and the skin around your nails. This make
 - **Clumpy embellishments:** You used too much glue or pressed too hard. Less is more.
 - **Polish flooding cuticles:** You're applying too close to the cuticle line. Leave a tiny gap.
 
-![Gothic vampire nails with rhinestones and metallic accents](/images/blog/gothic-vampire-nails-rhinestones.jpg)
+![Gothic vampire nails with rhinestones and metallic accents](/images/blog/gothic-vampire-nails-rhinestones.png)
 
 > **Quick Answer:** To create vampire nails at home, prep nails properly, apply base coat, build 2-3 coats of blood red polish, use a thin brush to draw dripping blood effects with black or dark red, add optional embellishments, and seal with glossy top coat. The entire process takes 60-90 minutes for beginners.
 
@@ -242,7 +242,7 @@ Let me save you some trouble here, because not every nail shape works with the v
 
 Real talk: your natural nail bed shape matters too. If you have wide nail beds, stiletto can sometimes look disproportionate. If you have narrow beds, coffin shape might look too elongated. I always tell clients to do what feels comfortable first, aesthetic second - because vampire nails that hurt or constantly break aren't worth it.
 
-![Short almond vampire nails with blood red manicure](/images/blog/short-vampire-nails-almond-shape.jpg)
+![Short almond vampire nails with blood red manicure](/images/blog/short-vampire-nails-almond-shape.png)
 
 ## Troubleshooting: When Your Vampire Nails Go Wrong
 
@@ -274,7 +274,7 @@ Fix: Coffin and stiletto shapes are structurally weaker at the narrow points. Fi
 
 Okay but HEAR ME OUT - which mistake have you made? Drop a 🙋 if you've been there
 
-![Vampire nails with 3D bat embellishments and crosses](/images/blog/vampire-nails-3d-embellishments.jpg)
+![Vampire nails with 3D bat embellishments and crosses](/images/blog/vampire-nails-3d-embellishments.png)
 
 ## Product Recommendations That Won't Break the Bank (Or Your Nails)
 
@@ -300,7 +300,7 @@ Listen, you don't need to spend $200 at the salon or buy professional-grade ever
 
 The biggest lesson I've learned about products: expensive doesn't always equal better, and cheap doesn't always equal bad. Test products, read reviews from actual nail techs (not sponsored content), and don't be afraid to mix high and low price points. Some of my favorite manicures use $8 Beetles polish with $2 Amazon rhinestones and they look absolutely professional.
 
-![Black to red ombre vampire nail design with gradient](/images/blog/black-red-ombre-vampire-nails.jpg)
+![Black to red ombre vampire nail design with gradient](/images/blog/black-red-ombre-vampire-nails.png)
 
 ## Making Vampire Nails Work Year-Round (Not Just October)
 
@@ -327,7 +327,7 @@ I've done vampire-inspired nails for weddings (burgundy ombre for fall weddings)
 
 Remember, confidence is what makes ANY nail design work. If you love your vampire nails in March, rock them. Who's gonna tell you that dark red nails are only for October? Not me.
 
-![Sparkly vampire nails with red glitter and shimmer](/images/blog/vampire-nails-glitter-sparkle.jpg)
+![Sparkly vampire nails with red glitter and shimmer](/images/blog/vampire-nails-glitter-sparkle.png)
 
 ## Frequently Asked Questions About Vampire Nails
 

@@ -74,11 +74,6 @@ export function generateSchemas(config: SchemaConfig) {
       '@id': `${baseUrl}/#person`,
       name: post.author || 'Mirelle',
       url: `${baseUrl}/about`,
-      image: {
-        '@type': 'ImageObject',
-        url: `${baseUrl}/author-avatar.png`,
-        caption: post.author || 'Mirelle',
-      },
     },
     publisher: {
       '@type': 'Organization',

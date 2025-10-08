@@ -343,8 +343,6 @@ Super cheap base coats are also penny-wise and pound-foolish. They do not protec
 
 For complete product recommendations across all categories, check out our <a href='https://www.mirelleinspo.com/shop' class='text-blue-600 hover:text-blue-800 underline'>curated shop</a> with everything I actually use and trust.
 
-![Professional nail products and tools arranged for New Year nail application](/images/blog/nail-products-supplies.png)
-
 ---
 
 ## How to Make Your New Year Nails Last All Night (And Beyond)

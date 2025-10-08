@@ -13,11 +13,8 @@ export interface BlogPost {
   readTime: number;
   canonical: string;
   faqItems?: FAQItem[];
-  tutorialSteps?: TutorialStep[];
-  tutorialMetadata?: TutorialMetadata;
   updatedDate?: string; // For dateModified
-  category?: string; // For article section
-  faqItems?: FAQItem[]; // Already in generateSchemas
+  category?: string; // For article 
   tutorialSteps?: TutorialStep[]; // Already in generateSchemas
   tutorialMetadata?: TutorialMetadata; // Already in generateSchemas
   videoMetadata?: VideoMetadata; // NEW - for video schema

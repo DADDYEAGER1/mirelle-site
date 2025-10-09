@@ -100,7 +100,7 @@ export default function SubscribePage() {
             </p>
           </div>
 
-          <NewsletterForm />
+          {/* <NewsletterForm /> */}
         </div>
       </section>
 

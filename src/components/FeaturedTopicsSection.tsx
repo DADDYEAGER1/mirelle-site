@@ -49,100 +49,92 @@ const topics = [
 
 export default function FeaturedTopicsSection() {
   return (
-    <section id="featured-topics" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-4">
+    <section id="featured-topics" className="py-26 bg-editorial-sand">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Header */}
+        <div className="max-w-3xl mb-18">
+          <p className="text-overline text-editorial-accent uppercase tracking-widest mb-4 font-semibold">
+            Explore
+          </p>
+          <h2 className="font-display text-display-md text-editorial-charcoal mb-6 tracking-magazine">
             Featured Topics
           </h2>
-          <p className="text-xl text-charcoal-600 max-w-3xl mx-auto">
+          <p className="text-body-lg text-editorial-slate leading-relaxed font-light">
             Discover everything you need to know about nails, from care basics to 
             advanced techniques and seasonal inspiration.
           </p>
         </div>
         
+        {/* Topics Grid - Editorial layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {topics.map((topic, index) => (
             <Link
               key={index}
               href={topic.href}
-              className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] bg-white"
+              className="group relative overflow-hidden bg-white shadow-editorial hover:shadow-editorial-lg transition-all duration-500"
             >
-              {/* Trending Badge */}
+              {/* Trending Badge - Minimal */}
               {topic.trending && (
-                <div className="absolute top-4 left-4 z-20">
-                  <span className="bg-gradient-to-r from-pink-400 to-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-                    TRENDING
+                <div className="absolute top-6 right-6 z-20">
+                  <span className="border border-editorial-accent text-editorial-accent text-caption uppercase tracking-widest px-3 py-1 font-semibold backdrop-blur-sm bg-white/80">
+                    Trending
                   </span>
                 </div>
               )}
               
-
-              
               {/* Image Container */}
-              <div className="relative h-72 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img
                   src={topic.image}
                   alt={topic.title}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                 />
                 
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/60"></div>
-                
-                {/* Premium Glass Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-purple-500/20 opacity-60"></div>
-                
-                {/* Subtle Pattern Overlay */}
-                <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -skew-x-12"></div>
+                {/* Subtle editorial gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               </div>
               
-              {/* Content Overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                {/* Glass morphism background */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent backdrop-blur-sm"></div>
-                
+              {/* Content */}
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <div className="relative z-10">
-                  <h3 className="font-serif text-2xl md:text-3xl font-bold mb-3 text-white drop-shadow-lg">
+                  <h3 className="font-display text-headline-lg mb-3 text-white tracking-magazine">
                     {topic.title}
                   </h3>
-                  <p className="text-white/95 mb-4 text-sm md:text-base drop-shadow-md leading-relaxed">
+                  <p className="text-white/90 mb-6 text-body font-sans font-light leading-relaxed">
                     {topic.description}
                   </p>
                   
-                  {/* CTA Button */}
-                  <div className="inline-flex items-center bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold px-5 py-3 rounded-full hover:bg-white/30 transition-all duration-300 group-hover:translate-x-1 shadow-lg">
+                  {/* CTA - Underline style */}
+                  <div className="inline-flex items-center text-white border-b border-white/50 pb-1 text-body-sm font-sans uppercase tracking-wide font-medium group-hover:border-editorial-accent group-hover:text-editorial-accent transition-all duration-300">
                     <span className="mr-2">Explore</span>
                     <svg 
                       className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
+                      strokeWidth={2}
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
                 </div>
               </div>
-              
-              {/* Hover Glow Effect */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-purple-400/20 via-pink-400/20 to-transparent pointer-events-none"></div>
             </Link>
           ))}
         </div>
         
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <p className="text-lg text-charcoal-600 mb-6">
+        <div className="text-center mt-18">
+          <p className="text-body-lg text-editorial-slate mb-8 font-light">
             Ready to transform your nail game?
           </p>
           <Link 
             href="/topics" 
-            className="inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center bg-editorial-charcoal text-white font-sans text-caption uppercase tracking-widest px-12 py-4 font-medium hover:bg-editorial-accent transition-all duration-500 shadow-editorial"
           >
-            <span className="mr-2">View All Topics</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <span className="mr-3">View All Topics</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </Link>
         </div>

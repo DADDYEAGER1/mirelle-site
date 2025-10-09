@@ -7,56 +7,65 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-blush-200">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+    <header className="sticky top-0 z-50 bg-editorial-cream/98 backdrop-blur-md border-b border-editorial-stone">
+      <nav className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="flex justify-between items-center h-24">
           
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          {/* Logo - Editorial serif */}
+          <Link href="/" className="flex items-center space-x-3 group">
             <Image 
               src="/logo.png" 
               alt="Mirelle Inspo" 
               width={50} 
               height={50}
-              className="h-12 w-auto"
+              className="h-11 w-auto transition-transform duration-300 group-hover:scale-105"
             />
-            <span className="font-serif text-2xl font-bold text-charcoal-800">
+            <span className="font-display text-headline-md text-editorial-charcoal tracking-magazine">
               Mirellé
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+          {/* Desktop Navigation - Uppercase, spaced */}
+          <div className="hidden md:flex items-center space-x-10">
+            <Link 
+              href="/" 
+              className="text-editorial-slate hover:text-editorial-charcoal transition-colors duration-300 font-sans text-caption uppercase tracking-widest font-medium"
+            >
               Home
             </Link>
-            <Link href="/blog" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link 
+              href="/blog" 
+              className="text-editorial-slate hover:text-editorial-charcoal transition-colors duration-300 font-sans text-caption uppercase tracking-widest font-medium"
+            >
               Blog
             </Link>
-            <Link href="/shop" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
-              shop
-            </Link>
-            <Link href="/about" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
-              About
-            </Link>
-            <Link href="/contact" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
-              Contact
+            <Link 
+              href="/shop" 
+              className="text-editorial-slate hover:text-editorial-charcoal transition-colors duration-300 font-sans text-caption uppercase tracking-widest font-medium"
+            >
+              Shop
             </Link>
             <Link 
-              href="/#newsletter" 
-              className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium"
+              href="/about" 
+              className="text-editorial-slate hover:text-editorial-charcoal transition-colors duration-300 font-sans text-caption uppercase tracking-widest font-medium"
             >
-              Subscribe
+              About
+            </Link>
+            <Link 
+              href="/contact" 
+              className="text-editorial-slate hover:text-editorial-charcoal transition-colors duration-300 font-sans text-caption uppercase tracking-widest font-medium"
+            >
+              Contact
             </Link>
           </div>
 
-          {/* Social Icons - Desktop */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Social Icons + Subscribe - Desktop */}
+          <div className="hidden md:flex items-center space-x-6">
             <a 
               href="https://in.pinterest.com/mirelle_inspo/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
+              className="text-editorial-slate hover:text-editorial-accent transition-colors duration-300"
               aria-label="Pinterest"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -67,37 +76,34 @@ export default function Header() {
               href="https://instagram.com/mirelle_inspo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
+              className="text-editorial-slate hover:text-editorial-accent transition-colors duration-300"
               aria-label="Instagram"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
               </svg>
             </a>
-            <a 
-              href="https://facebook.com/mirelleinspo" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
-              aria-label="Facebook"
+            
+            {/* Subscribe button - minimal editorial style */}
+            <Link 
+              href="/#newsletter" 
+              className="border border-editorial-charcoal text-editorial-charcoal px-6 py-2 font-sans text-caption uppercase tracking-widest font-medium hover:bg-editorial-charcoal hover:text-white transition-all duration-300"
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
+              Subscribe
+            </Link>
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-charcoal-700"
+            className="md:hidden text-editorial-charcoal"
             aria-label="Toggle menu"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
               {mobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -105,36 +111,61 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-4 border-t border-blush-200">
-            <Link href="/" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+          <div className="md:hidden py-8 space-y-6 border-t border-editorial-stone">
+            <Link 
+              href="/" 
+              className="block text-editorial-slate hover:text-editorial-charcoal transition-colors font-sans text-body uppercase tracking-wide font-medium"
+            >
               Home
             </Link>
-            <Link href="/blog" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link 
+              href="/blog" 
+              className="block text-editorial-slate hover:text-editorial-charcoal transition-colors font-sans text-body uppercase tracking-wide font-medium"
+            >
               Blog
             </Link>
-            <Link href="/shop" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link 
+              href="/shop" 
+              className="block text-editorial-slate hover:text-editorial-charcoal transition-colors font-sans text-body uppercase tracking-wide font-medium"
+            >
               Shop
             </Link>
-            <Link href="/about" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link 
+              href="/about" 
+              className="block text-editorial-slate hover:text-editorial-charcoal transition-colors font-sans text-body uppercase tracking-wide font-medium"
+            >
               About
             </Link>
-            <Link href="/contact" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link 
+              href="/contact" 
+              className="block text-editorial-slate hover:text-editorial-charcoal transition-colors font-sans text-body uppercase tracking-wide font-medium"
+            >
               Contact
             </Link>
-            <Link href="/#newsletter" className="block text-blush-400 font-semibold">
+            <Link 
+              href="/#newsletter" 
+              className="block text-editorial-accent font-sans text-body uppercase tracking-wide font-semibold pt-4 border-t border-editorial-stone"
+            >
               Subscribe to Newsletter
             </Link>
             
             {/* Mobile Social Links */}
-            <div className="flex space-x-6 pt-4 border-t border-blush-200">
-              <a href="https://in.pinterest.com/mirelle_inspo/" target="_blank" rel="noopener noreferrer" className="text-charcoal-600">
+            <div className="flex space-x-8 pt-6">
+              <a 
+                href="https://in.pinterest.com/mirelle_inspo/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-editorial-slate hover:text-editorial-accent font-sans text-body-sm uppercase tracking-wide"
+              >
                 Pinterest
               </a>
-              <a href="https://instagram.com/mirelle_inspo" target="_blank" rel="noopener noreferrer" className="text-charcoal-600">
+              <a 
+                href="https://instagram.com/mirelle_inspo" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-editorial-slate hover:text-editorial-accent font-sans text-body-sm uppercase tracking-wide"
+              >
                 Instagram
-              </a>
-              <a href="https://facebook.com/mirelleinspo" target="_blank" rel="noopener noreferrer" className="text-charcoal-600">
-                Facebook
               </a>
             </div>
           </div>

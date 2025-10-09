@@ -123,11 +123,11 @@ export default function Header() {
             
             {/* Subscribe button - minimal editorial style */}
             <Link 
-              href="/#newsletter" 
-              className="border border-editorial-charcoal text-editorial-charcoal px-6 py-2 font-sans text-caption uppercase tracking-widest font-medium hover:bg-editorial-charcoal hover:text-white transition-all duration-300"
-            >
-              Subscribe
-            </Link>
+  href="/subscribe" 
+  className="border border-editorial-charcoal text-editorial-charcoal px-6 py-2 font-sans text-caption uppercase tracking-widest font-medium hover:bg-editorial-charcoal hover:text-white transition-all duration-300"
+>
+  Subscribe
+</Link>
           </div>
 
           {/* Mobile menu button */}
@@ -180,11 +180,11 @@ export default function Header() {
               Contact
             </Link>
             <Link 
-              href="/#newsletter" 
-              className="block text-editorial-accent font-sans text-body uppercase tracking-wide font-semibold pt-4 border-t border-editorial-stone"
-            >
-              Subscribe to Newsletter
-            </Link>
+  href="/subscribe" 
+  className="border border-editorial-charcoal text-editorial-charcoal px-6 py-2 font-sans text-caption uppercase tracking-widest font-medium hover:bg-editorial-charcoal hover:text-white transition-all duration-300"
+>
+  Subscribe
+</Link>
             
             {/* Mobile Social Links */}
             <div className="flex space-x-8 pt-6">

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import ChristmasClient from './ChristmasClient';
+import XmasClient from './XmasClient';
 
 export const metadata: Metadata = {
   title: 'Christmas Nails - 50+ Festive Holiday Nail Designs | Mirelle',
@@ -89,7 +89,7 @@ export default function ChristmasPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <ChristmasClient />
+      <XmasClient />
     </>
   );
 }

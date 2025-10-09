@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
-import XmasClient from './XmasClient';
+import ChristmasClient from './ChristmasClient';
 
-// SEO Metadata - Server Side
 export const metadata: Metadata = {
   title: 'Christmas Nails - 50+ Festive Holiday Nail Designs | Mirelle',
   description: 'Shop 50+ premium Christmas nail designs with Santa, snowflakes, reindeer, and holiday themes. Festive press-on nails starting at $3.99 with fast shipping.',
@@ -27,6 +26,7 @@ export const metadata: Metadata = {
     title: 'Christmas Nails - 50+ Festive Holiday Nail Designs | Mirelle',
     description: 'Shop 50+ premium Christmas nail designs with Santa, snowflakes, reindeer, and holiday themes. Festive press-on nails starting at $3.99 with fast shipping.',
     type: 'website',
+    url: 'https://mirelleinspo.com/shop/christmas',
     siteName: 'Mirelle',
     locale: 'en_US',
     images: [{
@@ -39,15 +39,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Christmas Nails - 50+ Festive Holiday Nail Designs | Mirelle',
+    title: 'Christmas Nails - 50+ Festive Designs | Mirelle',
     description: 'Shop premium Christmas nail designs from $3.99',
     images: ['https://mirelleinspo.com/christmas-nails-hero.jpg'],
   },
 };
 
-// Server Component - Just wraps the client
-export default function FallPage() {
-  // JSON-LD Schema for Products
+export default function ChristmasPage() {
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -83,7 +81,6 @@ export default function FallPage() {
 
   return (
     <>
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
@@ -92,9 +89,7 @@ export default function FallPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      
-      {/* Client Component with all interactivity */}
-      <FallClient />
+      <ChristmasClient />
     </>
   );
 }

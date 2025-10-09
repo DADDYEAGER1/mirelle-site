@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Keep your existing colors
         'blog-primary': '#f8b4d9',
         'blog-secondary': '#fef3f7',
         'blog-accent': '#e91e63',
@@ -58,44 +59,64 @@ module.exports = {
           700: '#4f4f4f',
           800: '#454545',
           900: '#3d3d3d',
-        }
+        },
+        // NEW: Allure-inspired editorial colors
+        editorial: {
+          cream: '#faf8f5',
+          sand: '#f5f1eb',
+          stone: '#e8e4de',
+          charcoal: '#2a2a2a',
+          slate: '#4a4a4a',
+          accent: '#d4a574',
+        },
       },
       fontFamily: {
-        'serif': ['Playfair Display', 'serif'],
-        'sans': ['Inter', 'sans-serif'],
+        'serif': ['Cormorant Garamond', 'Playfair Display', 'Georgia', 'serif'],
+        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        'display': ['Cormorant Garamond', 'serif'],
+      },
+      fontSize: {
+        'display-xl': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '400' }],
+        'display-lg': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '400' }],
+        'display-md': ['2.75rem', { lineHeight: '1.15', letterSpacing: '-0.01em', fontWeight: '400' }],
+        'headline-xl': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.01em', fontWeight: '500' }],
+        'headline-lg': ['1.875rem', { lineHeight: '1.3', letterSpacing: '-0.01em', fontWeight: '500' }],
+        'headline-md': ['1.5rem', { lineHeight: '1.35', letterSpacing: '0', fontWeight: '500' }],
+        'body-xl': ['1.25rem', { lineHeight: '1.6', letterSpacing: '0', fontWeight: '400' }],
+        'body-lg': ['1.125rem', { lineHeight: '1.7', letterSpacing: '0', fontWeight: '400' }],
+        'body': ['1rem', { lineHeight: '1.7', letterSpacing: '0', fontWeight: '400' }],
+        'body-sm': ['0.9375rem', { lineHeight: '1.6', letterSpacing: '0', fontWeight: '400' }],
+        'caption': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0.01em', fontWeight: '400' }],
+        'overline': ['0.75rem', { lineHeight: '1.5', letterSpacing: '0.08em', fontWeight: '600' }],
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
+        '26': '6.5rem',
+        '30': '7.5rem',
+        '34': '8.5rem',
+      },
+      maxWidth: {
+        'prose-lg': '68ch',
+        'content': '1280px',
+        'wide': '1440px',
+      },
+      letterSpacing: {
+        'tightest': '-0.02em',
+        'magazine': '-0.01em',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-editorial': 'linear-gradient(135deg, #faf8f5 0%, #f5f1eb 100%)',
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: '75ch',
-            color: '#3d3d3d',
-            a: {
-              color: '#e91e63',
-              '&:hover': {
-                color: '#d63c3c',
-              },
-            },
-            'h1, h2, h3, h4': {
-              fontFamily: 'Playfair Display, serif',
-              fontWeight: '600',
-            },
-            img: {
-              borderRadius: '0.5rem',
-            },
-          },
-        },
+      boxShadow: {
+        'editorial': '0 4px 20px rgba(0, 0, 0, 0.06)',
+        'editorial-lg': '0 10px 40px rgba(0, 0, 0, 0.08)',
       },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
   ],
-  // Performance optimizations
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
 }

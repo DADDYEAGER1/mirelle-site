@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import NewsletterForm from '@/components/NewsletterForm';
 import Link from 'next/link';
 
+///c hange
+
 export const metadata: Metadata = {
   title: "Subscribe to Mirellé Newsletter",
   description: "Get exclusive nail art trends, seasonal designs, beauty tips, and product recommendations delivered to your inbox. Join the Mirellé community today!",

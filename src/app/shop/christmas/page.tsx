@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     title: 'Christmas Nails - 50+ Festive Holiday Nail Designs | Mirelle',
     description: 'Shop 50+ premium Christmas nail designs with Santa, snowflakes, reindeer, and holiday themes. Festive press-on nails starting at $3.99 with fast shipping.',
     type: 'website',
-    canonical: 'https://mirelleinspo.com/shop/christmas',
     siteName: 'Mirelle',
     locale: 'en_US',
     images: [{

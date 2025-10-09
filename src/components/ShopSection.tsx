@@ -23,7 +23,8 @@ const shopCategories = [
     image: "/trendsection.jpg",
     href: "/shop/trendy",
     productCount: "50+ Products",
-    color: "from-pink-400 to-blush-500"
+    color: "from-pink-400 to-blush-500",
+    trending: true
   },
   {
     title: "Christmas Nails",
@@ -31,7 +32,8 @@ const shopCategories = [
     image: "/christmassection.jpg",
     href: "/shop/christmas",
     productCount: "50+ Products",
-    color: "from-red-500 to-green-500"
+    color: "from-red-500 to-green-500",
+    trending: true
   },
   {
     title: "Fall Nails",
@@ -53,89 +55,77 @@ const shopCategories = [
 
 export default function ShopSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-charcoal-50 to-nude-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-4">
+    <section className="py-26 bg-white">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Header */}
+        <div className="max-w-3xl mb-18">
+          <p className="text-overline text-editorial-accent uppercase tracking-widest mb-4 font-semibold">
+            Shop
+          </p>
+          <h2 className="font-display text-display-md text-editorial-charcoal mb-6 tracking-magazine">
             Shop Mirellé's Favs
           </h2>
-          <p className="text-xl text-charcoal-600 max-w-3xl mx-auto">
+          <p className="text-body-lg text-editorial-slate leading-relaxed font-light">
             Discover Mirellé's curated collection of nail products, tools, and 
             accessories for every season and occasion.
           </p>
         </div>
         
-        {/* Updated grid layout for 6 items */}
+        {/* Shop Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {shopCategories.map((category, index) => (
             <Link
               key={index}
               href={category.href}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] hover:-translate-y-2"
+              className="group relative overflow-hidden bg-white shadow-editorial hover:shadow-editorial-lg transition-all duration-500"
             >
-              <div className="relative h-80">
+              <div className="relative h-96">
                 <img
                   src={category.image}
                   alt={category.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 
-                {/* Enhanced gradient overlays */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/5 to-transparent"></div>
-                <div className={`absolute inset-0 bg-gradient-to-tr ${category.color} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
+                {/* Editorial gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent"></div>
                 
-                {/* Floating animation elements */}
-                <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                  <div className="absolute top-10 right-10 w-4 h-4 bg-white/20 rounded-full blur-sm animate-pulse"></div>
-                  <div className="absolute bottom-20 left-10 w-6 h-6 bg-white/15 rounded-full blur-sm animate-bounce" style={{ animationDelay: '1s' }}></div>
-                </div>
-                
-                {/* Product count badge */}
-                <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-3 py-2 rounded-full text-sm font-semibold text-charcoal-800 shadow-lg border border-white/20">
+                {/* Product count badge - top right */}
+                <div className="absolute top-6 right-6 border border-white/40 backdrop-blur-sm bg-white/20 px-4 py-2 text-caption uppercase tracking-wide font-semibold text-white">
                   {category.productCount}
                 </div>
 
-                {/* Trending badge for select categories */}
-                {(index === 2 || index === 3) && (
-                  <div className="absolute top-4 left-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
-                    TRENDING
+                {/* Trending badge - minimal */}
+                {category.trending && (
+                  <div className="absolute top-6 left-6 border border-editorial-accent text-editorial-accent backdrop-blur-sm bg-white/80 px-3 py-1 text-caption uppercase tracking-widest font-semibold">
+                    Trending
                   </div>
                 )}
               </div>
               
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="backdrop-blur-sm bg-black/20 rounded-2xl p-4 border border-white/10">
-                  <h3 className="font-serif text-2xl font-bold mb-2 drop-shadow-lg">
-                    {category.title}
-                  </h3>
-                  <p className="text-white/90 mb-4 drop-shadow-md text-sm">
-                    {category.description}
-                  </p>
-                  <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-all duration-300 bg-white/25 backdrop-blur-sm px-4 py-2 rounded-full w-fit hover:bg-white/35">
-                    <span>Shop Now</span>
-                    <svg 
-                      className="ml-2 w-4 h-4 transform group-hover:scale-110 transition-transform duration-300" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
+              {/* Content overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <h3 className="font-display text-headline-lg mb-3 text-white tracking-magazine">
+                  {category.title}
+                </h3>
+                <p className="text-white/90 mb-6 text-body font-sans font-light leading-relaxed">
+                  {category.description}
+                </p>
+                <div className="inline-flex items-center text-white border-b border-white/50 pb-1 text-body-sm font-sans uppercase tracking-wide font-medium group-hover:border-editorial-accent group-hover:text-editorial-accent transition-all duration-300">
+                  <span className="mr-2">Shop Now</span>
+                  <svg 
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </div>
               </div>
             </Link>
           ))}
         </div>
-
-        {/* Call to Action Section */}
-        {/* <div className="text-center mt-16">
-          <div className="inline-flex items-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-            <span className="mr-3">✨</span>
-            <span>Explore All Collections</span>
-            <span className="ml-3">✨</span>
-          </div>
-        </div> */}
       </div>
     </section>
   );

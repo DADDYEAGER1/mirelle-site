@@ -1,7 +1,7 @@
 ---
 title: 'Valentine Nails 2026: 40+ Designs & Trends You'll Love'
 excerpt: 'Discover 40+ valentine nails 2026 designs from a licensed nail tech. Get trending ideas, pro tips, and step-by-step tutorials for romantic manicures that last.'
-date: '2025-10-08T09:00:00-04:00'
+date: '2025-10-08T09:00:00.000Z'
 author: 'Avery Chen'
 tags: ['valentine nails', 'valentine nail designs', 'heart nails', 'romantic manicures', 'seasonal nail art', 'gel nails', 'nail art 2026']
 image: '/images/blog/hero-valentine-nails-2026.jpg'

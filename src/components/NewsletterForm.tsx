@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function SubscribePage() {
+export default function Subscribe() {
   return (
     <div className="min-h-screen bg-editorial-cream">
       {/* Hero Section */}

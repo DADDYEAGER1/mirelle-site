@@ -99,8 +99,9 @@ export default function SubscribePage() {
               Subscribe now and get your first inspiration guide instantly
             </p>
           </div>
+          
 
-          {/* <NewsletterForm /> */}
+          <NewsletterForm />
         </div>
       </section>
 

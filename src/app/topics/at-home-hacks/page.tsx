@@ -505,8 +505,9 @@ export default function AtHomeHacks() {
 
       {
         {/* Industry Secrets */}
-      <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
+        <div className="bg-gray-700 p-6 rounded-xl border border-gray-600">
         <h4 className="font-bold text-blue-300 text-lg mb-4 flex items-center">
+          
           💎 Exclusive Industry Secrets
         </h4>
         <ul className="text-gray-200 space-y-2">

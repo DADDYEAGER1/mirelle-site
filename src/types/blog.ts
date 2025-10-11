@@ -38,4 +38,9 @@ export interface BlogMetadata {
   tags: string[];
   image?: string;
   readTime: number;
+  // NEW SEO FIELDS
+  imageAlt?: string;
+  ogImage?: string;
+  dateModified?: string;
+  wordCount?: number;
 }

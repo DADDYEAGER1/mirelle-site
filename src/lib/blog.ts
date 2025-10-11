@@ -36,7 +36,12 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           tutorialSteps: data.tutorialSteps || undefined, // ADD THIS
           tutorialMetadata: data.tutorialMetadata || undefined, // ADD THIS
           imageAlt: data.imageAlt || `${data.title || 'Nail art'} - Mirelle inspiration`,
+          imageWidth: data.imageWidth || 1200,
+          imageHeight: data.imageHeight || 630,
+          imageCaption: data.imageCaption || undefined,
+          ogDescription: data.ogDescription || data.excerpt || '',
           ogImage: data.ogImage || data.image || null,
+          twitterCard: data.twitterCard || 'summary_large_image',
           dateModified: data.dateModified || data.date,
           wordCount: data.wordCount || undefined,
         };

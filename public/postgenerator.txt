@@ -52,7 +52,7 @@
     "styling": "Tailwind CSS utility classes",
    
     "critical_constraints": [
-      "BlogPost type: title, excerpt, date, author, tags, image, imageAlt, imageWidth, imageHeight, readTime, slug, canonical, wordCount, dateModified, ogImage, ogDescription",
+      "BlogPost type: title, excerpt, date, author, tags, image, readTime, slug, canonical, dateModified, imageAlt, imageWidth, imageHeight, ogImage, ogDescription, wordCount (NO description field)",
       "Links: HTML <a> with Tailwind classes (markdown won't style)",
       "Images: Markdown ![alt](path) with MANDATORY keyword-rich alt text",
       "JSON-LD: In page.tsx via dangerouslySetInnerHTML",
@@ -209,8 +209,11 @@
           "60%+ MUST contain primary keyword",
           "<125 characters each (STRICT)",
           "Descriptive + specific to image content",
+	  "imageAlt field in frontmatter must match hero image alt text",
+	  "Hero image gets: imageAlt, imageWidth (1200), imageHeight (630)",
           "Natural language (not keyword stuffing)",
           "Include context (e.g., 'on almond nails', 'step-by-step guide', 'chrome finish')"
+
         ],
         "format": "Generate inline with image markdown",
         "example_correct": "![mocha mousse winter nails 2025 with chrome snowflake accent design](/images/blog/mocha-nails-chrome.jpg)",
@@ -507,6 +510,7 @@
   "content_strategy": {
     "structure_template": {
       "word_count_distribution": {
+	
         "author_byline_top": "20-30 words",
         "introduction": "200-250 words",
         "paa_quick_answers": "40-60 words each (3-5 sections)",
@@ -518,6 +522,7 @@
         "author_bio_bottom": "80-100 words",
         "comment_section_finale": "80-120 words",
         "related_posts": "60-80 words"
+	"seo_metadata_fields": "dateModified (publish date or update date), imageAlt (hero image description with keyword), imageWidth/Height (1200x630 for 	OG optimization), ogImage (custom OG if different from hero), ogDescription (custom OG if different from excerpt), wordCount (auto-calculated from 	content)"
       }
     },
 
@@ -961,7 +966,15 @@
       
       "delivery_format": "Single code block containing complete markdown file with frontmatter + full content",
       
-      "frontmatter_template_v54": "---\ntitle: '[Title with primary keyword in first 8 words]'\nexcerpt: '[150-160 chars STRICT - NO APOSTROPHES - keyword in first sentence + CTA]'\ndate: '2025-10-11'\ndateModified: '2025-10-11'\nauthor: 'Avery Chen'\ntags: ['primary-keyword', 'lsi-1', 'lsi-2', 'lsi-3', 'topic']\nimage: '/images/blog/hero-filename.jpg'\nimageAlt: 'primary keyword complete guide with key benefit 2025'\nimageWidth: 1200\nimageHeight: 630\nogImage: '/images/blog/hero-filename.jpg'\nogDescription: 'Click-worthy social sharing description with urgency or curiosity (150 chars)'\ntwitterCard: 'summary_large_image'\nreadTime: 'X min'\nslug: 'slug-here'\ncanonical: 'https://mirelleinspo.com/blog/slug-here'\nwordCount: 2847\nfaqItems:\n  - question: 'Exact question from FAQ section - NO APOSTROPHES or escape them'\n    answer: 'Exact 40-60 word answer - NO APOSTROPHES or escape them'\n  - question: 'Question 2'\n    answer: 'Answer 2'\n  # Add all 10-12 FAQ items - validate each for YAML syntax\ntutorialMetadata:\n  name: 'Tutorial title if applicable'\n  description: 'Brief description'\n  totalTime: 'PT[X]M'\n  estimatedCost:\n    currency: 'USD'\n    value: 'amount'\n  tools: ['tool1', 'tool2']\n  supplies: ['supply1', 'supply2']\ntutorialSteps:\n  - position: 1\n    name: 'Step 1 title'\n    text: 'Step 1 instructions - NO APOSTROPHES or escape them'\n  - position: 2\n    name: 'Step 2 title'\n    text: 'Step 2 instructions'\n  # Add all tutorial steps - validate each for YAML syntax\n---",
+      "frontmatter_template_v54": "---\ntitle: '[Title with primary keyword in first 8 words]'\nexcerpt: '[150-160 chars STRICT - NO APOSTROPHES - keyword in first sentence + CTA]'\ndate: '2025-10-11'\ndateModified: '2025-10-11'\nauthor: 'Avery Chen'\ntags: ['primary-keyword', 'lsi-1', 'lsi-2', 'lsi-3', 'topic']\nimage: '/images/blog/hero-filename.jpg'\nimageAlt: 'primary keyword complete guide with key benefit 2025'\nimageWidth: 1200\nimageHeight: 630\nogImage: '/images/blog/hero-filename.jpg'\nogDescription: 'Click-worthy social sharing description with urgency or curiosity (150 chars)'\ntwitterCard: 'summary_large_image'\nreadTime: 'X min'\nslug: 'slug-here'\ncanonical: 'https://mirelleinspo.com/blog/slug-here'\n
+\n dateModified: 'YYYY-MM-DDTHH:MM:SS-04:00'
+\nimageAlt: '[Primary keyword descriptive alt text under 125 chars - 60% of images should have keyword]'
+\nimageWidth: 1200
+\nimageHeight: 630
+\nogImage: '/images/blog/og-specific-image.jpg'
+\nogDescription: '[Custom OG description if different from excerpt, 150-160 chars]'
+\nwordCount: [calculated word count]
+\nfaqItems:\n  - question: 'Exact question from FAQ section - NO APOSTROPHES or escape them'\n    answer: 'Exact 40-60 word answer - NO APOSTROPHES or escape them'\n  - question: 'Question 2'\n    answer: 'Answer 2'\n  # Add all 10-12 FAQ items - validate each for YAML syntax\ntutorialMetadata:\n  name: 'Tutorial title if applicable'\n  description: 'Brief description'\n  totalTime: 'PT[X]M'\n  estimatedCost:\n    currency: 'USD'\n    value: 'amount'\n  tools: ['tool1', 'tool2']\n  supplies: ['supply1', 'supply2']\ntutorialSteps:\n  - position: 1\n    name: 'Step 1 title'\n    text: 'Step 1 instructions - NO APOSTROPHES or escape them'\n  - position: 2\n    name: 'Step 2 title'\n    text: 'Step 2 instructions'\n  # Add all tutorial steps - validate each for YAML syntax\n---",
 
       "content_structure_with_alt_text": {
         "author_byline_top": "By <a href='/about' class='text-blue-600 hover:text-blue-800 underline font-medium'>Avery Chen</a> - [1-2 credentials inline]\n\n---",
@@ -1008,6 +1021,10 @@
         "HTML <a> tags for ALL links",
         "YAML: NO APOSTROPHES in single-quoted strings",
         "Read-aloud test: sounds human"
+"NEW SEO FIELDS: dateModified, imageAlt, imageWidth, imageHeight, ogImage, ogDescription, wordCount all present",
+"imageAlt: Primary keyword in 60%+ of alt texts, all under 125 chars",
+"ogImage: Specified if different from hero image",
+"dateModified: Set to publish date or actual last modified date"
       ],
 
       "pre_delivery_validation_v54": {
@@ -1274,8 +1291,10 @@
         "faqItems (if FAQ section present)",
         "tutorialMetadata (if tutorial present)",
         "tutorialSteps (if tutorial present)"
+
       ],
       "verify_before_delivery": "Check ALL required fields present with valid values"
+"NEW SEO FIELDS: Verify dateModified, imageAlt, imageWidth, imageHeight, ogImage, ogDescription, wordCount present in frontmatter",
     }
   },
 

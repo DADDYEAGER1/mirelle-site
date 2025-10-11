@@ -17,7 +17,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function ({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = params;
   const post = await getBlogPost(slug);
   

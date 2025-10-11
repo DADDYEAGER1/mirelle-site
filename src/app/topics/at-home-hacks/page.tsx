@@ -1,8 +1,109 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'At-Home Nail Hacks - Professional DIY Techniques & Secrets | Mirelle',
+  description: 'Master professional at-home nail techniques with expert DIY hacks, salon-quality methods, and insider secrets. Learn proper nail preparation, application, and troubleshooting from certified technicians.',
+  keywords: 'at-home nail hacks, DIY manicure tips, professional nail techniques, salon-quality nails at home, nail care DIY, home manicure guide, nail application techniques, nail troubleshooting',
+  authors: [{ name: 'Mirelle' }],
+  creator: 'Mirelle',
+  publisher: 'Mirelle',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics/at-home-hacks',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'At-Home Nail Hacks - Professional DIY Techniques | Mirelle',
+    description: 'Master professional at-home nail techniques with expert DIY hacks and salon-quality methods from certified technicians.',
+    type: 'article',
+    url: 'https://mirelleinspo.com/topics/at-home-hacks',
+    siteName: 'Mirelle',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/athome.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Professional At-Home Nail Techniques and DIY Hacks',
+      type: 'image/jpeg',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'At-Home Nail Hacks - Professional DIY | Mirelle',
+    description: 'Master salon-quality nail techniques at home',
+    images: ['https://mirelleinspo.com/athome.jpg'],
+  },
+};
 
 export default function AtHomeHacks() {
+  // JSON-LD Structured Data
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'Professional At-Home Nail Techniques',
+    description: 'Master salon-quality nail application and care techniques you can perform at home',
+    image: 'https://mirelleinspo.com/athome.jpg',
+    totalTime: 'PT30M',
+    step: [
+      {
+        '@type': 'HowToStep',
+        name: 'Perfect Nail Preparation',
+        text: 'Dehydrate nails with rubbing alcohol, file in one direction only, remove all oils from nail bed, shape before any treatments',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Temperature Control',
+        text: 'Warm polish between palms, work in 68-72°F environment, store polish upright away from heat',
+      },
+      {
+        '@type': 'HowToStep',
+        name: '3-Stroke Application',
+        text: 'Center stroke 2mm from cuticle, sweep left side, complete right side, seal the tip',
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://mirelleinspo.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Topics',
+        item: 'https://mirelleinspo.com/topics',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'At-Home Hacks',
+        item: 'https://mirelleinspo.com/topics/at-home-hacks',
+      },
+    ],
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+          <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -594,3 +695,9 @@ export default function AtHomeHacks() {
     </div>
   );
 }
+      
+
+    </>
+  );
+}
+

@@ -192,7 +192,7 @@ function TimeBadge({ minutes }: { minutes?: number }) {
    Main Page Component
    ------------------------- */
 
-export default function AtHomeHacks():
+export default function AtHomeHacks() {
   return (
     <>
       {/* JSON-LD Structured Data */}

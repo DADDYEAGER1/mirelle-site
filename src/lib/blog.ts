@@ -35,6 +35,10 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           faqItems: data.faqItems || undefined, // ADD THIS
           tutorialSteps: data.tutorialSteps || undefined, // ADD THIS
           tutorialMetadata: data.tutorialMetadata || undefined, // ADD THIS
+          imageAlt: data.imageAlt || `${data.title || 'Nail art'} - Mirelle inspiration`,
+          ogImage: data.ogImage || data.image || null,
+          dateModified: data.dateModified || data.date,
+          wordCount: data.wordCount || undefined,
         };
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

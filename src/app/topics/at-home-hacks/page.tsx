@@ -140,7 +140,7 @@ export default function AtHomeHacks() {
                 from top nail technicians.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
-                
+                <a
                   href="https://hatake21.gumroad.com/l/nailcareguide"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -90,6 +90,17 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       faqItems: data.faqItems || undefined, // ADD THIS
       tutorialSteps: data.tutorialSteps || undefined, // ADD THIS
       tutorialMetadata: data.tutorialMetadata || undefined, // ADD THIS
+      imageAlt: data.imageAlt || `${data.title || 'Nail art'} - Mirelle inspiration`,
+      imageWidth: data.imageWidth || 1200,
+      imageHeight: data.imageHeight || 630,
+      imageCaption: data.imageCaption || undefined,
+      ogImage: data.ogImage || data.image || null,
+      ogDescription: data.ogDescription || data.excerpt || '',
+      twitterCard: data.twitterCard || 'summary_large_image',
+      dateModified: data.dateModified || data.date,
+      wordCount: data.wordCount || undefined
+
+      
     };
   } catch (error) {
     console.error(`Error reading blog post ${slug}:`, error);

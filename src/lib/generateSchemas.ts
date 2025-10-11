@@ -68,7 +68,7 @@ export function generateSchemas(config: SchemaConfig) {
       caption: post.title,
     },
     datePublished: post.date,
-    dateModified: post.updatedDate || post.date,
+    dateModified: post.dateModified || post.updatedDate || post.date,
     author: {
       '@type': 'Person',
       '@id': `${baseUrl}/#person`,
@@ -89,7 +89,7 @@ export function generateSchemas(config: SchemaConfig) {
     },
     articleSection: post.category || 'Nail Care',
     keywords: post.tags?.join(', ') || 'nail art, nail care, nail design',
-    wordCount: post.content?.split(' ').length || 800,
+    wordCount: post.wordCount || post.content?.split(' ').length || 800,
     inLanguage: 'en-US',
     isAccessibleForFree: true,
     isPartOf: {

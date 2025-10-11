@@ -17,7 +17,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function ({ params }: PageProps): Promise<Metadata> {
   const { slug } = params;
   const post = await getBlogPost(slug);
   
@@ -33,11 +33,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const canonicalUrl = `https://mirelleinspo.com/blog/${slug}`;
-  const imageUrl = post.image ? `https://mirelleinspo.com${post.image}` : 'https://mirelleinspo.com/og-default.png';
+  const imageUrl = post.ogImage 
+  ? `https://mirelleinspo.com${post.ogImage}` 
+  : (post.image ? `https://mirelleinspo.com${post.image}` : 'https://mirelleinspo.com/og-default.png');
   
   return {
     title: `${post.title} | Mirelle`,
-    description: post.excerpt || `Discover ${post.title} - expert nail tips, trends, and tutorials from Mirelle.`,
+    description: post.ogDescription || post.excerpt || `Discover ${post.title} - expert nail tips, trends, and tutorials from Mirelle.`,
     keywords: post.tags?.join(', ') || 'nail art, nail care, nail trends, manicure tips, nail design',
     authors: [{ name: post.author || 'Mirelle' }],
     creator: post.author || 'Mirelle',
@@ -58,20 +60,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     openGraph: {
       title: `${post.title} | Mirelle`,
-      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
+      description: post.ogDescription || post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
       type: 'article',
       url: canonicalUrl,
       siteName: 'Mirelle',
       locale: 'en_US',
       images: [{
         url: imageUrl,
-        width: 1200,
-        height: 630,
-        alt: post.title,
+        width: post.imageWidth || 1200,
+        height: post.imageHeight || 630,
+        alt: post.imageAlt || post.title,
         type: 'image/jpeg',
       }],
       publishedTime: post.date,
-      modifiedTime: post.updatedDate || post.date,
+      modifiedTime: post.dateModified || post.updatedDate || post.date,
       authors: [post.author || 'Mirelle'],
       section: post.category || 'Nail Care',
       tags: post.tags || [],
@@ -79,14 +81,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     twitter: {
       card: 'summary_large_image',
       title: `${post.title} | Mirelle`,
-      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
+      description: post.ogDescription || post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
       images: [imageUrl],
       creator: '@mirelleinspo',
       site: '@mirelleinspo',
     },
     other: {
       'article:published_time': post.date,
-      'article:modified_time': post.updatedDate || post.date,
+      'article:modified_time': post.dateModified || post.updatedDate || post.date,
       'article:author': post.author || 'Mirelle',
       'article:section': post.category || 'Nail Care',
       'article:tag': post.tags?.join(', ') || '',

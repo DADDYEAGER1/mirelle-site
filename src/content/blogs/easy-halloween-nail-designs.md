@@ -20,7 +20,7 @@ That's literally why I'm writing this. After six years of doing nails and watchi
 
 So whether you're hitting up a Halloween party, trick-or-treating with the kids, or just want festive nails for the entire spooky season, I've got 35 easy halloween nail designs that won't make you want to throw your nail polish across the room. Let's do this.
 
-For more seasonal inspiration, check out our <a href='/blog/christmas-nail-desings-2025' class='text-blue-600 hover:text-blue-800 underline'>Christmas nail ideas</a> to plan ahead, or explore our <a href='/blog/[ENTER_SLUG_1]' class='text-blue-600 hover:text-blue-800 underline'>complete nail care guide</a> to keep your nails healthy through all the festivities.
+For more seasonal inspiration, check out our <a href='/blog/christmas-nail-desings-2025' class='text-blue-600 hover:text-blue-800 underline'>Christmas nail ideas</a> to plan ahead, or explore our <a href='/topics/nail-care-guide' class='text-blue-600 hover:text-blue-800 underline'>complete nail care guide</a> to keep your nails healthy through all the festivities.
 
 ---
 
@@ -67,7 +67,7 @@ okay but like... these might be the easiest halloween nails ever? Just paint you
 
 > **Pro Tip:** If your hands shake (same, bestie), use a dotting tool for the eyes instead of freehand. Way more forgiving.
 
-These easy halloween nail designs work on literally any nail length and you probably already have the supplies at home. For more beginner-friendly techniques, check our <a href='/blog/[ENTER_SLUG_2]' class='text-blue-600 hover:text-blue-800 underline'>nail art basics guide</a>.
+These easy halloween nail designs work on literally any nail length and you probably already have the supplies at home. For more beginner-friendly techniques, check our <a href='/topics/at-home-hacks' class='text-blue-600 hover:text-blue-800 underline'>nail art basics guide</a>.
 
 ---
 
@@ -894,7 +894,7 @@ These easy halloween nail designs are giving me major witchy celestial vibes. Pe
 
 > **Pro Tip:** Use a toothpick dipped in polish for the smallest stars. Way easier than trying to control a brush for tiny dots.
 
-For more celestial nail inspiration that works year-round, check out our <a href='/blog/[ENTER_SLUG_1]' class='text-blue-600 hover:text-blue-800 underline'>complete guide to nail art trends</a>.
+For more celestial nail inspiration that works year-round, check out our <a href='/topics/nail-art-guides' class='text-blue-600 hover:text-blue-800 underline'>complete guide to nail art trends</a>.
 
 ---
 
@@ -1016,6 +1016,6 @@ I've been doing nails professionally for six years, and you know what? I still m
 
 Whether you're going full-on spooky with blood drips and zombies, keeping it cute with pumpkins and ghosts, or staying subtle with fall colors and minimal accents, the most important thing is that you feel confident and excited about your nails. And hey—if you mess up? We've all been there. That's literally how I learned half these techniques.
 
-Want more nail inspo? Follow me on <a href='https://pinterest.com/mirelle_inspo' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>Pinterest</a> where I post daily designs, or check out our <a href='/blog/christmas-nail-designs-2025' class='text-blue-600 hover:text-blue-800 underline'>Christmas nail ideas</a> to start planning your holiday manicures. You can also explore our <a href='/blog/[ENTER_SLUG_2]' class='text-blue-600 hover:text-blue-800 underline'>complete nail care guide</a> to keep those nails healthy and strong through all your festive designs.
+Want more nail inspo? Follow me on <a href='https://pinterest.com/mirelle_inspo' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>Pinterest</a> where I post daily designs, or check out our <a href='/blog/christmas-nail-designs-2025' class='text-blue-600 hover:text-blue-800 underline'>Christmas nail ideas</a> to start planning your holiday manicures. You can also explore our <a href='/blog/christmas-nail-designs-2025/' class='text-blue-600 hover:text-blue-800 underline'>complete nail care guide</a> to keep those nails healthy and strong through all your festive designs.
 
 Now go create something spooky! And remember—confidence is the best accessory for any Halloween look, nails included.

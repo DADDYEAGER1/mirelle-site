@@ -7,13 +7,13 @@ export default function AboutSection() {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
-          {/* Image - Left side, larger */}
+          {/* Image - Left side, larger - FIXED */}
           <div className="lg:col-span-7 relative">
-            <div className="relative overflow-hidden shadow-editorial-lg">
+            <div className="relative overflow-hidden shadow-editorial-lg aspect-[3/4]">
               <img
                 src="/media/aboutme.png"
                 alt="Mirelle - Nail artist and beauty expert"
-                className="w-full h-[600px] object-cover"
+                className="w-full h-full object-cover"
               />
               {/* Subtle editorial overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>

@@ -63,7 +63,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         </div>
         
         {post.image && (
-          <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src={post.image}
               alt={post.title}

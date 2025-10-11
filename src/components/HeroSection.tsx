@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Background Image with editorial overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/winternailbg.jpg"
+          src="/herosectionbg.jpg"
           alt="Beautiful nail art background"
           className="w-full h-full object-cover opacity-90"
         />

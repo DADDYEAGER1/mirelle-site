@@ -17,6 +17,16 @@ export interface BlogPost {
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
+  // NEW SEO FIELDS
+  imageAlt: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageCaption?: string;
+  ogImage?: string;
+  ogDescription?: string;
+  twitterCard?: string;
+  dateModified?: string;
+  wordCount?: number;
 }
 
 export interface BlogMetadata {

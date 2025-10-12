@@ -35,6 +35,20 @@ export const metadata: Metadata = {
     email: false,
     address: false,
   },
+  
+  // Global geo-targeting (won't hurt international reach)
+  other: {
+    'distribution': 'global',
+    'rating': 'general',
+    'coverage': 'worldwide',
+    'target': 'all',
+    'audience': 'all',
+    'language': 'en-US',
+    'classification': 'Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle',
+    'referrer': 'always',
+    'revisit-after': '7 days',
+  },
+
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -51,6 +65,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  
   twitter: {
     card: "summary_large_image",
     title: "Mirellé Inspo | Nail Art Ideas & Tutorials 2025",
@@ -59,9 +74,11 @@ export const metadata: Metadata = {
     creator: "@mirelleinspo",
     site: "@mirelleinspo",
   },
+  
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
@@ -70,6 +87,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -82,9 +100,19 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  
   alternates: {
     canonical: "https://mirelleinspo.com",
+    // Multi-region language support for global reach
+    languages: {
+      'en-US': 'https://mirelleinspo.com',
+      'en-GB': 'https://mirelleinspo.com',
+      'en-CA': 'https://mirelleinspo.com',
+      'en-AU': 'https://mirelleinspo.com',
+      'en': 'https://mirelleinspo.com',
+    },
   },
+  
   category: "Beauty & Fashion",
 };
 
@@ -93,7 +121,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Enhanced structured data
+  // Enhanced structured data for AI bots
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -115,6 +143,19 @@ export default function RootLayout({
       "@type": "ContactPoint",
       "contactType": "Customer Service",
       "url": "https://mirelleinspo.com/contact"
+    },
+    // Global audience targeting
+    "areaServed": {
+      "@type": "Place",
+      "name": "Worldwide"
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Global",
+      "geographicArea": {
+        "@type": "Place",
+        "name": "Worldwide"
+      }
     }
   };
 
@@ -123,16 +164,65 @@ export default function RootLayout({
     "@type": "WebSite",
     "name": "Mirellé Inspo",
     "url": "https://mirelleinspo.com",
+    "description": "Nail art ideas, trends, tutorials, and inspiration for 2025. Professional tips for beautiful, healthy nails.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mirellé Inspo"
+    },
+    "inLanguage": "en-US",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://mirelleinspo.com/search?q={search_term_string}",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://mirelleinspo.com/search?q={search_term_string}"
+      },
       "query-input": "required name=search_term_string"
     }
   };
 
+  // BreadcrumbList for better content structure
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://mirelleinspo.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://mirelleinspo.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Topics",
+        "item": "https://mirelleinspo.com/topics"
+      }
+    ]
+  };
+
   return (
-    <html lang="en">
+    <html lang="en-US">
       <head>
+        {/* Global geo-targeting meta tags (won't hurt international reach) */}
+        <meta name="distribution" content="global" />
+        <meta name="coverage" content="worldwide" />
+        <meta name="target" content="all" />
+        <meta name="audience" content="all" />
+        <meta httpEquiv="content-language" content="en-US" />
+        <meta name="language" content="English" />
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="7 days" />
+        
+        {/* AI Bot friendly meta tags */}
+        <meta name="referrer" content="always" />
+        <meta name="classification" content="Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle" />
+        
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -141,7 +231,7 @@ export default function RootLayout({
         
         {/* Fonts with display=swap for better performance */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
 
@@ -187,7 +277,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
 
-        {/* Enhanced Structured Data */}
+        {/* Enhanced Structured Data for AI Understanding */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -198,6 +288,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema),
           }}
         />
 

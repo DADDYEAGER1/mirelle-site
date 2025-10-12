@@ -24,7 +24,7 @@ export default async function BlogSection() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className={`group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer ${
+                className={`group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer ${
                   index === 0 ? 'md:col-span-2 md:row-span-2 h-96' : 'h-64'
                 }`}
               >
@@ -35,47 +35,46 @@ export default async function BlogSection() {
                       src={post.image}
                       alt={post.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400" />
                   )}
-                  {/* Dark gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 transition-all duration-300" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300" />
                 </div>
 
                 {/* Content Overlay */}
-                <div className="relative h-full p-6 flex flex-col justify-between">
+                <div className="relative h-full p-6 flex flex-col justify-between text-white">
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {post.tags.slice(0, 2).map(tag => (
                       <span 
                         key={tag}
-                        className="bg-white/90 backdrop-blur-md text-gray-800 px-3 py-1 rounded-full text-xs font-semibold shadow-sm"
+                        className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded-full text-xs font-medium"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  {/* Bottom Content with Premium White Card */}
-                  <div className="bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg">
-                    <h3 className={`font-bold mb-2 line-clamp-2 text-gray-900 group-hover:text-pink-600 transition-colors ${
+                  {/* Bottom Content */}
+                  <div>
+                    <h3 className={`font-bold mb-2 line-clamp-2 group-hover:text-pink-200 transition-colors ${
                       index === 0 ? 'text-2xl' : 'text-lg'
                     }`}>
                       {post.title}
                     </h3>
                     
-                    <p className="text-gray-700 mb-3 line-clamp-2 text-sm">
+                    <p className="text-white/90 mb-3 line-clamp-2 text-sm">
                       {post.excerpt}
                     </p>
 
-                    <div className="flex justify-between items-center text-xs text-gray-600 mb-3">
-                      <span className="font-medium">{new Date(post.date).toLocaleDateString()}</span>
-                      <span className="font-medium">{post.readTime} min read</span>
+                    <div className="flex justify-between items-center text-xs text-white/80 mb-3">
+                      <span>{new Date(post.date).toLocaleDateString()}</span>
+                      <span>{post.readTime} min read</span>
                     </div>
 
-                    <div className="inline-flex items-center text-pink-600 font-semibold text-sm group-hover:text-pink-700 transition-colors">
+                    <div className="inline-flex items-center text-white font-semibold hover:text-pink-200 transition-colors text-sm">
                       Read More →
                     </div>
                   </div>

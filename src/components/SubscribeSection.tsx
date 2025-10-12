@@ -40,7 +40,7 @@ export default function NewsletterSection() {
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
                 placeholder="Your Name"
                 required
-                className="w-full px-6 py-4 bg-white/10 border border-white/20 focus:border-editorial-accent focus:bg-white/15 focus:outline-none text-white placeholder-white/50 font-sans text-body transition-all duration-300"
+                className="w-full px-6 py-4 bg-white/10 border border-white/20 focus:border-editorial-accent focus:bg-white/15 focus:outline-none text-white placeholder-black/50 font-sans text-body transition-all duration-300"
               />
               <input
                 type="email"
@@ -48,7 +48,7 @@ export default function NewsletterSection() {
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
                 placeholder="Your Email Address"
                 required
-                className="w-full px-6 py-4 bg-white/10 border border-white/20 focus:border-editorial-accent focus:bg-white/15 focus:outline-none text-white placeholder-white/50 font-sans text-body transition-all duration-300"
+                className="w-full px-6 py-4 bg-white/10 border border-white/20 focus:border-editorial-accent focus:bg-white/15 focus:outline-none text-white placeholder-black/50 font-sans text-body transition-all duration-300"
               />
               <button
                 type="submit"

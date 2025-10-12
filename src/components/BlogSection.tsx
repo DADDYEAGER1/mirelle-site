@@ -7,31 +7,25 @@ export default async function BlogSection() {
   const recentPosts = posts.slice(0, 6); // Show 6 recent posts in grid
 
   return (
-    <section className="py-26 bg-editorial-cream">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Header - Editorial style */}
-        <div className="max-w-3xl mb-18">
-          <p className="text-overline text-editorial-accent uppercase tracking-widest mb-4 font-semibold">
-            The Journal
-          </p>
-          <h2 className="font-display text-display-md text-editorial-charcoal mb-6 tracking-magazine">
-            Latest from Our Blog
-          </h2>
-          <p className="text-body-lg text-editorial-slate leading-relaxed font-light">
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">Latest from Our Blog</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Stay updated with expert nail care tips, latest trends, and step-by-step tutorials for beautiful, healthy nails.
           </p>
         </div>
 
-        {/* Blog Grid - Asymmetric Allure layout */}
+        {/* Blog Grid */}
         {recentPosts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-18">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {recentPosts.map((post, index) => (
-              <div 
+              <Link
                 key={post.slug}
-                className={`group relative overflow-hidden bg-white shadow-editorial hover:shadow-editorial-lg transition-all duration-500 ${
-                  index === 0 ? 'md:col-span-8 md:row-span-2 h-[600px]' : 
-                  index === 1 ? 'md:col-span-4 h-[600px]' :
-                  'md:col-span-4 h-[400px]'
+                href={`/blog/${post.slug}`}
+                className={`group block relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer ${
+                  index === 0 ? 'md:col-span-2 md:row-span-2 h-96' : 'h-64'
                 }`}
               >
                 {/* Background Image */}
@@ -41,74 +35,66 @@ export default async function BlogSection() {
                       src={post.image}
                       alt={post.title}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-editorial-sand via-editorial-stone to-editorial-accent" />
+                    <div className="w-full h-full bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400" />
                   )}
-                  {/* Editorial gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500" />
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent group-hover:from-black/80 transition-all duration-300" />
                 </div>
 
                 {/* Content Overlay */}
-                <div className="relative h-full p-8 flex flex-col justify-between text-white">
-                  {/* Tags - Minimal style */}
+                <div className="relative h-full p-6 flex flex-col justify-between">
+                  {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {post.tags.slice(0, 2).map(tag => (
                       <span 
                         key={tag}
-                        className="border border-white/30 text-white px-3 py-1 text-caption uppercase tracking-wide font-medium backdrop-blur-sm"
+                        className="bg-white/90 backdrop-blur-md text-gray-800 px-3 py-1 rounded-full text-xs font-semibold shadow-sm"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  {/* Bottom Content */}
-                  <div>
-                    <h3 className={`font-display mb-4 line-clamp-2 group-hover:text-editorial-accent transition-colors duration-300 tracking-magazine ${
-                      index === 0 ? 'text-headline-xl' : 'text-headline-lg'
+                  {/* Bottom Content with Premium White Card */}
+                  <div className="bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-lg">
+                    <h3 className={`font-bold mb-2 line-clamp-2 text-gray-900 group-hover:text-pink-600 transition-colors ${
+                      index === 0 ? 'text-2xl' : 'text-lg'
                     }`}>
                       {post.title}
                     </h3>
                     
-                    <p className={`text-white/90 mb-6 line-clamp-2 font-sans font-light leading-relaxed ${
-                      index === 0 ? 'text-body-lg' : 'text-body'
-                    }`}>
+                    <p className="text-gray-700 mb-3 line-clamp-2 text-sm">
                       {post.excerpt}
                     </p>
 
-                    <div className="flex justify-between items-center text-caption text-white/70 mb-6 font-sans uppercase tracking-wide">
-                      <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                      <span>{post.readTime} min read</span>
+                    <div className="flex justify-between items-center text-xs text-gray-600 mb-3">
+                      <span className="font-medium">{new Date(post.date).toLocaleDateString()}</span>
+                      <span className="font-medium">{post.readTime} min read</span>
                     </div>
 
-                    <Link 
-                      href={`/blog/${post.slug}`}
-                      className="inline-flex items-center text-white border-b border-white/50 pb-1 text-body-sm font-sans font-medium uppercase tracking-wide hover:border-editorial-accent hover:text-editorial-accent transition-all duration-300"
-                    >
-                      Read More
-                      <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </Link>
+                    <div className="inline-flex items-center text-pink-600 font-semibold text-sm group-hover:text-pink-700 transition-colors">
+                      Read More →
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         ) : (
-          <div className="text-center py-20 mb-18 bg-white shadow-editorial">
-            <h3 className="font-display text-headline-md text-editorial-charcoal mb-4">Coming Soon</h3>
-            <p className="text-body-lg text-editorial-slate font-light">We're crafting amazing content for you. Check back soon!</p>
+          <div className="text-center py-12 mb-12">
+            <h3 className="text-xl font-semibold text-gray-600 mb-2">Coming Soon</h3>
+            <p className="text-gray-500">We're crafting amazing content for you. Check back soon!</p>
           </div>
         )}
 
-        {/* View All Button - Editorial minimal */}
+        {/* View All Button */}
         <div className="text-center">
           <Link 
             href="/blog"
-            className="inline-block bg-editorial-charcoal text-white px-12 py-4 font-sans text-caption uppercase tracking-widest font-medium hover:bg-editorial-accent transition-all duration-500 shadow-editorial"
+            className="inline-block bg-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-600 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             View All Posts
           </Link>

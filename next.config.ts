@@ -1,17 +1,30 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.mirelleinspo.com',
+      },
+    ],
+  },
   
-  // Add custom headers for better AI bot crawling
+  // Enable compression
+  compress: true,
+  
+  // Custom headers for performance
   async headers() {
     return [
       {
         source: '/:path*',
         headers: [
           {
-            key: 'X-Robots-Tag',
-            value: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on'
           },
           {
             key: 'X-Content-Type-Options',
@@ -22,22 +35,26 @@ const nextConfig: NextConfig = {
             value: 'SAMEORIGIN',
           },
           {
-            key: 'Content-Language',
-            value: 'en-US',
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'origin-when-cross-origin',
+          },
+        ],
+      },
+      // Cache static assets
+      {
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
     ];
-  },
-  
-  // Enable trailing slashes for better SEO
-  trailingSlash: false,
-  
-  // Optimize images
-  images: {
-    formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 };
 

@@ -276,6 +276,79 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
           crossOrigin="anonymous"
         />
+        
+        {/* ADD WEB VITALS TRACKING HERE - AFTER ADSENSE */}
+        <Script id="web-vitals" strategy="afterInteractive">
+          {`
+            (function() {
+              function sendToAnalytics(metric) {
+                if (window.gtag) {
+                  window.gtag('event', metric.name, {
+                    value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
+                    event_category: 'Web Vitals',
+                    event_label: metric.id,
+                    non_interaction: true,
+                  });
+                }
+              }
+              
+              if ('PerformanceObserver' in window) {
+                // Track Largest Contentful Paint (LCP)
+                try {
+                  const lcpObserver = new PerformanceObserver((list) => {
+                    const entries = list.getEntries();
+                    const lastEntry = entries[entries.length - 1];
+                    sendToAnalytics({
+                      name: 'LCP',
+                      value: lastEntry.renderTime || lastEntry.loadTime,
+                      id: 'v1-' + Date.now()
+                    });
+                  });
+                  lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
+                } catch (e) {}
+                
+                // Track First Input Delay (FID)
+                try {
+                  const fidObserver = new PerformanceObserver((list) => {
+                    const entries = list.getEntries();
+                    entries.forEach((entry) => {
+                      sendToAnalytics({
+                        name: 'FID',
+                        value: entry.processingStart - entry.startTime,
+                        id: 'v1-' + Date.now()
+                      });
+                    });
+                  });
+                  fidObserver.observe({ entryTypes: ['first-input'] });
+                } catch (e) {}
+                
+                // Track Cumulative Layout Shift (CLS)
+                try {
+                  let clsValue = 0;
+                  const clsObserver = new PerformanceObserver((list) => {
+                    list.getEntries().forEach((entry) => {
+                      if (!entry.hadRecentInput) {
+                        clsValue += entry.value;
+                      }
+                    });
+                  });
+                  clsObserver.observe({ entryTypes: ['layout-shift'] });
+                  
+                  // Send CLS on page hide
+                  addEventListener('visibilitychange', () => {
+                    if (document.visibilityState === 'hidden') {
+                      sendToAnalytics({
+                        name: 'CLS',
+                        value: clsValue,
+                        id: 'v1-' + Date.now()
+                      });
+                    }
+                  });
+                } catch (e) {}
+              }
+            })();
+          `}
+        </Script>
 
         {/* Enhanced Structured Data for AI Understanding */}
         <script

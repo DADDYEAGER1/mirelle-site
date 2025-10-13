@@ -49,58 +49,8 @@ export const metadata: Metadata = {
   },
 };
 
-// Category display configuration
-const CATEGORIES = [
-  {
-    id: 'seasonal-and-holiday',
-    title: '🎄 Seasonal & Holiday Nails',
-    description: 'Trending nail designs for every season and celebration',
-    icon: '🎄',
-  },
-  {
-    id: 'inspiration-and-trends',
-    title: '✨ Nail Inspiration & Trends',
-    description: 'Latest nail art trends and creative design ideas',
-    icon: '✨',
-  },
-  {
-    id: 'special-occasions',
-    title: '💍 Special Occasions',
-    description: 'Perfect nails for weddings, dates, and celebrations',
-    icon: '💍',
-  },
-  {
-    id: 'tutorials-and-how-tos',
-    title: '📚 Tutorials & How-Tos',
-    description: 'Step-by-step guides to create stunning nails at home',
-    icon: '📚',
-  },
-  {
-    id: 'product-reviews',
-    title: '🛍️ Product Reviews',
-    description: 'Honest reviews of nail products and tools',
-    icon: '🛍️',
-  },
-  {
-    id: 'nail-care-essentials',
-    title: '💅 Nail Care Essentials',
-    description: 'Tips for healthy, strong, beautiful nails',
-    icon: '💅',
-  },
-];
-
 export default async function BlogPage() {
   const posts = await getAllBlogPosts();
-
-  // Group posts by category
-  const postsByCategory = posts.reduce((acc, post) => {
-    const category = post.category || 'uncategorized';
-    if (!acc[category]) {
-      acc[category] = [];
-    }
-    acc[category].push(post);
-    return acc;
-  }, {} as Record<string, typeof posts>);
 
   // JSON-LD Structured Data
   const blogSchema = {
@@ -197,42 +147,25 @@ export default async function BlogPage() {
           </div>
         </section>
 
-        {/* Sectionalized Blog Posts */}
+        {/* Blog Grid Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            {CATEGORIES.map((category) => {
-              const categoryPosts = postsByCategory[category.id] || [];
-              
-              // Skip empty categories
-              if (categoryPosts.length === 0) return null;
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                Latest Nail Care Articles
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                From nail care basics to advanced techniques, explore everything you need to know about achieving salon-quality nails at home
+              </p>
+            </div>
 
-              return (
-                <div key={category.id} className="mb-20 last:mb-0">
-                  {/* Category Header */}
-                  <div className="mb-8">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-4xl">{category.icon}</span>
-                      <h2 className="text-3xl font-bold text-gray-800">
-                        {category.title}
-                      </h2>
-                    </div>
-                    <p className="text-gray-600 text-lg ml-14">
-                      {category.description}
-                    </p>
-                  </div>
-
-                  {/* Category Posts Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {categoryPosts.map((post) => (
-                      <BlogCard key={post.slug} post={post} />
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-
-            {/* Empty State */}
-            {posts.length === 0 && (
+            {posts.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {posts.map((post) => (
+                  <BlogCard key={post.slug} post={post} />
+                ))}
+              </div>
+            ) : (
               <div className="text-center py-16">
                 <h3 className="text-2xl font-bold text-gray-600 mb-4">
                   Amazing Content Coming Soon
@@ -245,22 +178,25 @@ export default async function BlogPage() {
           </div>
         </section>
 
-        {/* Quick Links Section */}
+        {/* Categories Section for Internal Linking */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-              Explore More Topics
+              Popular Topics
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-              {CATEGORIES.map((category) => (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {[
+                { name: 'Nail Care', icon: '💅' },
+                { name: 'Nail Art', icon: '🎨' },
+                { name: 'Seasonal Trends', icon: '🍂' },
+                { name: 'Tutorials', icon: '📚' },
+              ].map((topic) => (
                 <div
-                  key={category.id}
-                  className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow cursor-pointer"
+                  key={topic.name}
+                  className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
                 >
-                  <div className="text-4xl mb-2">{category.icon}</div>
-                  <h3 className="font-semibold text-gray-800 text-sm">
-                    {category.title.replace(/^[^\s]+\s/, '')}
-                  </h3>
+                  <div className="text-4xl mb-2">{topic.icon}</div>
+                  <h3 className="font-semibold text-gray-800">{topic.name}</h3>
                 </div>
               ))}
             </div>

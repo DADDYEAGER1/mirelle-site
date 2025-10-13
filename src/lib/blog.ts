@@ -29,12 +29,8 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           date: data.date || new Date().toISOString(),
           author: data.author || 'Anonymous',
           tags: data.tags || [],
-          image: data.image || null,
-          readTime: data.readTime || '5 min',
-          canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-          faqItems: data.faqItems || undefined,
-          tutorialSteps: data.tutorialSteps || undefined,
-          tutorialMetadata: data.tutorialMetadata || undefined,
+          image: data.image || undefined,
+          readTime: typeof data.readTime === 'number' ? data.readTime : 5,
         };
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -75,12 +71,15 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       date: data.date || new Date().toISOString(),
       author: data.author || 'Anonymous',
       tags: data.tags || [],
-      image: data.image || null,
-      readTime: data.readTime || '5 min',
+      image: data.image || undefined,
+      readTime: typeof data.readTime === 'number' ? data.readTime : 5,
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-      faqItems: data.faqItems || undefined,
-      tutorialSteps: data.tutorialSteps || undefined,
-      tutorialMetadata: data.tutorialMetadata || undefined,
+      updatedDate: data.updatedDate,
+      category: data.category,
+      faqItems: data.faqItems,
+      tutorialSteps: data.tutorialSteps,
+      tutorialMetadata: data.tutorialMetadata,
+      videoMetadata: data.videoMetadata,
     };
   } catch (error) {
     console.error(`Error reading blog post ${slug}:`, error);

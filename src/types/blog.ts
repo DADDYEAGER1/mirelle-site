@@ -12,7 +12,7 @@ export interface BlogPost {
   readTime: number;
   canonical: string;
   updatedDate?: string;
-  category: string; // CHANGED: Made required
+  category?: string;
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
@@ -28,5 +28,4 @@ export interface BlogMetadata {
   tags: string[];
   image?: string;
   readTime: number;
-  category: string; // ADDED: Category field
 }

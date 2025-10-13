@@ -68,7 +68,7 @@ export function generateSchemas(config: SchemaConfig) {
       caption: post.title,
     },
     datePublished: post.date,
-    dateModified: post.dateModified || post.updatedDate || post.date,
+    dateModified: post.updatedDate || post.date,
     author: {
       '@type': 'Person',
       '@id': `${baseUrl}/#person`,

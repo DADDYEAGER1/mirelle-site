@@ -11,15 +11,41 @@ marked.setOptions({
 
 const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
 
+// Helper function to recursively read all markdown files from nested folders
+function getAllMarkdownFiles(dir: string, fileList: { category: string; filename: string; filepath: string }[] = []): { category: string; filename: string; filepath: string }[] {
+  const files = fs.readdirSync(dir);
+
+  files.forEach(file => {
+    const filepath = path.join(dir, file);
+    const stat = fs.statSync(filepath);
+
+    if (stat.isDirectory()) {
+      // Recursively read subdirectory
+      getAllMarkdownFiles(filepath, fileList);
+    } else if (file.endsWith('.md')) {
+      // Extract category from folder name
+      const relativePath = path.relative(BLOG_DIRECTORY, dir);
+      const category = relativePath || 'uncategorized';
+      
+      fileList.push({
+        category,
+        filename: file,
+        filepath
+      });
+    }
+  });
+
+  return fileList;
+}
+
 export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
   try {
-    const files = fs.readdirSync(BLOG_DIRECTORY);
-    const posts = files
-      .filter(file => file.endsWith('.md'))
-      .map(file => {
-        const slug = file.replace('.md', '');
-        const filePath = path.join(BLOG_DIRECTORY, file);
-        const content = fs.readFileSync(filePath, 'utf8');
+    const markdownFiles = getAllMarkdownFiles(BLOG_DIRECTORY);
+    
+    const posts = markdownFiles
+      .map(({ category, filename, filepath }) => {
+        const slug = filename.replace('.md', '');
+        const content = fs.readFileSync(filepath, 'utf8');
         const { data } = matter(content);
         
         return {
@@ -31,22 +57,15 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           tags: data.tags || [],
           image: data.image || null,
           readTime: data.readTime || '5 min',
-          canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`, // ADD THIS LINE
-          faqItems: data.faqItems || undefined, // ADD THIS
-          tutorialSteps: data.tutorialSteps || undefined, // ADD THIS
-          tutorialMetadata: data.tutorialMetadata || undefined, // ADD THIS
-          imageAlt: data.imageAlt || `${data.title || 'Nail art'} - Mirelle inspiration`,
-          imageWidth: data.imageWidth || 1200,
-          imageHeight: data.imageHeight || 630,
-          imageCaption: data.imageCaption || undefined,
-          ogDescription: data.ogDescription || data.excerpt || '',
-          ogImage: data.ogImage || data.image || null,
-          twitterCard: data.twitterCard || 'summary_large_image',
-          dateModified: data.dateModified || data.date,
-          wordCount: data.wordCount || undefined,
+          category: category, // Category from folder name
+          canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
+          faqItems: data.faqItems || undefined,
+          tutorialSteps: data.tutorialSteps || undefined,
+          tutorialMetadata: data.tutorialMetadata || undefined,
         };
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    
     return posts;
   } catch (error) {
     console.error('Error reading blog posts:', error);
@@ -56,8 +75,16 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
 
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
-    const filePath = path.join(BLOG_DIRECTORY, `${slug}.md`);
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    // Search for the file in all subdirectories
+    const markdownFiles = getAllMarkdownFiles(BLOG_DIRECTORY);
+    const fileData = markdownFiles.find(f => f.filename === `${slug}.md`);
+    
+    if (!fileData) {
+      console.error(`Blog post not found: ${slug}`);
+      return null;
+    }
+
+    const fileContent = fs.readFileSync(fileData.filepath, 'utf8');
     const { data, content: markdownContent } = matter(fileContent);
     
     // Convert markdown to HTML
@@ -86,21 +113,11 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       tags: data.tags || [],
       image: data.image || null,
       readTime: data.readTime || '5 min',
-      canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`, // ADD THIS LINE
-      faqItems: data.faqItems || undefined, // ADD THIS
-      tutorialSteps: data.tutorialSteps || undefined, // ADD THIS
-      tutorialMetadata: data.tutorialMetadata || undefined, // ADD THIS
-      imageAlt: data.imageAlt || `${data.title || 'Nail art'} - Mirelle inspiration`,
-      imageWidth: data.imageWidth || 1200,
-      imageHeight: data.imageHeight || 630,
-      imageCaption: data.imageCaption || undefined,
-      ogImage: data.ogImage || data.image || null,
-      ogDescription: data.ogDescription || data.excerpt || '',
-      twitterCard: data.twitterCard || 'summary_large_image',
-      dateModified: data.dateModified || data.date,
-      wordCount: data.wordCount || undefined
-
-      
+      category: fileData.category, // Category from folder name
+      canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
+      faqItems: data.faqItems || undefined,
+      tutorialSteps: data.tutorialSteps || undefined,
+      tutorialMetadata: data.tutorialMetadata || undefined,
     };
   } catch (error) {
     console.error(`Error reading blog post ${slug}:`, error);
@@ -110,10 +127,8 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
 
 export async function getAllBlogSlugs(): Promise<string[]> {
   try {
-    const files = fs.readdirSync(BLOG_DIRECTORY);
-    return files
-      .filter(file => file.endsWith('.md'))
-      .map(file => file.replace('.md', ''));
+    const markdownFiles = getAllMarkdownFiles(BLOG_DIRECTORY);
+    return markdownFiles.map(f => f.filename.replace('.md', ''));
   } catch (error) {
     console.error('Error reading blog slugs:', error);
     return [];

@@ -12,21 +12,11 @@ export interface BlogPost {
   readTime: number;
   canonical: string;
   updatedDate?: string;
-  category?: string;
+  category: string; // CHANGED: Made required
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  // NEW SEO FIELDS
-  imageAlt: string;
-  imageWidth?: number;
-  imageHeight?: number;
-  imageCaption?: string;
-  ogImage?: string;
-  ogDescription?: string;
-  twitterCard?: string;
-  dateModified?: string;
-  wordCount?: number;
 }
 
 export interface BlogMetadata {
@@ -38,9 +28,5 @@ export interface BlogMetadata {
   tags: string[];
   image?: string;
   readTime: number;
-  // NEW SEO FIELDS
-  imageAlt?: string;
-  ogImage?: string;
-  dateModified?: string;
-  wordCount?: number;
+  category: string; // ADDED: Category field
 }

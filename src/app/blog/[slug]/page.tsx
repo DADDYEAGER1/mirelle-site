@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getBlogPost, getAllBlogSlugs } from '@/lib/blog';
-import BlogPost from '@/components/Blog/BlogPost';
+import BlogPostContent from '@/components/Blog/BlogPost';
 import type { Metadata } from 'next';
 import { generateSchemas } from '@/lib/generateSchemas';
 
@@ -148,7 +148,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         />
       )}
       
-      <BlogPost post={post} />
+      <BlogPostContent post={post} />
     </>
   );
 }

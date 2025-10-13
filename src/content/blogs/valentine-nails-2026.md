@@ -94,9 +94,7 @@ The valentine nail scene in 2026 looks completely different from even last year.
 
 Okay but which trend are you stealing? Drop the number in the comments! 🍒
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Valentine nails 2026 color palette featuring romantic pink red and white shades](/images/blog/valentine-nails-color-palette-pink-red-white.jpg)
-</a>
 
 For those navigating different <a href='https://www.mirelleinspo.com/topics/skin-tones' class='text-blue-600 hover:text-blue-800 underline'>skin tone considerations</a>, I've found that softer pinks with cool undertones universally flatter, while true reds look absolutely stunning on deeper skin tones with the right preparation.
 
@@ -118,9 +116,7 @@ Longer nail shapes like almond and coffin offer the most canvas for intricate va
 
 **3D bow embellishments** work best on one or two accent nails maximum. Use nail gel or acrylic to sculpt small bow shapes, cure them properly, then paint in soft pink or white. I add tiny rhinestones to the bow centers for extra dimension. These require professional skill but create stunning statement nails for special occasions.
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Valentine nails 2026 almond shape with chrome pink finish](/images/blog/almond-valentine-nails-chrome-finish.jpg)
-</a>
 
 **Marble effect with pink and white** mimics natural stone in romantic colors. Use a water marble technique or dry brush method to create swirled patterns. Add gold foil flakes for luxury vibes. This design is forgiving of imperfections—the randomness is actually part of its charm.
 
@@ -140,9 +136,7 @@ Short nails deserve just as much valentine love, and honestly? Some designs work
 
 **Glitter gradient** adds sparkle without full glitter nails (which can be annoying in daily life, real talk). Apply your base color, then use a makeup sponge to dab fine pink or red glitter from the tips downward, fading it out toward the cuticle. Seal with gel top coat for a smooth finish.
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Valentine nails 2026 short length with simple heart designs](/images/blog/short-valentine-nails-simple-hearts.jpg)
-</a>
 
 **Half-moon designs** use your natural nail shape. Paint the main nail area in red or pink, but leave a half-moon shape at the cuticle unpainted or filled with a contrasting color like white or gold. This vintage technique feels fresh again and elongates the appearance of short nails.
 
@@ -170,10 +164,7 @@ ngl I was terrified of gel polish for like my first year of nail school. The cur
 
 This tutorial walks you through creating professional gel valentine nails with trending heart French tips. The entire process takes about 45 minutes and results in a manicure lasting 2-3 weeks with proper care. I'm using <a href='https://slbeautyco.com/blogs/gel-nail-polish/gel-nails-at-home-a-simple-guide-for-beginners' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>gel application techniques</a> I've perfected in my studio, modified for at-home execution.
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Professional gel valentine nails application showing proper curing technique](/images/blog/gel-valentine-nails-application-technique.jpg)
-</a>
-
 ### What You Need
 
 **Gel Products:**
@@ -217,9 +208,7 @@ The most critical part: cap the free edge. This means running your brush along t
 
 Cure under your LED lamp for 60 seconds. Some base coats require 30 seconds, but I always do 60 to be safe. Repeat for all ten nails. Your nails should feel slightly tacky afterward—that's normal with most base coats.
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Valentine nails 2026 ombre gradient from pink to red romantic design](/images/blog/ombre-valentine-nails-pink-gradient.jpg)
-</a>
 
 **Step 3: Apply Pink Base Color (8 minutes)**
 
@@ -255,9 +244,7 @@ Clean up any gel that got on your skin during application using a small brush di
 
 Avoid water, lotions, or getting your hands wet for the next 2 hours to let the gel fully harden. I know this is annoying, but it genuinely affects longevity. After that, you're good to go with your gorgeous valentine nails!
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Valentine nails with cherry motif trending design for 2026](/images/blog/cherry-valentine-nails-trendy-design.jpg)
-</a>
 
 Did I lie about the difficulty? 👀 Easier or harder than expected? ⬆️ or ⬇️
 
@@ -295,9 +282,7 @@ After testing basically every gel polish and nail product on the market through 
 
 For comprehensive guidance on maintaining healthy nails between manicures, explore our <a href='https://www.mirelleinspo.com/topics/nail-care-guide' class='text-blue-600 hover:text-blue-800 underline'>complete nail care guide</a> with expert-tested techniques.
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Valentine nails 2026 with glitter accent nail and heart embellishments](/images/blog/glitter-valentine-nails-accent-nail.jpg)
-</a>
 
 ### Products to Avoid
 
@@ -351,9 +336,7 @@ Absolutely! Short nails are perfect for valentine designs. Simple heart accents 
 
 I have so many clients apologize for having short nails, and I always tell them short nails are having a major moment right now. The practical length with gorgeous designs is the ultimate combination of style and function.
 
-<a href='https://in.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener noreferrer'>
 ![Finished valentine nails 2026 with cuticle oil for lasting shine](/images/blog/complete-valentine-manicure-cuticle-oil.jpg)
-</a>
 
 ### How much do valentine nails cost at a salon?
 

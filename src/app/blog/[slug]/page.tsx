@@ -33,9 +33,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const canonicalUrl = `https://mirelleinspo.com/blog/${slug}`;
-  const imageUrl = post.ogImage 
-  ? `https://mirelleinspo.com${post.ogImage}` 
-  : (post.image ? `https://mirelleinspo.com${post.image}` : 'https://mirelleinspo.com/og-default.png');
+  const imageUrl = post.image 
+  ? `https://mirelleinspo.com${post.image}` 
+  : 'https://mirelleinspo.com/og-default.png';
   
   return {
     title: `${post.title} | Mirelle`,

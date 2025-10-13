@@ -1,3 +1,6 @@
+// In src/types/blog.ts
+// Add wordCount to the BlogPost interface
+
 import { FAQItem, TutorialStep, TutorialMetadata, VideoMetadata } from '@/lib/generateSchemas';
 
 export interface BlogPost {
@@ -13,6 +16,7 @@ export interface BlogPost {
   canonical: string;
   updatedDate?: string;
   category?: string;
+  wordCount?: number; // ADD THIS LINE
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;

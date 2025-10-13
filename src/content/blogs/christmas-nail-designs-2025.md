@@ -129,7 +129,7 @@ One Christmas season I did traditional designs exclusively for three weeks strai
 
 ## Modern Christmas Nail Color Combinations
 
-![Modern Christmas nail color palette with burgundy, sage, and chrome](public/images/blog/christmas-colors-2025.png)
+![Modern Christmas nail color palette with burgundy, sage, and chrome](images/blog/christmas-colors-2025.png)
 
 Okay but HEAR ME OUT on these color combos. They're technically Christmas but won't make you look like a walking holiday decoration at your January work meetings.
 
@@ -189,7 +189,7 @@ My first attempt at DIY Christmas nails in 2019 was a DISASTER. Smudged red poli
 
 ## Christmas Nails for Different Nail Lengths and Shapes
 
-![Christmas nail designs on different nail shapes - almond, square, round](public/images/blog/christmas-shapes-2025.png)
+![Christmas nail designs on different nail shapes - almond, square, round](images/blog/christmas-shapes-2025.png)
 
 Your nail shape changes which designs actually work. I learned this after attempting intricate nail art on short round nails (did not translate well).
 
@@ -311,7 +311,7 @@ French manicures saved me during early career when I was still building confiden
 
 ## Christmas Nails Tutorial: Classic Red and Gold Design
 
-![Step-by-step tutorial for red and gold Christmas nails with chrome accent](public/images/blog/christmas-tutorial-2025.png)
+![Step-by-step tutorial for red and gold Christmas nails with chrome accent](images/blog/christmas-tutorial-2025.png)
 
 Let me walk you through my go-to elegant Christmas design that works for literally any holiday event. I've done this on 200+ clients and the compliments are ENDLESS.
 

@@ -1,136 +1,272 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { BlogPost, BlogMetadata } from '@/types/blog';
-import { marked } from 'marked';
+import { Metadata } from 'next';
+import { getAllBlogPosts } from '@/lib/blog';
+import BlogCard from '@/components/Blog/BlogCard';
 
-marked.setOptions({
-  breaks: true,
-  gfm: true,
-});
+// SEO-Optimized Metadata
+export const metadata: Metadata = {
+  title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
+  description: 'Discover 100+ expert nail care articles, seasonal trends, step-by-step tutorials, and professional manicure tips. Your ultimate guide to beautiful, healthy nails.',
+  keywords: 'nail care blog, nail tips 2025, nail trends, nail art tutorials, manicure tips, nail health, professional nail care, seasonal nail designs, nail inspiration, beauty blog',
+  authors: [{ name: 'Mirelle' }],
+  creator: 'Mirelle',
+  publisher: 'Mirelle',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/blog',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
+    description: 'Discover expert nail care articles, seasonal trends, and step-by-step tutorials. Your ultimate guide to beautiful, healthy nails.',
+    type: 'website',
+    url: 'https://mirelleinspo.com/blog',
+    siteName: 'Mirelle',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/blog-hero.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Mirelle Nail Care Blog',
+      type: 'image/jpeg',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nail Care Blog | Mirelle',
+    description: 'Expert nail care articles, trends & tutorials',
+    images: ['https://mirelleinspo.com/blog-hero.jpg'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+};
 
-const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
+// Category display configuration
+const CATEGORIES = [
+  {
+    id: 'seasonal-and-holiday',
+    title: '🎄 Seasonal & Holiday Nails',
+    description: 'Trending nail designs for every season and celebration',
+    icon: '🎄',
+  },
+  {
+    id: 'inspiration-and-trends',
+    title: '✨ Nail Inspiration & Trends',
+    description: 'Latest nail art trends and creative design ideas',
+    icon: '✨',
+  },
+  {
+    id: 'special-occasions',
+    title: '💍 Special Occasions',
+    description: 'Perfect nails for weddings, dates, and celebrations',
+    icon: '💍',
+  },
+  {
+    id: 'tutorials-and-how-tos',
+    title: '📚 Tutorials & How-Tos',
+    description: 'Step-by-step guides to create stunning nails at home',
+    icon: '📚',
+  },
+  {
+    id: 'product-reviews',
+    title: '🛍️ Product Reviews',
+    description: 'Honest reviews of nail products and tools',
+    icon: '🛍️',
+  },
+  {
+    id: 'nail-care-essentials',
+    title: '💅 Nail Care Essentials',
+    description: 'Tips for healthy, strong, beautiful nails',
+    icon: '💅',
+  },
+];
 
-// Helper function to recursively read all markdown files from nested folders
-function getAllMarkdownFiles(dir: string, fileList: { category: string; filename: string; filepath: string }[] = []): { category: string; filename: string; filepath: string }[] {
-  const files = fs.readdirSync(dir);
+export default async function BlogPage() {
+  const posts = await getAllBlogPosts();
 
-  files.forEach(file => {
-    const filepath = path.join(dir, file);
-    const stat = fs.statSync(filepath);
-
-    if (stat.isDirectory()) {
-      // Recursively read subdirectory
-      getAllMarkdownFiles(filepath, fileList);
-    } else if (file.endsWith('.md')) {
-      // Extract category from folder name
-      const relativePath = path.relative(BLOG_DIRECTORY, dir);
-      const category = relativePath || 'uncategorized';
-      
-      fileList.push({
-        category,
-        filename: file,
-        filepath
-      });
+  // Group posts by category
+  const postsByCategory = posts.reduce((acc, post) => {
+    const category = post.category || 'uncategorized';
+    if (!acc[category]) {
+      acc[category] = [];
     }
-  });
+    acc[category].push(post);
+    return acc;
+  }, {} as Record<string, typeof posts>);
 
-  return fileList;
-}
+  // JSON-LD Structured Data
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': 'https://mirelleinspo.com/blog#blog',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://mirelleinspo.com/blog',
+    },
+    name: 'Mirelle Nail Care Blog',
+    description: 'Expert nail care tips, trends, and tutorials for beautiful, healthy nails',
+    publisher: {
+      '@type': 'Organization',
+      '@id': 'https://mirelleinspo.com/#organization',
+      name: 'Mirelle',
+      url: 'https://mirelleinspo.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mirelleinspo.com/logo.png',
+      },
+    },
+    blogPost: posts.slice(0, 10).map(post => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      url: `https://mirelleinspo.com/blog/${post.slug}`,
+      datePublished: post.date,
+      image: `https://mirelleinspo.com${post.image}`,
+      author: {
+        '@type': 'Person',
+        name: post.author,
+      },
+    })),
+    inLanguage: 'en-US',
+  };
 
-export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
-  try {
-    const markdownFiles = getAllMarkdownFiles(BLOG_DIRECTORY);
-    
-    const posts = markdownFiles
-      .map(({ category, filename, filepath }) => {
-        const slug = filename.replace('.md', '');
-        const content = fs.readFileSync(filepath, 'utf8');
-        const { data } = matter(content);
-        
-        return {
-          slug,
-          title: data.title || 'Untitled',
-          excerpt: data.excerpt || '',
-          date: data.date || new Date().toISOString(),
-          author: data.author || 'Anonymous',
-          tags: data.tags || [],
-          image: data.image || null,
-          readTime: data.readTime || '5 min',
-          category: category, // Category from folder name
-          canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-          faqItems: data.faqItems || undefined,
-          tutorialSteps: data.tutorialSteps || undefined,
-          tutorialMetadata: data.tutorialMetadata || undefined,
-        };
-      })
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-    
-    return posts;
-  } catch (error) {
-    console.error('Error reading blog posts:', error);
-    return [];
-  }
-}
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://mirelleinspo.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: 'https://mirelleinspo.com/blog',
+      },
+    ],
+  };
 
-export async function getBlogPost(slug: string): Promise<BlogPost | null> {
-  try {
-    // Search for the file in all subdirectories
-    const markdownFiles = getAllMarkdownFiles(BLOG_DIRECTORY);
-    const fileData = markdownFiles.find(f => f.filename === `${slug}.md`);
-    
-    if (!fileData) {
-      console.error(`Blog post not found: ${slug}`);
-      return null;
-    }
+  return (
+    <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
-    const fileContent = fs.readFileSync(fileData.filepath, 'utf8');
-    const { data, content: markdownContent } = matter(fileContent);
-    
-    // Convert markdown to HTML
-    let htmlContent = await marked(markdownContent);
-    
-    // Add IDs to H2 headings using regex (simpler approach)
-    htmlContent = htmlContent.replace(
-      /<h2>(.*?)<\/h2>/g,
-      (match, text) => {
-        const cleanText = text.replace(/<[^>]*>/g, '');
-        const id = cleanText
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, '-')
-          .replace(/^-+|-+$/g, '');
-        return `<h2 id="${id}">${text}</h2>`;
-      }
-    );
-    
-    return {
-      slug,
-      title: data.title || 'Untitled',
-      excerpt: data.excerpt || '',
-      content: htmlContent,
-      date: data.date || new Date().toISOString(),
-      author: data.author || 'Anonymous',
-      tags: data.tags || [],
-      image: data.image || null,
-      readTime: data.readTime || '5 min',
-      category: fileData.category, // Category from folder name
-      canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-      faqItems: data.faqItems || undefined,
-      tutorialSteps: data.tutorialSteps || undefined,
-      tutorialMetadata: data.tutorialMetadata || undefined,
-    };
-  } catch (error) {
-    console.error(`Error reading blog post ${slug}:`, error);
-    return null;
-  }
-}
+      <div className="min-h-screen">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-r from-pink-200 to-purple-200 py-20">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-5xl font-bold text-gray-800 mb-4">
+              Nail Care Blog - Expert Tips & Trends
+            </h1>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Discover professional nail care advice, seasonal trends, and step-by-step tutorials for beautiful, healthy nails
+            </p>
+            
+            {/* Trust Signals */}
+            <div className="flex flex-wrap justify-center gap-6 mt-8">
+              <div className="flex items-center gap-2 text-gray-700">
+                <span className="text-2xl">📝</span>
+                <span className="font-semibold">{posts.length}+ Articles</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <span className="text-2xl">✨</span>
+                <span className="font-semibold">Expert Advice</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-700">
+                <span className="text-2xl">📆</span>
+                <span className="font-semibold">Updated Weekly</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-export async function getAllBlogSlugs(): Promise<string[]> {
-  try {
-    const markdownFiles = getAllMarkdownFiles(BLOG_DIRECTORY);
-    return markdownFiles.map(f => f.filename.replace('.md', ''));
-  } catch (error) {
-    console.error('Error reading blog slugs:', error);
-    return [];
-  }
+        {/* Sectionalized Blog Posts */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            {CATEGORIES.map((category) => {
+              const categoryPosts = postsByCategory[category.id] || [];
+              
+              // Skip empty categories
+              if (categoryPosts.length === 0) return null;
+
+              return (
+                <div key={category.id} className="mb-20 last:mb-0">
+                  {/* Category Header */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-4xl">{category.icon}</span>
+                      <h2 className="text-3xl font-bold text-gray-800">
+                        {category.title}
+                      </h2>
+                    </div>
+                    <p className="text-gray-600 text-lg ml-14">
+                      {category.description}
+                    </p>
+                  </div>
+
+                  {/* Category Posts Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {categoryPosts.map((post) => (
+                      <BlogCard key={post.slug} post={post} />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* Empty State */}
+            {posts.length === 0 && (
+              <div className="text-center py-16">
+                <h3 className="text-2xl font-bold text-gray-600 mb-4">
+                  Amazing Content Coming Soon
+                </h3>
+                <p className="text-gray-500">
+                  We're crafting expert nail care content for you. Check back soon!
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Quick Links Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+              Explore More Topics
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {CATEGORIES.map((category) => (
+                <div
+                  key={category.id}
+                  className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow cursor-pointer"
+                >
+                  <div className="text-4xl mb-2">{category.icon}</div>
+                  <h3 className="font-semibold text-gray-800 text-sm">
+                    {category.title.replace(/^[^\s]+\s/, '')}
+                  </h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
 }

@@ -77,10 +77,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-charcoal-900 mb-1">Email Us</h3>
                   <a 
-                    href="mailto:contact@mirelleinspo.com" 
+                    href="mailto:team.mirelle@gmail.com" 
                     className="text-blush-600 hover:text-blush-700 transition-colors"
                   >
-                    contact@mirelleinspo.com
+                    team.mirelle@gmail.com
                   </a>
                   <p className="text-sm text-charcoal-500 mt-1">
                     We'll respond within 24-48 hours

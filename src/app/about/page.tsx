@@ -223,7 +223,7 @@ export default function AboutPage() {
               exposure, artists get discovered, and our audience gets genuinely useful recommendations.
             </p>
             <p className="text-sm text-gray-600 mt-4">
-              Reach out via <a href="mailto:hello@mirelleinspo.com" className="text-purple-600 hover:text-purple-800 underline">hello@mirelleinspo.com</a> to discuss opportunities.
+              Reach out via <a href="mailto:team.mirelle@gmail.com" className="text-purple-600 hover:text-purple-800 underline">team.mirelle@gmail.com</a> to discuss opportunities.
             </p>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function AboutPage() {
           <div className="space-y-2 text-lg opacity-90">
             <p>📌 <strong>Pinterest:</strong> Daily inspiration + seasonal galleries</p>
             <p>📧 <strong>Newsletter:</strong> Weekly trend roundups (launching soon)</p>
-            <p>💬 <strong>Contact:</strong> hello@mirelleinspo.com</p>
+            <p>💬 <strong>Contact:</strong> team.mirelle@gmail.com</p>
           </div>
         </section>
 

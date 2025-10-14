@@ -75,7 +75,9 @@ export default function Header() {
               </svg>
             </a>
             <a 
-              href="mailto:team.mirelle@gmail.com" 
+              href="https://mail.google.com/mail/?view=cm&to=team.mirelle@gmail.com" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-charcoal-600 hover:text-blush-400 transition-colors"
               aria-label="Email"
             >

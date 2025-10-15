@@ -113,13 +113,6 @@ export const metadata: Metadata = {
     },
   },
   
-  category: "Beauty & Fashion",
-  alternates: {
-  canonical: "https://mirelleinspo.com",
-  languages: {
-    'en-US': 'https://mirelleinspo.com',
-  },
-},
 verification: {
   google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console
   other: {

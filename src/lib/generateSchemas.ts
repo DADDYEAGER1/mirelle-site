@@ -316,6 +316,6 @@ export function generateProductSchema(product: ProductMetadata, baseUrl: string 
     faqSchema,
     howToSchema,
     videoSchema,
-    productSchema
+    productSchema,
   };
 }

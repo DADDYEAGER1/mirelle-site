@@ -1,6 +1,41 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+useEffect(() => {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://mirelleinspo.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Shop",
+        "item": "https://mirelleinspo.com/shop"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Winter Nails",
+        "item": "https://mirelleinspo.com/shop/winter"
+      }
+    ]
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.textContent = JSON.stringify(breadcrumbSchema);
+  document.head.appendChild(script);
+
+  return () => {
+    document.head.removeChild(script);
+  };
+}, []);
 
 // Product Interface
 interface Product {

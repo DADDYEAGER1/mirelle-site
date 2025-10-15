@@ -270,7 +270,7 @@ export function generateSchemas(config: SchemaConfig) {
   affiliateUrl: string;
 }
 
-
+)
 
   return {
     articleSchema,

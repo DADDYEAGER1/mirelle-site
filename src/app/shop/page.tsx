@@ -1,35 +1,5 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { useEffect, useState } from 'react';
-useEffect(() => {
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://mirelleinspo.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Shop",
-        "item": "https://mirelleinspo.com/shop"
-      }
-    ]
-  };
-
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify(breadcrumbSchema);
-  document.head.appendChild(script);
-
-  return () => {
-    document.head.removeChild(script);
-  };
-}, []);
 
 // SEO Metadata
 export const metadata: Metadata = {

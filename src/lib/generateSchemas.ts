@@ -42,6 +42,19 @@ export interface SchemaConfig {
   videoMetadata?: VideoMetadata;
 }
 
+export interface ProductMetadata {
+  name: string;
+  description: string;
+  image: string;
+  price: string;
+  originalPrice?: string;
+  currency: string;
+  availability: "InStock" | "LowStock" | "OutOfStock";
+  rating?: number;
+  reviewCount?: number;
+  affiliateUrl: string;
+}
+
 export function generateSchemas(config: SchemaConfig) {
   const { post, slug, faqItems, tutorialSteps, tutorialMetadata, videoMetadata } = config;
   const baseUrl = 'https://mirelleinspo.com';
@@ -89,7 +102,7 @@ export function generateSchemas(config: SchemaConfig) {
     },
     articleSection: post.category || 'Nail Care',
     keywords: post.tags?.join(', ') || 'nail art, nail care, nail design',
-    wordCount: post.wordCount || post.content?.split(' ').length || 800,
+    wordCount: post.content?.split(' ').length || 800,
     inLanguage: 'en-US',
     isAccessibleForFree: true,
     isPartOf: {
@@ -257,21 +270,6 @@ export function generateSchemas(config: SchemaConfig) {
     };
   }
 
-  export interface ProductMetadata {
-  name: string;
-  description: string;
-  image: string;
-  price: string;
-  originalPrice?: string;
-  currency: string;
-  availability: "InStock" | "LowStock" | "OutOfStock";
-  rating?: number;
-  reviewCount?: number;
-  affiliateUrl: string;
-}
-
-)
-
   return {
     articleSchema,
     breadcrumbSchema,
@@ -281,4 +279,44 @@ export function generateSchemas(config: SchemaConfig) {
     howToSchema,
     videoSchema,
   };
+}
+
+export function generateProductSchema(product: ProductMetadata, baseUrl: string = 'https://mirelleinspo.com') {
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: product.description,
+    image: product.image.startsWith('http') ? product.image : `${baseUrl}${product.image}`,
+    brand: {
+      '@type': 'Brand',
+      name: 'Mirelle',
+    },
+    offers: {
+      '@type': 'Offer',
+      url: product.affiliateUrl,
+      priceCurrency: product.currency,
+      price: product.price.replace(/[^0-9.]/g, ''),
+      ...(product.originalPrice && {
+        priceCurrency: product.currency,
+        listPrice: product.originalPrice.replace(/[^0-9.]/g, ''),
+      }),
+      availability: `https://schema.org/${product.availability}`,
+      seller: {
+        '@type': 'Organization',
+        name: 'Amazon',
+      },
+    },
+    ...(product.rating && product.reviewCount && {
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: product.rating,
+        reviewCount: product.reviewCount,
+        bestRating: 5,
+        worstRating: 1,
+      },
+    }),
+  };
+
+  return productSchema;
 }

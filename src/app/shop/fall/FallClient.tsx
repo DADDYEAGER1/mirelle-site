@@ -23,8 +23,8 @@ useEffect(() => {
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Fall Nails", // Change per page
-        "item": "https://mirelleinspo.com/shop/fall" // Change per page
+        "name": "Fall Nails",
+        "item": "https://mirelleinspo.com/shop/fall"
       }
     ]
   };
@@ -34,7 +34,9 @@ useEffect(() => {
   script.textContent = JSON.stringify(breadcrumbSchema);
   document.head.appendChild(script);
 
-  return () => document.head.removeChild(script);
+  return () => {
+    document.head.removeChild(script);
+  };
 }, []);
 
 interface Product {

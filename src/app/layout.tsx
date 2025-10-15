@@ -219,18 +219,6 @@ export default function RootLayout({
       }
     ]
   };
-  const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://mirelleinspo.com"
-    }
-  ]
-};
 
   return (
     <html lang="en-US">

@@ -1,0 +1,21 @@
+# Allow all bots
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mirelleinspo.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Disallow nothing (your site should be fully crawlable)
+Disallow:
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

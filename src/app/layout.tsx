@@ -114,6 +114,20 @@ export const metadata: Metadata = {
   },
   
   category: "Beauty & Fashion",
+  alternates: {
+  canonical: "https://mirelleinspo.com",
+  languages: {
+    'en-US': 'https://mirelleinspo.com',
+  },
+},
+verification: {
+  google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console
+  other: {
+    'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
+  },
+},
+
+  
 };
 
 export default function RootLayout({
@@ -205,6 +219,18 @@ export default function RootLayout({
       }
     ]
   };
+  const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mirelleinspo.com"
+    }
+  ]
+};
 
   return (
     <html lang="en-US">
@@ -276,6 +302,29 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
           crossOrigin="anonymous"
         />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(breadcrumbSchema),
+  }}
+/>
+        {/* Preload critical font */}
+<link
+  rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+  as="style"
+/>
+
+{/* Canonical tag */}
+<link rel="canonical" href="https://mirelleinspo.com" />
+
+{/* Mobile web app meta */}
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+{/* Theme color */}
+<meta name="theme-color" content="#000000" />
         
         {/* ADD WEB VITALS TRACKING HERE - AFTER ADSENSE */}
         <Script id="web-vitals" strategy="afterInteractive">

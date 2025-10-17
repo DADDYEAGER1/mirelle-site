@@ -1,6 +1,3 @@
-// In src/components/Blog/BlogPost.tsx
-// Change the component name to avoid conflict with the type
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { BlogPost as BlogPostType } from '@/types/blog';
@@ -11,11 +8,11 @@ interface BlogPostProps {
   post: BlogPostType;
 }
 
-// RENAME: BlogPost -> BlogPostContent
-export default function BlogPostContent({ post }: BlogPostProps) {
-  // ... rest of the component stays the same
+export default function BlogPost({ post }: BlogPostProps) {
+  // Extract headings for Table of Contents
   const tableOfContents = extractHeadings(post.content);
   
+  // Related posts
   const relatedPosts = [
     {
       slug: 'halloween-nail-ideas-2025',
@@ -40,6 +37,7 @@ export default function BlogPostContent({ post }: BlogPostProps) {
         </Link>
       </div>
 
+      {/* Hero Section */}
       <div className="max-w-4xl mx-auto mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           {post.title}
@@ -51,9 +49,29 @@ export default function BlogPostContent({ post }: BlogPostProps) {
           <span>{new Date(post.date).toLocaleDateString()}</span>
           <span>•</span>
           <span>{post.readTime} read</span>
+          
+          {/* ✅ NEW - Display Rating if exists */}
+          {post.rating && (
+            <>
+              <span>•</span>
+              <span className="flex items-center gap-1 text-yellow-600 font-medium">
+                ⭐ {post.rating.value}
+                <span className="text-gray-500 text-xs ml-1">
+                  ({post.rating.count} reviews)
+                </span>
+              </span>
+            </>
+          )}
         </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
+          {/* ✅ NEW - Show category badge first if exists */}
+          {post.category && (
+            <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
+              {post.category}
+            </span>
+          )}
+          
           {post.tags.map(tag => (
             <span 
               key={tag}
@@ -71,12 +89,15 @@ export default function BlogPostContent({ post }: BlogPostProps) {
               alt={post.title}
               fill
               className="object-cover"
+              priority
             />
           </div>
         )}
       </div>
 
+      {/* Two Column Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Main Content - Takes 8 columns on large screens */}
         <article className="lg:col-span-8">
           <div 
             className="prose prose-lg max-w-none 
@@ -91,9 +112,11 @@ export default function BlogPostContent({ post }: BlogPostProps) {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
+          {/* Comment Section */}
           <CommentSection postSlug={post.slug} postTitle={post.title} />
         </article>
 
+        {/* Sidebar - Takes 4 columns on large screens */}
         <aside className="lg:col-span-4">
           <BlogSidebar
             tableOfContents={tableOfContents}
@@ -105,6 +128,7 @@ export default function BlogPostContent({ post }: BlogPostProps) {
   );
 }
 
+// Extract and clean heading text
 function extractHeadings(htmlContent: string): { id: string; title: string }[] {
   const headings: { id: string; title: string }[] = [];
   const regex = /<h2[^>]*id="([^"]*)"[^>]*>(.*?)<\/h2>/gi;
@@ -113,6 +137,7 @@ function extractHeadings(htmlContent: string): { id: string; title: string }[] {
   while ((match = regex.exec(htmlContent)) !== null) {
     const id = match[1];
     const rawTitle = match[2];
+    // Strip ALL HTML tags and decode entities
     const title = rawTitle
       .replace(/<[^>]*>/g, '')
       .replace(/&amp;/g, '&')

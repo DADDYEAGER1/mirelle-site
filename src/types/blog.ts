@@ -1,5 +1,20 @@
 import { FAQItem, TutorialStep, TutorialMetadata, VideoMetadata } from '@/lib/generateSchemas';
 
+// ✅ NEW: Gallery image interface
+export interface GalleryImage {
+  url: string;
+  alt: string;
+  width: number;
+  height: number;
+  caption?: string;
+}
+
+// ✅ NEW: Rating interface for aggregate ratings
+export interface Rating {
+  value: number;
+  count: number;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -13,14 +28,12 @@ export interface BlogPost {
   canonical: string;
   updatedDate?: string;
   category?: string;
-  rating?: {         // ✅ NEW - Add rating field
-    value: number;
-    count: number;
-  };
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
+  galleryImages?: GalleryImage[];  // ✅ NEW
+  rating?: Rating;  // ✅ NEW
 }
 
 export interface BlogMetadata {
@@ -32,9 +45,6 @@ export interface BlogMetadata {
   tags: string[];
   image?: string;
   readTime: number;
-  category?: string;   // ✅ NEW - Add to metadata too
-  rating?: {           // ✅ NEW - Add to metadata too
-    value: number;
-    count: number;
-  };
+  galleryImages?: GalleryImage[];  // ✅ NEW
+  rating?: Rating;  // ✅ NEW
 }

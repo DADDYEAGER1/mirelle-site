@@ -40,6 +40,7 @@ export interface SchemaConfig {
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
+  galleryImages?: string[];
 }
 
 // Product Schema Interfaces
@@ -276,6 +277,23 @@ export function generateSchemas(config: SchemaConfig) {
     };
   }
 
+  // ImageGallery Schema (if gallery images exist)
+  let imageGallerySchema = null;
+  if (galleryImages && galleryImages.length > 0) {
+    imageGallerySchema = {
+      '@context': 'https://schema.org',
+      '@type': 'ImageGallery',
+      '@id': `${baseUrl}/blog/${slug}#gallery`,
+      name: `${post.title} - Image Gallery`,
+      description: `Gallery of images for ${post.title}`,
+      image: galleryImages.map((img) => ({
+        '@type': 'ImageObject',
+        url: `${baseUrl}${img}`,
+        caption: post.title,
+      })),
+    };
+  }
+
   return {
     articleSchema,
     breadcrumbSchema,
@@ -284,6 +302,7 @@ export function generateSchemas(config: SchemaConfig) {
     faqSchema,
     howToSchema,
     videoSchema,
+    imageGallerySchema,
   };
 }
 

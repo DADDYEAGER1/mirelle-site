@@ -1,4 +1,4 @@
-import { BlogPost, GalleryImage } from '@/types/blog';
+import { BlogPost } from '@/types/blog';
 
 export interface FAQItem {
   question: string;
@@ -40,16 +40,34 @@ export interface SchemaConfig {
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  galleryImages?: GalleryImage[];  // ✅ NEW
 }
 
+// Product Schema Interfaces
+export interface ProductSchemaConfig {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+}
+
+export interface CollectionSchemaConfig {
+  name: string;
+  description: string;
+  url: string;
+  breadcrumbs: Array<{
+    name: string;
+    url: string;
+  }>;
+}
+
+// Generate schemas for blog posts
 export function generateSchemas(config: SchemaConfig) {
-  const { post, slug, faqItems, tutorialSteps, tutorialMetadata, videoMetadata, galleryImages } = config;
+  const { post, slug, faqItems, tutorialSteps, tutorialMetadata, videoMetadata } = config;
   const baseUrl = 'https://mirelleinspo.com';
   const currentDate = new Date().toISOString();
   const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/og-default.png`;
 
-  // ✅ UPDATED: Enhanced Article Schema with gallery images and rating
+  // Enhanced Article Schema with rich metadata
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -61,31 +79,13 @@ export function generateSchemas(config: SchemaConfig) {
     headline: post.title,
     name: post.title,
     description: post.excerpt || post.title,
-    // ✅ CHANGED: image can now be array or single object
-    image: galleryImages && galleryImages.length > 0 
-      ? [
-          {
-            '@type': 'ImageObject',
-            url: imageUrl,
-            width: 1200,
-            height: 630,
-            caption: post.title,
-          },
-          ...galleryImages.map(img => ({
-            '@type': 'ImageObject',
-            url: `${baseUrl}${img.url}`,
-            width: img.width,
-            height: img.height,
-            caption: img.caption || img.alt,
-          }))
-        ]
-      : {
-          '@type': 'ImageObject',
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          caption: post.title,
-        },
+    image: {
+      '@type': 'ImageObject',
+      url: imageUrl,
+      width: 1200,
+      height: 630,
+      caption: post.title,
+    },
     datePublished: post.date,
     dateModified: post.updatedDate || post.date,
     author: {
@@ -117,16 +117,6 @@ export function generateSchemas(config: SchemaConfig) {
       name: 'Mirelle Blog',
       description: 'Expert nail care tips, trends, and inspiration',
     },
-    // ✅ NEW: Add aggregate rating if available
-    ...(post.rating && {
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: post.rating.value,
-        reviewCount: post.rating.count,
-        bestRating: 5,
-        worstRating: 1,
-      }
-    }),
   };
 
   // Enhanced Breadcrumb Schema
@@ -286,27 +276,6 @@ export function generateSchemas(config: SchemaConfig) {
     };
   }
 
-  // ✅ NEW: Separate ImageGallery Schema for better Google Images indexing
-  let imageGallerySchema = null;
-  if (galleryImages && galleryImages.length > 0) {
-    imageGallerySchema = {
-      '@context': 'https://schema.org',
-      '@type': 'ImageGallery',
-      '@id': `${baseUrl}/blog/${slug}#imagegallery`,
-      name: `${post.title} - Image Gallery`,
-      description: `Visual gallery for ${post.title}`,
-      image: galleryImages.map(img => ({
-        '@type': 'ImageObject',
-        url: `${baseUrl}${img.url}`,
-        contentUrl: `${baseUrl}${img.url}`,
-        width: img.width,
-        height: img.height,
-        caption: img.caption || img.alt,
-        description: img.alt,
-      })),
-    };
-  }
-
   return {
     articleSchema,
     breadcrumbSchema,
@@ -315,6 +284,55 @@ export function generateSchemas(config: SchemaConfig) {
     faqSchema,
     howToSchema,
     videoSchema,
-    imageGallerySchema,  // ✅ NEW
+  };
+}
+
+// Generate schemas for product/collection pages
+export function generateProductSchemas(config: ProductSchemaConfig) {
+  const baseUrl = 'https://mirelleinspo.com';
+  
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: config.name,
+    description: config.description,
+    url: config.url,
+    ...(config.image && {
+      image: {
+        '@type': 'ImageObject',
+        url: config.image,
+      },
+    }),
+  };
+
+  return { productSchema };
+}
+
+// Generate schemas for collection pages (shop categories)
+export function generateCollectionSchemas(config: CollectionSchemaConfig) {
+  const baseUrl = 'https://mirelleinspo.com';
+  
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: config.name,
+    description: config.description,
+    url: config.url,
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: config.breadcrumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.name,
+      item: crumb.url,
+    })),
+  };
+
+  return {
+    collectionSchema,
+    breadcrumbSchema,
   };
 }

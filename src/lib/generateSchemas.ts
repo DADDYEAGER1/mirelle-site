@@ -1,17 +1,6 @@
-import { BlogPost } from '@/types/blog';
+import { BlogPost, GalleryImage } from '@/types/blog';
 
 export interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-export interface GalleryImage {
-  src: string;
-  alt: string;
-  caption?: string;
-}
-
-export interface TutorialStep {
   position: number;
   name: string;
   text: string;
@@ -46,7 +35,6 @@ export interface SchemaConfig {
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  galleryImages?: GalleryImage[];
 }
 
 // Product Schema Interfaces
@@ -283,24 +271,6 @@ export function generateSchemas(config: SchemaConfig) {
     };
   }
 
-  // ImageGallery Schema (if gallery images exist)
-  let imageGallerySchema = null;
-  if (galleryImages && galleryImages.length > 0) {
-    imageGallerySchema = {
-      '@context': 'https://schema.org',
-      '@type': 'ImageGallery',
-      '@id': `${baseUrl}/blog/${slug}#gallery`,
-      name: `${post.title} - Image Gallery`,
-      description: `Gallery of images for ${post.title}`,
-      image: galleryImages.map((img) => ({
-        '@type': 'ImageObject',
-        url: `${baseUrl}${img.src}`,
-        caption: img.caption || img.alt,
-        name: img.alt,
-      })),
-    };
-  }
-
   return {
     articleSchema,
     breadcrumbSchema,
@@ -309,7 +279,6 @@ export function generateSchemas(config: SchemaConfig) {
     faqSchema,
     howToSchema,
     videoSchema,
-    imageGallerySchema,
   };
 }
 

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getBlogPost, getAllBlogSlugs } from '@/lib/blog';
-import BlogPostContent from '@/components/Blog/BlogPost';
+import BlogPost from '@/components/Blog/BlogPost';
 import type { Metadata } from 'next';
 import { generateSchemas } from '@/lib/generateSchemas';
 
@@ -100,12 +100,14 @@ export default async function BlogPostPage({ params }: PageProps) {
   
   if (!post) notFound();
 
+  // ✅ UPDATED: Pass galleryImages to schema generator
   const schemas = generateSchemas({
     post,
     slug: params.slug,
     faqItems: post.faqItems,
     tutorialSteps: post.tutorialSteps,
     tutorialMetadata: post.tutorialMetadata,
+    galleryImages: post.galleryImages,  // ✅ NEW: Pass gallery images
   });
 
   return (
@@ -147,8 +149,15 @@ export default async function BlogPostPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.videoSchema) }} 
         />
       )}
+      {/* ✅ NEW: Add image gallery schema */}
+      {schemas.imageGallerySchema && (
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.imageGallerySchema) }} 
+        />
+      )}
       
-      <BlogPostContent post={post} />
+      <BlogPost post={post} />
     </>
   );
 }

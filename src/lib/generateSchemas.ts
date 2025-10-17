@@ -285,18 +285,7 @@ export function generateSchemas(config: SchemaConfig) {
     };
   }
 
-  return {
-    articleSchema,
-    breadcrumbSchema,
-    websiteSchema,
-    organizationSchema,
-    faqSchema,
-    howToSchema,
-    videoSchema,
-  };
-}
-
-export function generateProductSchema(product: ProductMetadata, baseUrl: string = 'https://mirelleinspo.com') {
+  export function generateProductSchema(product: ProductMetadata, baseUrl: string = 'https://mirelleinspo.com') {
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -333,5 +322,16 @@ export function generateProductSchema(product: ProductMetadata, baseUrl: string 
     }),
   };
 
-  return productSchema;
+}
+
+  return {
+    articleSchema,
+    breadcrumbSchema,
+    websiteSchema,
+    organizationSchema,
+    faqSchema,
+    howToSchema,
+    videoSchema,
+    return productSchema,
+  };
 }

@@ -5,6 +5,12 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface GalleryImage {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface TutorialStep {
   position: number;
   name: string;
@@ -40,7 +46,7 @@ export interface SchemaConfig {
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  galleryImages?: string[];
+  galleryImages?: GalleryImage[];
 }
 
 // Product Schema Interfaces
@@ -288,8 +294,9 @@ export function generateSchemas(config: SchemaConfig) {
       description: `Gallery of images for ${post.title}`,
       image: galleryImages.map((img) => ({
         '@type': 'ImageObject',
-        url: `${baseUrl}${img}`,
-        caption: post.title,
+        url: `${baseUrl}${img.src}`,
+        caption: img.caption || img.alt,
+        name: img.alt,
       })),
     };
   }

@@ -1,5 +1,5 @@
 ---
-title: 'Goddess Nails 2025: The Viral Celestial Trend Taking Over Pinterest'
+title: 'title: 'Goddess Nails 2025: 30+ Designs, Tutorial & Product Guide'
 excerpt: 'Discover goddess nails, the viral celestial manicure with gold, pearls and cat-eye shimmer. Get 30 divine designs plus an easy at-home tutorial from a licensed nail tech.'
 date: '2025-10-09T14:30:00-04:00'
 author: 'Avery Chen'

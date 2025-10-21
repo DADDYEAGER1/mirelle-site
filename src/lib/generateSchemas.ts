@@ -211,7 +211,7 @@ const imageGallerySchema = config.galleryImages && config.galleryImages.length >
   '@context': 'https://schema.org',
   '@type': 'ImageGallery',
   'name': `${post.title} - Image Gallery`,
-  'description': post.description,
+  'description': post.excerpt,
   'image': config.galleryImages.map(img => ({
     '@type': 'ImageObject',
     'url': img.url,

@@ -1,4 +1,4 @@
-import { BlogPost, GalleryImage } from '@/types/blog';
+import type { BlogPost, FAQItem, TutorialStep, TutorialMetadata, VideoMetadata, GalleryImage } from '@/types/blog';
 
 export interface FAQItem {
   position: number;

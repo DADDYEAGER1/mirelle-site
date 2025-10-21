@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getBlogPost, getAllBlogSlugs } from '@/lib/blog';
 import BlogPost from '@/components/Blog/BlogPost';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import type { Metadata } from 'next';
 import { generateSchemas } from '@/lib/generateSchemas';
 
@@ -109,6 +110,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     tutorialMetadata: post.tutorialMetadata,
     galleryImages: post.galleryImages,  // ✅ NEW: Pass gallery images
   });
+  
 
   return (
     <>
@@ -156,6 +158,11 @@ export default async function BlogPostPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.imageGallerySchema) }} 
         />
       )}
+            {/* Breadcrumbs */}
+      <Breadcrumbs 
+        items={[{ label: 'Blog', href: '/blog' }]} 
+        currentPage={post.title} 
+      />
       
       <BlogPost post={post} />
     </>

@@ -1,5 +1,7 @@
 import type { BlogPost } from '@/types/blog';
 export interface FAQItem {
+  question: string;
+  answer: string;
   position: number;
   name: string;
   text: string;

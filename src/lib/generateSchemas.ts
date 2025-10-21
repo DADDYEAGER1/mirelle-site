@@ -191,6 +191,23 @@ export function generateSchemas(config: SchemaConfig) {
     },
   };
 
+
+  // Generate Image Gallery Schema if gallery images exist
+const imageGallerySchema = config.galleryImages && config.galleryImages.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'ImageGallery',
+  'name': `${post.title} - Image Gallery`,
+  'description': post.description,
+  'image': config.galleryImages.map(img => ({
+    '@type': 'ImageObject',
+    'url': img.url,
+    'caption': img.caption || '',
+    'contentUrl': img.url,
+    'width': img.width || 1200,
+    'height': img.height || 800
+  }))
+} : null;
+
   // Enhanced FAQ Schema
   let faqSchema = null;
   if (faqItems && faqItems.length > 0) {
@@ -280,6 +297,7 @@ export function generateSchemas(config: SchemaConfig) {
     faqSchema,
     howToSchema,
     videoSchema,
+    imageGallerySchema,
   };
 }
 

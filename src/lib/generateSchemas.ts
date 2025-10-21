@@ -34,6 +34,14 @@ export interface GalleryImage {
   height?: number;
 }
 
+export interface TutorialStep {
+  name: string;
+  text: string;
+  image?: string;
+  url?: string;
+}
+
+
 export interface SchemaConfig {
   post: BlogPost;
   slug: string;

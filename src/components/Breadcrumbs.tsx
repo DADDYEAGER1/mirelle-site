@@ -8,48 +8,55 @@ interface BreadcrumbItem {
 interface BreadcrumbsProps {
   items: BreadcrumbItem[];
   currentPage: string;
+  includeSchema?: boolean; // Default true for non-blog pages
 }
 
-export default function Breadcrumbs({ items, currentPage }: BreadcrumbsProps) {
-  // Generate JSON-LD Schema for Google
+export default function Breadcrumbs({ items, currentPage, includeSchema = true }: BreadcrumbsProps) {
   const baseUrl = 'https://mirelleinspo.com';
   
-  const schemaItems = [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": baseUrl
-    },
-    ...items.map((item, index) => ({
-      "@type": "ListItem",
-      "position": index + 2,
-      "name": item.label,
-      "item": `${baseUrl}${item.href}`
-    })),
-    {
-      "@type": "ListItem",
-      "position": items.length + 2,
-      "name": currentPage
-      // NO "item" property for current page (Google spec)
-    }
-  ];
+  // Generate JSON-LD Schema for Google (only if includeSchema is true)
+  let breadcrumbSchema = null;
+  
+  if (includeSchema) {
+    const schemaItems = [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl
+      },
+      ...items.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": item.label,
+        "item": `${baseUrl}${item.href}`
+      })),
+      {
+        "@type": "ListItem",
+        "position": items.length + 2,
+        "name": currentPage
+        // NO "item" property for current page (Google spec requirement)
+      }
+    ];
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": schemaItems
-  };
+    breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": schemaItems
+    };
+  }
 
   return (
     <>
-      {/* JSON-LD Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema)
-        }}
-      />
+      {/* JSON-LD Structured Data (only for non-blog pages) */}
+      {includeSchema && breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema)
+          }}
+        />
+      )}
 
       {/* Visual Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="py-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">

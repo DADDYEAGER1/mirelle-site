@@ -35,6 +35,7 @@ export interface SchemaConfig {
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
+  galleryImages?: GalleryImage[];  // ← ADD THIS LINE
 }
 
 // Product Schema Interfaces

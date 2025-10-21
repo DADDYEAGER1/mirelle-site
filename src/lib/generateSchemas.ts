@@ -149,7 +149,7 @@ export function generateSchemas(config: SchemaConfig) {
         '@type': 'ListItem',
         position: 3,
         name: post.title,
-        item: `${baseUrl}/blog/${slug}`,
+        // item: `${baseUrl}/blog/${slug}`,
       },
     ],
   };

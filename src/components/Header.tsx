@@ -70,17 +70,22 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out">
-                <div className="bg-white rounded-lg shadow-editorial border border-charcoal-100 py-2">
-                  {BLOG_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block px-4 py-2 text-[15px] text-charcoal-700 hover:text-blush-400 hover:bg-editorial-cream transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+              {/* Full-width overlay dropdown */}
+              <div className="fixed left-0 right-0 top-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="bg-charcoal-900 text-white shadow-2xl">
+                  <div className="max-w-7xl mx-auto px-8 py-12">
+                    <div className="space-y-1">
+                      {BLOG_LINKS.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className="block py-3 text-lg text-white/80 hover:text-white hover:pl-2 transition-all duration-200"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -93,17 +98,22 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out">
-                <div className="bg-white rounded-lg shadow-editorial border border-charcoal-100 py-2">
-                  {SHOP_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block px-4 py-2 text-[15px] text-charcoal-700 hover:text-blush-400 hover:bg-editorial-cream transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+              {/* Full-width overlay dropdown */}
+              <div className="fixed left-0 right-0 top-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="bg-charcoal-900 text-white shadow-2xl">
+                  <div className="max-w-7xl mx-auto px-8 py-12">
+                    <div className="space-y-1">
+                      {SHOP_LINKS.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className="block py-3 text-lg text-white/80 hover:text-white hover:pl-2 transition-all duration-200"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -116,17 +126,22 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out">
-                <div className="bg-white rounded-lg shadow-editorial border border-charcoal-100 py-2">
-                  {TOPICS_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block px-4 py-2 text-[15px] text-charcoal-700 hover:text-blush-400 hover:bg-editorial-cream transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+              {/* Full-width overlay dropdown */}
+              <div className="fixed left-0 right-0 top-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="bg-charcoal-900 text-white shadow-2xl">
+                  <div className="max-w-7xl mx-auto px-8 py-12">
+                    <div className="space-y-1">
+                      {TOPICS_LINKS.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className="block py-3 text-lg text-white/80 hover:text-white hover:pl-2 transition-all duration-200"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -268,9 +283,9 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/brands" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            {/* <Link href="/brands" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               Brands
-            </Link>
+            </Link> */}
             <Link href="/about" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               About
             </Link>

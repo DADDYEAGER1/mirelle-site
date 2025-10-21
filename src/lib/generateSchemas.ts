@@ -27,6 +27,13 @@ export interface VideoMetadata {
   embedUrl?: string;
 }
 
+export interface GalleryImage {
+  url: string;
+  caption?: string;
+  width?: number;
+  height?: number;
+}
+
 export interface SchemaConfig {
   post: BlogPost;
   slug: string;

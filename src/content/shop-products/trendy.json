@@ -633,11 +633,11 @@
       "price": "$7.56",
       "originalPrice": "$12.99",
       "image": "https://m.media-amazon.com/images/I/71dbGnhn-HL._SX679_.jpg",
-      "description":  "Trendy nail designs made for all.",
+      "description": "Trendy nail designs made for all.",
       "isNew": false,
-      "isTrending": true,
+      "isTrending": false,
       "stockStatus": "low-stock",
-      "cta":  "Trendy Vibes",
+      "cta": "Trendy Vibes",
       "affiliateUrl": "https://amzn.to/3KgK10t"
     },
     {
@@ -646,9 +646,9 @@
       "price": "$7.56",
       "originalPrice": "$12.99",
       "image": "https://m.media-amazon.com/images/I/71-2idM70iL._SX679_.jpg",
-      "description": "Stay chic with nail trend looks.",,
-      "isNew": true,
-      "isTrending": false,
+      "description": "Stay chic with nail trend looks.",
+      "isNew": false,
+      "isTrending": true,
       "stockStatus": "in-stock",
       "cta": "Style Statement",
       "affiliateUrl": "https://amzn.to/48w33K6"

@@ -197,7 +197,7 @@
       "stockStatus": "in-stock",
       "cta": "Fall Glamour",
       "affiliateUrl": "https://amzn.to/3IEmwOe"
-    }
+    },
 
     {
       "id": 16,
@@ -640,6 +640,6 @@
       "stockStatus": "low-stock",
       "cta": "Autumn Elegance",
       "affiliateUrl": "https://amzn.to/3VzSsX1"
-    }
+    },
 
-}
+  ]

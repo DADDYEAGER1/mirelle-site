@@ -236,7 +236,7 @@ export default function ShopClient({ category, products }: ShopClientProps) {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
+                  <p className="text-gray-700 mb-4 italic">&quot;{testimonial.review}&quot;</p>
                   <div className="border-t pt-4">
                     <p className="font-semibold text-gray-900">{testimonial.name}</p>
                     <p className="text-sm text-gray-500">{testimonial.product}</p>
@@ -301,4 +301,4 @@ export default function ShopClient({ category, products }: ShopClientProps) {
       `}</style>
     </div>
   );
-}"
+}

@@ -79,7 +79,7 @@
       "isTrending": true,
       "stockStatus": "in-stock",
       "cta": "Fall Glamour",
-      "affiliateUrl": "https://amzn.to/4pB1"cta""
+      "affiliateUrl": "https://amzn.to/4pB1cta"
     },
     {
       "id": 7,
@@ -198,9 +198,7 @@
       "cta": "Fall Glamour",
       "affiliateUrl": "https://amzn.to/3IEmwOe"
     }
-  ];
 
-  const additionalProducts: Product[] = [
     {
       "id": 16,
      " name": "Medium Almond Press on Nails",
@@ -216,7 +214,7 @@
     },
     {
       "id": 17,
-     " name": "Fall Press on Nails Me"id"um Chrome Nails",
+     " name": "Fall Press on Nails Meidum Chrome Nails",
       "price": "$14.97",
       "originalprice": "$19.99",
       "image": "https://m.media-amazon.com/images/I/61t5GhSpExL._SX679_.jpg",
@@ -246,7 +244,7 @@
       "price": "$3.99",
       "originalprice": "$6.99",
       "image": "https://m.media-amazon.com/images/I/71P0fJL8XbL._SX679_.jpg",
-      "description": "Thanksgiving Maple Leaves False Nails - Nude Autumn Stick On Nails - Hol"id"ay Artificial Acrylic Nails",
+      "description": "Thanksgiving Maple Leaves False Nails - Nude Autumn Stick On Nails - Holiday Artificial Acrylic Nails",
       "isNew": true,
       "isTrending": true,
       "stockStatus": "in-stock",
@@ -285,7 +283,7 @@
       "price": "$7.99",
       "originalprice": "$12.99",
       "image": "https://m.media-amazon.com/images/I/61IAelbvSWL._SX679_.jpg",
-      "description": "Thanksgiving Maple Leaves Acrylic Nail Full Cover Glossy Artificial on Nail for Hol"id"ay Nail Decoration Accessories 24Pcs",
+      "description": "Thanksgiving Maple Leaves Acrylic Nail Full Cover Glossy Artificial on Nail for Holiday Nail Decoration Accessories 24Pcs",
       "isNew": false,
       "isTrending": true,
       "stockStatus": "in-stock",
@@ -337,7 +335,7 @@
       "price": "$5.99",
       "originalprice": "$9.99",
       "image": "https://m.media-amazon.com/images/I/71RGL0ybc5L._SX679_.jpg",
-      "description": "Thanksgiving Acrylic Artificial Full Cover Autumn Leaves Gradient Design Stick on Hol"id"ay Nail Decoration for Women",
+      "description": "Thanksgiving Acrylic Artificial Full Cover Autumn Leaves Gradient Design Stick on Holiday Nail Decoration for Women",
       "isNew": false,
       "isTrending": true,
       "stockStatus": "in-stock",
@@ -350,7 +348,7 @@
       "price": "$6.99",
       "originalprice": "$9.99",
       "image": "https://m.media-amazon.com/images/I/71bSUgXlb4L._SX679_.jpg",
-      "description": "False Nails with Maple Leaf Designs French Tip Maple Leaves Acrylic Nails Thanksgiving Hol"id"ay Nail Decoration Accessories for Women",
+      "description": "False Nails with Maple Leaf Designs French Tip Maple Leaves Acrylic Nails Thanksgiving Holiday Nail Decoration Accessories for Women",
       "isNew": true,
       "isTrending": false,
       "stockStatus": "in-stock",
@@ -363,7 +361,7 @@
       "price": "$6.99",
       "originalprice": "$11.99",
       "image": "https://m.media-amazon.com/images/I/81yKH4K+mFL._SX679_.jpg",
-      "description": "Thanksgiving & Autumn Glossy Hol"id"ay Nail Decoration Accessories for Women & Girls",
+      "description": "Thanksgiving & Autumn Glossy Holiday Nail Decoration Accessories for Women & Girls",
       "isNew": false,
       "isTrending": true,
       "stockStatus": "in-stock",
@@ -402,7 +400,7 @@
       "price": "$5.98",
       "originalprice": "$9.99",
       "image": "https://m.media-amazon.com/images/I/71Ur1fM4EqL._SX679_.jpg",
-      "description": "Medium French Nails Handmade Thanksgiving Nail Art for Hol"id"ay, Vacation, Birthday Nail Decoration for Women",
+      "description": "Medium French Nails Handmade Thanksgiving Nail Art for Holiday, Vacation, Birthday Nail Decoration for Women",
       "isNew": true,
       "isTrending": true,
       "stockStatus": "in-stock",
@@ -610,7 +608,7 @@
       "price": "$3.99",
       "originalprice": "$6.99",
       "image": "https://m.media-amazon.com/images/I/61OxR2aV3XL._SX679_.jpg",
-      "description": "Short Square Shape, Wine Red, Full Cover False Nails with Designs, Reusable, Sol"id" Color Acrylic, French, Press-Ons for Women & Girls",
+      "description": "Short Square Shape, Wine Red, Full Cover False Nails with Designs, Reusable, Solid Color Acrylic, French, Press-Ons for Women & Girls",
       "isNew": true,
       "isTrending": false,
       "stockStatus": "in-stock",
@@ -623,7 +621,7 @@
       "price": "$5.99",
       "originalprice": "$9.99",
       "image": "https://m.media-amazon.com/images/I/61G0KjQwzSL._SX679_.jpg",
-      "description": "Gr"id" Designs Cute Mushroom Floral False Nails Glue on Nails Full Cover Sol"id" Color Acrylic Nails for Women Girls Manicure Art 24Pcs",
+      "description": "Grid Designs Cute Mushroom Floral False Nails Glue on Nails Full Cover Sol"id" Color Acrylic Nails for Women Girls Manicure Art 24Pcs",
       "isNew": false,
       "isTrending": true,
       "stockStatus": "in-stock",
@@ -644,5 +642,4 @@
       "affiliateUrl": "https://amzn.to/3VzSsX1"
     }
 
-  ]
 }

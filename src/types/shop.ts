@@ -1,59 +1,96 @@
-// TypeScript interfaces for shop data structures
+// src/types/shop.ts
+// UPDATED VERSION with FAQ and Description interfaces
 
 export interface Product {
-  id: number;
+  id: string;
   name: string;
-  price: string;
-  originalPrice: string;
+  price: number;
+  salePrice?: number;
   image: string;
-  hoverImage?: string;
-  description: string;
-  isNew: boolean;
-  isTrending: boolean;
-  stockStatus: 'in-stock' | 'low-stock' | 'out-of-stock';
-  cta: string;
-  affiliateUrl: string;
+  affiliateLink: string;
+  category: string;
+  isNew?: boolean;
+  isTrending?: boolean;
+  rating?: number;
+  description?: string;
 }
 
 export interface CategorySEO {
   title: string;
   description: string;
-  keywords: string;
-  ogImage: string;
+  keywords: string[];
+}
+
+export interface HeroSection {
+  title: string;
+  subtitle: string;
+  image: string;
+  gradient: string;
+  floatingEmojis: string[];
 }
 
 export interface Testimonial {
+  text: string;
+  author: string;
+  rating: number;
+}
+
+export interface RelatedCategory {
   name: string;
-  review: string;
-  product: string;
+  slug: string;
+  image: string;
+}
+
+// NEW: FAQ interface
+export interface FAQ {
+  question: string;
+  answer: string;
+  keywords?: string[];
+}
+
+// NEW: FAQ Data structure
+export interface FAQData {
+  category: string;
+  faqs: FAQ[];
+}
+
+// NEW: Category Description interface
+export interface CategoryDescription {
+  category: string;
+  html: string;
+  perfectFor?: string[];
+}
+
+// NEW: Rating data for schema
+export interface CategoryRating {
+  rating: number;
+  reviews: number;
 }
 
 export interface CategoryData {
   slug: string;
-  displayName: string;
-  season: string;
-  year: number;
-  description: string;
-  heroImage: string;
-  gradientFrom: string;
-  gradientVia: string;
-  gradientTo: string;
-  emojis: string[];
-  ctas: string[];
+  name: string;
   seo: CategorySEO;
-  relatedCategories: string[];
+  hero: HeroSection;
   testimonials: Testimonial[];
+  relatedCategories: RelatedCategory[];
 }
 
-export interface ProductsData {
+export interface ProductCollection {
   category: string;
   totalProducts: number;
   initialDisplay: number;
   products: Product[];
 }
 
-export interface CategoriesData {
-  categories: {
-    [slug: string]: CategoryData;
+// NEW: Complete category page data (for future optimization)
+export interface CompleteCategoryData extends CategoryData {
+  faqs?: FAQ[];
+  description?: CategoryDescription;
+  rating?: CategoryRating;
+  productCount?: number;
+  priceRange?: {
+    min: number;
+    max: number;
   };
 }

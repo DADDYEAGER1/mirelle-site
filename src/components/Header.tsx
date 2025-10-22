@@ -72,14 +72,14 @@ export default function Header() {
               </button>
               {/* Full-width overlay dropdown */}
               <div className="fixed left-0 right-0 top-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="bg-charcoal-900 text-white shadow-2xl">
+                <div className="bg-white/95 backdrop-blur-sm border-b border-blush-200 shadow-2xl">
                   <div className="max-w-7xl mx-auto px-8 py-12">
                     <div className="space-y-1">
                       {BLOG_LINKS.map((link) => (
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-3 text-lg text-white/80 hover:text-white hover:pl-2 transition-all duration-200"
+                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
                         >
                           {link.label}
                         </Link>
@@ -100,14 +100,14 @@ export default function Header() {
               </button>
               {/* Full-width overlay dropdown */}
               <div className="fixed left-0 right-0 top-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="bg-charcoal-900 text-white shadow-2xl">
+                <div className="bg-white/95 backdrop-blur-sm border-b border-blush-200 shadow-2xl">
                   <div className="max-w-7xl mx-auto px-8 py-12">
                     <div className="space-y-1">
                       {SHOP_LINKS.map((link) => (
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-3 text-lg text-white/80 hover:text-white hover:pl-2 transition-all duration-200"
+                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
                         >
                           {link.label}
                         </Link>
@@ -128,14 +128,14 @@ export default function Header() {
               </button>
               {/* Full-width overlay dropdown */}
               <div className="fixed left-0 right-0 top-20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <div className="bg-charcoal-900 text-white shadow-2xl">
+                <div className="bg-white/95 backdrop-blur-sm border-b border-blush-200 shadow-2xl">
                   <div className="max-w-7xl mx-auto px-8 py-12">
                     <div className="space-y-1">
                       {TOPICS_LINKS.map((link) => (
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-3 text-lg text-white/80 hover:text-white hover:pl-2 transition-all duration-200"
+                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
                         >
                           {link.label}
                         </Link>

@@ -182,7 +182,7 @@ export default function ShopClient({ category, products }: ShopClientProps) {
                     href={product.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="block w-full bg-gray-900 text-white text-center py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors"
+                    className="block w-full bg-white text-gray-900 border-2 border-gray-900 text-center py-2 rounded-lg font-medium hover:bg-gray-50 transition-colors"
                   >
                     {product.cta}
                   </a>
@@ -197,7 +197,7 @@ export default function ShopClient({ category, products }: ShopClientProps) {
           <div className="text-center mt-12">
             <button
               onClick={() => setShowAllProducts(true)}
-              className="bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
+              className="bg-white text-gray-900 border-2 border-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors shadow-lg"
             >
               Load More Products ({filteredProducts.length - initialDisplayCount} more)
             </button>

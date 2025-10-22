@@ -3,6 +3,7 @@
   "totalProducts": 49,
   "initialDisplay": 15,
   "products": [
+    
     {
       "id": 1,
      " name": "Maple Leaf Design Autumn False Nail",
@@ -641,6 +642,8 @@
       "cta": "Autumn Elegance",
       "affiliateUrl": "https://amzn.to/3VzSsX1"
     },
+    ]
+  
 
-  ]
+  
 }

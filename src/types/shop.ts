@@ -73,6 +73,7 @@ export interface CategoryData {
   seo: CategorySEO;
   heroImage: string;  // Add this line
   hero: HeroSection;
+  emojis: string[];  // Add this
   gradientFrom: string;
   gradientVia: string;
   gradientTo: string;

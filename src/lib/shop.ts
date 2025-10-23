@@ -8,8 +8,17 @@ import categoriesData from '@/content/shop-categories.json';
  * Get category metadata by slug
  */
 export function getCategoryData(slug: string): CategoryData | null {
-  const data = categoriesData as CategoriesData;
-  return data.categories[slug] || null;
+  const data = categoriesData as any; // Use 'any' to avoid type conflicts during JSON import
+  const category = data.categories?.[slug];
+  
+  if (!category) return null;
+  
+  // Normalize keywords to array if it's a string
+  if (category.seo && typeof category.seo.keywords === 'string') {
+    category.seo.keywords = category.seo.keywords.split(',').map((k: string) => k.trim());
+  }
+  
+  return category as CategoryData;
 }
 
 /**

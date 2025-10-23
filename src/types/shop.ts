@@ -33,12 +33,6 @@ export interface HeroSection {
   floatingEmojis: string[];
 }
 
-export interface Testimonial {
-  name: string; // Changed from author
-  review: string; // Changed from text
-  rating?: number; // FIXED: Made optional since JSON doesn't have it
-  product: string; // Added - was missing
-}
 
 export interface RelatedCategory {
   name: string;
@@ -85,7 +79,7 @@ export interface CategoryData {
   ctas: string[]; // Added - in JSON but not type
   seo: CategorySEO;
   relatedCategories: string[]; // Changed to string[] - actual slugs
-  testimonials: Testimonial[];
+  whyChooseUs: string[];
 }
 
 // Complete category page data

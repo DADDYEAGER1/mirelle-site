@@ -305,36 +305,32 @@ export default function ShopClient({
       )}
 
       {/* Related Categories */}
-      {categoryData.relatedCategories && categoryData.relatedCategories.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
-            Explore More Collections
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {categoryData.relatedCategories.map((related) => (
-              <Link
-                key={related.slug}
-                href={`/shop/${related.slug}`}
-                className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all overflow-hidden"
-              >
-                <div className="aspect-square relative overflow-hidden">
-                  <img
-                    src={related.image}
-                    alt={related.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                    {related.name}
-                  </h3>
-                </div>
-              </Link>
-            ))}
+{/* Related Categories */}
+{categoryData.relatedCategories && categoryData.relatedCategories.length > 0 && (
+  <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+    <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+      Explore More Collections
+    </h2>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {categoryData.relatedCategories.map((relatedSlug) => (
+        <Link
+          key={relatedSlug}
+          href={`/shop/${relatedSlug}`}
+          className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all overflow-hidden"
+        >
+          <div className="aspect-square relative overflow-hidden bg-gray-200 flex items-center justify-center">
+            <span className="text-5xl">💅</span>
           </div>
-        </section>
-      )}
-
+          <div className="p-4 text-center">
+            <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+              {relatedSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} Nails
+            </h3>
+          </div>
+        </Link>
+      ))}
+    </div>
+  </section>
+)}
       {/* Trust Signals */}
       <section className="max-w-7xl mx-auto px-4 py-16 border-t border-gray-200">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">

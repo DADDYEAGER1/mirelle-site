@@ -29,7 +29,8 @@ faqItems:
   - question: "What are 3D Halloween nails and how are they done"
     answer: "3D Halloween nails feature raised elements like sculpted pumpkins, textured spider webs, or dimensional bats created with builder gel or acrylic. Apply design elements on cured base color, cure again, then seal with thick top coat. These dramatic designs photograph beautifully but may not suit active lifestyles."
   - question: "Best Halloween nail ideas for almond shaped nails"
-    answer: "Almond nails suit elongated designs like dripping blood effects, vertical spiderweb patterns, ombre fades from black to red,
+    answer: "Almond nails suit elongated designs like dripping blood effects, vertical spiderweb patterns, ombre fades from black to red, and coffin-inspired black tips with metallic chrome highlights for a dramatic yet elegant spooky vibe."
+
 ---
 
 Halloween is the one season where your nails can be as bold, spooky, or playful as you want. Whether you're heading to a Halloween party in NYC, grabbing pumpkin spice lattes in LA, or celebrating fall vibes in Dallas, your manicure deserves to match the season's energy.

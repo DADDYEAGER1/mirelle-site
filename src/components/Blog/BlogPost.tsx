@@ -8,7 +8,6 @@ interface BlogPostProps {
   post: BlogPostType;
 }
 
-
 export default function BlogPost({ post }: BlogPostProps) {
   // Extract headings for Table of Contents
   const tableOfContents = extractHeadings(post.content);
@@ -50,10 +49,10 @@ export default function BlogPost({ post }: BlogPostProps) {
           <span>{new Date(post.date).toLocaleDateString()}</span>
           <span>•</span>
           <span>{post.readTime} read</span>
-          
+        </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
-          {/* ✅ NEW - Show category badge first if exists */}
+          {/* ✅ Show category badge first if exists */}
           {post.category && (
             <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
               {post.category}
@@ -74,7 +73,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src={post.image}
-              alt={post.imageAlt || post.title}
+              alt={post.title}
               fill
               className="object-cover"
               priority
@@ -114,7 +113,7 @@ export default function BlogPost({ post }: BlogPostProps) {
       </div>
     </div>
   );
-{/* } */}
+}
 
 // Extract and clean heading text
 function extractHeadings(htmlContent: string): { id: string; title: string }[] {

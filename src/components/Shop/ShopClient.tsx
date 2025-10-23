@@ -159,7 +159,7 @@ export default function ShopClient({
             const discount = calculateDiscount(product.price, product.salePrice);
 
             return (
-              
+              <a
                 key={product.id}
                 href={product.affiliateLink}
                 target="_blank"

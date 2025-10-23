@@ -20,7 +20,7 @@ export interface Product {
 export interface CategorySEO {
   title: string;
   description: string;
-  keywords: string[]; // Keep as array - we'll normalize in getCategoryData
+  keywords: string; // FIXED: Match actual JSON structure (comma-separated string)
   ogImage: string;
 }
 

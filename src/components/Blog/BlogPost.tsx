@@ -8,6 +8,7 @@ interface BlogPostProps {
   post: BlogPostType;
 }
 
+
 export default function BlogPost({ post }: BlogPostProps) {
   // Extract headings for Table of Contents
   const tableOfContents = extractHeadings(post.content);

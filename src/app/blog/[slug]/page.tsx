@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const canonicalUrl = `https://mirelleinspo.com/blog/${slug}`;
   const imageUrl = post.image ? `https://mirelleinspo.com${post.image}` : 'https://mirelleinspo.com/og-default.png';
+  const imageAltText = post.imageAlt || post.title;
   
   return {
     title: `${post.title} | Mirelle`,
@@ -66,8 +67,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       locale: 'en_US',
       images: [{
         url: imageUrl,
-        width: 1200,
-        height: 630,
+        width: post.imageWidth || 1200,
+        height: post.imageHeight || 630,
         alt: post.title,
         type: 'image/jpeg',
       }],
@@ -87,7 +88,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     other: {
       'article:published_time': post.date,
-      'article:modified_time': post.updatedDate || post.date,
+      'article:modified_time': post.dateModified || post.updatedDate || post.date,
       'article:author': post.author || 'Mirelle',
       'article:section': post.category || 'Nail Care',
       'article:tag': post.tags?.join(', ') || '',

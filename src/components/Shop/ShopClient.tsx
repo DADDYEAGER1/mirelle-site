@@ -148,7 +148,9 @@ export default function ShopClient({
       <section className="max-w-7xl mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {displayProducts.map((product) => {
-            const discount = calculateDiscount(product.price, product.salePrice);
+            const discount = product.salePrice
+              ? calculateDiscount(product.price, product.salePrice)
+              : 0;
 
             return (
               <a
@@ -192,19 +194,19 @@ export default function ShopClient({
                   </h3>
                   <div className="flex items-center gap-2">
                     {product.salePrice && product.salePrice < product.price ? (
-                      <>
-                        <span className="text-xl font-bold text-red-600">
-                          ${product.salePrice.toFixed(2)}
-                        </span>
-                        <span className="text-sm text-gray-500 line-through">
-                          ${product.price.toFixed(2)}
-                        </span>
-                      </>
-                    ) : (
-                      <span className="text-xl font-bold text-gray-900">
-                        ${product.price.toFixed(2)}
-                      </span>
-                    )}
+  <>
+    <span className="text-xl font-bold text-red-600">
+      {product.salePrice}
+    </span>
+    <span className="text-sm text-gray-500 line-through">
+      {product.price}
+    </span>
+  </>
+) : (
+  <span className="text-xl font-bold text-gray-900">
+    {product.price}
+  </span>
+)}
                   </div>
                   {product.rating && (
                     <div className="flex items-center gap-1 mt-2">

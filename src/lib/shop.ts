@@ -1,5 +1,6 @@
 // Helper functions for reading shop data from JSON files
-import type { CategoryData, Product, CategoriesData } from '@/types/shop';
+import type { CategoryData, Product } from '@/types/shop';
+
 import categoriesData from '@/content/shop-categories.json';
 
 /**

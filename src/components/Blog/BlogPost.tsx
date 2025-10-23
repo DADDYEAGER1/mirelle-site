@@ -86,7 +86,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src={post.image}
-              alt={post.title}
+              alt={post.imageAlt || post.title}
               fill
               className="object-cover"
               priority

@@ -163,7 +163,7 @@ export default function ShopClient({
             return (
               <a
                 key={product.id}
-                href={product.affiliateLink}
+                href={product.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"

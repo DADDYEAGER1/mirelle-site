@@ -90,12 +90,12 @@ export function generateSchemas(config: SchemaConfig) {
     image: {
       '@type': 'ImageObject',
       url: imageUrl,
-      width: 1200,
-      height: 630,
-      caption: post.title,
+      width: post.imageWidth || 1200,
+      height: post.imageHeight || 630,
+      caption: post.imageAlt || post.title,
     },
     datePublished: post.date,
-    dateModified: post.updatedDate || post.date,
+    dateModified: post.dateModified || post.updatedDate || post.date,
     author: {
       '@type': 'Person',
       '@id': `${baseUrl}/#person`,
@@ -116,7 +116,7 @@ export function generateSchemas(config: SchemaConfig) {
     },
     articleSection: post.category || 'Nail Care',
     keywords: post.tags?.join(', ') || 'nail art, nail care, nail design',
-    wordCount: post.content?.split(' ').length || 800,
+    wordCount: post.wordCount || post.content?.split(' ').length || 800,
     inLanguage: 'en-US',
     isAccessibleForFree: true,
     isPartOf: {
@@ -249,8 +249,8 @@ export function generateSchemas(config: SchemaConfig) {
       image: {
         '@type': 'ImageObject',
         url: imageUrl,
-        width: 1200,
-        height: 630,
+        width: post.imageWidth || 1200,
+        height: post.imageHeight || 630,
       },
       totalTime: tutorialMetadata.totalTime,
       estimatedCost: {

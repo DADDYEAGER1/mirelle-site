@@ -71,6 +71,7 @@ export interface CategoryData {
   slug: string;
   name: string;
   seo: CategorySEO;
+  heroImage: string;  // Add this line
   hero: HeroSection;
   testimonials: Testimonial[];
   relatedCategories: RelatedCategory[];

@@ -73,6 +73,9 @@ export interface CategoryData {
   seo: CategorySEO;
   heroImage: string;  // Add this line
   hero: HeroSection;
+  gradientFrom: string;
+  gradientVia: string;
+  gradientTo: string;
   testimonials: Testimonial[];
   relatedCategories: RelatedCategory[];
 }

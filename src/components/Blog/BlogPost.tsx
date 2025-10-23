@@ -114,7 +114,7 @@ export default function BlogPost({ post }: BlogPostProps) {
       </div>
     </div>
   );
-}
+{/* } */}
 
 // Extract and clean heading text
 function extractHeadings(htmlContent: string): { id: string; title: string }[] {

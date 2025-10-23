@@ -35,7 +35,7 @@ export interface HeroSection {
 export interface Testimonial {
   name: string; // Changed from author
   review: string; // Changed from text
-  rating: number;
+  rating?: number; // FIXED: Made optional since JSON doesn't have it
   product: string; // Added - was missing
 }
 

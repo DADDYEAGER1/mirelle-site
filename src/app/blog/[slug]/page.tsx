@@ -109,7 +109,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     faqItems: post.faqItems,
     tutorialSteps: post.tutorialSteps,
     tutorialMetadata: post.tutorialMetadata,
-    galleryImages: post.galleryImages,  // ✅ NEW: Pass gallery images
+    galleryImages: post.galleryImage,  // ✅ NEW: Pass gallery images
   });
   
 

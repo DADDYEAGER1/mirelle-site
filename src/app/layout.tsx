@@ -245,6 +245,9 @@ export default function RootLayout({
 
         {/* AdSense verification meta tag */}
         <meta name="google-adsense-account" content="ca-pub-1145734682794444" />
+        
+        {/* Pinterest Save Button Script */}
+        <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
       </head>
 
       <body className="antialiased">

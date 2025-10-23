@@ -95,8 +95,8 @@ export function filterProducts(products: Product[], filter: 'all' | 'new' | 'tre
 
 /**
  * Calculate discount percentage
- */
-export function calculateDiscount(originalPrice: number, salePrice?: number): number {
-  if (!salePrice || salePrice >= originalPrice) return 0;
-  return Math.round(((originalPrice - salePrice) / originalPrice) * 100);
-}
+//  */
+// export function calculateDiscount(originalPrice: number, salePrice?: number): number {
+//   if (!salePrice || salePrice >= originalPrice) return 0;
+//   return Math.round(((originalPrice - salePrice) / originalPrice) * 100);
+// }

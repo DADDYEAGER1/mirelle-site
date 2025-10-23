@@ -1,40 +1,40 @@
- "christmas": {
-    "category": "christmas",
-    "faqs": [
-      {
-        "question": "How long do Christmas press-on nails last through the holidays?",
-        "answer": "Our Christmas press-on nails are designed to last through all your holiday celebrations - typically 10-14 days with nail glue application. This means you can apply them before your office party and they'll still look perfect for Christmas Day and New Year's Eve. The festive glitter, snowflakes, and holiday designs are sealed with a durable top coat to prevent chipping throughout the season.",
-        "keywords": ["christmas nails last", "holiday duration", "festive nails", "long-lasting"]
-      },
-      {
-        "question": "Are Christmas press-on nails suitable for holiday parties?",
-        "answer": "Absolutely! Christmas press-on nails are perfect for holiday parties, family gatherings, and festive photos. They provide an instant glamorous look without the 2-hour salon commitment. Our collection includes elegant designs for formal events (think gold snowflakes and classic red) and playful options for casual parties (like Santa hats and candy canes). Apply them the morning of your event for a fresh, professional finish.",
-        "keywords": ["party nails", "holiday events", "festive manicure", "christmas celebration"]
-      },
-      {
-        "question": "What Christmas nail designs are most popular?",
-        "answer": "This holiday season, classic red and green combinations remain timeless favorites. However, 2025 trends show customers loving icy blue snowflake designs, gold metallic accents, and minimalist white Christmas themes. Plaid patterns, reindeer silhouettes, and elegant French tips with holiday sparkle are also bestsellers. Our collection balances traditional Christmas aesthetics with modern, Instagram-worthy designs.",
-        "keywords": ["popular christmas nails", "holiday nail trends", "festive designs", "christmas 2025"]
-      },
-      {
-        "question": "Can I wear Christmas nails to work?",
-        "answer": "Many of our Christmas press-on nail designs are subtle enough for professional settings. Look for our sophisticated options featuring deep burgundy, forest green, or gold accents rather than overtly festive designs. We also offer elegant snowflake patterns and subtle glitter that add holiday spirit without appearing too casual for office environments. Save the bold Santa and reindeer designs for weekends and parties.",
-        "keywords": ["professional christmas nails", "work-appropriate", "subtle holiday nails", "office festive"]
-      },
-      {
-        "question": "Do Christmas press-on nails work in cold weather?",
-        "answer": "Yes! Unlike gel manicures that can crack in cold temperatures, press-on nails remain flexible and durable in winter weather. The adhesive actually bonds better in moderate temperatures. Just make sure your hands are completely dry before application, as winter moisture can affect adhesion. Once applied, your Christmas nails will withstand cold weather, indoor heating, and all your holiday activities.",
-        "keywords": ["cold weather nails", "winter press-ons", "temperature durability", "holiday season"]
-      },
-      {
-        "question": "What's included with Christmas press-on nail sets?",
-        "answer": "Each Christmas press-on nail set includes 24-30 nails in various sizes (enough for 2-3 applications), professional-grade nail glue or adhesive tabs, an alcohol prep pad for cleaning, a mini nail file for customizing length, and a cuticle stick for application. Many designs also include festive nail gems or stickers as bonus accessories. Everything you need for salon-quality Christmas nails at home arrives in one beautiful package.",
-        "keywords": ["whats included", "nail kit contents", "christmas nail set", "complete package"]
-      },
-      {
-        "question": "Can I remove Christmas nails before New Year's if I want a different look?",
-        "answer": "Of course! One advantage of press-on nails is the flexibility to change your look for different holiday occasions. Remove your Christmas nails anytime by soaking in warm soapy water for 10 minutes. If you used quality glue, save the nails after cleaning them - they're reusable! Then apply a different design from our New Year collection for your NYE celebrations. Switch festive styles as often as you like.",
-        "keywords": ["remove press-ons", "change designs", "flexible styling", "reusable nails"]
-      }
-    ]
-  }
+{
+  "category": "christmas",
+  "faqs": [
+    {
+      "question": "How long do Christmas press-on nails last through the holidays?",
+      "answer": "Our Christmas press-on nails are designed to last through all your holiday celebrations - typically 10-14 days with nail glue application. This means you can apply them before your office party and they'll still look perfect for Christmas Day and New Year's Eve. The festive glitter, snowflakes, and holiday designs are sealed with a durable top coat to prevent chipping throughout the season.",
+      "keywords": ["christmas nails last", "holiday duration", "festive nails", "long-lasting"]
+    },
+    {
+      "question": "Are Christmas press-on nails suitable for holiday parties?",
+      "answer": "Absolutely! Christmas press-on nails are perfect for holiday parties, family gatherings, and festive photos. They provide an instant glamorous look without the 2-hour salon commitment. Our collection includes elegant designs for formal events (think gold snowflakes and classic red) and playful options for casual parties (like Santa hats and candy canes). Apply them the morning of your event for a fresh, professional finish.",
+      "keywords": ["party nails", "holiday events", "festive manicure", "christmas celebration"]
+    },
+    {
+      "question": "What Christmas nail designs are most popular?",
+      "answer": "This holiday season, classic red and green combinations remain timeless favorites. However, 2025 trends show customers loving icy blue snowflake designs, gold metallic accents, and minimalist white Christmas themes. Plaid patterns, reindeer silhouettes, and elegant French tips with holiday sparkle are also bestsellers. Our collection balances traditional Christmas aesthetics with modern, Instagram-worthy designs.",
+      "keywords": ["popular christmas nails", "holiday nail trends", "festive designs", "christmas 2025"]
+    },
+    {
+      "question": "Can I wear Christmas nails to work?",
+      "answer": "Many of our Christmas press-on nail designs are subtle enough for professional settings. Look for our sophisticated options featuring deep burgundy, forest green, or gold accents rather than overtly festive designs. We also offer elegant snowflake patterns and subtle glitter that add holiday spirit without appearing too casual for office environments. Save the bold Santa and reindeer designs for weekends and parties.",
+      "keywords": ["professional christmas nails", "work-appropriate", "subtle holiday nails", "office festive"]
+    },
+    {
+      "question": "Do Christmas press-on nails work in cold weather?",
+      "answer": "Yes! Unlike gel manicures that can crack in cold temperatures, press-on nails remain flexible and durable in winter weather. The adhesive actually bonds better in moderate temperatures. Just make sure your hands are completely dry before application, as winter moisture can affect adhesion. Once applied, your Christmas nails will withstand cold weather, indoor heating, and all your holiday activities.",
+      "keywords": ["cold weather nails", "winter press-ons", "temperature durability", "holiday season"]
+    },
+    {
+      "question": "What's included with Christmas press-on nail sets?",
+      "answer": "Each Christmas press-on nail set includes 24-30 nails in various sizes (enough for 2-3 applications), professional-grade nail glue or adhesive tabs, an alcohol prep pad for cleaning, a mini nail file for customizing length, and a cuticle stick for application. Many designs also include festive nail gems or stickers as bonus accessories. Everything you need for salon-quality Christmas nails at home arrives in one beautiful package.",
+      "keywords": ["whats included", "nail kit contents", "christmas nail set", "complete package"]
+    },
+    {
+      "question": "Can I remove Christmas nails before New Year's if I want a different look?",
+      "answer": "Of course! One advantage of press-on nails is the flexibility to change your look for different holiday occasions. Remove your Christmas nails anytime by soaking in warm soapy water for 10 minutes. If you used quality glue, save the nails after cleaning them - they're reusable! Then apply a different design from our New Year collection for your NYE celebrations. Switch festive styles as often as you like.",
+      "keywords": ["remove press-ons", "change designs", "flexible styling", "reusable nails"]
+    }
+  ]
+}

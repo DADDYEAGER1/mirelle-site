@@ -90,7 +90,7 @@ export interface CategoryData {
 // Complete category page data
 export interface CompleteCategoryData extends CategoryData {
   faqs?: FAQ[];
-  description?: CategoryDescription;
+  categoryDescription?: CategoryDescription; // FIXED: Renamed to avoid conflict with CategoryData.description
   rating?: CategoryRating;
   productCount?: number;
   priceRange?: {

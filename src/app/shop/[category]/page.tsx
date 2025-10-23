@@ -241,7 +241,7 @@ export async function generateMetadata({
   return {
     title: seo.title,
     description: seo.description,
-    keywords: typeof seo.keywords === 'string' ? seo.keywords : seo.keywords.join(', '),
+    keywords: seo.keywords,
     openGraph: {
       title: seo.title,
       description: seo.description,

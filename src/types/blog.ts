@@ -24,16 +24,19 @@ export interface BlogPost {
   author: string;
   tags: string[];
   image?: string;
-  readTime: number;
+  readTime: number | string;  // CHANGED: Accept "5 min" or 5
   canonical: string;
   updatedDate?: string;
   category?: string;
+  imageAlt?: string;  // ADDED
+  imageWidth?: number;  // ADDED
+  imageHeight?: number;  // ADDED
+  dateModified?: string;  // ADDED
+  wordCount?: number;  // ADDED
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  galleryImages?: GalleryImage[];  // ✅ NEW
-  rating?: Rating;  // ✅ NEW
 }
 
 export interface BlogMetadata {
@@ -47,4 +50,7 @@ export interface BlogMetadata {
   readTime: number;
   galleryImages?: GalleryImage[];  // ✅ NEW
   rating?: Rating;  // ✅ NEW
+  readTime: number | string;  // CHANGED: Accept "5 min" or 5
+  imageAlt?: string;  // ADDED
+  category?: string;
 }

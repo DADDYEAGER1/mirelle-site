@@ -258,7 +258,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: seo.title,
       description: seo.description,
-      images: [categoryData.hero?.image || categoryData.heroImage || seo.ogImage],
+      images: [categoryData.hero?.image || categoryData.heroImage],
     },
     alternates: {
       canonical: `https://mirelle.com/shop/${category}`,

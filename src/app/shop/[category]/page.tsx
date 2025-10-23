@@ -279,7 +279,7 @@ export default async function ShopCategoryPage({
 
   // Fetch data
   const categoryData = getCategoryData(category);
-  const products = getCategoryProducts(category);
+  const products = await getCategoryProducts(category);
   const faqs = await getFAQs(category);
   const description = await getCategoryDescription(category);
 

@@ -249,7 +249,7 @@ export async function generateMetadata({
       url: `https://mirelle.com/shop/${category}`,
       images: [
         {
-          url: categoryData.hero.image,
+          url: categoryData.hero?.image || categoryData.heroImage,
           alt: seo.title,
         },
       ],

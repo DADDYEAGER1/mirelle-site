@@ -21,7 +21,7 @@ export interface Product {
 export interface CategorySEO {
   title: string;
   description: string;
-  keywords: string[];
+  keywords: string;  // Change from string[] to string
 }
 
 export interface HeroSection {

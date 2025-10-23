@@ -48,7 +48,6 @@ export interface BlogMetadata {
   author: string;
   tags: string[];
   image?: string;
-  readTime: number;
   galleryImages?: GalleryImage[];  // ✅ NEW
   rating?: Rating;  // ✅ NEW
   readTime: number | string;  // CHANGED: Accept "5 min" or 5

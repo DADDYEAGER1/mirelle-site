@@ -73,12 +73,15 @@ export interface CategoryData {
   seo: CategorySEO;
   heroImage: string;  // Add this line
   hero: HeroSection;
-  emojis: string[];  // Add this
   gradientFrom: string;
   gradientVia: string;
   gradientTo: string;
+  displayName: string;
+  description: string;  // You'll need this next for line 80
   testimonials: Testimonial[];
+  emojis: string[];  // Add this
   relatedCategories: RelatedCategory[];
+  
 }
 
 export interface ProductCollection {

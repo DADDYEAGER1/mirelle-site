@@ -32,8 +32,11 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           image: data.image || null,
           readTime: data.readTime || '5 min',
           canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-          category: data.category || undefined,        // ✅ NEW
-          rating: data.rating || undefined,            // ✅ NEW
+          faqItems: data.faqItems || undefined, // REMOVE - Not needed in metadata
+          tutorialSteps: data.tutorialSteps || undefined, // REMOVE - Not needed in metadata
+          tutorialMetadata: data.tutorialMetadata || undefined, // REMOVE - Not needed in metadata
+          imageAlt: data.imageAlt || undefined, // NEW ADDED - For generator compatibility
+          category: data.category || undefined, // NEW ADDED - For article section
         };
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -77,13 +80,17 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       image: data.image || null,
       readTime: data.readTime || '5 min',
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-      updatedDate: data.updatedDate || undefined,          // ✅ NEW
-      category: data.category || undefined,                // ✅ NEW
-      rating: data.rating || undefined,                    // ✅ NEW
+      updatedDate: data.updatedDate || undefined, // NEW ADDED - For last modified date
+      category: data.category || undefined, // NEW ADDED - For article section
+      imageAlt: data.imageAlt || undefined, // NEW ADDED - For image alt text from generator
+      imageWidth: data.imageWidth || undefined, // NEW ADDED - For image width from generator
+      imageHeight: data.imageHeight || undefined, // NEW ADDED - For image height from generator
+      dateModified: data.dateModified || data.updatedDate || undefined, // NEW ADDED - For generator's dateModified field
+      wordCount: data.wordCount || undefined, // NEW ADDED - For generator's word count
       faqItems: data.faqItems || undefined,
       tutorialSteps: data.tutorialSteps || undefined,
       tutorialMetadata: data.tutorialMetadata || undefined,
-      videoMetadata: data.videoMetadata || undefined,      // ✅ ADDED (was missing)
+      videoMetadata: data.videoMetadata || undefined,
     };
   } catch (error) {
     console.error(`Error reading blog post ${slug}:`, error);

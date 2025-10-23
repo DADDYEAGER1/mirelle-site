@@ -69,19 +69,20 @@ export interface CategoryRating {
 
 export interface CategoryData {
   slug: string;
-  name: string;
+  displayName: string;  // Changed from 'name'
+  season?: string;      // Add optional fields from JSON
+  year?: number;
+  description: string;
   seo: CategorySEO;
-  heroImage: string;  // Add this line
-  hero: HeroSection;
+  heroImage: string;
   gradientFrom: string;
   gradientVia: string;
   gradientTo: string;
-  displayName: string;
-  description: string;  // You'll need this next for line 80
+  emojis: string[];
+  ctas?: string[];      // Add optional
+  hero?: HeroSection;   // Make optional (not in JSON)
   testimonials: Testimonial[];
-  emojis: string[];  // Add this
-  relatedCategories: RelatedCategory[];
-  
+  relatedCategories: string[];  // Changed from RelatedCategory[]
 }
 
 export interface ProductCollection {

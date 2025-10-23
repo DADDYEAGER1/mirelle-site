@@ -335,4 +335,13 @@ export default async function ShopCategoryPage({
         />
       )}
 
-      {/* Main Shop Component */
+            {/* Main Shop Component */}
+      <ShopClient
+        categoryData={categoryData}
+        initialProducts={products}
+        faqs={faqs}
+        description={description}
+      />
+    </>
+  );
+}

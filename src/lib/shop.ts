@@ -68,6 +68,14 @@ export async function getCategoryProductCount(slug: string): Promise<number> {
   return products.length;
 }
 
+export function calculateDiscount(originalPrice: string, salePrice: string): number {
+  const original = parseFloat(originalPrice.replace('$', ''));
+  const sale = parseFloat(salePrice.replace('$', ''));
+  
+  if (original === 0 || sale >= original) return 0;
+  
+  return Math.round(((original - sale) / original) * 100);
+}
 /**
  * Filter products by type
  */

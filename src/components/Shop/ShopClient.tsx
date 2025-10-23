@@ -52,7 +52,7 @@ export default function ShopClient({
 
   // Safe access to hero data with fallbacks
   const heroGradient = categoryData.hero?.gradient || 'from-gray-900 to-gray-700';
-  const heroTitle = categoryData.hero?.title || categoryData.name || 'Shop';
+  const heroTitle = categoryData.hero?.title || categoryData.displayName || 'Shop';
   const heroSubtitle = categoryData.hero?.subtitle || 'Discover our collection';
   const heroEmojis = categoryData.hero?.floatingEmojis || [];
 

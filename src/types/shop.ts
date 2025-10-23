@@ -35,6 +35,7 @@ export interface HeroSection {
 export interface Testimonial {
   name: string;
   review: string;
+  rating: number;  // Add this
   product: string;
 }
 export interface RelatedCategory {

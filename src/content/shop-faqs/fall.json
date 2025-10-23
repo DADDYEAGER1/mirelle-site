@@ -1,81 +1,40 @@
 {
-  "fall": {
-    "category": "fall",
-    "faqs": [
-      {
-        "question": "How long do fall press-on nails last?",
-        "answer": "Our fall press-on nails typically last 7-14 days with proper application using nail glue. With adhesive tabs, expect 2-3 days of wear. For maximum longevity, ensure your natural nails are clean, dry, and lightly buffed before applying. Avoid prolonged water exposure in the first 2 hours after application, and your autumn-themed nails will stay beautiful throughout the season.",
-        "keywords": ["fall press-on nails last", "how long", "durability", "nail glue"]
-      },
-      {
-        "question": "Are fall press-on nails reusable?",
-        "answer": "Yes! Most of our fall nail designs are reusable for 2-3 applications when removed carefully and stored properly. After wearing, gently remove by soaking in warm soapy water, clean off any remaining adhesive with non-acetone remover, and store in the original packaging. This makes them an affordable option for multiple autumn occasions throughout the season.",
-        "keywords": ["reusable press-on nails", "fall nails", "multiple uses", "eco-friendly"]
-      },
-      {
-        "question": "What fall nail colors are trending in 2025?",
-        "answer": "This fall season, warm neutrals dominate the trends. Caramel brown, burnt orange, deep burgundy, and olive green are the most popular colors for autumn 2025. Many customers also love mocha mousse tones and tortoise-inspired designs that mimic the warm, cozy feeling of fall. Our collection features all these trending shades in various designs from minimalist to bold statement nails.",
-        "keywords": ["fall nail trends 2025", "autumn colors", "trending nails", "seasonal styles"]
-      },
-      {
-        "question": "Can I apply fall press-on nails myself at home?",
-        "answer": "Absolutely! Press-on nails are designed for easy at-home application in just 15 minutes. Our fall collection includes everything you need: pre-sized nails in multiple sizes, nail glue or adhesive tabs, a prep pad, and a mini file. Simply clean your nails, select the right size, apply adhesive, and press firmly for 30 seconds per nail. No salon appointment needed for professional-looking autumn nails.",
-        "keywords": ["DIY press-on nails", "home application", "easy nails", "no salon needed"]
-      },
-      {
-        "question": "What nail shapes work best for fall designs?",
-        "answer": "Fall nail designs look stunning on all shapes, but short almond and squoval (square-oval hybrid) shapes are particularly popular for autumn 2025. These shapes provide enough canvas for intricate fall patterns like maple leaves and pumpkins while remaining practical for daily activities. Our collection offers multiple shape options so you can choose what flatters your hands best.",
-        "keywords": ["nail shapes", "fall nail designs", "almond nails", "squoval shape"]
-      },
-      {
-        "question": "Do fall press-on nails damage natural nails?",
-        "answer": "When applied and removed correctly, press-on nails do not damage your natural nails. The key is proper removal: never peel or pull them off. Instead, soak in warm soapy water for 5-10 minutes until the adhesive softens, then gently wiggle off. Between applications, give your natural nails some care with cuticle oil and a strengthening treatment to keep them healthy all season.",
-        "keywords": ["nail damage", "safe press-ons", "nail health", "proper removal"]
-      },
-      {
-        "question": "What fall nail designs are available in your collection?",
-        "answer": "Our fall collection features 49+ unique designs celebrating autumn's beauty. Choose from maple leaf patterns, pumpkin motifs, warm ombre fades, tortoise shell effects, and elegant neutral tones. We offer everything from subtle earth-toned French tips to bold Halloween-adjacent designs with fall florals. Each design comes in multiple sizes to ensure a perfect fit for your nail beds.",
-        "keywords": ["fall nail designs", "autumn patterns", "press-on variety", "seasonal collection"]
-      }
-    ]
-  },
-  "christmas": {
-    "category": "christmas",
-    "faqs": [
-      {
-        "question": "How long do Christmas press-on nails last through the holidays?",
-        "answer": "Our Christmas press-on nails are designed to last through all your holiday celebrations - typically 10-14 days with nail glue application. This means you can apply them before your office party and they'll still look perfect for Christmas Day and New Year's Eve. The festive glitter, snowflakes, and holiday designs are sealed with a durable top coat to prevent chipping throughout the season.",
-        "keywords": ["christmas nails last", "holiday duration", "festive nails", "long-lasting"]
-      },
-      {
-        "question": "Are Christmas press-on nails suitable for holiday parties?",
-        "answer": "Absolutely! Christmas press-on nails are perfect for holiday parties, family gatherings, and festive photos. They provide an instant glamorous look without the 2-hour salon commitment. Our collection includes elegant designs for formal events (think gold snowflakes and classic red) and playful options for casual parties (like Santa hats and candy canes). Apply them the morning of your event for a fresh, professional finish.",
-        "keywords": ["party nails", "holiday events", "festive manicure", "christmas celebration"]
-      },
-      {
-        "question": "What Christmas nail designs are most popular?",
-        "answer": "This holiday season, classic red and green combinations remain timeless favorites. However, 2025 trends show customers loving icy blue snowflake designs, gold metallic accents, and minimalist white Christmas themes. Plaid patterns, reindeer silhouettes, and elegant French tips with holiday sparkle are also bestsellers. Our collection balances traditional Christmas aesthetics with modern, Instagram-worthy designs.",
-        "keywords": ["popular christmas nails", "holiday nail trends", "festive designs", "christmas 2025"]
-      },
-      {
-        "question": "Can I wear Christmas nails to work?",
-        "answer": "Many of our Christmas press-on nail designs are subtle enough for professional settings. Look for our sophisticated options featuring deep burgundy, forest green, or gold accents rather than overtly festive designs. We also offer elegant snowflake patterns and subtle glitter that add holiday spirit without appearing too casual for office environments. Save the bold Santa and reindeer designs for weekends and parties.",
-        "keywords": ["professional christmas nails", "work-appropriate", "subtle holiday nails", "office festive"]
-      },
-      {
-        "question": "Do Christmas press-on nails work in cold weather?",
-        "answer": "Yes! Unlike gel manicures that can crack in cold temperatures, press-on nails remain flexible and durable in winter weather. The adhesive actually bonds better in moderate temperatures. Just make sure your hands are completely dry before application, as winter moisture can affect adhesion. Once applied, your Christmas nails will withstand cold weather, indoor heating, and all your holiday activities.",
-        "keywords": ["cold weather nails", "winter press-ons", "temperature durability", "holiday season"]
-      },
-      {
-        "question": "What's included with Christmas press-on nail sets?",
-        "answer": "Each Christmas press-on nail set includes 24-30 nails in various sizes (enough for 2-3 applications), professional-grade nail glue or adhesive tabs, an alcohol prep pad for cleaning, a mini nail file for customizing length, and a cuticle stick for application. Many designs also include festive nail gems or stickers as bonus accessories. Everything you need for salon-quality Christmas nails at home arrives in one beautiful package.",
-        "keywords": ["whats included", "nail kit contents", "christmas nail set", "complete package"]
-      },
-      {
-        "question": "Can I remove Christmas nails before New Year's if I want a different look?",
-        "answer": "Of course! One advantage of press-on nails is the flexibility to change your look for different holiday occasions. Remove your Christmas nails anytime by soaking in warm soapy water for 10 minutes. If you used quality glue, save the nails after cleaning them - they're reusable! Then apply a different design from our New Year collection for your NYE celebrations. Switch festive styles as often as you like.",
-        "keywords": ["remove press-ons", "change designs", "flexible styling", "reusable nails"]
-      }
-    ]
-  }
+  "category": "fall",
+  "faqs": [
+    {
+      "question": "How long do fall press-on nails last?",
+      "answer": "Our fall press-on nails typically last 7-14 days with proper application using nail glue. With adhesive tabs, expect 2-3 days of wear. For maximum longevity, ensure your natural nails are clean, dry, and lightly buffed before applying. Avoid prolonged water exposure in the first 2 hours after application, and your autumn-themed nails will stay beautiful throughout the season.",
+      "keywords": ["fall press-on nails last", "how long", "durability", "nail glue"]
+    },
+    {
+      "question": "Can I reuse fall press-on nails?",
+      "answer": "Yes! Our fall press-on nails are reusable 2-3 times with proper care. After removal, gently clean off any remaining glue with acetone or rubbing alcohol, store them in their original packaging, and they're ready for your next autumn event. This makes them incredibly cost-effective – you can rock those gorgeous maple leaf designs for multiple fall gatherings.",
+      "keywords": ["reuse press-on nails", "reusable fall nails", "cost-effective"]
+    },
+    {
+      "question": "What fall nail trends are popular in 2025?",
+      "answer": "Fall 2025 is all about warm, cozy aesthetics! Trending designs include tortoise shell tips (replacing French tips), milky autumn ombres, polka dot accents in burgundy and burnt orange, maple leaf art, and rich jewel tones like emerald and ruby. Our fall collection features all these trending styles, from minimalist caramel browns to elaborate pumpkin spice designs.",
+      "keywords": ["fall nail trends 2025", "autumn nail designs", "tortoise shell nails"]
+    },
+    {
+      "question": "Do press-on nails damage natural nails?",
+      "answer": "No! When applied and removed correctly, press-on nails are actually gentler than gel or acrylic. The key is using proper removal technique: soak in warm soapy water for 10-15 minutes, then gently lift from the sides. Never force or peel them off. Our fall collection includes detailed application and removal instructions to keep your natural nails healthy all season long.",
+      "keywords": ["press-ons damage nails", "safe nail application", "healthy nails"]
+    },
+    {
+      "question": "How do I choose the right size press-on nails?",
+      "answer": "Each set includes 24-30 nails in multiple sizes to fit all nail beds perfectly. Simply match each press-on to your natural nail width – it should cover your nail completely without touching the skin. If between sizes, choose the slightly larger one and file down for a custom fit. Our fall collection's variety ensures every finger gets that perfect autumn look.",
+      "keywords": ["press-on nail sizing", "how to measure", "perfect fit"]
+    },
+    {
+      "question": "What's the best way to apply fall press-on nails?",
+      "answer": "For long-lasting fall nails: 1) Prep natural nails (push back cuticles, buff surface lightly), 2) Clean with alcohol wipe, 3) Apply thin layer of glue to both surfaces, 4) Press firmly for 30 seconds, 5) Avoid water for 2 hours. For temporary wear, use the included adhesive tabs. Our fall designs look salon-quality when applied correctly – perfect for Thanksgiving, fall weddings, or everyday autumn style.",
+      "keywords": ["apply press-on nails", "nail application tips", "long-lasting"]
+    },
+    {
+      "question": "Can I switch between different fall designs?",
+      "answer": "Absolutely! That's the beauty of press-ons. Start with pumpkin spice designs for early fall, switch to maple leaves for mid-autumn, then go with deep burgundy for late season. If using adhesive tabs, you can change your look every few days. With glue application, safely remove after 1-2 weeks and try a new fall design. Mix and match to match your mood and occasions throughout the entire season.",
+      "keywords": ["remove press-ons", "change designs", "flexible styling", "reusable nails"]
+    }
+  ]
+}

@@ -37,7 +37,7 @@ export interface BlogPost {
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  galleryImages?: string[]; // ✅ Added: Array of gallery image URLs
+  galleryImages?: GalleryImage[]; // ✅ Added: Array of gallery image URLs
 }
 
 export interface BlogMetadata {

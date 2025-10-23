@@ -296,8 +296,9 @@ export default function ShopClient({
                     </span>
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
-                <p className="font-semibold text-gray-900">{testimonial.author}</p>
+                <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
+                <p className="font-semibold text-gray-900">{testimonial.name}</p>
+
               </div>
             ))}
           </div>

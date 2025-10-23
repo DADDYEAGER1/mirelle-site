@@ -3,6 +3,7 @@
 
 'use client';
 
+
 import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ChevronDown, ChevronUp } from 'lucide-react';
@@ -282,40 +283,36 @@ export default function ShopClient({
         </section>
       )}
 
-      {/* Testimonials Section - FIXED: Use correct property names */}
-      {categoryData.testimonials && categoryData.testimonials.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
-            What Our Customers Say
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {categoryData.testimonials.map((testimonial, i) => (
-              <div
-                key={i}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
-              >
-                {/* FIXED: Only show stars if rating exists */}
-                {testimonial.rating && (
-                  <div className="flex items-center gap-1 mb-3">
-                    {[...Array(testimonial.rating)].map((_, j) => (
-                      <span key={j} className="text-yellow-500 text-xl">
-                        ★
-                      </span>
-                    ))}
+{/* Why Choose Our Collection */}
+      {category.whyChooseUs && category.whyChooseUs.length > 0 && (
+        <section className="bg-gradient-to-br from-gray-50 to-white py-16">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
+              Why Choose Our {category.displayName} Collection?
+            </h2>
+            <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+              We carefully curate the best press-on nail designs from trusted Amazon sellers
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {category.whyChooseUs.map((benefit, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-4 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-gray-900 to-gray-700 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                   </div>
-                )}
-                {/* FIXED: Changed from testimonial.text to testimonial.review */}
-                <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
-                {/* FIXED: Changed from testimonial.author to testimonial.name */}
-                <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                {/* FIXED: Added product field */}
-                <p className="text-sm text-gray-600 mt-1">{testimonial.product}</p>
-              </div>
-            ))}
+                  <p className="text-gray-700 flex-1 pt-2">{benefit}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}
-
       {/* Related Categories */}
       {categoryData.relatedCategories && categoryData.relatedCategories.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
@@ -346,11 +343,11 @@ export default function ShopClient({
       {/* Trust Signals */}
       <section className="max-w-7xl mx-auto px-4 py-16 border-t border-gray-200">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-          <div>
+          {/* <div>
             <div className="text-4xl mb-3">🚚</div>
             <h3 className="font-semibold text-gray-900 mb-2">Free Shipping</h3>
             <p className="text-sm text-gray-600">On orders over $25</p>
-          </div>
+          </div> */}
           <div>
             <div className="text-4xl mb-3">💯</div>
             <h3 className="font-semibold text-gray-900 mb-2">Quality Guaranteed</h3>

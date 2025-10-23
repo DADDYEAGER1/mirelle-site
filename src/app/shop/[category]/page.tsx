@@ -245,7 +245,7 @@ export async function generateMetadata({
   return {
     title: seo.title,
     description: seo.description,
-    keywords: seo.keywords,
+    keywords: Array.isArray(seo.keywords) ? seo.keywords : [seo.keywords],
     openGraph: {
       title: seo.title,
       description: seo.description,

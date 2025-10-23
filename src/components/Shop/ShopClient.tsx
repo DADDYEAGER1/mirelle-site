@@ -1,5 +1,5 @@
 // src/components/Shop/ShopClient.tsx
-// UPDATED VERSION - TypeScript Safe
+// FIXED VERSION - Matches all type definitions
 
 'use client';
 
@@ -29,12 +29,12 @@ export default function ShopClient({
   const [showAll, setShowAll] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
-  // Filter products
+  // Filter products - FIXED: use originalPrice vs price for sale detection
   const filteredProducts = initialProducts.filter((product) => {
     if (filter === 'all') return true;
     if (filter === 'new') return product.isNew;
     if (filter === 'trending') return product.isTrending;
-    if (filter === 'sale') return product.salePrice && product.salePrice < product.price;
+    if (filter === 'sale') return product.originalPrice !== product.price;
     return true;
   });
 
@@ -50,12 +50,6 @@ export default function ShopClient({
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
-  // Safe access to hero data with fallbacks
-  const heroGradient = categoryData.hero?.gradient || 'from-gray-900 to-gray-700';
-  const heroTitle = categoryData.hero?.title || categoryData.displayName || 'Shop';
-  const heroSubtitle = categoryData.hero?.subtitle || 'Discover our collection';
-  const heroEmojis = categoryData.hero?.floatingEmojis || [];
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Back Button */}
@@ -69,17 +63,17 @@ export default function ShopClient({
         </Link>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero Section - FIXED: Use categoryData properties directly */}
       <section className="relative overflow-hidden">
         <div
-          className={`absolute inset-0 bg-gradient-to-br ${heroGradient} opacity-90`}
+          className={`absolute inset-0 bg-gradient-to-br from-${categoryData.gradientFrom} via-${categoryData.gradientVia} to-${categoryData.gradientTo} opacity-90`}
         />
         <div className="relative max-w-7xl mx-auto px-4 py-16 sm:py-24">
           <div className="text-center">
-            {/* Floating Emojis */}
-            {heroEmojis.length > 0 && (
+            {/* Floating Emojis - FIXED: Use categoryData.emojis */}
+            {categoryData.emojis && categoryData.emojis.length > 0 && (
               <div className="absolute inset-0 pointer-events-none">
-                {heroEmojis.map((emoji, i) => (
+                {categoryData.emojis.map((emoji, i) => (
                   <span
                     key={i}
                     className="absolute text-4xl sm:text-6xl opacity-20 animate-float"
@@ -95,11 +89,12 @@ export default function ShopClient({
               </div>
             )}
 
+            {/* FIXED: Use displayName and year */}
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-              {heroTitle}
+              {categoryData.displayName} {categoryData.year}
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
-              {heroSubtitle}
+              {categoryData.description}
             </p>
           </div>
         </div>
@@ -156,14 +151,13 @@ export default function ShopClient({
       <section className="max-w-7xl mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {displayProducts.map((product) => {
-            const discount = product.salePrice
-              ? calculateDiscount(product.price, product.salePrice)
-              : 0;
+            // FIXED: Use calculateDiscount with string prices
+            const discount = calculateDiscount(product.originalPrice, product.price);
 
             return (
               <a
                 key={product.id}
-                href={product.affiliateUrl}
+                href={product.affiliateUrl} // FIXED: Changed from affiliateLink
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"
@@ -172,7 +166,7 @@ export default function ShopClient({
                 <div className="relative aspect-square overflow-hidden bg-gray-100">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={product.description || product.name} // FIXED: Added fallback
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   {/* Badges */}
@@ -185,6 +179,12 @@ export default function ShopClient({
                     {product.isTrending && (
                       <span className="px-2 py-1 bg-purple-500 text-white text-xs font-bold rounded">
                         TRENDING
+                      </span>
+                    )}
+                    {/* FIXED: Added stockStatus badge */}
+                    {product.stockStatus === 'low-stock' && (
+                      <span className="px-2 py-1 bg-orange-500 text-white text-xs font-bold rounded">
+                        LOW STOCK
                       </span>
                     )}
                     {discount > 0 && (
@@ -200,14 +200,15 @@ export default function ShopClient({
                   <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
                     {product.name}
                   </h3>
+                  {/* FIXED: Use originalPrice vs price comparison */}
                   <div className="flex items-center gap-2">
-                    {product.salePrice && product.salePrice < product.price ? (
+                    {product.originalPrice !== product.price ? (
                       <>
                         <span className="text-xl font-bold text-red-600">
-                          {product.salePrice}
+                          {product.price}
                         </span>
                         <span className="text-sm text-gray-500 line-through">
-                          {product.price}
+                          {product.originalPrice}
                         </span>
                       </>
                     ) : (
@@ -222,6 +223,10 @@ export default function ShopClient({
                       <span className="text-sm text-gray-600">{product.rating}</span>
                     </div>
                   )}
+                  {/* FIXED: Added CTA button */}
+                  <button className="mt-3 w-full bg-gray-900 text-white py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+                    {product.cta}
+                  </button>
                 </div>
               </a>
             );
@@ -277,7 +282,7 @@ export default function ShopClient({
         </section>
       )}
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section - FIXED: Use correct property names */}
       {categoryData.testimonials && categoryData.testimonials.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
@@ -296,9 +301,12 @@ export default function ShopClient({
                     </span>
                   ))}
                 </div>
+                {/* FIXED: Changed from testimonial.text to testimonial.review */}
                 <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
+                {/* FIXED: Changed from testimonial.author to testimonial.name */}
                 <p className="font-semibold text-gray-900">{testimonial.name}</p>
-
+                {/* FIXED: Added product field */}
+                <p className="text-sm text-gray-600 mt-1">{testimonial.product}</p>
               </div>
             ))}
           </div>
@@ -306,32 +314,32 @@ export default function ShopClient({
       )}
 
       {/* Related Categories */}
-{/* Related Categories */}
-{categoryData.relatedCategories && categoryData.relatedCategories.length > 0 && (
-  <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
-    <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
-      Explore More Collections
-    </h2>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-      {categoryData.relatedCategories.map((relatedSlug) => (
-        <Link
-          key={relatedSlug}
-          href={`/shop/${relatedSlug}`}
-          className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all overflow-hidden"
-        >
-          <div className="aspect-square relative overflow-hidden bg-gray-200 flex items-center justify-center">
-            <span className="text-5xl">💅</span>
+      {categoryData.relatedCategories && categoryData.relatedCategories.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+            Explore More Collections
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {categoryData.relatedCategories.map((relatedSlug) => (
+              <Link
+                key={relatedSlug}
+                href={`/shop/${relatedSlug}`}
+                className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all overflow-hidden"
+              >
+                <div className="aspect-square relative overflow-hidden bg-gray-200 flex items-center justify-center">
+                  <span className="text-5xl">💅</span>
+                </div>
+                <div className="p-4 text-center">
+                  <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                    {relatedSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} Nails
+                  </h3>
+                </div>
+              </Link>
+            ))}
           </div>
-          <div className="p-4 text-center">
-            <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-              {relatedSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')} Nails
-            </h3>
-          </div>
-        </Link>
-      ))}
-    </div>
-  </section>
-)}
+        </section>
+      )}
+
       {/* Trust Signals */}
       <section className="max-w-7xl mx-auto px-4 py-16 border-t border-gray-200">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
@@ -365,6 +373,21 @@ export default function ShopClient({
           accurate as of publication and may vary.
         </p>
       </section>
+
+      {/* Float Animation */}
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-20px) rotate(10deg);
+          }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   );
 }

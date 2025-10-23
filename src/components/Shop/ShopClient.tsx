@@ -284,17 +284,17 @@ export default function ShopClient({
       )}
 
 {/* Why Choose Our Collection */}
-      {CategoryData.whyChooseUs && CategoryData.whyChooseUs.length > 0 && (
+      {category.whyChooseUs && category.whyChooseUs.length > 0 && (
         <section className="bg-gradient-to-br from-gray-50 to-white py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
-              Why Choose Our {CategoryData.displayName} Collection?
+              Why Choose Our {category.displayName} Collection?
             </h2>
             <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
               We carefully curate the best press-on nail designs from trusted Amazon sellers
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {CategoryData.whyChooseUs.map((benefit, index) => (
+              {category.whyChooseUs.map((benefit, index) => (
                 <div
                   key={index}
                   className="flex items-start gap-4 bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"

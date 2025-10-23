@@ -79,7 +79,11 @@ export interface CategoryData {
   ctas: string[]; // Added - in JSON but not type
   seo: CategorySEO;
   relatedCategories: string[]; // Changed to string[] - actual slugs
-  whyChooseUs: string[];
+  whyChooseUs?: Array<{
+    title: string;
+    description: string;
+    icon?: string;
+  }>;
 }
 
 // Complete category page data

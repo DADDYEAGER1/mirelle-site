@@ -79,11 +79,15 @@ export function filterProducts(products: Product[], filter: 'all' | 'new' | 'tre
 /**
  * Calculate discount percentage
  */
-export function calculateDiscount(originalPrice: string, salePrice: string): number {
-  const original = parseFloat(originalPrice.replace('$', ''));
-  const sale = parseFloat(salePrice.replace('$', ''));
-  
-  if (original === 0 || sale >= original) return 0;
-  
-  return Math.round(((original - sale) / original) * 100);
+export function calculateDiscount(originalPrice: number, salePrice?: number): number {
+  if (!salePrice || salePrice >= originalPrice) return 0;
+  return Math.round(((originalPrice - salePrice) / originalPrice) * 100);
 }
+// export function calculateDiscount(originalPrice: string, salePrice: string): number {
+//   const original = parseFloat(originalPrice.replace('$', ''));
+//   const sale = parseFloat(salePrice.replace('$', ''));
+  
+//   if (original === 0 || sale >= original) return 0;
+  
+//   return Math.round(((original - sale) / original) * 100);
+// }

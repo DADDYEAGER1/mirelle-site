@@ -1,5 +1,5 @@
 // src/components/Shop/ShopClient.tsx
-// UPDATED VERSION with SEO Description and FAQ sections
+// UPDATED VERSION - TypeScript Safe
 
 'use client';
 
@@ -50,6 +50,12 @@ export default function ShopClient({
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
+  // Safe access to hero data with fallbacks
+  const heroGradient = categoryData.hero?.gradient || 'from-gray-900 to-gray-700';
+  const heroTitle = categoryData.hero?.title || categoryData.name || 'Shop';
+  const heroSubtitle = categoryData.hero?.subtitle || 'Discover our collection';
+  const heroEmojis = categoryData.hero?.floatingEmojis || [];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Back Button */}
@@ -66,38 +72,40 @@ export default function ShopClient({
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div
-          className={`absolute inset-0 bg-gradient-to-br ${categoryData.hero.gradient} opacity-90`}
+          className={`absolute inset-0 bg-gradient-to-br ${heroGradient} opacity-90`}
         />
         <div className="relative max-w-7xl mx-auto px-4 py-16 sm:py-24">
           <div className="text-center">
             {/* Floating Emojis */}
-            <div className="absolute inset-0 pointer-events-none">
-              {categoryData.hero.floatingEmojis.map((emoji, i) => (
-                <span
-                  key={i}
-                  className="absolute text-4xl sm:text-6xl opacity-20 animate-float"
-                  style={{
-                    left: `${(i * 25) % 100}%`,
-                    top: `${(i * 30) % 100}%`,
-                    animationDelay: `${i * 0.5}s`,
-                  }}
-                >
-                  {emoji}
-                </span>
-              ))}
-            </div>
+            {heroEmojis.length > 0 && (
+              <div className="absolute inset-0 pointer-events-none">
+                {heroEmojis.map((emoji, i) => (
+                  <span
+                    key={i}
+                    className="absolute text-4xl sm:text-6xl opacity-20 animate-float"
+                    style={{
+                      left: `${(i * 25) % 100}%`,
+                      top: `${(i * 30) % 100}%`,
+                      animationDelay: `${i * 0.5}s`,
+                    }}
+                  >
+                    {emoji}
+                  </span>
+                ))}
+              </div>
+            )}
 
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-              {categoryData.hero.title}
+              {heroTitle}
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
-              {categoryData.hero.subtitle}
+              {heroSubtitle}
             </p>
           </div>
         </div>
       </section>
 
-      {/* SEO Description Section - NEW */}
+      {/* SEO Description Section */}
       {description && (
         <section className="max-w-4xl mx-auto px-4 py-12">
           <div className="prose prose-lg max-w-none">
@@ -148,12 +156,10 @@ export default function ShopClient({
       <section className="max-w-7xl mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {displayProducts.map((product) => {
-            const discount = product.salePrice
-              ? calculateDiscount(product.price, product.salePrice)
-              : 0;
+            const discount = calculateDiscount(product.price, product.salePrice);
 
             return (
-              <a
+              
                 key={product.id}
                 href={product.affiliateLink}
                 target="_blank"
@@ -194,19 +200,19 @@ export default function ShopClient({
                   </h3>
                   <div className="flex items-center gap-2">
                     {product.salePrice && product.salePrice < product.price ? (
-  <>
-    <span className="text-xl font-bold text-red-600">
-      {product.salePrice}
-    </span>
-    <span className="text-sm text-gray-500 line-through">
-      {product.price}
-    </span>
-  </>
-) : (
-  <span className="text-xl font-bold text-gray-900">
-    {product.price}
-  </span>
-)}
+                      <>
+                        <span className="text-xl font-bold text-red-600">
+                          ${product.salePrice.toFixed(2)}
+                        </span>
+                        <span className="text-sm text-gray-500 line-through">
+                          ${product.price.toFixed(2)}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="text-xl font-bold text-gray-900">
+                        ${product.price.toFixed(2)}
+                      </span>
+                    )}
                   </div>
                   {product.rating && (
                     <div className="flex items-center gap-1 mt-2">
@@ -233,7 +239,7 @@ export default function ShopClient({
         )}
       </section>
 
-      {/* FAQ Section - NEW */}
+      {/* FAQ Section */}
       {faqs && faqs.length > 0 && (
         <section className="max-w-4xl mx-auto px-4 py-16 bg-gray-50">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
@@ -327,7 +333,7 @@ export default function ShopClient({
         </section>
       )}
 
-      {/* Trust Signals - NEW */}
+      {/* Trust Signals */}
       <section className="max-w-7xl mx-auto px-4 py-16 border-t border-gray-200">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
           <div>

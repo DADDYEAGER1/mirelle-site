@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { BlogPost as BlogPostType } from '@/types/blog';
 import BlogSidebar from './BlogSidebar';
 import CommentSection from '@/components/Blog/CommentSection';
+import PinterestOverlay from '@/components/PinterestOverlay'; // ← ADD THIS
 
 interface BlogPostProps {
   post: BlogPostType;

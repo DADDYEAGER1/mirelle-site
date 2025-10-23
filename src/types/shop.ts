@@ -4,15 +4,18 @@
 export interface Product {
   id: string;
   name: string;
-  price: number;
-  salePrice?: number;
+  price: string;           // Changed to string (shows as "$19.99")
+  salePrice?: string;      // Changed to string
+  originalPrice: string;   // ADD THIS
   image: string;
-  affiliateLink: string;
+  affiliateUrl: string;    // Changed from affiliateLink
+  cta: string;             // ADD THIS
+  description?: string;
   category: string;
   isNew?: boolean;
   isTrending?: boolean;
+  stockStatus?: string;    // ADD THIS ('low-stock', etc)
   rating?: number;
-  description?: string;
 }
 
 export interface CategorySEO {

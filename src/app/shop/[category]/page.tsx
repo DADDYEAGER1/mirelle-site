@@ -1,5 +1,5 @@
 // src/app/shop/[category]/page.tsx
-// UPDATED VERSION with all SEO schemas integrated
+// UPDATED VERSION with all SEO schemas integrated - FIXED
 
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -14,7 +14,7 @@ import {
 async function getFAQs(category: string) {
   try {
     const faqModule = await import(`@/content/shop-faqs/${category}.json`);
-    return faqModule.default.faqs;
+    return faqModule.default.faqs || faqModule.faqs || [];
   } catch {
     return [];
   }
@@ -24,7 +24,7 @@ async function getFAQs(category: string) {
 async function getCategoryDescription(category: string) {
   try {
     const descModule = await import(`@/content/shop-descriptions/${category}.json`);
-    return descModule.default;
+    return descModule.default || descModule;
   } catch {
     return null;
   }
@@ -96,7 +96,7 @@ function generateCollectionPageSchema(
     '@type': 'CollectionPage',
     name: `${displayName} Collection`,
     description: categoryData.seo.description,
-    url: `https://mirelle.com/shop/${categoryData.slug}`,
+    url: `https://mirelleinspo.com/shop/${categoryData.slug}`,
     numberOfItems: products.length,
     aggregateRating: aggregateRating,
     about: {
@@ -107,15 +107,19 @@ function generateCollectionPageSchema(
     isPartOf: {
       '@type': 'WebSite',
       name: 'Mirelle',
-      url: 'https://mirelle.com',
+      url: 'https://mirelleinspo.com',
     },
   };
 }
 
 function generateItemListSchema(categoryData: any, products: any[]) {
+  // FIXED: Parse string prices correctly
   const prices = products
-    .map((p) => p.salePrice || p.price)
-    .filter((p) => p > 0);
+    .map((p) => {
+      const priceStr = p.price.toString().replace('$', '');
+      return parseFloat(priceStr);
+    })
+    .filter((p) => !isNaN(p) && p > 0);
 
   const minPrice = prices.length > 0 ? Math.min(...prices) : 3.99;
   const maxPrice = prices.length > 0 ? Math.max(...prices) : 29.99;
@@ -147,10 +151,10 @@ function generateItemListSchema(categoryData: any, products: any[]) {
           product.description ||
           `Beautiful ${displayName.toLowerCase()} press-on nail design`,
         image: product.image,
-        url: product.affiliateLink,
+        url: product.affiliateUrl, // FIXED: Changed from affiliateLink
         offers: {
           '@type': 'Offer',
-          price: (product.salePrice || product.price).toFixed(2),
+          price: product.price.toString().replace('$', ''),
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
           priceValidUntil: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
@@ -189,19 +193,19 @@ function generateBreadcrumbSchema(categoryData: any) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://mirelle.com',
+        item: 'https://mirelleinspo.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Shop',
-        item: 'https://mirelle.com/shop',
+        item: 'https://mirelleinspo.com/shop',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: displayName,
-        item: `https://mirelle.com/shop/${categoryData.slug}`,
+        item: `https://mirelleinspo.com/shop/${categoryData.slug}`,
       },
     ],
   };
@@ -246,10 +250,11 @@ export async function generateMetadata({
       title: seo.title,
       description: seo.description,
       type: 'website',
-      url: `https://mirelle.com/shop/${category}`,
+      url: `https://mirelleinspo.com/shop/${category}`,
       images: [
         {
-          url: categoryData.hero?.image || categoryData.heroImage,
+          // FIXED: Use heroImage directly, not hero.image
+          url: categoryData.heroImage,
           alt: seo.title,
         },
       ],
@@ -258,10 +263,11 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: seo.title,
       description: seo.description,
-      images: [categoryData.hero?.image || categoryData.heroImage],
+      // FIXED: Use heroImage directly
+      images: [categoryData.heroImage],
     },
     alternates: {
-      canonical: `https://mirelle.com/shop/${category}`,
+      canonical: `https://mirelleinspo.com/shop/${category}`,
     },
   };
 }
@@ -335,7 +341,7 @@ export default async function ShopCategoryPage({
         />
       )}
 
-            {/* Main Shop Component */}
+      {/* Main Shop Component */}
       <ShopClient
         categoryData={categoryData}
         initialProducts={products}

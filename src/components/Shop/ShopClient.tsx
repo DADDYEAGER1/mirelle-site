@@ -204,10 +204,10 @@ export default function ShopClient({
                     {product.salePrice && product.salePrice < product.price ? (
                       <>
                         <span className="text-xl font-bold text-red-600">
-                          ${product.salePrice.toFixed(2)}
+                          {product.salePrice}
                         </span>
                         <span className="text-sm text-gray-500 line-through">
-                          ${product.price.toFixed(2)}
+                          {product.price}
                         </span>
                       </>
                     ) : (

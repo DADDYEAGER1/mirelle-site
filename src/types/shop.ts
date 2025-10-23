@@ -33,11 +33,10 @@ export interface HeroSection {
 }
 
 export interface Testimonial {
-  text: string;
-  author: string;
-  rating: number;
+  name: string;
+  review: string;
+  product: string;
 }
-
 export interface RelatedCategory {
   name: string;
   slug: string;

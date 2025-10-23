@@ -1,15 +1,8 @@
-// Helper functions for reading shop data from JSON files
-import type { CategoryData, Product } from '@/types/shop';
+// src/lib/shop.ts
+// FIXED VERSION with proper type imports
+
+import type { CategoryData, Product, CategoriesData, ProductsData } from '@/types/shop';
 import categoriesData from '@/content/shop-categories.json';
-
-// Define inline types for JSON structure
-interface CategoriesData {
-  categories: Record<string, CategoryData>;
-}
-
-interface ProductsData {
-  products: Product[];
-}
 
 /**
  * Get category metadata by slug
@@ -24,7 +17,7 @@ export function getCategoryData(slug: string): CategoryData | null {
  */
 export async function getCategoryProducts(slug: string): Promise<Product[]> {
   try {
-    const productsData: ProductsData = await import(`@/content/shop-products/${slug}.json`);
+    const productsData = await import(`@/content/shop-products/${slug}.json`) as ProductsData;
     return productsData.products || [];
   } catch (error) {
     console.error(`Error loading products for category: ${slug}`, error);
@@ -68,14 +61,6 @@ export async function getCategoryProductCount(slug: string): Promise<number> {
   return products.length;
 }
 
-export function calculateDiscount(originalPrice: string, salePrice: string): number {
-  const original = parseFloat(originalPrice.replace('$', ''));
-  const sale = parseFloat(salePrice.replace('$', ''));
-  
-  if (original === 0 || sale >= original) return 0;
-  
-  return Math.round(((original - sale) / original) * 100);
-}
 /**
  * Filter products by type
  */
@@ -86,7 +71,7 @@ export function filterProducts(products: Product[], filter: 'all' | 'new' | 'tre
     case 'trending':
       return products.filter(p => p.isTrending);
     case 'sale':
-      return products.filter(p => p.salePrice && p.salePrice < p.price);
+      return products.filter(p => p.originalPrice !== p.price);
     case 'all':
     default:
       return products;
@@ -94,9 +79,14 @@ export function filterProducts(products: Product[], filter: 'all' | 'new' | 'tre
 }
 
 /**
- * Calculate discount percentage
-//  */
-// export function calculateDiscount(originalPrice: number, salePrice?: number): number {
-//   if (!salePrice || salePrice >= originalPrice) return 0;
-//   return Math.round(((originalPrice - salePrice) / originalPrice) * 100);
-// }
+ * Calculate discount percentage from string prices
+ */
+export function calculateDiscount(originalPrice: string, currentPrice: string): number {
+  // Remove $ and parse to float
+  const original = parseFloat(originalPrice.replace('$', ''));
+  const current = parseFloat(currentPrice.replace('$', ''));
+  
+  if (original === 0 || current >= original) return 0;
+  
+  return Math.round(((original - current) / original) * 100);
+}

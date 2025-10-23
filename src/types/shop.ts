@@ -20,8 +20,8 @@ export interface Product {
 export interface CategorySEO {
   title: string;
   description: string;
-  keywords: string[];
-  ogImage: string; // Added - used in page.tsx
+  keywords: string[]; // Keep as array - we'll normalize in getCategoryData
+  ogImage: string;
 }
 
 export interface HeroSection {

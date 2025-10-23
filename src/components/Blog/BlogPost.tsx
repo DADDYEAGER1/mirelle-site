@@ -51,19 +51,6 @@ export default function BlogPost({ post }: BlogPostProps) {
           <span>•</span>
           <span>{post.readTime} read</span>
           
-          {/* ✅ NEW - Display Rating if exists */}
-          {post.rating && (
-            <>
-              <span>•</span>
-              <span className="flex items-center gap-1 text-yellow-600 font-medium">
-                ⭐ {post.rating.value}
-                <span className="text-gray-500 text-xs ml-1">
-                  ({post.rating.count} reviews)
-                </span>
-              </span>
-            </>
-          )}
-        </div>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
           {/* ✅ NEW - Show category badge first if exists */}

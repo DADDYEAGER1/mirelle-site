@@ -294,13 +294,16 @@ export default function ShopClient({
                 key={i}
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
               >
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(testimonial.rating)].map((_, j) => (
-                    <span key={j} className="text-yellow-500 text-xl">
-                      ★
-                    </span>
-                  ))}
-                </div>
+                {/* FIXED: Only show stars if rating exists */}
+                {testimonial.rating && (
+                  <div className="flex items-center gap-1 mb-3">
+                    {[...Array(testimonial.rating)].map((_, j) => (
+                      <span key={j} className="text-yellow-500 text-xl">
+                        ★
+                      </span>
+                    ))}
+                  </div>
+                )}
                 {/* FIXED: Changed from testimonial.text to testimonial.review */}
                 <p className="text-gray-700 mb-4 italic">"{testimonial.review}"</p>
                 {/* FIXED: Changed from testimonial.author to testimonial.name */}

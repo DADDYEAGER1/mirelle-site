@@ -1,7 +1,15 @@
 // Helper functions for reading shop data from JSON files
 import type { CategoryData, Product } from '@/types/shop';
-
 import categoriesData from '@/content/shop-categories.json';
+
+// Define inline types for JSON structure
+interface CategoriesData {
+  categories: Record<string, CategoryData>;
+}
+
+interface ProductsData {
+  products: Product[];
+}
 
 /**
  * Get category metadata by slug
@@ -70,7 +78,7 @@ export function filterProducts(products: Product[], filter: 'all' | 'new' | 'tre
     case 'trending':
       return products.filter(p => p.isTrending);
     case 'sale':
-      return products.filter(p => p.originalPrice !== p.price);
+      return products.filter(p => p.salePrice && p.salePrice < p.price);
     case 'all':
     default:
       return products;
@@ -84,11 +92,3 @@ export function calculateDiscount(originalPrice: number, salePrice?: number): nu
   if (!salePrice || salePrice >= originalPrice) return 0;
   return Math.round(((originalPrice - salePrice) / originalPrice) * 100);
 }
-// export function calculateDiscount(originalPrice: string, salePrice: string): number {
-//   const original = parseFloat(originalPrice.replace('$', ''));
-//   const sale = parseFloat(salePrice.replace('$', ''));
-  
-//   if (original === 0 || sale >= original) return 0;
-  
-//   return Math.round(((original - sale) / original) * 100);
-// }

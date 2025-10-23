@@ -1,6 +1,7 @@
 // src/types/shop.ts
 // FIXED VERSION with all necessary properties
 
+
 export interface Product {
   id: string;
   name: string;

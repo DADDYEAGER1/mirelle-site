@@ -65,9 +65,10 @@ Classic Thanksgiving nail colors include burgundy, burnt orange, mustard yellow,
 
 Professional tip from top manicurists: Mix warm and cool tones together for added dimension. Burgundy with sage green accents creates stunning depth. Check out <a href='/shop/fall' class='text-blue-600 hover:text-blue-800 underline'>our fall collection</a> for curated color sets.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500817644/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-nail-colors-2025.png' alt='Best thanksgiving nail colors including burgundy burnt orange and gold polish swatches' />
 </a>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817644/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these Thanksgiving nail colors to Pinterest →</a></p>
 
 ---
 
@@ -112,6 +113,7 @@ Which design caught your eye first? Save your favorites for later!
 <a href='https://in.pinterest.com/pin/913034524500817669/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-short-nails.png' alt='Easy thanksgiving nail designs for short nails with fall colors' />
 </a>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817669/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin these easy Thanksgiving nail designs →</a></p>
 
 ### Intermediate Designs (16-30)
 
@@ -150,6 +152,7 @@ These designs require moderate skill but deliver impressive results:
 <a href='https://in.pinterest.com/pin/913034524500817638/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-long-nails-almond.png' alt='Thanksgiving nails on long almond shaped nails with intricate fall art' />
 </a>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817638/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these almond nail designs to Pinterest →</a></p>
 
 ### Advanced & Salon-Worthy (31-42)
 
@@ -184,6 +187,7 @@ Ready to try one of these show-stopping designs?
 <a href='https://in.pinterest.com/pin/913034524500817650/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-ombre-nails.png' alt='Thanksgiving ombre nails with fall color gradient from red to orange' />
 </a>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817650/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin this ombre nail tutorial for later →</a></p>
 
 ---
 
@@ -215,7 +219,7 @@ Professional tip: Imperfect leaves actually look more realistic than perfect one
 <a href='https://in.pinterest.com/pin/913034524500817625/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-nails-tutorial.png' alt='Step by step thanksgiving nail art tutorial showing leaf design technique' />
 </a>
-
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817625/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save this Thanksgiving nail tutorial →</a></p>
 ---
 
 ## Best Products Recommended by Professionals

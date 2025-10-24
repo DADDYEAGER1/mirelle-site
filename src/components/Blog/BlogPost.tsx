@@ -29,7 +29,7 @@ export default function BlogPost({ post }: BlogPostProps) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <PinterestOverlay /> {/* ← ADD THIS LINE */}
+      {/* <PinterestOverlay /> {/* ← ADD THIS LINE */} */}
       <div className="mb-6">
         <Link 
           href="/blog"

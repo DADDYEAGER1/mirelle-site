@@ -60,7 +60,6 @@ The valentine nail scene in 2026 looks completely different from even last year.
 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
   <img src='/images/blog/valentine-nails-color-palette-pink-red-white.jpg' alt='Valentine nails 2026 color palette featuring romantic pink red and white shades' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Save this to Pinterest</a> for your valentine nail inspiration board!</p>
 
 ---
 
@@ -80,10 +79,10 @@ Longer nail shapes like almond and coffin offer the most canvas for intricate va
 
 **3D bow embellishments** work best on one or two accent nails maximum. Nail artists use gel or acrylic to sculpt small bow shapes, cure them properly, then paint in soft pink or white. Tiny rhinestones in the bow centers add extra dimension. These require professional skill but create stunning statement nails for special occasions.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500843980/' target='_blank' rel='noopener'>
   <img src='/images/blog/almond-valentine-nails-chrome-finish.jpg' alt='Valentine nails 2026 almond shape with chrome pink finish' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Pin this design</a> to your nail art collection!</p>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500843980/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these almond valentine nails →</a></p>
 
 **Marble effect with pink and white** mimics natural stone in romantic colors. Use a water marble technique or dry brush method to create swirled patterns. Add gold foil flakes for luxury vibes. This design is forgiving of imperfections—the randomness is actually part of its charm.
 
@@ -103,10 +102,10 @@ Short nails deserve just as much valentine love, and some designs work better on
 
 **Glitter gradient** adds sparkle without full glitter nails. Apply your base color, then use a makeup sponge to dab fine pink or red glitter from the tips downward, fading it out toward the cuticle. Seal with gel top coat for a smooth finish.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500843987/' target='_blank' rel='noopener'>
   <img src='/images/blog/short-valentine-nails-simple-hearts.jpg' alt='Valentine nails 2026 short length with simple heart designs' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Save to Pinterest</a> for later!</p>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500843987/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin these short valentine nails →</a></p>
 
 **Half-moon designs** use your natural nail shape. Paint the main nail area in red or pink, but leave a half-moon shape at the cuticle unpainted or filled with a contrasting color like white or gold. This vintage technique feels fresh again and elongates the appearance of short nails.
 
@@ -130,10 +129,10 @@ For those who want to make a statement:
 
 We tested dozens of gel application methods to find the technique that delivers professional results at home. This tutorial walks you through creating gel valentine nails with trending heart French tips. The entire process takes about 45 minutes and results in a manicure lasting 2-3 weeks with proper care.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500844026/' target='_blank' rel='noopener'>
   <img src='/images/blog/gel-valentine-nails-application-technique.jpg' alt='Professional gel valentine nails application showing proper curing technique' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Pin this tutorial</a> for your DIY valentine nails!</p>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500844026/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save this gel application tutorial →</a></p>
 
 ### What You Need
 
@@ -178,10 +177,10 @@ The most critical part: cap the free edge. This means running your brush along t
 
 Cure under your LED lamp for 60 seconds. Repeat for all ten nails. Your nails should feel slightly tacky afterward—that's normal with most base coats.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500844056/' target='_blank' rel='noopener'>
   <img src='/images/blog/ombre-valentine-nails-pink-gradient.jpg' alt='Valentine nails 2026 ombre gradient from pink to red romantic design' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Save this gradient technique</a> to your Pinterest board!</p>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500844056/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin this ombre valentine design →</a></p>
 
 **Step 3: Apply Pink Base Color (8 minutes)**
 
@@ -217,10 +216,10 @@ Clean up any gel that got on your skin during application using a small brush di
 
 Avoid water, lotions, or getting your hands wet for the next 2 hours to let the gel fully harden. After that, you're good to go with your gorgeous valentine nails.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500844070/' target='_blank' rel='noopener'>
   <img src='/images/blog/cherry-valentine-nails-trendy-design.jpg' alt='Valentine nails with cherry motif trending design for 2026' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Pin this cherry design</a> - it's trending everywhere!</p>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500844070/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these cherry valentine nails →</a></p>
 
 For those looking to expand their seasonal nail repertoire, our guides on <a href='https://www.mirelleinspo.com/blog/winter-nails-2025' class='text-blue-600 hover:text-blue-800 underline'>winter nail trends</a> and <a href='https://www.mirelleinspo.com/blog/new-year-nails-2025' class='text-blue-600 hover:text-blue-800 underline'>New Year's designs</a> offer complementary techniques you can adapt year-round.
 
@@ -256,10 +255,10 @@ We tested dozens of gel polishes and nail products to find what actually deliver
 
 For comprehensive guidance on maintaining healthy nails between manicures, explore our <a href='https://www.mirelleinspo.com/topics/nail-care-guide' class='text-blue-600 hover:text-blue-800 underline'>complete nail care guide</a> with expert-tested techniques.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500844100/' target='_blank' rel='noopener'>
   <img src='/images/blog/glitter-valentine-nails-accent-nail.jpg' alt='Valentine nails 2026 with glitter accent nail and heart embellishments' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Save this glitter look</a> to your inspiration board!</p>
+<p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500844100/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin this glitter accent design →</a></p>
 
 You can explore more product recommendations through our <a href='https://www.mirelleinspo.com/shop' class='text-blue-600 hover:text-blue-800 underline'>curated shop collections</a>.
 
@@ -308,7 +307,6 @@ Short nails are having a major moment right now. The practical length with gorge
 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
   <img src='/images/blog/complete-valentine-manicure-cuticle-oil.jpg' alt='Finished valentine nails 2026 with cuticle oil for lasting shine' />
 </a>
-<p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener' class='text-pink-600 hover:text-pink-800 underline font-semibold'>Pin this finished look</a> for your valentine's reference!</p>
 
 ### How much do valentine nails cost at a salon
 

@@ -77,6 +77,8 @@ This complete guide covers everything from the best <a href='https://www.mirelle
   <img src='/images/blog/tropical-beach-vacation-nails-designs.jpg' alt='Tropical vacation nails with palm trees and ocean blue colors for beach getaways' />
 </a>
 
+<p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500838694/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these tropical nail designs to Pinterest →</a></p>
+
 ---
 
 ## What's Trending in Vacation Nails for 2025
@@ -132,6 +134,8 @@ For regular polish insistence, quality fast-dry top coats require daily reapplic
 <a href='https://in.pinterest.com/pin/913034524500838717/' target='_blank' rel='noopener'>
   <img src='/images/blog/winter-holiday-vacation-nails-designs.jpg' alt='Winter holiday vacation nails with elegant red and gold festive manicure designs' />
 </a>
+
+<p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500838717/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these winter vacation nails to Pinterest →</a></p>
 
 ---
 
@@ -363,9 +367,7 @@ Skip bringing multiple regular polish bottles. Choose one neutral shade and one 
 
 Leave fancy nail art supplies at home unless nail art is literally the trip purpose. Dotting tools, striping brushes, rhinestones, and 3D elements aren't vacation essentials. Keep travel kits minimal and functional. Nail art guides are better enjoyed from home comfort.
 
-<a href='https://in.pinterest.com/pin/913034524500838721/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vacation-nails-travel-kit-essentials-products.jpg' alt='Vacation nails travel kit with essential products for maintaining manicure on trips' />
-</a>
+<img src='/images/blog/vacation-nails-travel-kit-essentials-products.jpg' alt='Vacation nails travel kit with essential products for maintaining manicure on trips' />
 
 **Hand and Nail Care During Travel**
 
@@ -465,7 +467,11 @@ File broken nails smooth immediately with emergency nail files then apply thin n
 
 Absolutely, but schedule appointments 2-3 days before flights not morning of travel. This allows complete curing and prevents sensitivity issues during cabin pressure changes. Professional nail technicians have tested this timing extensively with zero problems during international flights based on years of destination travel experience.
 
-<img src='/images/blog/press-on-vs-gel-vacation-nails-comparison.jpg' alt='Press-on nails versus gel manicure durability comparison for vacation wear' />
+<a href='https://in.pinterest.com/pin/913034524500838721/' target='_blank' rel='noopener'>
+  <img src='/images/blog/press-on-vs-gel-vacation-nails-comparison.jpg' alt='Press-on nails versus gel manicure durability comparison for vacation wear' />
+</a>
+
+<p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500838721/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save this vacation nail comparison to Pinterest →</a></p>
 
 ---
 

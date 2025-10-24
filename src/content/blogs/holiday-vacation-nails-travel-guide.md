@@ -373,7 +373,7 @@ Don't bring LED lamps unless traveling longer than three weeks. They occupy valu
 
 Skip bringing multiple regular polish bottles. Choose one neutral shade and one fun color maximum if regular polish is necessary. Better yet, do gel or press-ons before leaving and skip polish entirely. Backs thank you when carrying luggage.
 
-Leave fancy nail art supplies at home unless nail art is literally the trip purpose. Dotting tools, striping brushes, rhinestones, and 3D elements aren't vacation essentials. Keep travel kits minimal and functional. Nail art guides are better enjoyed from home comfort.
+Leave fancy nail art supplies at home unless nail art is literally the trip purpose. Dotting tools, striping brushes, rhinestones, and 3D elements aren't vacation essentials. Keep travel kits minimal and functional.
 
 <img src='/images/blog/vacation-nails-travel-kit-essentials-products.jpg' alt='Vacation nails travel kit with essential products for maintaining manicure on trips' />
 
@@ -518,3 +518,18 @@ Now get ready to book those manicure appointments for 2-3 days before trips. You
 </div>
 
 ---
+
+**Image Filenames List:**
+
+1. hero-holiday-vacation-nails-travel-guide.jpg
+2. tropical-beach-vacation-nails-designs.jpg
+3. winter-holiday-vacation-nails-designs.jpg
+4. caribbean-vacation-nails-tropical-designs.jpg
+5. ski-resort-winter-vacation-nails-designs.jpg
+6. wedding-destination-vacation-nails-bridal.jpg
+7. gel-vacation-nails-application-tutorial.jpg
+8. vacation-nails-color-palette-seasonal.jpg
+9. vacation-nails-travel-kit-essentials-products.jpg
+10. press-on-vs-gel-vacation-nails-comparison.jpg
+
+All images include Pinterest redirect links to: https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/

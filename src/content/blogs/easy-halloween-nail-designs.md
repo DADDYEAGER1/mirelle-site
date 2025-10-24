@@ -576,13 +576,6 @@ See a dermatologist for discoloration or texture issues.
 Your Halloween nail journey begins with a single design — start simple and enjoy the process.  
 These 35 easy Halloween nail designs offer something for every style and skill level.
 
-For more inspiration:  
-Follow us on  
-<a href='https://pinterest.com/mirelle_inspo' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>Pinterest</a>  
-or explore our  
-<a href='/blog' class='text-blue-600 hover:text-blue-800 underline'>complete blog collection</a>  
-covering nail trends for every season.
-
 ---
 
 ## Related Halloween & Fall Content

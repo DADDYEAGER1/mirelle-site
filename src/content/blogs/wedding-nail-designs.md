@@ -197,7 +197,6 @@ Real brides on WeddingWire forums shared that acrylics held up perfectly even af
 
 <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener"><img src="/images/blog/wedding-nail-shapes-guide.jpg" alt="Wedding nail shapes guide featuring almond coffin and oval bridal styles"></a>
 
-<p style="text-align: center; margin-top: 10px;"><a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" style="color: #2563eb; text-decoration: underline; font-weight: 500;">💅 Discover perfect nail shapes on Pinterest</a></p>
 
 ## Best Nail Shapes for Wedding Photos
 
@@ -358,7 +357,6 @@ If you're going somewhere tropical, consider how your nails will hold up. Long a
 
 <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener"><img src="/images/blog/wedding-nails-dos-donts.jpg" alt="Wedding nails dos and donts guide for avoiding bridal manicure mistakes"></a>
 
-<p style="text-align: center; margin-top: 10px;"><a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" style="color: #2563eb; text-decoration: underline; font-weight: 500;">💅 Avoid common mistakes - check our Pinterest guide</a></p>
 
 ## Frequently Asked Questions About Wedding Nails
 

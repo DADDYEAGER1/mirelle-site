@@ -109,7 +109,7 @@ We curated these simple designs perfect for nail art beginners or anyone short o
 
 Which design caught your eye first? Save your favorites for later!
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500817669/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-short-nails.png' alt='Easy thanksgiving nail designs for short nails with fall colors' />
 </a>
 
@@ -147,7 +147,7 @@ These designs require moderate skill but deliver impressive results:
 
 **30. Simple Florals** - Hand-painted fall flowers like chrysanthemums or daisies.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500817638/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-long-nails-almond.png' alt='Thanksgiving nails on long almond shaped nails with intricate fall art' />
 </a>
 
@@ -181,7 +181,7 @@ These professional-level designs showcase serious nail artistry:
 
 Ready to try one of these show-stopping designs?
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500817650/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-ombre-nails.png' alt='Thanksgiving ombre nails with fall color gradient from red to orange' />
 </a>
 
@@ -212,7 +212,7 @@ Apply a thin layer of glossy top coat over all nails, making sure to cap the tip
 
 Professional tip: Imperfect leaves actually look more realistic than perfect ones. Embrace natural variations in your design!
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
+<a href='https://in.pinterest.com/pin/913034524500817625/' target='_blank' rel='noopener'>
   <img src='/images/blog/thanksgiving-nails-tutorial.png' alt='Step by step thanksgiving nail art tutorial showing leaf design technique' />
 </a>
 

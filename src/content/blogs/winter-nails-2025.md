@@ -599,16 +599,3 @@ For more seasonal nail inspiration, explore our <a href='https://www.mirelleinsp
   </a>
 </div>
 ---
-
-**Image Filenames List:**
-
-1. hero-winter-nails-2025.jpg
-2. winter-nails-2025-trends.jpg
-3. winter-nail-colors-palette.jpg
-4. winter-nail-designs-easy.jpg
-5. winter-nail-designs-advanced.jpg
-6. winter-snowflake-nail-tutorial.jpg
-7. winter-nails-faq.jpg
-8. winter-nails-occasions.jpg
-
-All images include Pinterest redirect links to: https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/

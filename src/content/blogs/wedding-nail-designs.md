@@ -393,6 +393,11 @@ If you're still planning other aspects of your wedding beauty routine, check out
 
 Now go book that nail appointment. Your future married self will thank you.
 
+ <img src="/images/blog/classic-wedding-nail-designs.jpg" alt="Classic wedding nail designs featuring french manicure and elegant bridal styles"></a>
+
+<p style="text-align: center; margin-top: 10px;"><a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" style="color: #2563eb; text-decoration: underline; font-weight: 500;">💅 Find more wedding nail inspiration on our Pinterest</a></p>
+
+
 ---
 
 ## About the Author
@@ -431,7 +436,6 @@ What's your biggest wedding nail worry right now? Timing? Design choice? DIY vs 
     <p class='text-sm text-gray-600 mb-3'>Stunning cold weather nail art and seasonal color trends</p>
     <span class='text-pink-600 text-sm font-medium'>Read more →</span>
   </a>
-</div>opener"><img src="/images/blog/classic-wedding-nail-designs.jpg" alt="Classic wedding nail designs featuring french manicure and elegant bridal styles"></a>
-
-<p style="text-align: center; margin-top: 10px;"><a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" style="color: #2563eb; text-decoration: underline; font-weight: 500;">💅 Find more wedding nail inspiration on our Pinterest</a></p>
+</div
+  <img src="/images/blog/classic-wedding-nail-designs.jpg" alt="Classic wedding nail designs featuring french manicure and elegant bridal styles"></a>
 

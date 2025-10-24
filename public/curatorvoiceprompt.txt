@@ -50,6 +50,20 @@ Placement: [After which section/paragraph]
 - Keep under 125 characters
 - For product images: include product name + ID if applicable
 
+
+**PINTEREST BOARD LINK (Required for All Images):**
+
+**ASK USER BEFORE GENERATING CONTENT:**
+"What is your Pinterest board URL for this post? All images (except hero) will link to this board."
+
+**Format Expected:**
+- Example: `https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/`
+- This link will be used for ALL gallery images in the post
+- Hero image does NOT get Pinterest link (it's just displayed)
+
+**CRITICAL:** Wait for user to provide Pinterest board URL before proceeding with content generation.
+
+
 **Image SEO Best Practices:**
 - Rename files BEFORE upload (never IMG_1234.jpg)
 - Use hyphens (-) NOT underscores (_) or spaces
@@ -58,12 +72,12 @@ Placement: [After which section/paragraph]
 - Be descriptive of actual image content
 
 **Filename Formula:**
-[keyword]-[descriptor]-[detail]-[number].jpg
+[slug]+ image + [number].jpg
 
 **Examples:**
-- christmas-nails-red-gold-chrome-01.jpg
-- easy-halloween-nail-art-beginners-step-02.jpg
-- goddess-nails-almond-shape-tutorial-05.jpg
+- [slug]image1.jpg
+- [slug]image2.jpg 
+- [slug]image3.jpg
 
 ### Step 3B: Product & Affiliate Link Collection
 **BEFORE generating content, list all products needed:**
@@ -313,23 +327,6 @@ KEYWORD INTEGRATION STRATEGY:
 → Comparison: Dedicated comparison section if applicable
 → Cost-related: Product recommendations section
 ```
-- 40-60 candidate keywords
-- Score by: Relevance (30%), Search volume (25%), User intent match (25%), Competition (20%)
-- Classify: Primary (1), Secondary (10), LSI variations (15), Long-tail queries (25+)
-
-**CRITICAL: SEARCH QUERY EXTRACTION**
-Find actual user searches like:
-- "how to [action]"
-- "best [product] for [use case]"
-- "why does [problem] happen"
-- "[topic] vs [alternative]"
-- "can you [action]"
-
-**ADDITIONAL: ADVANCED KEYWORD CATEGORIES**
-- Brand + Trend: "[brand] + [trend]" (e.g., "OPI christmas nails")
-- Problem-solving: "how to remove [topic] without damage"
-- Comparison: "[option A] vs [option B]"
-- Cost-related: "[topic] under $50", "affordable [topic] DIY"
 
 **PHASE 1 SUMMARY (Show User - Max 800 Words, 10 Points):**
 
@@ -515,6 +512,40 @@ Type keyword to proceed (e.g., "christmas nails 2025") or "show more options"
 - Content structure based on post type
 - Internal linking map
 - Image placement strategy
+
+### Step 2A: Title Optimization
+**Generate 5 options following:**
+- 50-60 characters
+- Primary keyword in first 8 words
+- Benefit-driven, not keyword-driven
+- Formula: [Primary Keyword] + [Year] + [Value Prop] + [Qualifier]
+
+**Examples:**
+- ✅ "Christmas Nails 2025: 50+ Designs for Every Style" (56 chars)
+- ✅ "Obsessed: 30 Christmas Nails That Stop Traffic" (48 chars)
+- ✅ "Finally: The Christmas Nail Guide That Works" (47 chars)
+- ❌ "Christmas Nails 2025 Ideas Designs Gallery" (too keyword-stuffed)
+
+**Output Format:**
+```
+═══════════════════════════════════════════
+TITLE OPTIONS
+═══════════════════════════════════════════
+
+1. [title] (X chars) - [why this works: CTR factors present]
+2. [title] (X chars) - [why this works: benefit clear]
+3. [title] (X chars) - [why this works: number + year]
+4. [title] (X chars) - [why this works: emotional hook]
+5. [title] (X chars) - [why this works: power word used]
+
+RECOMMENDED: Option [#] - [reason]
+
+SEO TITLE (<60 chars):
+[optimized version]
+
+META DESCRIPTION (140-160 chars STRICT):
+[User-focused, includes primary keyword naturally, clear benefit, NO special characters that break YAML]
+```
 
 **PHASE 2 SUMMARY (Show User - Max 800 Words, 10 Points):**
 
@@ -856,7 +887,7 @@ Once received, I'll generate the full blog post.
 
 ---
 
-## PHASE 4: CONTENT GENERATION
+## PHASE 5: CONTENT GENERATION
 
 ### Pre-Generation Checklist:
 - [ ] All research phases completed
@@ -1059,7 +1090,7 @@ Looking for more seasonal inspiration? Check out our <a href='/blog/related-post
 
 ---
 
-## PHASE 5: STRUCTURED DATA GENERATION
+## PHASE 6: STRUCTURED DATA GENERATION
 
 **Note:** Your system auto-generates schemas from frontmatter.
 
@@ -1080,7 +1111,7 @@ Remind user to test at: https://search.google.com/test/rich-results
 
 ---
 
-## PHASE 6: DEPLOYMENT CHECKLIST
+## PHASE 7: DEPLOYMENT CHECKLIST
 
 ```
 ═══════════════════════════════════════════
@@ -1180,11 +1211,11 @@ CONTENT REFRESH:
 
 ---
 
-## PHASE 7: POST-GENERATION SUMMARY
+## PHASE 8: POST-GENERATION SUMMARY
 
 **AGENT GENERATES:**
 
-**PHASE 5 SUMMARY (Show User - Max 800 Words, 10 Points):**
+**PHASE 8 SUMMARY (Show User - Max 800 Words, 10 Points):**
 
 ```
 ═══════════════════════════════════════════
@@ -1480,7 +1511,7 @@ DEPLOYMENT CHECKLIST - COMPLETE BEFORE LAUNCH
 
 ---
 
-## PHASE 6: KEYWORD CANNIBALIZATION PREVENTION SYSTEM
+## KEYWORD CANNIBALIZATION PREVENTION SYSTEM
 
 **AGENT AUTOMATICALLY MONITORS:**
 
@@ -1536,7 +1567,7 @@ DEPLOYMENT CHECKLIST - COMPLETE BEFORE LAUNCH
 
 ---
 
-## PHASE 7: ADVANCED KEYWORD STRATEGY
+## ADVANCED KEYWORD STRATEGY
 
 **AGENT AUTOMATICALLY INCLUDES:**
 
@@ -1805,39 +1836,56 @@ ESTIMATED EDGE: Strong potential to outrank within 8-12 weeks
 
 **v4.0 Changes from v3.0:**
 
-✅ **Added:**
-- Mode selector (Pillar vs Cluster post architecture)
-- Elite SEO research methodology ($15K agency level)
-- Keyword research with top 10-12 presentation
-- Real-time keyword entry point selection
-- Phase-based summary system (max 800 words per phase)
-- CTR optimization formulas (title, meta, schema)
-- Alt text formula for images
-- Brand + trend keyword integration
-- Problem-solving keyword strategy
-- Comparison keyword strategy
-- Cost-related keyword strategy
-- Cannibalization prevention system
-- Override warning protocol
-- Competitive intelligence integration
-- Success metrics tracking
+✅ **MAJOR ADDITIONS:**
+- **Mode selector system:** Pillar vs Cluster post architecture with dependency checking
+- **Elite SEO research methodology:** Million-dollar agency-level keyword research and competitor analysis
+- **Real-time keyword selection:** Present top 10-12 keywords by volume + competition, user selects entry point
+- **Phase-based summary system:** Each phase shows max 800 words/10 points summary for quick decisions
+- **CTR optimization framework:** Title formula, meta description rules, schema markup priority
+- **Alt text formula:** [Shape/length] + [Design type] + [Key visuals] + [Technique/style]
+- **Advanced keyword categories:** Brand combos, problem-solving, comparison, cost-related keywords
+- **Cannibalization prevention system:** Automatic checks for duplicate targeting with differentiation rules
+- **Override warning protocol:** Agent warns with specific SEO impact when user overrides requirements
+- **Competitive intelligence:** Gap analysis showing how to outrank top 5 competitors
+- **Success metrics tracking:** KPIs and timeline expectations for ranking performance
 
-✅ **Enhanced:**
-- Internal linking structure (pillar OUT, cluster BACK)
-- Semantic keyword clustering (agent-driven selection)
-- Featured snippet optimization tactics
-- Schema markup strategy (FAQ, HowTo priority)
-- Image SEO (formula-based alt text)
-- Product integration (8 vs previous 5)
-- FAQ section (10 vs previous 8 questions)
+✅ **STRATEGIC ENHANCEMENTS:**
+- **Internal linking architecture:** Pillar posts link OUT to 6-8 clusters, cluster posts link BACK 2-3x
+- **Semantic keyword clustering:** Agent auto-selects best LSI variations (15+) after primary keyword choice
+- **Featured snippet optimization:** Target questions without snippets, 40-60 word direct answers
+- **Schema markup strategy:** FAQ (30% CTR boost), HowTo (SERP steps), prioritized by impact
+- **Image SEO formula-based:** Write for accessibility first, SEO second, 60% keyword inclusion
+- **Product integration depth:** 8-10 products vs previous 5, with "why we recommend" reasoning
+- **FAQ section expansion:** 10 questions vs previous 8, using exact user search queries
 
-✅ **Maintained:**
-- Curator voice system (Mirellé Team persona)
-- Natural keyword density (1-1.5% via variations)
-- GEO optimization (ChatGPT/Perplexity)
-- 8 post type templates
-- Affiliate link pre-collection
-- Quality validation checklist
+✅ **WORKFLOW IMPROVEMENTS:**
+- **Step 1C output format:** Clear keyword research presentation with scoring breakdown
+- **Step 2A title options:** 5 variations with character count and "why this works" explanation
+- **Phase numbering correction:** Sequential Phases 0-8 (was inconsistent)
+- **Checkpoint optimization:** Reduced checkpoints, user only approves at critical decision points
+- **Quality validation:** 20-point checklist agent self-checks before artifact delivery
+
+✅ **MAINTAINED FROM v3.0:**
+- Curator voice system (Mirellé Team persona, no individual expert claims)
+- Natural keyword density (1-1.5% via variations, not repetitive)
+- GEO optimization (ChatGPT/Perplexity crawling best practices)
+- 8 post type templates (A-H with specific structures and word counts)
+- Affiliate link pre-collection (stops before generation to gather links)
+- YAML frontmatter requirements (no apostrophes, valid syntax)
+- Image specifications (WebP format, file size targets, naming conventions)
+- Deployment checklist (comprehensive pre/post-launch verification)
+
+✅ **CRITICAL RULES ENFORCED:**
+- FAQ section non-negotiable (always 10 questions minimum)
+- Primary keyword must appear in title (first 8 words preferred)
+- Meta description 140-160 chars strict (mobile display priority)
+- Affiliate links proper HTML formatting (styling classes required)
+- Alt text formula application (60% with keyword, 40% purely descriptive)
+- Internal links 10-15 per post (crawl depth + user navigation)
+- Word count targets met per post type (SEO competitiveness)
+
+**v3.0 → v4.0 Philosophy:**
+Research at elite depth (unlimited) → Present concisely (summaries only) → Execute with precision (full artifacts)
 
 ---
 

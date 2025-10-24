@@ -171,6 +171,8 @@ Hawaiian vacations deserve plumeria flower designs, sunset ombre effects, and na
   <img src='/images/blog/caribbean-vacation-nails-tropical-designs.jpg' alt='Tropical vacation nails with turquoise and coral tropical beach nail art' />
 </a>
 
+<p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500838746/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these Caribbean nail designs to Pinterest →</a></p>
+
 Mediterranean beaches look stunning with nautical-inspired designs. Navy and white stripes, anchor accents, and rope details give classic vacation vibes without being too literal. These designs work equally well for Greek islands, Italian coastlines, or French Riviera trips.
 
 ---
@@ -200,6 +202,8 @@ Cable knit sweater designs painted on accent nails trend for winter vacations. T
 <a href='https://in.pinterest.com/pin/913034524500838769/' target='_blank' rel='noopener'>
   <img src='/images/blog/ski-resort-winter-vacation-nails-designs.jpg' alt='Ski resort vacation nails with cozy winter themed manicure and snowflake designs' />
 </a>
+
+<p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500838769/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these ski resort nails to Pinterest →</a></p>
 
 **Holiday Party Vacation Nails**
 
@@ -242,6 +246,8 @@ Bring emergency nail kits with nail glue, small files, and matching gel polish. 
 <a href='https://in.pinterest.com/pin/913034524500838823/' target='_blank' rel='noopener'>
   <img src='/images/blog/wedding-destination-vacation-nails-bridal.jpg' alt='Wedding destination vacation nails with elegant bridal manicure for honeymoon travel' />
 </a>
+
+<p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500838823/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these wedding destination nails to Pinterest →</a></p>
 
 ---
 
@@ -296,6 +302,8 @@ Wear waterproof sunscreen on hands during beach vacations. UV exposure fades gel
 <a href='https://in.pinterest.com/pin/913034524500838867/' target='_blank' rel='noopener'>
   <img src='/images/blog/gel-vacation-nails-application-tutorial.jpg' alt='Step by step gel vacation nails application for long-lasting travel manicure' />
 </a>
+
+<p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500838867/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save this gel nail tutorial to Pinterest →</a></p>
 
 ---
 

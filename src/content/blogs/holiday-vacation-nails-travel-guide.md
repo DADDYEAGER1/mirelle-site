@@ -518,18 +518,3 @@ Now get ready to book those manicure appointments for 2-3 days before trips. You
 </div>
 
 ---
-
-**Image Filenames List:**
-
-1. hero-holiday-vacation-nails-travel-guide.jpg
-2. tropical-beach-vacation-nails-designs.jpg
-3. winter-holiday-vacation-nails-designs.jpg
-4. caribbean-vacation-nails-tropical-designs.jpg
-5. ski-resort-winter-vacation-nails-designs.jpg
-6. wedding-destination-vacation-nails-bridal.jpg
-7. gel-vacation-nails-application-tutorial.jpg
-8. vacation-nails-color-palette-seasonal.jpg
-9. vacation-nails-travel-kit-essentials-products.jpg
-10. press-on-vs-gel-vacation-nails-comparison.jpg
-
-All images include Pinterest redirect links to: https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/

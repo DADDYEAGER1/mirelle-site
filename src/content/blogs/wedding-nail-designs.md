@@ -404,12 +404,6 @@ Now go book that nail appointment. Your future married self will thank you.
 
 The <a href='/about' class='text-blue-600 hover:text-blue-800 underline font-semibold text-lg'>Mirellé Team</a> curates the best nail inspiration, expert tips, and honest product reviews for nail enthusiasts worldwide. We connect you with top nail artists, trending designs, and professional guidance on <a href='/' class='text-blue-600 hover:text-blue-800 underline'>mirelleinspo.com</a>.
 
-**Follow for weekly nail inspiration:**
-- <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>Pinterest</a>
-- <a href='https://www.instagram.com/mirelle_inspo/' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>Instagram</a>
-- <a href='https://www.facebook.com/mirelleinspo' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>Facebook</a>
-- <a href='https://x.com/MirelleInspo' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:text-blue-800 underline'>Twitter</a>
-
 ---
 
 ## Your Turn!

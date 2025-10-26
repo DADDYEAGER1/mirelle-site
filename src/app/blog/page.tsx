@@ -55,8 +55,8 @@ export default async function BlogPage() {
   const baseUrl = 'https://mirelleinspo.com';
 
   // Generate enhanced schemas using lib functions
-  const blogSchema = generateBlogSchema(baseUrl);
-  const itemListSchema = generateBlogListSchema(posts, baseUrl);
+  const blogSchema = generateBlogSchema();
+  const itemListSchema = generateBlogListSchema(posts);
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',

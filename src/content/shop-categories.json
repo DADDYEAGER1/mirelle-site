@@ -11,6 +11,15 @@
       "gradientFrom": "amber-900",
       "gradientVia": "orange-800",
       "gradientTo": "red-900",
+      "tldr": {
+      "summary": [
+        "50+ festive designs from classic to modern trends",
+        "Premium products starting at $8.99",
+        "Complete kits include everything for salon results",
+        "Ships within 24 hours for holiday deadlines"
+      ],
+      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      }
       "emojis": ["🍂", "🍁", "🎃", "🌰"],
       "ctas": ["Autumn Elegance", "Cozy Vibes", "Fall Glamour", "Harvest Beauty", "Warm Tones"],
       "seo": {
@@ -38,6 +47,15 @@
       "gradientFrom": "red-900",
       "gradientVia": "green-800",
       "gradientTo": "red-800",
+      "tldr": {
+      "summary": [
+        "50+ festive designs from classic to modern trends",
+        "Premium products starting at $8.99",
+        "Complete kits include everything for salon results",
+        "Ships within 24 hours for holiday deadlines"
+      ],
+      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      }
       "emojis": ["🎄", "🎅", "❄️", "🎁"],
       "ctas": ["Holiday Sparkle", "Festive Cheer", "Winter Magic", "Joyful Nails", "Merry & Bright"],
       "seo": {
@@ -65,6 +83,15 @@
       "gradientFrom": "blue-900",
       "gradientVia": "cyan-800",
       "gradientTo": "slate-900",
+      "tldr": {
+      "summary": [
+        "50+ festive designs from classic to modern trends",
+        "Premium products starting at $8.99",
+        "Complete kits include everything for salon results",
+        "Ships within 24 hours for holiday deadlines"
+      ],
+      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      }
       "emojis": ["❄️", "⛄", "🌨️", "☃️"],
       "ctas": ["Icy Elegance", "Frosted Beauty", "Winter Wonder", "Snowy Chic", "Cozy Glam"],
       "seo": {
@@ -92,6 +119,15 @@
       "gradientFrom": "orange-900",
       "gradientVia": "purple-800",
       "gradientTo": "black",
+      "tldr": {
+      "summary": [
+        "50+ festive designs from classic to modern trends",
+        "Premium products starting at $8.99",
+        "Complete kits include everything for salon results",
+        "Ships within 24 hours for holiday deadlines"
+      ],
+      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      }
       "emojis": ["🎃", "👻", "🦇", "🕷️"],
       "ctas": ["Spooky Chic", "Haunting Beauty", "Creepy Cute", "Gothic Glam", "Frightful Fun"],
       "seo": {
@@ -119,6 +155,16 @@
       "gradientFrom": "yellow-600",
       "gradientVia": "purple-800",
       "gradientTo": "pink-900",
+
+      "tldr": {
+      "summary": [
+        "50+ festive designs from classic to modern trends",
+        "Premium products starting at $8.99",
+        "Complete kits include everything for salon results",
+        "Ships within 24 hours for holiday deadlines"
+      ],
+      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      }
       "emojis": ["🎉", "✨", "🥂", "🎊"],
       "ctas": ["Midnight Sparkle", "Party Glam", "New Year Magic", "Celebration Style", "Glitter Goals"],
       "seo": {
@@ -146,6 +192,15 @@
       "gradientFrom": "pink-600",
       "gradientVia": "purple-600",
       "gradientTo": "blue-600",
+      "tldr": {
+      "summary": [
+        "50+ festive designs from classic to modern trends",
+        "Premium products starting at $8.99",
+        "Complete kits include everything for salon results",
+        "Ships within 24 hours for holiday deadlines"
+      ],
+      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      }
       "emojis": ["💅", "✨", "💖", "🌟"],
       "ctas": ["Trend Setter", "Modern Chic", "Style Icon", "Fashion Forward", "On Trend"],
       "seo": {

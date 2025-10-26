@@ -1,4 +1,7 @@
-import type { BlogPost } from '@/types/blog';
+import { BlogPost, BlogMetadata } from '@/types/blog';
+import { generateAboutEntities } from './entityMapping';
+
+const baseUrl = 'https://mirelleinspo.com';
 
 export interface FAQItem {
   question: string;
@@ -68,10 +71,249 @@ export interface CollectionSchemaConfig {
   }>;
 }
 
-// Generate schemas for blog posts
+// ============================================
+// PERSON SCHEMA (Author)
+// ============================================
+export function generatePersonSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${baseUrl}/#mirelle-team`,
+    'name': 'Mirellé Team',
+    'url': `${baseUrl}/about`,
+    'sameAs': [
+      'https://x.com/mirelleinspo',
+      'https://www.instagram.com/mirelle_inspo/',
+      'https://www.pinterest.com/mirelle_inspo/'
+    ],
+    'jobTitle': 'Nail Art Content Creator',
+    'worksFor': {
+      '@id': `${baseUrl}/#organization`
+    },
+    'knowsAbout': [
+      'Nail Art',
+      'Nail Care',
+      'Beauty Trends',
+      'DIY Manicures',
+      'Seasonal Nail Designs',
+      'Product Recommendations'
+    ],
+    'description': 'Expert nail art content team specializing in seasonal trends and accessible beauty techniques'
+  };
+}
+
+// ============================================
+// BLOG ENTITY SCHEMA
+// ============================================
+export function generateBlogSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': `${baseUrl}/blog#blog`,
+    'url': `${baseUrl}/blog`,
+    'name': 'Mirellé Blog',
+    'description': 'Expert nail art inspiration, tutorials, and beauty tips for modern women. Discover seasonal trends, at-home techniques, and Pinterest-worthy nail designs.',
+    'inLanguage': 'en-US',
+    'publisher': {
+      '@id': `${baseUrl}/#organization`
+    },
+    'author': {
+      '@id': `${baseUrl}/#mirelle-team`
+    },
+    'audience': {
+      '@type': 'Audience',
+      'audienceType': 'Women aged 18-45 interested in beauty and nail art'
+    },
+    'about': [
+      {
+        '@type': 'Thing',
+        'name': 'Nail Art',
+        'sameAs': 'https://en.wikipedia.org/wiki/Nail_art'
+      },
+      {
+        '@type': 'Thing',
+        'name': 'Beauty',
+        'sameAs': 'https://en.wikipedia.org/wiki/Beauty'
+      },
+      {
+        '@type': 'Thing',
+        'name': 'Fashion',
+        'sameAs': 'https://en.wikipedia.org/wiki/Fashion'
+      }
+    ]
+  };
+}
+
+// ============================================
+// BLOG ITEMLIST SCHEMA
+// ============================================
+export function generateBlogListSchema(posts: BlogMetadata[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'name': 'Mirellé Blog Posts',
+    'description': 'Complete collection of nail art tutorials, seasonal trends, and beauty inspiration',
+    'url': `${baseUrl}/blog`,
+    'numberOfItems': posts.length,
+    'itemListElement': posts.map((post, index) => ({
+      '@type': 'ListItem',
+      'position': index + 1,
+      'url': `${baseUrl}/blog/${post.slug}`,
+      'name': post.title,
+      'description': post.excerpt,
+      'image': `${baseUrl}${post.image}`
+    }))
+  };
+}
+
+// ============================================
+// ENHANCED BLOGPOSTING SCHEMA
+// ============================================
+export function generateArticleSchema(post: BlogPost) {
+  const articleUrl = `${baseUrl}/blog/${post.slug}`;
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': `${articleUrl}#article`,
+    'headline': post.title,
+    'description': post.excerpt,
+    'abstract': post.tldr?.summary.join(' ') || post.excerpt,
+    'image': {
+      '@type': 'ImageObject',
+      'url': `${baseUrl}${post.image}`,
+      'width': post.imageWidth || 1200,
+      'height': post.imageHeight || 630,
+      'caption': post.imageAlt
+    },
+    'author': {
+      '@type': 'Person',
+      '@id': `${baseUrl}/#mirelle-team`,
+      'name': post.author || 'Mirellé Team',
+      'url': `${baseUrl}/about`
+    },
+    'publisher': {
+      '@type': 'Organization',
+      '@id': `${baseUrl}/#organization`,
+      'name': 'Mirellé',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': `${baseUrl}/logo.png`
+      }
+    },
+    'datePublished': post.date,
+    'dateModified': post.dateModified || post.date,
+    'url': articleUrl,
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': articleUrl
+    },
+    'wordCount': post.wordCount,
+    'articleBody': post.content,
+    'inLanguage': 'en-US',
+    'isPartOf': {
+      '@type': 'Blog',
+      '@id': `${baseUrl}/blog#blog`,
+      'name': 'Mirellé Blog'
+    },
+    'about': generateAboutEntities(post.tags || []),
+    'keywords': post.tags?.join(', '),
+    'speakable': post.tldr ? {
+      '@type': 'SpeakableSpecification',
+      'cssSelector': ['.tldr-section'],
+      'xpath': ['/html/body//section[@class~="tldr-section"]']
+    } : undefined
+  };
+}
+
+// ============================================
+// FAQ PAGE SCHEMA
+// ============================================
+export function generateFAQSchema(faqItems: Array<{ question: string; answer: string }>) {
+  if (!faqItems || faqItems.length === 0) return null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqItems.map((faq) => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer
+      }
+    }))
+  };
+}
+
+// ============================================
+// ABOUTPAGE SCHEMA
+// ============================================
+export function generateAboutPageSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': `${baseUrl}/about#page`,
+    'url': `${baseUrl}/about`,
+    'name': 'About Mirellé',
+    'description': 'Learn about Mirellé, your go-to destination for nail art inspiration, tutorials, and beauty tips',
+    'mainEntity': {
+      '@id': `${baseUrl}/#organization`
+    },
+    'inLanguage': 'en-US',
+    'publisher': {
+      '@id': `${baseUrl}/#organization`
+    }
+  };
+}
+
+// ============================================
+// CONTACTPAGE SCHEMA
+// ============================================
+export function generateContactPageSchema(email: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    '@id': `${baseUrl}/contact#page`,
+    'url': `${baseUrl}/contact`,
+    'name': 'Contact Mirellé',
+    'description': 'Get in touch with the Mirellé team for collaborations, questions, or feedback',
+    'mainEntity': {
+      '@type': 'Organization',
+      '@id': `${baseUrl}/#organization`,
+      'contactPoint': {
+        '@type': 'ContactPoint',
+        'contactType': 'Customer Service',
+        'email': email,
+        'availableLanguage': 'English',
+        'areaServed': 'Worldwide'
+      }
+    },
+    'inLanguage': 'en-US'
+  };
+}
+
+// ============================================
+// BREADCRUMB SCHEMA
+// ============================================
+export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': items.map((item, index) => ({
+      '@type': 'ListItem',
+      'position': index + 1,
+      'name': item.name,
+      'item': item.url
+    }))
+  };
+}
+
+// ============================================
+// EXISTING SCHEMAS FUNCTION (KEPT FOR COMPATIBILITY)
+// ============================================
 export function generateSchemas(config: SchemaConfig) {
   const { post, slug, faqItems, tutorialSteps, tutorialMetadata, videoMetadata, galleryImages } = config;
-  const baseUrl = 'https://mirelleinspo.com';
   const currentDate = new Date().toISOString();
   const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/og-default.png`;
 
@@ -314,8 +556,6 @@ export function generateSchemas(config: SchemaConfig) {
 
 // Generate schemas for product/collection pages
 export function generateProductSchemas(config: ProductSchemaConfig) {
-  const baseUrl = 'https://mirelleinspo.com';
-  
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -335,8 +575,6 @@ export function generateProductSchemas(config: ProductSchemaConfig) {
 
 // Generate schemas for collection pages (shop categories)
 export function generateCollectionSchemas(config: CollectionSchemaConfig) {
-  const baseUrl = 'https://mirelleinspo.com';
-  
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',

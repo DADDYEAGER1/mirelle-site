@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const baseUrl = 'https://mirelleinspo.com';
-  const aboutPageSchema = generateAboutPageSchema(baseUrl);
+  const aboutPageSchema = generateAboutPageSchema();
 
   return (
     <>

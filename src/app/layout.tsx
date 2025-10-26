@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 import { Inter, Cormorant_Garamond } from 'next/font/google';
+import { generatePersonSchema } from '@/lib/generateSchemas';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -17,6 +18,7 @@ const cormorant = Cormorant_Garamond({
   display: 'swap',
   variable: '--font-cormorant',
 });
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://mirelleinspo.com'),
   title: {
@@ -40,8 +42,8 @@ export const metadata: Metadata = {
     "salon nail ideas",
     "at-home manicure"
   ],
-  authors: [{ name: "Avery chen", url: "https://mirelleinspo.com/about" }],
-  creator: "Avery chen",
+  authors: [{ name: "Mirellé Team", url: "https://mirelleinspo.com/about" }],
+  creator: "Mirellé Team",
   publisher: "Mirellé Inspo",
   formatDetection: {
     telephone: false,
@@ -101,20 +103,19 @@ export const metadata: Metadata = {
     },
   },
   
-icons: {
-  icon: [
-    { url: "/favicon.ico", sizes: "any" },
-    { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-    { url: "/favicon.svg", type: "image/svg+xml" },
-  ],
-  shortcut: "/favicon.ico",
-  apple: [
-    { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-  ],
-},
-manifest: "/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
 
-  
   alternates: {
     canonical: "https://mirelleinspo.com",
     // Multi-region language support for global reach
@@ -127,14 +128,12 @@ manifest: "/site.webmanifest",
     },
   },
   
-verification: {
-  google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console
-  other: {
-    'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console
+    other: {
+      'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
+    },
   },
-},
-
-  
 };
 
 export default function RootLayout({
@@ -142,17 +141,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const baseUrl = 'https://mirelleinspo.com';
+  
   // Enhanced structured data for AI bots
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://mirelleinspo.com/#organization",
+    "@id": `${baseUrl}/#organization`,
     "name": "Mirellé",
     "alternateName": "Mirelle",
-    "url": "https://mirelleinspo.com",
+    "url": baseUrl,
     "logo": {
       "@type": "ImageObject",
-      "url": "https://mirelleinspo.com/apple-touch-icon.png",
+      "url": `${baseUrl}/apple-touch-icon.png`,
       "width": 512,
       "height": 512
     },
@@ -166,7 +167,7 @@ export default function RootLayout({
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
-      "url": "https://mirelleinspo.com/contact"
+      "url": `${baseUrl}/contact`
     },
     // Global audience targeting
     "areaServed": {
@@ -186,13 +187,13 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://mirelleinspo.com/#website",
+    "@id": `${baseUrl}/#website`,
     "name": "Mirellé",
-    "url": "https://mirelleinspo.com",
+    "url": baseUrl,
     "description": "Nail art ideas, trends, tutorials, and inspiration for 2025. Professional tips for beautiful, healthy nails.",
     "publisher": {
       "@type": "Organization",
-      "@id": "https://mirelleinspo.com/#organization",
+      "@id": `${baseUrl}/#organization`,
       "name": "Mirellé Inspo",
     },
     "inLanguage": "en-US",
@@ -200,11 +201,14 @@ export default function RootLayout({
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://mirelleinspo.com/search?q={search_term_string}"
+        "urlTemplate": `${baseUrl}/search?q={search_term_string}`
       },
       "query-input": "required name=search_term_string"
     }
   };
+
+  // NEW: Generate Person schema for author entity
+  const personSchema = generatePersonSchema(baseUrl);
 
   // BreadcrumbList for better content structure
   const breadcrumbSchema = {
@@ -215,19 +219,19 @@ export default function RootLayout({
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://mirelleinspo.com"
+        "item": baseUrl
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://mirelleinspo.com/blog"
+        "item": `${baseUrl}/blog`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Topics",
-        "item": "https://mirelleinspo.com/topics"
+        "item": `${baseUrl}/topics`
       }
     ]
   };
@@ -267,7 +271,7 @@ export default function RootLayout({
         {/* <script async defer src="//assets.pinterest.com/js/pinit.js"></script> */}
       </head>
 
-      <body className="antialiased">
+      <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -295,7 +299,6 @@ export default function RootLayout({
             });
           `}
         </Script>
-        {/* <meta name="msvalidate.01" content="YOUR_BING_CODE_HERE" /> */}
 
         {/* Google AdSense */}
         <Script
@@ -305,29 +308,24 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1145734682794444"
           crossOrigin="anonymous"
         />
-        <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(breadcrumbSchema),
-  }}
-/>
+        
         {/* Preload critical font */}
-<link
-  rel="preload"
-  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
-  as="style"
-/>
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+          as="style"
+        />
 
-{/* Canonical tag */}
-<link rel="canonical" href="https://mirelleinspo.com" />
+        {/* Canonical tag */}
+        <link rel="canonical" href="https://mirelleinspo.com" />
 
-{/* Mobile web app meta */}
-<meta name="mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        {/* Mobile web app meta */}
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-{/* Theme color */}
-<meta name="theme-color" content="#000000" />
+        {/* Theme color */}
+        <meta name="theme-color" content="#000000" />
         
         {/* ADD WEB VITALS TRACKING HERE - AFTER ADSENSE */}
         <Script id="web-vitals" strategy="afterInteractive">
@@ -413,6 +411,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
+          }}
+        />
+        {/* NEW: Person Schema for Author Entity */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
           }}
         />
         <script

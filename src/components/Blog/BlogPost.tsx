@@ -88,7 +88,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         <div className="max-w-4xl mx-auto mb-12">
           <TLDRSection 
             summary={post.tldr.summary}
-            readTime={post.readTime}
+            readTime={String(post.readTime)}  // ✅ Ensure it's a string
             keyTakeaways={post.tldr.keyTakeaways}
           />
         </div>

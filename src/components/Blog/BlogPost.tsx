@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { BlogPost as BlogPostType } from '@/types/blog';
 import BlogSidebar from './BlogSidebar';
 import CommentSection from '@/components/Blog/CommentSection';
-import PinterestOverlay from './PinterestOverlay'; // ← ADD THIS
+import TLDRSection from './TLDRSection'; // ✨ NEW IMPORT
 
 interface BlogPostProps {
   post: BlogPostType;
@@ -82,6 +82,17 @@ export default function BlogPost({ post }: BlogPostProps) {
           </div>
         )}
       </div>
+
+      {/* ✨ TL;DR SECTION - CRITICAL: Place AFTER header, BEFORE content */}
+      {post.tldr && (
+        <div className="max-w-4xl mx-auto mb-12">
+          <TLDRSection 
+            summary={post.tldr.summary}
+            readTime={post.readTime}
+            keyTakeaways={post.tldr.keyTakeaways}
+          />
+        </div>
+      )}
 
       {/* Two Column Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">

@@ -192,8 +192,8 @@ export default function RootLayout({
     "description": "Nail art ideas, trends, tutorials, and inspiration for 2025. Professional tips for beautiful, healthy nails.",
     "publisher": {
       "@type": "Organization",
-      "@id": "https://mirelleinspo.com/#organization"
-      "name": "Mirellé Inspo"
+      "@id": "https://mirelleinspo.com/#organization",
+      "name": "Mirellé Inspo",
     },
     "inLanguage": "en-US",
     "potentialAction": {

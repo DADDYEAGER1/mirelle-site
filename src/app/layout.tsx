@@ -3,7 +3,20 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import { Inter, Cormorant_Garamond } from 'next/font/google';
 
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const cormorant = Cormorant_Garamond({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-cormorant',
+});
 export const metadata: Metadata = {
   metadataBase: new URL('https://mirelleinspo.com'),
   title: {
@@ -237,8 +250,8 @@ export default function RootLayout({
         <meta name="classification" content="Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle" />
         
         {/* Preconnect for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <body className={`${inter.variable} ${cormorant.variable} font-sans antialiased`}>
+        {/* ✅ KEEP THESE */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         

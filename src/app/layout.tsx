@@ -133,7 +133,8 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Mirellé Inspo",
+    "@id": "https://mirelleinspo.com/#organization",
+    "name": "Mirellé",
     "alternateName": "Mirelle",
     "url": "https://mirelleinspo.com",
     "logo": {
@@ -142,10 +143,12 @@ export default function RootLayout({
       "width": 512,
       "height": 512
     },
-    "description": "Expert nail art inspiration, tutorials, and beauty tips for modern women",
+    "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women"
     "sameAs": [
       "https://www.pinterest.com/mirelle_inspo",
       "https://www.instagram.com/mirelle_inspo"
+      "https://www.wikidata.org/wiki/mirelle_inspo",
+      "https://x.com/mirelleinspo",
     ],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -170,11 +173,13 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Mirellé Inspo",
+    "@id": "https://mirelleinspo.com/#website",
+    "name": "Mirellé",
     "url": "https://mirelleinspo.com",
     "description": "Nail art ideas, trends, tutorials, and inspiration for 2025. Professional tips for beautiful, healthy nails.",
     "publisher": {
       "@type": "Organization",
+      "@id": "https://mirelleinspo.com/#organization"
       "name": "Mirellé Inspo"
     },
     "inLanguage": "en-US",
@@ -278,6 +283,7 @@ export default function RootLayout({
             });
           `}
         </Script>
+        {/* <meta name="msvalidate.01" content="YOUR_BING_CODE_HERE" /> */}
 
         {/* Google AdSense */}
         <Script

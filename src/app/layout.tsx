@@ -159,7 +159,7 @@ export default function RootLayout({
     "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women"
     "sameAs": [
       "https://www.pinterest.com/mirelle_inspo",
-      "https://www.instagram.com/mirelle_inspo"
+      "https://www.instagram.com/mirelle_inspo",
       "https://www.wikidata.org/wiki/mirelle_inspo",
       "https://x.com/mirelleinspo",
     ],

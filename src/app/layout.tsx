@@ -208,7 +208,7 @@ export default function RootLayout({
   };
 
   // NEW: Generate Person schema for author entity
-  const personSchema = generatePersonSchema(baseUrl);
+  const personSchema = generatePersonSchema();
 
   // BreadcrumbList for better content structure
   const breadcrumbSchema = {

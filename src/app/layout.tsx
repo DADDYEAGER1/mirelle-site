@@ -249,8 +249,7 @@ export default function RootLayout({
         <meta name="referrer" content="always" />
         <meta name="classification" content="Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle" />
         
-        {/* Preconnect for performance */}
-        <body className={`${inter.variable} ${cormorant.variable} font-sans antialiased`}>
+
         {/* ✅ KEEP THESE */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

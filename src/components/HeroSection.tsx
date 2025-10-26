@@ -14,7 +14,7 @@ export default function HeroSection() {
             src="/herosectionbg.jpg"
             alt="Beautiful nail art background"
             className="w-full h-full object-cover opacity-90"
-            priority
+            loading="eager"
             fetchPriority="high"
           />
         </picture>

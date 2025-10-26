@@ -256,6 +256,10 @@ return {
           // FIXED: Use heroImage directly, not hero.image
           url: categoryData.heroImage,
           alt: seo.title,
+          priority
+          fetchPriority="high"
+          width: 1200,
+          height: 630,
         },
       ],
     },
@@ -272,8 +276,6 @@ return {
   };
 }
 
-
-it looks lik,et his can you fix update this
 
 // ============================================
 // MAIN PAGE COMPONENT

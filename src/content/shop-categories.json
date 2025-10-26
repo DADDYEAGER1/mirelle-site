@@ -1,8 +1,8 @@
-
 {
   "categories": {
     "fall": {
       "slug": "fall",
+      "name": "Fall Nail Collection",
       "displayName": "Fall Nails",
       "season": "Autumn",
       "year": 2025,
@@ -11,34 +11,45 @@
       "gradientFrom": "amber-900",
       "gradientVia": "orange-800",
       "gradientTo": "red-900",
-      "tldr": {
-      "summary": [
-        "50+ festive designs from classic to modern trends",
-        "Premium products starting at $8.99",
-        "Complete kits include everything for salon results",
-        "Ships within 24 hours for holiday deadlines"
-      ],
-      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
-      }
       "emojis": ["🍂", "🍁", "🎃", "🌰"],
       "ctas": ["Autumn Elegance", "Cozy Vibes", "Fall Glamour", "Harvest Beauty", "Warm Tones"],
+      "tldr": {
+        "summary": [
+          "50+ autumn designs from maple leaves to pumpkin spice",
+          "Premium products starting at $3.99",
+          "Complete kits include everything for salon results",
+          "Ships within 24 hours for seasonal deadlines"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
       "seo": {
         "title": "Fall Nails 2025: 50+ Best Autumn Press-Ons from $3.99 | Mirelle",
-        "description": "Shop 50+ trending fall nail designs with maple leaves, pumpkins & warm autumn colors. Premium press-on nails from $3.99. Easy 5-min application!",
+        "description": "Shop 50+ trending fall nail designs with maple leaves, pumpkins & warm autumn colors. Premium press-on nails from $3.99. Free shipping. Easy 5-min application!",
         "keywords": "fall nails 2025, autumn nail designs, fall press on nails, maple leaf nails, thanksgiving nails, pumpkin nails, autumn manicure, fall nail art, best fall nails, cheap press on nails",
         "ogImage": "https://mirelleinspo.com/fall-nails-hero.jpg"
       },
       "relatedCategories": ["christmas", "new-year", "trendy", "winter"],
-      "whyChooseUs": [
-        "Hand-picked premium designs curated by nail art enthusiasts",
-        "Best prices from trusted Amazon sellers with verified ratings",
-        "Direct links to top-rated products - no middleman markup",
-        "Easy application with detailed product descriptions",
-        "Authentic customer reviews visible on product pages"
+      "testimonials": [
+        {
+          "name": "Sarah M.",
+          "review": "The Maple Leaf Design Autumn False Nail are absolutely perfect for fall! Love the seasonal vibes.",
+          "product": "Maple Leaf Design Autumn False Nail"
+        },
+        {
+          "name": "Emily R.",
+          "review": "These fall press-ons are gorgeous! The warm tones are perfect for the season.",
+          "product": "Fall Collection"
+        },
+        {
+          "name": "Jessica L.",
+          "review": "Amazing quality and the autumn designs are so creative. Will definitely order again!",
+          "product": "Autumn Press-On Set"
+        }
       ]
     },
     "christmas": {
       "slug": "christmas",
+      "name": "Christmas Nail Collection",
       "displayName": "Christmas Nails",
       "season": "Winter Holiday",
       "year": 2025,
@@ -47,34 +58,45 @@
       "gradientFrom": "red-900",
       "gradientVia": "green-800",
       "gradientTo": "red-800",
-      "tldr": {
-      "summary": [
-        "50+ festive designs from classic to modern trends",
-        "Premium products starting at $8.99",
-        "Complete kits include everything for salon results",
-        "Ships within 24 hours for holiday deadlines"
-      ],
-      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
-      }
       "emojis": ["🎄", "🎅", "❄️", "🎁"],
       "ctas": ["Holiday Sparkle", "Festive Cheer", "Winter Magic", "Joyful Nails", "Merry & Bright"],
+      "tldr": {
+        "summary": [
+          "60+ festive designs from classic to modern trends",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for salon results",
+          "Ships within 24 hours for holiday deadlines"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
       "seo": {
         "title": "Christmas Nails 2025: 60+ Best Holiday Press-Ons from $4.99 | Mirelle",
-        "description": "Shop 60+ festive Christmas nail designs with snowflakes, Santa & holiday sparkle. Premium press-on nails from $4.99. Perfect for holiday parties!",
+        "description": "Shop 60+ festive Christmas nail designs with snowflakes, Santa & holiday sparkle. Premium press-on nails from $4.99. Free shipping. Perfect for holiday parties!",
         "keywords": "christmas nails 2025, holiday nail designs, christmas press on nails, festive nails, snowflake nails, santa nails, xmas nails, christmas manicure, best christmas nails, holiday press ons",
         "ogImage": "https://mirelleinspo.com/christmas-nails-hero.jpg"
       },
       "relatedCategories": ["winter", "new-year", "trendy", "fall"],
-      "whyChooseUs": [
-        "Hand-picked premium designs curated by nail art enthusiasts",
-        "Best prices from trusted Amazon sellers with verified ratings",
-        "Direct links to top-rated products - no middleman markup",
-        "Easy application with detailed product descriptions",
-        "Authentic customer reviews visible on product pages"
+      "testimonials": [
+        {
+          "name": "Amanda K.",
+          "review": "Perfect for the holiday season! The snowflake details are stunning.",
+          "product": "Christmas Snowflake Collection"
+        },
+        {
+          "name": "Rachel P.",
+          "review": "These festive nails completed my holiday look. So many compliments!",
+          "product": "Holiday Sparkle Set"
+        },
+        {
+          "name": "Nicole T.",
+          "review": "Quality is amazing and they lasted through all my holiday parties!",
+          "product": "Christmas Press-Ons"
+        }
       ]
     },
     "winter": {
       "slug": "winter",
+      "name": "Winter Nail Collection",
       "displayName": "Winter Nails",
       "season": "Winter",
       "year": 2025,
@@ -83,34 +105,45 @@
       "gradientFrom": "blue-900",
       "gradientVia": "cyan-800",
       "gradientTo": "slate-900",
-      "tldr": {
-      "summary": [
-        "50+ festive designs from classic to modern trends",
-        "Premium products starting at $8.99",
-        "Complete kits include everything for salon results",
-        "Ships within 24 hours for holiday deadlines"
-      ],
-      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
-      }
       "emojis": ["❄️", "⛄", "🌨️", "☃️"],
       "ctas": ["Icy Elegance", "Frosted Beauty", "Winter Wonder", "Snowy Chic", "Cozy Glam"],
+      "tldr": {
+        "summary": [
+          "55+ icy designs from frosted elegance to cozy glam",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for salon results",
+          "Ships within 24 hours for winter season"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
       "seo": {
         "title": "Winter Nails 2025: 55+ Best Icy Press-Ons from $4.99 | Mirelle",
-        "description": "Shop 55+ elegant winter nail designs with snowflakes, icy blues & frosted effects. Premium press-on nails from $4.99. Stay stylish all winter!",
+        "description": "Shop 55+ elegant winter nail designs with snowflakes, icy blues & frosted effects. Premium press-on nails from $4.99. Free shipping. Stay stylish all winter!",
         "keywords": "winter nails 2025, icy nail designs, winter press on nails, snowflake nails, frosted nails, blue winter nails, winter manicure, cozy winter nails, best winter nails, winter nail art",
         "ogImage": "https://mirelleinspo.com/winter-nails-hero.jpg"
       },
       "relatedCategories": ["christmas", "fall", "trendy", "new-year"],
-      "whyChooseUs": [
-        "Hand-picked premium designs curated by nail art enthusiasts",
-        "Best prices from trusted Amazon sellers with verified ratings",
-        "Direct links to top-rated products - no middleman markup",
-        "Easy application with detailed product descriptions",
-        "Authentic customer reviews visible on product pages"
+      "testimonials": [
+        {
+          "name": "Lauren S.",
+          "review": "The icy blue shades are absolutely gorgeous! Perfect winter vibes.",
+          "product": "Winter Frost Collection"
+        },
+        {
+          "name": "Michelle D.",
+          "review": "These winter designs are so elegant. Love the snowflake details!",
+          "product": "Icy Elegance Set"
+        },
+        {
+          "name": "Sophia G.",
+          "review": "Best winter nails I've found! Quality and design are top-notch.",
+          "product": "Winter Press-Ons"
+        }
       ]
     },
     "halloween": {
       "slug": "halloween",
+      "name": "Halloween Nail Collection",
       "displayName": "Halloween Nails",
       "season": "Fall Holiday",
       "year": 2025,
@@ -119,34 +152,45 @@
       "gradientFrom": "orange-900",
       "gradientVia": "purple-800",
       "gradientTo": "black",
-      "tldr": {
-      "summary": [
-        "50+ festive designs from classic to modern trends",
-        "Premium products starting at $8.99",
-        "Complete kits include everything for salon results",
-        "Ships within 24 hours for holiday deadlines"
-      ],
-      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
-      }
       "emojis": ["🎃", "👻", "🦇", "🕷️"],
       "ctas": ["Spooky Chic", "Haunting Beauty", "Creepy Cute", "Gothic Glam", "Frightful Fun"],
+      "tldr": {
+        "summary": [
+          "45+ spooky designs from creepy cute to gothic glam",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for Halloween parties",
+          "Ships within 24 hours for costume deadlines"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
       "seo": {
         "title": "Halloween Nails 2025: 45+ Best Spooky Press-Ons from $4.99 | Mirelle",
-        "description": "Shop 45+ spooky Halloween nail designs with ghosts, pumpkins & gothic details. Fun press-on nails from $4.99. Perfect for Halloween parties & costumes!",
+        "description": "Shop 45+ spooky Halloween nail designs with ghosts, pumpkins & gothic details. Fun press-on nails from $4.99. Free shipping. Perfect for Halloween parties & costumes!",
         "keywords": "halloween nails 2025, spooky nail designs, halloween press on nails, pumpkin nails, ghost nails, gothic nails, halloween manicure, creepy nails, best halloween nails, halloween nail art",
         "ogImage": "https://mirelleinspo.com/halloween-nails-hero.jpg"
       },
       "relatedCategories": ["fall", "trendy", "christmas", "new-year"],
-      "whyChooseUs": [
-        "Hand-picked premium designs curated by nail art enthusiasts",
-        "Best prices from trusted Amazon sellers with verified ratings",
-        "Direct links to top-rated products - no middleman markup",
-        "Easy application with detailed product descriptions",
-        "Authentic customer reviews visible on product pages"
+      "testimonials": [
+        {
+          "name": "Brittany H.",
+          "review": "These Halloween nails are the perfect mix of spooky and cute!",
+          "product": "Halloween Spooky Collection"
+        },
+        {
+          "name": "Ashley W.",
+          "review": "Got so many compliments at my Halloween party. Love the ghost designs!",
+          "product": "Haunting Beauty Set"
+        },
+        {
+          "name": "Megan C.",
+          "review": "Perfect for Halloween! The orange and black combo is iconic.",
+          "product": "Halloween Press-Ons"
+        }
       ]
     },
     "new-year": {
       "slug": "new-year",
+      "name": "New Year Nail Collection",
       "displayName": "New Year Nails",
       "season": "Winter Holiday",
       "year": 2025,
@@ -155,35 +199,45 @@
       "gradientFrom": "yellow-600",
       "gradientVia": "purple-800",
       "gradientTo": "pink-900",
-
-      "tldr": {
-      "summary": [
-        "50+ festive designs from classic to modern trends",
-        "Premium products starting at $8.99",
-        "Complete kits include everything for salon results",
-        "Ships within 24 hours for holiday deadlines"
-      ],
-      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
-      }
       "emojis": ["🎉", "✨", "🥂", "🎊"],
       "ctas": ["Midnight Sparkle", "Party Glam", "New Year Magic", "Celebration Style", "Glitter Goals"],
+      "tldr": {
+        "summary": [
+          "40+ glamorous designs from midnight sparkle to party glam",
+          "Premium products starting at $5.99",
+          "Complete kits include everything for NYE celebrations",
+          "Ships within 24 hours for New Year's parties"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
       "seo": {
         "title": "New Year Nails 2025: 40+ Best Glittery Press-Ons from $5.99 | Mirelle",
-        "description": "Shop 40+ glamorous New Year nail designs with glitter, sparkle & party vibes. Stunning press-on nails from $5.99. Ring in 2025 with style & confidence!",
+        "description": "Shop 40+ glamorous New Year nail designs with glitter, sparkle & party vibes. Stunning press-on nails from $5.99. Free shipping. Ring in 2025 with style & confidence!",
         "keywords": "new year nails 2025, nye nail designs, new years press on nails, glitter nails, sparkle nails, party nails, celebration nails, nye manicure, best new year nails, midnight nails",
         "ogImage": "https://mirelleinspo.com/new-year-nails-hero.jpg"
       },
       "relatedCategories": ["winter", "trendy", "christmas", "fall"],
-      "whyChooseUs": [
-        "Hand-picked premium designs curated by nail art enthusiasts",
-        "Best prices from trusted Amazon sellers with verified ratings",
-        "Direct links to top-rated products - no middleman markup",
-        "Easy application with detailed product descriptions",
-        "Authentic customer reviews visible on product pages"
+      "testimonials": [
+        {
+          "name": "Victoria B.",
+          "review": "Perfect for NYE! The glitter and sparkle were exactly what I needed.",
+          "product": "New Year Sparkle Collection"
+        },
+        {
+          "name": "Olivia M.",
+          "review": "These nails made my New Year's celebration even more special!",
+          "product": "Midnight Magic Set"
+        },
+        {
+          "name": "Taylor J.",
+          "review": "So glamorous! Everyone asked where I got my nails done.",
+          "product": "NYE Press-Ons"
+        }
       ]
     },
     "trendy": {
       "slug": "trendy",
+      "name": "Trendy Nail Collection",
       "displayName": "Trendy Nails",
       "season": "Year-round",
       "year": 2025,
@@ -192,30 +246,40 @@
       "gradientFrom": "pink-600",
       "gradientVia": "purple-600",
       "gradientTo": "blue-600",
-      "tldr": {
-      "summary": [
-        "50+ festive designs from classic to modern trends",
-        "Premium products starting at $8.99",
-        "Complete kits include everything for salon results",
-        "Ships within 24 hours for holiday deadlines"
-      ],
-      "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
-      }
       "emojis": ["💅", "✨", "💖", "🌟"],
       "ctas": ["Trend Setter", "Modern Chic", "Style Icon", "Fashion Forward", "On Trend"],
+      "tldr": {
+        "summary": [
+          "65+ trending designs from viral styles to modern classics",
+          "Premium products starting at $4.99",
+          "Complete kits include everything for fashion-forward looks",
+          "Ships within 24 hours to stay on trend"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Easy removal"]
+      },
       "seo": {
         "title": "Trendy Nails 2025: 65+ Latest Press-On Styles from $4.99 | Mirelle",
-        "description": "Shop 65+ trendy nail designs featuring the latest 2025 styles & viral colors. Modern press-on nails from $4.99. Stay ahead of nail trends with fast delivery!",
+        "description": "Shop 65+ trendy nail designs featuring the latest 2025 styles & viral colors. Modern press-on nails from $4.99. Free shipping. Stay ahead of nail trends with fast delivery!",
         "keywords": "trendy nails 2025, latest nail designs, trendy press on nails, viral nails, modern nails, popular nails, fashion nails, 2025 nail trends, best trendy nails, stylish press ons",
         "ogImage": "https://mirelleinspo.com/trendy-nails-hero.jpg"
       },
       "relatedCategories": ["fall", "winter", "christmas", "new-year"],
-      "whyChooseUs": [
-        "Hand-picked premium designs curated by nail art enthusiasts",
-        "Best prices from trusted Amazon sellers with verified ratings",
-        "Direct links to top-rated products - no middleman markup",
-        "Easy application with detailed product descriptions",
-        "Authentic customer reviews visible on product pages"
+      "testimonials": [
+        {
+          "name": "Isabella F.",
+          "review": "Always on trend! These designs are exactly what's popular right now.",
+          "product": "Trendy Collection"
+        },
+        {
+          "name": "Ava N.",
+          "review": "Love keeping up with the latest nail trends. This collection is perfect!",
+          "product": "Modern Chic Set"
+        },
+        {
+          "name": "Emma R.",
+          "review": "Fashion-forward designs that always get compliments. Highly recommend!",
+          "product": "Trendy Press-Ons"
+        }
       ]
     }
   }

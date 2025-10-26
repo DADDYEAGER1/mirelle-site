@@ -38,6 +38,12 @@ export interface BlogPost {
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
   galleryImages?: GalleryImage[]; // ✅ Added: Array of gallery image URLs
+    // ✨ NEW PROPERTY - Add this to your existing interface
+  tldr?: {
+    summary: string[];
+    keyTakeaways?: string[];
+  };
+
 }
 
 export interface BlogMetadata {

@@ -20,6 +20,18 @@ imageWidth: 1200
 imageHeight: 630
 dateModified: "2025-10-08"
 wordCount: 3800
+tldr:
+  summary:
+    - "Chrome finishes are dominating 2026 Valentine trends with 484% search increase"
+    - "Soft pink and nude bases replace traditional red for modern sophistication"
+    - "Minimalist single-heart accent nails beat elaborate full-hand designs"
+    - "Gel manicures last 2-3 weeks through Valentine's Day celebrations"
+    - "Budget-friendly DIY options under $20 rival salon-quality results"
+  keyTakeaways:
+    - "Chrome finishes trending"
+    - "Lasts 2-3 weeks"
+    - "484% search spike"
+    - "Budget-friendly <$20"
 faqItems:
   - question: "What colors are best for valentine nails in 2026"
     answer: "Soft blush pinks and cherry red dominate 2026 trends, with rose gold chrome finishes adding modern dimension. Coquette-inspired pastels with bow accents are hugely popular, giving traditional valentine colors a fresh twist that works for any style preference."

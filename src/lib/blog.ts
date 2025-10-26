@@ -68,6 +68,14 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
         return `<h2 id="${id}">${text}</h2>`;
       }
     );
+
+    // ✨ NEW - Extract TL;DR from frontmatter
+    const tldr = data.tldr
+      ? {
+          summary: data.tldr.summary || [],
+          keyTakeaways: data.tldr.keyTakeaways || []
+        }
+      : undefined;
     
     return {
       slug,
@@ -91,6 +99,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       tutorialSteps: data.tutorialSteps || undefined,
       tutorialMetadata: data.tutorialMetadata || undefined,
       videoMetadata: data.videoMetadata || undefined,
+      tldr, // ✅ NEW FIELD INCLUDED HERE
     };
   } catch (error) {
     console.error(`Error reading blog post ${slug}:`, error);

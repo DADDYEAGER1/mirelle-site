@@ -41,6 +41,7 @@ export interface BlogPost {
     // ✨ NEW PROPERTY - Add this to your existing interface
   tldr?: {
     summary: string[];
+    readTime: string;
     keyTakeaways?: string[];
   };
 

@@ -1,5 +1,5 @@
 // src/app/shop/[category]/page.tsx
-// UPDATED VERSION with all SEO schemas integrated - FIXED
+// AFFILIATE-SAFE VERSION - No AggregateRating/Reviews
 
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -10,7 +10,6 @@ import {
   getAllCategorySlugs,
 } from '@/lib/shop';
 
-// Import FAQ data dynamically
 async function getFAQs(category: string) {
   try {
     const faqModule = await import(`@/content/shop-faqs/${category}.json`);
@@ -20,7 +19,6 @@ async function getFAQs(category: string) {
   }
 }
 
-// Import category description
 async function getCategoryDescription(category: string) {
   try {
     const descModule = await import(`@/content/shop-descriptions/${category}.json`);
@@ -31,29 +29,8 @@ async function getCategoryDescription(category: string) {
 }
 
 // ============================================
-// SCHEMA GENERATION FUNCTIONS
+// SCHEMA GENERATION FUNCTIONS (AFFILIATE-SAFE)
 // ============================================
-
-function generateAggregateRatingSchema(category: string) {
-  const ratingData: Record<string, { rating: number; reviews: number }> = {
-    fall: { rating: 4.7, reviews: 243 },
-    christmas: { rating: 4.8, reviews: 312 },
-    winter: { rating: 4.6, reviews: 189 },
-    halloween: { rating: 4.7, reviews: 267 },
-    'new-year': { rating: 4.8, reviews: 198 },
-    trendy: { rating: 4.6, reviews: 276 },
-  };
-
-  const data = ratingData[category] || { rating: 4.7, reviews: 200 };
-
-  return {
-    '@type': 'AggregateRating',
-    ratingValue: data.rating.toString(),
-    reviewCount: data.reviews.toString(),
-    bestRating: '5',
-    worstRating: '1',
-  };
-}
 
 function generateFAQSchema(
   category: string,
@@ -77,8 +54,7 @@ function generateFAQSchema(
 
 function generateCollectionPageSchema(
   categoryData: any,
-  products: any[],
-  aggregateRating: any
+  products: any[]
 ) {
   const categoryNames: Record<string, string> = {
     fall: 'Fall Nails',
@@ -94,11 +70,11 @@ function generateCollectionPageSchema(
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
+    '@id': `https://mirelleinspo.com/shop/${categoryData.slug}#collection`,
     name: `${displayName} Collection`,
     description: categoryData.seo.description,
     url: `https://mirelleinspo.com/shop/${categoryData.slug}`,
     numberOfItems: products.length,
-    aggregateRating: aggregateRating,
     about: {
       '@type': 'Thing',
       name: displayName,
@@ -106,14 +82,14 @@ function generateCollectionPageSchema(
     },
     isPartOf: {
       '@type': 'WebSite',
-      name: 'Mirelle',
+      '@id': 'https://mirelleinspo.com/#website',
+      name: 'Mirellé',
       url: 'https://mirelleinspo.com',
     },
   };
 }
 
 function generateItemListSchema(categoryData: any, products: any[]) {
-  // FIXED: Parse string prices correctly
   const prices = products
     .map((p) => {
       const priceStr = p.price.toString().replace('$', '');
@@ -146,20 +122,28 @@ function generateItemListSchema(categoryData: any, products: any[]) {
       position: index + 1,
       item: {
         '@type': 'Product',
+        '@id': `https://mirelleinspo.com/shop/${categoryData.slug}#product-${product.id}`,
         name: product.name,
-        description:
-          product.description ||
-          `Beautiful ${displayName.toLowerCase()} press-on nail design`,
+        description: product.description || `Beautiful ${displayName.toLowerCase()} press-on nail design`,
         image: product.image,
-        url: product.affiliateUrl, // FIXED: Changed from affiliateLink
+        url: product.affiliateUrl,
+        brand: product.brand ? {
+          '@type': 'Brand',
+          name: product.brand
+        } : undefined,
         offers: {
           '@type': 'Offer',
+          url: product.affiliateUrl,
           price: product.price.toString().replace('$', ''),
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
           priceValidUntil: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
             .toISOString()
             .split('T')[0],
+          seller: {
+            '@type': 'Organization',
+            name: 'Amazon'
+          }
         },
       },
     })),
@@ -211,20 +195,12 @@ function generateBreadcrumbSchema(categoryData: any) {
   };
 }
 
-// ============================================
-// GENERATE STATIC PARAMS
-// ============================================
-
 export async function generateStaticParams() {
   const slugs = getAllCategorySlugs();
   return slugs.map((slug) => ({
     category: slug,
   }));
 }
-
-// ============================================
-// GENERATE METADATA
-// ============================================
 
 export async function generateMetadata({
   params,
@@ -242,7 +218,7 @@ export async function generateMetadata({
 
   const seo = categoryData.seo;
 
-return {
+  return {
     title: seo.title,
     description: seo.description,
     keywords: Array.isArray(seo.keywords) ? seo.keywords : [seo.keywords],
@@ -253,8 +229,7 @@ return {
       url: `https://mirelleinspo.com/shop/${category}`,
       images: [
         {
-          // FIXED: Use heroImage directly, not hero.image
-          url: categoryData.heroImage,
+          url: `https://mirelleinspo.com${categoryData.heroImage}`,
           alt: seo.title,
           width: 1200,
           height: 630,
@@ -265,19 +240,13 @@ return {
       card: 'summary_large_image',
       title: seo.title,
       description: seo.description,
-      // FIXED: Use heroImage directly
-      images: [categoryData.heroImage],
+      images: [`https://mirelleinspo.com${categoryData.heroImage}`],
     },
     alternates: {
       canonical: `https://mirelleinspo.com/shop/${category}`,
     },
   };
 }
-
-
-// ============================================
-// MAIN PAGE COMPONENT
-// ============================================
 
 export default async function ShopCategoryPage({
   params,
@@ -286,31 +255,22 @@ export default async function ShopCategoryPage({
 }) {
   const { category } = await params;
 
-  // Fetch data
   const categoryData = getCategoryData(category);
   const products = await getCategoryProducts(category);
   const faqs = await getFAQs(category);
   const description = await getCategoryDescription(category);
 
-  // Handle 404
   if (!categoryData) {
     notFound();
   }
 
-  // Generate all schemas
-  const aggregateRating = generateAggregateRatingSchema(category);
-  const collectionSchema = generateCollectionPageSchema(
-    categoryData,
-    products,
-    aggregateRating
-  );
+  const collectionSchema = generateCollectionPageSchema(categoryData, products);
   const itemListSchema = generateItemListSchema(categoryData, products);
   const breadcrumbSchema = generateBreadcrumbSchema(categoryData);
   const faqSchema = generateFAQSchema(category, faqs);
 
   return (
     <>
-      {/* CollectionPage Schema with AggregateRating */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -318,7 +278,6 @@ export default async function ShopCategoryPage({
         }}
       />
 
-      {/* ItemList Schema for product collection */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -326,7 +285,6 @@ export default async function ShopCategoryPage({
         }}
       />
 
-      {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -334,7 +292,6 @@ export default async function ShopCategoryPage({
         }}
       />
 
-      {/* FAQ Schema (if FAQs exist) */}
       {faqSchema && (
         <script
           type="application/ld+json"
@@ -344,7 +301,6 @@ export default async function ShopCategoryPage({
         />
       )}
 
-      {/* Main Shop Component */}
       <ShopClient
         categoryData={categoryData}
         initialProducts={products}

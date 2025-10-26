@@ -243,33 +243,37 @@ export async function generateMetadata({
   const seo = categoryData.seo;
 
 return {
-  title: seo.title,
-  description: seo.description,
-  keywords: Array.isArray(seo.keywords) ? seo.keywords : [seo.keywords],
-  openGraph: {
     title: seo.title,
     description: seo.description,
-    type: 'website',
-    url: `https://mirelleinspo.com/shop/${category}`,
-    images: [
-      {
-        url: `https://mirelleinspo.com${categoryData.heroImage}`,
-        width: 1200,
-        height: 630,
-        alt: seo.title,
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: seo.title,
-    description: seo.description,
-    images: [`https://mirelleinspo.com${categoryData.heroImage}`],
-  },
-  alternates: {
-    canonical: `https://mirelleinspo.com/shop/${category}`,
-  },
-};
+    keywords: Array.isArray(seo.keywords) ? seo.keywords : [seo.keywords],
+    openGraph: {
+      title: seo.title,
+      description: seo.description,
+      type: 'website',
+      url: `https://mirelleinspo.com/shop/${category}`,
+      images: [
+        {
+          // FIXED: Use heroImage directly, not hero.image
+          url: categoryData.heroImage,
+          alt: seo.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: seo.title,
+      description: seo.description,
+      // FIXED: Use heroImage directly
+      images: [categoryData.heroImage],
+    },
+    alternates: {
+      canonical: `https://mirelleinspo.com/shop/${category}`,
+    },
+  };
+}
+
+
+it looks lik,et his can you fix update this
 
 // ============================================
 // MAIN PAGE COMPONENT

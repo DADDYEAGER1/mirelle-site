@@ -7,7 +7,7 @@ import { generateContactPageSchema } from '@/lib/generateSchemas';
 export default function ContactPage() {
   const baseUrl = 'https://mirelleinspo.com';
   const email = 'team.mirelle@gmail.com';
-  const contactPageSchema = generateContactPageSchema(baseUrl, email);
+  const contactPageSchema = generateContactPageSchema(email);
 
   const [formData, setFormData] = useState({
     name: '',

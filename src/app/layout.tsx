@@ -156,7 +156,7 @@ export default function RootLayout({
       "width": 512,
       "height": 512
     },
-    "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women"
+    "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women",
     "sameAs": [
       "https://www.pinterest.com/mirelle_inspo",
       "https://www.instagram.com/mirelle_inspo",

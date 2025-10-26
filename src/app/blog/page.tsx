@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
 import BlogCard from '@/components/Blog/BlogCard';
+import { generateBlogSchema, generateBlogListSchema } from '@/lib/generateSchemas';
 
 // SEO-Optimized Metadata
 export const metadata: Metadata = {
@@ -51,41 +52,11 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
   const posts = await getAllBlogPosts();
+  const baseUrl = 'https://mirelleinspo.com';
 
-  // JSON-LD Structured Data
-  const blogSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Blog',
-    '@id': 'https://mirelleinspo.com/blog#blog',
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://mirelleinspo.com/blog',
-    },
-    name: 'Mirelle Nail Care Blog',
-    description: 'Expert nail care tips, trends, and tutorials for beautiful, healthy nails',
-    publisher: {
-      '@type': 'Organization',
-      '@id': 'https://mirelleinspo.com/#organization',
-      name: 'Mirelle',
-      url: 'https://mirelleinspo.com',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://mirelleinspo.com/logo.png',
-      },
-    },
-    blogPost: posts.slice(0, 10).map(post => ({
-      '@type': 'BlogPosting',
-      headline: post.title,
-      url: `https://mirelleinspo.com/blog/${post.slug}`,
-      datePublished: post.date,
-      image: `https://mirelleinspo.com${post.image}`,
-      author: {
-        '@type': 'Person',
-        name: post.author,
-      },
-    })),
-    inLanguage: 'en-US',
-  };
+  // Generate enhanced schemas using lib functions
+  const blogSchema = generateBlogSchema(baseUrl);
+  const itemListSchema = generateBlogListSchema(posts, baseUrl);
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -108,10 +79,14 @@ export default async function BlogPage() {
 
   return (
     <>
-      {/* Structured Data */}
+      {/* Enhanced Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       <script
         type="application/ld+json"

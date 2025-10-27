@@ -80,11 +80,6 @@ export interface CategoryData {
   seo: CategorySEO;
   relatedCategories: string[]; // Changed to string[] - actual slugs
   whyChooseUs?: string[];  
-  seo: {
-    title: string;
-    description: string;
-    keywords: string[];
-  };
   tldr?: {
     summary: string[];
     keyTakeaways?: string[];

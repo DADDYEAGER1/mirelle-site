@@ -302,7 +302,10 @@ export default async function ShopCategoryPage({
       )}
 
       <ShopClient
+        tldr={categoryData.tldr}  // ADD THIS LINE
+        
         categoryData={categoryData}
+        
         initialProducts={products}
         faqs={faqs}
         description={description}

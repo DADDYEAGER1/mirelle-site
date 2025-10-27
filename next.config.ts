@@ -47,17 +47,6 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Redirects for SEO
-  async redirects() {
-    return [
-      {
-        source: "/new year nails",
-        destination: "/shop/new-year",
-        permanent: true,
-      },
-      // Add more redirects if you have duplicate routes
-    ];
-  },
 
   // Rewrites for clean URLs
   async rewrites() {

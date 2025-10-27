@@ -81,7 +81,7 @@ module.exports = {
       changefreq = 'weekly';
     } else if (path.startsWith('/topics')) {
       priority = 0.9;
-      changefreq: 'weekly';
+      changefreq = 'weekly';
     } else if (path.startsWith('/shop')) {
       priority = 0.7;
       changefreq = 'weekly';

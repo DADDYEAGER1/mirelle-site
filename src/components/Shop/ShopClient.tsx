@@ -143,6 +143,45 @@ export default function ShopClient({
         </div>
       </section>
 
+            {/* TL;DR Section - MOVED INSIDE COMPONENT */}
+      {tldr && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="bg-gradient-to-br from-pink-50 to-purple-50 border-l-4 border-pink-500 p-6 rounded-lg shadow-md">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl">⚡</span>
+              <h2 className="text-xl font-bold text-gray-900 font-serif">Quick Collection Overview</h2>
+            </div>
+            
+            <div className="space-y-3">
+              <ul className="space-y-2">
+                {tldr.summary.map((item, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-pink-500 mt-1">✓</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              {tldr.keyTakeaways && tldr.keyTakeaways.length > 0 && (
+                <div className="mt-4 pt-4 border-t border-pink-200">
+                  <p className="text-gray-700 font-medium mb-2">Key Features:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {tldr.keyTakeaways.map((takeaway, index) => (
+                      <span 
+                        key={index} 
+                        className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {takeaway}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* SEO Description Section */}
       {description && (
         <section className="max-w-4xl mx-auto px-4 py-12">

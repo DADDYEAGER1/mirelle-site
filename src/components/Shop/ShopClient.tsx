@@ -1,8 +1,4 @@
-// src/components/Shop/ShopClient.tsx
-// FIXED VERSION - Matches all type definitions
-
 'use client';
-
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -13,54 +9,12 @@ import { calculateDiscount } from '@/lib/shop';
 interface ShopClientProps {
   categoryData: CategoryData;
   initialProducts: Product[];
-  tldr?: {
-    summary: string[];
-    keyTakeaways?: string[];
-  };
   faqs?: Array<{ question: string; answer: string; keywords?: string[] }>;
   description?: {
     html: string;
     perfectFor?: string[];
   } | null;
 }
-
-{categoryData.tldr && (
-  <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div className="bg-gradient-to-br from-pink-50 to-purple-50 border-l-4 border-pink-500 p-6 rounded-lg shadow-md">
-      <div className="flex items-center gap-2 mb-4">
-        <span className="text-2xl">⚡</span>
-        <h2 className="text-xl font-bold text-gray-900 font-serif">Quick Collection Overview</h2>
-      </div>
-      
-      <div className="space-y-3">
-        <ul className="space-y-2">
-          {tldr.summary.map((item, index) => (
-            <li key={index} className="flex items-start gap-2">
-              <span className="text-pink-500 mt-1">✓</span>
-              <span className="text-gray-700">{item}</span>
-            </li>
-          ))}
-        </ul>
-        
-        {tldr.keyTakeaways && tldr.keyTakeaways.length > 0 && (
-          <div className="mt-4 pt-4 border-t border-pink-200">
-            <p className="text-gray-700 font-medium mb-2">Key Features:</p>
-            <div className="flex flex-wrap gap-2">
-              {tldr.keyTakeaways.map((takeaway, index) => (
-                <span 
-                  key={index} 
-                  className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium"
-                >
-                  {takeaway}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  </section>
-)}
 
 export default function ShopClient({
   categoryData,
@@ -72,7 +26,6 @@ export default function ShopClient({
   const [showAll, setShowAll] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
-  // Filter products - FIXED: use originalPrice vs price for sale detection
   const filteredProducts = initialProducts.filter((product) => {
     if (filter === 'all') return true;
     if (filter === 'new') return product.isNew;
@@ -81,21 +34,15 @@ export default function ShopClient({
     return true;
   });
 
-  // Display products (15 initially, then all)
-  const displayProducts = showAll
-    ? filteredProducts
-    : filteredProducts.slice(0, 15);
-
+  const displayProducts = showAll ? filteredProducts : filteredProducts.slice(0, 15);
   const hasMore = filteredProducts.length > 15 && !showAll;
 
-  // Toggle FAQ accordion
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Back Button */}
       <div className="max-w-7xl mx-auto px-4 pt-6">
         <Link
           href="/shop"
@@ -106,14 +53,13 @@ export default function ShopClient({
         </Link>
       </div>
 
-      {/* Hero Section - FIXED: Use categoryData properties directly */}
+      {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div
           className={`absolute inset-0 bg-gradient-to-br from-${categoryData.gradientFrom} via-${categoryData.gradientVia} to-${categoryData.gradientTo} opacity-90`}
         />
         <div className="relative max-w-7xl mx-auto px-4 py-16 sm:py-24">
           <div className="text-center">
-            {/* Floating Emojis - FIXED: Use categoryData.emojis */}
             {categoryData.emojis && categoryData.emojis.length > 0 && (
               <div className="absolute inset-0 pointer-events-none">
                 {categoryData.emojis.map((emoji, i) => (
@@ -132,7 +78,6 @@ export default function ShopClient({
               </div>
             )}
 
-            {/* FIXED: Use displayName and year */}
             <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               {categoryData.displayName} {categoryData.year}
             </h1>
@@ -143,8 +88,46 @@ export default function ShopClient({
         </div>
       </section>
 
+      {/* TL;DR Section */}
+      {categoryData.tldr && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="bg-gradient-to-br from-pink-50 to-purple-50 border-l-4 border-pink-500 p-6 rounded-lg shadow-md">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl">⚡</span>
+              <h2 className="text-xl font-bold text-gray-900 font-serif">Quick Collection Overview</h2>
+            </div>
+            
+            <div className="space-y-3">
+              <ul className="space-y-2">
+                {categoryData.tldr.summary.map((item, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-pink-500 mt-1">✓</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              {categoryData.tldr.keyTakeaways && categoryData.tldr.keyTakeaways.length > 0 && (
+                <div className="mt-4 pt-4 border-t border-pink-200">
+                  <p className="text-gray-700 font-medium mb-2">Key Features:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {categoryData.tldr.keyTakeaways.map((takeaway, index) => (
+                      <span 
+                        key={index} 
+                        className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {takeaway}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
-      {/* SEO Description Section */}
+      {/* SEO Description */}
       {description && (
         <section className="max-w-4xl mx-auto px-4 py-12">
           <div className="prose prose-lg max-w-none">
@@ -195,25 +178,22 @@ export default function ShopClient({
       <section className="max-w-7xl mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {displayProducts.map((product) => {
-            // FIXED: Use calculateDiscount with string prices
             const discount = calculateDiscount(product.originalPrice, product.price);
 
             return (
               <a
                 key={product.id}
-                href={product.affiliateUrl} // FIXED: Changed from affiliateLink
+                href={product.affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"
               >
-                {/* Product Image */}
                 <div className="relative aspect-square overflow-hidden bg-gray-100">
                   <img
                     src={product.image}
-                    alt={product.description || product.name} // FIXED: Added fallback
+                    alt={product.description || product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  {/* Badges */}
                   <div className="absolute top-2 left-2 flex flex-col gap-1">
                     {product.isNew && (
                       <span className="px-2 py-1 bg-blue-500 text-white text-xs font-bold rounded">
@@ -225,7 +205,6 @@ export default function ShopClient({
                         TRENDING
                       </span>
                     )}
-                    {/* FIXED: Added stockStatus badge */}
                     {product.stockStatus === 'low-stock' && (
                       <span className="px-2 py-1 bg-orange-500 text-white text-xs font-bold rounded">
                         LOW STOCK
@@ -239,12 +218,10 @@ export default function ShopClient({
                   </div>
                 </div>
 
-                {/* Product Info */}
                 <div className="p-4">
                   <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
                     {product.name}
                   </h3>
-                  {/* FIXED: Use originalPrice vs price comparison */}
                   <div className="flex items-center gap-2">
                     {product.originalPrice !== product.price ? (
                       <>
@@ -267,7 +244,6 @@ export default function ShopClient({
                       <span className="text-sm text-gray-600">{product.rating}</span>
                     </div>
                   )}
-                  {/* FIXED: Added CTA button */}
                   <button className="mt-3 w-full bg-gray-900 text-white py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors">
                     {product.cta}
                   </button>
@@ -277,7 +253,6 @@ export default function ShopClient({
           })}
         </div>
 
-        {/* Load More Button */}
         {hasMore && (
           <div className="text-center mt-10">
             <button
@@ -326,7 +301,7 @@ export default function ShopClient({
         </section>
       )}
 
-{/* Why Choose Our Collection */}
+      {/* Why Choose Us */}
       {categoryData.whyChooseUs && categoryData.whyChooseUs.length > 0 && (
         <section className="bg-gradient-to-br from-gray-50 to-white py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -356,6 +331,7 @@ export default function ShopClient({
           </div>
         </section>
       )}
+
       {/* Related Categories */}
       {categoryData.relatedCategories && categoryData.relatedCategories.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 py-16 bg-gray-50">
@@ -386,11 +362,6 @@ export default function ShopClient({
       {/* Trust Signals */}
       <section className="max-w-7xl mx-auto px-4 py-16 border-t border-gray-200">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-          {/* <div>
-            <div className="text-4xl mb-3">🚚</div>
-            <h3 className="font-semibold text-gray-900 mb-2">Free Shipping</h3>
-            <p className="text-sm text-gray-600">On orders over $25</p>
-          </div> */}
           <div>
             <div className="text-4xl mb-3">💯</div>
             <h3 className="font-semibold text-gray-900 mb-2">Quality Guaranteed</h3>
@@ -417,7 +388,6 @@ export default function ShopClient({
         </p>
       </section>
 
-      {/* Float Animation */}
       <style jsx>{`
         @keyframes float {
           0%, 100% {

@@ -188,9 +188,9 @@ export async function getAllCategories(): Promise<{ name: string; count: number 
   return Array.from(categoryMap.entries())
     .map(([name, count]) => ({ 
       name, 
-      slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'), // ✅ ADD THIS
+      slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'), // ✅ ADD THIS LINE
       count,
-      description: `Expert articles about ${name}` // ✅ ADD THIS
+      description: `Expert articles about ${name}` // ✅ ADD THIS LINE (optional)
     }))
     .sort((a, b) => b.count - a.count);
 }

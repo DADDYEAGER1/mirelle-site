@@ -72,4 +72,5 @@ export interface BlogMetadata {
   readTime: number | string;
   imageAlt?: string;
   category?: string;
+  canonical?: string;
 }

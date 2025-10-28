@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { getBlogPost, getAllBlogSlugs } from '@/lib/blog';
 import BlogPost from '@/components/Blog/BlogPost';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedPosts from '@/components/Blog/RelatedPosts'; // ✅ NEW - Import RelatedPosts component
 import type { Metadata } from 'next';
 import { generateSchemas } from '@/lib/generateSchemas';
 
@@ -159,13 +160,22 @@ export default async function BlogPostPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.imageGallerySchema) }} 
         />
       )}
-            {/* Breadcrumbs */}
+      
+      {/* Breadcrumbs */}
       <Breadcrumbs 
         items={[{ label: 'Blog', href: '/blog' }]} 
         currentPage={post.title} 
       />
       
+      {/* Main Blog Post Content */}
       <BlogPost post={post} />
+
+      {/* ✅ NEW - Related Posts Section */}
+      <section className="bg-gray-50 py-12">
+        <div className="container mx-auto px-4">
+          <RelatedPosts currentSlug={slug} />
+        </div>
+      </section>
     </>
   );
 }

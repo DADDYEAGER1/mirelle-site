@@ -15,7 +15,7 @@ const files = fs.readdirSync(BLOG_DIRECTORY).filter(file => file.endsWith('.md')
 
 console.log(`📚 Processing ${files.length} blog posts...\n`);
 
-// Initialize separate objects for each field
+// Initialize objects for ONLY the editable fields
 const titles = {};
 const excerpts = {};
 const tags = {};
@@ -25,14 +25,14 @@ const dateModified = {};
 const tldr = {};
 const faqItems = {};
 
-// Extract data from each file
+// Extract ONLY editable fields from frontmatter
 files.forEach(file => {
   const slug = file.replace('.md', '');
   const filePath = path.join(BLOG_DIRECTORY, file);
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { data } = matter(fileContent);
 
-  // Populate each field object
+  // ✅ Extract ONLY the 8 fields you want to edit separately
   titles[slug] = data.title || 'Untitled';
   excerpts[slug] = data.excerpt || '';
   tags[slug] = data.tags || [];
@@ -64,3 +64,6 @@ saveToFile('tldr.json', tldr);
 saveToFile('faqItems.json', faqItems);
 
 console.log(`\n🎉 Successfully created 8 metadata files with ${files.length} posts each!`);
+console.log(`\n📂 Files created in: ${METADATA_DIRECTORY}`);
+console.log(`\n💡 To update metadata, edit the JSON files directly.`);
+console.log(`   Example: Edit tldr.json to update all TL;DRs at once.`);

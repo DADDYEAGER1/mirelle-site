@@ -17,9 +17,9 @@ export interface BlogMetadata {
   faqItems?: FAQItem[];              // ✅ ADD THIS
   
   // Optional fields for backward compatibility
-  date?: string;
-  author?: string;
-  readTime?: number | string;
+  date: string;
+  author: string;
+  readTime: number | string;
   category?: string;
   galleryImages?: GalleryImage[];
   rating?: Rating;

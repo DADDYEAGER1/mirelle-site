@@ -84,7 +84,13 @@ export default function BlogPost({ post }: BlogPostProps) {
           </div>
         )}
       </div>
+      <ReadingProgress />
 
+      <div className="max-w-4xl mx-auto mb-8">
+        <SocialShare title={post.title} slug={post.slug} />
+      </div>
+
+      
       {/* ✨ TL;DR SECTION - CRITICAL: Place AFTER header, BEFORE content */}
       {post.tldr && (
         <div className="max-w-4xl mx-auto mb-12">

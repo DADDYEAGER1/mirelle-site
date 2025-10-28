@@ -9,24 +9,58 @@ marked.setOptions({
   gfm: true,
 });
 
-const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
+// src/lib/blog.ts
+
 const METADATA_DIRECTORY = path.join(process.cwd(), 'src/content/metadata');
 
-// ✅ Read from JSON metadata
+// Cache for metadata files
+const metadataCache: { [key: string]: any } = {};
+
+function loadMetadataFile(filename: string): any {
+  if (metadataCache[filename]) return metadataCache[filename];
+  
+  try {
+    const filePath = path.join(METADATA_DIRECTORY, filename);
+    if (fs.existsSync(filePath)) {
+      const content = fs.readFileSync(filePath, 'utf8');
+      metadataCache[filename] = JSON.parse(content);
+      return metadataCache[filename];
+    }
+  } catch (error) {
+    console.error(`Error loading ${filename}:`, error);
+  }
+  
+  return {};
+}
+
+// ✅ NEW: Get metadata for a specific slug
 function getMetadataFromJSON(slug: string): BlogMetadata | null {
   try {
-    const metadataPath = path.join(METADATA_DIRECTORY, `${slug}.json`);
-    if (fs.existsSync(metadataPath)) {
-      const jsonContent = fs.readFileSync(metadataPath, 'utf8');
-      return JSON.parse(jsonContent);
-    }
-    return null;
+    const titles = loadMetadataFile('titles.json');
+    const excerpts = loadMetadataFile('excerpts.json');
+    const tags = loadMetadataFile('tags.json');
+    const images = loadMetadataFile('images.json');
+    const imageAlts = loadMetadataFile('imageAlts.json');
+    const dateModified = loadMetadataFile('dateModified.json');
+    const tldr = loadMetadataFile('tldr.json');
+    const faqItems = loadMetadataFile('faqItems.json');
+
+    return {
+      slug,
+      title: titles[slug] || 'Untitled',
+      excerpt: excerpts[slug] || '',
+      tags: tags[slug] || [],
+      image: images[slug] || null,
+      imageAlt: imageAlts[slug] || null,
+      dateModified: dateModified[slug] || null,
+      tldr: tldr[slug] || null,
+      faqItems: faqItems[slug] || null,
+    };
   } catch (error) {
     console.error(`Error reading metadata for ${slug}:`, error);
     return null;
   }
 }
-
 // ✅ Fallback to frontmatter
 function getMetadataFromFrontmatter(slug: string): BlogMetadata | null {
   try {

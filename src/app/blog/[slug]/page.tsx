@@ -16,7 +16,8 @@ interface PageProps {
 export const revalidate = 3600; // Revalidate every hour
 
 // ✅ NEW - Enable static generation with fallback
-export const dynamicParams = true; // Allow new slugs without rebuild
+export const dynamic = 'force-static';
+
 
 export async function generateStaticParams() {
   const slugs = await getAllBlogSlugs();

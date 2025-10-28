@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { category } = params;
   const posts = await getPostsByCategory(category);
   const categories = await getAllCategories();
-  const categoryData = categories.find(cat => cat.slug === category);
+  const categoryData = categories.find(cat => cat.name === category);
 
   if (!categoryData || posts.length === 0) {
     return {

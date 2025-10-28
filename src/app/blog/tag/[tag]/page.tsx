@@ -13,6 +13,13 @@ interface PageProps {
   };
 }
 
+
+// ✅ NEW - Enable ISR with 1 hour revalidation
+export const revalidate = 3600;
+
+// ✅ NEW - Enable static generation with fallback
+export const dynamicParams = true;
+
 // ✅ NEW - Generate static params for all tags
 export async function generateStaticParams() {
   const tags = await getAllTags();

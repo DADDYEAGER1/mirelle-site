@@ -1,60 +1,66 @@
-// scripts/migrate-metadata.js
-// One-time migration script to separate metadata from markdown files into JSON
-
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
-const BLOG_DIR = path.join(process.cwd(), 'src/content/blogs');
-const METADATA_DIR = path.join(process.cwd(), 'src/content/metadata');
+const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
+const METADATA_DIRECTORY = path.join(process.cwd(), 'src/content/metadata');
 
 // Ensure metadata directory exists
-if (!fs.existsSync(METADATA_DIR)) {
-  fs.mkdirSync(METADATA_DIR, { recursive: true });
+if (!fs.existsSync(METADATA_DIRECTORY)) {
+  fs.mkdirSync(METADATA_DIRECTORY, { recursive: true });
 }
 
-function migrateMetadata() {
-  const files = fs.readdirSync(BLOG_DIR).filter(f => f.endsWith('.md'));
-  
-  console.log(`Found ${files.length} markdown files to migrate\n`);
-  
-  files.forEach(file => {
-    const slug = file.replace('.md', '');
-    const filePath = path.join(BLOG_DIR, file);
-    const fileContent = fs.readFileSync(filePath, 'utf8');
-    const { data } = matter(fileContent);
-    
-    // Extract metadata fields
-    const metadata = {
-      title: data.title || 'Untitled',
-      excerpt: data.excerpt || '',
-      date: data.date || new Date().toISOString(),
-      updatedDate: data.updatedDate || null,
-      author: data.author || 'Mirelle',
-      category: data.category || 'Uncategorized',
-      tags: data.tags || [],
-      image: data.image || null,
-      imageAlt: data.imageAlt || null,
-      imageWidth: data.imageWidth || 1200,
-      imageHeight: data.imageHeight || 630,
-      readTime: data.readTime || '5 min',
-      wordCount: data.wordCount || 0,
-      canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-      dateModified: data.dateModified || data.updatedDate || null,
-      rating: data.rating || null,
-      galleryImages: data.galleryImages || []
-    };
-    
-    // Write metadata JSON file
-    const metadataPath = path.join(METADATA_DIR, `${slug}.json`);
-    fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2));
-    
-    console.log(`✅ Migrated: ${slug}`);
-  });
-  
-  console.log(`\n🎉 Migration complete! ${files.length} files processed.`);
-  console.log(`Metadata saved to: ${METADATA_DIR}`);
-}
+// Get all .md files
+const files = fs.readdirSync(BLOG_DIRECTORY).filter(file => file.endsWith('.md'));
 
-// Run migration
-migrateMetadata();
+console.log(`📚 Processing ${files.length} blog posts...\n`);
+
+// Initialize separate objects for each field
+const titles = {};
+const excerpts = {};
+const tags = {};
+const images = {};
+const imageAlts = {};
+const dateModified = {};
+const tldr = {};
+const faqItems = {};
+
+// Extract data from each file
+files.forEach(file => {
+  const slug = file.replace('.md', '');
+  const filePath = path.join(BLOG_DIRECTORY, file);
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  const { data } = matter(fileContent);
+
+  // Populate each field object
+  titles[slug] = data.title || 'Untitled';
+  excerpts[slug] = data.excerpt || '';
+  tags[slug] = data.tags || [];
+  images[slug] = data.image || null;
+  imageAlts[slug] = data.imageAlt || null;
+  dateModified[slug] = data.dateModified || null;
+  tldr[slug] = data.tldr || null;
+  faqItems[slug] = data.faqItems || null;
+
+  console.log(`✅ Processed: ${slug}`);
+});
+
+// Save each field to its own file
+const saveToFile = (filename, data) => {
+  const filePath = path.join(METADATA_DIRECTORY, filename);
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+  console.log(`📝 Created: ${filename}`);
+};
+
+console.log('\n📦 Saving metadata files...\n');
+
+saveToFile('titles.json', titles);
+saveToFile('excerpts.json', excerpts);
+saveToFile('tags.json', tags);
+saveToFile('images.json', images);
+saveToFile('imageAlts.json', imageAlts);
+saveToFile('dateModified.json', dateModified);
+saveToFile('tldr.json', tldr);
+saveToFile('faqItems.json', faqItems);
+
+console.log(`\n🎉 Successfully created 8 metadata files with ${files.length} posts each!`);

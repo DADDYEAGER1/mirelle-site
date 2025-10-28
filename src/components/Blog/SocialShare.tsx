@@ -14,7 +14,7 @@ export default function SocialShare({ title, slug }: SocialShareProps) {
     <div className='flex items-center gap-3'>
       <span className='text-sm font-semibold text-gray-700'>Share:</span>
       
-      
+      <a
         href={`https://pinterest.com/pin/create/button/?url=${encodedUrl}&description=${encodedTitle}`}
         target='_blank'
         rel='noopener noreferrer'
@@ -34,7 +34,7 @@ export default function SocialShare({ title, slug }: SocialShareProps) {
         Twitter
       </a>
 
-      
+      <a
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
         target='_blank'
         rel='noopener noreferrer'

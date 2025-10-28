@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   return {
     title: `${categoryData.name} - Nail Care Articles | Mirelle`,
-    description: categoryData.description || `Explore ${posts.length} expert articles about ${categoryData.name}. Professional nail care tips, trends, and tutorials curated by Mirelle.`,
+    description: categoryData.expert || `Explore ${posts.length} expert articles about ${categoryData.name}. Professional nail care tips, trends, and tutorials curated by Mirelle.`,
     keywords: `${categoryData.name}, nail care, nail art, nail trends, ${categoryData.name.toLowerCase()} tips, manicure, beauty blog`,
     authors: [{ name: 'Mirelle' }],
     creator: 'Mirelle',

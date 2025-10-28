@@ -31,7 +31,6 @@ export default function SocialShare({ title, slug }: SocialShareProps) {
         className='px-4 py-2 rounded-lg bg-black text-white hover:bg-gray-800 transition-colors text-sm font-medium'
         aria-label='Share on Twitter'
       >
-      <a
         Twitter
       </a>
 

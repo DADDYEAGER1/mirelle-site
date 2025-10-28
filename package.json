@@ -30,6 +30,7 @@
     "tailwind-variants": "^3.1.1",
     "marked": "^12.0.0",
     "fuse.js": "^7.0.0"
+    "critters": "^0.0.24",    // ✅ ADD THIS LINE
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -103,7 +103,7 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
       image: images[slug],
       imageAlt: imageAlts[slug],
       dateModified: dateModified[slug],
-      tldr: tldrs[slug],
+      tldr: tldr[slug],
       faqItems: faqs[slug],
     };
   } catch (error) {

@@ -24,7 +24,7 @@ export default function SocialShare({ title, slug }: SocialShareProps) {
         Pinterest
       </a>
 
-      
+      <a
         href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
         target='_blank'
         rel='noopener noreferrer'

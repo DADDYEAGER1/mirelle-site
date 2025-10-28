@@ -8,8 +8,7 @@ interface RelatedPostsProps {
 }
 
 export default async function RelatedPosts({ currentPost, limit = 3 }: RelatedPostsProps) {
-  const relatedPosts = await getRelatedPosts(currentPost.slug, limit);
-
+  const relatedPosts = await getRelatedPosts(currentSlug, limit);
   if (relatedPosts.length === 0) {
     return null;
   }

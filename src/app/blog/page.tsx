@@ -1,9 +1,11 @@
 import { Metadata } from 'next';
-import { getAllBlogPosts } from '@/lib/blog';
+import { getPaginatedPosts, getAllCategories, getAllTags } from '@/lib/blog';
 import BlogCard from '@/components/Blog/BlogCard';
+import BlogSearch from '@/components/Blog/BlogSearch';
+import Pagination from '@/components/Blog/Pagination';
 import { generateBlogSchema, generateBlogListSchema } from '@/lib/generateSchemas';
+import Link from 'next/link';
 
-// SEO-Optimized Metadata
 export const metadata: Metadata = {
   title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
   description: 'Discover 100+ expert nail care articles, seasonal trends, step-by-step tutorials, and professional manicure tips. Your ultimate guide to beautiful, healthy nails.',
@@ -50,11 +52,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function BlogPage() {
-  const posts = await getAllBlogPosts();
+interface PageProps {
+  searchParams: {
+    page?: string;
+  };
+}
+
+export default async function BlogPage({ searchParams }: PageProps) {
+  const currentPage = Number(searchParams.page) || 1;
+  const { posts, totalPages, totalPosts } = await getPaginatedPosts(currentPage, 12);
+  
+  // ✅ NEW: Get categories and tags for sidebar/filters
+  const categories = await getAllCategories();
+  const tags = await getAllTags();
+  
   const baseUrl = 'https://mirelleinspo.com';
 
-  // Generate enhanced schemas using lib functions
   const blogSchema = generateBlogSchema();
   const itemListSchema = generateBlogListSchema(posts);
 
@@ -79,7 +92,6 @@ export default async function BlogPage() {
 
   return (
     <>
-      {/* Enhanced Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
@@ -104,11 +116,10 @@ export default async function BlogPage() {
               Discover professional nail care advice, seasonal trends, and step-by-step tutorials for beautiful, healthy nails
             </p>
             
-            {/* Trust Signals */}
             <div className="flex flex-wrap justify-center gap-6 mt-8">
               <div className="flex items-center gap-2 text-gray-700">
                 <span className="text-2xl">📝</span>
-                <span className="font-semibold">{posts.length}+ Articles</span>
+                <span className="font-semibold">{totalPosts}+ Articles</span>
               </div>
               <div className="flex items-center gap-2 text-gray-700">
                 <span className="text-2xl">✨</span>
@@ -122,57 +133,115 @@ export default async function BlogPage() {
           </div>
         </section>
 
-        {/* Blog Grid Section */}
-        <section className="py-16 bg-white">
+        {/* ✅ NEW: Search Section */}
+        <section className="bg-white py-8 border-b">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                Latest Nail Care Articles
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                From nail care basics to advanced techniques, explore everything you need to know about achieving salon-quality nails at home
-              </p>
-            </div>
-
-            {posts.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {posts.map((post) => (
-                  <BlogCard key={post.slug} post={post} />
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-16">
-                <h3 className="text-2xl font-bold text-gray-600 mb-4">
-                  Amazing Content Coming Soon
-                </h3>
-                <p className="text-gray-500">
-                  We're crafting expert nail care content for you. Check back soon!
-                </p>
-              </div>
-            )}
+            <BlogSearch allPosts={posts} />
           </div>
         </section>
 
-        {/* Categories Section for Internal Linking */}
+        {/* Main Content with Sidebar */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              {/* ✅ NEW: Sidebar with Categories and Tags */}
+              <aside className="lg:col-span-1 space-y-8">
+                {/* Categories */}
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">Categories</h3>
+                  <div className="space-y-2">
+                    {categories.slice(0, 8).map((category) => (
+                      <Link
+                        key={category.slug}
+                        href={`/blog/category/${category.slug}`}
+                        className="flex items-center justify-between p-2 rounded hover:bg-white transition-colors"
+                      >
+                        <span className="text-gray-700">{category.name}</span>
+                        <span className="text-sm text-gray-500 bg-white px-2 py-1 rounded">
+                          {category.count}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Popular Tags */}
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">Popular Tags</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {tags.slice(0, 15).map((tag) => (
+                      <Link
+                        key={tag.slug}
+                        href={`/blog/tag/${tag.slug}`}
+                        className="text-sm bg-white text-gray-700 px-3 py-1 rounded-full hover:bg-pink-100 transition-colors"
+                      >
+                        {tag.name} ({tag.count})
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </aside>
+
+              {/* Blog Grid */}
+              <div className="lg:col-span-3">
+                <div className="mb-8">
+                  <h2 className="text-3xl font-bold text-gray-800 mb-2">
+                    Latest Articles
+                  </h2>
+                  <p className="text-gray-600">
+                    Page {currentPage} of {totalPages} • {totalPosts} total articles
+                  </p>
+                </div>
+
+                {posts.length > 0 ? (
+                  <>
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                      {posts.map((post) => (
+                        <BlogCard key={post.slug} post={post} />
+                      ))}
+                    </div>
+
+                    {/* ✅ NEW: Pagination Component */}
+                    {totalPages > 1 && (
+                      <Pagination
+                        currentPage={currentPage}
+                        totalPages={totalPages}
+                        baseUrl="/blog"
+                      />
+                    )}
+                  </>
+                ) : (
+                  <div className="text-center py-16">
+                    <h3 className="text-2xl font-bold text-gray-600 mb-4">
+                      Amazing Content Coming Soon
+                    </h3>
+                    <p className="text-gray-500">
+                      We're crafting expert nail care content for you. Check back soon!
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Categories Section - Simplified */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-              Popular Topics
+              Explore by Topic
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {[
-                { name: 'Nail Care', icon: '💅' },
-                { name: 'Nail Art', icon: '🎨' },
-                { name: 'Seasonal Trends', icon: '🍂' },
-                { name: 'Tutorials', icon: '📚' },
-              ].map((topic) => (
-                <div
-                  key={topic.name}
+              {categories.slice(0, 8).map((category) => (
+                <Link
+                  key={category.slug}
+                  href={`/blog/category/${category.slug}`}
                   className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
                 >
-                  <div className="text-4xl mb-2">{topic.icon}</div>
-                  <h3 className="font-semibold text-gray-800">{topic.name}</h3>
-                </div>
+                  <div className="text-4xl mb-2">💅</div>
+                  <h3 className="font-semibold text-gray-800 mb-1">{category.name}</h3>
+                  <p className="text-sm text-gray-500">{category.count} articles</p>
+                </Link>
               ))}
             </div>
           </div>

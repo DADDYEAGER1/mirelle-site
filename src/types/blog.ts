@@ -1,6 +1,21 @@
 import { FAQItem, TutorialStep, TutorialMetadata, VideoMetadata } from '@/lib/generateSchemas';
 
-// ✅ NEW: Gallery image interface
+// ✅ NEW: Category interface for category pages
+export interface Category {
+  name: string;
+  slug: string;
+  description: string;
+  count: number;
+}
+
+// ✅ NEW: Tag interface for tag pages
+export interface Tag {
+  name: string;
+  slug: string;
+  count: number;
+}
+
+// ✅ EXISTING: Gallery image interface
 export interface GalleryImage {
   url: string;
   alt: string;
@@ -9,7 +24,7 @@ export interface GalleryImage {
   caption?: string;
 }
 
-// ✅ NEW: Rating interface for aggregate ratings
+// ✅ EXISTING: Rating interface for aggregate ratings
 export interface Rating {
   value: number;
   count: number;
@@ -24,26 +39,24 @@ export interface BlogPost {
   author: string;
   tags: string[];
   image?: string;
-  readTime: number | string;  // CHANGED: Accept "5 min" or 5
+  readTime: number | string;
   canonical: string;
   updatedDate?: string;
   category?: string;
-  imageAlt?: string;  // ADDED
-  imageWidth?: number;  // ADDED
-  imageHeight?: number;  // ADDED
-  dateModified?: string;  // ADDED
-  wordCount?: number;  // ADDED
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  dateModified?: string;
+  wordCount?: number;
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  galleryImages?: GalleryImage[]; // ✅ Added: Array of gallery image URLs
-    // ✨ NEW PROPERTY - Add this to your existing interface
+  galleryImages?: GalleryImage[];
   tldr?: {
     summary: string[];
     keyTakeaways?: string[];
   };
-
 }
 
 export interface BlogMetadata {
@@ -54,9 +67,9 @@ export interface BlogMetadata {
   author: string;
   tags: string[];
   image?: string;
-  galleryImages?: GalleryImage[];  // ✅ NEW
-  rating?: Rating;  // ✅ NEW
-  readTime: number | string;  // CHANGED: Accept "5 min" or 5
-  imageAlt?: string;  // ADDED
+  galleryImages?: GalleryImage[];
+  rating?: Rating;
+  readTime: number | string;
+  imageAlt?: string;
   category?: string;
 }

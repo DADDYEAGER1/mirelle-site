@@ -169,9 +169,6 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           dateModified: jsonMetadata.dateModified,
           tldr: jsonMetadata.tldr,
           faqItems: jsonMetadata.faqItems,
-          tutorialSteps: frontmatterMetadata.tutorialSteps,
-          tutorialMetadata: frontmatterMetadata.tutorialMetadata,
-          galleryImages: frontmatterMetadata.galleryImages,
         } as BlogMetadata;
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

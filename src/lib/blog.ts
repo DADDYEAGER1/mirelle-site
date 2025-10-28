@@ -177,10 +177,14 @@ export async function getAllCategories(): Promise<{ name: string; count: number 
   });
   
   return Array.from(categoryMap.entries())
-    .map(([name, count]) => ({ name, count }))
+    .map(([name, count]) => ({ 
+      name, 
+      slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'), // ✅ ADD THIS
+      count,
+      description: `Expert articles about ${name}` // ✅ ADD THIS
+    }))
     .sort((a, b) => b.count - a.count);
 }
-
 // ✅ NEW - Get all tags with counts
 export async function getAllTags(): Promise<{ name: string; count: number }[]> {
   const allPosts = await getAllBlogPosts();
@@ -193,7 +197,11 @@ export async function getAllTags(): Promise<{ name: string; count: number }[]> {
   });
   
   return Array.from(tagMap.entries())
-    .map(([name, count]) => ({ name, count }))
+    .map(([name, count]) => ({ 
+      name, 
+      slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-'), // ✅ ADD THIS
+      count 
+    }))
     .sort((a, b) => b.count - a.count);
 }
 

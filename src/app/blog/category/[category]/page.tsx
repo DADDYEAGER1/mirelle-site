@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     openGraph: {
       title: `${categoryData.name} - Nail Care Articles | Mirelle`,
-      description: categoryData.description || `Explore ${posts.length} expert articles about ${categoryData.name}`,
+      description: categoryData.excerpt || `Explore ${posts.length} expert articles about ${categoryData.name}`,
       type: 'website',
       url: canonicalUrl,
       siteName: 'Mirelle',
@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     twitter: {
       card: 'summary_large_image',
       title: `${categoryData.name} Articles | Mirelle`,
-      description: categoryData.description || `Explore expert ${categoryData.name} articles`,
+      description: categoryData.excerpt || `Explore expert ${categoryData.name} articles`,
       images: ['https://mirelleinspo.com/blog-category.jpg'],
       creator: '@mirelleinspo',
       site: '@mirelleinspo',
@@ -139,7 +139,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: `${categoryData.name} Articles`,
-    description: categoryData.description || `Collection of ${allPosts.length} articles about ${categoryData.name}`,
+    description: categoryData.excerpt || `Collection of ${allPosts.length} articles about ${categoryData.name}`,
     url: `https://mirelleinspo.com/blog/category/${category}`,
     about: {
       '@type': 'Thing',
@@ -174,9 +174,9 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                 {categoryData.name}
               </h1>
-              {categoryData.description && (
+              {categoryData.excerpt && (
                 <p className="text-xl text-gray-600 mb-6">
-                  {categoryData.description}
+                  {categoryData.excerpt}
                 </p>
               )}
               <div className="flex items-center justify-center gap-2 text-gray-700">

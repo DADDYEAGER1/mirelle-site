@@ -16,7 +16,7 @@ interface PageProps {
 export const revalidate = 3600; // Revalidate every hour
 
 // ✅ NEW - Enable static generation with fallback
-export const dynamic = 'force-static';
+// export const dynamic = 'force-static';
 
 
 export async function generateStaticParams() {

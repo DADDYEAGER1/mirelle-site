@@ -4,6 +4,8 @@ import { BlogPost as BlogPostType } from '@/types/blog';
 import BlogSidebar from './BlogSidebar';
 import CommentSection from '@/components/Blog/CommentSection';
 import TLDRSection from './TLDRSection'; // ✨ NEW IMPORT
+import ReadingProgress from './ReadingProgress'; // 🟢 PHASE 3
+import SocialShare from './SocialShare'; // 🟢 PHASE 3
 
 interface BlogPostProps {
   post: BlogPostType;

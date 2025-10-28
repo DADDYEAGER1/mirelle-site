@@ -1,6 +1,6 @@
-import { getRelatedPosts } from '@/lib/blog';
-import { BlogPost } from '@/types/blog';
+import Link from 'next/link';
 import Image from 'next/image';
+import { getRelatedPosts } from '@/lib/blog';
 
 interface RelatedPostsProps {
   currentSlug: string;
@@ -9,19 +9,18 @@ interface RelatedPostsProps {
 
 export default async function RelatedPosts({ currentSlug, limit = 3 }: RelatedPostsProps) {
   const relatedPosts = await getRelatedPosts(currentSlug, limit);
-  if (relatedPosts.length === 0) return null;
+  if (relatedPosts.length === 0) {
+    return null;
   }
 
   return (
     <section className="mt-16 pt-16 border-t border-gray-200">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8">
-          Related Articles
-        </h2>
-        
+        <h2 className="text-3xl font-bold text-gray-800 mb-8">Related Articles</h2>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {relatedPosts.map((post) => (
-            <a
+            <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
               className="group block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
@@ -45,24 +44,20 @@ export default async function RelatedPosts({ currentSlug, limit = 3 }: RelatedPo
 
               {/* Content */}
               <div className="p-6">
-                {/* Category Badge */}
                 {post.category && (
                   <span className="inline-block px-3 py-1 text-xs font-semibold text-pink-600 bg-pink-100 rounded-full mb-3">
                     {post.category}
                   </span>
                 )}
 
-                {/* Title */}
                 <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors line-clamp-2">
                   {post.title}
                 </h3>
 
-                {/* Excerpt */}
                 <p className="text-sm text-gray-600 mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
 
-                {/* Meta Info */}
                 <div className="flex items-center justify-between text-xs text-gray-500">
                   <span>{post.readTime}</span>
                   <span className="text-pink-600 font-medium group-hover:underline">
@@ -70,10 +65,12 @@ export default async function RelatedPosts({ currentSlug, limit = 3 }: RelatedPo
                   </span>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
     </section>
   );
+}
+
 

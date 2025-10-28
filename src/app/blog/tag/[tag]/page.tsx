@@ -14,19 +14,19 @@ interface PageProps {
 }
 
 
-// ✅ NEW - Enable ISR with 1 hour revalidation
-export const revalidate = 3600;
+// 🟢 CHANGED - Enable ISR with 1 hour revalidation
+export const revalidate = 3600; // Revalidate every hour
 
-// ✅ NEW - Enable static generation
-export const dynamic = 'force-static';
+// 🟢 CHANGED - Remove dynamic export (causing conflict with generateStaticParams)
+// export const dynamic = 'force-static';
 
-// ✅ NEW - Generate static params for all tags
 export async function generateStaticParams() {
-  const tags = await getAllTags();
-  return tags.map((tag) => ({
-    tag: tag.slug,
+  const slugs = await getAllBlogSlugs();
+  return slugs.map((slug) => ({
+    slug: slug,
   }));
 }
+
 
 // ✅ NEW - Generate metadata for tag pages
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

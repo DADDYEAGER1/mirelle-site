@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { category } = params;
   const posts = await getPostsByCategory(category);
   const categories = await getAllCategories();
-  const categoryData = categories.find(cat => cat.name === category); // ✅ FIXED: Changed from cat.slug to cat.name
+  const categoryData = categories.find(cat => cat.slug === category); // ✅ FIXED: Changed from cat.slug to cat.name
 
   if (!categoryData || posts.length === 0) {
     return {
@@ -96,7 +96,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
   // Get all posts in this category
   const allPosts = await getPostsByCategory(category);
   const categories = await getAllCategories();
-  const categoryData = categories.find(cat => cat.name === category); // ✅ FIXED: Changed from cat.slug to cat.name
+  const categoryData = categories.find(cat => cat.slug === category); // ✅ FIXED: Changed from cat.slug to cat.name
 
   if (!categoryData || allPosts.length === 0) {
     notFound();

@@ -173,7 +173,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {/* ✅ NEW - Related Posts Section */}
       <section className="bg-gray-50 py-12">
         <div className="container mx-auto px-4">
-          <RelatedPosts currentSlug={slug} />
+          <RelatedPosts currentPost={post} />
         </div>
       </section>
     </>

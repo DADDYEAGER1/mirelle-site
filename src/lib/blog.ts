@@ -125,9 +125,7 @@ function getMetadataFromFrontmatter(slug: string): Partial<BlogMetadata> {
       readTime: data.readTime,
       category: data.category,
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-      tutorialSteps: data.tutorialSteps,
-      tutorialMetadata: data.tutorialMetadata,
-      galleryImages: data.galleryImages,
+
     };
   } catch (error) {
     console.error(`Error reading frontmatter for ${slug}:`, error);

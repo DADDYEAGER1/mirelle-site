@@ -26,12 +26,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateStaticParams() {
-  const slugs = await getAllBlogSlugs();
-  return slugs.map((slug) => ({
-    slug: slug,
-  }));
-}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = params;

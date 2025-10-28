@@ -136,7 +136,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
         {/* ✅ NEW: Search Section */}
         <section className="bg-white py-8 border-b">
           <div className="container mx-auto px-4">
-            <BlogSearch allPosts={posts} />  {/* ❌ THIS LINE HAS THE ERROR */}
+            <BlogSearch posts={posts} /> 
           </div>
         </section>
 

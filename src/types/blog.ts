@@ -1,6 +1,36 @@
+// src/types/blog.ts
+
 import { FAQItem, TutorialStep, TutorialMetadata, VideoMetadata } from '@/lib/generateSchemas';
 
-// ✅ NEW: Category interface for category pages
+export interface BlogMetadata {
+  slug: string;
+  title: string;
+  excerpt: string;
+  tags: string[];
+  image?: string;
+  imageAlt?: string;
+  dateModified?: string;
+  tldr?: {                           // ✅ ADD THIS
+    summary: string[];
+    keyTakeaways?: string[];
+  };
+  faqItems?: FAQItem[];              // ✅ ADD THIS
+  
+  // Optional fields for backward compatibility
+  date?: string;
+  author?: string;
+  readTime?: number | string;
+  category?: string;
+  galleryImages?: GalleryImage[];
+  rating?: Rating;
+  canonical?: string;
+  updatedDate?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  wordCount?: number;
+}
+
+// Rest of your types...
 export interface Category {
   name: string;
   slug: string;
@@ -8,14 +38,12 @@ export interface Category {
   count: number;
 }
 
-// ✅ NEW: Tag interface for tag pages
 export interface Tag {
   name: string;
   slug: string;
   count: number;
 }
 
-// ✅ EXISTING: Gallery image interface
 export interface GalleryImage {
   url: string;
   alt: string;
@@ -24,7 +52,6 @@ export interface GalleryImage {
   caption?: string;
 }
 
-// ✅ EXISTING: Rating interface for aggregate ratings
 export interface Rating {
   value: number;
   count: number;
@@ -57,25 +84,4 @@ export interface BlogPost {
     summary: string[];
     keyTakeaways?: string[];
   };
-}
-
-export interface BlogMetadata {
-  slug: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  author: string;
-  tags: string[];
-  image?: string;
-  galleryImages?: GalleryImage[];
-  rating?: Rating;
-  readTime: number | string;
-  imageAlt?: string;
-  category?: string;
-  canonical?: string;
-  updatedDate?: string;      // ✅ ADD THIS
-  imageWidth?: number;       // ✅ ADD THIS (you'll need it next)
-  imageHeight?: number;      // ✅ ADD THIS (you'll need it next)
-  dateModified?: string;     // ✅ ADD THIS (you'll need it next)
-  wordCount?: number;        // ✅ ADD THIS (you'll need it next)
 }

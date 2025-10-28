@@ -12,6 +12,19 @@ interface PageProps {
   };
 }
 
+// ✅ NEW - Enable ISR with 1 hour revalidation
+export const revalidate = 3600; // Revalidate every hour
+
+// ✅ NEW - Enable static generation with fallback
+export const dynamicParams = true; // Allow new slugs without rebuild
+
+export async function generateStaticParams() {
+  const slugs = await getAllBlogSlugs();
+  return slugs.map((slug) => ({
+    slug: slug,
+  }));
+}
+
 export async function generateStaticParams() {
   const slugs = await getAllBlogSlugs();
   return slugs.map((slug) => ({

@@ -76,4 +76,4 @@ export default async function RelatedPosts({ currentSlug, limit = 3 }: RelatedPo
       </div>
     </section>
   );
-}
+

@@ -238,9 +238,6 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       dateModified: jsonMetadata.dateModified || data.dateModified,
       tldr: jsonMetadata.tldr || data.tldr,
       faqItems: jsonMetadata.faqItems || data.faqItems,
-      tutorialSteps: data.tutorialSteps,
-      tutorialMetadata: data.tutorialMetadata,
-      galleryImages: data.galleryImages,
     };
     
     // Store in cache

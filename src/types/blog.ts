@@ -73,4 +73,9 @@ export interface BlogMetadata {
   imageAlt?: string;
   category?: string;
   canonical?: string;
+  updatedDate?: string;      // ✅ ADD THIS
+  imageWidth?: number;       // ✅ ADD THIS (you'll need it next)
+  imageHeight?: number;      // ✅ ADD THIS (you'll need it next)
+  dateModified?: string;     // ✅ ADD THIS (you'll need it next)
+  wordCount?: number;        // ✅ ADD THIS (you'll need it next)
 }

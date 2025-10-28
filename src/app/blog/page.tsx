@@ -147,7 +147,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
               {/* ✅ NEW: Sidebar with Categories and Tags */}
               <aside className="lg:col-span-1 space-y-8">
                 {/* Categories */}
-                <div className="bg-gray-50 rounded-lg p-6">
+                {/* <div className="bg-gray-50 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-4">Categories</h3>
                   <div className="space-y-2">
                     {categories.slice(0, 8).map((category) => (
@@ -163,7 +163,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                       </Link>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 {/* Popular Tags */}
                 <div className="bg-gray-50 rounded-lg p-6">

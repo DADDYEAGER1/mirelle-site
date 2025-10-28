@@ -156,13 +156,22 @@ export async function getAllBlogSlugs(): Promise<string[]> {
 // ✅ NEW - Get posts by category
 export async function getPostsByCategory(category: string): Promise<BlogMetadata[]> {
   const allPosts = await getAllBlogPosts();
-  return allPosts.filter(post => post.category === category);
+  return allPosts.filter(post => {
+    if (!post.category) return false;
+    const postCategorySlug = post.category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    return postCategorySlug === categorySlug;
+  });
 }
 
 // ✅ NEW - Get posts by tag
 export async function getPostsByTag(tag: string): Promise<BlogMetadata[]> {
   const allPosts = await getAllBlogPosts();
-  return allPosts.filter(post => post.tags.includes(tag));
+  return allPosts.filter(post => 
+    post.tags.some(tag => {
+      const tagSlugified = tag.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      return tagSlugified === tagSlug;
+    })
+  );
 }
 
 // ✅ NEW - Get all categories with counts

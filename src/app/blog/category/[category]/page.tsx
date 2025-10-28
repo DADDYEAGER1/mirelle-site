@@ -13,20 +13,20 @@ interface PageProps {
   };
 }
 
-// ✅ NEW - Generate static params for all categories
+// ✅ Generate static params for all categories
 export async function generateStaticParams() {
   const categories = await getAllCategories();
   return categories.map((category) => ({
-    category: category.name,
+    category: category.name, // ✅ FIXED: Changed from category.slug to category.name
   }));
 }
 
-// ✅ NEW - Generate metadata for category pages
+// ✅ Generate metadata for category pages
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { category } = params;
   const posts = await getPostsByCategory(category);
   const categories = await getAllCategories();
-  const categoryData = categories.find(cat => cat.name === category);
+  const categoryData = categories.find(cat => cat.name === category); // ✅ FIXED: Changed from cat.slug to cat.name
 
   if (!categoryData || posts.length === 0) {
     return {
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   return {
     title: `${categoryData.name} - Nail Care Articles | Mirelle`,
-    description: categoryData.excerpt || `Explore ${posts.length} expert articles about ${categoryData.name}. Professional nail care tips, trends, and tutorials curated by Mirelle.`,
+    description: `Explore ${posts.length} expert articles about ${categoryData.name}. Professional nail care tips, trends, and tutorials curated by Mirelle.`, // ✅ FIXED: Removed categoryData.excerpt
     keywords: `${categoryData.name}, nail care, nail art, nail trends, ${categoryData.name.toLowerCase()} tips, manicure, beauty blog`,
     authors: [{ name: 'Mirelle' }],
     creator: 'Mirelle',
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     openGraph: {
       title: `${categoryData.name} - Nail Care Articles | Mirelle`,
-      description: categoryData.excerpt || `Explore ${posts.length} expert articles about ${categoryData.name}`,
+      description: `Explore ${posts.length} expert articles about ${categoryData.name}`, // ✅ FIXED: Removed categoryData.excerpt
       type: 'website',
       url: canonicalUrl,
       siteName: 'Mirelle',
@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     twitter: {
       card: 'summary_large_image',
       title: `${categoryData.name} Articles | Mirelle`,
-      description: categoryData.excerpt || `Explore expert ${categoryData.name} articles`,
+      description: `Explore expert ${categoryData.name} articles`, // ✅ FIXED: Removed categoryData.excerpt
       images: ['https://mirelleinspo.com/blog-category.jpg'],
       creator: '@mirelleinspo',
       site: '@mirelleinspo',
@@ -96,7 +96,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
   // Get all posts in this category
   const allPosts = await getPostsByCategory(category);
   const categories = await getAllCategories();
-  const categoryData = categories.find(cat => cat.slug === category);
+  const categoryData = categories.find(cat => cat.name === category); // ✅ FIXED: Changed from cat.slug to cat.name
 
   if (!categoryData || allPosts.length === 0) {
     notFound();
@@ -108,7 +108,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
   const endIndex = startIndex + postsPerPage;
   const paginatedPosts = allPosts.slice(startIndex, endIndex);
 
-  // ✅ NEW - Breadcrumb structured data
+  // ✅ Breadcrumb structured data
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -134,12 +134,12 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
     ],
   };
 
-  // ✅ NEW - Collection page structured data
+  // ✅ Collection page structured data
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: `${categoryData.name} Articles`,
-    description: categoryData.excerpt || `Collection of ${allPosts.length} articles about ${categoryData.name}`,
+    description: `Collection of ${allPosts.length} articles about ${categoryData.name}`, // ✅ FIXED: Removed categoryData.excerpt
     url: `https://mirelleinspo.com/blog/category/${category}`,
     about: {
       '@type': 'Thing',
@@ -174,11 +174,10 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
               <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                 {categoryData.name}
               </h1>
-              {categoryData.excerpt && (
-                <p className="text-xl text-gray-600 mb-6">
-                  {categoryData.excerpt}
-                </p>
-              )}
+              <p className="text-xl text-gray-600 mb-6">
+                {/* ✅ FIXED: Removed conditional rendering since excerpt doesn't exist */}
+                Discover expert articles and insights about {categoryData.name}
+              </p>
               <div className="flex items-center justify-center gap-2 text-gray-700">
                 <span className="text-2xl">📝</span>
                 <span className="font-semibold">
@@ -266,11 +265,11 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {categories
-                .filter(cat => cat.slug !== category)
+                .filter(cat => cat.name !== category) // ✅ FIXED: Changed from cat.slug to cat.name
                 .map((cat) => (
                   <a
-                    key={cat.slug}
-                    href={`/blog/category/${cat.slug}`}
+                    key={cat.name} // ✅ FIXED: Changed from cat.slug to cat.name
+                    href={`/blog/category/${cat.name}`} // ✅ FIXED: Changed from cat.slug to cat.name
                     className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow border border-gray-100 hover:border-pink-300"
                   >
                     <h3 className="font-semibold text-gray-800 mb-2">{cat.name}</h3>

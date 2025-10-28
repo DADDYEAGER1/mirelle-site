@@ -97,14 +97,14 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     const faqs = loadMetadataFile<Record<string, any[]>>('faqItems.json');
 
     return {
-      title: titles[slug],
-      excerpt: excerpts[slug],
-      tags: tags[slug],
-      image: images[slug],
-      imageAlt: imageAlts[slug],
-      dateModified: dateModified[slug],
-      tldr: tldrs[slug],  // ✅ CORRECT
-      faqItems: faqs[slug],
+      title: titles[slug] || undefined,           // ✅ Return undefined if not found
+      excerpt: excerpts[slug] || undefined,
+      tags: tags[slug] || undefined,
+      image: images[slug] || undefined,
+      imageAlt: imageAlts[slug] || undefined,
+      dateModified: dateModified[slug] || undefined,
+      tldr: tldrs[slug] || undefined,            // ✅ This will be undefined if not in JSON
+      faqItems: faqs[slug] || undefined,         // ✅ This will be undefined if not in JSON
     };
   } catch (error) {
     console.error(`Error getting metadata for ${slug}:`, error);

@@ -21,7 +21,8 @@ export const revalidate = 3600; // Revalidate every hour
 // export const dynamic = 'force-static';
 
 export async function generateStaticParams() {
-  const slugs = await getAllBlogSlugs();
+  // const slugs = await getAllBlogSlugs();
+  const tags = await getAllTags();
   return slugs.map((slug) => ({
     slug: slug,
   }));

@@ -1,9 +1,8 @@
-
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   
-  // Image Optimization
+  // ✅ NEW - Image Optimization
   images: {
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000, // 1 year
@@ -16,7 +15,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Headers for SEO and Security
+
+  // ✅ NEW - Headers for SEO and Security
   async headers() {
     return [
       {
@@ -44,9 +44,27 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // 🔄 UPDATED - Cache static assets aggressively
+      {
+        source: "/images/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/_next/static/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
     ];
   },
-
 
   // Rewrites for clean URLs
   async rewrites() {
@@ -60,9 +78,9 @@ const nextConfig: NextConfig = {
     };
   },
 
-  // Enable SWR (Stale While Revalidate) for ISR
+  // 🔄 UPDATED - Enable SWR for ISR with optimized settings
   onDemandEntries: {
-    maxInactiveAge: 25 * 1000,
+    maxInactiveAge: 60 * 1000, // Keep pages in memory for 60s
     pagesBufferLength: 5,
   },
 
@@ -78,17 +96,54 @@ const nextConfig: NextConfig = {
   // React strict mode for better error detection
   reactStrictMode: true,
 
-  // Optimized builds
+  // ✅ NEW - Optimized fonts and package imports
   optimizeFonts: true,
   optimizePackageImports: [
     "@chakra-ui/react",
     "@headlessui/react",
     "date-fns",
+    "lucide-react", // ✅ NEW - Optimize lucide-react imports
   ],
 
-  // Experimental features for better performance
+  // 🔄 UPDATED - Experimental features for better performance
   experimental: {
-    optimizePackageImports: ["lodash-es"],
+    optimizePackageImports: ["lodash-es", "fuse.js"], // ✅ NEW - Add fuse.js
+    // ✅ NEW - Enable optimized CSS loading
+    optimizeCss: true,
+  },
+
+  // ✅ NEW - Bundle analyzer for production builds
+  webpack: (config, { isServer }) => {
+    // Optimize bundle size
+    if (!isServer) {
+      config.optimization = {
+        ...config.optimization,
+        splitChunks: {
+          chunks: 'all',
+          cacheGroups: {
+            default: false,
+            vendors: false,
+            // Vendor chunk
+            vendor: {
+              name: 'vendor',
+              chunks: 'all',
+              test: /node_modules/,
+              priority: 20,
+            },
+            // Common chunk
+            common: {
+              name: 'common',
+              minChunks: 2,
+              chunks: 'all',
+              priority: 10,
+              reuseExistingChunk: true,
+              enforce: true,
+            },
+          },
+        },
+      };
+    }
+    return config;
   },
 };
 

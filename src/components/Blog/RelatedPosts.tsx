@@ -3,7 +3,7 @@ import { BlogPost } from '@/types/blog';
 import Image from 'next/image';
 
 interface RelatedPostsProps {
-  currentPost: BlogPost;
+  currentSlug: string;
   limit?: number;
 }
 

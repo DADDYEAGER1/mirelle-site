@@ -377,43 +377,41 @@ export function generateSchemas(config: SchemaConfig) {
     },
   };
 
-  // Enhanced Breadcrumb Schema
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    '@id': `${baseUrl}/blog/${slug}#breadcrumb`,
-    itemListElement: [
+// ✅ ENHANCED: More detailed breadcrumb with category
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  '@id': `${baseUrl}/blog/${slug}#breadcrumb`,
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: baseUrl,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${baseUrl}/blog`,
+    },
+    // ✅ FIXED: Properly handle conditional category breadcrumb
+    ...(post.category ? [
       {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: baseUrl,
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Blog',
-        item: `${baseUrl}/blog`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: post.title,
-        // item: `${baseUrl}/blog/${slug}`,
-      ...(post.category ? [{
         '@type': 'ListItem',
         position: 3,
         name: post.category,
         item: `${baseUrl}/blog/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`,
-      }] : []),
-      {
-        '@type': 'ListItem',
-        position: post.category ? 4 : 3,
-        name: post.title,
-        item: `${baseUrl}/blog/${slug}`,
-      },
-    ],
-  };
+      }
+    ] : []),
+    {
+      '@type': 'ListItem',
+      position: post.category ? 4 : 3,
+      name: post.title,
+      item: `${baseUrl}/blog/${slug}`,
+    },
+  ],
+};
 
   // Website Schema
   const websiteSchema = {

@@ -38,9 +38,10 @@ export interface VideoMetadata {
 
 export interface GalleryImage {
   url: string;
-  caption?: string;
+  alt: string;
   width?: number;
   height?: number;
+  caption?: string;
 }
 
 export interface SchemaConfig {
@@ -51,6 +52,10 @@ export interface SchemaConfig {
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
   galleryImages?: GalleryImage[];
+  // rating?: {
+  //   value: number;
+  //   count: number;
+  // }; // ✅ NEW: For aggregate rating
 }
 
 // Product Schema Interfaces
@@ -331,10 +336,12 @@ export function generateSchemas(config: SchemaConfig) {
     description: post.excerpt || post.title,
     image: {
       '@type': 'ImageObject',
+      '@id': `${baseUrl}/blog/${slug}#primaryimage`,
       url: imageUrl,
       width: post.imageWidth || 1200,
       height: post.imageHeight || 630,
       caption: post.imageAlt || post.title,
+      ...(post.imageAlt && { name: post.imageAlt }),
     },
     datePublished: post.date,
     dateModified: post.dateModified || post.updatedDate || post.date,
@@ -343,6 +350,7 @@ export function generateSchemas(config: SchemaConfig) {
       '@id': `${baseUrl}/#person`,
       name: post.author || 'Mirelle',
       url: `${baseUrl}/about`,
+      image: `${baseUrl}/team/${(post.author || 'mirelle').toLowerCase()}.jpg`,
     },
     publisher: {
       '@type': 'Organization',
@@ -392,6 +400,17 @@ export function generateSchemas(config: SchemaConfig) {
         position: 3,
         name: post.title,
         // item: `${baseUrl}/blog/${slug}`,
+      ...(post.category ? [{
+        '@type': 'ListItem',
+        position: 3,
+        name: post.category,
+        item: `${baseUrl}/blog/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`,
+      }] : []),
+      {
+        '@type': 'ListItem',
+        position: post.category ? 4 : 3,
+        name: post.title,
+        item: `${baseUrl}/blog/${slug}`,
       },
     ],
   };
@@ -462,24 +481,31 @@ export function generateSchemas(config: SchemaConfig) {
   } : null;
 
   // Enhanced FAQ Schema
+  // ✅ ENHANCED: FAQ Schema with better formatting
   let faqSchema = null;
   if (faqItems && faqItems.length > 0) {
     faqSchema = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       '@id': `${baseUrl}/blog/${slug}#faq`,
-      mainEntity: faqItems.map((item) => ({
+      mainEntity: faqItems.map((item, index) => ({
         '@type': 'Question',
+        '@id': `${baseUrl}/blog/${slug}#faq-${index + 1}`,
         name: item.question,
         acceptedAnswer: {
           '@type': 'Answer',
           text: item.answer,
+          // ✅ NEW: Add author to answer
+          author: {
+            '@type': 'Person',
+            name: post.author || 'Mirelle',
+          },
         },
       })),
     };
   }
 
-  // Enhanced HowTo Schema with images
+  // ✅ ENHANCED: HowTo Schema with better structure
   let howToSchema = null;
   if (tutorialSteps && tutorialMetadata) {
     howToSchema = {
@@ -510,6 +536,7 @@ export function generateSchemas(config: SchemaConfig) {
       })),
       step: tutorialSteps.map((step) => ({
         '@type': 'HowToStep',
+        '@id': `${baseUrl}/blog/${slug}#step-${step.position}`,
         position: step.position,
         name: step.name,
         text: step.text,
@@ -518,10 +545,43 @@ export function generateSchemas(config: SchemaConfig) {
           image: {
             '@type': 'ImageObject',
             url: `${baseUrl}${step.image}`,
+            width: 800,
+            height: 600,
           },
         }),
       })),
       inLanguage: 'en-US',
+      // ✅ NEW: Add author to tutorial
+      author: {
+        '@type': 'Person',
+        name: post.author || 'Mirelle',
+      },
+    };
+  }
+
+    // ✅ NEW: Image Gallery Schema
+  let imageGallerySchema = null;
+  if (galleryImages && galleryImages.length > 0) {
+    imageGallerySchema = {
+      '@context': 'https://schema.org',
+      '@type': 'ImageGallery',
+      '@id': `${baseUrl}/blog/${slug}#gallery`,
+      name: `${post.title} - Image Gallery`,
+      description: `Visual guide for ${post.title}`,
+      associatedMedia: galleryImages.map((img, index) => ({
+        '@type': 'ImageObject',
+        '@id': `${baseUrl}/blog/${slug}#gallery-image-${index + 1}`,
+        url: `${baseUrl}${img.url}`,
+        width: img.width || 1200,
+        height: img.height || 800,
+        caption: img.caption || img.alt,
+        name: img.alt,
+        ...(img.caption && { description: img.caption }),
+      })),
+      about: {
+        '@type': 'Article',
+        '@id': `${baseUrl}/blog/${slug}#article`,
+      },
     };
   }
 
@@ -571,6 +631,26 @@ export function generateProductSchemas(config: ProductSchemaConfig) {
   };
 
   return { productSchema };
+}
+
+// ✅ NEW: Validation helper to ensure all required schema fields exist
+export function validateSchemaData(post: BlogPost): {
+  valid: boolean;
+  missing: string[];
+} {
+  const required = ['title', 'excerpt', 'date', 'author', 'canonical'];
+  const missing: string[] = [];
+
+  required.forEach(field => {
+    if (!post[field as keyof BlogPost]) {
+      missing.push(field);
+    }
+  });
+
+  return {
+    valid: missing.length === 0,
+    missing,
+  };
 }
 
 // Generate schemas for collection pages (shop categories)

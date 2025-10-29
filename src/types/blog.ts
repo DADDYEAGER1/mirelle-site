@@ -47,8 +47,8 @@ export interface Tag {
 export interface GalleryImage {
   url: string;
   alt: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
   caption?: string;
 }
 

@@ -5,6 +5,8 @@ import BlogSearch from '@/components/Blog/BlogSearch';
 import Pagination from '@/components/Blog/Pagination';
 import { generateBlogSchema, generateBlogListSchema } from '@/lib/generateSchemas';
 import Link from 'next/link';
+import StickyBottomNav from '@/components/ui/StickyBottomNav';
+import GlassCard from '@/components/ui/GlassCard';
 
 export const metadata: Metadata = {
   title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
@@ -62,7 +64,6 @@ export default async function BlogPage({ searchParams }: PageProps) {
   const currentPage = Number(searchParams.page) || 1;
   const { posts, totalPages, totalPosts } = await getPaginatedPosts(currentPage, 12);
   
-  // ✅ NEW: Get categories and tags for sidebar/filters
   const categories = await getAllCategories();
   const tags = await getAllTags();
   
@@ -105,27 +106,28 @@ export default async function BlogPage({ searchParams }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-pink-200 to-purple-200 py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold text-gray-800 mb-4">
+      <div className="min-h-screen thumb-zone">
+        {/* Hero Section with Animated Gradient */}
+        <section className="relative bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-pink-300/30 via-transparent to-purple-300/30 animate-pulse"></div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h1 className="text-5xl font-bold text-gray-800 mb-4 animate-fade-in">
               Nail Care Blog - Expert Tips & Trends
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '100ms' }}>
               Discover professional nail care advice, seasonal trends, and step-by-step tutorials for beautiful, healthy nails
             </p>
             
             <div className="flex flex-wrap justify-center gap-6 mt-8">
-              <div className="flex items-center gap-2 text-gray-700">
+              <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '200ms' }}>
                 <span className="text-2xl">📝</span>
                 <span className="font-semibold">{totalPosts}+ Articles</span>
               </div>
-              <div className="flex items-center gap-2 text-gray-700">
+              <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '300ms' }}>
                 <span className="text-2xl">✨</span>
                 <span className="font-semibold">Expert Advice</span>
               </div>
-              <div className="flex items-center gap-2 text-gray-700">
+              <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '400ms' }}>
                 <span className="text-2xl">📆</span>
                 <span className="font-semibold">Updated Weekly</span>
               </div>
@@ -133,7 +135,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
           </div>
         </section>
 
-        {/* ✅ NEW: Search Section */}
+        {/* Search Section */}
         <section className="bg-white py-8 border-b">
           <div className="container mx-auto px-4">
             <BlogSearch posts={posts} /> 
@@ -144,27 +146,8 @@ export default async function BlogPage({ searchParams }: PageProps) {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-              {/* ✅ NEW: Sidebar with Categories and Tags */}
+              {/* Sidebar with Categories and Tags */}
               <aside className="lg:col-span-1 space-y-8">
-                {/* Categories */}
-                {/* <div className="bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4">Categories</h3>
-                  <div className="space-y-2">
-                    {categories.slice(0, 8).map((category) => (
-                      <Link
-                        key={category.slug}
-                        href={`/blog/category/${category.slug}`}
-                        className="flex items-center justify-between p-2 rounded hover:bg-white transition-colors"
-                      >
-                        <span className="text-gray-700">{category.name}</span>
-                        <span className="text-sm text-gray-500 bg-white px-2 py-1 rounded">
-                          {category.count}
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
-                </div> */}
-
                 {/* Popular Tags */}
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-4">Popular Tags</h3>
@@ -196,12 +179,39 @@ export default async function BlogPage({ searchParams }: PageProps) {
                 {posts.length > 0 ? (
                   <>
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                      {posts.map((post) => (
-                        <BlogCard key={post.slug} post={post} />
+                      {posts.map((post, index) => (
+                        <>
+                          <BlogCard key={post.slug} post={post} />
+                          
+                          {/* Inline Newsletter CTA after 3rd card */}
+                          {index === 2 && currentPage === 1 && (
+                            <GlassCard className="flex flex-col justify-center items-center text-center col-span-1 md:col-span-2 xl:col-span-3 my-4 bg-gradient-to-br from-pink-50 to-purple-50">
+                              <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                                💅 Get Weekly Nail Inspo
+                              </h3>
+                              <p className="text-gray-600 mb-4 max-w-md">
+                                Join 10,000+ nail enthusiasts! Get trending designs, expert tips, and exclusive finds delivered weekly.
+                              </p>
+                              <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
+                                <input
+                                  type="email"
+                                  placeholder="Your email address"
+                                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
+                                />
+                                <button className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                                  Subscribe
+                                </button>
+                              </div>
+                              <p className="text-xs text-gray-500 mt-3">
+                                ✓ Trending designs ✓ Expert tips ✓ No spam ever
+                              </p>
+                            </GlassCard>
+                          )}
+                        </>
                       ))}
                     </div>
 
-                    {/* ✅ NEW: Pagination Component */}
+                    {/* Pagination Component */}
                     {totalPages > 1 && (
                       <Pagination
                         currentPage={currentPage}
@@ -225,7 +235,8 @@ export default async function BlogPage({ searchParams }: PageProps) {
           </div>
         </section>
 
-
+        {/* Sticky Bottom Nav for Mobile */}
+        <StickyBottomNav />
       </div>
     </>
   );

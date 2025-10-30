@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import NewsletterPopup from "@/components/NewsletterPopup"; // ✅ NEW: Phase 3 Newsletter Popup
 import { Inter, Cormorant_Garamond } from 'next/font/google';
 import { generatePersonSchema } from '@/lib/generateSchemas';
 
@@ -432,6 +433,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <NewsletterPopup /> {/* ✅ NEW: Phase 3 - Newsletter popup with timing triggers */}
       </body>
     </html>
   );

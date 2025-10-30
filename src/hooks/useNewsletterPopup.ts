@@ -11,7 +11,7 @@ export default function useNewsletterPopup() {
 
     let timeoutId: NodeJS.Timeout;
 
-    // ✅ Exit-intent detection (fires ONCE)
+    // ✅ Exit-intent detection (DESKTOP ONLY - doesn't work on mobile)
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0 && !hasShown) {
         setShowPopup(true);
@@ -19,7 +19,7 @@ export default function useNewsletterPopup() {
       }
     };
 
-    // ✅ Scroll trigger (50% depth, fires ONCE)
+    // ✅ Scroll trigger (50% depth, fires ONCE) - WORKS ON MOBILE
     const handleScroll = () => {
       if (hasShown) return;
       
@@ -31,15 +31,21 @@ export default function useNewsletterPopup() {
       }
     };
 
-    // ✅ Time delay (30 seconds, fires ONCE if other triggers didn't fire)
+    // ✅ Time delay (15 seconds for mobile, 30s for desktop)
+    const isMobile = window.innerWidth < 768;
+    const delay = isMobile ? 15000 : 30000; // ✅ Faster on mobile
+    
     timeoutId = setTimeout(() => {
       if (!hasShown) {
         setShowPopup(true);
         setHasShown(true); // ✅ Mark as shown
       }
-    }, 30000);
+    }, delay);
 
-    document.addEventListener('mouseleave', handleMouseLeave);
+    // Only add mouse leave on desktop
+    if (!isMobile) {
+      document.addEventListener('mouseleave', handleMouseLeave);
+    }
     window.addEventListener('scroll', handleScroll);
 
     return () => {

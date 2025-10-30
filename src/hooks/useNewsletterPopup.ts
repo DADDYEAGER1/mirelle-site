@@ -4,39 +4,38 @@ import { useState, useEffect } from 'react';
 
 export default function useNewsletterPopup() {
   const [showPopup, setShowPopup] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
+  const [hasShown, setHasShown] = useState(false); // ✅ NEW: Track if popup already shown
 
   useEffect(() => {
-    if (dismissed) return;
+    if (hasShown) return; // ✅ If already shown once, stop all triggers
 
     let timeoutId: NodeJS.Timeout;
-    let scrollTriggered = false;
-    let exitTriggered = false;
 
-    // Exit-intent detection
+    // ✅ Exit-intent detection (fires ONCE)
     const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !exitTriggered && !dismissed) {
-        exitTriggered = true;
+      if (e.clientY <= 0 && !hasShown) {
         setShowPopup(true);
+        setHasShown(true); // ✅ Mark as shown
       }
     };
 
-    // Scroll trigger (50% depth)
+    // ✅ Scroll trigger (50% depth, fires ONCE)
     const handleScroll = () => {
-      if (scrollTriggered || dismissed) return;
+      if (hasShown) return;
       
       const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
       
       if (scrollPercent >= 50) {
-        scrollTriggered = true;
         setShowPopup(true);
+        setHasShown(true); // ✅ Mark as shown
       }
     };
 
-    // Time delay (30 seconds)
+    // ✅ Time delay (30 seconds, fires ONCE if other triggers didn't fire)
     timeoutId = setTimeout(() => {
-      if (!dismissed && !scrollTriggered && !exitTriggered) {
+      if (!hasShown) {
         setShowPopup(true);
+        setHasShown(true); // ✅ Mark as shown
       }
     }, 30000);
 
@@ -48,16 +47,15 @@ export default function useNewsletterPopup() {
       document.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [dismissed]);
+  }, [hasShown]);
 
   const dismissPopup = () => {
-    setDismissed(true);
     setShowPopup(false);
   };
 
   return {
     showPopup,
     dismissPopup,
-    isVisible: showPopup && !dismissed,
+    isVisible: showPopup,
   };
 }

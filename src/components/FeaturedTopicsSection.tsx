@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AnimatedCard from '@/components/ui/AnimatedCard';
 
 const topics = [
   {
@@ -65,61 +66,69 @@ export default function FeaturedTopicsSection() {
           </p>
         </div>
         
-        {/* Topics Grid - Editorial layout */}
+        {/* ✅ Topics Grid with AnimatedCard + Staggered reveal */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {topics.map((topic, index) => (
-            <Link
-              key={index}
-              href={topic.href}
-              className="group relative overflow-hidden bg-white shadow-editorial hover:shadow-editorial-lg transition-all duration-500"
+            <AnimatedCard 
+              key={index} 
+              delay={index * 100} 
+              enableTilt={true}
+              className="h-full"
             >
-              {/* Trending Badge - Minimal */}
-              {topic.trending && (
-                <div className="absolute top-6 right-6 z-20">
-                  <span className="border border-editorial-accent text-editorial-accent text-caption uppercase tracking-widest px-3 py-1 font-semibold backdrop-blur-sm bg-white/80">
-                    Trending
-                  </span>
-                </div>
-              )}
-              
-              {/* Image Container */}
-              <div className="relative h-80 overflow-hidden">
-                <img
-                  src={topic.image}
-                  alt={topic.title}
-                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
-                />
+              <Link
+                href={topic.href}
+                className="group relative overflow-hidden bg-white shadow-editorial hover:shadow-editorial-lg transition-all duration-500 block h-full"
+              >
+                {/* Trending Badge */}
+                {topic.trending && (
+                  <div className="absolute top-6 right-6 z-20">
+                    <span className="border border-editorial-accent text-editorial-accent text-caption uppercase tracking-widest px-3 py-1 font-semibold backdrop-blur-sm bg-white/80">
+                      Trending
+                    </span>
+                  </div>
+                )}
                 
-                {/* Subtle editorial gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-              </div>
-              
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <div className="relative z-10">
-                  <h3 className="font-display text-headline-lg mb-3 text-white tracking-magazine">
-                    {topic.title}
-                  </h3>
-                  <p className="text-white/90 mb-6 text-body font-sans font-light leading-relaxed">
-                    {topic.description}
-                  </p>
+                {/* ✅ Image with zoom effect */}
+                <div className="relative h-80 overflow-hidden">
+                  <img
+                    src={topic.image}
+                    alt={topic.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
                   
-                  {/* CTA - Underline style */}
-                  <div className="inline-flex items-center text-white border-b border-white/50 pb-1 text-body-sm font-sans uppercase tracking-wide font-medium group-hover:border-editorial-accent group-hover:text-editorial-accent transition-all duration-300">
-                    <span className="mr-2">Explore</span>
-                    <svg 
-                      className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                  {/* ✅ Gradient overlay animation */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-opacity duration-500 group-hover:from-black/80"></div>
+                </div>
+                
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <div className="relative z-10">
+                    <h3 className="font-display text-headline-lg mb-3 text-white tracking-magazine">
+                      {topic.title}
+                    </h3>
+                    <p className="text-white/90 mb-6 text-body font-sans font-light leading-relaxed">
+                      {topic.description}
+                    </p>
+                    
+                    {/* ✅ CTA with animated underline */}
+                    <div className="inline-flex items-center text-white pb-1 text-body-sm font-sans uppercase tracking-wide font-medium relative">
+                      <span className="mr-2">Explore</span>
+                      <svg 
+                        className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                        strokeWidth={2}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                      {/* ✅ Animated underline */}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-editorial-accent transition-all duration-300 group-hover:w-full origin-left"></span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </AnimatedCard>
           ))}
         </div>
         

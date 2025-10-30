@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AnimatedCard from '@/components/ui/AnimatedCard';
 
 const shopCategories = [
   {
@@ -71,59 +72,70 @@ export default function ShopSection() {
           </p>
         </div>
         
-        {/* Shop Grid */}
+        {/* ✅ Shop Grid with AnimatedCard + Staggered reveal */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {shopCategories.map((category, index) => (
-            <Link
-              key={index}
-              href={category.href}
-              className="group relative overflow-hidden bg-white shadow-editorial hover:shadow-editorial-lg transition-all duration-500"
+            <AnimatedCard 
+              key={index} 
+              delay={index * 100}
+              enableTilt={true}
+              className="h-full"
             >
-              <div className="relative h-96">
-                <img
-                  src={category.image}
-                  alt={category.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                
-                {/* Editorial gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent"></div>
-                
-                {/* Product count badge - top right */}
-                <div className="absolute top-6 right-6 border border-white/40 backdrop-blur-sm bg-white/20 px-4 py-2 text-caption uppercase tracking-wide font-semibold text-white">
-                  {category.productCount}
-                </div>
-
-                {/* Trending badge - minimal */}
-                {category.trending && (
-                  <div className="absolute top-6 left-6 border border-editorial-accent text-editorial-accent backdrop-blur-sm bg-white/80 px-3 py-1 text-caption uppercase tracking-widest font-semibold">
-                    Trending
+              <Link
+                href={category.href}
+                className="group relative overflow-hidden bg-white shadow-editorial hover:shadow-editorial-lg transition-all duration-500 block h-full"
+              >
+                <div className="relative h-96">
+                  {/* ✅ Image with zoom effect */}
+                  <img
+                    src={category.image}
+                    alt={category.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  
+                  {/* Editorial gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent"></div>
+                  
+                  {/* ✅ Product count badge with scale-in animation */}
+                  <div className="absolute top-6 right-6 border border-white/40 backdrop-blur-sm bg-white/20 px-4 py-2 text-caption uppercase tracking-wide font-semibold text-white transition-all duration-300 group-hover:scale-110 group-hover:bg-white/30">
+                    {category.productCount}
                   </div>
-                )}
-              </div>
-              
-              {/* Content overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <h3 className="font-display text-headline-lg mb-3 text-white tracking-magazine">
-                  {category.title}
-                </h3>
-                <p className="text-white/90 mb-6 text-body font-sans font-light leading-relaxed">
-                  {category.description}
-                </p>
-                <div className="inline-flex items-center text-white border-b border-white/50 pb-1 text-body-sm font-sans uppercase tracking-wide font-medium group-hover:border-editorial-accent group-hover:text-editorial-accent transition-all duration-300">
-                  <span className="mr-2">Shop Now</span>
-                  <svg 
-                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
+
+                  {/* Trending badge */}
+                  {category.trending && (
+                    <div className="absolute top-6 left-6 border border-editorial-accent text-editorial-accent backdrop-blur-sm bg-white/80 px-3 py-1 text-caption uppercase tracking-widest font-semibold animate-fade-in">
+                      Trending
+                    </div>
+                  )}
                 </div>
-              </div>
-            </Link>
+                
+                {/* Content overlay */}
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                  <h3 className="font-display text-headline-lg mb-3 text-white tracking-magazine">
+                    {category.title}
+                  </h3>
+                  <p className="text-white/90 mb-6 text-body font-sans font-light leading-relaxed">
+                    {category.description}
+                  </p>
+                  
+                  {/* ✅ CTA with animated underline */}
+                  <div className="inline-flex items-center text-white pb-1 text-body-sm font-sans uppercase tracking-wide font-medium relative">
+                    <span className="mr-2">Shop Now</span>
+                    <svg 
+                      className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                    {/* ✅ Animated underline */}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-editorial-accent transition-all duration-300 group-hover:w-full origin-left"></span>
+                  </div>
+                </div>
+              </Link>
+            </AnimatedCard>
           ))}
         </div>
       </div>

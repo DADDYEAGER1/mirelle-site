@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   
-  // ✅ NEW - Image Optimization
+  // ✅ Image Optimization with specific domains
   images: {
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000, // 1 year
@@ -11,12 +11,24 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'mirelleinspo.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.media-amazon.com', // Amazon product images
+      },
+      {
+        protocol: 'https',
+        hostname: 'm.media-amazon.com', // Specific Amazon domain
       },
     ],
   },
 
-  // ✅ NEW - Headers for SEO and Security
+  // ✅ Headers for SEO and Security
   async headers() {
     return [
       {
@@ -44,7 +56,7 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // 🔄 UPDATED - Cache static assets aggressively
+      // Cache static assets aggressively
       {
         source: "/images/:path*",
         headers: [
@@ -66,19 +78,10 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Rewrites for clean URLs
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: "/sitemap.xml",
-          destination: "/api/sitemap",
-        },
-      ],
-    };
-  },
+  // ✅ REMOVED - Sitemap rewrite (using next-sitemap instead)
+  // The sitemap rewrite was causing conflicts with next-sitemap
 
-  // 🔄 UPDATED - Enable SWR for ISR with optimized settings
+  // Enable SWR for ISR with optimized settings
   onDemandEntries: {
     maxInactiveAge: 60 * 1000, // Keep pages in memory for 60s
     pagesBufferLength: 5,
@@ -96,23 +99,22 @@ const nextConfig: NextConfig = {
   // React strict mode for better error detection
   reactStrictMode: true,
 
-  // ✅ NEW - Optimized fonts and package imports
+  // Optimized fonts and package imports
   optimizeFonts: true,
   optimizePackageImports: [
     "@chakra-ui/react",
     "@headlessui/react",
     "date-fns",
-    "lucide-react", // ✅ NEW - Optimize lucide-react imports
+    "lucide-react",
   ],
 
-  // 🔄 UPDATED - Experimental features for better performance
+  // Experimental features for better performance
   experimental: {
-    optimizePackageImports: ["lodash-es", "fuse.js"], // ✅ NEW - Add fuse.js
-    // ✅ NEW - Enable optimized CSS loading
+    optimizePackageImports: ["lodash-es", "fuse.js"],
     optimizeCss: true,
   },
 
-  // ✅ NEW - Bundle analyzer for production builds
+  // Bundle analyzer for production builds
   webpack: (config, { isServer }) => {
     // Optimize bundle size
     if (!isServer) {

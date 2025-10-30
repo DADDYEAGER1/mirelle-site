@@ -92,9 +92,9 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://mirelleinspo.com/sitemap.xml',
+      // 'https://mirelleinspo.com/sitemap.xml',
       // ✅ NEW: Add blog-specific sitemap if you want to separate it
-      // 'https://mirelleinspo.com/blog-sitemap.xml',
+      // https://mirelleinspo.com/blog-sitemap.xml',
     ],
   },
 

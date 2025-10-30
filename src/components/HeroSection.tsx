@@ -42,14 +42,6 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
       </div>
 
-      {/* ✅ Floating nail emojis */}
-      <div className="absolute inset-0 z-5 pointer-events-none">
-        <span className="absolute top-20 left-10 text-6xl animate-tilt" style={{ animationDelay: '0s' }}>💅</span>
-        <span className="absolute top-40 right-20 text-5xl animate-tilt" style={{ animationDelay: '2s' }}>✨</span>
-        <span className="absolute bottom-32 left-20 text-4xl animate-tilt" style={{ animationDelay: '4s' }}>💖</span>
-        <span className="absolute top-1/3 right-10 text-5xl animate-tilt" style={{ animationDelay: '1s' }}>🎨</span>
-      </div>
-      
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
         <p className="text-overline text-white/80 mb-6 tracking-widest uppercase font-sans animate-fade-in">

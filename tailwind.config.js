@@ -114,8 +114,65 @@ module.exports = {
         'editorial': '0 4px 20px rgba(0, 0, 0, 0.06)',
         'editorial-lg': '0 10px 40px rgba(0, 0, 0, 0.08)',
       },
+      // ✅ NEW: Animation configurations
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-out',
+        'slide-up': 'slideUp 0.6s ease-out',
+        'tilt': 'tilt 10s ease-in-out infinite',
+        'ripple': 'ripple 0.6s ease-out',
+      },
+      // ✅ NEW: Keyframes
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(40px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        tilt: {
+          '0%, 100%': { transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg)' },
+          '50%': { transform: 'perspective(1000px) rotateX(2deg) rotateY(2deg)' },
+        },
+        ripple: {
+          'to': { transform: 'scale(4)', opacity: '0' },
+        },
+      },
     },
   },
+  // ✅ NEW: Safelist for dynamic gradient classes used in shop categories
+  safelist: [
+    'from-pink-400',
+    'via-purple-400',
+    'to-blue-400',
+    'from-orange-400',
+    'to-red-500',
+    'from-blue-400',
+    'to-purple-500',
+    'from-red-500',
+    'to-green-500',
+    'from-amber-400',
+    'to-orange-600',
+    'from-gold-400',
+    'to-yellow-500',
+    'backdrop-blur-sm',
+    'backdrop-blur-md',
+    'backdrop-blur-lg',
+    // Add gradient classes for shop categories
+    'from-nude-400',
+    'to-nude-600',
+    'from-blush-400',
+    'to-blush-600',
+    'from-purple-400',
+    'to-purple-600',
+    'from-nude-500',
+    'to-blush-500',
+    'from-blush-500',
+    'to-purple-500',
+    'from-purple-500',
+    'to-nude-500',
+  ],
   plugins: [
     require('@tailwindcss/typography'),
   ],

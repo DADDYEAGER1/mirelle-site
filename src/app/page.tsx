@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
-// import FeaturedBrandsSection from '@/components/FeaturedBrandsSection';
 import BlogSection from '@/components/BlogSection';
 import FeaturedTopicsSection from '@/components/FeaturedTopicsSection';
 import ShopSection from '@/components/ShopSection';
-// import PinterestShowcaseSection from '@/components/PinterestShowcaseSection';
 import SubscribeSection from '@/components/SubscribeSection';
+import StickyBottomNav from '@/components/ui/StickyBottomNav'; // ✅ NEW: Phase 4
 
 export const metadata: Metadata = {
   title: 'Mirelle - Premium Nail Care, Inspiration & Expert Tips',
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://mirelleinspo.com',
   },
-  // ... rest of metadata (same pattern as blog page)
 };
 
 export default function Home() {
@@ -23,12 +21,12 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
-      {/* <FeaturedBrandsSection /> */}
-      <BlogSection />
-      <FeaturedTopicsSection />
       <ShopSection />
-      {/* <PinterestShowcaseSection /> */}
+      <FeaturedTopicsSection />
+      <BlogSection />
       <SubscribeSection />
+      
+      <StickyBottomNav /> {/* ✅ NEW: Phase 4 - Mobile sticky nav */}
     </div>
   );
 }

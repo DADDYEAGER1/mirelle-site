@@ -19,7 +19,7 @@ interface PageProps {
 
 
 // 🟢 CHANGED - Enable ISR with 1 hour revalidation
-export const revalidate = 3600; // Revalidate every hour
+// export const revalidate = 3600; // Revalidate every hour
 
 // 🟢 CHANGED - Remove dynamic export (causing conflict with generateStaticParams)
 // export const dynamic = 'force-static';

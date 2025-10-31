@@ -212,42 +212,42 @@ module.exports = {
         });
       }
 
-      // ✅ Generate category pages
-      const categoriesPath = pathModule.join(process.cwd(), 'src/content/metadata/categories.json');
-      if (fs.existsSync(categoriesPath)) {
-        const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
-        Object.keys(categories).forEach(category => {
-          result.push({
-            loc: `/blog/category/${category}`,
-            changefreq: 'weekly',
-            priority: 0.7,
-            lastmod: new Date().toISOString(),
-          });
-        });
-      }
+      // // ✅ Generate category pages
+      // const categoriesPath = pathModule.join(process.cwd(), 'src/content/metadata/categories.json');
+      // if (fs.existsSync(categoriesPath)) {
+      //   const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
+      //   Object.keys(categories).forEach(category => {
+      //     result.push({
+      //       loc: `/blog/category/${category}`,
+      //       changefreq: 'weekly',
+      //       priority: 0.7,
+      //       lastmod: new Date().toISOString(),
+      //     });
+      //   });
+      // }
 
-      // ✅ Generate tag pages
-      const tagsPath = pathModule.join(process.cwd(), 'src/content/metadata/tags.json');
-      if (fs.existsSync(tagsPath)) {
-        const tags = JSON.parse(fs.readFileSync(tagsPath, 'utf8'));
-        // Get unique tags
-        const uniqueTags = new Set();
-        Object.values(tags).forEach(tagArray => {
-          if (Array.isArray(tagArray)) {
-            tagArray.forEach(tag => uniqueTags.add(tag));
-          }
-        });
+      // // ✅ Generate tag pages
+      // const tagsPath = pathModule.join(process.cwd(), 'src/content/metadata/tags.json');
+      // if (fs.existsSync(tagsPath)) {
+      //   const tags = JSON.parse(fs.readFileSync(tagsPath, 'utf8'));
+      //   // Get unique tags
+      //   const uniqueTags = new Set();
+      //   Object.values(tags).forEach(tagArray => {
+      //     if (Array.isArray(tagArray)) {
+      //       tagArray.forEach(tag => uniqueTags.add(tag));
+      //     }
+      //   });
         
-        uniqueTags.forEach(tag => {
-          const slugifiedTag = tag.toLowerCase().replace(/\s+/g, '-');
-          result.push({
-            loc: `/blog/tag/${slugifiedTag}`,
-            changefreq: 'weekly',
-            priority: 0.6,
-            lastmod: new Date().toISOString(),
-          });
-        });
-      }
+      //   uniqueTags.forEach(tag => {
+      //     const slugifiedTag = tag.toLowerCase().replace(/\s+/g, '-');
+      //     result.push({
+      //       loc: `/blog/tag/${slugifiedTag}`,
+      //       changefreq: 'weekly',
+      //       priority: 0.6,
+      //       lastmod: new Date().toISOString(),
+      //     });
+      //   });
+      // }
 
     } catch (error) {
       console.warn('Error generating additional sitemap paths:', error.message);

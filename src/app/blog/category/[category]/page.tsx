@@ -1,8 +1,13 @@
+export const dynamicParams = false;
+export const revalidate = false;
+
+
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getPostsByCategory, getAllCategories } from '@/lib/blog';
 import BlogCard from '@/components/Blog/BlogCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
+
 
 interface PageProps {
   params: {

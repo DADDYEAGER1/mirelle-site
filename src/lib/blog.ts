@@ -287,17 +287,26 @@ export async function getPostsByTag(tag: string): Promise<BlogMetadata[]> {
   return filtered;
 }
 
-// ✅ NEW - Get all categories
+// ✅ Get only categories from published posts
 export async function getAllCategories() {
   const allPosts = await getAllBlogPosts();
+
+  // Filter out drafts or hidden posts
+  const publishedPosts = allPosts.filter(
+    (post) => post.status !== 'draft' && post.published !== false
+  );
+
   const categoryMap = new Map<string, number>();
-  
-  allPosts.forEach(post => {
+
+  publishedPosts.forEach((post) => {
     if (post.category) {
-      categoryMap.set(post.category, (categoryMap.get(post.category) || 0) + 1);
+      const name = post.category.trim();
+      if (name) {
+        categoryMap.set(name, (categoryMap.get(name) || 0) + 1);
+      }
     }
   });
-  
+
   return Array.from(categoryMap.entries()).map(([name, count]) => ({
     name,
     slug: name.toLowerCase().replace(/\s+/g, '-'),
@@ -305,17 +314,26 @@ export async function getAllCategories() {
   }));
 }
 
-// ✅ NEW - Get all tags
+// ✅ Get only tags from published posts
 export async function getAllTags() {
   const allPosts = await getAllBlogPosts();
+
+  // Filter out drafts or hidden posts
+  const publishedPosts = allPosts.filter(
+    (post) => post.status !== 'draft' && post.published !== false
+  );
+
   const tagMap = new Map<string, number>();
-  
-  allPosts.forEach(post => {
-    post.tags?.forEach(tag => {
-      tagMap.set(tag, (tagMap.get(tag) || 0) + 1);
+
+  publishedPosts.forEach((post) => {
+    post.tags?.forEach((tag) => {
+      const cleanTag = tag?.trim();
+      if (cleanTag) {
+        tagMap.set(cleanTag, (tagMap.get(cleanTag) || 0) + 1);
+      }
     });
   });
-  
+
   return Array.from(tagMap.entries())
     .map(([name, count]) => ({
       name,

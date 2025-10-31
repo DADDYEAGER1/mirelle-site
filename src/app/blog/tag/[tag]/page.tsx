@@ -1,3 +1,7 @@
+export const dynamicParams = false;
+export const revalidate = false;
+
+
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getPostsByTag, getAllTags } from '@/lib/blog';

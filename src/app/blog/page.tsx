@@ -150,26 +150,24 @@ export default async function BlogPage({ searchParams }: PageProps) {
               <aside className="lg:col-span-1 space-y-8">
                 
                 {/* Categories Section - Simplified */}
-<section className="py-16 bg-gray-50">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-      Explore by Topic
-    </h2>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-      {categories.slice(0, 8).map((category) => (
-        <Link
-          key={category.slug}
-          href={`/blog/category/${category.slug}`}
-          className="bg-white p-6 rounded-lg text-center hover:shadow-lg transition-shadow"
-        >
-          <div className="text-4xl mb-2">💅</div>
-          <h3 className="font-semibold text-gray-800 mb-1">{category.name}</h3>
-          <p className="text-sm text-gray-500">{category.count} articles</p>
-        </Link>
-      ))}
-    </div>
+{/* Categories */}
+<div className="bg-gray-50 rounded-lg p-6">
+  <h3 className="text-xl font-bold text-gray-800 mb-4">Categories</h3>
+  <div className="space-y-2">
+    {categories.slice(0, 8).map((category) => (
+      <Link
+        key={category.slug}
+        href={`/blog/category/${category.slug}`}
+        className="flex items-center justify-between p-2 rounded hover:bg-white transition-colors"
+      >
+        <span className="text-gray-700">{category.name}</span>
+        <span className="text-sm text-gray-500 bg-white px-2 py-1 rounded">
+          {category.count}
+        </span>
+      </Link>
+    ))}
   </div>
-</section>
+</div>
                 {/* Popular Tags */}
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-4">Popular Tags</h3>

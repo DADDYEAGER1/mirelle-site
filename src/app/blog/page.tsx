@@ -395,7 +395,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                     <p className="text-gray-500 mb-6">
                       {selectedTag || selectedCategory || searchQuery 
                         ? 'Try adjusting your filters or search terms.' 
-                        : 'We're crafting expert nail care content for you. Check back soon!'}
+                        : "We're crafting expert nail care content for you. Check back soon!"}
                     </p>
                     {(selectedTag || selectedCategory || searchQuery) && (
                       <Link

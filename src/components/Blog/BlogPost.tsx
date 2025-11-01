@@ -3,9 +3,9 @@ import Link from 'next/link';
 import { BlogPost as BlogPostType } from '@/types/blog';
 import BlogSidebar from './BlogSidebar';
 import CommentSection from '@/components/Blog/CommentSection';
-import TLDRSection from './TLDRSection'; // ✨ NEW IMPORT
-import ReadingProgress from './ReadingProgress'; // 🟢 PHASE 3
-import SocialShare from './SocialShare'; // 🟢 PHASE 3
+import TLDRSection from './TLDRSection';
+import ReadingProgress from './ReadingProgress';
+import SocialShare from './SocialShare';
 
 interface BlogPostProps {
   post: BlogPostType;
@@ -30,34 +30,42 @@ export default function BlogPost({ post }: BlogPostProps) {
   ].filter(p => p.slug !== post.slug);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="mb-6">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      {/* Back Button */}
+      <div className="mb-4 sm:mb-6">
         <Link 
           href="/blog"
-          className="text-blue-600 hover:text-blue-800 inline-flex items-center gap-2"
+          className="text-blue-600 hover:text-blue-800 inline-flex items-center gap-2 text-sm sm:text-base"
         >
           ← Back to Blog
         </Link>
       </div>
 
-      {/* Hero Section */}
-      <div className="max-w-4xl mx-auto mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+      {/* Hero Section - Mobile Optimized */}
+      <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
+        {/* Title - Better mobile sizing */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 text-center px-2">
           {post.title}
         </h1>
         
-        <div className="flex items-center justify-center gap-4 text-sm text-gray-600 mb-6">
+        {/* Meta Info - Stack on mobile */}
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6 px-4">
           <span>By {post.author}</span>
-          <span>•</span>
-          <span>{new Date(post.date).toLocaleDateString()}</span>
-          <span>•</span>
+          <span className="hidden sm:inline">•</span>
+          <span>{new Date(post.date).toLocaleDateString('en-US', { 
+            month: 'short', 
+            day: 'numeric', 
+            year: 'numeric' 
+          })}</span>
+          <span className="hidden sm:inline">•</span>
           <span>{post.readTime} read</span>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
-          {/* ✅ Show category badge first if exists */}
+        {/* Tags - Better mobile wrapping */}
+        <div className="flex flex-wrap justify-center gap-2 mb-6 sm:mb-8 px-4">
+          {/* Show category badge first if exists */}
           {post.category && (
-            <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
+            <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
               {post.category}
             </span>
           )}
@@ -65,57 +73,67 @@ export default function BlogPost({ post }: BlogPostProps) {
           {post.tags.map(tag => (
             <span 
               key={tag}
-              className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium"
+              className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
             >
               {tag}
             </span>
           ))}
         </div>
         
+        {/* Hero Image - Mobile optimized aspect ratio */}
         {post.image && (
-          <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src={post.image}
-              alt={post.title}
-              fill
-              className="object-cover"
-              priority
-            />
+          <div className="relative w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-2xl">
+            {/* Mobile: 16:9 aspect ratio, Desktop: adjustable */}
+            <div className="aspect-[16/9] sm:aspect-[16/10] relative">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                priority
+              />
+            </div>
           </div>
         )}
       </div>
+
+      {/* Reading Progress */}
       <ReadingProgress />
 
-      <div className="max-w-4xl mx-auto mb-8">
+      {/* Social Share */}
+      <div className="max-w-4xl mx-auto mb-6 sm:mb-8">
         <SocialShare title={post.title} slug={post.slug} />
       </div>
 
-      
-      {/* ✨ TL;DR SECTION - CRITICAL: Place AFTER header, BEFORE content */}
+      {/* TL;DR Section */}
       {post.tldr && (
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
           <TLDRSection 
             summary={post.tldr.summary}
-            readTime={String(post.readTime)}  // ✅ Ensure it's a string
+            readTime={String(post.readTime)}
+            faqs={post.tldr.faqs}
+            creativeLine={post.tldr.creativeLine}
             keyTakeaways={post.tldr.keyTakeaways}
           />
         </div>
       )}
 
-      {/* Two Column Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Main Content - Takes 8 columns on large screens */}
+      {/* Two Column Layout - Stack on mobile */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
+        {/* Main Content */}
         <article className="lg:col-span-8">
           <div 
-            className="prose prose-lg max-w-none 
-            [&_h2]:text-pink-600 [&_h2]:text-3xl [&_h2]:mt-12 [&_h2]:mb-6 [&_h2]:font-bold [&_h2]:scroll-mt-24
-            [&_h3]:text-purple-600 [&_h3]:text-xl [&_h3]:mt-8 [&_h3]:mb-4 [&_h3]:font-semibold
-            [&_p]:text-gray-700 [&_p]:leading-relaxed [&_p]:mb-4
-            [&_ul]:my-4 [&_li]:mb-2
+            className="prose prose-sm sm:prose-base lg:prose-lg max-w-none
+            [&_h2]:text-pink-600 [&_h2]:text-2xl sm:[&_h2]:text-3xl [&_h2]:mt-8 sm:[&_h2]:mt-12 [&_h2]:mb-4 sm:[&_h2]:mb-6 [&_h2]:font-bold [&_h2]:scroll-mt-20 sm:[&_h2]:scroll-mt-24
+            [&_h3]:text-purple-600 [&_h3]:text-lg sm:[&_h3]:text-xl [&_h3]:mt-6 sm:[&_h3]:mt-8 [&_h3]:mb-3 sm:[&_h3]:mb-4 [&_h3]:font-semibold
+            [&_p]:text-gray-700 [&_p]:leading-relaxed [&_p]:mb-4 [&_p]:text-base
+            [&_ul]:my-3 sm:[&_ul]:my-4 [&_li]:mb-2 [&_li]:text-base
             [&_strong]:text-gray-900 [&_strong]:font-semibold
             [&_a]:text-blue-600 [&_a]:no-underline hover:[&_a]:text-blue-800
-            [&_img]:rounded-lg [&_img]:shadow-lg [&_img]:my-8
-            [&_hr]:my-8 [&_hr]:border-pink-200"
+            [&_img]:rounded-lg [&_img]:shadow-lg [&_img]:my-6 sm:[&_img]:my-8 [&_img]:w-full
+            [&_hr]:my-6 sm:[&_hr]:my-8 [&_hr]:border-pink-200
+            px-2 sm:px-0"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
@@ -123,7 +141,7 @@ export default function BlogPost({ post }: BlogPostProps) {
           <CommentSection postSlug={post.slug} postTitle={post.title} />
         </article>
 
-        {/* Sidebar - Takes 4 columns on large screens */}
+        {/* Sidebar */}
         <aside className="lg:col-span-4">
           <BlogSidebar
             tableOfContents={tableOfContents}

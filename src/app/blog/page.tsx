@@ -160,7 +160,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-// Replace the Hero Section in your blog page.tsx with this:
+
 <div className="min-h-screen">
 {/* Hero Section */}
 <section className="relative bg-editorial-cream py-24 border-b border-editorial-stone">

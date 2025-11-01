@@ -19,7 +19,7 @@ export default function BlogCard({ post }: BlogCardProps) {
             src={post.image}
             alt={post.title}
             fill
-            className="object-contain transition-transform duration-500 group-hover:scale-105"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400" />

@@ -112,7 +112,7 @@ export default function BlogPost({ post }: BlogPostProps) {
     <TLDRSection
       summary={post.tldr.summary}
       readTime={String(post.readTime)}
-      faqs={post.tldr.faqs}
+      faqs={post.faqItems || post.tldr.faqs || []}  // ✅ Use faqItems from post, fallback to tldr.faqs
       creativeLine={post.tldr.creativeLine}
       keyTakeaways={post.tldr.keyTakeaways}
     />

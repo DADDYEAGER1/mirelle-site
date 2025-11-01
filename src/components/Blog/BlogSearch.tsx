@@ -1,57 +1,45 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
-import Fuse from 'fuse.js';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { BlogMetadata } from '@/types/blog';
 
 interface BlogSearchProps {
   posts: BlogMetadata[];
-  onSearchResults?: (results: BlogMetadata[]) => void;
 }
 
-export default function BlogSearch({ posts, onSearchResults }: BlogSearchProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState<BlogMetadata[]>(posts);
-  const [isSearching, setIsSearching] = useState(false);
+export default function BlogSearch({ posts }: BlogSearchProps) {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
 
-  // ✅ NEW - Initialize Fuse.js with optimized options
-  const fuse = new Fuse(posts, {
-    keys: [
-      { name: 'title', weight: 0.7 },
-      { name: 'excerpt', weight: 0.3 },
-      { name: 'tags', weight: 0.5 },
-      { name: 'category', weight: 0.4 },
-    ],
-    threshold: 0.3,
-    includeScore: true,
-    minMatchCharLength: 2,
-  });
-
-  // ✅ NEW - Debounced search handler
+  // Debounced search - updates URL after user stops typing
   useEffect(() => {
     const timer = setTimeout(() => {
+      const params = new URLSearchParams(searchParams.toString());
+      
       if (searchQuery.trim() === '') {
-        setSearchResults(posts);
-        setIsSearching(false);
-        onSearchResults?.(posts);
+        params.delete('search');
+        params.delete('page'); // Reset to page 1
       } else {
-        setIsSearching(true);
-        const results = fuse.search(searchQuery);
-        const filteredPosts = results.map(result => result.item);
-        setSearchResults(filteredPosts);
-        setIsSearching(false);
-        onSearchResults?.(filteredPosts);
+        params.set('search', searchQuery.trim());
+        params.delete('page'); // Reset to page 1 when searching
       }
-    }, 300); // 300ms debounce
+
+      const newUrl = params.toString() ? `/blog?${params.toString()}` : '/blog';
+      router.push(newUrl, { scroll: false });
+    }, 500); // 500ms debounce - adjust as needed
 
     return () => clearTimeout(timer);
-  }, [searchQuery, posts]);
+  }, [searchQuery]);
 
   const handleClear = () => {
     setSearchQuery('');
-    setSearchResults(posts);
-    onSearchResults?.(posts);
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete('search');
+    params.delete('page');
+    const newUrl = params.toString() ? `/blog?${params.toString()}` : '/blog';
+    router.push(newUrl, { scroll: false });
   };
 
   return (
@@ -80,7 +68,7 @@ export default function BlogSearch({ posts, onSearchResults }: BlogSearchProps) 
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search articles..."
+          placeholder="Search articles by title, tags, category..."
           className="w-full pl-12 pr-12 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
         />
 
@@ -88,7 +76,7 @@ export default function BlogSearch({ posts, onSearchResults }: BlogSearchProps) 
         {searchQuery && (
           <button
             onClick={handleClear}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
             aria-label="Clear search"
           >
             <svg
@@ -109,19 +97,10 @@ export default function BlogSearch({ posts, onSearchResults }: BlogSearchProps) 
         )}
       </div>
 
-      {/* Search Status */}
-      {searchQuery && (
-        <div className="mt-2 text-sm text-gray-600">
-          {isSearching ? (
-            <span>Searching...</span>
-          ) : (
-            <span>
-              Found {searchResults.length} {searchResults.length === 1 ? 'result' : 'results'}
-              {searchQuery && ` for "${searchQuery}"`}
-            </span>
-          )}
-        </div>
-      )}
+      {/* Search Tip */}
+      <div className="mt-2 text-xs text-gray-500">
+        💡 Tip: Use the search bar to find articles or click tags/categories to filter
+      </div>
     </div>
   );
 }

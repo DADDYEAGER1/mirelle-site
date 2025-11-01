@@ -37,7 +37,7 @@ export default function TLDRSection({
       {/* Main Heading */}
       <div className="flex items-center justify-between mb-5 pb-4 border-b border-pink-200">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
-          <span className="text-2xl" aria-hidden="true">💅</span>
+          <span className="text-2xl" aria-hidden="true"></span>
           Wrap Up
         </h2>
         <span className="text-xs sm:text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap">{readTime}</span>
@@ -114,26 +114,3 @@ export default function TLDRSection({
     </section>
   );
 }
-
-/* Demo Usage:
-<TLDRSection 
-  summary={[
-    "Discover 50+ trending Valentine's Day nail designs perfect for 2026.",
-    "Learn expert tips for long-lasting manicures and DIY techniques.",
-    "Get step-by-step guides for recreating Instagram-worthy nail art."
-  ]}
-  readTime="8 min"
-  faqs={[
-    {
-      question: "What nail colors are trending for Valentine's 2026?",
-      answer: "Cherry red, rose gold chrome, and soft pink ombré are dominating this season."
-    },
-    {
-      question: "Can I do these designs at home?",
-      answer: "Yes! Most designs include beginner-friendly alternatives with detailed instructions."
-    }
-  ]}
-  creativeLine="Your nails are your best accessory—make them unforgettable this Valentine's Day"
-  keyTakeaways={["50+ Design Ideas", "DIY Tutorials", "Expert Tips", "Trend Forecasts"]}
-/>
-*/

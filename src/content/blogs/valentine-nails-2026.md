@@ -32,6 +32,14 @@ tldr:
     - "Lasts 2-3 weeks"
     - "484% search spike"
     - "Budget-friendly <$20"
+  creativeLine: "Love is in the details - make your nails the perfect Valentine accessory"
+  faqs:
+    - question: "How long do chrome Valentine nails last?"
+      answer: "Chrome Valentine nails typically last 2-3 weeks with proper gel application and care, making them perfect for celebrating throughout the Valentine's season."
+    - question: "Are chrome finishes difficult to apply at home?"
+      answer: "Chrome finishes are surprisingly easy with press-on chrome powders available for under $20. Simply apply over cured gel polish and seal with a no-wipe top coat."
+    - question: "What's the best base color for Valentine chrome nails?"
+      answer: "Soft pinks and nude bases are trending in 2026 over traditional red, as they create a modern, sophisticated look that complements the chrome finish better."
 faqItems:
   - question: "What colors are best for valentine nails in 2026"
     answer: "Soft blush pinks and cherry red dominate 2026 trends, with rose gold chrome finishes adding modern dimension. Coquette-inspired pastels with bow accents are hugely popular, giving traditional valentine colors a fresh twist that works for any style preference."

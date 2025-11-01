@@ -180,7 +180,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
       <div className="flex flex-wrap justify-center gap-8 mt-12">
         <div className="flex items-center gap-3">
           <span className="text-2xl">📝</span>
-          <span className="font-medium text-editorial-charcoal text-body">{post.length}+ Articles</span>
+          <span className="font-medium text-editorial-charcoal text-body">{originalTotalPosts}+ Articles</span>
         </div>
         <div className="flex items-center gap-3">
           <span className="text-2xl">✨</span>

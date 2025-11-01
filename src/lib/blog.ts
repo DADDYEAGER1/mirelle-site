@@ -93,7 +93,7 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     const images = loadMetadataFile<Record<string, string>>('images.json');
     const imageAlts = loadMetadataFile<Record<string, string>>('imageAlts.json');
     const dateModified = loadMetadataFile<Record<string, string>>('dateModified.json');
-    const tldrs = loadMetadataFile<Record<string, { summary: string[]; keyTakeaways?: string[] }>>('tldr.json');
+    const tldrs = loadMetadataFile<Record<string, { summary: string[]; keyTakeaways: string[]; faqs?: any[]; creativeLine?: string }>>('tldr.json');
     const faqs = loadMetadataFile<Record<string, any[]>>('faqItems.json');
 
     return {

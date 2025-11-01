@@ -160,41 +160,70 @@ export default async function BlogPage({ searchParams }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <div className="min-h-screen thumb-zone">
-        {/* Hero Section with Animated Gradient */}
-        <section className="relative bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-pink-300/30 via-transparent to-purple-300/30 animate-pulse"></div>
-          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-5xl font-bold text-gray-800 mb-4 animate-fade-in">
-              Nail Care Blog - Expert Tips & Trends
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '100ms' }}>
-              Discover professional nail care advice, seasonal trends, and step-by-step tutorials for beautiful, healthy nails
-            </p>
-            
-            <div className="flex flex-wrap justify-center gap-6 mt-8">
-              <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '200ms' }}>
-                <span className="text-2xl">📝</span>
-                <span className="font-semibold">{originalTotalPosts}+ Articles</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '300ms' }}>
-                <span className="text-2xl">✨</span>
-                <span className="font-semibold">Expert Advice</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '400ms' }}>
-                <span className="text-2xl">📆</span>
-                <span className="font-semibold">Updated Weekly</span>
-              </div>
-            </div>
-          </div>
-        </section>
+// Replace the Hero Section in your blog page.tsx with this:
 
-        {/* Search Section */}
-        <section className="bg-white py-8 border-b">
-          <div className="container mx-auto px-4">
-            <BlogSearch posts={allPosts} /> 
-          </div>
-        </section>
+{/* Hero Section */}
+<section className="relative bg-editorial-cream py-24 border-b border-editorial-stone">
+  <div className="container mx-auto px-4">
+    {/* Decorative accent line */}
+    <div className="w-16 h-0.5 bg-editorial-accent mx-auto mb-8"></div>
+    
+    <div className="text-center max-w-4xl mx-auto">
+      <h1 className="font-serif text-display-lg md:text-display-xl text-editorial-charcoal mb-6">
+        Nail Care Blog - Expert Tips & Trends
+      </h1>
+      <p className="text-body-lg text-editorial-slate max-w-2xl mx-auto leading-relaxed">
+        Discover professional nail care advice, seasonal trends, and step-by-step tutorials for beautiful, healthy nails
+      </p>
+      
+      {/* Trust Signals */}
+      <div className="flex flex-wrap justify-center gap-8 mt-12">
+        <div className="flex items-center gap-3">
+          <span className="text-2xl">📝</span>
+          <span className="font-medium text-editorial-charcoal text-body">{posts.length}+ Articles</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <span className="text-2xl">✨</span>
+          <span className="font-medium text-editorial-charcoal text-body">Expert Advice</span>
+        </div>
+        <div className="flex items-center gap-3">
+          <span className="text-2xl">📆</span>
+          <span className="font-medium text-editorial-charcoal text-body">Updated Weekly</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {/* Subtle bottom gradient fade */}
+  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+</section>
+
+{/* Search Section - Optional refined version */}
+<section className="bg-white py-8 border-b border-gray-100">
+  <div className="container mx-auto px-4">
+    <div className="max-w-2xl mx-auto">
+      <div className="relative">
+        <svg 
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input
+          type="search"
+          placeholder="Search articles by title, tags, category..."
+          className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-editorial-accent focus:border-transparent text-body"
+        />
+      </div>
+      <p className="text-caption text-gray-500 mt-2 flex items-center gap-1">
+        <span>💡</span>
+        Tip: Use the search bar to find articles or click tags/categories to filter
+      </p>
+    </div>
+  </div>
+</section>
 
         {/* Main Content with Sidebar */}
         <section className="py-16 bg-white">

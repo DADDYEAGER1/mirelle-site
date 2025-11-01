@@ -24,18 +24,18 @@ export default function ShopPage() {
   const categories = categorySlugs.map(slug => getCategoryData(slug)).filter(Boolean);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Shop Press-On Nails
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
-            Discover our curated collection of premium press-on nails for every season and style
-          </p>
-        </div>
-      </section>
+<div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+  {/* Hero Section */}
+  <section className="bg-gradient-editorial text-editorial-charcoal py-20 border-b border-editorial-stone">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 className="text-display-lg md:text-display-xl font-serif font-normal mb-6 text-editorial-charcoal">
+        Shop Press-On Nails
+      </h1>
+      <p className="text-body-xl md:text-headline-md text-editorial-slate max-w-3xl mx-auto font-light">
+        Discover our curated collection of premium press-on nails for every season and style
+      </p>
+    </div>
+  </section>
 
       {/* Categories Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

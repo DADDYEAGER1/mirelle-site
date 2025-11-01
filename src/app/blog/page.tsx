@@ -7,7 +7,6 @@ import { generateBlogSchema, generateBlogListSchema } from '@/lib/generateSchema
 import Link from 'next/link';
 import StickyBottomNav from '@/components/ui/StickyBottomNav';
 import GlassCard from '@/components/ui/GlassCard';
-import BlogFilters from '@/components/Blog/BlogFilters';
 
 export const metadata: Metadata = {
   title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',

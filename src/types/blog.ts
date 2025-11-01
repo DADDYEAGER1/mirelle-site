@@ -28,14 +28,19 @@ export interface BlogMetadata {
 }
 
 
-// Add this new interface after the imports
+// Add this interface after imports, BEFORE BlogPost
 export interface TLDR {
-  summary: string[];  
-  faqs: FAQItem[];
-  creativeLine: string;
+  summary: string[];
+  faqs?: FAQ[];           // Optional
+  creativeLine?: string;  // Optional  
   keyTakeaways: string[];
 }
 
+// Also add FAQ interface
+export interface FAQ {
+  question: string;
+  answer: string;
+}
 // Rest of your types...
 export interface Category {
   name: string;

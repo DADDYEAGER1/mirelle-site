@@ -113,39 +113,25 @@ export default function TLDRSection({
   );
 }
 
-// Demo with sample data
-const Demo = () => {
-  const sampleData = {
-    summary: [
-      "Discover 50+ trending Valentine's Day nail designs perfect for 2026, from classic reds to modern chrome finishes.",
-      "Learn expert tips for long-lasting manicures and DIY techniques that rival salon results.",
-      "Get step-by-step guides for recreating Instagram-worthy nail art at home."
-    ],
-    readTime: "8 min",
-    faqs: [
-      {
-        question: "What nail colors are trending for Valentine's 2026?",
-        answer: "Cherry red, rose gold chrome, and soft pink ombré are dominating this season."
-      },
-      {
-        question: "Can I do these designs at home?",
-        answer: "Yes! Most designs include beginner-friendly alternatives with detailed instructions."
-      },
-      {
-        question: "How long do these manicures last?",
-        answer: "With proper prep and top coat, expect 7-14 days of chip-free wear."
-      }
-    ],
-    creativeLine: "Your nails are your best accessory—make them unforgettable this Valentine's Day",
-    keyTakeaways: [
-      "50+ Design Ideas",
-      "DIY Tutorials",
-      "Expert Tips",
-      "Trend Forecasts"
-    ]
-  };
-
-  return <TLDRSection {...sampleData} />;
-};
-
-export default Demo;
+/* Demo Usage:
+<TLDRSection 
+  summary={[
+    "Discover 50+ trending Valentine's Day nail designs perfect for 2026.",
+    "Learn expert tips for long-lasting manicures and DIY techniques.",
+    "Get step-by-step guides for recreating Instagram-worthy nail art."
+  ]}
+  readTime="8 min"
+  faqs={[
+    {
+      question: "What nail colors are trending for Valentine's 2026?",
+      answer: "Cherry red, rose gold chrome, and soft pink ombré are dominating this season."
+    },
+    {
+      question: "Can I do these designs at home?",
+      answer: "Yes! Most designs include beginner-friendly alternatives with detailed instructions."
+    }
+  ]}
+  creativeLine="Your nails are your best accessory—make them unforgettable this Valentine's Day"
+  keyTakeaways={["50+ Design Ideas", "DIY Tutorials", "Expert Tips", "Trend Forecasts"]}
+/>
+*/

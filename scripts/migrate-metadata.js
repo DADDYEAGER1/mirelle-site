@@ -32,24 +32,27 @@ files.forEach(file => {
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { data } = matter(fileContent);
 
-  // ✅ Extract ONLY the 8 fields you want to edit separately
+  // ✅ Extract the 7 fields (excluding TLDR for now)
   titles[slug] = data.title || 'Untitled';
   excerpts[slug] = data.excerpt || '';
   tags[slug] = data.tags || [];
   images[slug] = data.image || null;
   imageAlts[slug] = data.imageAlt || null;
   dateModified[slug] = data.dateModified || null;
-  // Ensure TLDR has the correct structure or set to null
-if (data.tldr && data.tldr.summary && data.tldr.keyTakeaways) {
-  tldr[slug] = {
-    summary: data.tldr.summary,
-    keyTakeaways: data.tldr.keyTakeaways,
-    faqs: data.tldr.faqs || [],
-    creativeLine: data.tldr.creativeLine || ''
-  };
-} else {
-  tldr[slug] = null;
-}
+  
+  // ✅ Extract TLDR with ALL fields merged together
+  if (data.tldr && data.tldr.summary && data.tldr.keyTakeaways) {
+    tldr[slug] = {
+      summary: data.tldr.summary || [],
+      keyTakeaways: data.tldr.keyTakeaways || [],
+      creativeLine: data.tldr.creativeLine || '',
+      faqs: data.tldr.faqs || data.faqItems || []  // ✅ Include FAQs from either location
+    };
+  } else {
+    tldr[slug] = null;
+  }
+
+  // ✅ Keep faqItems separate for backward compatibility (optional)
   faqItems[slug] = data.faqItems || null;
 
   console.log(`✅ Processed: ${slug}`);
@@ -77,3 +80,4 @@ console.log(`\n🎉 Successfully created 8 metadata files with ${files.length} p
 console.log(`\n📂 Files created in: ${METADATA_DIRECTORY}`);
 console.log(`\n💡 To update metadata, edit the JSON files directly.`);
 console.log(`   Example: Edit tldr.json to update all TL;DRs at once.`);
+console.log(`\n✨ TLDR structure includes: summary, keyTakeaways, creativeLine, and faqs`);

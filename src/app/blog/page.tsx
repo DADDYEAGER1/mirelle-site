@@ -7,6 +7,7 @@ import { generateBlogSchema, generateBlogListSchema } from '@/lib/generateSchema
 import Link from 'next/link';
 import StickyBottomNav from '@/components/ui/StickyBottomNav';
 import GlassCard from '@/components/ui/GlassCard';
+import BlogFilters from '@/components/Blog/BlogFilters';
 
 export const metadata: Metadata = {
   title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
@@ -57,20 +58,61 @@ export const metadata: Metadata = {
 interface PageProps {
   searchParams: {
     page?: string;
+    tag?: string;
+    category?: string;
+    search?: string;
   };
 }
 
 export default async function BlogPage({ searchParams }: PageProps) {
   const currentPage = Number(searchParams.page) || 1;
-  const { posts, totalPages, totalPosts } = await getPaginatedPosts(currentPage, 12);
+  const selectedTag = searchParams.tag;
+  const selectedCategory = searchParams.category;
+  const searchQuery = searchParams.search;
+
+  // Get all posts
+  const { posts: allPosts, totalPages: originalTotalPages, totalPosts: originalTotalPosts } = await getPaginatedPosts(1, 1000);
   
+  // Filter posts based on search params
+  let filteredPosts = allPosts;
+
+  if (selectedTag) {
+    filteredPosts = filteredPosts.filter(post => 
+      post.tags?.some(tag => tag.toLowerCase() === selectedTag.toLowerCase())
+    );
+  }
+
+  if (selectedCategory) {
+    filteredPosts = filteredPosts.filter(post => 
+      post.category?.toLowerCase() === selectedCategory.toLowerCase()
+    );
+  }
+
+  if (searchQuery) {
+    const query = searchQuery.toLowerCase();
+    filteredPosts = filteredPosts.filter(post =>
+      post.title.toLowerCase().includes(query) ||
+      post.excerpt.toLowerCase().includes(query) ||
+      post.tags?.some(tag => tag.toLowerCase().includes(query)) ||
+      post.category?.toLowerCase().includes(query)
+    );
+  }
+
+  // Paginate filtered posts
+  const postsPerPage = 12;
+  const totalFilteredPosts = filteredPosts.length;
+  const totalPages = Math.ceil(totalFilteredPosts / postsPerPage);
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+  const paginatedPosts = filteredPosts.slice(startIndex, endIndex);
+
   const categories = await getAllCategories();
   const tags = await getAllTags();
   
   const baseUrl = 'https://mirelleinspo.com';
 
   const blogSchema = generateBlogSchema();
-  const itemListSchema = generateBlogListSchema(posts);
+  const itemListSchema = generateBlogListSchema(paginatedPosts);
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -89,6 +131,16 @@ export default async function BlogPage({ searchParams }: PageProps) {
         item: 'https://mirelleinspo.com/blog',
       },
     ],
+  };
+
+  // Build query params for pagination
+  const buildPaginationUrl = (page: number) => {
+    const params = new URLSearchParams();
+    if (page > 1) params.set('page', page.toString());
+    if (selectedTag) params.set('tag', selectedTag);
+    if (selectedCategory) params.set('category', selectedCategory);
+    if (searchQuery) params.set('search', searchQuery);
+    return `/blog${params.toString() ? '?' + params.toString() : ''}`;
   };
 
   return (
@@ -121,7 +173,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
             <div className="flex flex-wrap justify-center gap-6 mt-8">
               <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '200ms' }}>
                 <span className="text-2xl">📝</span>
-                <span className="font-semibold">{totalPosts}+ Articles</span>
+                <span className="font-semibold">{originalTotalPosts}+ Articles</span>
               </div>
               <div className="flex items-center gap-2 text-gray-700 animate-fade-in" style={{ animationDelay: '300ms' }}>
                 <span className="text-2xl">✨</span>
@@ -138,7 +190,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
         {/* Search Section */}
         <section className="bg-white py-8 border-b">
           <div className="container mx-auto px-4">
-            <BlogSearch posts={posts} /> 
+            <BlogSearch posts={allPosts} /> 
           </div>
         </section>
 
@@ -148,26 +200,29 @@ export default async function BlogPage({ searchParams }: PageProps) {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               {/* Sidebar with Categories and Tags */}
               <aside className="lg:col-span-1 space-y-8">
-                
-                {/* Categories Section - Simplified */}
-{/* Categories */}
-<div className="bg-gray-50 rounded-lg p-6">
-  <h3 className="text-xl font-bold text-gray-800 mb-4">Categories</h3>
-  <div className="space-y-2">
-    {categories.slice(0, 8).map((category) => (
-      <Link
-        key={category.slug}
-        href={`/blog/category/${category.slug}`}
-        className="flex items-center justify-between p-2 rounded hover:bg-white transition-colors"
-      >
-        <span className="text-gray-700">{category.name}</span>
-        <span className="text-sm text-gray-500 bg-white px-2 py-1 rounded">
-          {category.count}
-        </span>
-      </Link>
-    ))}
-  </div>
-</div>
+                {/* Categories */}
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">Categories</h3>
+                  <div className="space-y-2">
+                    {categories.slice(0, 8).map((category) => (
+                      <Link
+                        key={category.slug}
+                        href={`/blog?category=${category.slug}`}
+                        className={`flex items-center justify-between p-2 rounded transition-colors ${
+                          selectedCategory === category.slug 
+                            ? 'bg-pink-100 font-semibold' 
+                            : 'hover:bg-white'
+                        }`}
+                      >
+                        <span className="text-gray-700">{category.name}</span>
+                        <span className="text-sm text-gray-500 bg-white px-2 py-1 rounded">
+                          {category.count}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Popular Tags */}
                 <div className="bg-gray-50 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-4">Popular Tags</h3>
@@ -175,8 +230,12 @@ export default async function BlogPage({ searchParams }: PageProps) {
                     {tags.slice(0, 15).map((tag) => (
                       <Link
                         key={tag.slug}
-                        href={`/blog/tag/${tag.slug}`}
-                        className="text-sm bg-white text-gray-700 px-3 py-1 rounded-full hover:bg-pink-100 transition-colors"
+                        href={`/blog?tag=${tag.slug}`}
+                        className={`text-sm px-3 py-1 rounded-full transition-colors ${
+                          selectedTag === tag.slug
+                            ? 'bg-pink-500 text-white font-semibold'
+                            : 'bg-white text-gray-700 hover:bg-pink-100'
+                        }`}
                       >
                         {tag.name} ({tag.count})
                       </Link>
@@ -187,24 +246,71 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
               {/* Blog Grid */}
               <div className="lg:col-span-3">
+                {/* Active Filters */}
+                {(selectedTag || selectedCategory || searchQuery) && (
+                  <div className="mb-6 flex items-center gap-2 flex-wrap bg-gray-50 p-4 rounded-lg">
+                    <span className="text-gray-600 font-semibold">Active filters:</span>
+                    {selectedTag && (
+                      <Link
+                        href={`/blog${selectedCategory ? `?category=${selectedCategory}` : ''}${searchQuery ? `${selectedCategory ? '&' : '?'}search=${searchQuery}` : ''}`}
+                        className="inline-flex items-center gap-2 px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm hover:bg-pink-200 transition-colors"
+                      >
+                        Tag: {selectedTag}
+                        <span className="text-lg leading-none">×</span>
+                      </Link>
+                    )}
+                    {selectedCategory && (
+                      <Link
+                        href={`/blog${selectedTag ? `?tag=${selectedTag}` : ''}${searchQuery ? `${selectedTag ? '&' : '?'}search=${searchQuery}` : ''}`}
+                        className="inline-flex items-center gap-2 px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm hover:bg-purple-200 transition-colors"
+                      >
+                        Category: {selectedCategory}
+                        <span className="text-lg leading-none">×</span>
+                      </Link>
+                    )}
+                    {searchQuery && (
+                      <Link
+                        href={`/blog${selectedTag ? `?tag=${selectedTag}` : ''}${selectedCategory ? `${selectedTag ? '&' : '?'}category=${selectedCategory}` : ''}`}
+                        className="inline-flex items-center gap-2 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm hover:bg-blue-200 transition-colors"
+                      >
+                        Search: {searchQuery}
+                        <span className="text-lg leading-none">×</span>
+                      </Link>
+                    )}
+                    <Link
+                      href="/blog"
+                      className="text-sm text-gray-600 hover:text-gray-900 underline ml-2"
+                    >
+                      Clear all filters
+                    </Link>
+                  </div>
+                )}
+
                 <div className="mb-8">
                   <h2 className="text-3xl font-bold text-gray-800 mb-2">
-                    Latest Articles
+                    {selectedTag || selectedCategory || searchQuery ? 'Filtered Articles' : 'Latest Articles'}
                   </h2>
                   <p className="text-gray-600">
-                    Page {currentPage} of {totalPages} • {totalPosts} total articles
+                    {totalFilteredPosts > 0 ? (
+                      <>
+                        Showing {startIndex + 1}-{Math.min(endIndex, totalFilteredPosts)} of {totalFilteredPosts} article{totalFilteredPosts !== 1 ? 's' : ''}
+                        {totalPages > 1 && ` • Page ${currentPage} of ${totalPages}`}
+                      </>
+                    ) : (
+                      'No articles found'
+                    )}
                   </p>
                 </div>
 
-                {posts.length > 0 ? (
+                {paginatedPosts.length > 0 ? (
                   <>
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                      {posts.map((post, index) => (
+                      {paginatedPosts.map((post, index) => (
                         <>
                           <BlogCard key={post.slug} post={post} />
                           
                           {/* Inline Newsletter CTA after 3rd card */}
-                          {index === 2 && currentPage === 1 && (
+                          {index === 2 && currentPage === 1 && !selectedTag && !selectedCategory && !searchQuery && (
                             <GlassCard className="flex flex-col justify-center items-center text-center col-span-1 md:col-span-2 xl:col-span-3 my-4 bg-gradient-to-br from-pink-50 to-purple-50">
                               <h3 className="text-2xl font-bold text-gray-800 mb-3">
                                 💅 Get Weekly Nail Inspo
@@ -233,21 +339,72 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
                     {/* Pagination Component */}
                     {totalPages > 1 && (
-                      <Pagination
-                        currentPage={currentPage}
-                        totalPages={totalPages}
-                        baseUrl="/blog"
-                      />
+                      <div className="mt-8">
+                        <div className="flex justify-center gap-2">
+                          {currentPage > 1 && (
+                            <Link
+                              href={buildPaginationUrl(currentPage - 1)}
+                              className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 transition-colors"
+                            >
+                              Previous
+                            </Link>
+                          )}
+                          
+                          {Array.from({ length: totalPages }, (_, i) => i + 1)
+                            .filter(page => {
+                              return page === 1 || 
+                                     page === totalPages || 
+                                     (page >= currentPage - 1 && page <= currentPage + 1);
+                            })
+                            .map((page, index, array) => (
+                              <>
+                                {index > 0 && array[index - 1] !== page - 1 && (
+                                  <span key={`ellipsis-${page}`} className="px-3 py-2 text-gray-500">...</span>
+                                )}
+                                <Link
+                                  key={page}
+                                  href={buildPaginationUrl(page)}
+                                  className={`px-4 py-2 rounded transition-colors ${
+                                    currentPage === page
+                                      ? 'bg-pink-500 text-white font-semibold'
+                                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                  }`}
+                                >
+                                  {page}
+                                </Link>
+                              </>
+                            ))}
+                          
+                          {currentPage < totalPages && (
+                            <Link
+                              href={buildPaginationUrl(currentPage + 1)}
+                              className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-200 transition-colors"
+                            >
+                              Next
+                            </Link>
+                          )}
+                        </div>
+                      </div>
                     )}
                   </>
                 ) : (
                   <div className="text-center py-16">
                     <h3 className="text-2xl font-bold text-gray-600 mb-4">
-                      Amazing Content Coming Soon
+                      {selectedTag || selectedCategory || searchQuery ? 'No Articles Found' : 'Amazing Content Coming Soon'}
                     </h3>
-                    <p className="text-gray-500">
-                      We're crafting expert nail care content for you. Check back soon!
+                    <p className="text-gray-500 mb-6">
+                      {selectedTag || selectedCategory || searchQuery 
+                        ? 'Try adjusting your filters or search terms.' 
+                        : 'We're crafting expert nail care content for you. Check back soon!'}
                     </p>
+                    {(selectedTag || selectedCategory || searchQuery) && (
+                      <Link
+                        href="/blog"
+                        className="inline-block px-6 py-3 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors"
+                      >
+                        View All Articles
+                      </Link>
+                    )}
                   </div>
                 )}
               </div>

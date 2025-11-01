@@ -1,7 +1,13 @@
 interface BlogSidebarProps {
   tableOfContents: { id: string; title: string }[];
   relatedPosts?: { slug: string; title: string; image: string }[];
+}
 
+// Helper function to decode HTML entities
+function decodeHTMLEntities(text: string): string {
+  const textarea = document.createElement('textarea');
+  textarea.innerHTML = text;
+  return textarea.value;
 }
 
 export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSidebarProps) {
@@ -16,11 +22,8 @@ export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSideb
               key={item.id}
               href={`#${item.id}`}
               className="block text-sm text-gray-700 hover:text-pink-600 transition-colors py-1"
-            >
-              {item.title}
-            </a>
-
-
+              dangerouslySetInnerHTML={{ __html: item.title }}
+            />
           ))}
         </nav>
       </div>
@@ -37,13 +40,6 @@ export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSideb
         >
           Follow on Pinterest
         </a>
-
-
-
-
-
-
-
       </div>
 
       {/* Related Posts */}
@@ -67,6 +63,5 @@ export default function BlogSidebar({ tableOfContents, relatedPosts }: BlogSideb
         </div>
       )}
     </div>
-
   );
 }

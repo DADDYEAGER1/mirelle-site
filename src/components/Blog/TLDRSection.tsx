@@ -38,14 +38,14 @@ export default function TLDRSection({
       <div className="flex items-center justify-between mb-5 pb-4 border-b border-pink-200">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
           <span className="text-2xl" aria-hidden="true">💅</span>
-          Nail the Details
+          Wrap Up
         </h2>
         <span className="text-xs sm:text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap">{readTime}</span>
       </div>
 
       {/* Summary */}
       <div className="mb-5">
-        <h3 className="text-xs font-semibold text-pink-600 uppercase tracking-wide mb-2">Quick Glance</h3>
+        <h3 className="text-sm font-bold text-gray-800 mb-2">Quick Glance</h3>
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
           {summary.join(' ')}
         </p>
@@ -98,7 +98,7 @@ export default function TLDRSection({
       {/* Key Takeaways */}
       {keyTakeaways.length > 0 && (
         <div>
-          <h3 className="text-xs font-semibold text-pink-600 uppercase tracking-wide mb-2">Key Takeaways</h3>
+          <h3 className="text-sm font-bold text-gray-800 mb-2">Key Takeaways</h3>
           <div className="flex flex-wrap gap-2">
             {keyTakeaways.map((takeaway, index) => (
               <span 

@@ -300,7 +300,7 @@ export async function getAllCategories() {
   
   return Array.from(categoryMap.entries()).map(([name, count]) => ({
     name,
-    slug: name.toLowerCase().replace(/\s+/g, '-'),
+    slug: name.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, ''),
     count,
   }));
 }
@@ -317,9 +317,9 @@ export async function getAllTags() {
   });
   
   return Array.from(tagMap.entries())
-    .map(([name, count]) => ({
-      name,
-      slug: name.toLowerCase().replace(/\s+/g, '-'),
+    .map(([slug, count]) => ({
+      name: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '), // Convert slug to readable name
+      slug: slug, // Keep original slug from markdown - DON'T transform it
       count,
     }))
     .sort((a, b) => b.count - a.count);

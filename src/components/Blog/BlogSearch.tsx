@@ -27,7 +27,7 @@ export default function BlogSearch({ posts }: BlogSearchProps) {
       }
 
       const newUrl = params.toString() ? `/blog?${params.toString()}` : '/blog';
-      router.push(newUrl, { scroll: false });
+      router.replace(newUrl, { scroll: false });
     }, 500); // 500ms debounce - adjust as needed
 
     return () => clearTimeout(timer);

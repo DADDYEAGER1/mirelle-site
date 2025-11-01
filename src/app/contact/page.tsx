@@ -117,10 +117,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Business & Partnerships</h3>
                     <a 
-                      href="mailto:partnerships@mirelleinspo.com" 
+                      href="mailto:team.mirelle@gmail.com" 
                       className="text-purple-600 hover:text-purple-700 transition-colors text-sm"
                     >
-                      partnerships@mirelleinspo.com
+                      team.mirelle@gmail.com
                     </a>
                     <p className="text-sm text-gray-500 mt-2">
                       Brand collaborations, sponsorships, and business opportunities
@@ -325,7 +325,7 @@ export default function ContactPage() {
                 <h3 className="font-semibold text-gray-900 mb-2">Partnership Opportunities</h3>
                 <p className="text-gray-600 text-sm">
                   We collaborate with beauty brands, nail care companies, and industry professionals. 
-                  Email partnerships@mirelleinspo.com with "Partnership" in the subject line.
+                  Email team.mirelle@gmail.com with "Partnership" in the subject line.
                 </p>
               </div>
               <div>

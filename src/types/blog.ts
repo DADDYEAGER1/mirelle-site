@@ -30,7 +30,7 @@ export interface BlogMetadata {
 
 // Add this new interface after the imports
 export interface TLDR {
-  summary: string;
+  summary: string[];  
   faqs: FAQItem[];
   creativeLine: string;
   keyTakeaways: string[];

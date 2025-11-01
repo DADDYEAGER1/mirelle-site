@@ -107,17 +107,17 @@ export default function BlogPost({ post }: BlogPostProps) {
       </div>
 
       {/* TL;DR Section */}
-      {post.tldr && (
-        <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
-          <TLDRSection 
-            summary={post.tldr.summary}
-            readTime={String(post.readTime)}
-            faqs={post.tldr.faqs}
-            creativeLine={post.tldr.creativeLine}
-            keyTakeaways={post.tldr.keyTakeaways}
-          />
-        </div>
-      )}
+{post.tldr && (
+  <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
+    <TLDRSection
+      summary={post.tldr.summary}
+      readTime={String(post.readTime)}
+      faqs={post.tldr.faqs}
+      creativeLine={post.tldr.creativeLine}
+      keyTakeaways={post.tldr.keyTakeaways}
+    />
+  </div>
+)}
 
       {/* Two Column Layout - Stack on mobile */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">

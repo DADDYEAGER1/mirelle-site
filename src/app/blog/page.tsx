@@ -76,14 +76,17 @@ export default async function BlogPage({ searchParams }: PageProps) {
   let filteredPosts = allPosts;
 
   if (selectedTag) {
+    // Tags in markdown are already slugified (e.g., "october-2025")
     filteredPosts = filteredPosts.filter(post => 
-      post.tags?.some(tag => tag.toLowerCase() === selectedTag.toLowerCase())
+      post.tags?.some(tag => tag === selectedTag)
     );
   }
 
   if (selectedCategory) {
+    // Slugify category for comparison
+    const slugifyCategory = (cat: string) => cat.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
     filteredPosts = filteredPosts.filter(post => 
-      post.category?.toLowerCase() === selectedCategory.toLowerCase()
+      slugifyCategory(post.category || '') === selectedCategory
     );
   }
 
@@ -394,7 +397,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                     <p className="text-gray-500 mb-6">
                       {selectedTag || selectedCategory || searchQuery 
                         ? 'Try adjusting your filters or search terms.' 
-                        : "We're crafting expert nail care content for you. Check back soon!"}
+                        : 'We're crafting expert nail care content for you. Check back soon!'}
                     </p>
                     {(selectedTag || selectedCategory || searchQuery) && (
                       <Link

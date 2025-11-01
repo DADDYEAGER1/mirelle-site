@@ -39,7 +39,17 @@ files.forEach(file => {
   images[slug] = data.image || null;
   imageAlts[slug] = data.imageAlt || null;
   dateModified[slug] = data.dateModified || null;
-  tldr[slug] = data.tldr || null;
+  // Ensure TLDR has the correct structure or set to null
+if (data.tldr && data.tldr.summary && data.tldr.keyTakeaways) {
+  tldr[slug] = {
+    summary: data.tldr.summary,
+    keyTakeaways: data.tldr.keyTakeaways,
+    faqs: data.tldr.faqs || [],
+    creativeLine: data.tldr.creativeLine || ''
+  };
+} else {
+  tldr[slug] = null;
+}
   faqItems[slug] = data.faqItems || null;
 
   console.log(`✅ Processed: ${slug}`);

@@ -10,10 +10,7 @@ export interface BlogMetadata {
   image?: string;
   imageAlt?: string;
   dateModified?: string;
-  tldr?: {                           // ✅ ADD THIS
-    summary: string[];
-    keyTakeaways?: string[];
-  };
+  tldr?: TLDR;
   faqItems?: FAQItem[];              // ✅ ADD THIS
   
   // Optional fields for backward compatibility
@@ -28,6 +25,15 @@ export interface BlogMetadata {
   imageWidth?: number;
   imageHeight?: number;
   wordCount?: number;
+}
+
+
+// Add this new interface after the imports
+export interface TLDR {
+  summary: string;
+  faqs: FAQItem[];
+  creativeLine: string;
+  keyTakeaways: string[];
 }
 
 // Rest of your types...
@@ -80,8 +86,5 @@ export interface BlogPost {
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
   galleryImages?: GalleryImage[];
-  tldr?: {
-    summary: string[];
-    keyTakeaways?: string[];
-  };
+  tldr?: TLDR;
 }

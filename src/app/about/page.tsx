@@ -107,14 +107,14 @@ export default function AboutPage() {
           </section>
 
           {/* Our Approach */}
-          <section className="mb-16 bg-gray-900 text-white rounded-2xl p-12">
-            <h2 className="text-4xl font-bold font-serif mb-8">Our Approach</h2>
-            <div className="space-y-6 text-lg leading-relaxed">
-              <div className="flex items-start gap-4">
-                <span className="text-3xl">🎯</span>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Expert-Driven Content</h3>
-                  <p className="text-gray-300">
+<section className="mb-16 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 rounded-2xl p-12 border border-pink-200">
+  <h2 className="text-4xl font-bold font-serif mb-8 text-gray-900">Our Approach</h2>
+  <div className="space-y-6 text-lg leading-relaxed">
+    <div className="flex items-start gap-4">
+      <span className="text-3xl">🎯</span>
+      <div>
+        <h3 className="text-xl font-bold mb-2 text-gray-900">Expert-Driven Content</h3>
+        <p className="text-gray-700">
                     Every guide, tutorial, and recommendation is backed by industry research, professional insights, 
                     and real-world testing to ensure accuracy and reliability.
                   </p>

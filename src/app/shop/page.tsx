@@ -91,47 +91,48 @@ export default async function ShopPage() {
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-{categories.map((category) => {
-  if (!category) return null;
-  
-  // Use showcase image or fallback
-  const categoryImage = categoryHeroImages[category.slug] || category.heroImage;
-  
-  return (
-    <Link
-      key={category.slug}
-      href={`/shop/${category.slug}`}
-      className="group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
-    >
-      {/* Category Image */}
-      <div className="relative h-80 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
-          style={{ backgroundImage: `url(${categoryImage})` }}
-        />
-        {/* Premium gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent group-hover:from-black/70 transition-all duration-500" />
-        
-        {/* Category Info Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-          <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-300 transition-colors">
-            {category.displayName}
-          </h3>
-          <p className="text-white/90 mb-4 text-sm">
-            {category.description}
-          </p>
-          <div className="inline-flex items-center text-white font-semibold border-b-2 border-transparent group-hover:border-purple-300 transition-all">
-            Shop Now
-            <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
+          {categories.map((category) => {
+            if (!category) return null;
+            
+            // Use showcase image or fallback
+            const categoryImage = categoryHeroImages[category.slug] || category.heroImage;
+            
+            return (
+              <Link
+                key={category.slug}
+                href={`/shop/${category.slug}`}
+                className="group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+              >
+                {/* Category Image */}
+                <div className="relative h-80 overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
+                    style={{ backgroundImage: `url(${categoryImage})` }}
+                  />
+                  {/* Premium gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent group-hover:from-black/70 transition-all duration-500" />
+                  
+                  {/* Category Info Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-300 transition-colors">
+                      {category.displayName}
+                    </h3>
+                    <p className="text-white/90 mb-4 text-sm">
+                      {category.description}
+                    </p>
+                    <div className="inline-flex items-center text-white font-semibold border-b-2 border-transparent group-hover:border-purple-300 transition-all">
+                      Shop Now
+                      <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
-      </div>
-    </Link>
-  );
-})}
-           </div>
+      </section>
                 {/* Category Info */}
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">

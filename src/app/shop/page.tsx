@@ -1,6 +1,35 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getAllCategorySlugs, getCategoryData } from '@/lib/shop';
+import { getAllCategorySlugs, getCategoryData, getShowcaseProducts } from '@/lib/shop';
+import ShopHeroTLDR from '@/components/Shop/ShopHeroTLDR';
+
+// Import main FAQs
+async function getMainFAQs() {
+  try {
+    const faqModule = await import('@/content/shop-faqs/main.json');
+    return faqModule.default.faqs || faqModule.faqs || [];
+  } catch {
+    return [];
+  }
+}
+
+// Generate FAQ Schema
+function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
+  if (!faqs || faqs.length === 0) return null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+}
 
 export const metadata: Metadata = {
   title: 'Shop Press-On Nails - All Collections | Mirelle',
@@ -19,26 +48,44 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ShopPage() {
+export default async function ShopPage() {
   const categorySlugs = getAllCategorySlugs();
   const categories = categorySlugs.map(slug => getCategoryData(slug)).filter(Boolean);
+  
+  // Get showcase products and FAQs
+  const showcaseProducts = await getShowcaseProducts();
+  const showcaseImages = showcaseProducts.map(p => p.image);
+  const faqs = await getMainFAQs();
+  
+  const faqSchema = generateFAQSchema(faqs);
+
+  // Category hero images mapping (using showcase images)
+  const categoryHeroImages: { [key: string]: string } = {
+    'fall': showcaseImages[0] || '/fallsection.jpg',
+    'christmas': showcaseImages[1] || '/christmassection.jpg',
+    'winter': showcaseImages[2] || '/wintersection.jpg',
+    'halloween': showcaseImages[3] || '/halloweenbannerimg.jpg',
+    'new-year': showcaseImages[4] || '/newyearsection.jpeg',
+    'trendy': showcaseImages[5] || '/trendsection.jpg',
+  };
 
   return (
-<div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-  {/* Hero Section */}
-  <section className="bg-gradient-editorial text-editorial-charcoal py-20 border-b border-editorial-stone">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 className="text-display-lg md:text-display-xl font-serif font-normal mb-6 text-editorial-charcoal">
-        Shop Press-On Nails
-      </h1>
-      <p className="text-body-xl md:text-headline-md text-editorial-slate max-w-3xl mx-auto font-light">
-        Discover our curated collection of premium press-on nails for every season and style
-      </p>
-    </div>
-  </section>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      {/* FAQ Schema */}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
+      )}
+
+      {/* Hero TL;DR Section */}
+      <ShopHeroTLDR showcaseImages={showcaseImages} faqs={faqs} />
 
       {/* Categories Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section id="categories-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
           Browse Collections
         </h2>
@@ -46,6 +93,9 @@ export default function ShopPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => {
             if (!category) return null;
+            
+            // Use showcase image or fallback
+            const categoryImage = categoryHeroImages[category.slug] || category.heroImage;
             
             return (
               <Link
@@ -57,7 +107,7 @@ export default function ShopPage() {
                 <div className="relative h-64 overflow-hidden">
                   <div
                     className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-300"
-                    style={{ backgroundImage: `url(${category.heroImage})` }}
+                    style={{ backgroundImage: `url(${categoryImage})` }}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-r from-${category.gradientFrom} via-${category.gradientVia} to-${category.gradientTo} opacity-60 group-hover:opacity-40 transition-opacity`} />
                   

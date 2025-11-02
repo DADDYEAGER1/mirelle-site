@@ -133,26 +133,6 @@ export default async function ShopPage() {
           })}
         </div>
       </section>
-                {/* Category Info */}
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
-                    {category.displayName}
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    {category.description}
-                  </p>
-                  <div className="flex items-center text-purple-600 font-semibold">
-                    Shop Now
-                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
 
       {/* Features Section */}
       <section className="bg-white py-16">

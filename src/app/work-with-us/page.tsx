@@ -25,14 +25,18 @@ export default function WorkWithUsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:contact@mirelleinspo.com"
-              className="inline-block bg-white text-blush-400 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@mirelleinspo.com&su=General%20Inquiry%20from%20Website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blush-400 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg cursor-pointer"
             >
               📧 General Inquiries
             </a>
             <a
-              href="mailto:team.mirelleinspo@gmail.com"
-              className="inline-block bg-charcoal-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-charcoal-800 transition-all transform hover:scale-105 shadow-lg"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelleinspo@gmail.com&su=Brand%20Partnership%20Inquiry"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-charcoal-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-charcoal-800 transition-all transform hover:scale-105 shadow-lg cursor-pointer"
             >
               🤝 Brand Partnerships
             </a>
@@ -290,8 +294,10 @@ export default function WorkWithUsPage() {
               <div>
                 <p className="text-sm text-white/80 mb-2">General Inquiries:</p>
                 <a 
-                  href="mailto:contact@mirelleinspo.com"
-                  className="text-xl font-semibold hover:underline inline-flex items-center gap-2"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@mirelleinspo.com&su=General%20Inquiry%20from%20Website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl font-semibold hover:underline inline-flex items-center gap-2 cursor-pointer"
                 >
                   📧 contact@mirelleinspo.com
                 </a>
@@ -299,8 +305,10 @@ export default function WorkWithUsPage() {
               <div className="border-t border-white/20 pt-4">
                 <p className="text-sm text-white/80 mb-2">Brand Partnerships & Collaborations:</p>
                 <a 
-                  href="mailto:team.mirelleinspo@gmail.com"
-                  className="text-xl font-semibold hover:underline inline-flex items-center gap-2"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelleinspo@gmail.com&su=Brand%20Partnership%20Inquiry"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl font-semibold hover:underline inline-flex items-center gap-2 cursor-pointer"
                 >
                   🤝 team.mirelleinspo@gmail.com
                 </a>

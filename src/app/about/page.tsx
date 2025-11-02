@@ -213,7 +213,7 @@ export default function AboutPage() {
               collaborations, or content syndication, we'd love to hear from you.
             </p>
             <div className="space-y-3 text-lg">
-              <p>📧 <strong>Business Inquiries:</strong> partnerships@mirelleinspo.com</p>
+              <p>📧 <strong>Business Inquiries:</strong>contact@mirelleinspo.com</p>
               <p>💼 <strong>Brand Collaborations:</strong> Available for select partnerships</p>
               <p>📝 <strong>Content Licensing:</strong> Professional content syndication options available</p>
             </div>

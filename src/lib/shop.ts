@@ -1,6 +1,3 @@
-// src/lib/shop.ts
-// FIXED VERSION with proper type imports
-
 import type { CategoryData, Product, CategoriesData, ProductsData } from '@/types/shop';
 import categoriesData from '@/content/shop-categories.json';
 
@@ -8,12 +5,11 @@ import categoriesData from '@/content/shop-categories.json';
  * Get category metadata by slug
  */
 export function getCategoryData(slug: string): CategoryData | null {
-  const data = categoriesData as any; // Use 'any' to avoid type conflicts during JSON import
+  const data = categoriesData as any;
   const category = data.categories?.[slug];
   
   if (!category) return null;
   
-  // Normalize keywords to array if it's a string
   if (category.seo && typeof category.seo.keywords === 'string') {
     category.seo.keywords = category.seo.keywords.split(',').map((k: string) => k.trim());
   }
@@ -91,11 +87,43 @@ export function filterProducts(products: Product[], filter: 'all' | 'new' | 'tre
  * Calculate discount percentage from string prices
  */
 export function calculateDiscount(originalPrice: string, currentPrice: string): number {
-  // Remove $ and parse to float
   const original = parseFloat(originalPrice.replace('$', ''));
   const current = parseFloat(currentPrice.replace('$', ''));
   
   if (original === 0 || current >= original) return 0;
   
   return Math.round(((original - current) / original) * 100);
+}
+
+/**
+ * Get 15 random products from all categories for showcase
+ * Returns mixed products (2-3 from each category)
+ */
+export async function getShowcaseProducts(): Promise<Product[]> {
+  const categorySlugs = getAllCategorySlugs();
+  const showcaseProducts: Product[] = [];
+  
+  // Number of products to pick from each category
+  const productsPerCategory = Math.ceil(15 / categorySlugs.length);
+  
+  for (const slug of categorySlugs) {
+    try {
+      const products = await getCategoryProducts(slug);
+      
+      // Shuffle and pick random products
+      const shuffled = products.sort(() => 0.5 - Math.random());
+      const selected = shuffled.slice(0, productsPerCategory);
+      
+      showcaseProducts.push(...selected);
+    } catch (error) {
+      console.error(`Error loading showcase products for ${slug}:`, error);
+    }
+  }
+  
+  // Shuffle final array and limit to exactly 15
+  const finalShowcase = showcaseProducts
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 15);
+  
+  return finalShowcase;
 }

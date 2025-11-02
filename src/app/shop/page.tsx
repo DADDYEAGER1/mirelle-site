@@ -131,6 +131,7 @@ export default async function ShopPage() {
     </Link>
   );
 })}
+           </div>
                 {/* Category Info */}
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">

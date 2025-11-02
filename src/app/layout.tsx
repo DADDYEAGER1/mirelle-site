@@ -129,13 +129,13 @@ export const metadata: Metadata = {
     },
   },
   
-  verification: {
-    google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console
-    other: {
-      'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
-    },
-  },
-};
+//   verification: {
+//     google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console
+//     other: {
+//       'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
+//     },
+//   },
+// };
 
 export default function RootLayout({
   children,

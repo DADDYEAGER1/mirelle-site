@@ -340,33 +340,74 @@ export default async function BlogPage({ searchParams }: PageProps) {
                         <>
                           <BlogCard key={post.slug} post={post} />
                           
-                          {/* Inline Newsletter CTA after 3rd card */}
-                          {index === 2 && currentPage === 1 && !selectedTag && !selectedCategory && !searchQuery && (
-                            <GlassCard className="flex flex-col justify-center items-center text-center col-span-1 md:col-span-2 xl:col-span-3 my-4 bg-gradient-to-br from-pink-50 to-purple-50">
-                              <h3 className="text-2xl font-bold text-gray-800 mb-3">
-                                💅 Get Weekly Nail Inspo
-                              </h3>
-                              <p className="text-gray-600 mb-4 max-w-md">
-                                Join 10,000+ nail enthusiasts! Get trending designs, expert tips, and exclusive finds delivered weekly.
-                              </p>
-                              <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
-                                <input
-                                  type="email"
-                                  placeholder="Your email address"
-                                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
-                                />
-                                <button className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-                                  Subscribe
-                                </button>
-                              </div>
-                              <p className="text-xs text-gray-500 mt-3">
-                                ✓ Trending designs ✓ Expert tips ✓ No spam ever
-                              </p>
-                            </GlassCard>
-                          )}
-                        </>
-                      ))}
-                    </div>
+{/* Inline Newsletter CTA after 3rd card */}
+{index === 2 && currentPage === 1 && !selectedTag && !selectedCategory && !searchQuery && (
+  <GlassCard className="flex flex-col justify-center items-center text-center col-span-1 md:col-span-2 xl:col-span-3 my-4 bg-gradient-to-br from-pink-50 to-purple-50">
+    <h3 className="text-2xl font-bold text-gray-800 mb-3">
+      💅 Get Weekly Nail Inspo
+    </h3>
+    <p className="text-gray-600 mb-4 max-w-md">
+      Join 10,000+ nail enthusiasts! Get trending designs, expert tips, and exclusive finds delivered weekly.
+    </p>
+    <form 
+      onSubmit={async (e) => {
+        e.preventDefault();
+        const emailInput = e.currentTarget.querySelector('input[type="email"]') as HTMLInputElement;
+        const submitButton = e.currentTarget.querySelector('button') as HTMLButtonElement;
+        const email = emailInput.value;
+        
+        if (!email) return;
+        
+        submitButton.disabled = true;
+        submitButton.textContent = 'Subscribing...';
+        
+        try {
+          await fetch(process.env.NEXT_PUBLIC_GOOGLE_COMMENTS_SCRIPT_URL || '', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+              email,
+              source: 'blog-inline',
+              timestamp: new Date().toISOString()
+            }),
+          });
+          
+          submitButton.textContent = '✓ Subscribed!';
+          submitButton.classList.add('bg-green-500');
+          emailInput.value = '';
+          
+          setTimeout(() => {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Subscribe';
+            submitButton.classList.remove('bg-green-500');
+          }, 3000);
+        } catch (error) {
+          console.error('Newsletter signup error:', error);
+          submitButton.disabled = false;
+          submitButton.textContent = 'Try Again';
+        }
+      }}
+      className="flex flex-col sm:flex-row gap-3 w-full max-w-md"
+    >
+      <input
+        type="email"
+        placeholder="Your email address"
+        required
+        className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
+      />
+      <button 
+        type="submit"
+        className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+      >
+        Subscribe
+      </button>
+    </form>
+    <p className="text-xs text-gray-500 mt-3">
+      ✓ Trending designs ✓ Expert tips ✓ No spam ever
+    </p>
+  </GlassCard>
+)}
 
                     {/* Pagination Component */}
                     {totalPages > 1 && (

@@ -205,7 +205,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/media" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/work-with-us" className="text-gray-400 hover:text-white transition-colors text-sm block">
                   Work With Us
                 </Link>
               </li>

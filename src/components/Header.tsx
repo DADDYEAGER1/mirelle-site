@@ -135,7 +135,7 @@ export default function Header() {
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
+                          className="block py-charcoal-600 hover:text-blush-400 transition-colors text-sm"
                         >
                           {link.label}
                         </Link>
@@ -146,14 +146,11 @@ export default function Header() {
               </div>
             </div>
 
-            {/* <Link href="/brands" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
-              Brands
-            </Link> */}
             <Link href="/about" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               About
             </Link>
-            <Link href="/contact" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
-              Contact
+            <Link href="/work-with-us" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+              Collaborate
             </Link>
           </div>
 
@@ -182,14 +179,14 @@ export default function Header() {
               </svg>
             </a>
             <a 
-              href="https://facebook.com/mirelleinspo" 
+              href="https://x.com/mirelleinspo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-charcoal-600 hover:text-blush-400 transition-colors"
-              aria-label="Facebook"
+              aria-label="X (Twitter)"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg>
             </a>
           </div>
@@ -283,14 +280,11 @@ export default function Header() {
               )}
             </div>
 
-            {/* <Link href="/brands" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
-              Brands
-            </Link> */}
             <Link href="/about" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
               About
             </Link>
-            <Link href="/contact" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
-              Contact
+            <Link href="/work-with-us" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+              Collaborate
             </Link>
             
             {/* Mobile Social Links */}
@@ -301,8 +295,8 @@ export default function Header() {
               <a href="https://instagram.com/mirelle_inspo" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-blush-400">
                 Instagram
               </a>
-              <a href="https://facebook.com/mirelleinspo" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-blush-400">
-                Facebook
+              <a href="https://x.com/mirelleinspo" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-blush-400">
+                X (Twitter)
               </a>
             </div>
           </div>

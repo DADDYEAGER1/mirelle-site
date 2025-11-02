@@ -32,21 +32,46 @@ function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
 }
 
 export const metadata: Metadata = {
-  title: 'Shop Press-On Nails - All Collections | Mirelle',
-  description: 'Browse our complete collection of press-on nails. Find fall, winter, Christmas, Halloween, New Year, and trendy nail designs.',
-  keywords: 'press-on nails, fake nails, nail art, seasonal nails, trendy nails',
+  title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirelle',
+  description: 'Salon-quality press-on nails in 10 minutes. Chrome, velvet & glazed 2025 trends last 7-14 days. Reusable 2-10x, zero damage. Shop 200+ designs from fall to festive.',
+  keywords: [
+    'press-on nails',
+    'press on nails 2025',
+    'fake nails',
+    'reusable press-on nails',
+    'chrome nails',
+    'velvet nails',
+    'trendy nail designs',
+    'salon quality press-ons',
+    'best press-on nails',
+    'affordable nail art'
+  ],
   openGraph: {
-    title: 'Shop Press-On Nails - All Collections | Mirelle',
-    description: 'Browse our complete collection of press-on nails.',
+    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirelle',
+    description: 'Salon-quality press-on nails that last 7-14 days. 200+ trending designs including chrome, velvet, and seasonal collections. Apply in minutes, reusable 2-10 times.',
     url: 'https://mirelleinspo.com/shop',
     siteName: 'Mirelle',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/shop-hero-press-on-nails.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Mirelle Press-On Nails Collection 2025 - Chrome, Velvet and Trendy Designs'
+      }
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs',
+    description: 'Salon-quality press-on nails in 10 minutes. 200+ designs, lasts 2 weeks, reusable.',
+    images: ['/images/shop-hero-press-on-nails.jpg'],
   },
   alternates: {
     canonical: 'https://mirelleinspo.com/shop',
   },
-};
+}
 
 export default async function ShopPage() {
   const categorySlugs = getAllCategorySlugs();

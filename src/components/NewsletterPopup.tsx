@@ -11,6 +11,7 @@ export default function NewsletterPopup() {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     if (isVisible) {
@@ -28,22 +29,29 @@ export default function NewsletterPopup() {
     if (!email) return;
 
     setIsSubmitting(true);
+    setError('');
 
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL || '', {
+      const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_COMMENTS_SCRIPT_URL || '', {
         method: 'POST',
+        mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ 
+          email,
+          source: 'popup',
+          timestamp: new Date().toISOString()
+        }),
       });
 
-      if (response.ok) {
-        setIsSuccess(true);
-        setTimeout(() => {
-          dismissPopup();
-        }, 2000);
-      }
+      // With no-cors mode, we can't check response status, so assume success
+      setIsSuccess(true);
+      setEmail('');
+      setTimeout(() => {
+        dismissPopup();
+      }, 2000);
     } catch (error) {
       console.error('Newsletter signup error:', error);
+      setError('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -119,6 +127,9 @@ export default function NewsletterPopup() {
                   autoFocus
                   className="w-full px-4 py-3 border-2 border-editorial-stone rounded-lg focus:border-editorial-accent focus:outline-none transition-colors touch-target"
                 />
+                {error && (
+                  <p className="text-red-500 text-sm text-center">{error}</p>
+                )}
                 <PremiumButton
                   type="submit"
                   variant="primary"

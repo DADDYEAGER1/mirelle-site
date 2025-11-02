@@ -161,69 +161,69 @@ export default async function BlogPage({ searchParams }: PageProps) {
       />
 
 
-<div className="min-h-screen">
-{/* Hero Section */}
-<section className="relative bg-editorial-cream py-24 border-b border-editorial-stone">
-  <div className="container mx-auto px-4">
-    {/* Decorative accent line */}
-    <div className="w-16 h-0.5 bg-editorial-accent mx-auto mb-8"></div>
-    
-    <div className="text-center max-w-4xl mx-auto">
-      <h1 className="font-serif text-display-lg md:text-display-xl text-editorial-charcoal mb-6">
-        Nail Care Blog - Expert Tips & Trends
-      </h1>
-      <p className="text-body-lg text-editorial-slate max-w-2xl mx-auto leading-relaxed">
-        Discover professional nail care advice, seasonal trends, and step-by-step tutorials for beautiful, healthy nails
-      </p>
-      
-      {/* Trust Signals */}
-      <div className="flex flex-wrap justify-center gap-8 mt-12">
-        <div className="flex items-center gap-3">
-          <span className="text-2xl">📝</span>
-          <span className="font-medium text-editorial-charcoal text-body">{originalTotalPosts}+ Articles</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="text-2xl">✨</span>
-          <span className="font-medium text-editorial-charcoal text-body">Expert Advice</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="text-2xl">📆</span>
-          <span className="font-medium text-editorial-charcoal text-body">Updated Weekly</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  {/* Subtle bottom gradient fade */}
-  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
-</section>
+      <div className="min-h-screen">
+        {/* Hero Section */}
+        <section className="relative bg-editorial-cream py-24 border-b border-editorial-stone">
+          <div className="container mx-auto px-4">
+            {/* Decorative accent line */}
+            <div className="w-16 h-0.5 bg-editorial-accent mx-auto mb-8"></div>
+            
+            <div className="text-center max-w-4xl mx-auto">
+              <h1 className="font-serif text-display-lg md:text-display-xl text-editorial-charcoal mb-6">
+                Nail Care Blog - Expert Tips & Trends
+              </h1>
+              <p className="text-body-lg text-editorial-slate max-w-2xl mx-auto leading-relaxed">
+                Discover professional nail care advice, seasonal trends, and step-by-step tutorials for beautiful, healthy nails
+              </p>
+              
+              {/* Trust Signals */}
+              <div className="flex flex-wrap justify-center gap-8 mt-12">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">📝</span>
+                  <span className="font-medium text-editorial-charcoal text-body">{originalTotalPosts}+ Articles</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">✨</span>
+                  <span className="font-medium text-editorial-charcoal text-body">Expert Advice</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">📆</span>
+                  <span className="font-medium text-editorial-charcoal text-body">Updated Weekly</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Subtle bottom gradient fade */}
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+        </section>
 
-{/* Search Section - Optional refined version */}
-<section className="bg-white py-8 border-b border-gray-100">
-  <div className="container mx-auto px-4">
-    <div className="max-w-2xl mx-auto">
-      <div className="relative">
-        <svg 
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-        <input
-          type="search"
-          placeholder="Search articles by title, tags, category..."
-          className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-editorial-accent focus:border-transparent text-body"
-        />
-      </div>
-      <p className="text-caption text-gray-500 mt-2 flex items-center gap-1">
-        <span>💡</span>
-        Tip: Use the search bar to find articles or click tags/categories to filter
-      </p>
-    </div>
-  </div>
-</section>
+        {/* Search Section - Optional refined version */}
+        <section className="bg-white py-8 border-b border-gray-100">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <div className="relative">
+                <svg 
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input
+                  type="search"
+                  placeholder="Search articles by title, tags, category..."
+                  className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-editorial-accent focus:border-transparent text-body"
+                />
+              </div>
+              <p className="text-caption text-gray-500 mt-2 flex items-center gap-1">
+                <span>💡</span>
+                Tip: Use the search bar to find articles or click tags/categories to filter
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Main Content with Sidebar */}
         <section className="py-16 bg-white">
@@ -340,74 +340,77 @@ export default async function BlogPage({ searchParams }: PageProps) {
                         <>
                           <BlogCard key={post.slug} post={post} />
                           
-{/* Inline Newsletter CTA after 3rd card */}
-{index === 2 && currentPage === 1 && !selectedTag && !selectedCategory && !searchQuery && (
-  <GlassCard className="flex flex-col justify-center items-center text-center col-span-1 md:col-span-2 xl:col-span-3 my-4 bg-gradient-to-br from-pink-50 to-purple-50">
-    <h3 className="text-2xl font-bold text-gray-800 mb-3">
-      💅 Get Weekly Nail Inspo
-    </h3>
-    <p className="text-gray-600 mb-4 max-w-md">
-      Join 10,000+ nail enthusiasts! Get trending designs, expert tips, and exclusive finds delivered weekly.
-    </p>
-    <form 
-      onSubmit={async (e) => {
-        e.preventDefault();
-        const emailInput = e.currentTarget.querySelector('input[type="email"]') as HTMLInputElement;
-        const submitButton = e.currentTarget.querySelector('button') as HTMLButtonElement;
-        const email = emailInput.value;
-        
-        if (!email) return;
-        
-        submitButton.disabled = true;
-        submitButton.textContent = 'Subscribing...';
-        
-        try {
-          await fetch(process.env.NEXT_PUBLIC_GOOGLE_COMMENTS_SCRIPT_URL || '', {
-            method: 'POST',
-            mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-              email,
-              source: 'blog-inline',
-              timestamp: new Date().toISOString()
-            }),
-          });
-          
-          submitButton.textContent = '✓ Subscribed!';
-          submitButton.classList.add('bg-green-500');
-          emailInput.value = '';
-          
-          setTimeout(() => {
-            submitButton.disabled = false;
-            submitButton.textContent = 'Subscribe';
-            submitButton.classList.remove('bg-green-500');
-          }, 3000);
-        } catch (error) {
-          console.error('Newsletter signup error:', error);
-          submitButton.disabled = false;
-          submitButton.textContent = 'Try Again';
-        }
-      }}
-      className="flex flex-col sm:flex-row gap-3 w-full max-w-md"
-    >
-      <input
-        type="email"
-        placeholder="Your email address"
-        required
-        className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
-      />
-      <button 
-        type="submit"
-        className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-      >
-        Subscribe
-      </button>
-    </form>
-    <p className="text-xs text-gray-500 mt-3">
-      ✓ Trending designs ✓ Expert tips ✓ No spam ever
-    </p>
-  </GlassCard>
-)}
+                          {/* Inline Newsletter CTA after 3rd card */}
+                          {index === 2 && currentPage === 1 && !selectedTag && !selectedCategory && !searchQuery && (
+                            <GlassCard className="flex flex-col justify-center items-center text-center col-span-1 md:col-span-2 xl:col-span-3 my-4 bg-gradient-to-br from-pink-50 to-purple-50">
+                              <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                                💅 Get Weekly Nail Inspo
+                              </h3>
+                              <p className="text-gray-600 mb-4 max-w-md">
+                                Join 10,000+ nail enthusiasts! Get trending designs, expert tips, and exclusive finds delivered weekly.
+                              </p>
+                              <form 
+                                onSubmit={async (e) => {
+                                  e.preventDefault();
+                                  const emailInput = e.currentTarget.querySelector('input[type="email"]') as HTMLInputElement;
+                                  const submitButton = e.currentTarget.querySelector('button') as HTMLButtonElement;
+                                  const email = emailInput.value;
+                                  
+                                  if (!email) return;
+                                  
+                                  submitButton.disabled = true;
+                                  submitButton.textContent = 'Subscribing...';
+                                  
+                                  try {
+                                    await fetch(process.env.NEXT_PUBLIC_GOOGLE_COMMENTS_SCRIPT_URL || '', {
+                                      method: 'POST',
+                                      mode: 'no-cors',
+                                      headers: { 'Content-Type': 'application/json' },
+                                      body: JSON.stringify({ 
+                                        email,
+                                        source: 'blog-inline',
+                                        timestamp: new Date().toISOString()
+                                      }),
+                                    });
+                                    
+                                    submitButton.textContent = '✓ Subscribed!';
+                                    submitButton.classList.add('bg-green-500');
+                                    emailInput.value = '';
+                                    
+                                    setTimeout(() => {
+                                      submitButton.disabled = false;
+                                      submitButton.textContent = 'Subscribe';
+                                      submitButton.classList.remove('bg-green-500');
+                                    }, 3000);
+                                  } catch (error) {
+                                    console.error('Newsletter signup error:', error);
+                                    submitButton.disabled = false;
+                                    submitButton.textContent = 'Try Again';
+                                  }
+                                }}
+                                className="flex flex-col sm:flex-row gap-3 w-full max-w-md"
+                              >
+                                <input
+                                  type="email"
+                                  placeholder="Your email address"
+                                  required
+                                  className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
+                                />
+                                <button 
+                                  type="submit"
+                                  className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                                >
+                                  Subscribe
+                                </button>
+                              </form>
+                              <p className="text-xs text-gray-500 mt-3">
+                                ✓ Trending designs ✓ Expert tips ✓ No spam ever
+                              </p>
+                            </GlassCard>
+                          )}
+                        </>
+                      ))}
+                    </div>
 
                     {/* Pagination Component */}
                     {totalPages > 1 && (

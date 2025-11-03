@@ -45,7 +45,7 @@ export default function ShopClient({
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    // <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 pt-6">
         <Link
           href="/shop"
@@ -369,5 +369,6 @@ export default function ShopClient({
           animation: float 3s ease-in-out infinite;
         }
       `}</style>
-    </div>
+    {/* </div> */}
   );
+}

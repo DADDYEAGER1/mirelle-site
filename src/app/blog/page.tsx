@@ -8,7 +8,7 @@ import Link from 'next/link';
 import StickyBottomNav from '@/components/ui/StickyBottomNav';
 import GlassCard from '@/components/ui/GlassCard';
 import { Fragment } from 'react';
-
+import InlineNewsletterForm from '@/components/Blog/InlineNewsletterForm';
 export const metadata: Metadata = {
   title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
   description: 'Discover 100+ expert nail care articles, seasonal trends, step-by-step tutorials, and professional manicure tips. Your ultimate guide to beautiful, healthy nails.',

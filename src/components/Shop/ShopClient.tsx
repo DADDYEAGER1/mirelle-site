@@ -64,25 +64,6 @@ export default function ShopClient({
         tldrKeyTakeaways={categoryData.tldr?.keyTakeaways}
       />
 
-      {/* SEO Description */}
-      {description && (
-        <section className="max-w-4xl mx-auto px-4 py-12">
-          <div className="prose prose-lg max-w-none">
-            <div
-              dangerouslySetInnerHTML={{ __html: description.html }}
-              className="text-editorial-slate leading-relaxed"
-            />
-            {description.perfectFor && description.perfectFor.length > 0 && (
-              <div className="mt-6 p-4 bg-editorial-sand rounded-lg border border-editorial-stone">
-                <p className="font-semibold text-editorial-charcoal mb-2">Perfect for:</p>
-                <p className="text-editorial-slate text-sm">
-                  {description.perfectFor.join(', ')}
-                </p>
-              </div>
-            )}
-          </div>
-        </section>
-      )}
 
       {/* Filter Bar */}
       <section id="products-section" className="max-w-7xl mx-auto px-4 py-8">

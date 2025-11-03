@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import type { CategoryData, Product } from '@/types/shop';
 import { calculateDiscount } from '@/lib/shop';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -16,8 +16,9 @@ interface ShopClientProps {
     html: string;
     perfectFor?: string[];
   } | null;
-  breadcrumbItems?: Array<{ label: string; href: string }>; // NEW
+  breadcrumbItems?: Array<{ label: string; href: string }>;
 }
+
 export default function ShopClient({
   categoryData,
   initialProducts,
@@ -45,18 +46,7 @@ export default function ShopClient({
   };
 
   return (
-    // <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 pt-6">
-        <Link
-          href="/shop"
-          className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Shop
-        </Link>
-      </div>
-
-      <div className="min-h-screen bg-gradient-to-b from-editorial-cream to-white">
+    <div className="min-h-screen bg-gradient-to-b from-editorial-cream to-white">
       {/* Breadcrumbs */}
       <Breadcrumbs 
         items={breadcrumbItems}
@@ -96,27 +86,6 @@ export default function ShopClient({
 
       {/* Filter Bar */}
       <section id="products-section" className="max-w-7xl mx-auto px-4 py-8">
-      {description && (
-        <section className="max-w-4xl mx-auto px-4 py-12">
-          <div className="prose prose-lg max-w-none">
-            <div
-              dangerouslySetInnerHTML={{ __html: description.html }}
-              className="text-gray-700 leading-relaxed"
-            />
-            {description.perfectFor && description.perfectFor.length > 0 && (
-              <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-100">
-                <p className="font-semibold text-gray-900 mb-2">Perfect for:</p>
-                <p className="text-gray-700 text-sm">
-                  {description.perfectFor.join(', ')}
-                </p>
-              </div>
-            )}
-          </div>
-        </section>
-      )}
-
-      {/* Filter Bar */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-wrap gap-3 justify-center">
           {[
             { key: 'all', label: 'All Products' },
@@ -355,20 +324,6 @@ export default function ShopClient({
           accurate as of publication and may vary.
         </p>
       </section>
-
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px) rotate(0deg);
-          }
-          50% {
-            transform: translateY(-20px) rotate(10deg);
-          }
-        }
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-      `}</style>
     </div>
   );
 }

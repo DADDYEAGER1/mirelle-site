@@ -56,7 +56,7 @@ export default function ShopClient({
         </Link>
       </div>
 
-<div className="min-h-screen bg-gradient-to-b from-editorial-cream to-white">
+      <div className="min-h-screen bg-gradient-to-b from-editorial-cream to-white">
       {/* Breadcrumbs */}
       <Breadcrumbs 
         items={breadcrumbItems}

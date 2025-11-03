@@ -371,4 +371,3 @@ export default function ShopClient({
       `}</style>
     </div>
   );
-}

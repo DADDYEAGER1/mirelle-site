@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { ArrowLeft, ChevronDown, ChevronUp } from 'lucide-react';
 import type { CategoryData, Product } from '@/types/shop';
 import { calculateDiscount } from '@/lib/shop';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import ShopCategoryTLDR from './ShopCategoryTLDR';
 
 interface ShopClientProps {
   categoryData: CategoryData;
@@ -14,13 +16,14 @@ interface ShopClientProps {
     html: string;
     perfectFor?: string[];
   } | null;
+  breadcrumbItems?: Array<{ label: string; href: string }>; // NEW
 }
-
 export default function ShopClient({
   categoryData,
   initialProducts,
   faqs = [],
   description = null,
+  breadcrumbItems = [],
 }: ShopClientProps) {
   const [filter, setFilter] = useState<'all' | 'new' | 'trending' | 'sale'>('all');
   const [showAll, setShowAll] = useState(false);
@@ -53,81 +56,46 @@ export default function ShopClient({
         </Link>
       </div>
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div
-          className={`absolute inset-0 bg-gradient-to-br from-${categoryData.gradientFrom} via-${categoryData.gradientVia} to-${categoryData.gradientTo} opacity-90`}
-        />
-        <div className="relative max-w-7xl mx-auto px-4 py-16 sm:py-24">
-          <div className="text-center">
-            {categoryData.emojis && categoryData.emojis.length > 0 && (
-              <div className="absolute inset-0 pointer-events-none">
-                {categoryData.emojis.map((emoji, i) => (
-                  <span
-                    key={i}
-                    className="absolute text-4xl sm:text-6xl opacity-20 animate-float"
-                    style={{
-                      left: `${(i * 25) % 100}%`,
-                      top: `${(i * 30) % 100}%`,
-                      animationDelay: `${i * 0.5}s`,
-                    }}
-                  >
-                    {emoji}
-                  </span>
-                ))}
+<div className="min-h-screen bg-gradient-to-b from-editorial-cream to-white">
+      {/* Breadcrumbs */}
+      <Breadcrumbs 
+        items={breadcrumbItems}
+        currentPage={categoryData.displayName}
+        includeSchema={false}
+      />
+
+      {/* TL;DR Hero Section */}
+      <ShopCategoryTLDR
+        title={categoryData.displayName}
+        year={categoryData.year}
+        metaDescription={categoryData.description}
+        showcaseProducts={initialProducts.slice(0, 15)}
+        tldrSummary={categoryData.tldr?.summary}
+        tldrKeyTakeaways={categoryData.tldr?.keyTakeaways}
+      />
+
+      {/* SEO Description */}
+      {description && (
+        <section className="max-w-4xl mx-auto px-4 py-12">
+          <div className="prose prose-lg max-w-none">
+            <div
+              dangerouslySetInnerHTML={{ __html: description.html }}
+              className="text-editorial-slate leading-relaxed"
+            />
+            {description.perfectFor && description.perfectFor.length > 0 && (
+              <div className="mt-6 p-4 bg-editorial-sand rounded-lg border border-editorial-stone">
+                <p className="font-semibold text-editorial-charcoal mb-2">Perfect for:</p>
+                <p className="text-editorial-slate text-sm">
+                  {description.perfectFor.join(', ')}
+                </p>
               </div>
             )}
-
-            <h1 className="text-5xl sm:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-              {categoryData.displayName} {categoryData.year}
-            </h1>
-            <p className="text-xl sm:text-2xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
-              {categoryData.description}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* TL;DR Section */}
-      {categoryData.tldr && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="bg-gradient-to-br from-pink-50 to-purple-50 border-l-4 border-pink-500 p-6 rounded-lg shadow-md">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">⚡</span>
-              <h2 className="text-xl font-bold text-gray-900 font-serif">Quick Collection Overview</h2>
-            </div>
-            
-            <div className="space-y-3">
-              <ul className="space-y-2">
-                {categoryData.tldr.summary.map((item, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-pink-500 mt-1">✓</span>
-                    <span className="text-gray-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              {categoryData.tldr.keyTakeaways && categoryData.tldr.keyTakeaways.length > 0 && (
-                <div className="mt-4 pt-4 border-t border-pink-200">
-                  <p className="text-gray-700 font-medium mb-2">Key Features:</p>
-                  <div className="flex flex-wrap gap-2">
-                    {categoryData.tldr.keyTakeaways.map((takeaway, index) => (
-                      <span 
-                        key={index} 
-                        className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium"
-                      >
-                        {takeaway}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
         </section>
       )}
 
-      {/* SEO Description */}
+      {/* Filter Bar */}
+      <section id="products-section" className="max-w-7xl mx-auto px-4 py-8">
       {description && (
         <section className="max-w-4xl mx-auto px-4 py-12">
           <div className="prose prose-lg max-w-none">

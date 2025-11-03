@@ -1,6 +1,3 @@
-// src/app/shop/[category]/page.tsx
-// AFFILIATE-SAFE VERSION - No AggregateRating/Reviews
-
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ShopClient from '@/components/Shop/ShopClient';
@@ -29,7 +26,7 @@ async function getCategoryDescription(category: string) {
 }
 
 // ============================================
-// SCHEMA GENERATION FUNCTIONS (AFFILIATE-SAFE)
+// SCHEMA GENERATION FUNCTIONS
 // ============================================
 
 function generateFAQSchema(
@@ -218,18 +215,25 @@ export async function generateMetadata({
 
   const seo = categoryData.seo;
 
+  // Format keywords array
+  const keywordsArray = Array.isArray(seo.keywords) 
+    ? seo.keywords 
+    : seo.keywords.split(',').map((k: string) => k.trim());
+
   return {
     title: seo.title,
     description: seo.description,
-    keywords: Array.isArray(seo.keywords) ? seo.keywords : [seo.keywords],
+    keywords: keywordsArray,
     openGraph: {
       title: seo.title,
       description: seo.description,
       type: 'website',
       url: `https://mirelleinspo.com/shop/${category}`,
+      siteName: 'Mirelle',
+      locale: 'en_US',
       images: [
         {
-          url: `https://mirelleinspo.com${categoryData.heroImage}`,
+          url: seo.ogImage || `https://mirelleinspo.com${categoryData.heroImage}`,
           alt: seo.title,
           width: 1200,
           height: 630,
@@ -240,7 +244,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: seo.title,
       description: seo.description,
-      images: [`https://mirelleinspo.com${categoryData.heroImage}`],
+      images: [seo.ogImage || `https://mirelleinspo.com${categoryData.heroImage}`],
     },
     alternates: {
       canonical: `https://mirelleinspo.com/shop/${category}`,
@@ -268,6 +272,11 @@ export default async function ShopCategoryPage({
   const itemListSchema = generateItemListSchema(categoryData, products);
   const breadcrumbSchema = generateBreadcrumbSchema(categoryData);
   const faqSchema = generateFAQSchema(category, faqs);
+
+  // Breadcrumb items for component
+  const breadcrumbItems = [
+    { label: 'Shop', href: '/shop' }
+  ];
 
   return (
     <>
@@ -302,12 +311,11 @@ export default async function ShopCategoryPage({
       )}
 
       <ShopClient
-        
         categoryData={categoryData}
-        
         initialProducts={products}
         faqs={faqs}
         description={description}
+        breadcrumbItems={breadcrumbItems}
       />
     </>
   );

@@ -342,11 +342,6 @@ export default async function BlogPage({ searchParams }: PageProps) {
                       ))}
                     </div>
 
-{/* Inline Newsletter CTA after grid - only on first page with no filters */}
-{/* // {currentPage === 1 && !selectedTag && !selectedCategory && !searchQuery && ( */}
-//   <InlineNewsletterForm />
-// )}
-
                     {/* Pagination Component */}
                     {totalPages > 1 && (
                       <div className="mt-8">

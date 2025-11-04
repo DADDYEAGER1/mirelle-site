@@ -6,6 +6,7 @@ import FeaturedTopicsSection from '@/components/FeaturedTopicsSection';
 import ShopSection from '@/components/ShopSection';
 import SubscribeSection from '@/components/SubscribeSection';
 import StickyBottomNav from '@/components/ui/StickyBottomNav'; // ✅ NEW: Phase 4
+import InspoShowcase from '@/components/InspoShowcase'; // ✅ NEW
 
 export const metadata: Metadata = {
   title: 'Mirelle - Premium Nail Care, Inspiration & Expert Tips',
@@ -23,6 +24,7 @@ export default function Home() {
       <AboutSection />
       <ShopSection />
       <FeaturedTopicsSection />
+      <InspoShowcase /> 
       <BlogSection />
       <SubscribeSection />
       

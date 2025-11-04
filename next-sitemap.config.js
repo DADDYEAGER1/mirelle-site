@@ -43,7 +43,7 @@ module.exports = {
       { userAgent: 'AhrefsBot', disallow: '/' },
     ],
     additionalSitemaps: [
-      // Add extra sitemaps here if you create them later
+      'https://mirelleinspo.com/sitemap-images.xml'
     ],
   },
 

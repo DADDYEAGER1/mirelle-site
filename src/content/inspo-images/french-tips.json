@@ -1,1 +1,13 @@
 
+
+{
+  "images": [
+    {
+      "id": "ft-001",
+      "url": "https://example.com/image.jpg",
+      "alt": "Classic white French tip nails",
+      "isPremium": false,
+      "pinterestUrl": "https://pinterest.com/..."
+    }
+  ]
+}

@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap && node scripts/generate-image-sitemap.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -51,4 +51,3 @@
   "author": "",
   "license": "ISC"
 }
-

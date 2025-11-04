@@ -194,3 +194,4 @@ export default async function InspoPage() {
       </section>
     </div>
   );
+}

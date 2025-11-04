@@ -51,12 +51,4 @@
   "author": "",
   "license": "ISC"
 }
-{
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
-    "lint": "eslint",
-    "postbuild": "next-sitemap && node scripts/generate-image-sitemap.js"
-  }
-}
+

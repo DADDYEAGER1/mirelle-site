@@ -1,0 +1,196 @@
+{
+  "designs": {
+    "french-tips": {
+      "slug": "french-tips",
+      "name": "French Tips Collection",
+      "displayName": "French Tips",
+      "category": "Classic",
+      "year": 2025,
+      "description": "Timeless elegance with modern twists on classic French manicure designs",
+      "heroImage": "https://images.unsplash.com/photo-1604654894610-df63bc536371",
+      "gradientFrom": "pink-100",
+      "gradientVia": "white",
+      "gradientTo": "pink-50",
+      "emojis": ["💅", "✨", "🤍", "💖"],
+      "ctas": ["Classic Elegance", "Modern French", "Timeless Beauty", "Chic Nails"],
+      "tldr": {
+        "summary": [
+          "150+ French tip variations from classic white to colored tips",
+          "Modern twists: ombre, glitter, reverse French designs",
+          "Perfect for weddings, work, and everyday elegance",
+          "Easy to recreate at home with our step-by-step guides"
+        ],
+        "keyTakeaways": ["Versatile for any occasion", "Never goes out of style", "Professional look"]
+      },
+      "seo": {
+        "title": "French Tips Nails 2025: 150+ Classic & Modern Designs | Mirelle",
+        "description": "Discover 150+ French tip nail designs from classic white to modern colored tips. Get inspiration for weddings, work & everyday elegance. Step-by-step tutorials included!",
+        "keywords": "french tip nails, french manicure 2025, classic french nails, modern french tips, colored french tips, french nail designs, elegant nails, wedding nails",
+        "ogImage": "https://mirelleinspo.com/inspo-french-tips.jpg"
+      },
+      "relatedDesigns": ["ombre", "minimalist", "wedding", "chrome"],
+      "perfectFor": ["Weddings", "Office", "Special Events", "Everyday Wear"],
+      "styleGuide": ["Keep tips crisp and clean", "Experiment with tip colors", "Try reverse French"]
+    },
+    "ombre": {
+      "slug": "ombre",
+      "name": "Ombre Nails Collection",
+      "displayName": "Ombre Nails",
+      "category": "Trendy",
+      "year": 2025,
+      "description": "Stunning gradient transitions from subtle fades to bold color blends",
+      "heroImage": "https://images.unsplash.com/photo-1610992015732-2449b76344bc",
+      "gradientFrom": "purple-400",
+      "gradientVia": "pink-300",
+      "gradientTo": "orange-300",
+      "emojis": ["🌈", "✨", "💜", "💗"],
+      "ctas": ["Gradient Goals", "Color Fade", "Ombre Magic", "Sunset Vibes"],
+      "tldr": {
+        "summary": [
+          "200+ ombre designs from soft pastels to bold neons",
+          "Techniques: sponge method, brush blending, airbrush effects",
+          "Trending: sunset ombre, galaxy nails, two-tone fades",
+          "Video tutorials for each technique level"
+        ],
+        "keyTakeaways": ["Endless color combinations", "Easy with sponge technique", "Instagram-worthy"]
+      },
+      "seo": {
+        "title": "Ombre Nails 2025: 200+ Gradient Designs & Tutorials | Mirelle",
+        "description": "Master 200+ ombre nail designs with our step-by-step tutorials. From subtle pastels to bold gradients. Learn sponge technique, color blending & trending styles!",
+        "keywords": "ombre nails, gradient nails, ombre nail designs 2025, sunset nails, pastel ombre, neon ombre, galaxy nails, color fade nails, ombre tutorials",
+        "ogImage": "https://mirelleinspo.com/inspo-ombre.jpg"
+      },
+      "relatedDesigns": ["chrome", "glitter", "summer", "trendy"],
+      "perfectFor": ["Summer", "Festivals", "Beach Vacations", "Party Looks"],
+      "styleGuide": ["Blend colors seamlessly", "Use makeup sponge for best results", "Top coat is essential"]
+    },
+    "chrome": {
+      "slug": "chrome",
+      "name": "Chrome Nails Collection",
+      "displayName": "Chrome Nails",
+      "category": "Trendy",
+      "year": 2025,
+      "description": "Mirror-shine metallic nails in silver, gold, rose gold and holographic finishes",
+      "heroImage": "https://images.unsplash.com/photo-1632345031435-8727f6897d53",
+      "gradientFrom": "slate-400",
+      "gradientVia": "zinc-300",
+      "gradientTo": "gray-200",
+      "emojis": ["✨", "🪞", "💎", "🌟"],
+      "ctas": ["Mirror Shine", "Metallic Magic", "Chrome Dreams", "Futuristic Glam"],
+      "tldr": {
+        "summary": [
+          "180+ chrome designs from classic silver to holographic",
+          "Product recommendations: best chrome powders & base coats",
+          "Application secrets: buffing, rubbing, sealing techniques",
+          "Trending: aurora chrome, oil slick, magnetic chrome"
+        ],
+        "keyTakeaways": ["Ultra-reflective finish", "Works on any nail length", "Party-perfect"]
+      },
+      "seo": {
+        "title": "Chrome Nails 2025: 180+ Mirror Metallic Designs | Mirelle",
+        "description": "Get 180+ chrome nail inspiration including silver, gold, rose gold & holographic. Learn application techniques, best products & trending aurora chrome effects!",
+        "keywords": "chrome nails, mirror nails, metallic nails 2025, holographic nails, chrome powder nails, silver chrome nails, rose gold nails, aurora chrome",
+        "ogImage": "https://mirelleinspo.com/inspo-chrome.jpg"
+      },
+      "relatedDesigns": ["ombre", "glitter", "trendy", "new-year"],
+      "perfectFor": ["Night Out", "New Year's Eve", "Concerts", "Fashion Events"],
+      "styleGuide": ["Use gel base for best adhesion", "Rub powder gently", "Seal with no-wipe top coat"]
+    },
+    "minimalist": {
+      "slug": "minimalist",
+      "name": "Minimalist Nails Collection",
+      "displayName": "Minimalist Nails",
+      "category": "Classic",
+      "year": 2025,
+      "description": "Clean, simple nail art with delicate lines, dots, and negative space designs",
+      "heroImage": "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8",
+      "gradientFrom": "neutral-100",
+      "gradientVia": "stone-50",
+      "gradientTo": "slate-100",
+      "emojis": ["🤍", "✨", "🖤", "💫"],
+      "ctas": ["Less is More", "Clean Lines", "Subtle Chic", "Modern Minimal"],
+      "tldr": {
+        "summary": [
+          "120+ minimalist designs with clean lines and negative space",
+          "Perfect for: professionals, natural nail lovers, subtle style",
+          "Techniques: line art, single dots, negative space, nude bases",
+          "Low maintenance with maximum impact"
+        ],
+        "keyTakeaways": ["Professional appropriate", "Quick to apply", "Timeless aesthetic"]
+      },
+      "seo": {
+        "title": "Minimalist Nails 2025: 120+ Clean & Simple Designs | Mirelle",
+        "description": "Explore 120+ minimalist nail designs perfect for work and everyday. Master line art, negative space & subtle dots. Professional, chic & easy to maintain!",
+        "keywords": "minimalist nails, simple nail designs, negative space nails, line art nails, clean nails, subtle nail art, professional nails, nude nails 2025",
+        "ogImage": "https://mirelleinspo.com/inspo-minimalist.jpg"
+      },
+      "relatedDesigns": ["french-tips", "nude", "office", "wedding"],
+      "perfectFor": ["Office", "Daily Wear", "Interviews", "Minimalist Lifestyle"],
+      "styleGuide": ["Keep designs sparse", "Use thin brushes", "Neutral color palette"]
+    },
+    "glitter": {
+      "slug": "glitter",
+      "name": "Glitter Nails Collection",
+      "displayName": "Glitter Nails",
+      "category": "Trendy",
+      "year": 2025,
+      "description": "Sparkly, shimmery nail designs from subtle shimmer to full glitter coverage",
+      "heroImage": "https://images.unsplash.com/photo-1599948128020-9a44668b2ee1",
+      "gradientFrom": "pink-400",
+      "gradientVia": "purple-400",
+      "gradientTo": "blue-400",
+      "emojis": ["✨", "💎", "🌟", "💖"],
+      "ctas": ["Sparkle Goals", "Glitter Glam", "Shimmer Shine", "Party Ready"],
+      "tldr": {
+        "summary": [
+          "170+ glitter designs from accent nails to full coverage",
+          "Types: fine shimmer, chunky glitter, holographic, color-shifting",
+          "Application tips: glitter placement, removal hacks, no-damage methods",
+          "Perfect for celebrations and standing out"
+        ],
+        "keyTakeaways": ["Instant glamour", "Party essential", "Removal requires patience"]
+      },
+      "seo": {
+        "title": "Glitter Nails 2025: 170+ Sparkly Designs & Application Tips | Mirelle",
+        "description": "Discover 170+ glitter nail designs from subtle shimmer to full sparkle. Learn application techniques, removal hacks & trending holographic effects. Party-ready nails!",
+        "keywords": "glitter nails, sparkle nails, shimmer nails 2025, holographic glitter, chunky glitter nails, glitter nail designs, party nails, celebration nails",
+        "ogImage": "https://mirelleinspo.com/inspo-glitter.jpg"
+      },
+      "relatedDesigns": ["chrome", "new-year", "party", "ombre"],
+      "perfectFor": ["Parties", "Celebrations", "New Year's", "Date Night"],
+      "styleGuide": ["Use peel-off base coat", "Layer glitter gradually", "Top coat is crucial"]
+    },
+    "summer": {
+      "slug": "summer",
+      "name": "Summer Nails Collection",
+      "displayName": "Summer Nails",
+      "category": "Seasonal",
+      "year": 2025,
+      "description": "Bright, vibrant nail designs perfect for beach days, vacations and sunny vibes",
+      "heroImage": "https://images.unsplash.com/photo-1583225214464-9296029427aa",
+      "gradientFrom": "yellow-400",
+      "gradientVia": "orange-400",
+      "gradientTo": "pink-400",
+      "emojis": ["☀️", "🌴", "🌊", "🍉"],
+      "ctas": ["Summer Vibes", "Beach Ready", "Tropical Dreams", "Sunny Days"],
+      "tldr": {
+        "summary": [
+          "190+ summer designs with tropical, neon & beach themes",
+          "Trending: fruit nails, ocean waves, sunset gradients, palm trees",
+          "Waterproof top coats and long-lasting formulas for pool/beach",
+          "Bright colors that pop against summer tans"
+        ],
+        "keyTakeaways": ["Vacation perfect", "Bright & cheerful", "Photo-ready"]
+      },
+      "seo": {
+        "title": "Summer Nails 2025: 190+ Beach & Tropical Designs | Mirelle",
+        "description": "Get 190+ summer nail inspiration with tropical, neon & beach themes. Perfect for vacations! Featuring fruit designs, ocean waves & sunset gradients. Waterproof tips!",
+        "keywords": "summer nails 2025, beach nails, tropical nail designs, vacation nails, fruit nails, neon summer nails, ocean nails, palm tree nails, bright nails",
+        "ogImage": "https://mirelleinspo.com/inspo-summer.jpg"
+      },
+      "relatedDesigns": ["ombre", "glitter", "trendy", "bright-colors"],
+      "perfectFor": ["Beach Vacations", "Pool Parties", "Festivals", "Tropical Getaways"],
+      "styleGuide": ["Use waterproof top coat", "Bright colors work best", "Fruit designs are trending"]
+    }
+  }
+}

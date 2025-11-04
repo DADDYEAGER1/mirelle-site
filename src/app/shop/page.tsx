@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     'affordable nail art'
   ],
   openGraph: {
-    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirelle',
+    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirellé ',
     description: 'Salon-quality press-on nails that last 7-14 days. 200+ trending designs including chrome, velvet, and seasonal collections. Apply in minutes, reusable 2-10 times.',
     url: 'https://mirelleinspo.com/shop',
     siteName: 'Mirelle',

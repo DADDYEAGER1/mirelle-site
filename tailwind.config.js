@@ -178,7 +178,20 @@
 //   ],
 // }
 
+// Primary burgundy
+// className="bg-burgundy-700 text-white"
 
+// // Light burgundy accent
+// className="bg-burgundy-50 text-burgundy-900"
+
+// // Burgundy gradient
+// className="bg-gradient-burgundy"
+
+// // Hover states
+// className="hover:bg-burgundy-600 hover:text-white"
+
+// // Cream backgrounds (pairs beautifully with burgundy)
+// className="bg-cream-100"
 
 
 

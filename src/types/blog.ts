@@ -14,6 +14,7 @@ export interface BlogMetadata {
   dateModified?: string;
   tldr?: TLDR;
   faqItems?: FAQItem[];
+  url: string;
   
   // Optional fields for backward compatibility
   date: string;

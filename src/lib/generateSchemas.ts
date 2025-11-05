@@ -186,11 +186,18 @@ export function generateArticleSchema(post: BlogPost) {
     'abstract': post.tldr?.summary.join(' ') || post.excerpt,
     'image': {
       '@type': 'ImageObject',
-      'url': `${baseUrl}${post.image}`,
+      '@id': `${articleUrl}#primaryimage`,
+      'url': imageUrl,
       'width': post.imageWidth || 1200,
       'height': post.imageHeight || 630,
-      'caption': post.imageAlt
+      'caption': post.imageCaption || post.imageAlt || post.title,
+      'name': post.imageAlt || post.title,
+      'contentUrl': imageUrl,
+      'representativeOfPage': true,
+      'inLanguage': 'en-US',
+      ...(post.imageAlt && { 'description': post.imageAlt })
     },
+
     'author': {
       '@type': 'Person',
       '@id': `${baseUrl}/#mirelle-team`,

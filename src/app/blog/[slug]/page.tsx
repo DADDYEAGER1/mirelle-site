@@ -30,22 +30,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
       title: 'Post Not Found - Mirelle',
       description: 'The blog post you are looking for does not exist.',
-      robots: {
-        index: false,
-        follow: false,
-      },
+      robots: { index: false, follow: false },
     };
   }
 
-  // 🔄 UPDATED: Use canonical from post if exists, otherwise construct
   const canonicalUrl = post.canonical || `https://mirelleinspo.com/blog/${slug}`;
   const imageUrl = post.image ? `https://mirelleinspo.com${post.image}` : 'https://mirelleinspo.com/og-default.png';
   const imageAltText = post.imageAlt || post.title;
-  
-  // 🔄 UPDATED: Better keywords handling
   const keywords = post.tags?.length 
     ? post.tags.join(', ')
     : 'nail art, nail care, nail trends, manicure tips, nail design';
+  
+  // 🆕 ENHANCED: Extract first tag for Pinterest category
+  const primaryTag = post.tags?.[0] || 'nail art';
   
   return {
     title: `${post.title} | Mirelle`,
@@ -54,18 +51,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     authors: [{ name: post.author || 'Mirelle' }],
     creator: post.author || 'Mirelle',
     publisher: 'Mirelle',
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates: { canonical: canonicalUrl },
     robots: {
       index: true,
       follow: true,
+      nocache: false,
       googleBot: {
         index: true,
         follow: true,
         'max-video-preview': -1,
         'max-image-preview': 'large',
         'max-snippet': -1,
+      },
+      bingBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
       },
     },
     openGraph: {
@@ -102,8 +103,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'article:author': post.author || 'Mirelle',
       'article:section': post.category || 'Nail Care',
       'article:tag': post.tags?.join(', ') || '',
-      // ✅ NEW: Add word count if available
       ...(post.wordCount && { 'article:word_count': post.wordCount.toString() }),
+      
+      // 🆕 MAXIMUM PINTEREST OPTIMIZATION
+      'pin:description': post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
+      'pin:media': imageUrl,
+      'pinterest-rich-pin': 'true',
+      
+      // 🆕 Pinterest-specific image optimization
+      'og:image:width': (post.imageWidth || 1200).toString(),
+      'og:image:height': (post.imageHeight || 630).toString(),
+      'og:image:alt': imageAltText,
+      'og:image:type': 'image/jpeg',
+      
+      // 🆕 Pinterest category targeting (helps Pinterest algorithm)
+      'article:publisher': 'https://www.pinterest.com/mirelle_inspo',
+      'pinterest:category': primaryTag,
+      
+      // 🆕 Pinterest board suggestions (if user saves)
+      'pinterest:board_suggestion': post.category || 'Nail Art Ideas',
+      
+      // 🆕 Enhanced social sharing
+      'og:see_also': canonicalUrl,
+      
+      // 🆕 Pinterest-friendly reading time
+      ...(post.readingTime && { 'twitter:label1': 'Reading time', 'twitter:data1': post.readingTime }),
+      ...(post.tags?.length && { 'twitter:label2': 'Filed under', 'twitter:data2': primaryTag }),
     },
   };
 }

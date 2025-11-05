@@ -32,11 +32,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-    bingBot: {
-      index: true,
-      follow: true,
-      'max-image-preview': 'large',
-    },
   },
   openGraph: {
     title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',

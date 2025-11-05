@@ -208,17 +208,26 @@ export async function generateMetadata({
   const categoryData = getCategoryData(category);
 
   if (!categoryData) {
-    return {
-      title: 'Category Not Found',
-    };
+    return { title: 'Category Not Found' };
   }
 
   const seo = categoryData.seo;
-
-  // Format keywords array
   const keywordsArray = Array.isArray(seo.keywords) 
     ? seo.keywords 
     : seo.keywords.split(',').map((k: string) => k.trim());
+  
+  const ogImageUrl = seo.ogImage || `https://mirelleinspo.com${categoryData.heroImage}`;
+  
+  // 🆕 Get products for aggregate data
+  const products = await getCategoryProducts(category);
+  const productCount = products.length;
+  
+  // 🆕 Calculate price range for Pinterest shopping
+  const prices = products
+    .map(p => parseFloat(p.price.toString().replace('$', '')))
+    .filter(p => !isNaN(p) && p > 0);
+  const minPrice = prices.length > 0 ? Math.min(...prices).toFixed(2) : '3.99';
+  const maxPrice = prices.length > 0 ? Math.max(...prices).toFixed(2) : '29.99';
 
   return {
     title: seo.title,
@@ -231,23 +240,81 @@ export async function generateMetadata({
       url: `https://mirelleinspo.com/shop/${category}`,
       siteName: 'Mirelle',
       locale: 'en_US',
-      images: [
-        {
-          url: seo.ogImage || `https://mirelleinspo.com${categoryData.heroImage}`,
-          alt: seo.title,
-          width: 1200,
-          height: 630,
-        },
-      ],
+      images: [{
+        url: ogImageUrl,
+        alt: seo.title,
+        width: 1200,
+        height: 630,
+      }],
     },
     twitter: {
       card: 'summary_large_image',
       title: seo.title,
       description: seo.description,
-      images: [seo.ogImage || `https://mirelleinspo.com${categoryData.heroImage}`],
+      images: [ogImageUrl],
     },
     alternates: {
       canonical: `https://mirelleinspo.com/shop/${category}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+      bingBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+      },
+    },
+    other: {
+      // 🆕 MAXIMUM PINTEREST SHOPPING OPTIMIZATION
+      'pin:description': seo.description,
+      'pin:media': ogImageUrl,
+      'pinterest-rich-pin': 'true',
+      
+      // 🆕 Product catalog meta
+      'product:category': categoryData.name,
+      'product:availability': 'in stock',
+      'product:condition': 'new',
+      'product:retailer': 'Amazon',
+      
+      // 🆕 Price range for Pinterest Product Pins
+      'product:price:amount': minPrice,
+      'product:price:currency': 'USD',
+      'product:price_range:min': minPrice,
+      'product:price_range:max': maxPrice,
+      
+      // 🆕 Inventory signals
+      'product:item_group_id': category,
+      'product:plural_title': `${categoryData.name} Collection`,
+      
+      // 🆕 Pinterest shopping category
+      'og:type': 'product.group',
+      'pinterest:category': 'Beauty > Nail Care',
+      
+      // 🆕 Collection size (helps Pinterest rank)
+      'og:product:count': productCount.toString(),
+      
+      // 🆕 Enhanced image data
+      'og:image:width': '1200',
+      'og:image:height': '630',
+      'og:image:alt': seo.title,
+      'og:image:type': 'image/jpeg',
+      
+      // 🆕 Pinterest board suggestion
+      'pinterest:board_suggestion': categoryData.name,
+      
+      // 🆕 Shopping-specific labels
+      'twitter:label1': 'Products',
+      'twitter:data1': `${productCount} items`,
+      'twitter:label2': 'Price Range',
+      'twitter:data2': `$${minPrice} - $${maxPrice}`,
     },
   };
 }

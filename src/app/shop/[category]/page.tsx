@@ -274,7 +274,7 @@ export async function generateMetadata({
       'pinterest-rich-pin': 'true',
       
       // 🆕 Product catalog meta
-      'product:category': categoryData.name,
+      'product:category': categoryData.slug,
       'product:availability': 'in stock',
       'product:condition': 'new',
       'product:retailer': 'Amazon',

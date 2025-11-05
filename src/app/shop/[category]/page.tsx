@@ -62,7 +62,7 @@ function generateCollectionPageSchema(
     trendy: 'Trendy Nails',
   };
 
-  const displayName = categoryNames[categoryData.slug] || categoryData.name;
+  const displayName = categoryNames[categoryData.slug] || categoryData.slug;
 
   return {
     '@context': 'https://schema.org',
@@ -106,7 +106,7 @@ function generateItemListSchema(categoryData: any, products: any[]) {
     trendy: 'Trendy Nails',
   };
 
-  const displayName = categoryNames[categoryData.slug] || categoryData.name;
+  const displayName = categoryNames[categoryData.slug] || categoryData.slug;
 
   return {
     '@context': 'https://schema.org',
@@ -164,7 +164,7 @@ function generateBreadcrumbSchema(categoryData: any) {
     trendy: 'Trendy Nails',
   };
 
-  const displayName = categoryNames[categoryData.slug] || categoryData.name;
+  const displayName = categoryNames[categoryData.slug] || categoryData.slug;
 
   return {
     '@context': 'https://schema.org',
@@ -287,7 +287,7 @@ export async function generateMetadata({
       
       // 🆕 Inventory signals
       'product:item_group_id': category,
-      'product:plural_title': `${categoryData.name} Collection`,
+      'product:plural_title': `${categoryData.slug} Collection`,
       
       // 🆕 Pinterest shopping category
       'og:type': 'product.group',
@@ -303,7 +303,7 @@ export async function generateMetadata({
       'og:image:type': 'image/jpeg',
       
       // 🆕 Pinterest board suggestion
-      'pinterest:board_suggestion': categoryData.name,
+      'pinterest:board_suggestion': categoryData.slug,
       
       // 🆕 Shopping-specific labels
       'twitter:label1': 'Products',

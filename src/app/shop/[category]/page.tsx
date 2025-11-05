@@ -238,7 +238,7 @@ export async function generateMetadata({
       description: seo.description,
       type: 'website',
       url: `https://mirelleinspo.com/shop/${category}`,
-      siteName: 'Mirelle',
+      siteName: 'Mirellé',
       locale: 'en_US',
       images: [{
         url: ogImageUrl,

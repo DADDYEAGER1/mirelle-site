@@ -52,7 +52,6 @@ export const metadata: Metadata = {
     address: false,
   },
   
-  // Global geo-targeting (won't hurt international reach)
   other: {
     'distribution': 'global',
     'rating': 'general',
@@ -64,17 +63,16 @@ export const metadata: Metadata = {
     'referrer': 'always',
     'revisit-after': '7 days',
     
-    // 🆕 ENHANCED PINTEREST GLOBAL META
+    // Pinterest optimization (removed domain_verify - DNS already handles it)
     'pinterest-rich-pin': 'true',
     'pinterest:partner': 'true',
-    'pinterest:domain_verify': 'claimed', // Since you already claimed
     
-    // 🆕 Global Pinterest catalog hints
+    // Global Pinterest catalog hints
     'og:site_name': 'Mirellé',
     'og:locale': 'en_US',
     'og:locale:alternate': 'en_GB',
   },
-
+  
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -114,22 +112,22 @@ export const metadata: Metadata = {
     },
   },
   
-icons: {
-  icon: [
-    { url: "/favicon.ico", sizes: "48x48" },
-    { url: "/favicon.svg", type: "image/svg+xml" },
-    { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-  ],
-  apple: [
-    { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-  ],
-},
-manifest: "/site.webmanifest",
-
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  
+  manifest: "/site.webmanifest",
+  
   alternates: {
     canonical: "https://mirelleinspo.com",
-    // Multi-region language support for global reach
     languages: {
       'en-US': 'https://mirelleinspo.com',
       'en-GB': 'https://mirelleinspo.com',
@@ -138,6 +136,7 @@ manifest: "/site.webmanifest",
       'en': 'https://mirelleinspo.com',
     },
   },
+};
   
 //   verification: {
 //     google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console

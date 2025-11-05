@@ -266,11 +266,6 @@ export async function generateMetadata({
         'max-image-preview': 'large',
         'max-snippet': -1,
       },
-      bingBot: {
-        index: true,
-        follow: true,
-        'max-image-preview': 'large',
-      },
     },
     other: {
       // 🆕 MAXIMUM PINTEREST SHOPPING OPTIMIZATION

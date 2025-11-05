@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mirelleinspo.com'),
   title: {
     default: "Mirellé Inspo | Nail Art Ideas, Trends & Tutorials 2025",
-    template: "%s | Mirellé Inspo"
+    template: "%s | Mirellé"
   },
   description: "Explore 2025's top nail art trends, DIY tutorials, seasonal nail designs, and expert tips. Get inspired for Pinterest-worthy nails every mood and occasion.",
   keywords: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mirellé Team", url: "https://mirelleinspo.com/about" }],
   creator: "Mirellé Team",
-  publisher: "Mirellé Inspo",
+  publisher: "Mirellé",
   formatDetection: {
     telephone: false,
     email: false,
@@ -63,14 +63,24 @@ export const metadata: Metadata = {
     'classification': 'Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle',
     'referrer': 'always',
     'revisit-after': '7 days',
+    
+    // 🆕 ENHANCED PINTEREST GLOBAL META
+    'pinterest-rich-pin': 'true',
+    'pinterest:partner': 'true',
+    'pinterest:domain_verify': 'claimed', // Since you already claimed
+    
+    // 🆕 Global Pinterest catalog hints
+    'og:site_name': 'Mirellé',
+    'og:locale': 'en_US',
+    'og:locale:alternate': 'en_GB',
   },
 
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://mirelleinspo.com",
-    siteName: "Mirellé Inspo",
-    title: "Mirellé Inspo | Nail Art Ideas, Trends & Tutorials 2025",
+    siteName: "Mirellé",
+    title: "Mirellé | Nail Art Ideas, Trends & Tutorials 2025",
     description: "Discover the latest nail art trends, creative tutorials, seasonal designs, and Pinterest-inspired nail ideas curated by Mirelle.",
     images: [
       {
@@ -145,26 +155,60 @@ export default function RootLayout({
   const baseUrl = 'https://mirelleinspo.com';
   
   // Enhanced structured data for AI bots
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": `${baseUrl}/#organization`,
-    "name": "Mirellé",
-    "alternateName": "Mirelle",
-    "url": baseUrl,
-    "logo": {
-      "@type": "ImageObject",
-      "url": `${baseUrl}/apple-touch-icon.png`,
-      "width": 512,
-      "height": 512
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${baseUrl}/#organization`,
+  "name": "Mirellé",
+  "alternateName": "Mirelle",
+  "url": baseUrl,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${baseUrl}/apple-touch-icon.png`,
+    "width": 512,
+    "height": 512
+  },
+  "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women",
+  "sameAs": [
+    "https://www.pinterest.com/mirelle_inspo",
+    "https://www.instagram.com/mirelle_inspo",
+    "https://www.wikidata.org/wiki/mirelle_inspo",
+    "https://x.com/mirelleinspo",
+  ],
+  
+  // 🆕 ADD PINTEREST-SPECIFIC SCHEMA
+  "image": `${baseUrl}/og-image.jpg`,
+  "potentialAction": {
+    "@type": "InteractAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.pinterest.com/pin/create/button/?url={url}&media={media}&description={description}",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
     },
-    "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women",
-    "sameAs": [
-      "https://www.pinterest.com/mirelle_inspo",
-      "https://www.instagram.com/mirelle_inspo",
-      "https://www.wikidata.org/wiki/mirelle_inspo",
-      "https://x.com/mirelleinspo",
-    ],
+    "name": "Save to Pinterest"
+  },
+  
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "url": `${baseUrl}/contact`
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Global",
+    "geographicArea": {
+      "@type": "Place",
+      "name": "Worldwide"
+    }
+  }
+
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",

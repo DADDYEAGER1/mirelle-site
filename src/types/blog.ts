@@ -1,5 +1,4 @@
 // src/types/blog.ts
-
 import { FAQItem, TutorialStep, TutorialMetadata, VideoMetadata } from '@/lib/generateSchemas';
 
 export interface BlogMetadata {
@@ -9,9 +8,12 @@ export interface BlogMetadata {
   tags: string[];
   image?: string;
   imageAlt?: string;
+  imageWidth?: number;       // 🆕 PHASE 3
+  imageHeight?: number;      // 🆕 PHASE 3
+  imageCaption?: string;     // 🆕 PHASE 3
   dateModified?: string;
   tldr?: TLDR;
-  faqItems?: FAQItem[];              // ✅ ADD THIS
+  faqItems?: FAQItem[];
   
   // Optional fields for backward compatibility
   date: string;
@@ -22,11 +24,8 @@ export interface BlogMetadata {
   rating?: Rating;
   canonical?: string;
   updatedDate?: string;
-  imageWidth?: number;
-  imageHeight?: number;
   wordCount?: number;
 }
-
 
 // Add this interface after imports, BEFORE BlogPost
 export interface TLDR {
@@ -41,6 +40,7 @@ export interface FAQ {
   question: string;
   answer: string;
 }
+
 // Rest of your types...
 export interface Category {
   name: string;
@@ -77,13 +77,14 @@ export interface BlogPost {
   author: string;
   tags: string[];
   image?: string;
+  imageAlt?: string;
+  imageWidth?: number;       // 🆕 PHASE 3
+  imageHeight?: number;      // 🆕 PHASE 3
+  imageCaption?: string;     // 🆕 PHASE 3
   readTime: number | string;
   canonical: string;
   updatedDate?: string;
   category?: string;
-  imageAlt?: string;
-  imageWidth?: number;
-  imageHeight?: number;
   dateModified?: string;
   wordCount?: number;
   faqItems?: FAQItem[];

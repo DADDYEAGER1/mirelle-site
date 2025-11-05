@@ -144,7 +144,7 @@ export const metadata: Metadata = {
 //       'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
 //     },
 //   },
-};
+// };
 
 export default function RootLayout({
   children,

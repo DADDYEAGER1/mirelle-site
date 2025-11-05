@@ -328,7 +328,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
         {/* Theme color */}
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#8b1f42" />
         
         {/* ADD WEB VITALS TRACKING HERE - AFTER ADSENSE */}
         <Script id="web-vitals" strategy="afterInteractive">

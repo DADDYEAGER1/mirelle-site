@@ -9,6 +9,8 @@ import StickyBottomNav from '@/components/ui/StickyBottomNav';
 import GlassCard from '@/components/ui/GlassCard';
 import { Fragment } from 'react';
 import InlineNewsletterForm from '@/components/Blog/InlineNewsletterForm';
+
+
 export const metadata: Metadata = {
   title: 'Nail Care Blog - Expert Tips, Trends & Tutorials | Mirelle',
   description: 'Discover 100+ expert nail care articles, seasonal trends, step-by-step tutorials, and professional manicure tips. Your ultimate guide to beautiful, healthy nails.',
@@ -22,12 +24,18 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
+    },
+    bingBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
     },
   },
   openGraph: {
@@ -41,7 +49,7 @@ export const metadata: Metadata = {
       url: 'https://mirelleinspo.com/blog-hero.jpg',
       width: 1200,
       height: 630,
-      alt: 'Mirelle Nail Care Blog',
+      alt: 'Mirelle Nail Care Blog - 100+ Expert Articles & Tutorials',
       type: 'image/jpeg',
     }],
   },
@@ -53,8 +61,36 @@ export const metadata: Metadata = {
     creator: '@mirelleinspo',
     site: '@mirelleinspo',
   },
+  other: {
+    // 🆕 PINTEREST META FOR BLOG LISTING
+    'pin:description': 'Browse 100+ expert nail care articles, seasonal trends, and tutorials. Get inspired with the latest nail art ideas and professional tips.',
+    'pin:media': 'https://mirelleinspo.com/blog-hero.jpg',
+    'pinterest-rich-pin': 'true',
+    
+    // 🆕 Enhanced image metadata
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'og:image:alt': 'Mirelle Nail Care Blog - 100+ Expert Articles & Tutorials',
+    'og:image:type': 'image/jpeg',
+    
+    // 🆕 Blog collection metadata
+    'og:type': 'blog',
+    'article:publisher': 'https://www.pinterest.com/mirelle_inspo',
+    
+    // 🆕 Pinterest category targeting
+    'pinterest:category': 'Beauty',
+    'pinterest:board_suggestion': 'Nail Care Tips',
+    
+    // 🆕 Content freshness signals
+    'og:updated_time': new Date().toISOString(),
+    
+    // 🆕 Twitter card enhancements
+    'twitter:label1': 'Articles',
+    'twitter:data1': '100+ posts',
+    'twitter:label2': 'Topics',
+    'twitter:data2': 'Nail Art, Trends, Tutorials',
+  },
 };
-
 interface PageProps {
   searchParams: {
     page?: string;

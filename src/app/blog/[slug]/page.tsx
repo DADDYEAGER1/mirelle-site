@@ -63,11 +63,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         'max-image-preview': 'large',
         'max-snippet': -1,
       },
-      bingBot: {
-        index: true,
-        follow: true,
-        'max-image-preview': 'large',
-      },
     },
     openGraph: {
       title: `${post.title} | Mirelle`,

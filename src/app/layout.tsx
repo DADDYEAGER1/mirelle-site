@@ -207,7 +207,7 @@ const organizationSchema = {
       "@type": "Place",
       "name": "Worldwide"
     }
-  }
+  },
 
     "contactPoint": {
       "@type": "ContactPoint",

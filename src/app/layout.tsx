@@ -189,31 +189,13 @@ const organizationSchema = {
     },
     "name": "Save to Pinterest"
   },
-  
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Customer Service",
-    "url": `${baseUrl}/contact`
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Worldwide"
-  },
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Global",
-    "geographicArea": {
-      "@type": "Place",
-      "name": "Worldwide"
-    }
-  },
 
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
       "url": `${baseUrl}/contact`
     },
-    // Global audience targeting
+
     "areaServed": {
       "@type": "Place",
       "name": "Worldwide"

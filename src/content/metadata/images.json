@@ -1,13 +1,79 @@
 {
-  "christmas-nail-designs-2025": "/images/blog/hero-christmas-nails-2025.jpg",
-  "easy-halloween-nail-designs": "/images/blog/easy-halloween-nail-designs-hero.jpg",
-  "goddess-nails-2025": "/images/blog/goddess-nails-2025-hero.jpg",
-  "halloween-nail-ideas-2025": "/images/blog/halloweenhero.png",
-  "holiday-vacation-nails-travel-guide": "/images/blog/hero-holiday-vacation-nails-travel-guide.jpg",
-  "new-year-nails-2025": "/images/blog/hero-new-year-nails-2025.jpg",
-  "thanksgiving-nails-2025": "/images/blog/hero-thanksgiving-nails-2025.jpg",
-  "valentine-nails-2026": "/images/blog/hero-valentine-nails-2026.jpg",
-  "vampire-nails-2025": "/images/blog/hero-vampire-nails-2025.jpg",
-  "wedding-nail-designs": "/images/blog/hero-wedding-nail-designs.jpg",
-  "winter-nails-2025": "/images/blog/hero-winter-nails-2025.jpg"
+  "christmas-nail-designs-2025": {
+    "url": "/images/blog/hero-christmas-nails-2025.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Christmas nails 2025 featuring festive red, green, and chrome designs for holiday season",
+    "caption": "50+ stunning Christmas nail designs for 2025"
+  },
+  "easy-halloween-nail-designs": {
+    "url": "/images/blog/easy-halloween-nail-designs-hero.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Easy Halloween nail designs with simple spooky patterns and beginner-friendly tutorials",
+    "caption": "Quick and easy Halloween nail art ideas"
+  },
+  "goddess-nails-2025": {
+    "url": "/images/blog/goddess-nails-2025-hero.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Goddess nails 2025 with ethereal gold accents and divine nail art inspiration",
+    "caption": "Divine goddess nail designs for 2025"
+  },
+  "halloween-nail-ideas-2025": {
+    "url": "/images/blog/halloweenhero.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Chrome ghost Halloween nails with gold drips and spiderweb art for 2025 spooky season",
+    "caption": "35+ Halloween nail ideas from chrome ghosts to 3D pumpkins"
+  },
+  "holiday-vacation-nails-travel-guide": {
+    "url": "/images/blog/hero-holiday-vacation-nails-travel-guide.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Travel-ready holiday vacation nails with durable designs perfect for beach and resort destinations",
+    "caption": "Complete guide to vacation-proof holiday nails"
+  },
+  "new-year-nails-2025": {
+    "url": "/images/blog/hero-new-year-nails-2025.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "New Year nails 2025 with glitter, metallics, and champagne-inspired celebration designs",
+    "caption": "Sparkling New Year's Eve nail art ideas"
+  },
+  "thanksgiving-nails-2025": {
+    "url": "/images/blog/hero-thanksgiving-nails-2025.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Thanksgiving nails 2025 featuring autumn leaves, pumpkins, and harvest-themed nail art",
+    "caption": "Festive Thanksgiving nail designs for fall"
+  },
+  "valentine-nails-2026": {
+    "url": "/images/blog/hero-valentine-nails-2026.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Valentine's Day nails 2026 with romantic hearts, pink ombre, and love-themed designs",
+    "caption": "Romantic Valentine's Day nail art collection"
+  },
+  "vampire-nails-2025": {
+    "url": "/images/blog/hero-vampire-nails-2025.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Vampire nails 2025 with blood drip effects, gothic black designs, and fang nail art",
+    "caption": "Dark and dramatic vampire nail designs"
+  },
+  "wedding-nail-designs": {
+    "url": "/images/blog/hero-wedding-nail-designs.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Wedding nail designs with elegant French tips, pearl accents, and bridal manicure ideas",
+    "caption": "Timeless wedding nail art for brides"
+  },
+  "winter-nails-2025": {
+    "url": "/images/blog/hero-winter-nails-2025.jpg",
+    "width": 1200,
+    "height": 630,
+    "alt": "Winter nails 2025 with snowflake patterns, icy blue chrome, and cozy sweater nail art",
+    "caption": "Stunning winter nail designs for cold weather"
+  }
 }

@@ -122,7 +122,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'og:see_also': canonicalUrl,
       
       // 🆕 Pinterest-friendly reading time
-      ...(post.readingTime && { 'twitter:label1': 'Reading time', 'twitter:data1': post.readingTime }),
+      ...(post.readTime && { 'twitter:label1': 'Reading time', 'twitter:data1': post.readTime }),
+
       ...(post.tags?.length && { 'twitter:label2': 'Filed under', 'twitter:data2': primaryTag }),
     },
   };

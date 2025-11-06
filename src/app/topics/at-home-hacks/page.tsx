@@ -17,11 +17,11 @@ import { Metadata } from "next";
    PAGE METADATA (Next.js)
    ------------------------- */
 export const metadata: Metadata = {
-  title: "At-Home Nail Hacks — Professional DIY Techniques & Secrets | Mirelle",
+  title: "47 Salon Nail Hacks You Can Do at Home (Save $100s)",
   description:
-    "Master professional at-home nail techniques with expert DIY hacks, salon-quality methods, and insider secrets. Learn proper nail preparation, application, and troubleshooting from certified technicians.",
+    "Master 47 pro nail hacks from certified techs. Get salon-quality nails at home in 15 minutes. No expensive tools needed. 10K+ women ditched salons using these!",
   keywords:
-    "at-home nail hacks, DIY manicure tips, professional nail techniques, salon-quality nails at home, nail care DIY, home manicure guide, nail application techniques, nail troubleshooting",
+    "at home nail hacks 2025, DIY manicure tips, salon nails at home, cheap nail hacks, professional nail techniques DIY, home manicure secrets, nail tech secrets, budget nail care, easy nail hacks, nail troubleshooting tips",
   authors: [{ name: "Mirelle" }],
   creator: "Mirelle",
   publisher: "Mirelle",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "At-Home Nail Hacks — Professional DIY Techniques | Mirelle",
+    title: "47 Salon Nail Hacks You Can Do at Home (Save $100s)",
     description:
-      "Master professional at-home nail techniques with expert DIY hacks and salon-quality methods from certified technicians.",
+      "Get 47 pro nail secrets from certified techs. Salon-quality results in 15 min. No expensive tools. 10K+ women saved hundreds ditching salons with these hacks!",
     type: "article",
     url: "https://mirelleinspo.com/topics/at-home-hacks",
     siteName: "Mirelle",
@@ -52,19 +52,33 @@ export const metadata: Metadata = {
         url: "https://mirelleinspo.com/athome.jpg",
         width: 1200,
         height: 630,
-        alt: "Professional At-Home Nail Techniques and DIY Hacks",
+        alt: "Woman applying professional salon-quality nail hacks at home with DIY tools and polish for budget manicure",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Nail Hacks — Professional DIY | Mirelle",
-    description: "Master salon-quality nail techniques at home",
+    title: "47 Salon Hacks for At-Home Nails (Techs' Secrets)",
+    description: "Pro nail secrets for salon results at home. Save $100s. 10K+ women approved. Get all 47 hacks now!",
     images: ["https://mirelleinspo.com/athome.jpg"],
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  other: {
+    "pin:description": "Master 47 pro nail hacks from certified techs. Get salon-quality nails at home in 15 minutes. No expensive tools needed. 10K+ women ditched salons using these!",
+    "pin:media": "https://mirelleinspo.com/athome.jpg",
+    "pinterest-rich-pin": "true",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:alt": "Woman applying professional salon-quality nail hacks at home with DIY tools and polish for budget manicure",
+    "og:image:type": "image/jpeg",
+    "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+    "pinterest:category": "DIY nail hacks",
+    "pinterest:board_suggestion": "Nail Care Tips",
+    "og:see_also": "https://mirelleinspo.com/topics/at-home-hacks",
   },
 };
-
 /* -------------------------
    Types & Helper Data
    ------------------------- */

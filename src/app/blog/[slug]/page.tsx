@@ -144,6 +144,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     tutorialMetadata: post.tutorialMetadata,
     videoMetadata: post.videoMetadata,
     galleryImages: post.galleryImages,
+    eventData: post.eventData, 
     // Note: rating removed for safety - add only when you have real reviews
   });
 
@@ -190,6 +191,13 @@ export default async function BlogPostPage({ params }: PageProps) {
         <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.imageGallerySchema) }} 
+        />
+      )}
+            {/* 🆕 EVENT SCHEMA */}
+      {schemas.eventSchema && (
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.eventSchema) }} 
         />
       )}
       

@@ -9,9 +9,9 @@ import StickyBottomNav from '@/components/ui/StickyBottomNav'; // ✅ NEW: Phase
 import InspoShowcase from '@/components/InspoShowcase'; // ✅ NEW
 
 export const metadata: Metadata = {
-  title: 'Mirelle - Premium Nail Care, Inspiration & Expert Tips',
-  description: 'Your ultimate destination for nail inspiration, expert care tips, trending designs, and premium nail products. Discover seasonal collections, tutorials, and professional advice.',
-  keywords: 'nail inspiration, nail care, press-on nails, nail art, nail trends 2025, seasonal nail designs, nail tips, nail products, nail beauty',
+  title: 'Mirellé - 500+ Nail Designs & Press-Ons from $3.99',
+  description: 'Get 500+ trending nail designs, premium press-ons from $3.99, and salon secrets. DIY tutorials, seasonal collections, expert tips. Join 50K+ nail lovers!',
+  keywords: 'nail inspiration 2025, press on nails, nail art ideas, trending nail designs, seasonal nails, DIY nail tutorials, cheap press ons, nail care tips, chrome nails, gel nail designs, holiday nails, nail products under $10',
   alternates: {
     canonical: 'https://mirelleinspo.com',
   },

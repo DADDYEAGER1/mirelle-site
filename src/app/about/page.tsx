@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { generateAboutPageSchema } from '@/lib/generateSchemas';
 
 export const metadata: Metadata = {
+  
   title: "About Mirellé - 50K+ Nail Lovers Trust Our Expert Tips",
   description: "Meet the team behind 1,000+ nail designs, 2.5M Pinterest views, and trusted tips. Our mission: Make salon-quality nails accessible to everyone. Join 50K+ DIY-ers!",
   keywords: [

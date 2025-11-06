@@ -88,19 +88,33 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     const titles = loadMetadataFile<Record<string, string>>('titles.json');
     const excerpts = loadMetadataFile<Record<string, string>>('excerpts.json');
     const tags = loadMetadataFile<Record<string, string[]>>('tags.json');
-    const images = loadMetadataFile<Record<string, ImageMetadata | string>>('images.json');
-    const imageAlts = loadMetadataFile<Record<string, string>>('imageAlts.json');
+
+    // merged alt+caption into images.json
+    const images = loadMetadataFile<Record<string, ImageMetadata>>('images.json');
+
     const dateModified = loadMetadataFile<Record<string, string>>('dateModified.json');
-    const tldrs = loadMetadataFile<Record<string, { summary: string[]; keyTakeaways: string[]; faqs?: any[]; creativeLine?: string }>>('tldr.json');
+    const tldrs = loadMetadataFile<
+      Record<
+        string,
+        {
+          summary: string[];
+          keyTakeaways: string[];
+          faqs?: any[];
+          creativeLine?: string;
+        }
+      >
+    >('tldr.json');
+
     const faqs = loadMetadataFile<Record<string, any[]>>('faqItems.json');
     const events = loadMetadataFile<Record<string, EventData>>('events.json');
-    // 🆕 TOPICAL MAPPING METADATA
+
     const topicalMaps = loadMetadataFile<Record<string, any>>('topicalMaps.json');
     const keywordStrategies = loadMetadataFile<Record<string, any>>('keywordStrategies.json');
     const contentRelations = loadMetadataFile<Record<string, any>>('contentRelations.json');
     const seoMetrics = loadMetadataFile<Record<string, any>>('seoMetrics.json');
 
     const imageData = images[slug];
+
     let imageUrl: string | undefined;
     let imageWidth: number | undefined;
     let imageHeight: number | undefined;
@@ -109,7 +123,8 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
 
     if (typeof imageData === 'string') {
       imageUrl = imageData;
-      imageAlt = imageAlts[slug];
+      // derive alt defaults if plain string (no object)
+      imageAlt = undefined;
       imageWidth = 1200;
       imageHeight = 630;
     } else if (imageData && typeof imageData === 'object') {

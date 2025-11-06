@@ -393,6 +393,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { BlogPost, BlogMetadata } from '@/types/blog';
 import { marked } from 'marked';
+import { EventData } from './generateSchemas';
 
 marked.setOptions({
   breaks: true,
@@ -484,6 +485,7 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     const dateModified = loadMetadataFile<Record<string, string>>('dateModified.json');
     const tldrs = loadMetadataFile<Record<string, { summary: string[]; keyTakeaways: string[]; faqs?: any[]; creativeLine?: string }>>('tldr.json');
     const faqs = loadMetadataFile<Record<string, any[]>>('faqItems.json');
+    const events = loadMetadataFile<Record<string, EventData>>('events.json');  // 🆕 ADD THIS
 
     // 🆕 PHASE 3: Handle both old string format and new object format
     const imageData = images[slug];
@@ -520,6 +522,7 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
       dateModified: dateModified[slug] || undefined,
       tldr: tldrs[slug] || undefined,
       faqItems: faqs[slug] || undefined,
+      eventData: events[slug] || undefined,
     };
   } catch (error) {
     console.error(`Error getting metadata for ${slug}:`, error);

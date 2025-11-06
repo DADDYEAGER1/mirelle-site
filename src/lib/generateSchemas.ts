@@ -176,7 +176,7 @@ export function generateBlogListSchema(posts: BlogMetadata[]) {
 // ============================================
 export function generateArticleSchema(post: BlogPost) {
   const articleUrl = `${baseUrl}/blog/${post.slug}`;
-  
+  const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/og-default.png`;
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',

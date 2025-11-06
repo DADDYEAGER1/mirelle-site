@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { BlogPost, BlogMetadata, TopicalMap, KeywordStrategy, ContentRelations, SeoMetrics } from '@/types/blog';
+import { BlogPost, BlogMetadata, TopicalMap, KeywordStrategy, ContentRelations, SeoMetrics, TutorialMetadata } from '@/types/blog';
 import { marked } from 'marked';
 import { EventData } from './generateSchemas';
 

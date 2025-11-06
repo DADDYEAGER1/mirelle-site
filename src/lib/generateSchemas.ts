@@ -1,4 +1,4 @@
-import { BlogPost, BlogMetadata } from '@/types/blog';
+import { BlogPost, BlogMetadata, TutorialMetadata } from '@/types/blog';
 import { generateAboutEntities } from './entityMapping';
 
 const baseUrl = 'https://mirelleinspo.com';

@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Work With Us | Mirellé Inspo - Brand Collaborations & Partnerships',
-  description: 'Partner with Mirellé Inspo for brand collaborations, product features, sponsored content, and Pinterest promotions. Reach our engaged nail art and beauty community.',
+  title: 'Partner With Mirellé - Reach 50K+ Nail Enthusiasts',
+  description: 'Collaborate with Mirellé. 50K+ monthly engaged users, 2.5M Pinterest views. Brand partnerships, sponsored content, product features. Let's grow together!',
   openGraph: {
-    title: 'Work With Us | Mirellé Inspo',
-    description: 'Partner with Mirellé Inspo for brand collaborations, product features, and sponsored content.',
+    title: 'Partner With Mirellé - Reach 50K+ Nail Lovers',
+    description: 'Join brands getting 50K+ impressions monthly. Sponsored posts, product reviews, Pinterest campaigns. Authentic nail community engagement guaranteed.',
     type: 'website',
   },
 };

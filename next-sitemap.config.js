@@ -17,7 +17,7 @@ module.exports = {
     '/500',
   ],
 
-  // ✅ Optimized robots.txt rules
+  // 🆕 PHASE 4: Enhanced robots.txt with better bot policies
   robotsTxtOptions: {
     policies: [
       {
@@ -38,9 +38,16 @@ module.exports = {
       { userAgent: 'YouBot', allow: '/' },
       { userAgent: 'Pinterestbot', allow: '/' },
       { userAgent: 'facebookexternalhit', allow: '/' },
+      // 🆕 PHASE 4: Additional important bots
+      { userAgent: 'PetalBot', allow: '/', crawlDelay: 2 }, // Huawei search
+      { userAgent: 'DuckDuckBot', allow: '/' },
+      { userAgent: 'Slurp', allow: '/' }, // Yahoo
+      { userAgent: 'Baiduspider', allow: '/', crawlDelay: 2 },
       // Block unwanted scrapers
       { userAgent: 'SemrushBot', disallow: '/' },
       { userAgent: 'AhrefsBot', disallow: '/' },
+      { userAgent: 'MJ12bot', disallow: '/' },
+      { userAgent: 'DotBot', disallow: '/' },
     ],
     additionalSitemaps: [
       'https://mirelleinspo.com/sitemap-images.xml'

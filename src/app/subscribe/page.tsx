@@ -3,11 +3,22 @@ import NewsletterForm from '@/components/NewsletterForm';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Subscribe to Mirellé Newsletter",
-  description: "Get exclusive nail art trends, seasonal designs, beauty tips, and product recommendations delivered to your inbox. Join the Mirellé community today!",
+  title: "Get 50+ Nail Hacks Free - Join 50K+ Nail Lovers Weekly",
+  description: "Join 50K+ getting weekly nail secrets, trending designs, exclusive discounts, and pro tips in their inbox. Free nail care guide + 20% off welcome gift inside!",
   openGraph: {
-    title: "Subscribe to Mirellé Newsletter",
-    description: "Get exclusive nail art trends, seasonal designs, and beauty tips delivered to your inbox.",
+    title: "Free Nail Secrets Every Week - Join 50K+ Subscribers",
+    description: "Get trending designs, salon secrets, and exclusive 20% off code. Free nail care guide when you subscribe. 50K+ nail lovers can't be wrong!",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Get Free Nail Hacks Weekly - 50K+ Already Subscribed",
+    description: "Trending designs, pro secrets, exclusive discounts. Free guide + 20% off inside!",
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  other: {
+    "pin:description": "Join 50K+ getting weekly nail secrets, trending designs, exclusive discounts in their inbox. Free nail care guide + 20% off welcome gift!",
+    "pinterest-rich-pin": "true",
   },
 };
 

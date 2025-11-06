@@ -35,7 +35,6 @@ export interface BlogMetadata {
     isVirtual: boolean;
   };
 }
-}
 
 // Add this interface after imports, BEFORE BlogPost
 export interface TLDR {

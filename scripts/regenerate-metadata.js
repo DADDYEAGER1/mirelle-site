@@ -1,15 +1,21 @@
 #!/usr/bin/env node
 
 /**
- * Regenerate Metadata Script
+ * ═══════════════════════════════════════════════════════════════
+ * 🟢 FINAL VERSION - PHASE 3 SMART MERGE (COPY THIS VERSION)
+ * ═══════════════════════════════════════════════════════════════
  * 
- * Re-extracts metadata from markdown files to JSON files
- * Useful after bulk edits to markdown frontmatter
- * Creates backup before overwriting
+ * Regenerate Metadata Script (Phase 3 - Smart Merge)
+ * 
+ * ✅ PRESERVES existing JSON data (no overwrites)
+ * ✅ ONLY ADDS new posts from MD files
+ * ✅ Enhanced images.json with width/height/alt/caption
+ * ✅ Removed imageAlts.json (merged into images.json)
  * 
  * Usage:
  *   node scripts/regenerate-metadata.js --dry-run
  *   node scripts/regenerate-metadata.js
+ *   node scripts/regenerate-metadata.js --force (overwrites all)
  *   node scripts/regenerate-metadata.js --no-backup
  */
 
@@ -22,13 +28,12 @@ const BLOG_DIR = path.join(process.cwd(), 'src/content/blogs');
 const METADATA_DIR = path.join(process.cwd(), 'src/content/metadata');
 const BACKUP_DIR = path.join(METADATA_DIR, 'backups');
 
-// ✅ Metadata JSON files to regenerate
+// 🆕 PHASE 3: Removed imageAlts.json
 const METADATA_FILES = [
   'titles.json',
   'excerpts.json',
   'tags.json',
   'images.json',
-  'imageAlts.json',
   'dateModified.json',
   'tldr.json',
   'faqItems.json'
@@ -38,6 +43,7 @@ const METADATA_FILES = [
 const args = process.argv.slice(2);
 const isDryRun = args.includes('--dry-run');
 const noBackup = args.includes('--no-backup');
+const forceOverwrite = args.includes('--force');
 
 // ✅ Create backup of existing metadata
 function createBackup() {
@@ -68,12 +74,41 @@ function createBackup() {
       }
     });
 
+    // Also backup old imageAlts.json if it exists
+    const oldImageAltsPath = path.join(METADATA_DIR, 'imageAlts.json');
+    if (fs.existsSync(oldImageAltsPath)) {
+      const destPath = path.join(backupSubDir, 'imageAlts.json');
+      fs.copyFileSync(oldImageAltsPath, destPath);
+      console.log(`✅ Backed up: imageAlts.json (legacy)`);
+    }
+
     console.log(`\n📁 Backup saved to: ${backupSubDir}\n`);
 
   } catch (error) {
     console.error('❌ Error creating backup:', error.message);
     process.exit(1);
   }
+}
+
+// 🆕 PHASE 3: Load existing JSON data to preserve manual edits
+function loadExistingMetadata() {
+  const existing = {};
+  
+  METADATA_FILES.forEach(file => {
+    const filepath = path.join(METADATA_DIR, file);
+    if (fs.existsSync(filepath)) {
+      try {
+        const content = fs.readFileSync(filepath, 'utf8');
+        const key = file.replace('.json', '');
+        existing[key] = JSON.parse(content);
+      } catch (error) {
+        console.warn(`⚠️  Could not load ${file}, will create fresh`);
+        existing[file.replace('.json', '')] = {};
+      }
+    }
+  });
+  
+  return existing;
 }
 
 // ✅ Extract TLDR from content
@@ -86,12 +121,58 @@ function extractTLDR(content) {
   return null;
 }
 
+// 🆕 PHASE 3: Generate enhanced image alt text based on title and tags
+function generateImageAlt(title, tags, category) {
+  // Remove common words for cleaner alt text
+  const stopWords = ['the', 'a', 'an', 'and', 'or', 'but', 'in', 'with', 'for', 'on', 'at', 'to', 'from'];
+  
+  const titleWords = title
+    .toLowerCase()
+    .split(/\s+/)
+    .filter(word => !stopWords.includes(word) && word.length > 2);
+  
+  // Take first 2-3 relevant tags
+  const relevantTags = (tags || []).slice(0, 3);
+  
+  // Build descriptive alt text
+  let alt = title;
+  
+  if (relevantTags.length > 0) {
+    const tagText = relevantTags.join(', ');
+    alt += ` featuring ${tagText}`;
+  }
+  
+  if (category) {
+    alt += ` for ${category.toLowerCase()}`;
+  }
+  
+  return alt;
+}
+
+// 🆕 PHASE 3: Generate caption from excerpt or title
+function generateImageCaption(excerpt, title) {
+  if (excerpt && excerpt.length > 20) {
+    // Take first sentence of excerpt
+    const firstSentence = excerpt.split(/[.!?]/)[0].trim();
+    return firstSentence.length > 80 
+      ? firstSentence.substring(0, 80) + '...' 
+      : firstSentence;
+  }
+  return title;
+}
+
 // ✅ Main regeneration function
 async function regenerateMetadata() {
-  console.log('🔄 Regenerating Metadata from Markdown Files...\n');
+  console.log('🔄 Regenerating Metadata (Smart Merge Mode)...\n');
 
   if (isDryRun) {
     console.log('🧪 DRY RUN MODE - No files will be modified\n');
+  }
+
+  if (forceOverwrite) {
+    console.log('⚠️  FORCE MODE - Will overwrite all existing data\n');
+  } else {
+    console.log('✅ PRESERVE MODE - Will keep existing JSON data, only add new posts\n');
   }
 
   try {
@@ -109,17 +190,22 @@ async function regenerateMetadata() {
 
     console.log(`📊 Processing ${files.length} blog posts...\n`);
 
-    // Initialize metadata objects
+    // 🆕 Load existing metadata (unless force mode)
+    const existingMetadata = forceOverwrite ? {} : loadExistingMetadata();
+
+    // Initialize metadata objects with existing data
     const metadata = {
-      titles: {},
-      excerpts: {},
-      tags: {},
-      images: {},
-      imageAlts: {},
-      dateModified: {},
-      tldr: {},
-      faqItems: {}
+      titles: existingMetadata.titles || {},
+      excerpts: existingMetadata.excerpts || {},
+      tags: existingMetadata.tags || {},
+      images: existingMetadata.images || {},
+      dateModified: existingMetadata.dateModified || {},
+      tldr: existingMetadata.tldr || {},
+      faqItems: existingMetadata.faqItems || {}
     };
+
+    let newPosts = 0;
+    let skippedPosts = 0;
 
     // Extract metadata from each post
     files.forEach(file => {
@@ -128,26 +214,56 @@ async function regenerateMetadata() {
       const fileContent = fs.readFileSync(filePath, 'utf8');
       const { data, content } = matter(fileContent);
 
-      // Extract each metadata field
-      metadata.titles[slug] = data.title || 'Untitled';
-      metadata.excerpts[slug] = data.excerpt || '';
-      metadata.tags[slug] = data.tags || [];
-      metadata.images[slug] = data.image || '';
-      metadata.imageAlts[slug] = data.imageAlt || '';
-      metadata.dateModified[slug] = data.dateModified || data.updatedDate || data.date || new Date().toISOString().split('T')[0];
-      
-      // Extract TLDR if exists
-      const tldr = extractTLDR(content);
-      if (tldr) {
-        metadata.tldr[slug] = tldr;
-      }
+      // 🆕 Check if post already exists in JSON
+      const isNewPost = !metadata.titles[slug] || forceOverwrite;
 
-      // Extract FAQ items if exists
-      if (data.faqItems && Array.isArray(data.faqItems)) {
-        metadata.faqItems[slug] = data.faqItems;
-      }
+      if (isNewPost) {
+        newPosts++;
+        
+        // Extract basic metadata
+        metadata.titles[slug] = data.title || 'Untitled';
+        metadata.excerpts[slug] = data.excerpt || '';
+        metadata.tags[slug] = data.tags || [];
+        metadata.dateModified[slug] = data.dateModified || data.updatedDate || data.date || new Date().toISOString().split('T')[0];
+        
+        // 🆕 PHASE 3: Enhanced image metadata object
+        if (data.image) {
+          const imageAlt = data.imageAlt || generateImageAlt(
+            data.title,
+            data.tags,
+            data.category
+          );
+          
+          const imageCaption = data.imageCaption || generateImageCaption(
+            data.excerpt,
+            data.title
+          );
 
-      console.log(`✅ Processed: ${slug}`);
+          metadata.images[slug] = {
+            url: data.image,
+            width: data.imageWidth || 1200,
+            height: data.imageHeight || 630,
+            alt: imageAlt,
+            caption: imageCaption
+          };
+        }
+
+        // Extract TLDR if exists
+        const tldr = extractTLDR(content);
+        if (tldr) {
+          metadata.tldr[slug] = tldr;
+        }
+
+        // Extract FAQ items if exists
+        if (data.faqItems && Array.isArray(data.faqItems)) {
+          metadata.faqItems[slug] = data.faqItems;
+        }
+
+        console.log(`✅ Added new: ${slug}`);
+      } else {
+        skippedPosts++;
+        console.log(`⏭️  Skipped existing: ${slug}`);
+      }
     });
 
     console.log('\n');
@@ -165,6 +281,14 @@ async function regenerateMetadata() {
         fs.writeFileSync(filepath, JSON.stringify(data, null, 2), 'utf8');
         console.log(`💾 Saved: ${filename} (${Object.keys(data).length} entries)`);
       });
+
+      // 🆕 PHASE 3: Remove old imageAlts.json if it exists
+      const oldImageAltsPath = path.join(METADATA_DIR, 'imageAlts.json');
+      if (fs.existsSync(oldImageAltsPath)) {
+        fs.unlinkSync(oldImageAltsPath);
+        console.log(`🗑️  Removed: imageAlts.json (migrated to images.json)`);
+      }
+
     } else {
       // Dry run: just show what would be created
       Object.entries(metadata).forEach(([key, data]) => {
@@ -174,8 +298,11 @@ async function regenerateMetadata() {
     }
 
     console.log('\n═══════════════════════════════════════════════');
-    console.log(`✅ Processed: ${files.length} posts`);
+    console.log(`✅ Total posts: ${files.length}`);
+    console.log(`🆕 New posts added: ${newPosts}`);
+    console.log(`💾 Existing posts preserved: ${skippedPosts}`);
     console.log(`📝 Generated: ${Object.keys(metadata).length} metadata files`);
+    console.log(`🆕 Enhanced: images.json now includes width/height/alt/caption`);
     
     if (isDryRun) {
       console.log('\n🧪 DRY RUN COMPLETE - Run without --dry-run to apply changes');
@@ -184,14 +311,18 @@ async function regenerateMetadata() {
       if (!noBackup) {
         console.log('💡 Previous metadata backed up to:', BACKUP_DIR);
       }
+      if (!forceOverwrite) {
+        console.log('💡 To overwrite all data, use --force flag');
+      }
     }
     console.log('═══════════════════════════════════════════════\n');
 
   } catch (error) {
     console.error('❌ Error:', error.message);
+    console.error(error.stack);
     process.exit(1);
   }
 }
 
 // ✅ Run script
-regenerateMetadata();regeeg
+regenerateMetadata();

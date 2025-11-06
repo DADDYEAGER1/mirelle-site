@@ -1,5 +1,5 @@
 // src/types/blog.ts
-import { FAQItem, TutorialMetadata, VideoMetadata } from '@/lib/generateSchemas';
+import { FAQItem} from '@/lib/generateSchemas';
 
 export interface BlogMetadata {
   slug: string;

@@ -96,7 +96,7 @@ export async function generateMetadata({
       "og:image:type": "image/jpeg",
       "article:publisher": "https://www.pinterest.com/mirelle_inspo",
       "pinterest:category": design.replace(/-/g, ' '),
-      "pinterest:board_suggestion": `${designData.title} Inspiration`,
+      "pinterest:board_suggestion": `${designData.slug} Inspiration`,
       "og:see_also": canonicalUrl,
     },
   };

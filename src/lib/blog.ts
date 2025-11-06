@@ -1,8 +1,10 @@
+
 // import fs from 'fs';
 // import path from 'path';
 // import matter from 'gray-matter';
 // import { BlogPost, BlogMetadata } from '@/types/blog';
 // import { marked } from 'marked';
+// import { EventData } from './generateSchemas';
 
 // marked.setOptions({
 //   breaks: true,
@@ -12,7 +14,6 @@
 // const BLOG_DIRECTORY = path.join(process.cwd(), 'src/content/blogs');
 // const METADATA_DIRECTORY = path.join(process.cwd(), 'src/content/metadata');
 
-// // ✅ NEW - In-memory cache for metadata
 // interface CacheEntry<T> {
 //   data: T;
 //   timestamp: number;
@@ -20,18 +21,15 @@
 
 // class MetadataCache {
 //   private cache = new Map<string, CacheEntry<any>>();
-//   private readonly TTL = 3600000; // 1 hour in milliseconds
+//   private readonly TTL = 3600000;
 
 //   get<T>(key: string): T | null {
 //     const entry = this.cache.get(key);
 //     if (!entry) return null;
-
-//     // Check if cache is expired
 //     if (Date.now() - entry.timestamp > this.TTL) {
 //       this.cache.delete(key);
 //       return null;
 //     }
-
 //     return entry.data as T;
 //   }
 
@@ -46,7 +44,6 @@
 //     this.cache.clear();
 //   }
 
-//   // Get cache statistics
 //   getStats() {
 //     return {
 //       size: this.cache.size,
@@ -55,26 +52,30 @@
 //   }
 // }
 
-// // ✅ NEW - Global cache instance
 // const metadataCache = new MetadataCache();
 
-// // ✅ NEW - Helper to load metadata files with caching
+// // 🆕 PHASE 3: Enhanced image metadata interface
+// interface ImageMetadata {
+//   url: string;
+//   width: number;
+//   height: number;
+//   alt: string;
+//   caption?: string;
+// }
+
 // function loadMetadataFile<T>(filename: string): T {
 //   const cacheKey = `metadata:${filename}`;
   
-//   // Try to get from cache first
 //   const cached = metadataCache.get<T>(cacheKey);
 //   if (cached) {
 //     return cached;
 //   }
 
-//   // Load from file system
 //   try {
 //     const filePath = path.join(METADATA_DIRECTORY, filename);
 //     const content = fs.readFileSync(filePath, 'utf8');
 //     const data = JSON.parse(content) as T;
     
-//     // Store in cache
 //     metadataCache.set(cacheKey, data);
     
 //     return data;
@@ -84,27 +85,55 @@
 //   }
 // }
 
-// // ✅ NEW - Get metadata from JSON files
+// // 🔄 PHASE 3: Updated to handle new image structure
 // function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
 //   try {
 //     const titles = loadMetadataFile<Record<string, string>>('titles.json');
 //     const excerpts = loadMetadataFile<Record<string, string>>('excerpts.json');
 //     const tags = loadMetadataFile<Record<string, string[]>>('tags.json');
-//     const images = loadMetadataFile<Record<string, string>>('images.json');
+//     const images = loadMetadataFile<Record<string, ImageMetadata | string>>('images.json');
 //     const imageAlts = loadMetadataFile<Record<string, string>>('imageAlts.json');
 //     const dateModified = loadMetadataFile<Record<string, string>>('dateModified.json');
 //     const tldrs = loadMetadataFile<Record<string, { summary: string[]; keyTakeaways: string[]; faqs?: any[]; creativeLine?: string }>>('tldr.json');
 //     const faqs = loadMetadataFile<Record<string, any[]>>('faqItems.json');
+//     const events = loadMetadataFile<Record<string, EventData>>('events.json');  // 🆕 ADD THIS
+
+//     // 🆕 PHASE 3: Handle both old string format and new object format
+//     const imageData = images[slug];
+//     let imageUrl: string | undefined;
+//     let imageWidth: number | undefined;
+//     let imageHeight: number | undefined;
+//     let imageAlt: string | undefined;
+//     let imageCaption: string | undefined;
+
+//     if (typeof imageData === 'string') {
+//       // Old format: just URL string
+//       imageUrl = imageData;
+//       imageAlt = imageAlts[slug];
+//       imageWidth = 1200;
+//       imageHeight = 630;
+//     } else if (imageData && typeof imageData === 'object') {
+//       // New format: full metadata object
+//       imageUrl = imageData.url;
+//       imageWidth = imageData.width;
+//       imageHeight = imageData.height;
+//       imageAlt = imageData.alt;
+//       imageCaption = imageData.caption;
+//     }
 
 //     return {
-//       title: titles[slug] || undefined,           // ✅ Return undefined if not found
+//       title: titles[slug] || undefined,
 //       excerpt: excerpts[slug] || undefined,
 //       tags: tags[slug] || undefined,
-//       image: images[slug] || undefined,
-//       imageAlt: imageAlts[slug] || undefined,
+//       image: imageUrl,
+//       imageAlt: imageAlt,
+//       imageWidth: imageWidth,
+//       imageHeight: imageHeight,
+//       imageCaption: imageCaption,
 //       dateModified: dateModified[slug] || undefined,
-//       tldr: tldrs[slug] || undefined,            // ✅ This will be undefined if not in JSON
-//       faqItems: faqs[slug] || undefined,         // ✅ This will be undefined if not in JSON
+//       tldr: tldrs[slug] || undefined,
+//       faqItems: faqs[slug] || undefined,
+//       eventData: events[slug] || undefined,
 //     };
 //   } catch (error) {
 //     console.error(`Error getting metadata for ${slug}:`, error);
@@ -112,7 +141,6 @@
 //   }
 // }
 
-// // ✅ NEW - Get core metadata from frontmatter
 // function getMetadataFromFrontmatter(slug: string): Partial<BlogMetadata> {
 //   try {
 //     const filePath = path.join(BLOG_DIRECTORY, `${slug}.md`);
@@ -125,7 +153,6 @@
 //       readTime: data.readTime,
 //       category: data.category,
 //       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
-
 //     };
 //   } catch (error) {
 //     console.error(`Error reading frontmatter for ${slug}:`, error);
@@ -133,11 +160,9 @@
 //   }
 // }
 
-// // 🔄 UPDATED - getAllBlogPosts with caching
 // export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
 //   const cacheKey = 'all-blog-posts';
   
-//   // Try cache first
 //   const cached = metadataCache.get<BlogMetadata[]>(cacheKey);
 //   if (cached) {
 //     return cached;
@@ -150,7 +175,6 @@
 //       .map(file => {
 //         const slug = file.replace('.md', '');
         
-//         // ✅ NEW - Merge JSON metadata with frontmatter
 //         const jsonMetadata = getMetadataFromJSON(slug);
 //         const frontmatterMetadata = getMetadataFromFrontmatter(slug);
         
@@ -163,17 +187,20 @@
 //           tags: jsonMetadata.tags || [],
 //           image: jsonMetadata.image || null,
 //           imageAlt: jsonMetadata.imageAlt,
+//           imageWidth: jsonMetadata.imageWidth,
+//           imageHeight: jsonMetadata.imageHeight,
+//           imageCaption: jsonMetadata.imageCaption,
 //           readTime: frontmatterMetadata.readTime || '5 min',
 //           category: frontmatterMetadata.category,
 //           canonical: frontmatterMetadata.canonical || `https://mirelleinspo.com/blog/${slug}`,
 //           dateModified: jsonMetadata.dateModified,
 //           tldr: jsonMetadata.tldr,
+//            eventData: jsonMetadata.eventData,
 //           faqItems: jsonMetadata.faqItems,
 //         } as BlogMetadata;
 //       })
 //       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
     
-//     // Store in cache
 //     metadataCache.set(cacheKey, posts);
     
 //     return posts;
@@ -183,11 +210,9 @@
 //   }
 // }
 
-// // 🔄 UPDATED - getBlogPost with caching
 // export async function getBlogPost(slug: string): Promise<BlogPost | null> {
 //   const cacheKey = `blog-post:${slug}`;
   
-//   // Try cache first
 //   const cached = metadataCache.get<BlogPost>(cacheKey);
 //   if (cached) {
 //     return cached;
@@ -198,10 +223,8 @@
 //     const fileContent = fs.readFileSync(filePath, 'utf8');
 //     const { data, content: markdownContent } = matter(fileContent);
     
-//     // Convert markdown to HTML
 //     let htmlContent = await marked(markdownContent);
     
-//     // Add IDs to H2 headings using regex
 //     htmlContent = htmlContent.replace(
 //       /<h2>(.*?)<\/h2>/g,
 //       (match, text) => {
@@ -214,7 +237,6 @@
 //       }
 //     );
     
-//     // ✅ NEW - Merge JSON metadata
 //     const jsonMetadata = getMetadataFromJSON(slug);
     
 //     const post: BlogPost = {
@@ -227,15 +249,18 @@
 //       tags: jsonMetadata.tags || data.tags || [],
 //       image: jsonMetadata.image || data.image || null,
 //       imageAlt: jsonMetadata.imageAlt || data.imageAlt,
+//       imageWidth: jsonMetadata.imageWidth || data.imageWidth || 1200,
+//       imageHeight: jsonMetadata.imageHeight || data.imageHeight || 630,
+//       imageCaption: jsonMetadata.imageCaption || data.imageCaption,
 //       readTime: data.readTime || '5 min',
 //       category: data.category,
 //       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
 //       dateModified: jsonMetadata.dateModified || data.dateModified,
 //       tldr: jsonMetadata.tldr || data.tldr,
+//       eventData: jsonMetadata.eventData || data.eventData,
 //       faqItems: jsonMetadata.faqItems || data.faqItems,
 //     };
     
-//     // Store in cache
 //     metadataCache.set(cacheKey, post);
     
 //     return post;
@@ -257,7 +282,6 @@
 //   }
 // }
 
-// // ✅ NEW - Get posts by category with caching
 // export async function getPostsByCategory(category: string): Promise<BlogMetadata[]> {
 //   const cacheKey = `category:${category}`;
   
@@ -271,7 +295,6 @@
 //   return filtered;
 // }
 
-// // ✅ NEW - Get posts by tag with caching
 // export async function getPostsByTag(tag: string): Promise<BlogMetadata[]> {
 //   const cacheKey = `tag:${tag}`;
   
@@ -287,7 +310,6 @@
 //   return filtered;
 // }
 
-// // ✅ NEW - Get all categories
 // export async function getAllCategories() {
 //   const allPosts = await getAllBlogPosts();
 //   const categoryMap = new Map<string, number>();
@@ -305,7 +327,6 @@
 //   }));
 // }
 
-// // ✅ NEW - Get all tags
 // export async function getAllTags() {
 //   const allPosts = await getAllBlogPosts();
 //   const tagMap = new Map<string, number>();
@@ -318,30 +339,26 @@
   
 //   return Array.from(tagMap.entries())
 //     .map(([slug, count]) => ({
-//       name: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '), // Convert slug to readable name
-//       slug: slug, // Keep original slug from markdown - DON'T transform it
+//       name: slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+//       slug: slug,
 //       count,
 //     }))
 //     .sort((a, b) => b.count - a.count);
 // }
 
-// // ✅ NEW - Get related posts
 // export async function getRelatedPosts(currentSlug: string, limit: number = 3): Promise<BlogMetadata[]> {
 //   const currentPost = await getBlogPost(currentSlug);
 //   if (!currentPost) return [];
   
 //   const allPosts = await getAllBlogPosts();
   
-//   // Score posts by relevance
 //   const scoredPosts = allPosts
 //     .filter(post => post.slug !== currentSlug)
 //     .map(post => {
 //       let score = 0;
       
-//       // Same category = +3 points
 //       if (post.category === currentPost.category) score += 3;
       
-//       // Shared tags = +1 point per tag
 //       const sharedTags = post.tags?.filter(tag => 
 //         currentPost.tags?.includes(tag)
 //       ).length || 0;
@@ -357,7 +374,6 @@
 //   return scoredPosts;
 // }
 
-// // ✅ NEW - Get paginated posts
 // export async function getPaginatedPosts(page: number = 1, perPage: number = 12): Promise<{
 //   posts: BlogMetadata[];
 //   totalPages: number;
@@ -379,15 +395,16 @@
 //   };
 // }
 
-// // ✅ NEW - Clear cache (useful for development)
 // export function clearBlogCache() {
 //   metadataCache.clear();
 // }
 
-// // ✅ NEW - Get cache stats (useful for debugging)
 // export function getCacheStats() {
 //   return metadataCache.getStats();
 // }
+
+
+
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -443,7 +460,6 @@ class MetadataCache {
 
 const metadataCache = new MetadataCache();
 
-// 🆕 PHASE 3: Enhanced image metadata interface
 interface ImageMetadata {
   url: string;
   width: number;
@@ -474,7 +490,6 @@ function loadMetadataFile<T>(filename: string): T {
   }
 }
 
-// 🔄 PHASE 3: Updated to handle new image structure
 function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
   try {
     const titles = loadMetadataFile<Record<string, string>>('titles.json');
@@ -485,9 +500,13 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     const dateModified = loadMetadataFile<Record<string, string>>('dateModified.json');
     const tldrs = loadMetadataFile<Record<string, { summary: string[]; keyTakeaways: string[]; faqs?: any[]; creativeLine?: string }>>('tldr.json');
     const faqs = loadMetadataFile<Record<string, any[]>>('faqItems.json');
-    const events = loadMetadataFile<Record<string, EventData>>('events.json');  // 🆕 ADD THIS
+    const events = loadMetadataFile<Record<string, EventData>>('events.json');
+    // 🆕 TOPICAL MAPPING METADATA
+    const topicalMaps = loadMetadataFile<Record<string, any>>('topicalMaps.json');
+    const keywordStrategies = loadMetadataFile<Record<string, any>>('keywordStrategies.json');
+    const contentRelations = loadMetadataFile<Record<string, any>>('contentRelations.json');
+    const seoMetrics = loadMetadataFile<Record<string, any>>('seoMetrics.json');
 
-    // 🆕 PHASE 3: Handle both old string format and new object format
     const imageData = images[slug];
     let imageUrl: string | undefined;
     let imageWidth: number | undefined;
@@ -496,13 +515,11 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     let imageCaption: string | undefined;
 
     if (typeof imageData === 'string') {
-      // Old format: just URL string
       imageUrl = imageData;
       imageAlt = imageAlts[slug];
       imageWidth = 1200;
       imageHeight = 630;
     } else if (imageData && typeof imageData === 'object') {
-      // New format: full metadata object
       imageUrl = imageData.url;
       imageWidth = imageData.width;
       imageHeight = imageData.height;
@@ -523,6 +540,10 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
       tldr: tldrs[slug] || undefined,
       faqItems: faqs[slug] || undefined,
       eventData: events[slug] || undefined,
+      topicalMap: topicalMaps[slug] || undefined,
+      keywordStrategy: keywordStrategies[slug] || undefined,
+      contentRelations: contentRelations[slug] || undefined,
+      seoMetrics: seoMetrics[slug] || undefined,
     };
   } catch (error) {
     console.error(`Error getting metadata for ${slug}:`, error);
@@ -542,6 +563,7 @@ function getMetadataFromFrontmatter(slug: string): Partial<BlogMetadata> {
       readTime: data.readTime,
       category: data.category,
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
+      wordCount: data.wordCount,
     };
   } catch (error) {
     console.error(`Error reading frontmatter for ${slug}:`, error);
@@ -583,9 +605,14 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           category: frontmatterMetadata.category,
           canonical: frontmatterMetadata.canonical || `https://mirelleinspo.com/blog/${slug}`,
           dateModified: jsonMetadata.dateModified,
+          wordCount: frontmatterMetadata.wordCount,
           tldr: jsonMetadata.tldr,
-           eventData: jsonMetadata.eventData,
+          eventData: jsonMetadata.eventData,
           faqItems: jsonMetadata.faqItems,
+          topicalMap: jsonMetadata.topicalMap,
+          keywordStrategy: jsonMetadata.keywordStrategy,
+          contentRelations: jsonMetadata.contentRelations,
+          seoMetrics: jsonMetadata.seoMetrics,
         } as BlogMetadata;
       })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -645,9 +672,14 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       category: data.category,
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
       dateModified: jsonMetadata.dateModified || data.dateModified,
+      wordCount: data.wordCount,
       tldr: jsonMetadata.tldr || data.tldr,
       eventData: jsonMetadata.eventData || data.eventData,
       faqItems: jsonMetadata.faqItems || data.faqItems,
+      topicalMap: jsonMetadata.topicalMap || data.topicalMap,
+      keywordStrategy: jsonMetadata.keywordStrategy || data.keywordStrategy,
+      contentRelations: jsonMetadata.contentRelations || data.contentRelations,
+      seoMetrics: jsonMetadata.seoMetrics || data.seoMetrics,
     };
     
     metadataCache.set(cacheKey, post);
@@ -741,6 +773,18 @@ export async function getRelatedPosts(currentSlug: string, limit: number = 3): P
   
   const allPosts = await getAllBlogPosts();
   
+  // 🆕 TOPICAL MAPPING: Prioritize related clusters first
+  if (currentPost.contentRelations?.relatedPostSlugs) {
+    const relatedSlugs = currentPost.contentRelations.relatedPostSlugs;
+    const relatedPosts = allPosts
+      .filter(post => relatedSlugs.includes(`/blog/${post.slug}`) || relatedSlugs.includes(post.slug))
+      .slice(0, limit);
+    
+    if (relatedPosts.length >= limit) {
+      return relatedPosts;
+    }
+  }
+  
   const scoredPosts = allPosts
     .filter(post => post.slug !== currentSlug)
     .map(post => {
@@ -781,6 +825,56 @@ export async function getPaginatedPosts(page: number = 1, perPage: number = 12):
     totalPages,
     currentPage: page,
     totalPosts,
+  };
+}
+
+// 🆕 TOPICAL MAPPING UTILITY FUNCTIONS
+export async function getClusterPosts(pillarSlug: string): Promise<BlogMetadata[]> {
+  const allPosts = await getAllBlogPosts();
+  return allPosts.filter(post => 
+    post.topicalMap?.position === 'cluster' && 
+    (post.topicalMap.parentPillar === pillarSlug || post.topicalMap.parentPillar === `/blog/${pillarSlug}`)
+  );
+}
+
+export async function getPillarPosts(): Promise<BlogMetadata[]> {
+  const allPosts = await getAllBlogPosts();
+  return allPosts.filter(post => post.topicalMap?.position === 'pillar');
+}
+
+export async function detectCannibalization(slug: string): Promise<{
+  hasRisk: boolean;
+  competingPosts: BlogMetadata[];
+  recommendations: string[];
+}> {
+  const currentPost = await getBlogPost(slug);
+  if (!currentPost) return { hasRisk: false, competingPosts: [], recommendations: [] };
+  
+  const allPosts = await getAllBlogPosts();
+  const competingPosts: BlogMetadata[] = [];
+  const recommendations: string[] = [];
+  
+  const primaryKeyword = currentPost.topicalMap?.primaryKeyword;
+  
+  if (primaryKeyword) {
+    allPosts.forEach(post => {
+      if (post.slug === slug) return;
+      
+      if (post.topicalMap?.primaryKeyword === primaryKeyword) {
+        competingPosts.push(post);
+        recommendations.push(`Post "${post.title}" targets same primary keyword: "${primaryKeyword}"`);
+      }
+      
+      if (currentPost.keywordStrategy?.avoidKeywords?.includes(post.topicalMap?.primaryKeyword || '')) {
+        recommendations.push(`Warning: You're targeting "${post.topicalMap?.primaryKeyword}" which should be avoided`);
+      }
+    });
+  }
+  
+  return {
+    hasRisk: competingPosts.length > 0 || recommendations.length > 0,
+    competingPosts,
+    recommendations,
   };
 }
 

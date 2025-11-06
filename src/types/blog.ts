@@ -26,6 +26,15 @@ export interface BlogMetadata {
   canonical?: string;
   updatedDate?: string;
   wordCount?: number;
+  eventData?: {              // 🆕 ADD THIS
+    name: string;
+    startDate: string;
+    endDate: string;
+    eventStatus: string;
+    eventAttendanceMode: string;
+    isVirtual: boolean;
+  };
+}
 }
 
 // Add this interface after imports, BEFORE BlogPost
@@ -94,4 +103,12 @@ export interface BlogPost {
   videoMetadata?: VideoMetadata;
   galleryImages?: GalleryImage[];
   tldr?: TLDR;
+  eventData?: {              // 🆕 ADD THIS
+    name: string;
+    startDate: string;
+    endDate: string;
+    eventStatus: string;
+    eventAttendanceMode: string;
+    isVirtual: boolean;
+  };
 }

@@ -2,19 +2,67 @@ import type { Metadata } from 'next';
 import { generateAboutPageSchema } from '@/lib/generateSchemas';
 
 export const metadata: Metadata = {
-  title: 'About Mirellé | Expert Nail Art Inspiration Platform',
-  description: 'Mirellé is a premier digital platform delivering expert nail art inspiration, seasonal trends, and professional tutorials. Learn about our mission to make salon-quality nail care accessible to everyone.',
-  openGraph: {
-    title: 'About Mirellé | Expert Nail Art Inspiration Platform',
-    description: 'Discover how Mirellé combines expert curation, trend analysis, and professional education to deliver world-class nail art inspiration.',
-    url: 'https://mirelleinspo.com/about',
-    type: 'website',
-  },
+  title: "About Mirellé - 50K+ Nail Lovers Trust Our Expert Tips",
+  description: "Meet the team behind 1,000+ nail designs, 2.5M Pinterest views, and trusted tips. Our mission: Make salon-quality nails accessible to everyone. Join 50K+ DIY-ers!",
+  keywords: [
+    "about Mirellé",
+    "nail inspiration platform",
+    "nail art community",
+    "trusted nail tips",
+    "DIY nail experts",
+    "nail design curators",
+    "Mirellé mission",
+    "nail care education"
+  ],
+  authors: [{ name: "Mirelle" }],
+  creator: "Mirelle",
+  publisher: "Mirelle",
   alternates: {
     canonical: 'https://mirelleinspo.com/about',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "About Mirellé - The Team Behind 1,000+ Nail Designs",
+    description: "Discover how we curate 1,000+ designs, reach 2.5M on Pinterest, and help 50K+ achieve salon nails at home. Our story, mission, and nail obsession explained!",
+    url: 'https://mirelleinspo.com/about',
+    type: 'website',
+    siteName: "Mirelle",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://mirelleinspo.com/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "About Mirellé nail inspiration platform trusted by 50K+ nail enthusiasts for expert DIY tips and trending designs",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Mirellé - 50K+ Trust Our Nail Expertise",
+    description: "Meet the team behind 1,000+ designs, 2.5M Pinterest views. Our mission: Salon nails for everyone!",
+    images: ["https://mirelleinspo.com/og-default.png"],
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  other: {
+    "pin:description": "Learn about Mirellé - trusted by 50K+ for expert nail tips, 1,000+ designs, 2.5M Pinterest views. Our mission: Make salon nails accessible to everyone!",
+    "pinterest-rich-pin": "true",
+    "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+    "og:see_also": "https://mirelleinspo.com/about",
+  },
 };
-
 export default function AboutPage() {
   const baseUrl = 'https://mirelleinspo.com';
   const aboutPageSchema = generateAboutPageSchema();

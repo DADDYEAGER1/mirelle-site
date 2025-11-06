@@ -23,7 +23,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL('https://mirelleinspo.com'),
   title: {
-    default: "Mirellé Inspo | Nail Art Ideas, Trends & Tutorials 2025",
+    default: "Mirellé | Nail Art Ideas, Trends & Tutorials 2025",
     template: "%s | Mirellé"
   },
   description: "Explore 2025's top nail art trends, DIY tutorials, seasonal nail designs, and expert tips. Get inspired for Pinterest-worthy nails every mood and occasion.",
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
   
   twitter: {
     card: "summary_large_image",
-    title: "Mirellé Inspo | Nail Art Ideas & Tutorials 2025",
+    title: "Mirellé | Nail Art Ideas & Tutorials 2025",
     description: "Stay ahead with 2025 nail trends, seasonal designs, and Pinterest-worthy tutorials. Expert tips and inspiration for every mood.",
     images: ["/twitter-image.jpg"],
     creator: "@mirelleinspo",
@@ -220,7 +220,7 @@ const organizationSchema = {
     "publisher": {
       "@type": "Organization",
       "@id": `${baseUrl}/#organization`,
-      "name": "Mirellé Inspo",
+      "name": "Mirellé",
     },
     "inLanguage": "en-US",
     "potentialAction": {
@@ -351,6 +351,11 @@ const organizationSchema = {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="email=no" />
+        <meta name="format-detection" content="address=no" />
+        <meta name="apple-mobile-web-app-title" content="Mirellé" />
+        <meta name="application-name" content="Mirellé" />
 
         {/* Theme color */}
         <meta name="theme-color" content="#8b1f42" />

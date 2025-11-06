@@ -14,7 +14,7 @@ export interface DesignSEO {
   title: string;
   description: string;
   keywords: string;
-  ogImage: string;
+  ogImage?: string;
 }
 
 export interface HeroSection {

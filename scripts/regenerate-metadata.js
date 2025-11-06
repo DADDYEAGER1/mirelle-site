@@ -2,15 +2,15 @@
 
 /**
  * ═══════════════════════════════════════════════════════════════
- * 🟢 FINAL VERSION - PHASE 3 SMART MERGE (COPY THIS VERSION)
+ * 🟢 UPDATED VERSION - PHASE 4 WITH NEW SEO FIELDS
  * ═══════════════════════════════════════════════════════════════
  * 
- * Regenerate Metadata Script (Phase 3 - Smart Merge)
+ * Regenerate Metadata Script (Phase 4 - Smart Merge + New Fields)
  * 
  * ✅ PRESERVES existing JSON data (no overwrites)
  * ✅ ONLY ADDS new posts from MD files
  * ✅ Enhanced images.json with width/height/alt/caption
- * ✅ Removed imageAlts.json (merged into images.json)
+ * ✅ NEW: topicalMaps.json, keywordStrategies.json, contentRelations.json, seoMetrics.json
  * 
  * Usage:
  *   node scripts/regenerate-metadata.js --dry-run
@@ -28,7 +28,7 @@ const BLOG_DIR = path.join(process.cwd(), 'src/content/blogs');
 const METADATA_DIR = path.join(process.cwd(), 'src/content/metadata');
 const BACKUP_DIR = path.join(METADATA_DIR, 'backups');
 
-// 🆕 PHASE 3: Removed imageAlts.json
+// 🆕 PHASE 4: Added new metadata files
 const METADATA_FILES = [
   'titles.json',
   'excerpts.json',
@@ -36,7 +36,12 @@ const METADATA_FILES = [
   'images.json',
   'dateModified.json',
   'tldr.json',
-  'faqItems.json'
+  'faqItems.json',
+  'events.json',
+  'topicalMaps.json',
+  'keywordStrategies.json',
+  'contentRelations.json',
+  'seoMetrics.json'
 ];
 
 // ✅ Parse command line arguments
@@ -90,7 +95,7 @@ function createBackup() {
   }
 }
 
-// 🆕 PHASE 3: Load existing JSON data to preserve manual edits
+// 🆕 PHASE 4: Load existing JSON data to preserve manual edits
 function loadExistingMetadata() {
   const existing = {};
   
@@ -163,7 +168,7 @@ function generateImageCaption(excerpt, title) {
 
 // ✅ Main regeneration function
 async function regenerateMetadata() {
-  console.log('🔄 Regenerating Metadata (Smart Merge Mode)...\n');
+  console.log('🔄 Regenerating Metadata (Smart Merge Mode with New SEO Fields)...\n');
 
   if (isDryRun) {
     console.log('🧪 DRY RUN MODE - No files will be modified\n');
@@ -201,11 +206,22 @@ async function regenerateMetadata() {
       images: existingMetadata.images || {},
       dateModified: existingMetadata.dateModified || {},
       tldr: existingMetadata.tldr || {},
-      faqItems: existingMetadata.faqItems || {}
+      faqItems: existingMetadata.faqItems || {},
+      events: existingMetadata.events || {},
+      topicalMaps: existingMetadata.topicalMaps || {},
+      keywordStrategies: existingMetadata.keywordStrategies || {},
+      contentRelations: existingMetadata.contentRelations || {},
+      seoMetrics: existingMetadata.seoMetrics || {}
     };
 
     let newPosts = 0;
     let skippedPosts = 0;
+    let updatedFields = {
+      topicalMap: 0,
+      keywordStrategy: 0,
+      contentRelations: 0,
+      seoMetrics: 0
+    };
 
     // Extract metadata from each post
     files.forEach(file => {
@@ -259,6 +275,35 @@ async function regenerateMetadata() {
           metadata.faqItems[slug] = data.faqItems;
         }
 
+        // 🆕 PHASE 4: Extract event data if exists
+        if (data.eventData) {
+          metadata.events[slug] = data.eventData;
+        }
+
+        // 🆕 PHASE 4: Extract topicalMap if exists
+        if (data.topicalMap) {
+          metadata.topicalMaps[slug] = data.topicalMap;
+          updatedFields.topicalMap++;
+        }
+
+        // 🆕 PHASE 4: Extract keywordStrategy if exists
+        if (data.keywordStrategy) {
+          metadata.keywordStrategies[slug] = data.keywordStrategy;
+          updatedFields.keywordStrategy++;
+        }
+
+        // 🆕 PHASE 4: Extract contentRelations if exists
+        if (data.contentRelations) {
+          metadata.contentRelations[slug] = data.contentRelations;
+          updatedFields.contentRelations++;
+        }
+
+        // 🆕 PHASE 4: Extract seoMetrics if exists
+        if (data.seoMetrics) {
+          metadata.seoMetrics[slug] = data.seoMetrics;
+          updatedFields.seoMetrics++;
+        }
+
         console.log(`✅ Added new: ${slug}`);
       } else {
         skippedPosts++;
@@ -303,6 +348,11 @@ async function regenerateMetadata() {
     console.log(`💾 Existing posts preserved: ${skippedPosts}`);
     console.log(`📝 Generated: ${Object.keys(metadata).length} metadata files`);
     console.log(`🆕 Enhanced: images.json now includes width/height/alt/caption`);
+    console.log('\n🔍 New SEO Fields Extracted:');
+    console.log(`   • topicalMaps: ${updatedFields.topicalMap} posts`);
+    console.log(`   • keywordStrategies: ${updatedFields.keywordStrategy} posts`);
+    console.log(`   • contentRelations: ${updatedFields.contentRelations} posts`);
+    console.log(`   • seoMetrics: ${updatedFields.seoMetrics} posts`);
     
     if (isDryRun) {
       console.log('\n🧪 DRY RUN COMPLETE - Run without --dry-run to apply changes');

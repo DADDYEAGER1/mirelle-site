@@ -83,13 +83,13 @@ export default function BlogPost({ post }: BlogPostProps) {
         {/* Hero Image - Mobile optimized aspect ratio */}
 {post.image && (
   <div className="relative w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-2xl">
-    {/* Use the actual image aspect ratio (1200:630 = 1.905:1) */}
-    <div className="aspect-[1200/630] relative">
+    {/* Mobile: Use 16:9 for better fit, Desktop: Use actual 1200:630 ratio */}
+    <div className="aspect-[16/9] sm:aspect-[1200/630] relative">
       <Image
         src={post.image}
         alt={post.title}
         fill
-        className="object-contain bg-gray-50"
+        className="object-cover sm:object-contain sm:bg-gray-50"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
         priority
       />

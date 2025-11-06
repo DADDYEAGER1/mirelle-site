@@ -584,6 +584,7 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           canonical: frontmatterMetadata.canonical || `https://mirelleinspo.com/blog/${slug}`,
           dateModified: jsonMetadata.dateModified,
           tldr: jsonMetadata.tldr,
+           eventData: jsonMetadata.eventData,
           faqItems: jsonMetadata.faqItems,
         } as BlogMetadata;
       })
@@ -645,6 +646,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
       dateModified: jsonMetadata.dateModified || data.dateModified,
       tldr: jsonMetadata.tldr || data.tldr,
+      eventData: jsonMetadata.eventData || data.eventData,
       faqItems: jsonMetadata.faqItems || data.faqItems,
     };
     

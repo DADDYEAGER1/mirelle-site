@@ -1,5 +1,63 @@
 import Link from 'next/link';
 
+export const metadata: Metadata = {
+  title: "Follow Mirellé on Pinterest - 2.5M+ Monthly Pin Views",
+  description:
+    "Join 50K+ nail lovers on Pinterest! Get 500+ nail designs, seasonal boards, DIY tutorials, and trending inspiration. 2.5M+ monthly views. Follow for daily nail ideas!",
+  keywords:
+    "Mirellé Pinterest, nail art Pinterest, nail design boards, Pinterest nail inspiration, trending nail pins, seasonal nail ideas, DIY nail tutorials Pinterest, nail care pins",
+  authors: [{ name: "Mirelle" }],
+  creator: "Mirelle",
+  publisher: "Mirelle",
+  alternates: {
+    canonical: "https://mirelleinspo.com/pinterest",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Follow Mirellé on Pinterest - 2.5M+ Monthly Views",
+    description:
+      "Join 50K+ on Pinterest for 500+ nail designs, seasonal boards, and trending inspiration. 2.5M+ monthly views. Follow for daily nail ideas that actually work!",
+    type: "website",
+    url: "https://mirelleinspo.com/pinterest",
+    siteName: "Mirelle",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://mirelleinspo.com/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Mirellé Pinterest profile featuring trending nail designs, seasonal boards, and DIY nail tutorials with 2.5M monthly views",
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mirellé Pinterest - 2.5M+ Monthly Pin Views",
+    description: "500+ nail boards. Daily trending designs. Seasonal inspiration. Follow 50K+ nail lovers on Pinterest!",
+    images: ["https://mirelleinspo.com/og-default.png"],
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
+  },
+  other: {
+    "pin:description": "Follow Mirellé on Pinterest for 500+ nail designs, seasonal boards, DIY tutorials. 2.5M+ monthly views. Join 50K+ nail lovers!",
+    "pinterest-rich-pin": "true",
+    "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+    "pinterest:category": "nail art inspiration",
+    "og:see_also": "https://mirelleinspo.com/pinterest",
+  },
+};
+
 const pinterestBoards = [
   {
     id: 1,

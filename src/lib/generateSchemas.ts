@@ -15,18 +15,6 @@ export interface TutorialStep {
   image?: string;
 }
 
-export interface TutorialMetadata {
-  name: string;
-  description: string;
-  totalTime: string;
-  estimatedCost: {
-    currency: string;
-    value: string;
-  };
-  tools: string[];
-  supplies: string[];
-}
-
 export interface VideoMetadata {
   name: string;
   description: string;

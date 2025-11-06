@@ -43,6 +43,14 @@ export interface GalleryImage {
   height?: number;
   caption?: string;
 }
+export interface EventData {
+  name: string;
+  startDate: string;
+  endDate: string;
+  eventStatus: string;
+  eventAttendanceMode: string;
+  isVirtual: boolean;
+}
 
 export interface SchemaConfig {
   post: BlogPost;
@@ -52,6 +60,7 @@ export interface SchemaConfig {
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
   galleryImages?: GalleryImage[];
+  eventData?: EventData;
   // rating?: {
   //   value: number;
   //   count: number;
@@ -320,7 +329,38 @@ export function generateBreadcrumbSchema(items: Array<{ name: string; url: strin
     }))
   };
 }
-
+// ============================================
+// EVENT SCHEMA
+// ============================================
+export function generateEventSchema(post: BlogPost, event: EventData) {
+  if (!event) return null;
+  
+  const articleUrl = `${baseUrl}/blog/${post.slug}`;
+  const imageUrl = post.image ? `${baseUrl}${post.image}` : `${baseUrl}/og-default.png`;
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    '@id': `${articleUrl}#event`,
+    'name': event.name,
+    'startDate': event.startDate,
+    'endDate': event.endDate,
+    'eventStatus': event.eventStatus,
+    'eventAttendanceMode': event.eventAttendanceMode,
+    'location': {
+      '@type': 'VirtualLocation',
+      'url': articleUrl
+    },
+    'organizer': {
+      '@type': 'Organization',
+      '@id': `${baseUrl}/#organization`
+    },
+    'description': post.excerpt,
+    'image': imageUrl,
+    'inLanguage': 'en-US',
+    'isAccessibleForFree': true
+  };
+}
 // ============================================
 // EXISTING SCHEMAS FUNCTION (KEPT FOR COMPATIBILITY)
 // ============================================
@@ -590,6 +630,8 @@ const breadcrumbSchema = {
       ...(videoMetadata.duration && { duration: videoMetadata.duration }),
     };
   }
+  const eventSchema = config.eventData ? generateEventSchema(post, config.eventData) : null;
+
 
   return {
     articleSchema,
@@ -600,6 +642,7 @@ const breadcrumbSchema = {
     howToSchema,
     videoSchema,
     imageGallerySchema,
+    eventSchema,  // 🆕 ADD THIS
   };
 }
 

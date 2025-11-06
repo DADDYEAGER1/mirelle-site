@@ -4,44 +4,76 @@ import Link from 'next/link';
 import { getAllDesignSlugs, getDesignData, getDesignsByCategory } from '@/lib/inspo';
 
 export const metadata: Metadata = {
-  title: 'Nail Design Inspiration 2025: 1000+ Ideas & Tutorials | Mirelle',
-  description: 'Browse 1000+ nail design ideas across French tips, ombre, chrome, glitter & more. Get step-by-step tutorials, trending styles & seasonal inspiration for every occasion.',
+  title: '1,000+ Nail Designs 2025 - French, Chrome, Ombre & More',
+  description: 'Get 1,000+ nail designs with step-by-step tutorials. French tips, chrome, ombre, glitter - every style, every skill level. New designs added weekly. Save yours now!',
   keywords: [
-    'nail design inspiration',
+    'nail design inspiration 2025',
     'nail ideas 2025',
-    'nail art gallery',
-    'french tip designs',
-    'ombre nails',
-    'chrome nails',
-    'minimalist nails',
-    'glitter nails',
-    'summer nails',
-    'nail tutorials'
+    'trending nail designs',
+    'french tip nails',
+    'ombre nail ideas',
+    'chrome nails tutorial',
+    'minimalist nail art',
+    'glitter nails designs',
+    'summer nail inspiration',
+    'DIY nail tutorials',
+    'easy nail designs',
+    'seasonal nail ideas'
   ],
+  authors: [{ name: "Mirelle" }],
+  creator: "Mirelle",
+  publisher: "Mirelle",
+  alternates: {
+    canonical: 'https://mirelleinspo.com/inspo',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: 'Nail Design Inspiration 2025: 1000+ Ideas & Tutorials | Mirelle',
-    description: 'Discover 1000+ nail designs from classic French tips to trending chrome. Step-by-step tutorials for every style and skill level.',
+    title: '1,000+ Nail Designs 2025 - French, Chrome, Ombre & More',
+    description: 'Browse 1,000+ nail designs with step-by-step tutorials. French tips, chrome, ombre, glitter - every style, skill level. New designs weekly. Save yours!',
     url: 'https://mirelleinspo.com/inspo',
     siteName: 'Mirelle',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/images/inspo-hero.jpg',
+        url: 'https://mirelleinspo.com/images/inspo-hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mirelle Nail Design Inspiration Gallery 2025'
+        alt: 'Gallery of 1000+ trending nail designs 2025 including French tips chrome ombre glitter and minimalist styles with tutorials',
+        type: 'image/jpeg',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nail Design Inspiration 2025: 1000+ Ideas',
-    description: 'Browse 1000+ nail designs. French tips, chrome, ombre, glitter & more!',
-    images: ['/images/inspo-hero.jpg'],
+    title: '1,000+ Nail Designs & Tutorials (Updated Weekly)',
+    description: 'French tips, chrome, ombre, glitter - every style covered. Step-by-step tutorials. New designs weekly!',
+    images: ['https://mirelleinspo.com/images/inspo-hero.jpg'],
+    creator: "@mirelleinspo",
+    site: "@mirelleinspo",
   },
-  alternates: {
-    canonical: 'https://mirelleinspo.com/inspo',
+  other: {
+    "pin:description": 'Get 1,000+ nail designs with step-by-step tutorials. French tips, chrome, ombre, glitter - every style, every skill level. New designs added weekly!',
+    "pin:media": 'https://mirelleinspo.com/images/inspo-hero.jpg',
+    "pinterest-rich-pin": "true",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:alt": 'Gallery of 1000+ trending nail designs 2025 including French tips chrome ombre glitter and minimalist styles with tutorials',
+    "og:image:type": "image/jpeg",
+    "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+    "pinterest:category": "nail design inspiration",
+    "pinterest:board_suggestion": "Nail Art Ideas",
+    "og:see_also": "https://mirelleinspo.com/inspo",
   },
 };
 

@@ -25,35 +25,56 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { design } = await params;
   const designData = getDesignData(design);
-
+  
   if (!designData) {
     return {
       title: 'Design Not Found',
     };
   }
-
+  
   const seo = designData.seo;
   const keywordsArray = Array.isArray(seo.keywords) 
     ? seo.keywords 
     : seo.keywords.split(',').map((k: string) => k.trim());
-
+  
+  const canonicalUrl = `https://mirelleinspo.com/inspo/${design}`;
+  const imageUrl = seo.ogImage || `https://mirelleinspo.com${designData.heroImage}`;
+  
   return {
     title: seo.title,
     description: seo.description,
     keywords: keywordsArray,
+    authors: [{ name: "Mirelle" }],
+    creator: "Mirelle",
+    publisher: "Mirelle",
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
       title: seo.title,
       description: seo.description,
       type: 'website',
-      url: `https://mirelleinspo.com/inspo/${design}`,
+      url: canonicalUrl,
       siteName: 'Mirelle',
       locale: 'en_US',
       images: [
         {
-          url: seo.ogImage || `https://mirelleinspo.com${designData.heroImage}`,
+          url: imageUrl,
           alt: seo.title,
           width: 1200,
           height: 630,
+          type: 'image/jpeg',
         },
       ],
     },
@@ -61,10 +82,22 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: seo.title,
       description: seo.description,
-      images: [seo.ogImage || `https://mirelleinspo.com${designData.heroImage}`],
+      images: [imageUrl],
+      creator: "@mirelleinspo",
+      site: "@mirelleinspo",
     },
-    alternates: {
-      canonical: `https://mirelleinspo.com/inspo/${design}`,
+    other: {
+      "pin:description": seo.description,
+      "pin:media": imageUrl,
+      "pinterest-rich-pin": "true",
+      "og:image:width": "1200",
+      "og:image:height": "630",
+      "og:image:alt": seo.title,
+      "og:image:type": "image/jpeg",
+      "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+      "pinterest:category": design.replace(/-/g, ' '),
+      "pinterest:board_suggestion": `${designData.title} Inspiration`,
+      "og:see_also": canonicalUrl,
     },
   };
 }

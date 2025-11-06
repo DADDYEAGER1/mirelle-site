@@ -26,7 +26,6 @@ export interface BlogMetadata {
   readTime: number | string;
   category?: string;
   galleryImages?: GalleryImage[];
-  rating?: Rating;
   canonical?: string;
   updatedDate?: string;
   wordCount?: number;

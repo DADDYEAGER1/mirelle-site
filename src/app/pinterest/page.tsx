@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Follow Mirellé on Pinterest - 2.5M+ Monthly Pin Views",
   description:

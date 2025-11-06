@@ -1,3 +1,4 @@
+// src/types/blog.ts
 import { FAQItem, TutorialStep, VideoMetadata } from '@/lib/generateSchemas';
 
 export interface BlogMetadata {
@@ -14,7 +15,6 @@ export interface BlogMetadata {
   tldr?: TLDR;
   faqItems?: FAQItem[];
   url: string;
-
   topicalMap?: any;           // Replace 'any' with proper type if you have one
   keywordStrategy?: any;      // Replace 'any' with proper type if you have one
   contentRelations?: any;     // Replace 'any' with proper type if you have one
@@ -40,7 +40,6 @@ export interface BlogMetadata {
   };
 }
 
-
 export interface KeywordStrategy {
   avoidKeywords: string[];
   clusteredWith: string[];
@@ -55,14 +54,6 @@ export interface ContentRelations {
   competingPosts: string[];
 }
 
-export interface TutorialStep {
-  position: number;
-  name: string;
-  text: string;
-  image?: string;
-  url?: string;
-}
-
 export interface SeoMetrics {
   targetRankPosition: number;
   estimatedMonthlySearches: number;
@@ -70,25 +61,17 @@ export interface SeoMetrics {
   lastRankCheck: string;
 }
 
+// ✅ Define TutorialMetadata locally (not imported)
 export interface TutorialMetadata {
   name: string;
   description: string;
-  totalTime?: string;          // ISO 8601 duration format (PT45M)
-  estimatedCost?: {
+  totalTime: string;          // ✅ Required field (no ?)
+  estimatedCost: {
     currency: string;
     value: string;
   };
-  tools?: string[];
-  supplies?: string[];
-}
-
-export interface VideoMetadata {
-  name: string;
-  description: string;
-  thumbnailUrl: string;
-  uploadDate: string;
-  duration: string;            // ISO 8601 duration format (PT10M30S)
-  contentUrl: string;
+  tools: string[];
+  supplies: string[];
 }
 
 export interface TopicalMap {
@@ -137,10 +120,6 @@ export interface GalleryImage {
   caption?: string;
 }
 
-export interface Rating {
-  value: number;
-  count: number;
-}
 
 export interface BlogPost {
   slug: string;

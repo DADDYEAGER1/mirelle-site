@@ -87,7 +87,7 @@ export default function BlogPost({ post }: BlogPostProps) {
     <div className="aspect-[16/9] sm:aspect-[1200/630] relative">
       <Image
         src={post.image}
-        alt={post.alt ?? post.title}
+        alt={post.imageAlt ?? post.title}
         fill
         className="object-cover sm:object-contain sm:bg-gray-50"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"

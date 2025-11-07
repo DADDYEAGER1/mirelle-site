@@ -61,25 +61,25 @@ export default function BlogPost({ post }: BlogPostProps) {
           <span>{post.readTime} read</span>
         </div>
 
-        {/* Tags - Better mobile wrapping */}
-        <div className="flex flex-wrap justify-center gap-2 mb-6 sm:mb-8 px-4">
-          {/* Show category badge first if exists */}
-          {post.category && (
-            <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
-              {post.category}
-            </span>
-          )}
-          
-          {post.tags.map(tag => (
-            <span 
-              key={tag}
-              className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-        
+{/* Tags - Better mobile wrapping */}
+<div className="flex flex-wrap justify-center gap-2 mb-6 sm:mb-8 px-4">
+  {/* Show category badge first if exists */}
+  {post.category && (
+    <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
+      {post.category}
+    </span>
+  )}
+  
+  {/* ✅ FIX: Add Array.isArray check */}
+  {Array.isArray(post.tags) && post.tags.map(tag => (
+    <span 
+      key={tag}
+      className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium"
+    >
+      {tag}
+    </span>
+  ))}
+</div>
         {/* Hero Image - Mobile optimized aspect ratio */}
 {post.image && (
   <div className="relative w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-lg sm:shadow-2xl">

@@ -8,6 +8,7 @@ import SubscribeSection from '@/components/SubscribeSection';
 import StickyBottomNav from '@/components/ui/StickyBottomNav'; // ✅ NEW: Phase 4
 import InspoShowcase from '@/components/InspoShowcase'; // ✅ NEW
 
+
 export const metadata: Metadata = {
   title: 'Mirellé - 500+ Nail Designs & Press-Ons from $3.99',
   description: 'Get 500+ trending nail designs, premium press-ons from $3.99, and salon secrets. DIY tutorials, seasonal collections, expert tips. Join 50K+ nail lovers!',

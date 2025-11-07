@@ -83,6 +83,14 @@ function loadMetadataFile<T>(filename: string): T {
   }
 }
 
+
+function ensureArray(value: any): string[] {
+  if (Array.isArray(value)) return value;
+  if (typeof value === 'string') return value.split(',').map(s => s.trim());
+  return [];
+}
+
+
 function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
   try {
     const titles = loadMetadataFile<Record<string, string>>('titles.json');
@@ -270,7 +278,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       content: htmlContent,
       date: data.date || new Date().toISOString(),
       author: data.author || 'Anonymous',
-      tags: jsonMetadata.tags || data.tags || [],
+      tags: ensureArray(jsonMetadata.tags || data.tags),
       image: jsonMetadata.image || data.image || null,
       imageAlt: jsonMetadata.imageAlt || data.imageAlt,
       imageWidth: jsonMetadata.imageWidth || data.imageWidth || 1200,

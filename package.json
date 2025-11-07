@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "prebuild": "node scripts/regenerate-metadata.js",
     "build": "next build --turbopack",
+    "postbuild": "next-sitemap && node scripts/generate-image-sitemap.js",
     "start": "next start",
-    "lint": "eslint",
-    "postbuild": "next-sitemap && node scripts/generate-image-sitemap.js"
+    "lint": "eslint"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -50,13 +51,4 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
-}
-{
-  "scripts": {
-    "dev": "next dev",
-    "build": "node scripts/regenerate-metadata.js && next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prebuild": "node scripts/regenerate-metadata.js"
-  }
 }

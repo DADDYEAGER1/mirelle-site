@@ -146,7 +146,7 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     return {
       title: titles[slug] || undefined,
       excerpt: excerpts[slug] || undefined,
-      tags: tags[slug] || undefined,
+      tags: ensureArray(jsonMetadata.tags || data.tags),
       image: imageUrl,
       imageAlt: imageAlt,
       imageWidth: imageWidth,
@@ -211,7 +211,7 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           excerpt: jsonMetadata.excerpt || '',
           date: frontmatterMetadata.date || new Date().toISOString(),
           author: frontmatterMetadata.author || 'Anonymous',
-          tags: jsonMetadata.tags || [],
+          tags: ensureArray(jsonMetadata.tags || data.tags),
           image: jsonMetadata.image || null,
           imageAlt: jsonMetadata.imageAlt,
           imageWidth: jsonMetadata.imageWidth,

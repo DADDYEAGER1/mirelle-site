@@ -51,3 +51,12 @@
   "author": "",
   "license": "ISC"
 }
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/regenerate-metadata.js && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prebuild": "node scripts/regenerate-metadata.js"
+  }
+}

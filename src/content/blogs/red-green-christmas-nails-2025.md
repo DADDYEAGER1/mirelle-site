@@ -127,7 +127,7 @@ We recommend alternating fingers rather than mixing both colors on the same nail
 
 <div class="my-8">
   <img src="/images/blog/burgundy-emerald-christmas-nails-gold-leaf-accents-almond-shape.jpg" alt="elegant burgundy and emerald green christmas nails with gold leaf accents on almond shaped nails" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">✨ Obsessed with this combo? <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow us on Pinterest</a> for 1000+ Christmas nail inspo! ✨</p>
+  <p class="text-center mt-3 text-sm text-gray-600">✨ Obsessed with this combo? <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow us on Pinterest</a> for 1000+ Christmas nail inspo! ✨</p>
 </div>
 
 ### 2. Classic Candy Cane Stripes
@@ -158,7 +158,7 @@ The gradient can run vertically from cuticle to tip or horizontally across all f
 
 <div class="my-8">
   <img src="/images/blog/red-green-ombre-gradient-christmas-nails-vertical-blend.jpg" alt="red to green ombre gradient christmas nails with vertical color blend on almond shape" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">🎨 Ombre obsessed? <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow us on Pinterest</a> for gradient techniques and color combos! 🎨</p>
+  <p class="text-center mt-3 text-sm text-gray-600">🎨 Ombre obsessed? <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow us on Pinterest</a> for gradient techniques and color combos! 🎨</p>
 </div>
 
 ### 5. Red and Green French Tips with a Twist
@@ -171,7 +171,7 @@ For extra holiday flair, add a thin gold line at the boundary between the base a
 
 <div class="my-8">
   <img src="/images/blog/red-green-french-tip-christmas-nails-gold-line-accent.jpg" alt="alternating red and green french tip christmas nails with gold line accent on nude base" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">💫 French tip goals! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this look</a> and browse our festive french manicure collection! 💫</p>
+  <p class="text-center mt-3 text-sm text-gray-600">💫 French tip goals! <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this look</a> and browse our festive french manicure collection! 💫</p>
 </div>
 
 Discover more french tip variations in our <a href='/blog/new-year-nails-2025' class='text-blue-600 hover:text-blue-800 underline'>New Year nails collection</a> that transitions perfectly from Christmas.
@@ -194,7 +194,7 @@ This shade works on all skin tones and nail lengths. It is particularly striking
 
 <div class="my-8">
   <img src="/images/blog/classic-candy-apple-red-christmas-nails-short-square-shape.jpg" alt="classic bright candy apple red christmas nails with glossy finish on short square nails" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">🍎 Classic never looked so good! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save to Pinterest</a> and discover more timeless red shades! 🍎</p>
+  <p class="text-center mt-3 text-sm text-gray-600">🍎 Classic never looked so good! <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save to Pinterest</a> and discover more timeless red shades! 🍎</p>
 </div>
 
 ### Deep Burgundy Wine
@@ -207,7 +207,7 @@ Cherry mocha shades that blend burgundy with brown undertones are particularly t
 
 <div class="my-8">
   <img src="/images/blog/deep-burgundy-wine-christmas-nails-matte-finish-gold-accent.jpg" alt="deep burgundy wine red christmas nails with matte finish and gold leaf accent coffin shape" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">🍷 Burgundy beauty! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow for more</a> sophisticated holiday nail ideas! 🍷</p>
+  <p class="text-center mt-3 text-sm text-gray-600">🍷 Burgundy beauty! <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow for more</a> sophisticated holiday nail ideas! 🍷</p>
 </div>
 
 ### Crimson Red with Shimmer
@@ -234,7 +234,7 @@ Essie Off Tropic and OPI Stay Off the Lawn are professional-grade formulas that 
 
 <div class="my-8">
   <img src="/images/blog/forest-green-christmas-nails-traditional-evergreen-shade-glossy.jpg" alt="deep forest green christmas nails with glossy finish traditional evergreen shade on oval nails" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">🌲 Forest green forever! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this shade</a> and explore our green polish guide! 🌲</p>
+  <p class="text-center mt-3 text-sm text-gray-600">🌲 Forest green forever! <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this shade</a> and explore our green polish guide! 🌲</p>
 </div>
 
 ### Emerald for Modern Sophistication
@@ -247,7 +247,7 @@ Emerald looks particularly stunning with chrome powder or metallic finishes. The
 
 <div class="my-8">
   <img src="/images/blog/emerald-green-christmas-nails-chrome-finish-jewel-tone-almond.jpg" alt="bright emerald green christmas nails with chrome metallic finish jewel tone on almond shape" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">💎 Emerald elegance! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this gem</a> and see our metallic nail collection! 💎</p>
+  <p class="text-center mt-3 text-sm text-gray-600">💎 Emerald elegance! <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this gem</a> and see our metallic nail collection! 💎</p>
 </div>
 
 ### Sage Green for Unexpected Elegance
@@ -260,7 +260,7 @@ This color works beautifully in matte finish, enhancing its sophisticated vibe. 
 
 <div class="my-8">
   <img src="/images/blog/sage-green-christmas-nails-matte-dusty-modern-minimalist-short.jpg" alt="sage green matte christmas nails dusty modern minimalist design on short square nails" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">🌿 Modern minimalist vibes! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Join our Pinterest</a> for understated elegance inspo! 🌿</p>
+  <p class="text-center mt-3 text-sm text-gray-600">🌿 Modern minimalist vibes! <a href="https://in.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Join our Pinterest</a> for understated elegance inspo! 🌿</p>
 </div>
 
 Explore our <a href='/shop/winter' class='text-blue-600 hover:text-blue-800 underline'>winter nail polish collection</a> for more seasonal green shades.

@@ -34,15 +34,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  // ✅ FIX: Ensure tags is always an array
+  const tagsArray = Array.isArray(post.tags) ? post.tags : [];
+
   const canonicalUrl = post.canonical || `https://mirelleinspo.com/blog/${slug}`;
   const imageUrl = post.image ? `https://mirelleinspo.com${post.image}` : 'https://mirelleinspo.com/og-default.png';
   const imageAltText = post.imageAlt || post.title;
-  const keywords = post.tags?.length 
-    ? post.tags.join(', ')
+  
+  // ✅ FIX: Use tagsArray instead of post.tags
+  const keywords = tagsArray.length 
+    ? tagsArray.join(', ')
     : 'nail art, nail care, nail trends, manicure tips, nail design';
   
-  // 🆕 ENHANCED: Extract first tag for Pinterest category
-  const primaryTag = post.tags?.[0] || 'nail art';
+  // ✅ FIX: Use tagsArray
+  const primaryTag = tagsArray[0] || 'nail art';
   
   return {
     title: `${post.title} | Mirelle`,
@@ -82,7 +87,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       modifiedTime: post.dateModified || post.updatedDate || post.date,
       authors: [post.author || 'Mirelle'],
       section: post.category || 'Nail Care',
-      tags: post.tags || [],
+      tags: tagsArray, // ✅ FIX: Use tagsArray
     },
     twitter: {
       card: 'summary_large_image',
@@ -97,38 +102,30 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'article:modified_time': post.dateModified || post.updatedDate || post.date,
       'article:author': post.author || 'Mirelle',
       'article:section': post.category || 'Nail Care',
-      'article:tag': post.tags?.join(', ') || '',
+      'article:tag': tagsArray.join(', '), // ✅ FIX: Use tagsArray (no need for || '')
       ...(post.wordCount && { 'article:word_count': post.wordCount.toString() }),
       
-      // 🆕 MAXIMUM PINTEREST OPTIMIZATION
       'pin:description': post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
       'pin:media': imageUrl,
       'pinterest-rich-pin': 'true',
       
-      // 🆕 Pinterest-specific image optimization
       'og:image:width': (post.imageWidth || 1200).toString(),
       'og:image:height': (post.imageHeight || 630).toString(),
       'og:image:alt': imageAltText,
       'og:image:type': 'image/jpeg',
       
-      // 🆕 Pinterest category targeting (helps Pinterest algorithm)
       'article:publisher': 'https://www.pinterest.com/mirelle_inspo',
       'pinterest:category': primaryTag,
       
-      // 🆕 Pinterest board suggestions (if user saves)
       'pinterest:board_suggestion': post.category || 'Nail Art Ideas',
       
-      // 🆕 Enhanced social sharing
       'og:see_also': canonicalUrl,
       
-      // 🆕 Pinterest-friendly reading time
       ...(post.readTime && { 'twitter:label1': 'Reading time', 'twitter:data1': post.readTime }),
-
-      ...(post.tags?.length && { 'twitter:label2': 'Filed under', 'twitter:data2': primaryTag }),
+      ...(tagsArray.length && { 'twitter:label2': 'Filed under', 'twitter:data2': primaryTag }), // ✅ FIX
     },
   };
 }
-
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = await getBlogPost(slug);

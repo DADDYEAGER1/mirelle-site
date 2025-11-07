@@ -146,7 +146,7 @@ function getMetadataFromJSON(slug: string): Partial<BlogMetadata> {
     return {
       title: titles[slug] || undefined,
       excerpt: excerpts[slug] || undefined,
-      tags: ensureArray(jsonMetadata.tags || data.tags),
+      tags: tags[slug] || undefined,
       image: imageUrl,
       imageAlt: imageAlt,
       imageWidth: imageWidth,

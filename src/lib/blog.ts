@@ -180,6 +180,7 @@ function getMetadataFromFrontmatter(slug: string): Partial<BlogMetadata> {
       category: data.category,
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
       wordCount: data.wordCount,
+      tags: data.tags, // ✅ ADD THIS
     };
   } catch (error) {
     console.error(`Error reading frontmatter for ${slug}:`, error);
@@ -211,7 +212,7 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           excerpt: jsonMetadata.excerpt || '',
           date: frontmatterMetadata.date || new Date().toISOString(),
           author: frontmatterMetadata.author || 'Anonymous',
-          tags: ensureArray(jsonMetadata.tags),
+          tags: ensureArray(jsonMetadata.tags || frontmatterMetadata.tags),
           image: jsonMetadata.image || null,
           imageAlt: jsonMetadata.imageAlt,
           imageWidth: jsonMetadata.imageWidth,

@@ -211,7 +211,7 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           excerpt: jsonMetadata.excerpt || '',
           date: frontmatterMetadata.date || new Date().toISOString(),
           author: frontmatterMetadata.author || 'Anonymous',
-          tags: ensureArray(jsonMetadata.tags || data.tags),
+          tags: ensureArray(jsonMetadata.tags),
           image: jsonMetadata.image || null,
           imageAlt: jsonMetadata.imageAlt,
           imageWidth: jsonMetadata.imageWidth,

@@ -1,3 +1,5 @@
+console.log('🚀 [METADATA] Script started at:', new Date().toISOString());
+
 #!/usr/bin/env node
 
 /**
@@ -376,3 +378,4 @@ async function regenerateMetadata() {
 
 // ✅ Run script
 regenerateMetadata();
+console.log('✅ [METADATA] Script completed successfully');

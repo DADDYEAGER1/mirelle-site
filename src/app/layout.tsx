@@ -297,7 +297,10 @@ const organizationSchema = {
         {/* <script async defer src="//assets.pinterest.com/js/pinit.js"></script> */}
       </head>
 
-      <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
+      <body 
+        className={`${inter.variable} ${cormorant.variable} antialiased`}
+        suppressHydrationWarning
+      >
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

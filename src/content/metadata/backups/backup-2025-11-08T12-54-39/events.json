@@ -1,0 +1,66 @@
+{
+  "christmas-nail-designs-2025": {
+    "name": "Christmas Nail Art Season",
+    "startDate": "2025-12-01T00:00:00-05:00",
+    "endDate": "2025-12-26T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "easy-halloween-nail-designs": {
+    "name": "Halloween Nail Art Season",
+    "startDate": "2025-10-01T00:00:00-05:00",
+    "endDate": "2025-10-31T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "halloween-nail-ideas-2025": {
+    "name": "Halloween Nail Art Season",
+    "startDate": "2025-10-01T00:00:00-05:00",
+    "endDate": "2025-10-31T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "holiday-vacation-nails-travel-guide": {
+    "name": "Holiday Vacation Travel Season",
+    "startDate": "2025-06-01T00:00:00-05:00",
+    "endDate": "2025-09-30T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "new-year-nails-2025": {
+    "name": "New Year's Eve Nail Art Season",
+    "startDate": "2024-12-20T00:00:00-05:00",
+    "endDate": "2025-01-05T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "thanksgiving-nails-2025": {
+    "name": "Thanksgiving Nail Art Season",
+    "startDate": "2025-11-01T00:00:00-05:00",
+    "endDate": "2025-11-28T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "valentine-nails-2026": {
+    "name": "Valentine's Day Nail Art Season",
+    "startDate": "2026-02-01T00:00:00-05:00",
+    "endDate": "2026-02-14T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  },
+  "winter-nails-2025": {
+    "name": "Winter Nail Art Season",
+    "startDate": "2025-12-01T00:00:00-05:00",
+    "endDate": "2026-02-28T23:59:59-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "isVirtual": true
+  }
+}

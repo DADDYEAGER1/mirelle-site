@@ -8,7 +8,7 @@ interface FAQ {
 }
 
 interface TLDRProps {
-  summary: string[];
+  summary: string | string[];  // ✅ Accept both string and array
   readTime: string;
   faqs?: FAQ[];
   creativeLine?: string;
@@ -23,11 +23,14 @@ export default function TLDRSection({
   keyTakeaways = []
 }: TLDRProps) {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-
+  
+  // ✅ FIX: Handle both string and array
+  const summaryText = Array.isArray(summary) ? summary.join(' ') : summary;
+  
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
   };
-
+  
   return (
     <section 
       className="tldr-section bg-gradient-to-br from-rose-50 to-pink-100 border-l-4 border-pink-500 rounded-xl p-5 sm:p-6 mb-8 shadow-sm"
@@ -37,20 +40,19 @@ export default function TLDRSection({
       {/* Main Heading */}
       <div className="flex items-center justify-between mb-5 pb-4 border-b border-pink-200">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
-          <span className="text-2xl" aria-hidden="true"></span>
+          <span className="text-2xl" aria-hidden="true">⚡</span>
           Wrap Up
         </h2>
         <span className="text-xs sm:text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap">{readTime}</span>
       </div>
-
+      
       {/* Summary */}
       <div className="mb-5">
         <h3 className="text-sm font-bold text-gray-800 mb-2">Quick Glance</h3>
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-          {summary.join(' ')}
+          {summaryText}
         </p>
       </div>
-
       {/* FAQ Section */}
       {faqs.length > 0 && (
         <div className="mb-5">

@@ -173,6 +173,7 @@ const organizationSchema = {
     "https://www.instagram.com/mirelle_inspo",
     "https://www.wikidata.org/wiki/mirelle_inspo",
     "https://x.com/mirelleinspo",
+    "https://www.wikidata.org/wiki/Q136769265",
   ],
   
   // 🆕 ADD PINTEREST-SPECIFIC SCHEMA

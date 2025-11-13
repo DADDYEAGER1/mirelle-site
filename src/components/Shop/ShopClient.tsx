@@ -109,7 +109,7 @@ export default function ShopClient({
                 <div className="relative aspect-square overflow-hidden bg-gray-100">
                   <img
                     src={product.image}
-                    alt={product.description || product.name}
+                    alt={product.imageAlt || product.description || product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-2 left-2 flex flex-col gap-1">

@@ -1,5 +1,3 @@
-// src/types/shop.ts
-// FIXED VERSION with all necessary properties
 
 
 export interface Product {
@@ -8,6 +6,7 @@ export interface Product {
   price: string; // Changed to string to match "$X.XX" format
   originalPrice: string; // Added - was missing
   image: string;
+  imageAlt?: string;  // ⬅️ ADD THIS
   affiliateUrl: string; // Changed from affiliateLink
   category: string;
   isNew?: boolean;

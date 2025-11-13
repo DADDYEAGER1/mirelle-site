@@ -343,7 +343,7 @@ Quality chrome powder makes the difference between mirror finish and glittery me
 
 <div class="my-8">
   <img src="/images/blog/chrome-powder-product-recommendations-quality-brands-application-tools.jpg" alt="quality chrome powder products and silicone application tools recommended for christmas nails mirror finish results" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">🛍️ Shop smart! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this</a> product guide! 🛍️</p>
+  <p class="text-center mt-3 text-sm text-gray-600">🛍️ Shop smart! <a href="https://amzn.to/49MPIhe" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this</a> product guide! 🛍️</p>
 </div>
 
 ---

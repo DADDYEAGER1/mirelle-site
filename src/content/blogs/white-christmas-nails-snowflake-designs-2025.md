@@ -332,7 +332,7 @@ Creating white christmas nails snowflake designs requires specific tools that ma
 
 <div class="my-8">
   <img src="/images/blog/snowflake-nail-art-tools-dotting-liner-brush-stamping-supplies.jpg" alt="snowflake nail art tools including dotting tools liner brushes and stamping plates for white christmas winter nails" class="w-full rounded-lg shadow-lg" />
-  <p class="text-center mt-3 text-sm text-gray-600">🛠️ Tool kit essentials! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Build your</a> snowflake kit! 🛠️</p>
+  <p class="text-center mt-3 text-sm text-gray-600">🛠️get your Tool kit essentials now! <a href="https://amzn.to/47PmBXX" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Build your</a> snowflake kit! 🛠️</p>
 </div>
 
 ---

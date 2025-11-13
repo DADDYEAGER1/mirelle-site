@@ -20,5 +20,27 @@
     "primaryKeyword": "gold silver chrome christmas nails",
     "searchIntent": "informational",
     "topicalBoundary": "Metallic finish and texture-specific (chrome, gold, silver) Christmas nail designs and application techniques"
+  },
+  "short-christmas-nails-2025": {
+    "position": "cluster",
+    "parentPillar": "/blog/christmas-nail-designs-2025",
+    "relatedClusters": [
+      "/blog/red-green-christmas-nails-2025",
+      "/blog/winter-nails-2025"
+    ],
+    "primaryKeyword": "short christmas nails",
+    "searchIntent": "informational",
+    "topicalBoundary": "Nail length-specific (short nails) Christmas designs, tutorials, and application techniques for natural nail lengths"
+  },
+  "white-christmas-nails-snowflake-designs-2025": {
+    "position": "cluster",
+    "parentPillar": "/blog/christmas-nail-designs-2025",
+    "relatedClusters": [
+      "/blog/gold-silver-chrome-christmas-nails-2025",
+      "/blog/short-christmas-nails-2025"
+    ],
+    "primaryKeyword": "white christmas nails snowflake designs",
+    "searchIntent": "informational",
+    "topicalBoundary": "Winter wonderland theme-specific (white, snowflakes, icy blue) Christmas nail designs and snowflake painting techniques"
   }
 }

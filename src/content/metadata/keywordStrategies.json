@@ -24,5 +24,29 @@
       "chrome nail powder holiday",
       "gold christmas manicure"
     ]
+  },
+  "short-christmas-nails-2025": {
+    "avoidKeywords": [
+      "christmas nails",
+      "red and green christmas nails",
+      "long christmas nails"
+    ],
+    "clusteredWith": [
+      "short nail christmas designs",
+      "natural nail holiday art",
+      "easy festive nails"
+    ]
+  },
+  "white-christmas-nails-snowflake-designs-2025": {
+    "avoidKeywords": [
+      "christmas nails",
+      "red christmas nails",
+      "gold christmas nails"
+    ],
+    "clusteredWith": [
+      "winter nail art",
+      "snowflake nail designs",
+      "icy blue nails"
+    ]
   }
 }

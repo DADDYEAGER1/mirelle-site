@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "prebuild": "node scripts/regenerate-metadata.js",
     "build": "next build --turbopack",
-    "postbuild": "next-sitemap && node scripts/generate-image-sitemap.js",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint"
   },

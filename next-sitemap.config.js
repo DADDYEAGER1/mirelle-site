@@ -1,3 +1,20 @@
+// Helper function to generate image sitemap XML
+function generateImageSitemap(imageUrls, type) {
+  const urls = imageUrls.map(url => `
+  <url>
+    <loc>https://mirelleinspo.com/${type}</loc>
+    <image:image>
+      <image:loc>${url}</image:loc>
+    </image:image>
+  </url>`).join('');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${urls}
+</urlset>`;
+}
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://mirelleinspo.com',
@@ -5,7 +22,6 @@ module.exports = {
   sitemapSize: 5000,
   changefreq: 'daily',
   priority: 0.7,
-
   // ✅ Exclude non-public pages
   exclude: [
     '/api/*',
@@ -16,7 +32,6 @@ module.exports = {
     '/404',
     '/500',
   ],
-
   // 🆕 PHASE 4: Enhanced robots.txt with better bot policies
   robotsTxtOptions: {
     policies: [
@@ -50,16 +65,15 @@ module.exports = {
       { userAgent: 'DotBot', disallow: '/' },
     ],
     additionalSitemaps: [
-      'https://mirelleinspo.com/sitemap-images.xml'
+      'https://mirelleinspo.com/sitemap-blog-images.xml',
+      'https://mirelleinspo.com/sitemap-shop-images.xml'
     ],
   },
-
   // ✅ Intelligent transform for existing pages only
   transform: async (config, path) => {
     let priority = config.priority;
     let changefreq = config.changefreq;
     let lastmod = config.autoLastmod ? new Date().toISOString() : undefined;
-
     if (path === '/') {
       priority = 1.0;
       changefreq = 'daily';
@@ -76,7 +90,6 @@ module.exports = {
       priority = 0.6;
       changefreq = 'monthly';
     }
-
     return {
       loc: path,
       changefreq,
@@ -85,32 +98,25 @@ module.exports = {
       alternateRefs: config.alternateRefs ?? [],
     };
   },
-
   // ✅ Generate blog posts only (no category/tag URLs)
   additionalPaths: async (config) => {
     const result = [];
-
     try {
       const fs = require('fs');
       const pathModule = require('path');
-
       const blogDir = pathModule.join(process.cwd(), 'src/content/blogs');
       const dateModifiedPath = pathModule.join(process.cwd(), 'src/content/metadata/dateModified.json');
-
       if (fs.existsSync(blogDir)) {
         const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
-
         let dateModified = {};
         if (fs.existsSync(dateModifiedPath)) {
           dateModified = JSON.parse(fs.readFileSync(dateModifiedPath, 'utf8'));
         }
-
         files.forEach(file => {
           const slug = file.replace('.md', '');
           const lastmod = dateModified[slug]
             ? new Date(dateModified[slug]).toISOString()
             : new Date().toISOString();
-
           result.push({
             loc: `/blog/${slug}`,
             changefreq: 'weekly',
@@ -122,7 +128,52 @@ module.exports = {
     } catch (error) {
       console.warn('Error generating additional sitemap paths:', error.message);
     }
-
     return result;
+  },
+  // 🆕 Generate image sitemaps for blog and shop
+  async additionalSitemaps() {
+    const fs = require('fs');
+    const pathModule = require('path');
+    const sitemaps = [];
+
+    try {
+      // Generate blog images sitemap
+      const blogImagesDir = pathModule.join(process.cwd(), 'public/images/blog');
+      if (fs.existsSync(blogImagesDir)) {
+        const blogImages = fs.readdirSync(blogImagesDir)
+          .filter(f => /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(f))
+          .map(img => `https://mirelleinspo.com/images/blog/${img}`);
+        
+        if (blogImages.length > 0) {
+          const blogImagesSitemap = generateImageSitemap(blogImages, 'blog');
+          fs.writeFileSync(
+            pathModule.join(process.cwd(), 'public/sitemap-blog-images.xml'),
+            blogImagesSitemap
+          );
+          sitemaps.push('https://mirelleinspo.com/sitemap-blog-images.xml');
+        }
+      }
+
+      // Generate shop images sitemap
+      const shopImagesDir = pathModule.join(process.cwd(), 'public/images/shop');
+      if (fs.existsSync(shopImagesDir)) {
+        const shopImages = fs.readdirSync(shopImagesDir)
+          .filter(f => /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(f))
+          .map(img => `https://mirelleinspo.com/images/shop/${img}`);
+        
+        if (shopImages.length > 0) {
+          const shopImagesSitemap = generateImageSitemap(shopImages, 'shop');
+          fs.writeFileSync(
+            pathModule.join(process.cwd(), 'public/sitemap-shop-images.xml'),
+            shopImagesSitemap
+          );
+          sitemaps.push('https://mirelleinspo.com/sitemap-shop-images.xml');
+        }
+      }
+    } catch (error) {
+      console.warn('Error generating image sitemaps:', error.message);
+    }
+
+    return sitemaps;
   },
 };

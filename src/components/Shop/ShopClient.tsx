@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { ChevronDown, ChevronUp } from 'lucide-react';
@@ -95,23 +96,24 @@ export default function ShopClient({
       {/* Products Grid */}
       <section className="max-w-7xl mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {displayProducts.map((product) => {
-            const discount = calculateDiscount(product.originalPrice, product.price);
+{displayProducts.map((product, index) => {
+  const discount = calculateDiscount(product.originalPrice, product.price);
+  const isAboveFold = index < 3; // First 3 products
 
-            return (
-              <a
-                key={product.id}
-                href={product.affiliateUrl}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"
-              >
-                <div className="relative aspect-square overflow-hidden bg-gray-100">
-                  <img
-                    src={product.image}
-                    alt={product.imageAlt || product.description || product.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
+  return (
+    <a key={product.id} ...>
+      <div className="relative aspect-square overflow-hidden bg-gray-100">
+        <Image
+          src={product.image}
+          alt={product.imageAlt || product.description || product.name}
+          width={800}
+          height={800}
+          quality={85}
+          priority={isAboveFold}  // ⚡ Load first 3 immediately
+          loading={isAboveFold ? undefined : "lazy"}  // Lazy load rest
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        />
                   <div className="absolute top-2 left-2 flex flex-col gap-1">
                     {product.isNew && (
                       <span className="px-2 py-1 bg-blue-500 text-white text-xs font-bold rounded">

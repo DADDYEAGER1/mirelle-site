@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 import { useState, useEffect } from 'react';
 
@@ -40,11 +41,17 @@ export default function ProductShowcase({ images }: ProductShowcaseProps) {
                 hoveredIndex === index ? 'scale-110 shadow-2xl z-20' : 'scale-100'
               }`}
             >
-              <img
-                src={image}
-                alt={`Press-on nail design ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
+              <Image
+  src={image}
+  alt={`Press-on nail design ${index + 1}`}
+  width={400}
+  height={533}  // Maintains 3:4 aspect ratio for 48×64 container
+  quality={80}
+  loading="lazy"  // Carousel images can lazy load
+  className="w-full h-full object-cover"
+  sizes="200px"  // Fixed size for carousel
+/>
+
             </div>
           </div>
         ))}

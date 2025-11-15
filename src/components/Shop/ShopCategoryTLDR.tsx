@@ -1,6 +1,7 @@
 'use client';
-import Image from 'next/image';
+
 import { ArrowDown } from 'lucide-react';
+import Image from 'next/image';
 import ProductShowcase from './ProductShowcase';
 import type { Product } from '@/types/shop';
 
@@ -28,7 +29,11 @@ export default function ShopCategoryTLDR({
     }
   };
 
-  const showcaseImages = showcaseProducts.map(p => p.image);
+  // Extract images with alt texts for showcase
+  const showcaseImages = showcaseProducts.map(p => ({
+    src: p.image,
+    alt: p.imageAlt || p.description || p.name,
+  }));
 
   return (
     <section className="w-full bg-gradient-editorial">
@@ -41,9 +46,8 @@ export default function ShopCategoryTLDR({
           {metaDescription}
         </p>
       </div>
-      import Image from 'next/image';
 
-      {/* Product Showcase */}
+      {/* Product Showcase - Pass images with alt texts */}
       <ProductShowcase images={showcaseImages} />
 
       {/* TL;DR Quick Overview */}
@@ -51,7 +55,7 @@ export default function ShopCategoryTLDR({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="bg-white/80 backdrop-blur-sm border-l-4 border-editorial-accent p-6 rounded-lg shadow-editorial">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">⚡</span>
+              <span className="text-2xl" role="img" aria-label="lightning">⚡</span>
               <h2 className="text-headline-md font-serif text-editorial-charcoal">
                 Quick Collection Overview
               </h2>
@@ -61,7 +65,7 @@ export default function ShopCategoryTLDR({
               <ul className="space-y-2">
                 {tldrSummary.map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
-                    <span className="text-editorial-accent mt-1">✓</span>
+                    <span className="text-editorial-accent mt-1" aria-hidden="true">✓</span>
                     <span className="text-editorial-slate text-body">{item}</span>
                   </li>
                 ))}
@@ -93,10 +97,11 @@ export default function ShopCategoryTLDR({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 text-center">
         <button
           onClick={scrollToProducts}
+          aria-label="Scroll to shop collection products"
           className="group inline-flex items-center gap-3 bg-editorial-charcoal text-white px-8 py-4 rounded-full font-semibold text-body-lg hover:bg-editorial-slate transition-all duration-300 shadow-editorial hover:shadow-editorial-lg hover:scale-105"
         >
           Shop Collection
-          <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+          <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" aria-hidden="true" />
         </button>
       </div>
     </section>

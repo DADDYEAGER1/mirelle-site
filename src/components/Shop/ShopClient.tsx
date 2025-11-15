@@ -101,7 +101,13 @@ export default function ShopClient({
   const isAboveFold = index < 3; // First 3 products
 
   return (
-    <a key={product.id} ...>
+              <a
+                key={product.id}
+                href={product.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"
+              >
       <div className="relative aspect-square overflow-hidden bg-gray-100">
         <Image
           src={product.image}

@@ -26,9 +26,6 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     
-    // Image quality (85 = good balance between size and quality)
-    quality: 85,
-    
     // Remote patterns (fallback for external images)
     remotePatterns: [
       {
@@ -41,18 +38,18 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: '*.media-amazon.com', // Amazon product images (legacy)
+        hostname: '*.media-amazon.com',
       },
       {
         protocol: 'https',
-        hostname: 'm.media-amazon.com', // Specific Amazon domain (legacy)
+        hostname: 'm.media-amazon.com',
       },
     ],
     
-    // Don't disable optimization (we want Next.js to optimize)
+    // Don't disable optimization
     unoptimized: false,
     
-    // Dangerous allow SVG (only if you trust the source)
+    // Allow SVG with security
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
@@ -86,13 +83,13 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // ✅ AGGRESSIVE CACHING for shop images (they rarely change)
+      // Cache shop images aggressively
       {
         source: "/images/shop/:path*",
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable", // 1 year cache
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
@@ -116,7 +113,7 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // ✅ Cache optimized Next.js images (from /_next/image)
+      // Cache optimized Next.js images
       {
         source: "/_next/image/:path*",
         headers: [
@@ -131,43 +128,24 @@ const nextConfig: NextConfig = {
 
   // Enable SWR for ISR with optimized settings
   onDemandEntries: {
-    maxInactiveAge: 60 * 1000, // Keep pages in memory for 60s
+    maxInactiveAge: 60 * 1000,
     pagesBufferLength: 5,
   },
 
-  // ✅ Performance optimizations
+  // Performance optimizations
   compress: true,
   generateEtags: true,
   trailingSlash: false,
   reactStrictMode: true,
-  optimizeFonts: true,
-  
-  // Optimize package imports
-  optimizePackageImports: [
-    "@chakra-ui/react",
-    "@headlessui/react",
-    "date-fns",
-    "lucide-react",
-  ],
 
-  // ✅ Experimental features for better performance
+  // Experimental features
   experimental: {
     optimizePackageImports: ["lodash-es", "fuse.js"],
     optimizeCss: true,
-    // ✅ NEW: Turbopack for faster dev builds (Next.js 14+)
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-      },
-    },
   },
 
-  // ✅ Webpack optimization for production builds
+  // Webpack optimization
   webpack: (config, { isServer, dev }) => {
-    // Only optimize in production
     if (!isServer && !dev) {
       config.optimization = {
         ...config.optimization,
@@ -176,14 +154,12 @@ const nextConfig: NextConfig = {
           cacheGroups: {
             default: false,
             vendors: false,
-            // Vendor chunk (node_modules)
             vendor: {
               name: 'vendor',
               chunks: 'all',
               test: /node_modules/,
               priority: 20,
             },
-            // Common chunk (shared code)
             common: {
               name: 'common',
               minChunks: 2,
@@ -192,7 +168,6 @@ const nextConfig: NextConfig = {
               reuseExistingChunk: true,
               enforce: true,
             },
-            // ✅ NEW: Separate chunk for large libraries
             lib: {
               test: /[\\/]node_modules[\\/](react|react-dom|next)[\\/]/,
               name: 'lib',
@@ -201,12 +176,11 @@ const nextConfig: NextConfig = {
             },
           },
         },
-        // ✅ Minimize bundle size
         minimize: true,
       };
     }
 
-    // ✅ Handle SVGs as React components
+    // Handle SVGs as React components
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
@@ -215,19 +189,10 @@ const nextConfig: NextConfig = {
     return config;
   },
 
-  // ✅ Enable source maps in production (for debugging)
-  productionBrowserSourceMaps: false, // Set to true only if needed (increases build size)
+  productionBrowserSourceMaps: false,
 
-  // ✅ Redirect old URLs if needed
   async redirects() {
-    return [
-      // Example: Redirect old Amazon image paths to new local paths (if needed)
-      // {
-      //   source: '/old-path/:path*',
-      //   destination: '/new-path/:path*',
-      //   permanent: true,
-      // },
-    ];
+    return [];
   },
 };
 

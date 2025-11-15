@@ -42,19 +42,20 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Image 
-              src="/logo.png" 
-              alt="Mirelle Inspo" 
-              width={50} 
-              height={50}
-              className="h-12 w-auto"
-            />
-            <span className="font-serif text-2xl font-bold text-charcoal-800">
-              Mirellé
-            </span>
-          </Link>
+{/* Logo */}
+<Link href="/" className="flex items-center space-x-2">
+  <Image 
+    src="/logo.png" 
+    alt="Mirelle Inspo" 
+    width={48} 
+    height={48}
+    priority={true}
+    className="w-auto h-12"
+  />
+  <span className="font-serif text-2xl font-bold text-charcoal-800">
+    Mirellé
+  </span>
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

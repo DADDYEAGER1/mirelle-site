@@ -1,109 +1,86 @@
 'use client';
 
-import { ArrowDown } from 'lucide-react';
+import { useState } from 'react';
 import Image from 'next/image';
-import ProductShowcase from './ProductShowcase';
-import type { Product } from '@/types/shop';
 
-interface ShopCategoryTLDRProps {
-  title: string;
-  year: number;
-  metaDescription: string;
-  showcaseProducts: Product[];
-  tldrSummary?: string[];
-  tldrKeyTakeaways?: string[];
+// ✅ NEW: Support both string[] and object[]
+interface ImageData {
+  src: string;
+  alt: string;
 }
 
-export default function ShopCategoryTLDR({
-  title,
-  year,
-  metaDescription,
-  showcaseProducts,
-  tldrSummary,
-  tldrKeyTakeaways,
-}: ShopCategoryTLDRProps) {
-  const scrollToProducts = () => {
-    const productsSection = document.getElementById('products-section');
-    if (productsSection) {
-      productsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
+interface ProductShowcaseProps {
+  images: string[] | ImageData[];  // Accept both formats
+}
 
-  // Extract images with alt texts for showcase
-  const showcaseImages = showcaseProducts.map(p => ({
-    src: p.image,
-    alt: p.imageAlt || p.description || p.name,
-  }));
+export default function ProductShowcase({ images }: ProductShowcaseProps) {
+  const [isPaused, setIsPaused] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  // ✅ Normalize to object format
+  const normalizedImages = images.map((img, index) => 
+    typeof img === 'string' 
+      ? { src: img, alt: `Press-on nail design ${index + 1}` }
+      : img
+  );
+
+  // Duplicate images for seamless loop
+  const duplicatedImages = [...normalizedImages, ...normalizedImages, ...normalizedImages];
 
   return (
-    <section className="w-full bg-gradient-editorial">
-      {/* Hero Title & Meta Description */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 text-center">
-        <h1 className="text-display-lg sm:text-display-xl font-serif font-normal text-editorial-charcoal mb-6 tracking-magazine">
-          {title} {year}
-        </h1>
-        <p className="text-body-xl sm:text-headline-md text-editorial-slate max-w-4xl mx-auto font-light leading-relaxed">
-          {metaDescription}
-        </p>
-      </div>
+    <div className="relative w-full overflow-hidden py-12 bg-gradient-to-b from-white via-gray-50 to-white">
+      {/* Blur fade edges */}
+      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
 
-      {/* Product Showcase - Pass images with alt texts */}
-      <ProductShowcase images={showcaseImages} />
-
-      {/* TL;DR Quick Overview */}
-      {tldrSummary && tldrSummary.length > 0 && (
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="bg-white/80 backdrop-blur-sm border-l-4 border-editorial-accent p-6 rounded-lg shadow-editorial">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl" role="img" aria-label="lightning">⚡</span>
-              <h2 className="text-headline-md font-serif text-editorial-charcoal">
-                Quick Collection Overview
-              </h2>
-            </div>
-            
-            <div className="space-y-3">
-              <ul className="space-y-2">
-                {tldrSummary.map((item, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-editorial-accent mt-1" aria-hidden="true">✓</span>
-                    <span className="text-editorial-slate text-body">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              {tldrKeyTakeaways && tldrKeyTakeaways.length > 0 && (
-                <div className="mt-4 pt-4 border-t border-editorial-stone">
-                  <p className="text-editorial-charcoal font-medium mb-2 text-body">
-                    Key Features:
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {tldrKeyTakeaways.map((takeaway, index) => (
-                      <span 
-                        key={index} 
-                        className="bg-editorial-sand text-editorial-charcoal px-3 py-1 rounded-full text-body-sm font-medium"
-                      >
-                        {takeaway}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
+      {/* Scrolling container */}
+      <div
+        className={`flex gap-6 ${isPaused ? '' : 'animate-scroll'}`}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => {
+          setIsPaused(false);
+          setHoveredIndex(null);
+        }}
+      >
+        {duplicatedImages.map((image, index) => (
+          <div
+            key={`${image.src}-${index}`}
+            className="flex-shrink-0 w-48 h-64 relative group cursor-pointer"
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <div
+              className={`w-full h-full rounded-xl overflow-hidden shadow-lg transition-all duration-300 ${
+                hoveredIndex === index ? 'scale-110 shadow-2xl z-20' : 'scale-100'
+              }`}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={400}
+                height={533}
+                loading="lazy"
+                className="w-full h-full object-cover"
+                sizes="200px"
+              />
             </div>
           </div>
-        </div>
-      )}
-
-      {/* CTA Button */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 text-center">
-        <button
-          onClick={scrollToProducts}
-          aria-label="Scroll to shop collection products"
-          className="group inline-flex items-center gap-3 bg-editorial-charcoal text-white px-8 py-4 rounded-full font-semibold text-body-lg hover:bg-editorial-slate transition-all duration-300 shadow-editorial hover:shadow-editorial-lg hover:scale-105"
-        >
-          Shop Collection
-          <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" aria-hidden="true" />
-        </button>
+        ))}
       </div>
-    </section>
+
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-33.333%);
+          }
+        }
+        .animate-scroll {
+          animation: scroll 40s linear infinite;
+        }
+      `}</style>
+    </div>
   );
 }

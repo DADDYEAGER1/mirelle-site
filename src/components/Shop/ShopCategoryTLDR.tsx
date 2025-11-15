@@ -43,30 +43,6 @@ export default function ShopCategoryTLDR({
       </div>
       import Image from 'next/image';
 
-<Image
-  src={showcaseProducts[0]?.image}
-  alt={showcaseProducts[0]?.imageAlt}
-  width={1200}
-  height={800}
-  quality={90}
-  priority={true}  // ⚡ Hero images should load immediately
-  className="..."
-/>
-
-// For smaller showcase thumbnails:
-{showcaseProducts.slice(1, 6).map((product) => (
-  <Image
-    key={product.id}
-    src={product.image}
-    alt={product.imageAlt}
-    width={400}
-    height={400}
-    quality={80}
-    loading="lazy"  // Thumbnails can lazy load
-    className="..."
-  />
-))}
-
       {/* Product Showcase */}
       <ProductShowcase images={showcaseImages} />
 

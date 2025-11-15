@@ -55,18 +55,20 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         
-        {/* Logo & Description - Always Visible */}
-        <div className="mb-8 pb-6 border-b border-gray-700">
-          <Link href="/" className="flex items-center space-x-2 mb-4">
-            <Image 
-              src="/logo.png" 
-              alt="Mirellé Inspo" 
-              width={32} 
-              height={32}
-              className="lg:w-10 lg:h-10"
-            />
-            <span className="font-serif text-xl lg:text-2xl font-bold">Mirellé Inspo</span>
-          </Link>
+{/* Logo & Description - Always Visible */}
+<div className="mb-8 pb-6 border-b border-gray-700">
+  <Link href="/" className="flex items-center space-x-2 mb-4">
+    <Image 
+      src="/logo.png" 
+      alt="Mirellé Inspo" 
+      width={40} 
+      height={40}
+      className="w-8 h-8 lg:w-10 lg:h-10"
+    />
+    <span className="font-serif text-xl lg:text-2xl font-bold">Mirellé Inspo</span>
+  </Link>
+  {/* ... rest of footer ... */}
+</div>
           <p className="text-gray-400 text-sm lg:text-base max-w-md leading-relaxed">
             Your trusted source for curated nail trends, honest product reviews, and artist discoveries. 
             We find the best so you don't have to scroll for hours.

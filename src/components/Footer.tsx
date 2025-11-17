@@ -67,8 +67,7 @@ export default function Footer() {
             />
             <span className="font-serif text-xl lg:text-2xl font-bold">Mirellé Inspo</span>
           </Link>
-  {/* ... rest of footer ... */}
-</div>
+
           <p className="text-gray-400 text-sm lg:text-base max-w-md leading-relaxed">
             Your trusted source for curated nail trends, honest product reviews, and artist discoveries. 
             We find the best so you don't have to scroll for hours.

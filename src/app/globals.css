@@ -256,8 +256,7 @@ hr {
    🌙 TEMPORARY DARK MODE OVERRIDE 🌙
    Remove this entire section to restore light mode
    ======================================== */
-
-/* Force dark mode on entire site */
+/* 
 html {
   background: #0a0a0a !important;
   color-scheme: dark !important;
@@ -268,12 +267,10 @@ body {
   color: #e5e5e5 !important;
 }
 
-/* Override all text colors */
 h1, h2, h3, h4, h5, h6, p, span, div, li, td, th, label {
   color: #e5e5e5 !important;
 }
 
-/* Links */
 a {
   color: #e5e5e5 !important;
 }
@@ -282,7 +279,6 @@ a:hover {
   color: var(--accent-light) !important;
 }
 
-/* Override white/light backgrounds to dark */
 [class*="bg-white"],
 [class*="bg-gray-50"],
 [class*="bg-gray-100"],
@@ -293,7 +289,6 @@ a:hover {
   background: #1a1a1a !important;
 }
 
-/* Override cream/light backgrounds */
 [style*="background: #fcfaf5"],
 [style*="background: #f8f4eb"],
 [style*="background-color: #fcfaf5"],
@@ -301,19 +296,19 @@ a:hover {
   background: #1a1a1a !important;
 }
 
-/* Cards and containers */
+
 .glass-card {
   background: rgba(30, 30, 30, 0.8) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* Borders */
+
 hr,
 [class*="border"] {
   border-color: #333 !important;
 }
 
-/* Inputs */
+
 input, textarea, select {
   background: #1a1a1a !important;
   color: #e5e5e5 !important;
@@ -325,30 +320,30 @@ textarea::placeholder {
   color: #666 !important;
 }
 
-/* Buttons - preserve burgundy accent */
+
 button {
   border-color: #333 !important;
-}
+} */
 
 /* Scrollbar dark theme */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: #0a0a0a !important;
-}
+} */
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: var(--accent-light) !important;
-}
+} */
 
 /* Images - slight brightness reduction for dark mode */
-img {
+/* img {
   filter: brightness(0.9);
-}
+} */
 
 /* Selection */
-::selection {
+/* ::selection {
   background: var(--accent) !important;
   color: white !important;
-}
+} */
 
 /* ======================================== 
    END OF TEMPORARY DARK MODE OVERRIDE

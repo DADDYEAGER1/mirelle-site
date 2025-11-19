@@ -5,17 +5,20 @@ const nextConfig: NextConfig = {
   // ✅ Image Optimization - LOCAL IMAGES PRIORITY + Remote fallback
   images: {
     // Local images from public folder (PRIORITY)
-    localPatterns: [
-      {
-        pathname: '/images/shop/**',
-        search: '',
-      },
-      {
-        pathname: '/images/**',
-        search: '',
-      },
-    ],
-    
+localPatterns: [
+  {
+    pathname: '/images/shop/**',
+    search: '',
+  },
+  {
+    pathname: '/images/**',
+    search: '',
+  },
+  {
+    pathname: '/**',  // ✅ ADD THIS - Allows all public folder files
+    search: '',
+  },
+],
     // Modern image formats (60-70% smaller files)
     formats: ['image/avif', 'image/webp'],
     

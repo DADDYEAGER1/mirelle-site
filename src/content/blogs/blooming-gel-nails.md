@@ -19,8 +19,8 @@ tags:
   - "tortoiseshell-nails"
 image: "/images/blog/blooming-gel-nails-watercolor-pink-purple-gradient-hero.jpg"
 imageAlt: "Blooming gel nails featuring watercolor effect with pink and purple gradient on natural nail shape"
-imageWidth: 800
-imageHeight: 800
+imageWidth: 1200
+imageHeight: 630
 readTime: "14 min"
 canonical: "https://mirelleinspo.com/blog/blooming-gel-nails"
 wordCount: 3124

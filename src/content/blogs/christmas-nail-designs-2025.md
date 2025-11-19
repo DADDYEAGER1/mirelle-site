@@ -21,10 +21,6 @@ imageHeight: 630
 dateModified: "2025-10-24"
 wordCount: 4200
 
-rating:
-  value: 4.9
-  count: 287
-
 galleryImages:
   - url: "/images/blog/christmas-colors-2025.png"
     alt: "Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome"

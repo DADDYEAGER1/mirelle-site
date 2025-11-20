@@ -115,22 +115,6 @@ Think of it like watercolor painting on wet paper. When you drop gel polish colo
 
 The technique originated in professional nail salons but has exploded on social media because it's surprisingly achievable at home with basic gel nail supplies.
 
-<div class='my-8 text-center'>
-  <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='View more blooming gel tutorials on Pinterest'>
-    <img
-      src='/images/blog/blooming-gel-nails-watercolor-pink-purple-gradient-hero.jpg'
-      alt='Blooming gel nails featuring watercolor effect with pink and purple gradient on natural nail shape'
-      width='800'
-      height='800'
-      class='rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer'
-      loading='lazy'
-    />
-  </a>
-  <p class='text-sm text-gray-600 mt-3 italic'>
-    💅 Click to explore 500+ blooming gel nail inspirations on our Pinterest board!
-  </p>
-</div>
-
 ### How Blooming Gel Works
 
 Blooming gel stays wet and workable longer than regular gel polish. Here's the science part made simple:

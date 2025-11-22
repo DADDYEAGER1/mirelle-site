@@ -1,1030 +1,5 @@
-<p className="text-gray-700"><strong>Apply neutral base</strong></p>
-                      <p className="text-gray-600 text-sm">Paint nails with beige, cream, white, or soft gray. Abstract art needs a clean canvas. Dry completely.</p>
-                    </div>
-                  </div>
 
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      2
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Add random lines</strong></p>
-                      <p className="text-gray-600 text-sm">Using a toothpick or thin brush, draw random thin lines across your nail. Straight, curved, intersecting—whatever feels right. Keep them minimal. 2-3 lines per nail max.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      3
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Optional: Add tiny shapes</strong></p>
-                      <p className="text-gray-600 text-sm">Small dots, half circles, tiny triangles. Keep them sparse. The power is in the negative space. Each nail can have a different composition.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      4
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Embrace imperfection</strong></p>
-                      <p className="text-gray-600 text-sm">Shaky lines look artistic. Slightly irregular shapes look intentional. This is the one design where "mistakes" actually make it better. Top coat and call it modern art.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
-                  <p className="text-gray-700 text-sm">
-                    <strong>💡 Pro tip:</strong> This is the design to try when you're tired or don't have time for precision. Black lines on white base = classic. Gold lines on nude = expensive looking. Use a contrasting color so your lines are visible. Perfect for days when you want to look put together without the effort.
-                  </p>
-                </div>
-
-                <img
-                  src="/nail-art-abstract-minimalist-random-lines-shapes.jpg"
-                  alt="Abstract minimalist nail design with random lines and shapes for artistic modern look"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
-              </div>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* CHECKPOINT: Still Easy Designs Complete - Moving to 2025 Trending Designs */}
-
-            {/* Section 7: TRENDING 2025 BEGINNER-FRIENDLY DESIGNS */}
-            <div id="trending-2025" className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
-                🔥 Trending 2025 Beginner-Friendly Designs
-              </h2>
-              
-              <p className="text-gray-600 leading-relaxed mb-8">
-                These four designs are what's hot right now. The best part? They're all easier than traditional nail art. 2025 trends favor simple techniques that look expensive.
-              </p>
-
-              {/* Design 19: Glass Nails */}
-              <div className="mb-12">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">1️⃣9️⃣</span>
-                  <div>
-                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Glass Nails</h3>
-                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
-                      <span>★☆☆ Difficulty</span>
-                      <span>⏱️ 8 min</span>
-                      <span>🛠️ High-gloss top coat</span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  Ultra-glossy, translucent nails that look like glass. The trick is all in the top coat—you need a high-shine gel-like finish. This is actually one of the easiest "advanced" looks.
-                </p>
-                
-                <div className="bg-gray-50 p-6 rounded-xl mb-4">
-                  <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
-                  <ul className="text-gray-600 space-y-1 text-sm">
-                    <li>• Base coat + sheer translucent polish or very light nude</li>
-                    <li>• High-gloss gel-effect top coat (Essie Gel Couture or Sally Hansen Miracle Gel)</li>
-                    <li>• Ridge-filling base coat helps create smooth surface</li>
-                  </ul>
-                </div>
-
-                <div className="space-y-3 mb-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      1
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Start with smooth nails</strong></p>
-                      <p className="text-gray-600 text-sm">Glass nails require smooth nail surfaces. Buff gently to remove ridges. Apply ridge-filling base coat. Let dry completely.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      2
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply sheer color</strong></p>
-                      <p className="text-gray-600 text-sm">Use sheer milky pink, nude, or even clear polish. The translucent quality is key for that glass effect. Two thin coats. Dry completely.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      3
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply high-gloss top coat</strong></p>
-                      <p className="text-gray-600 text-sm">This is where the magic happens. Apply a thick layer of gel-effect top coat. The ultra-glossy finish creates that glass-like appearance. Two coats of top coat if needed for maximum shine.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      4
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Let cure fully</strong></p>
-                      <p className="text-gray-600 text-sm">Don't touch for 10 minutes. The thick top coat needs time to fully harden. Once set, you'll have that signature mirror-like finish.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border-l-4 border-blue-600 mb-4">
-                  <p className="text-gray-700 text-sm">
-                    <strong>🔬 Why this is perfect for beginners:</strong> There's no design to mess up. You're literally just applying polish smoothly, which you already learned in Design 1. The high-gloss top coat does all the work of making it look expensive and trendy. For healthy nail tips to achieve the best glass nail look, check our <a href="https://mirelleinspo.com/topics/nail-care-guide" style={{color: '#2563eb', textDecoration: 'underline'}}>nail strengthening guide</a>.
-                  </p>
-                </div>
-
-                <img
-                  src="/nail-art-glass-nails-ultra-glossy-translucent-finish.jpg"
-                  alt="Glass nail trend showing ultra glossy translucent finish with mirror like shine effect"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
-              </div>
-
-              {/* Design 20: Mocha Mousse Solid */}
-              <div className="mb-12">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">2️⃣0️⃣</span>
-                  <div>
-                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Mocha Mousse Solid</h3>
-                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
-                      <span>★☆☆ Difficulty</span>
-                      <span>⏱️ 5 min</span>
-                      <span>🛠️ Just polish</span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  Pantone's Color of the Year 2025. Warm brown shade that's universally flattering. This isn't a technique—it's literally just painting your nails this specific trendy color. Easy as it gets.
-                </p>
-                
-                <div className="bg-gray-50 p-6 rounded-xl mb-4">
-                  <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
-                  <ul className="text-gray-600 space-y-1 text-sm">
-                    <li>• Base coat + mocha brown polish (warm medium brown) + top coat</li>
-                    <li>• Look for: OPI "You Don't Know Jacques", Essie "Chinchilly", or any warm brown</li>
-                  </ul>
-                </div>
-
-                <div className="space-y-3 mb-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      1
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply base coat</strong></p>
-                      <p className="text-gray-600 text-sm">Standard base coat application. Let dry 2 minutes.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      2
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply mocha brown</strong></p>
-                      <p className="text-gray-600 text-sm">Paint nails with your warm brown shade. Two thin coats for even coverage. This color is so on-trend right now that you don't need any design—the color IS the statement.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      3
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Top coat and you're done</strong></p>
-                      <p className="text-gray-600 text-sm">That's it. You're literally wearing Pantone's Color of the Year. Instant trendiness with zero effort.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 border-l-4 border-green-600 mb-4">
-                  <p className="text-gray-700 text-sm">
-                    <strong>💡 Quick Takeaway:</strong> Sometimes the trend is just about wearing the right color. Mocha mousse is everywhere in 2025—fashion, home decor, and nails. This warm brown complements literally every skin tone, works for any season, and looks sophisticated without trying. Perfect for <a href="https://mirelleinspo.com/topics/modern-women" style={{color: '#2563eb', textDecoration: 'underline'}}>professional settings</a> or everyday wear.
-                  </p>
-                </div>
-
-                <img
-                  src="/nail-art-mocha-mousse-pantone-2025-warm-brown.jpg"
-                  alt="Mocha mousse solid nail color Pantone 2025 showing warm brown trendy shade"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
-              </div>
-
-              {/* Design 21: Soap Nails */}
-              <div className="mb-12">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">2️⃣1️⃣</span>
-                  <div>
-                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Soap Nails</h3>
-                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
-                      <span>★☆☆ Difficulty</span>
-                      <span>⏱️ 8 min</span>
-                      <span>🛠️ Just polish</span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  Hailey Bieber's latest obsession. Milky white base with ultra-glossy finish. Clean, minimalist, and gives "expensive skincare routine" energy. Super easy—just white polish + glossy top coat.
-                </p>
-                
-                <div className="bg-gray-50 p-6 rounded-xl mb-4">
-                  <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
-                  <ul className="text-gray-600 space-y-1 text-sm">
-                    <li>• Base coat + milky white polish (not bright white, softer) + glossy top coat</li>
-                    <li>• Try: Essie "Blanc", OPI "Funny Bunny", or any cream white</li>
-                  </ul>
-                </div>
-
-                <div className="space-y-3 mb-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      1
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply milky white base</strong></p>
-                      <p className="text-gray-600 text-sm">Paint nails with soft milky white. Not stark bright white—you want that creamy soap-like opacity. Two-three coats for full coverage. Let dry completely.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      2
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply super glossy top coat</strong></p>
-                      <p className="text-gray-600 text-sm">The shine is crucial. Apply thick layer of your glossiest top coat. The combination of matte milky white with high gloss creates that soap bar aesthetic. That's the whole look.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      3
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Optional: Keep nails short</strong></p>
-                      <p className="text-gray-600 text-sm">Soap nails look best on short-medium length nails. The clean, minimal vibe is enhanced by modest length. Trim if needed before starting.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
-                  <p className="text-gray-700 text-sm">
-                    <strong>💡 Pro tip:</strong> This is the ultimate "clean girl" aesthetic nail. Works for literally any occasion. Professional enough for work, chic enough for events, simple enough for everyday. Bonus: any chips or wear blend in better than with dark colors, so it lasts longer looking fresh.
-                  </p>
-                </div>
-
-                <img
-                  src="/nail-art-soap-nails-milky-white-glossy-hailey-bieber.jpg"
-                  alt="Soap nail trend showing milky white glossy finish for clean minimalist aesthetic"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
-              </div>
-
-              {/* Design 22: Jelly Nails */}
-              <div className="mb-12">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">2️⃣2️⃣</span>
-                  <div>
-                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Jelly Nails</h3>
-                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
-                      <span>★☆☆ Difficulty</span>
-                      <span>⏱️ 8 min</span>
-                      <span>🛠️ Just polish</span>
-                    </div>
-                  </div>
-                </div>
-                <p className="text-gray-600 leading-relaxed mb-4">
-                  Translucent, squishy-looking nails in bright colors. The sheer quality is forgiving—it hides application mistakes and nail imperfections. Plus, it's trending hard right now.
-                </p>
-                
-                <div className="bg-gray-50 p-6 rounded-xl mb-4">
-                  <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
-                  <ul className="text-gray-600 space-y-1 text-sm">
-                    <li>• Base coat + jelly polish (sheer translucent formula) + glossy top coat</li>
-                    <li>• Look for sheer formulas in pink, coral, blue, green—any bright color</li>
-                    <li>• Regular polish applied thin works too</li>
-                  </ul>
-                </div>
-
-                <div className="space-y-3 mb-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      1
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply sheer base</strong></p>
-                      <p className="text-gray-600 text-sm">If using jelly polish, apply one coat. It should be see-through. If using regular polish, apply ONE very thin coat—you want translucency, not full opacity.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      2
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Build color gradually</strong></p>
-                      <p className="text-gray-600 text-sm">Add 1-2 more thin coats to build up the jelly effect. You should still see your nail through the color but it should be vibrant. The translucency is the whole aesthetic.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      3
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Glossy finish is essential</strong></p>
-                      <p className="text-gray-600 text-sm">Apply thick glossy top coat. The high shine creates that wet, jelly-like appearance. This is what makes it look squishy and fun.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 border-l-4 border-green-600 mb-4">
-                  <p className="text-gray-700 text-sm">
-                    <strong>💡 Quick Takeaway:</strong> Jelly nails are perfect for summer or fun occasions. The sheer formula is forgiving of streaks or uneven application—it just adds to the dimensional look. Try bright coral for <a href="https://mirelleinspo.com/blog/holiday-vacation-nails-travel-guide" style={{color: '#2563eb', textDecoration: 'underline'}}>vacation vibes</a>, or pastel pink for everyday sweetness.
-                  </p>
-                </div>
-
-                <img
-                  src="/nail-art-jelly-nails-translucent-glossy-bright-color.jpg"
-                  alt="Jelly nail trend showing translucent sheer bright color with glossy squishy finish"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
-              </div>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* CHECKPOINT: Trending 2025 Designs Complete - Moving to Mistakes Section */}
-
-            {/* Section 8: Common Mistakes & Fixes */}
-            <div id="mistakes" className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
-                ❌ 7 Beginner Mistakes & How to Fix Them
-              </h2>
-              
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Everyone makes these mistakes. Seriously, everyone. Here's how to avoid them or fix them when they happen.
-              </p>
-
-              <div className="space-y-6">
-                {/* Mistake 1 */}
-                <div className="glass-card p-6 rounded-xl border-l-4 border-red-500">
-                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <span className="text-2xl mr-3">1️⃣</span>
-                    Skipping Base Coat or Top Coat
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <strong>Why it's bad:</strong> Base coat protects from staining and helps polish stick. Top coat seals everything and prevents chipping. Skip them and your design lasts maybe one day before looking terrible.
-                  </p>
-                  <p className="text-gray-700 text-sm">
-                    <strong>Fix:</strong> Just don't skip them. Ever. They're non-negotiable. Budget $6 each for decent drugstore versions and they'll last months. The extra 2 minutes is worth having your nails look good all week instead of one day.
-                  </p>
-                </div>
-
-                {/* Mistake 2 */}
-                <div className="glass-card p-6 rounded-xl border-l-4 border-orange-500">
-                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <span className="text-2xl mr-3">2️⃣</span>
-                    Not Waiting for Polish to Dry
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <strong>Why it's bad:</strong> Smudges, dents, or your whole design gets wrecked because you touched something too soon. This is the #1 cause of beginner frustration.
-                  </p>
-                  <p className="text-gray-700 text-sm">
-                    <strong>Fix:</strong> Set a timer. Base coat = 2 minutes. Each polish coat = 2-3 minutes. Top coat = 5 minutes minimum before touching anything. Seriously set a phone timer. Use this time to scroll, not do stuff with your hands. Quick-dry drops help but patience is better.
-                  </p>
-                </div>
-
-                {/* Mistake 3 */}
-                <div className="glass-card p-6 rounded-xl border-l-4 border-yellow-500">
-                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <span className="text-2xl mr-3">3️⃣</span>
-                    Polish All Over Your Cuticles
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <strong>Why it's bad:</strong> Makes your manicure look messy and unprofessional. Also peels off faster when polish is on skin instead of nail.
-                  </p>
-                  <p className="text-gray-700 text-sm">
-                    <strong>Fix:</strong> Leave tiny gap between polish and cuticle when applying. Clean up mistakes with cotton swab dipped in acetone. Go slowly around the edges. Practice makes this easier—your first few attempts will be messier and that's fine. Also, petroleum jelly on skin around nails before polishing makes cleanup way easier—the polish won't stick to skin.
-                  </p>
-                </div>
-
-                {/* Mistake 4 */}
-                <div className="glass-card p-6 rounded-xl border-l-4 border-green-500">
-                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <span className="text-2xl mr-3">4️⃣</span>
-                    Applying Coats Too Thick
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <strong>Why it's bad:</strong> Thick coats bubble, take forever to dry, and create that goopy texture. They also chip faster because they never fully cure.
-                  </p>
-                  <p className="text-gray-700 text-sm">
-                    <strong>Fix:</strong> Thin coats, multiple layers. Wipe excess polish off the brush on the bottle rim before applying. Two thin coats always beat one thick coat. If polish is goopy, add a drop of nail polish thinner (not acetone—that ruins it). Think light layers that build up color gradually.
-                  </p>
-                </div>
-
-                {/* Mistake 5 */}
-                <div className="glass-card p-6 rounded-xl border-l-4 border-blue-500">
-                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <span className="text-2xl mr-3">5️⃣</span>
-                    Pressing Too Hard with Tools
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <strong>Why it's bad:</strong> Dots become blobs, lines become smears, you dent the base polish. Gentle pressure is key but beginners always press too hard out of nervousness.
-                  </p>
-                  <p className="text-gray-700 text-sm">
-                    <strong>Fix:</strong> Practice on paper first to learn the right pressure. For dots, you barely touch the surface—the polish transfers with minimal pressure. For lines, think of guiding the toothpick, not digging with it. Light touch = better control. Take your time.
-                  </p>
-                </div>
-
-                {/* Mistake 6 */}
-                <div className="glass-card p-6 rounded-xl border-l-4 border-purple-500">
-                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <span className="text-2xl mr-3">6️⃣</span>
-                    Comparing to Professional Results
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <strong>Why it's bad:</strong> You get discouraged and quit when your first attempts don't look like Instagram posts. Those are done by professionals with years of practice, perfect lighting, and often editing.
-                  </p>
-                  <p className="text-gray-700 text-sm">
-                    <strong>Fix:</strong> Your first nail art won't be perfect and that's completely normal. Compare your attempts to your previous attempts, not to professionals. Celebrate progress. Every design you do teaches you something. Most people need 5-10 practice rounds before designs look really good. That's the learning curve and it's okay.
-                  </p>
-                </div>
-
-                {/* Mistake 7 */}
-                <div className="glass-card p-6 rounded-xl border-l-4 border-pink-500">
-                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
-                    <span className="text-2xl mr-3">7️⃣</span>
-                    Giving Up After First Try
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    <strong>Why it's bad:</strong> You miss out on actually getting good at something fun and useful. First attempts at anything new feel awkward.
-                  </p>
-                  <p className="text-gray-700 text-sm">
-                    <strong>Fix:</strong> Commit to trying at least three designs before deciding nail art isn't for you. Your third attempt will be noticeably better than your first. Practice the ultra easy designs until they feel comfortable, then move up. Small improvements add up fast. The satisfaction of creating something beautiful on your own nails is worth pushing through the learning phase.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600 mt-8">
-                <h3 className="font-bold text-gray-900 mb-3 text-lg">🛠️ Mid-Design Fixes</h3>
-                <div className="space-y-3 text-gray-700 text-sm">
-                  <p><strong>Smudged before drying?</strong> Let it dry completely, then apply another thin coat over it. The fresh coat will smooth out the smudge.</p>
-                  <p><strong>Dot placed wrong?</strong> Immediately wipe it off with clean toothpick while wet, or let it dry and carefully remove with cotton swab dipped in acetone.</p>
-                  <p><strong>Polish pooled around cuticles?</strong> Dip cotton swab in acetone, squeeze out excess, and carefully clean up edges while polish is still wet or after it dries.</p>
-                  <p><strong>Colors look muddy?</strong> You blended wet colors too much. Let first color dry before adding second color. Work with dry layers, not wet-on-wet unless doing intentional marbling.</p>
-                </div>
-              </div>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* Section 9: Non-Dominant Hand Strategies */}
-            <div id="non-dominant" className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
-                🤚 Mastering Your Non-Dominant Hand
-              </h2>
-              
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Let's address the elephant in the room: your non-dominant hand is going to be harder. Your right hand looks perfect, your left hand looks like a toddler did it. Everyone experiences this.
-              </p>
-
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Here's the thing—there's no magic trick that makes your non-dominant hand suddenly as coordinated as your dominant hand. But there are strategies that help a lot.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <div className="glass-card p-6 rounded-xl">
-                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
-                    <span className="text-2xl mr-3">💡</span>
-                    Strategy 1: Start Simpler
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Do a slightly simpler version of the design on your non-dominant hand. If your dominant hand has intricate dots, your non-dominant hand can have fewer dots or bigger dots. Both hands don't need to be identical.
-                  </p>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl">
-                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
-                    <span className="text-2xl mr-3">📏</span>
-                    Strategy 2: Use More Tape
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Tape-based designs (stripes, French tips, color blocking) are more forgiving on your non-dominant hand because the tape does the precision work. Your shakier hand just needs to fill in sections.
-                  </p>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl">
-                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
-                    <span className="text-2xl mr-3">🎯</span>
-                    Strategy 3: Practice More
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Practice designs on paper with your non-dominant hand before trying on nails. Build that muscle memory. Do your non-dominant hand first when you're fresh and not frustrated, or last when you're already committed to finishing.
-                  </p>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl">
-                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
-                    <span className="text-2xl mr-3">✨</span>
-                    Strategy 4: Embrace Asymmetry
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    Make asymmetry intentional. Each hand can have a different design variation. Or keep non-dominant hand super simple—like solid color or just glitter tips—while dominant hand gets the full design. This is actually a trendy look.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-600">
-                <h4 className="font-bold text-gray-900 mb-2 text-lg">Real Talk</h4>
-                <p className="text-gray-700 mb-3">
-                  Your non-dominant hand will never look exactly like your dominant hand, especially when you're starting out. That's fine. What matters is that both hands look intentional and styled, not that they're perfectly matched twins.
-                </p>
-                <p className="text-gray-700">
-                  After practicing regularly for a month, your non-dominant hand coordination improves noticeably. It's a skill that develops with repetition. Be patient with yourself.
-                </p>
-              </div>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* Section 10: 2025 Nail Art Trends */}
-            <div id="trends" className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
-                🌟 Why 2025 Is the Perfect Year for Beginners
-              </h2>
-              
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Here's some genuinely good news: nail art trends have completely shifted in your favor. Five years ago, elaborate 3D designs with rhinestones and hand-painted details dominated. Totally intimidating for beginners.
-              </p>
-
-              <p className="text-gray-600 leading-relaxed mb-8">
-                In 2025? The biggest trends are literally the easiest techniques. Minimalism won. Simple is chic. Natural nails are celebrated. You're not settling for beginner designs—you're doing exactly what's trending.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="glass-card p-6 rounded-xl">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">✨</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-3">Minimalist Revival</h3>
-                  <p className="text-gray-600 text-sm">
-                    Clean lines, negative space, single accent nails, tiny details—all the stuff that's easy for beginners is what's actually cool right now. Complex salon art is considered outdated by trend forecasters.
-                  </p>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl">
-                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">💅</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-3">Natural Nail Movement</h3>
-                  <p className="text-gray-600 text-sm">
-                    Healthy natural nails are IN. Short lengths, strengthening treatments, letting nails breathe between manicures—the nail health approach is trending. You don't need long extensions or gels to be stylish.
-                  </p>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">🎨</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-3">Imperfection as Art</h3>
-                  <p className="text-gray-600 text-sm">
-                    Hand-done, slightly imperfect designs are valued over machine-perfect salon work. The "I did this myself" aesthetic is cool. Your shaky lines and irregular dots? Actually on-trend as authentic and artisanal.
-                  </p>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">🌿</span>
-                  </div>
-                  <h3 className="font-semibold text-gray-800 mb-3">DIY & Budget Beauty</h3>
-                  <p className="text-gray-600 text-sm">
-                    The DIY beauty movement is huge. People want to learn skills, not just pay for services. Creating your own nail art aligns with the broader trend of self-sufficiency and budget consciousness.
-                  </p>
-                </div>
-              </div>
-
-              <p className="text-gray-600 leading-relaxed mb-4">
-                The nail designs getting millions of views on TikTok right now? Most are beginner-friendly techniques like the 5-dot flower (45M views), aura nails using eyeshadow, glass nails with just polish, and minimalist line art.
-              </p>
-
-              <p className="text-gray-600 leading-relaxed">
-                You're literally starting nail art at the perfect time. The techniques trending in 2025 are ones you can master in your first week. Check out more <a href="https://mirelleinspo.com/topics/seasonal-trends" style={{color: '#2563eb', textDecoration: 'underline'}}>seasonal trend updates</a> to stay current with what's popular.
-              </p>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* Section 11: Nail Health & Safety */}
-            <div id="nail-health" className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
-                🏥 Keeping Your Nails Healthy While Having Fun
-              </h2>
-              
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Nail art is fun but nail health comes first. Here's how to enjoy designing without damaging your natural nails.
-              </p>
-
-              <div className="space-y-6 mb-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xl">✅</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-2">Give Nails Breaks</h3>
-                    <p className="text-gray-600 text-sm">
-                      Every 2-3 weeks, go polish-free for a few days. This lets nails breathe and recover. During breaks, apply cuticle oil daily and let nails strengthen naturally. Check our <a href="https://mirelleinspo.com/topics/nail-care-guide" style={{color: '#2563eb', textDecoration: 'underline'}}>strengthening guide</a> for detailed tips.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xl">✅</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-2">Remove Polish Properly</h3>
-                    <p className="text-gray-600 text-sm">
-                      Never peel off polish—this removes layers of your nail with it, causing weakness and peeling. Always use acetone or non-acetone remover. Soak for 30 seconds, then wipe gently. Moisturize immediately after removal.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xl">✅</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-2">Hydrate, Hydrate, Hydrate</h3>
-                    <p className="text-gray-600 text-sm">
-                      Polish dries out nails. Combat this with cuticle oil daily, especially before bed. Hand cream after every hand washing. Healthy, hydrated nails take polish better and designs last longer.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xl">✅</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-2">Use Acetone-Free When Possible</h3>
-                    <p className="text-gray-600 text-sm">
-                      Acetone is harsh and drying. For regular polish, acetone-free removers work fine and are gentler. Save acetone for stubborn glitter or when you need something stronger. Always moisturize after using any remover.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xl">✅</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-2">Watch for Warning Signs</h3>
-                    <p className="text-gray-600 text-sm">
-                      If nails become excessively brittle, yellow, painful, or develop ridges, take a break from polish and see a doctor if it persists. These can indicate underlying health issues or product reactions.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-xl">✅</span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-800 mb-2">Base Coat Protects Against Staining</h3>
-                    <p className="text-gray-600 text-sm">
-                      Dark colors especially can stain nails yellow without base coat. Always use base coat—it's protection, not optional. If nails do get stained, buff gently with a buffer and give them a week to recover.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-l-4 border-red-600">
-                <h4 className="font-bold text-gray-900 mb-2 text-lg">⚠️ When to See a Professional</h4>
-                <p className="text-gray-700 text-sm mb-3">
-                  If you notice persistent pain, swelling around nails, discoloration that won't go away, nails separating from nail bed, or any signs of infection, see a dermatologist or doctor. Don't try to treat nail infections with polish or home remedies.
-                </p>
-                <p className="text-gray-700 text-sm">
-                  Nail health is part of overall health. Take it seriously even though it seems cosmetic.
-                </p>
-              </div>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* Section 12: Practice & Progression Path */}
-            <div className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
-                📈 Your Progression Path: From Dots to Detailed
-              </h2>
-              
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Here's exactly how to progress your skills over the next month. Don't skip ahead or you'll get frustrated.
-              </p>
-
-              <div className="space-y-6">
-                <div className="glass-card p-6 rounded-xl border-l-4 border-burgundy-400">
-                  <h3 className="font-semibold text-gray-800 mb-3">Week 1: Master the Basics</h3>
-                  <ul className="space-y-2 text-gray-600 text-sm">
-                    <li>• Try designs 1-5 (Ultra Easy category)</li>
-                    <li>• Focus on: smooth polish application, working with toothpicks, using tape</li>
-                    <li>• Goal: Feel confident applying polish evenly and making simple dots</li>
-                    <li>• Practice each design at least twice</li>
-                  </ul>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl border-l-4 border-pink-400">
-                  <h3 className="font-semibold text-gray-800 mb-3">Week 2: Add Patterns</h3>
-                  <ul className="space-y-2 text-gray-600 text-sm">
-                    <li>• Try designs 6-12 (Super Easy category)</li>
-                    <li>• Focus on: organized placement, sponge techniques, combining skills</li>
-                    <li>• Goal: Create recognizable patterns and use multiple techniques in one design</li>
-                    <li>• Start practicing on your non-dominant hand more</li>
-                  </ul>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl border-l-4 border-purple-400">
-                  <h3 className="font-semibold text-gray-800 mb-3">Week 3: Build Complexity</h3>
-                  <ul className="space-y-2 text-gray-600 text-sm">
-                    <li>• Try designs 13-18 (Still Easy category)</li>
-                    <li>• Focus on: combining multiple techniques, working faster, color theory</li>
-                    <li>• Goal: Complete more intricate designs with confidence</li>
-                    <li>• Experiment with your own color combinations</li>
-                  </ul>
-                </div>
-
-                <div className="glass-card p-6 rounded-xl border-l-4 border-blue-400">
-                  <h3 className="font-semibold text-gray-800 mb-3">Week 4: Master Trending Looks</h3>
-                  <ul className="space-y-2 text-gray-600 text-sm">
-                    <li>• Try designs 19-22 (2025 Trending category)</li>
-                    <li>• Focus on: perfecting techniques, developing personal style, speed</li>
-                    <li>• Goal: Create trendy looks quickly and efficiently</li>
-                    <li>• Start creating your own design variations</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8 border-l-4 border-green-600 mt-8">
-                <h4 className="font-bold text-gray-900 mb-2 text-lg">🎯 Progress Markers</h4>
-                <p className="text-gray-700 text-sm mb-3">
-                  You'll know you're ready to move to the next week when:
-                </p>
-                <ul className="space-y-2 text-gray-700 text-sm">
-                  <li>• The current week's designs feel comfortable, not stressful</li>
-                  <li>• Your second attempt looks noticeably better than your first</li>
-                  <li>• You're not making the same mistakes repeatedly</li>
-                  <li>• You can complete designs without constantly checking instructions</li>
-                  <li>• You're excited to try the next level, not dreading it</li>
-                </ul>
-              </div>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* FAQ Section */}
-            <div id="faq" className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
-                ❓ Frequently Asked Questions
-              </h2>
-              
-              <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-                The 15 questions every beginner asks. If you're wondering about it, the answer is probably here.
-              </p>
-
-              <div className="space-y-4">
-                {/* All FAQs with proper structure */}
-                {[
-                  {
-                    q: "How do I start doing nail art as a beginner?",
-                    a: "Start with the simplest designs like single color perfection or random dots using household items you already have. Practice basic application first, then progress to easy designs using toothpicks for dots, tape for stripes, and sponges for gradients. Focus on mastering one technique before moving to the next."
-                  },
-                  {
-                    q: "What is the easiest nail design for first timers?",
-                    a: "Random dots are the easiest nail design for first-timers because there is no pattern to follow and mistakes look intentional. Use a toothpick dipped in polish to create scattered dots across a base color. This forgiving design builds confidence while teaching basic tool control and color coordination."
-                  },
-                  {
-                    q: "Can I do nail art without any tools?",
-                    a: "Yes, you can create beautiful nail art with household items. Use toothpicks for dots and lines, bobby pins for double dots and hearts, scotch tape for stripes, makeup sponges for ombre, and cotton swabs with acetone for cleanup. No special nail art tools are required to start."
-                  },
-                  {
-                    q: "What nail designs are best for beginners?",
-                    a: "Best beginner designs include polka dots, simple French tips, vertical stripes with tape, glitter gradients, one-finger accent nails, and basic color blocking. These designs require minimal precision, use simple techniques, and look impressive despite being easy to execute with basic household items."
-                  },
-                  {
-                    q: "How do I make dots on my nails at home?",
-                    a: "Dip a toothpick into nail polish and gently press onto your nail surface. For smaller dots, use the pointed end. For larger dots, use the blunt end or a bobby pin head. Let the base color dry completely first. Practice the pressure needed on paper before trying on nails."
-                  },
-                  {
-                    q: "What can I use instead of a dotting tool?",
-                    a: "Toothpicks, bobby pins, pencil erasers, ballpoint pen tips, or even the head of a sewing pin make excellent dotting tool substitutes. Bobby pins create perfect double dots for easy designs. Toothpick tips offer varying dot sizes depending on which end you use."
-                  },
-                  {
-                    q: "How do I do simple French tips at home?",
-                    a: "Apply a sheer pink or nude base coat first. Let dry completely. Use scotch tape or striping tape to mark the smile line across your nail tip. Paint white polish over the tip area, let dry 30 seconds, then carefully remove tape. Seal with clear top coat for smooth finish."
-                  },
-                  {
-                    q: "What is an easy nail art design for short nails?",
-                    a: "Half moon manicure, tiny dots, micro French tips, single accent nail, and vertical stripes all work beautifully on short nails. These designs do not require length to look elegant. Focus on horizontal or minimal patterns that enhance the nail shape rather than require extended canvas space."
-                  },
-                  {
-                    q: "How long does nail art take for beginners?",
-                    a: "Simple designs take 5 to 10 minutes per hand for beginners including drying time between steps. Your first attempts may take 15 to 20 minutes as you learn techniques. With practice, most easy designs become faster. Allow 30 minutes total for full manicure including prep, base coat, design, and top coat."
-                  },
-                  {
-                    q: "Can I do nail art with just nail polish?",
-                    a: "Yes, you need only nail polish plus household items. Base coat, two or more polish colors, and top coat are essential. Add toothpicks, tape, and sponges you already own. No special brushes, gels, or equipment required. Regular polish works perfectly for all beginner designs in this guide."
-                  },
-                  {
-                    q: "What colors are easiest for nail art beginners?",
-                    a: "Start with high-contrast color combinations like black on white, white on navy, or gold on burgundy. These contrasts make designs visible and mistakes less obvious. Avoid sheer or similar-toned colors initially. Nude base with bright accent colors offers forgiving canvas for learning technique."
-                  },
-                  {
-                    q: "How do I keep my hand steady for nail art?",
-                    a: "Rest both elbows on a table or firm surface. Work in good lighting. Take breaks if hands get tired or shaky. Practice designs on paper first to build muscle memory. Consider working in short sessions rather than rushing. Caffeine can increase shakiness so avoid before nail art sessions."
-                  },
-                  {
-                    q: "What is the simplest nail design to try first?",
-                    a: "Single color perfection is the simplest starting point to master basic polish application. Once comfortable, try random dots with a toothpick which requires no pattern or precision. These foundational skills build confidence before progressing to designs requiring more control like stripes or French tips."
-                  },
-                  {
-                    q: "Do I need special brushes for nail art?",
-                    a: "No special brushes are needed for beginner nail art. Use the brush inside your polish bottle for base application. Toothpicks, tape, and sponges create all the designs in this guide. Once you advance, a thin striping brush and cleanup brush are helpful but not essential initially."
-                  },
-                  {
-                    q: "Can I use a toothpick for nail designs?",
-                    a: "Toothpicks are perfect for nail art. Use the pointed end for tiny dots and fine lines. Use the blunt end for larger dots. Drag through wet polish to create marble effects, swirls, or floral designs. Toothpicks offer excellent control and precision for beginners at zero cost."
-                  }
-                ].map((faq, index) => (
-                  <details key={index} className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                    <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                      <h3 className="font-semibold text-gray-900 pr-4">{faq.q}</h3>
-                      <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                      </svg>
-                    </summary>
-                    <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                      {faq.a}
-                    </div>
-                  </details>
-                ))}
-              </div>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* E-E-A-T Section */}
-            <div className="mb-16 bg-gradient-to-br from-cream-50 to-burgundy-50 rounded-2xl p-8">
-              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">About Mirellé Team</h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                We're nail enthusiasts who test and practice every technique before sharing it with you. Our mission is making nail art accessible for everyone—no intimidation, no gatekeeping, just honest tutorials that actually work for beginners. Every design in this guide has been tested by real beginners to ensure it's truly doable.
-              </p>
-              <a href="https://mirelleinspo.com/about" style={{color: '#2563eb', textDecoration: 'underline'}} className="font-medium">
-                Learn more about our team and approach →
-              </a>
-            </div>
-
-            <hr className="my-12 border-cream-400" />
-
-            {/* Related Topics */}
-            <div className="mb-16">
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
-                Keep Learning & Creating
-              </h2>
-              
-              <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-                You've got the basics down. Now explore these related guides to expand your nail skills and find design inspiration.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Related Topic 1 */}
-                <Link href="https://mirelleinspo.com/topics/nail-care-guide" className="group">
-                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-                      <span className="text-2xl">💅</span>
-                    </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
-                      Nail Care & Strengthening
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
-                      Keep your nails healthy and strong with proper care techniques. Essential reading for maintaining the perfect canvas for your nail art designs.
-                    </p>
-                    <div className="text-xs text-gray-500 flex items-center">
-                      <span className="mr-2">📖</span>
-                      12-minute read • Health-focused
-                    </div>
-                  </div>
-                </Link>
-
-                {/* Related Topic 2 */}
-                <Link href="https://mirelleinspo.com/topics/skin-tones" className="group">
-                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                      <span className="text-2xl">🎨</span>
-                    </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
-                      Colors for Your Skin Tone
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
-                      Discover which nail colors complement your skin tone best. Learn color theory that makes choosing polish shades easy and ensures flattering results every time.
-                    </p>
-                    <div className="text-xs text-gray-500 flex items-center">
-                      <span className="mr-2">🌈</span>
-                      8-minute read • Color matching
-                    </div>
-                  </div>
-                </Link>
-
-                {/* Related Topic 3 */}
-                <Link href="https://mirelleinspo.com/topics/seasonal-trends" className="group">
-                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                      <span className="text-2xl">🍂</span>
-                    </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
-                      Seasonal Nail Trends
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">
-                      Stay updated with what's trending each season. From spring florals to winter sparkle, get inspiration for designs that match the current vibe.
-                    </p>
-                    <div className="text-xs text-gray-500 flex items-center">
-                      <span className="mr-2">✨</span>
-                      10-minute read • Updated monthly
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              {/* Additional Blog Links */}
-              <div className="mt-12 pt-8 border-t border-cream-400">
-                <h3 className="font-serif text-xl font-semibold text-gray-800 mb-6 text-center">
-                  Design Inspiration by Occasion
-                </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                  <a href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    Christmas Nails
-                  </a>
-                  <a href="https://mirelleinspo.com/blog/wedding-nail-designs" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    Wedding Designs
-                  </a>
-                  <a href="https://mirelleinspo.com/blog/valentine-nails-2026" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    Valentine's Day
-                  </a>
-                  <a href="https://mirelleinspo.com/blog/winter-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    Winter Nails
-                  </a>
-                  <a href="https://mirelleinspo.com/blog/new-year-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    New Year's Eve
-                  </a>
-                  <a href="https://mirelleinspo.com/blog/thanksgiving-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    Thanksgiving
-                  </a>
-                  <a href="https://mirelleinspo.com/blog/holiday-vacation-nails-travel-guide" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    Vacation Nails
-                  </a>
-                  <a href="https://mirelleinspo.com/blog/goddess-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
-                    Goddess Nails
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Final CTA */}
-            <div className="bg-gradient-to-r from-burgundy-600 to-pink-600 rounded-2xl p-8 md:p-12 text-center text-white">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-                Ready to Start Your Nail Art Journey?
-              </h2>
-              <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
-                You've got everything you need. Pick one design from the Ultra Easy section and try it this week. No pressure, no judgment—just have fun creating.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://mirelleinspo.com/pinterest" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
-                  Follow for More Inspo
-                </a>
-                <a href="https://mirelleinspo.com/shop" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">
-                  Shop Nail Supplies
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </section>
-      </div>
-    </>
-  );
-}import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 
@@ -3355,30 +2330,354 @@ export default function NailArtGuides() {
                   className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
                 />
               </div>
+{/* Design 18: Abstract Minimalist */}
+<div className="mb-12">
+  <div className="flex items-center gap-3 mb-4">
+    <span className="text-3xl">1️⃣8️⃣</span>
+    <div>
+      <h3 className="font-serif text-2xl font-semibold text-gray-800">Abstract Minimalist</h3>
+      <div className="flex gap-4 text-sm text-gray-500 mt-1">
+        <span>★★☆ Difficulty</span>
+        <span>⏱️ 10 min</span>
+        <span>🛠️ Toothpick</span>
+      </div>
+    </div>
+  </div>
+  <p className="text-gray-600 leading-relaxed mb-4">
+    Random lines and shapes that look intentionally artistic. The secret? There's no pattern, so you literally can't mess it up. Imperfection IS the aesthetic.
+  </p>
+  
+  <div className="bg-gray-50 p-6 rounded-xl mb-4">
+    <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
+    <ul className="text-gray-600 space-y-1 text-sm">
+      <li>• Base coat + neutral base + 1-2 accent colors + top coat</li>
+      <li>• Toothpick or thin brush</li>
+      <li>• Permission to be imperfect</li>
+    </ul>
+  </div>
 
-              {/* Design 18: Abstract Minimalist */}
+  <div className="space-y-3 mb-4">
+    <div className="flex items-start gap-3">
+      <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+        1
+      </div>
+      <div className="flex-1">
+        <p className="text-gray-700"><strong>Apply neutral base</strong></p>
+        <p className="text-gray-600 text-sm">Paint nails with beige, cream, white, or soft gray. Abstract art needs a clean canvas. Dry completely.</p>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-3">
+      <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+        2
+      </div>
+      <div className="flex-1">
+        <p className="text-gray-700"><strong>Add random lines</strong></p>
+        <p className="text-gray-600 text-sm">Using a toothpick or thin brush, draw random thin lines across your nail. Straight, curved, intersecting—whatever feels right. Keep them minimal. 2-3 lines per nail max.</p>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-3">
+      <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+        3
+      </div>
+      <div className="flex-1">
+        <p className="text-gray-700"><strong>Optional: Add tiny shapes</strong></p>
+        <p className="text-gray-600 text-sm">Small dots, half circles, tiny triangles. Keep them sparse. The power is in the negative space. Each nail can have a different composition.</p>
+      </div>
+    </div>
+
+    <div className="flex items-start gap-3">
+      <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+        4
+      </div>
+      <div className="flex-1">
+        <p className="text-gray-700"><strong>Embrace imperfection</strong></p>
+        <p className="text-gray-600 text-sm">Shaky lines look artistic. Slightly irregular shapes look intentional. This is the one design where "mistakes" actually make it better. Top coat and call it modern art.</p>
+      </div>
+    </div>
+  </div>
+
+  <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+    <p className="text-gray-700 text-sm">
+      <strong>💡 Pro tip:</strong> This is the design to try when you're tired or don't have time for precision. Black lines on white base = classic. Gold lines on nude = expensive looking. Use a contrasting color so your lines are visible. Perfect for days when you want to look put together without the effort.
+    </p>
+  </div>
+
+  <img
+    src="/nail-art-abstract-minimalist-random-lines-shapes.jpg"
+    alt="Abstract minimalist nail design with random lines and shapes for artistic modern look"
+    width={800}
+    height={533}
+    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
+  />
+</div>
+              
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* CHECKPOINT: Still Easy Designs Complete - Moving to 2025 Trending Designs */}
+
+            {/* Section 7: TRENDING 2025 BEGINNER-FRIENDLY DESIGNS */}
+            <div id="trending-2025" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🔥 Trending 2025 Beginner-Friendly Designs
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                These four designs are what's hot right now. The best part? They're all easier than traditional nail art. 2025 trends favor simple techniques that look expensive.
+              </p>
+
+              {/* Design 19: Glass Nails */}
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">1️⃣8️⃣</span>
+                  <span className="text-3xl"1️⃣9️⃣</span>
                   <div>
-                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Abstract Minimalist</h3>
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Glass Nails</h3>
                     <div className="flex gap-4 text-sm text-gray-500 mt-1">
-                      <span>★★☆ Difficulty</span>
-                      <span>⏱️ 10 min</span>
-                      <span>🛠️ Toothpick</span>
+                      <span>★☆☆ Difficulty</span>
+                      <span>⏱️ 8 min</span>
+                      <span>🛠️ High-gloss top coat</span>
                     </div>
                   </div>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Random lines and shapes that look intentionally artistic. The secret? There's no pattern, so you literally can't mess it up. Imperfection IS the aesthetic.
+                  Ultra-glossy, translucent nails that look like glass. The trick is all in the top coat—you need a high-shine gel-like finish. This is actually one of the easiest "advanced" looks.
                 </p>
                 
                 <div className="bg-gray-50 p-6 rounded-xl mb-4">
                   <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
                   <ul className="text-gray-600 space-y-1 text-sm">
-                    <li>• Base coat + neutral base + 1-2 accent colors + top coat</li>
-                    <li>• Toothpick or thin brush</li>
-                    <li>• Permission to be imperfect</li>
+                    <li>• Base coat + sheer translucent polish or very light nude</li>
+                    <li>• High-gloss gel-effect top coat (Essie Gel Couture or Sally Hansen Miracle Gel)</li>
+                    <li>• Ridge-filling base coat helps create smooth surface</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Start with smooth nails</strong></p>
+                      <p className="text-gray-600 text-sm">Glass nails require smooth nail surfaces. Buff gently to remove ridges. Apply ridge-filling base coat. Let dry completely.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Apply sheer color</strong></p>
+                      <p className="text-gray-600 text-sm">Use sheer milky pink, nude, or even clear polish. The translucent quality is key for that glass effect. Two thin coats. Dry completely.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Apply high-gloss top coat</strong></p>
+                      <p className="text-gray-600 text-sm">This is where the magic happens. Apply a thick layer of gel-effect top coat. The ultra-glossy finish creates that glass-like appearance. Two coats of top coat if needed for maximum shine.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      4
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Let cure fully</strong></p>
+                      <p className="text-gray-600 text-sm">Don't touch for 10 minutes. The thick top coat needs time to fully harden. Once set, you'll have that signature mirror-like finish.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border-l-4 border-blue-600 mb-4">
+                  <p className="text-gray-700 text-sm">
+                    <strong>🔬 Why this is perfect for beginners:</strong> There's no design to mess up. You're literally just applying polish smoothly, which you already learned in Design 1. The high-gloss top coat does all the work of making it look expensive and trendy. For healthy nail tips to achieve the best glass nail look, check our <a href="https://mirelleinspo.com/topics/nail-care-guide" style={{color: '#2563eb', textDecoration: 'underline'}}>nail strengthening guide</a>.
+                  </p>
+                </div>
+
+                <img
+                  src="/nail-art-glass-nails-ultra-glossy-translucent-finish.jpg"
+                  alt="Glass nail trend showing ultra glossy translucent finish with mirror like shine effect"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
+                />
+              </div>
+
+              {/* Design 20: Mocha Mousse Solid */}
+              <div className="mb-12">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">2️⃣0️⃣</span>
+                  <div>
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Mocha Mousse Solid</h3>
+                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
+                      <span>★☆☆ Difficulty</span>
+                      <span>⏱️ 5 min</span>
+                      <span>🛠️ Just polish</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Pantone's Color of the Year 2025. Warm brown shade that's universally flattering. This isn't a technique—it's literally just painting your nails this specific trendy color. Easy as it gets.
+                </p>
+                
+                <div className="bg-gray-50 p-6 rounded-xl mb-4">
+                  <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
+                  <ul className="text-gray-600 space-y-1 text-sm">
+                    <li>• Base coat + mocha brown polish (warm medium brown) + top coat</li>
+                    <li>• Look for: OPI "You Don't Know Jacques", Essie "Chinchilly", or any warm brown</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Apply base coat</strong></p>
+                      <p className="text-gray-600 text-sm">Standard base coat application. Let dry 2 minutes.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Apply mocha brown</strong></p>
+                      <p className="text-gray-600 text-sm">Paint nails with your warm brown shade. Two thin coats for even coverage. This color is so on-trend right now that you don't need any design—the color IS the statement.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Top coat and you're done</strong></p>
+                      <p className="text-gray-600 text-sm">That's it. You're literally wearing Pantone's Color of the Year. Instant trendiness with zero effort.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 border-l-4 border-green-600 mb-4">
+                  <p className="text-gray-700 text-sm">
+                    <strong>💡 Quick Takeaway:</strong> Sometimes the trend is just about wearing the right color. Mocha mousse is everywhere in 2025—fashion, home decor, and nails. This warm brown complements literally every skin tone, works for any season, and looks sophisticated without trying. Perfect for <a href="https://mirelleinspo.com/topics/modern-women" style={{color: '#2563eb', textDecoration: 'underline'}}>professional settings</a> or everyday wear.
+                  </p>
+                </div>
+
+                <img
+                  src="/nail-art-mocha-mousse-pantone-2025-warm-brown.jpg"
+                  alt="Mocha mousse solid nail color Pantone 2025 showing warm brown trendy shade"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
+                />
+              </div>
+
+              {/* Design 21: Soap Nails */}
+              <div className="mb-12">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">2️⃣1️⃣</span>
+                  <div>
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Soap Nails</h3>
+                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
+                      <span>★☆☆ Difficulty</span>
+                      <span>⏱️ 8 min</span>
+                      <span>🛠️ Just polish</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Hailey Bieber's latest obsession. Milky white base with ultra-glossy finish. Clean, minimalist, and gives "expensive skincare routine" energy. Super easy—just white polish + glossy top coat.
+                </p>
+                
+                <div className="bg-gray-50 p-6 rounded-xl mb-4">
+                  <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
+                  <ul className="text-gray-600 space-y-1 text-sm">
+                    <li>• Base coat + milky white polish (not bright white, softer) + glossy top coat</li>
+                    <li>• Try: Essie "Blanc", OPI "Funny Bunny", or any cream white</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      1
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Apply milky white base</strong></p>
+                      <p className="text-gray-600 text-sm">Paint nails with soft milky white. Not stark bright white—you want that creamy soap-like opacity. Two-three coats for full coverage. Let dry completely.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      2
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Apply super glossy top coat</strong></p>
+                      <p className="text-gray-600 text-sm">The shine is crucial. Apply thick layer of your glossiest top coat. The combination of matte milky white with high gloss creates that soap bar aesthetic. That's the whole look.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                      3
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-gray-700"><strong>Optional: Keep nails short</strong></p>
+                      <p className="text-gray-600 text-sm">Soap nails look best on short-medium length nails. The clean, minimal vibe is enhanced by modest length. Trim if needed before starting.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+                  <p className="text-gray-700 text-sm">
+                    <strong>💡 Pro tip:</strong> This is the ultimate "clean girl" aesthetic nail. Works for literally any occasion. Professional enough for work, chic enough for events, simple enough for everyday. Bonus: any chips or wear blend in better than with dark colors, so it lasts longer looking fresh.
+                  </p>
+                </div>
+
+                <img
+                  src="/nail-art-soap-nails-milky-white-glossy-hailey-bieber.jpg"
+                  alt="Soap nail trend showing milky white glossy finish for clean minimalist aesthetic"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
+                />
+              </div>
+
+              {/* Design 22: Jelly Nails */}
+              <div className="mb-12">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-3xl">2️⃣2️⃣</span>
+                  <div>
+                    <h3 className="font-serif text-2xl font-semibold text-gray-800">Jelly Nails</h3>
+                    <div className="flex gap-4 text-sm text-gray-500 mt-1">
+                      <span>★☆☆ Difficulty</span>
+                      <span>⏱️ 8 min</span>
+                      <span>🛠️ Just polish</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Translucent, squishy-looking nails in bright colors. The sheer quality is forgiving—it hides application mistakes and nail imperfections. Plus, it's trending hard right now.
+                </p>
+                
+                <div className="bg-gray-50 p-6 rounded-xl mb-4">
+                  <h4 className="font-semibold text-gray-800 mb-3">What You Need:</h4>
+                  <ul className="text-gray-600 space-y-1 text-sm">
+                    <li>• Base coat + jelly polish (sheer translucent formula) + glossy top coat</li>
+                    <li>• Look for sheer formulas in pink, coral, blue, green—any bright color</li>
+                    <li>• Regular polish applied thin works too</li>
                   </ul>
                 </div>
 
@@ -3388,34 +2687,704 @@ export default function NailArtGuides() {
                       1
                     </div>
                     <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply neutral base</strong> rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      1
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Apply thin base coat</strong></p>
-                      <p className="text-gray-600 text-sm">Start at the base of your nail, swipe to the tip in three strokes: middle, left side, right side. Don't flood your cuticles. Let dry 2 minutes.</p>
+                      <p className="text-gray-700"><strong>Apply sheer base</strong></p>
+                      <p className="text-gray-600 text-sm">If using jelly polish, apply one coat. It should be see-through. If using regular polish, apply ONE very thin coat—you want translucency, not full opacity.</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       2
                     </div>
                     <div className="flex-1">
-                      <p className="text-gray-700"><strong>First color coat (thin layer)</strong></p>
-                      <p className="text-gray-600 text-sm">Same three-stroke method. Keep it thin—you're building color gradually. Thick coats bubble and take forever to dry. Let dry 2 minutes.</p>
+                      <p className="text-gray-700"><strong>Build color gradually</strong></p>
+                      <p className="text-gray-600 text-sm">Add 1-2 more thin coats to build up the jelly effect. You should still see your nail through the color but it should be vibrant. The translucency is the whole aesthetic.</p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       3
                     </div>
                     <div className="flex-1">
-                      <p className="text-gray-700"><strong>Second color coat</strong></p>
-                      <p className="text-gray-600 text-sm">This coat covers any streaks from the first. Still thin. Wait 2 minutes. If it looks perfect after one coat, skip this step.</p>
+                      <p className="text-gray-700"><strong>Glossy finish is essential</strong></p>
+                      <p className="text-gray-600 text-sm">Apply thick glossy top coat. The high shine creates that wet, jelly-like appearance. This is what makes it look squishy and fun.</p>
                     </div>
                   </div>
+                </div>
 
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600
+                <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 border-l-4 border-green-600 mb-4">
+                  <p className="text-gray-700 text-sm">
+                    <strong>💡 Quick Takeaway:</strong> Jelly nails are perfect for summer or fun occasions. The sheer formula is forgiving of streaks or uneven application—it just adds to the dimensional look. Try bright coral for <a href="https://mirelleinspo.com/blog/holiday-vacation-nails-travel-guide" style={{color: '#2563eb', textDecoration: 'underline'}}>vacation vibes</a>, or pastel pink for everyday sweetness.
+                  </p>
+                </div>
+
+                <img
+                  src="/nail-art-jelly-nails-translucent-glossy-bright-color.jpg"
+                  alt="Jelly nail trend showing translucent sheer bright color with glossy squishy finish"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
+                />
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* CHECKPOINT: Trending 2025 Designs Complete - Moving to Mistakes Section */}
+
+            {/* Section 8: Common Mistakes & Fixes */}
+            <div id="mistakes" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                ❌ 7 Beginner Mistakes & How to Fix Them
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Everyone makes these mistakes. Seriously, everyone. Here's how to avoid them or fix them when they happen.
+              </p>
+
+              <div className="space-y-6">
+                {/* Mistake 1 */}
+                <div className="glass-card p-6 rounded-xl border-l-4 border-red-500">
+                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
+                    <span className="text-2xl mr-3">1️⃣</span>
+                    Skipping Base Coat or Top Coat
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>Why it's bad:</strong> Base coat protects from staining and helps polish stick. Top coat seals everything and prevents chipping. Skip them and your design lasts maybe one day before looking terrible.
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    <strong>Fix:</strong> Just don't skip them. Ever. They're non-negotiable. Budget $6 each for decent drugstore versions and they'll last months. The extra 2 minutes is worth having your nails look good all week instead of one day.
+                  </p>
+                </div>
+
+                {/* Mistake 2 */}
+                <div className="glass-card p-6 rounded-xl border-l-4 border-orange-500">
+                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
+                    <span className="text-2xl mr-3">2️⃣</span>
+                    Not Waiting for Polish to Dry
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>Why it's bad:</strong> Smudges, dents, or your whole design gets wrecked because you touched something too soon. This is the #1 cause of beginner frustration.
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    <strong>Fix:</strong> Set a timer. Base coat = 2 minutes. Each polish coat = 2-3 minutes. Top coat = 5 minutes minimum before touching anything. Seriously set a phone timer. Use this time to scroll, not do stuff with your hands. Quick-dry drops help but patience is better.
+                  </p>
+                </div>
+
+                {/* Mistake 3 */}
+                <div className="glass-card p-6 rounded-xl border-l-4 border-yellow-500">
+                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
+                    <span className="text-2xl mr-3">3️⃣</span>
+                    Polish All Over Your Cuticles
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>Why it's bad:</strong> Makes your manicure look messy and unprofessional. Also peels off faster when polish is on skin instead of nail.
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    <strong>Fix:</strong> Leave tiny gap between polish and cuticle when applying. Clean up mistakes with cotton swab dipped in acetone. Go slowly around the edges. Practice makes this easier—your first few attempts will be messier and that's fine. Also, petroleum jelly on skin around nails before polishing makes cleanup way easier—the polish won't stick to skin.
+                  </p>
+                </div>
+
+                {/* Mistake 4 */}
+                <div className="glass-card p-6 rounded-xl border-l-4 border-green-500">
+                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
+                    <span className="text-2xl mr-3">4️⃣</span>
+                    Applying Coats Too Thick
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>Why it's bad:</strong> Thick coats bubble, take forever to dry, and create that goopy texture. They also chip faster because they never fully cure.
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    <strong>Fix:</strong> Thin coats, multiple layers. Wipe excess polish off the brush on the bottle rim before applying. Two thin coats always beat one thick coat. If polish is goopy, add a drop of nail polish thinner (not acetone—that ruins it). Think light layers that build up color gradually.
+                  </p>
+                </div>
+
+                {/* Mistake 5 */}
+                <div className="glass-card p-6 rounded-xl border-l-4 border-blue-500">
+                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
+                    <span className="text-2xl mr-3">5️⃣</span>
+                    Pressing Too Hard with Tools
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>Why it's bad:</strong> Dots become blobs, lines become smears, you dent the base polish. Gentle pressure is key but beginners always press too hard out of nervousness.
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    <strong>Fix:</strong> Practice on paper first to learn the right pressure. For dots, you barely touch the surface—the polish transfers with minimal pressure. For lines, think of guiding the toothpick, not digging with it. Light touch = better control. Take your time.
+                  </p>
+                </div>
+
+                {/* Mistake 6 */}
+                <div className="glass-card p-6 rounded-xl border-l-4 border-purple-500">
+                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
+                    <span className="text-2xl mr-3">6️⃣</span>
+                    Comparing to Professional Results
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>Why it's bad:</strong> You get discouraged and quit when your first attempts don't look like Instagram posts. Those are done by professionals with years of practice, perfect lighting, and often editing.
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    <strong>Fix:</strong> Your first nail art won't be perfect and that's completely normal. Compare your attempts to your previous attempts, not to professionals. Celebrate progress. Every design you do teaches you something. Most people need 5-10 practice rounds before designs look really good. That's the learning curve and it's okay.
+                  </p>
+                </div>
+
+                {/* Mistake 7 */}
+                <div className="glass-card p-6 rounded-xl border-l-4 border-pink-500">
+                  <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
+                    <span className="text-2xl mr-3">7️⃣</span>
+                    Giving Up After First Try
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    <strong>Why it's bad:</strong> You miss out on actually getting good at something fun and useful. First attempts at anything new feel awkward.
+                  </p>
+                  <p className="text-gray-700 text-sm">
+                    <strong>Fix:</strong> Commit to trying at least three designs before deciding nail art isn't for you. Your third attempt will be noticeably better than your first. Practice the ultra easy designs until they feel comfortable, then move up. Small improvements add up fast. The satisfaction of creating something beautiful on your own nails is worth pushing through the learning phase.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600 mt-8">
+                <h3 className="font-bold text-gray-900 mb-3 text-lg">🛠️ Mid-Design Fixes</h3>
+                <div className="space-y-3 text-gray-700 text-sm">
+                  <p><strong>Smudged before drying?</strong> Let it dry completely, then apply another thin coat over it. The fresh coat will smooth out the smudge.</p>
+                  <p><strong>Dot placed wrong?</strong> Immediately wipe it off with clean toothpick while wet, or let it dry and carefully remove with cotton swab dipped in acetone.</p>
+                  <p><strong>Polish pooled around cuticles?</strong> Dip cotton swab in acetone, squeeze out excess, and carefully clean up edges while polish is still wet or after it dries.</p>
+                  <p><strong>Colors look muddy?</strong> You blended wet colors too much. Let first color dry before adding second color. Work with dry layers, not wet-on-wet unless doing intentional marbling.</p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 9: Non-Dominant Hand Strategies */}
+            <div id="non-dominant" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🤚 Mastering Your Non-Dominant Hand
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Let's address the elephant in the room: your non-dominant hand is going to be harder. Your right hand looks perfect, your left hand looks like a toddler did it. Everyone experiences this.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Here's the thing—there's no magic trick that makes your non-dominant hand suddenly as coordinated as your dominant hand. But there are strategies that help a lot.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div className="glass-card p-6 rounded-xl">
+                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
+                    <span className="text-2xl mr-3">💡</span>
+                    Strategy 1: Start Simpler
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Do a slightly simpler version of the design on your non-dominant hand. If your dominant hand has intricate dots, your non-dominant hand can have fewer dots or bigger dots. Both hands don't need to be identical.
+                  </p>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl">
+                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
+                    <span className="text-2xl mr-3">📏</span>
+                    Strategy 2: Use More Tape
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Tape-based designs (stripes, French tips, color blocking) are more forgiving on your non-dominant hand because the tape does the precision work. Your shakier hand just needs to fill in sections.
+                  </p>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl">
+                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
+                    <span className="text-2xl mr-3">🎯</span>
+                    Strategy 3: Practice More
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Practice designs on paper with your non-dominant hand before trying on nails. Build that muscle memory. Do your non-dominant hand first when you're fresh and not frustrated, or last when you're already committed to finishing.
+                  </p>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl">
+                  <h3 className="font-semibold text-gray-800 mb-4 flex items-center">
+                    <span className="text-2xl mr-3">✨</span>
+                    Strategy 4: Embrace Asymmetry
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Make asymmetry intentional. Each hand can have a different design variation. Or keep non-dominant hand super simple—like solid color or just glitter tips—while dominant hand gets the full design. This is actually a trendy look.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border-l-4 border-blue-600">
+                <h4 className="font-bold text-gray-900 mb-2 text-lg">Real Talk</h4>
+                <p className="text-gray-700 mb-3">
+                  Your non-dominant hand will never look exactly like your dominant hand, especially when you're starting out. That's fine. What matters is that both hands look intentional and styled, not that they're perfectly matched twins.
+                </p>
+                <p className="text-gray-700">
+                  After practicing regularly for a month, your non-dominant hand coordination improves noticeably. It's a skill that develops with repetition. Be patient with yourself.
+                </p>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 10: 2025 Nail Art Trends */}
+            <div id="trends" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🌟 Why 2025 Is the Perfect Year for Beginners
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Here's some genuinely good news: nail art trends have completely shifted in your favor. Five years ago, elaborate 3D designs with rhinestones and hand-painted details dominated. Totally intimidating for beginners.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-8">
+                In 2025? The biggest trends are literally the easiest techniques. Minimalism won. Simple is chic. Natural nails are celebrated. You're not settling for beginner designs—you're doing exactly what's trending.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="glass-card p-6 rounded-xl">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">✨</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-800 mb-3">Minimalist Revival</h3>
+                  <p className="text-gray-600 text-sm">
+                    Clean lines, negative space, single accent nails, tiny details—all the stuff that's easy for beginners is what's actually cool right now. Complex salon art is considered outdated by trend forecasters.
+                  </p>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl">
+                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">💅</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-800 mb-3">Natural Nail Movement</h3>
+                  <p className="text-gray-600 text-sm">
+                    Healthy natural nails are IN. Short lengths, strengthening treatments, letting nails breathe between manicures—the nail health approach is trending. You don't need long extensions or gels to be stylish.
+                  </p>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">🎨</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-800 mb-3">Imperfection as Art</h3>
+                  <p className="text-gray-600 text-sm">
+                    Hand-done, slightly imperfect designs are valued over machine-perfect salon work. The "I did this myself" aesthetic is cool. Your shaky lines and irregular dots? Actually on-trend as authentic and artisanal.
+                  </p>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-2xl">🌿</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-800 mb-3">DIY & Budget Beauty</h3>
+                  <p className="text-gray-600 text-sm">
+                    The DIY beauty movement is huge. People want to learn skills, not just pay for services. Creating your own nail art aligns with the broader trend of self-sufficiency and budget consciousness.
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                The nail designs getting millions of views on TikTok right now? Most are beginner-friendly techniques like the 5-dot flower (45M views), aura nails using eyeshadow, glass nails with just polish, and minimalist line art.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                You're literally starting nail art at the perfect time. The techniques trending in 2025 are ones you can master in your first week. Check out more <a href="https://mirelleinspo.com/topics/seasonal-trends" style={{color: '#2563eb', textDecoration: 'underline'}}>seasonal trend updates</a> to stay current with what's popular.
+              </p>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 11: Nail Health & Safety */}
+            <div id="nail-health" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🏥 Keeping Your Nails Healthy While Having Fun
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Nail art is fun but nail health comes first. Here's how to enjoy designing without damaging your natural nails.
+              </p>
+
+              <div className="space-y-6 mb-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-2">Give Nails Breaks</h3>
+                    <p className="text-gray-600 text-sm">
+                      Every 2-3 weeks, go polish-free for a few days. This lets nails breathe and recover. During breaks, apply cuticle oil daily and let nails strengthen naturally. Check our <a href="https://mirelleinspo.com/topics/nail-care-guide" style={{color: '#2563eb', textDecoration: 'underline'}}>strengthening guide</a> for detailed tips.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-2">Remove Polish Properly</h3>
+                    <p className="text-gray-600 text-sm">
+                      Never peel off polish—this removes layers of your nail with it, causing weakness and peeling. Always use acetone or non-acetone remover. Soak for 30 seconds, then wipe gently. Moisturize immediately after removal.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-2">Hydrate, Hydrate, Hydrate</h3>
+                    <p className="text-gray-600 text-sm">
+                      Polish dries out nails. Combat this with cuticle oil daily, especially before bed. Hand cream after every hand washing. Healthy, hydrated nails take polish better and designs last longer.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-2">Use Acetone-Free When Possible</h3>
+                    <p className="text-gray-600 text-sm">
+                      Acetone is harsh and drying. For regular polish, acetone-free removers work fine and are gentler. Save acetone for stubborn glitter or when you need something stronger. Always moisturize after using any remover.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-2">Watch for Warning Signs</h3>
+                    <p className="text-gray-600 text-sm">
+                      If nails become excessively brittle, yellow, painful, or develop ridges, take a break from polish and see a doctor if it persists. These can indicate underlying health issues or product reactions.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-xl">✅</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-800 mb-2">Base Coat Protects Against Staining</h3>
+                    <p className="text-gray-600 text-sm">
+                      Dark colors especially can stain nails yellow without base coat. Always use base coat—it's protection, not optional. If nails do get stained, buff gently with a buffer and give them a week to recover.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border-l-4 border-red-600">
+                <h4 className="font-bold text-gray-900 mb-2 text-lg">⚠️ When to See a Professional</h4>
+                <p className="text-gray-700 text-sm mb-3">
+                  If you notice persistent pain, swelling around nails, discoloration that won't go away, nails separating from nail bed, or any signs of infection, see a dermatologist or doctor. Don't try to treat nail infections with polish or home remedies.
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Nail health is part of overall health. Take it seriously even though it seems cosmetic.
+                </p>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 12: Practice & Progression Path */}
+            <div className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                📈 Your Progression Path: From Dots to Detailed
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Here's exactly how to progress your skills over the next month. Don't skip ahead or you'll get frustrated.
+              </p>
+
+              <div className="space-y-6">
+                <div className="glass-card p-6 rounded-xl border-l-4 border-burgundy-400">
+                  <h3 className="font-semibold text-gray-800 mb-3">Week 1: Master the Basics</h3>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• Try designs 1-5 (Ultra Easy category)</li>
+                    <li>• Focus on: smooth polish application, working with toothpicks, using tape</li>
+                    <li>• Goal: Feel confident applying polish evenly and making simple dots</li>
+                    <li>• Practice each design at least twice</li>
+                  </ul>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl border-l-4 border-pink-400">
+                  <h3 className="font-semibold text-gray-800 mb-3">Week 2: Add Patterns</h3>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• Try designs 6-12 (Super Easy category)</li>
+                    <li>• Focus on: organized placement, sponge techniques, combining skills</li>
+                    <li>• Goal: Create recognizable patterns and use multiple techniques in one design</li>
+                    <li>• Start practicing on your non-dominant hand more</li>
+                  </ul>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl border-l-4 border-purple-400">
+                  <h3 className="font-semibold text-gray-800 mb-3">Week 3: Build Complexity</h3>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• Try designs 13-18 (Still Easy category)</li>
+                    <li>• Focus on: combining multiple techniques, working faster, color theory</li>
+                    <li>• Goal: Complete more intricate designs with confidence</li>
+                    <li>• Experiment with your own color combinations</li>
+                  </ul>
+                </div>
+
+                <div className="glass-card p-6 rounded-xl border-l-4 border-blue-400">
+                  <h3 className="font-semibold text-gray-800 mb-3">Week 4: Master Trending Looks</h3>
+                  <ul className="space-y-2 text-gray-600 text-sm">
+                    <li>• Try designs 19-22 (2025 Trending category)</li>
+                    <li>• Focus on: perfecting techniques, developing personal style, speed</li>
+                    <li>• Goal: Create trendy looks quickly and efficiently</li>
+                    <li>• Start creating your own design variations</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-8 border-l-4 border-green-600 mt-8">
+                <h4 className="font-bold text-gray-900 mb-2 text-lg">🎯 Progress Markers</h4>
+                <p className="text-gray-700 text-sm mb-3">
+                  You'll know you're ready to move to the next week when:
+                </p>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• The current week's designs feel comfortable, not stressful</li>
+                  <li>• Your second attempt looks noticeably better than your first</li>
+                  <li>• You're not making the same mistakes repeatedly</li>
+                  <li>• You can complete designs without constantly checking instructions</li>
+                  <li>• You're excited to try the next level, not dreading it</li>
+                </ul>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* FAQ Section */}
+            <div id="faq" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
+                ❓ Frequently Asked Questions
+              </h2>
+              
+              <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                The 15 questions every beginner asks. If you're wondering about it, the answer is probably here.
+              </p>
+
+              <div className="space-y-4">
+                {/* All FAQs with proper structure */}
+                {[
+                  {
+                    q: "How do I start doing nail art as a beginner?",
+                    a: "Start with the simplest designs like single color perfection or random dots using household items you already have. Practice basic application first, then progress to easy designs using toothpicks for dots, tape for stripes, and sponges for gradients. Focus on mastering one technique before moving to the next."
+                  },
+                  {
+                    q: "What is the easiest nail design for first timers?",
+                    a: "Random dots are the easiest nail design for first-timers because there is no pattern to follow and mistakes look intentional. Use a toothpick dipped in polish to create scattered dots across a base color. This forgiving design builds confidence while teaching basic tool control and color coordination."
+                  },
+                  {
+                    q: "Can I do nail art without any tools?",
+                    a: "Yes, you can create beautiful nail art with household items. Use toothpicks for dots and lines, bobby pins for double dots and hearts, scotch tape for stripes, makeup sponges for ombre, and cotton swabs with acetone for cleanup. No special nail art tools are required to start."
+                  },
+                  {
+                    q: "What nail designs are best for beginners?",
+                    a: "Best beginner designs include polka dots, simple French tips, vertical stripes with tape, glitter gradients, one-finger accent nails, and basic color blocking. These designs require minimal precision, use simple techniques, and look impressive despite being easy to execute with basic household items."
+                  },
+                  {
+                    q: "How do I make dots on my nails at home?",
+                    a: "Dip a toothpick into nail polish and gently press onto your nail surface. For smaller dots, use the pointed end. For larger dots, use the blunt end or a bobby pin head. Let the base color dry completely first. Practice the pressure needed on paper before trying on nails."
+                  },
+                  {
+                    q: "What can I use instead of a dotting tool?",
+                    a: "Toothpicks, bobby pins, pencil erasers, ballpoint pen tips, or even the head of a sewing pin make excellent dotting tool substitutes. Bobby pins create perfect double dots for easy designs. Toothpick tips offer varying dot sizes depending on which end you use."
+                  },
+                  {
+                    q: "How do I do simple French tips at home?",
+                    a: "Apply a sheer pink or nude base coat first. Let dry completely. Use scotch tape or striping tape to mark the smile line across your nail tip. Paint white polish over the tip area, let dry 30 seconds, then carefully remove tape. Seal with clear top coat for smooth finish."
+                  },
+                  {
+                    q: "What is an easy nail art design for short nails?",
+                    a: "Half moon manicure, tiny dots, micro French tips, single accent nail, and vertical stripes all work beautifully on short nails. These designs do not require length to look elegant. Focus on horizontal or minimal patterns that enhance the nail shape rather than require extended canvas space."
+                  },
+                  {
+                    q: "How long does nail art take for beginners?",
+                    a: "Simple designs take 5 to 10 minutes per hand for beginners including drying time between steps. Your first attempts may take 15 to 20 minutes as you learn techniques. With practice, most easy designs become faster. Allow 30 minutes total for full manicure including prep, base coat, design, and top coat."
+                  },
+                  {
+                    q: "Can I do nail art with just nail polish?",
+                    a: "Yes, you need only nail polish plus household items. Base coat, two or more polish colors, and top coat are essential. Add toothpicks, tape, and sponges you already own. No special brushes, gels, or equipment required. Regular polish works perfectly for all beginner designs in this guide."
+                  },
+                  {
+                    q: "What colors are easiest for nail art beginners?",
+                    a: "Start with high-contrast color combinations like black on white, white on navy, or gold on burgundy. These contrasts make designs visible and mistakes less obvious. Avoid sheer or similar-toned colors initially. Nude base with bright accent colors offers forgiving canvas for learning technique."
+                  },
+                  {
+                    q: "How do I keep my hand steady for nail art?",
+                    a: "Rest both elbows on a table or firm surface. Work in good lighting. Take breaks if hands get tired or shaky. Practice designs on paper first to build muscle memory. Consider working in short sessions rather than rushing. Caffeine can increase shakiness so avoid before nail art sessions."
+                  },
+                  {
+                    q: "What is the simplest nail design to try first?",
+                    a: "Single color perfection is the simplest starting point to master basic polish application. Once comfortable, try random dots with a toothpick which requires no pattern or precision. These foundational skills build confidence before progressing to designs requiring more control like stripes or French tips."
+                  },
+                  {
+                    q: "Do I need special brushes for nail art?",
+                    a: "No special brushes are needed for beginner nail art. Use the brush inside your polish bottle for base application. Toothpicks, tape, and sponges create all the designs in this guide. Once you advance, a thin striping brush and cleanup brush are helpful but not essential initially."
+                  },
+                  {
+                    q: "Can I use a toothpick for nail designs?",
+                    a: "Toothpicks are perfect for nail art. Use the pointed end for tiny dots and fine lines. Use the blunt end for larger dots. Drag through wet polish to create marble effects, swirls, or floral designs. Toothpicks offer excellent control and precision for beginners at zero cost."
+                  }
+                ].map((faq, index) => (
+                  <details key={index} className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                    <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                      <h3 className="font-semibold text-gray-900 pr-4">{faq.q}</h3>
+                      <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                      </svg>
+                    </summary>
+                    <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                      {faq.a}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* E-E-A-T Section */}
+            <div className="mb-16 bg-gradient-to-br from-cream-50 to-burgundy-50 rounded-2xl p-8">
+              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">About Mirellé Team</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                We're nail enthusiasts who test and practice every technique before sharing it with you. Our mission is making nail art accessible for everyone—no intimidation, no gatekeeping, just honest tutorials that actually work for beginners. Every design in this guide has been tested by real beginners to ensure it's truly doable.
+              </p>
+              <a href="https://mirelleinspo.com/about" style={{color: '#2563eb', textDecoration: 'underline'}} className="font-medium">
+                Learn more about our team and approach →
+              </a>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Related Topics */}
+            <div className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
+                Keep Learning & Creating
+              </h2>
+              
+              <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                You've got the basics down. Now explore these related guides to expand your nail skills and find design inspiration.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* Related Topic 1 */}
+                <Link href="https://mirelleinspo.com/topics/nail-care-guide" className="group">
+                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl">💅</span>
+                    </div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                      Nail Care & Strengthening
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Keep your nails healthy and strong with proper care techniques. Essential reading for maintaining the perfect canvas for your nail art designs.
+                    </p>
+                    <div className="text-xs text-gray-500 flex items-center">
+                      <span className="mr-2">📖</span>
+                      12-minute read • Health-focused
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Related Topic 2 */}
+                <Link href="https://mirelleinspo.com/topics/skin-tones" className="group">
+                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl">🎨</span>
+                    </div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                      Colors for Your Skin Tone
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Discover which nail colors complement your skin tone best. Learn color theory that makes choosing polish shades easy and ensures flattering results every time.
+                    </p>
+                    <div className="text-xs text-gray-500 flex items-center">
+                      <span className="mr-2">🌈</span>
+                      8-minute read • Color matching
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Related Topic 3 */}
+                <Link href="https://mirelleinspo.com/topics/seasonal-trends" className="group">
+                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl">🍂</span>
+                    </div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                      Seasonal Nail Trends
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Stay updated with what's trending each season. From spring florals to winter sparkle, get inspiration for designs that match the current vibe.
+                    </p>
+                    <div className="text-xs text-gray-500 flex items-center">
+                      <span className="mr-2">✨</span>
+                      10-minute read • Updated monthly
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              {/* Additional Blog Links */}
+              <div className="mt-12 pt-8 border-t border-cream-400">
+                <h3 className="font-serif text-xl font-semibold text-gray-800 mb-6 text-center">
+                  Design Inspiration by Occasion
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                  <a href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    Christmas Nails
+                  </a>
+                  <a href="https://mirelleinspo.com/blog/wedding-nail-designs" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    Wedding Designs
+                  </a>
+                  <a href="https://mirelleinspo.com/blog/valentine-nails-2026" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    Valentine's Day
+                  </a>
+                  <a href="https://mirelleinspo.com/blog/winter-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    Winter Nails
+                  </a>
+                  <a href="https://mirelleinspo.com/blog/new-year-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    New Year's Eve
+                  </a>
+                  <a href="https://mirelleinspo.com/blog/thanksgiving-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    Thanksgiving
+                  </a>
+                  <a href="https://mirelleinspo.com/blog/holiday-vacation-nails-travel-guide" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    Vacation Nails
+                  </a>
+                  <a href="https://mirelleinspo.com/blog/goddess-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                    Goddess Nails
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Final CTA */}
+            <div className="bg-gradient-to-r from-burgundy-600 to-pink-600 rounded-2xl p-8 md:p-12 text-center text-white">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
+                Ready to Start Your Nail Art Journey?
+              </h2>
+              <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
+                You've got everything you need. Pick one design from the Ultra Easy section and try it this week. No pressure, no judgment—just have fun creating.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://mirelleinspo.com/pinterest" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                  Follow for More Inspo
+                </a>
+                <a href="https://mirelleinspo.com/shop" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">
+                  Shop Nail Supplies
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </>
+  );

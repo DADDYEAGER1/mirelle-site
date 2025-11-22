@@ -1,1193 +1,1513 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+// SEO Metadata Export
+export const metadata: Metadata = {
+  title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails | Mirellé',
+  description: 'Discover 50+ easy nail hacks for perfect at-home manicures! From quick-dry tricks to lasting polish, get salon-quality nails without leaving home. Beginner-friendly tips inside.',
+  keywords: [
+    'easy nail hacks at home',
+    'DIY nail hacks',
+    'nail hacks for beginners',
+    'at-home manicure tips',
+    'simple nail tips',
+    'DIY manicure hacks',
+    'nail polish hacks',
+    'home nail care',
+    'salon nails at home',
+    'quick nail fixes',
+    'beginner nail tips',
+    'nail art hacks'
+  ],
+  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellé',
+  publisher: 'Mirellé',
+  alternates: {
+    canonical: 'https://mirelleinspo.com/topics/at-home-hacks',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails',
+    description: 'Transform your DIY manicures with these genius nail hacks! Learn how to make polish last longer, fix mistakes instantly, and create trending designs at home—no salon needed.',
+    type: 'article',
+    url: 'https://mirelleinspo.com/topics/at-home-hacks',
+    siteName: 'Mirellé',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Complete guide to easy nail hacks at home featuring DIY manicure tools and beginner-friendly techniques',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails',
+    description: 'Get salon-quality nails at home with these proven DIY hacks and beginner tips',
+    images: ['https://mirelleinspo.com/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg'],
+    creator: '@mirelleinspo',
+  },
+};
 
 export default function AtHomeHacks() {
+  // JSON-LD Structured Data
+  const baseUrl = 'https://mirelleinspo.com';
+  
+  // 1. Article Schema
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `${baseUrl}/topics/at-home-hacks#article`,
+    headline: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon-Quality Manicures',
+    description: 'Comprehensive guide to at-home nail hacks covering quick-dry tricks, polish longevity tips, mistake fixes, and trending 2025 designs for beginners.',
+    image: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg`,
+      width: 1200,
+      height: 630,
+      caption: 'DIY nail hacks and at-home manicure techniques for beginners'
+    },
+    author: {
+      '@type': 'Person',
+      '@id': `${baseUrl}/#mirelle-team`,
+      name: 'Mirellé Team',
+      url: `${baseUrl}/about`
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${baseUrl}/#organization`,
+      name: 'Mirellé',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/apple-touch-icon.png`
+      }
+    },
+    datePublished: '2025-01-15',
+    dateModified: '2025-01-15',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${baseUrl}/topics/at-home-hacks`
+    },
+    articleSection: 'DIY Nail Care',
+    keywords: 'easy nail hacks at home, DIY manicure tips, nail polish hacks, at-home nail care, beginner nail techniques',
+    inLanguage: 'en-US'
+  };
+
+  // 2. BreadcrumbList Schema
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: baseUrl
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Topics',
+        item: `${baseUrl}/topics`
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'At-Home Nail Hacks',
+        item: `${baseUrl}/topics/at-home-hacks`
+      }
+    ]
+  };
+
+  // 3. FAQ Schema
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How can I make my nail polish last longer at home?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Make polish last longer by applying thin coats, sealing the free edge with top coat, avoiding water exposure for 2 hours after painting, using quality base and top coats, and reapplying top coat every 2 to 3 days. Wearing gloves for wet work and moisturizing cuticles daily also prevents chipping.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the easiest way to do nails at home for beginners?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Start with simple one-color manicures using three-stroke application method. Apply thin base coat, two thin color coats waiting 2 minutes between each, and glossy top coat. Use petroleum jelly around cuticles for easy cleanup. This takes 15 minutes and works for complete beginners.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I stop my nail polish from chipping so fast?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Prevent chipping by dehydrating nails with rubbing alcohol before polish, applying thin coats not thick ones, sealing nail tips with color and top coat, avoiding hot water for 12 hours after manicure, wearing gloves for housework, and reapplying top coat every 2 days for protection.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I do professional-looking nails without going to a salon?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, achieve salon-quality nails at home using proper technique. Clean nails with alcohol, apply thin coats, use three-stroke method, seal free edges, wait full drying time between coats, and finish with glossy top coat. Practice improves results—most people get salon-looking nails after 3 to 5 tries.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What household items can I use for nail art?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Use household items like scotch tape for stripes, bobby pins for dots, makeup sponges for ombre gradients, toothpicks for detailed designs, petroleum jelly for cuticle protection, ice water for quick drying, and old credit cards for cleanup. These replace expensive nail art tools effectively.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How long should I wait between coats of nail polish?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Wait 2 minutes between regular polish coats and 3 to 5 minutes before top coat. Test by gently touching nail corner—if it feels tacky but not wet, apply next coat. Gel polish needs full cure time under UV lamp. Rushing causes smudging and longer total drying time.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Why does my nail polish bubble up?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Polish bubbles from shaking the bottle, applying thick coats, painting in humid conditions, using old expired polish, or blow-drying nails. Fix by rolling bottle gently instead of shaking, applying thin layers, painting in cool dry room, and letting nails air dry naturally.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I remove glitter nail polish without damaging nails?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Remove glitter polish using foil method. Soak cotton pads in acetone-based remover, place on nails, wrap each finger in aluminum foil, wait 10 minutes, then wipe off. This dissolves glitter without excessive rubbing. Apply cuticle oil immediately after to restore moisture.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the best way to dry nail polish quickly?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Dry polish quickly by applying thin coats, using quick-dry top coat, or dipping nails in ice water for 2 minutes after polish feels dry to touch. Avoid blow dryers and fans which cause bubbles. Quick-dry drops work but thin coats dry fastest naturally.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I fix a smudged nail without starting over?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Fix smudges by dabbing tiny amount of polish remover on finger, gently smoothing smudged area, waiting to fully dry, then applying thin coat over problem spot. For small smudges, lick finger and smooth immediately. Deep smudges need full polish removal and reapplication.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Should I push back or cut my cuticles?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Push back cuticles gently—never cut them. Cutting causes infection risk, bleeding, and permanent damage. After shower when cuticles are soft, use wooden stick to gently push back. Apply cuticle oil daily. Trimming hangnails with clean nippers is safe but avoid cutting cuticles themselves.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should I do at-home manicures?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Do at-home manicures every 7 to 10 days for regular polish, every 2 to 3 weeks for gel manicures. Remove polish before it chips badly to prevent nail damage. Give nails a polish-free day between manicures to breathe. Apply cuticle oil daily regardless of manicure schedule.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I mix different nail polish brands?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, mix different polish brands safely. Use any base coat with any color with any top coat. Gel polish must match brand within system for proper curing. Regular polish mixes freely. Quality base and top coats work with budget color polishes for cost savings.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between base coat and top coat?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Base coat protects natural nails from staining, fills ridges, and helps color polish adhere better. Top coat seals color, adds shine, prevents chipping, and extends manicure life. Both are essential—base coat goes first, top coat goes last. Never skip either for best results.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I prevent nail polish from getting on my skin?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Prevent polish on skin by applying petroleum jelly or liquid latex around cuticles before painting, using brush with minimal polish, starting strokes slightly away from cuticles, and cleaning up with angled brush dipped in remover. Practice improves application precision significantly.'
+        }
+      }
+    ]
+  };
+  // 4. HowTo Schema
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Do Salon-Quality Nails at Home: Complete Tutorial',
+    description: 'Step-by-step guide to achieving professional manicure results at home using easy DIY nail hacks and household items',
+    image: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}/at-home-manicure-step-by-step-tutorial-process.jpg`
+    },
+    totalTime: 'PT30M',
+    estimatedCost: {
+      '@type': 'MonetaryAmount',
+      currency: 'USD',
+      value: '20'
+    },
+    supply: [
+      { '@type': 'HowToSupply', name: 'Base coat' },
+      { '@type': 'HowToSupply', name: 'Color polish' },
+      { '@type': 'HowToSupply', name: 'Top coat' },
+      { '@type': 'HowToSupply', name: 'Nail file' },
+      { '@type': 'HowToSupply', name: 'Rubbing alcohol' },
+      { '@type': 'HowToSupply', name: 'Cotton pads' },
+      { '@type': 'HowToSupply', name: 'Petroleum jelly' }
+    ],
+    tool: [
+      { '@type': 'HowToTool', name: 'Cleanup brush or cotton swab' },
+      { '@type': 'HowToTool', name: 'Wooden cuticle pusher' }
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Prep Your Nails',
+        text: 'Remove old polish completely, file nails to desired shape in one direction, push back cuticles gently with wooden stick after shower when soft. Clean nail surface with rubbing alcohol on cotton pad to remove oils.',
+        image: `${baseUrl}/at-home-nail-prep-filing-cleaning-cuticles.jpg`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Apply Petroleum Jelly Barrier',
+        text: 'Dab petroleum jelly around cuticles and sides of nails using cotton swab. This creates barrier for easy cleanup of messy polish application.',
+        image: `${baseUrl}/at-home-petroleum-jelly-cuticle-barrier-trick.jpg`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Apply Thin Base Coat',
+        text: 'Apply one thin layer of base coat using three-stroke method: center stroke from base to tip, left side stroke, right side stroke. Seal free edge by swiping brush across nail tip. Wait 2 minutes to dry.',
+        image: `${baseUrl}/at-home-base-coat-application-three-stroke-method.jpg`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Apply First Color Coat',
+        text: 'Use same three-stroke technique with color polish. Keep coats thin—better to do two thin coats than one thick coat. Seal free edge. Wait 2 minutes before second coat.',
+        image: `${baseUrl}/at-home-color-polish-thin-coat-application.jpg`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Apply Second Color Coat',
+        text: 'Repeat thin coat application. Check coverage—if you see streaks, wait 2 minutes and add third thin coat. Seal free edge each time to prevent chipping.',
+        image: `${baseUrl}/at-home-second-coat-coverage-technique.jpg`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Seal with Top Coat',
+        text: 'Wait 5 minutes after final color coat. Apply thin glossy top coat using same three-stroke method. Seal free edge generously with top coat—this prevents chipping. Let dry 10 minutes.',
+        image: `${baseUrl}/at-home-top-coat-sealing-free-edge-tip.jpg`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 7,
+        name: 'Clean Up Edges',
+        text: 'Dip angled brush or cotton swab in polish remover and clean up edges where polish got on skin. Petroleum jelly makes this easy—polish wipes right off.',
+        image: `${baseUrl}/at-home-cleanup-brush-polish-remover-technique.jpg`
+      },
+      {
+        '@type': 'HowToStep',
+        position: 8,
+        name: 'Quick Dry and Finish',
+        text: 'Let nails air dry 20 minutes or dip in ice water for 2 minutes to set. Apply cuticle oil to nourish. Avoid water exposure for 2 hours for best lasting results.',
+        image: `${baseUrl}/at-home-ice-water-quick-dry-hack-bowl.jpg`
+      }
+    ]
+  };
+
+  // 5. WebPage Schema
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${baseUrl}/topics/at-home-hacks`,
+    url: `${baseUrl}/topics/at-home-hacks`,
+    name: 'Easy Nail Hacks at Home: Complete DIY Manicure Guide',
+    description: 'Master at-home nail care with 50+ easy hacks covering quick-dry tricks, polish longevity, mistake fixes, and trending designs for beginners.',
+    inLanguage: 'en-US',
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': `${baseUrl}/#website`
+    },
+    about: {
+      '@type': 'Thing',
+      name: 'DIY Nail Care'
+    },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${baseUrl}/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg`
+    }
+  };
+
+  // 6. ItemList Schema
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: '50+ Easy Nail Hacks for At-Home Manicures',
+    description: 'Comprehensive list of DIY nail hacks organized by category for beginners to achieve salon-quality results at home',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Polish Application Hacks' },
+      { '@type': 'ListItem', position: 2, name: 'Quick-Dry Tricks' },
+      { '@type': 'ListItem', position: 3, name: 'Longevity Tips' },
+      { '@type': 'ListItem', position: 4, name: 'Mistake Fix Solutions' },
+      { '@type': 'ListItem', position: 5, name: 'Household Tool Substitutes' },
+      { '@type': 'ListItem', position: 6, name: 'Easy Nail Art Hacks' },
+      { '@type': 'ListItem', position: 7, name: 'Removal Tips' },
+      { '@type': 'ListItem', position: 8, name: 'Trending 2025 Techniques' }
+    ]
+  };
+
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/athome.jpg"
-            alt="Easy nail hacks at home featuring DIY manicure tools and budget-friendly techniques for salon-quality results"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="relative z-10 text-center text-white">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4">
-            At-Home Nail Hacks
-          </h1>
-          <p className="text-xl md:text-2xl font-light">
-            Budget-Friendly Tips for Salon-Quality Nails
-          </p>
-        </div>
-      </section>
+    <>
+      {/* Structured Data Scripts */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
-      {/* Main Content */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-none">
-            {/* Introduction */}
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-3xl font-bold text-gray-800 mb-6">
-                50+ Professional Nail Hacks You Can Do at Home
+      <div className="min-h-screen">
+        {/* Hero Section */}
+        <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg"
+              alt="Complete guide to easy nail hacks at home featuring DIY manicure tools and beginner-friendly techniques"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
+          </div>
+          
+          <div className="relative z-10 text-center text-white max-w-4xl px-6">
+            <div className="inline-flex items-center glass-card-dark px-4 py-2 rounded-full text-sm mb-4 backdrop-blur-sm">
+              ✨ Beginner-Friendly • 12 min read • Updated January 2025
+            </div>
+            
+            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+              Easy Nail Hacks at Home
+            </h1>
+            
+            <p className="text-xl md:text-2xl font-light mb-8 text-gray-100">
+              50+ DIY tips for salon-quality manicures without the salon prices
+            </p>
+            
+            <div className="flex justify-center gap-4 flex-wrap">
+              <a href="#hacks" className="bg-burgundy-600 hover:bg-burgundy-700 px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+                See the Hacks
+              </a>
+              <a href="#faq" className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
+                Jump to FAQs
+              </a>
+            </div>
+          </div>
+          
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </section>
+
+        {/* Quick Navigation */}
+        <section className="py-12 bg-gradient-to-r from-burgundy-50 via-cream-100 to-pink-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                🎯 Your Quick Guide
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Master easy nail hacks at home and achieve professional results without the salon prices. These proven DIY manicure tips use everyday household items to create stunning nails that last.
+              <p className="text-gray-600 text-lg">
+                Jump to exactly what you need—from quick fixes to full tutorials
               </p>
             </div>
 
-            {/* Essential Tools & Setup */}
-            <div className="mb-16">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">1</span>
-                Essential Tools Every Beginner Needs
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <img
-                    src="/at-home-hacks-essential-tools.jpg"
-                    alt="DIY nail care tools and supplies arranged for at-home manicure including files tweezers and household items"
-                    className="rounded-2xl shadow-lg w-full mb-6"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="space-y-4">
-                  <p className="text-gray-600 leading-relaxed">
-                    You do not need expensive professional equipment to create beautiful nails. Most effective nail hacks use simple household items you already own.
-                  </p>
-                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
-                    <h4 className="font-semibold text-gray-800 mb-2">💡 Budget-Saving Tip</h4>
-                    <p className="text-sm text-gray-600">
-                      Professional nail technicians reveal that 80% of salon techniques can be replicated at home with items costing under $20 total. The key is knowing which substitutes work best.
-                    </p>
-                  </div>
-                  <ul className="space-y-3 text-gray-600">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <div><strong>Glass nail file:</strong> Prevents splitting and lasts years longer than emery boards</div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <div><strong>Scotch tape or painter's tape:</strong> Creates perfect geometric nail art designs</div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <div><strong>Makeup sponges:</strong> Ideal for ombre and gradient effects</div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <div><strong>Bobby pins:</strong> Perfect dot tool for polka dots and florals</div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <a href="#application" className="glass-card p-4 rounded-xl text-center hover:shadow-xl transition-all transform hover:scale-105">
+                <span className="text-3xl mb-2 block">💅</span>
+                <p className="font-semibold text-sm text-gray-800">Application Hacks</p>
+              </a>
+              <a href="#quick-dry" className="glass-card p-4 rounded-xl text-center hover:shadow-xl transition-all transform hover:scale-105">
+                <span className="text-3xl mb-2 block">⏱️</span>
+                <p className="font-semibold text-sm text-gray-800">Quick-Dry Tricks</p>
+              </a>
+              <a href="#longevity" className="glass-card p-4 rounded-xl text-center hover:shadow-xl transition-all transform hover:scale-105">
+                <span className="text-3xl mb-2 block">✨</span>
+                <p className="font-semibold text-sm text-gray-800">Make It Last</p>
+              </a>
+              <a href="#mistakes" className="glass-card p-4 rounded-xl text-center hover:shadow-xl transition-all transform hover:scale-105">
+                <span className="text-3xl mb-2 block">🔧</span>
+                <p className="font-semibold text-sm text-gray-800">Fix Mistakes</p>
+              </a>
             </div>
 
-            {/* Quick-Dry Methods */}
-            <div className="mb-16 bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">2</span>
-                Fast-Drying Hacks That Actually Work
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Waiting for nail polish to dry is frustrating and often leads to smudges. These quick-dry nail hacks cut drying time dramatically and protect your fresh manicure.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🧊</span>
-                  </div>
-                  <h4 className="font-semibold text-gray-800 mb-3 text-center">Ice Water Method</h4>
-                  <p className="text-sm text-gray-600">
-                    After painting, wait 2 minutes then submerge nails in ice water for 3-5 minutes. The cold hardens polish instantly without causing bubbles.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">💨</span>
-                  </div>
-                  <h4 className="font-semibold text-gray-800 mb-3 text-center">Cooking Spray Trick</h4>
-                  <p className="text-sm text-gray-600">
-                    Spritz nails with non-stick cooking spray from 6 inches away. The oils create a protective barrier that speeds drying by 40%.
-                  </p>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🌬️</span>
-                  </div>
-                  <h4 className="font-semibold text-gray-800 mb-3 text-center">Cool Air Only</h4>
-                  <p className="text-sm text-gray-600">
-                    Use a fan on cool setting, never heat. Hot air expands polish and causes bubbling. Cold air sets the top layer quickly.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Cleanup and Application Hacks */}
-            <div className="mb-16">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">3</span>
-                Mess-Free Application Techniques
-              </h3>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-xl border border-pink-200">
-                    <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center mr-2 text-white text-xs">1</span>
-                      Petroleum Jelly Barrier Method
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Apply petroleum jelly around nails before painting. Any polish that lands on skin wipes away effortlessly with the jelly, leaving clean edges every time.
-                    </p>
-                    <p className="text-xs text-gray-500">
-                      <strong>Pro tip:</strong> Use a cotton swab for precise application around cuticles and sidewalls.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
-                    <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white text-xs">2</span>
-                      Thin Coats Always Win
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Two thin coats beat one thick coat every time. Thick polish dries on top but stays wet underneath, leading to smudges and chips within hours.
-                    </p>
-                    <div className="bg-yellow-50 p-3 rounded-lg border border-yellow-200">
-                      <p className="text-xs text-gray-700">
-                        <strong>⚠️ Never shake polish!</strong> Rolling the bottle between palms mixes pigments without creating air bubbles that ruin smooth application.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-gray-800 text-white p-6 rounded-xl">
-                  <h4 className="font-semibold mb-4 text-pink-300">Clean Brush Hack for Perfect Application</h4>
-                  <p className="text-gray-200 mb-4 text-sm">
-                    Professional nail artists use this simple trick that beginners never think of. It creates flawless application every single stroke.
-                  </p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-start">
-                      <span className="w-5 h-5 bg-pink-500 rounded-full flex items-center justify-center mr-3 text-xs flex-shrink-0">1</span>
-                      <div>
-                        <strong className="text-gray-200">Wipe the brush:</strong> Remove excess polish on bottle rim before every stroke
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="w-5 h-5 bg-pink-500 rounded-full flex items-center justify-center mr-3 text-xs flex-shrink-0">2</span>
-                      <div>
-                        <strong className="text-gray-200">Three strokes only:</strong> Center, left side, right side to cover each nail
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="w-5 h-5 bg-pink-500 rounded-full flex items-center justify-center mr-3 text-xs flex-shrink-0">3</span>
-                      <div>
-                        <strong className="text-gray-200">Seal the edge:</strong> Swipe brush tip along free edge to prevent chipping
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-4 p-3 bg-gray-700 rounded-lg border border-gray-600">
-                    <p className="text-xs text-gray-300">
-                      💡 <strong>Results:</strong> This technique reduces application time by 50% and creates salon-smooth finishes that last twice as long.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Creative Nail Art Hacks */}
-            <div className="mb-16">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">4</span>
-                Simple Nail Art with Household Items
-              </h3>
-              <p className="text-gray-600 mb-8">
-                Professional nail art designs become achievable when you know which household items substitute for expensive tools. These creative hacks produce impressive results that look hand-painted by experts.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3">
-                      <span className="text-red-600 text-lg">🎨</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-800">Scotch Tape Geometric Designs</h4>
-                  </div>
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <div><strong>Perfect For:</strong> Stripes, color blocks, negative space looks</div>
-                    <div><strong>Method:</strong> Apply base color, let dry completely. Place tape in desired pattern, paint second color, remove tape while wet.</div>
-                  </div>
-                  <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-                    <p className="text-xs text-gray-700">
-                      <strong>Pro Tip:</strong> Stick tape to your hand first to reduce tackiness. This prevents lifting your base polish when you remove it.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center mr-3">
-                      <span className="text-yellow-600 text-lg">🔵</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-800">Bobby Pin Dot Technique</h4>
-                  </div>
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <div><strong>Perfect For:</strong> Polka dots, flowers, abstract patterns</div>
-                    <div><strong>Method:</strong> Dip rounded bobby pin end in polish. Press gently onto nail for uniform dots every time.</div>
-                  </div>
-                  <div className="mt-4 p-3 bg-green-50 rounded-lg">
-                    <p className="text-xs text-gray-700">
-                      <strong>Size Control:</strong> Ball head = large dots. Tip end = tiny dots. Toothpick = micro dots for intricate designs.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
-                      <span className="text-purple-600 text-lg">🧽</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-800">Makeup Sponge Ombre</h4>
-                  </div>
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <div><strong>Perfect For:</strong> Gradient fades, sunset nails, aura effects</div>
-                    <div><strong>Method:</strong> Paint stripes of polish on sponge, dab onto nail in bouncing motion. Blend colors seamlessly.</div>
-                  </div>
-                  <div className="mt-4 p-3 bg-purple-50 rounded-lg">
-                    <p className="text-xs text-gray-700">
-                      <strong>Trending 2025:</strong> This technique creates popular <Link href="/blog/goddess-nails-2025" className="text-blue-600 hover:text-blue-800 underline">aura nail designs</Link> without expensive airbrush equipment.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
-                      <span className="text-orange-600 text-lg">⭕</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-800">Paper Reinforcement Half-Moons</h4>
-                  </div>
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <div><strong>Perfect For:</strong> Classic half-moon manicures, reverse French tips</div>
-                    <div><strong>Method:</strong> Position reinforcement sticker at nail base. Paint over exposed area. Remove sticker for crisp lines.</div>
-                  </div>
-                  <div className="mt-4 p-3 bg-orange-50 rounded-lg">
-                    <p className="text-xs text-gray-700">
-                      <strong>Office Supply Win:</strong> These cost pennies and create the same results as expensive nail stencils sold at beauty stores.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Longevity and Chip Prevention */}
-            <div className="mb-16 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">5</span>
-                Make Your Manicure Last 2+ Weeks
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Professional manicures last because technicians follow specific preparation and sealing steps. Understanding proper <Link href="/topics/nail-care-guide" className="text-blue-600 hover:text-blue-800 underline">nail care fundamentals</Link> combined with these longevity hacks transforms short-lived polish into lasting color.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-4">Before You Paint</h4>
-                  <div className="space-y-4">
-                    <div className="flex items-center p-3 bg-white rounded-lg border border-green-200">
-                      <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                        <span className="text-green-600 text-sm font-bold">1</span>
-                      </div>
-                      <div className="flex-1">
-                        <strong className="text-gray-800">Vinegar Nail Prep</strong>
-                        <p className="text-xs text-gray-600">Wipe nails with white vinegar to remove oils. Polish bonds 3x stronger to clean surfaces.</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center p-3 bg-white rounded-lg border border-blue-200">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                        <span className="text-blue-600 text-sm font-bold">2</span>
-                      </div>
-                      <div className="flex-1">
-                        <strong className="text-gray-800">Base Coat is Non-Negotiable</strong>
-                        <p className="text-xs text-gray-600">Base coat fills nail ridges and creates sticky surface for color adhesion. Never skip this step.</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center p-3 bg-white rounded-lg border border-purple-200">
-                      <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                        <span className="text-purple-600 text-sm font-bold">3</span>
-                      </div>
-                      <div className="flex-1">
-                        <strong className="text-gray-800">File After Polish Removal</strong>
-                        <p className="text-xs text-gray-600">Polish makes nails swell slightly. Filing immediately after removal prevents splits and breaks.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-gray-800 p-6 rounded-xl text-white">
-                  <h4 className="font-semibold mb-4 text-green-300">The Chip-Proof Sealing System</h4>
-                  <p className="text-gray-200 mb-4 text-sm">
-                    This is the number one secret professional nail technicians use. It prevents 90% of premature chipping and extends wear time dramatically.
-                  </p>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-start">
-                      <span className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <div className="text-gray-200">
-                        <strong>Wrap the tips:</strong> Apply base coat, color, and top coat over the free edge of your nail, not just the top surface
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <div className="text-gray-200">
-                        <strong>Reapply top coat every 2-3 days:</strong> This refreshes the seal and prevents micro-chips from spreading
-                      </div>
-                    </div>
-                    <div className="flex items-start">
-                      <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      <div className="text-gray-200">
-                        <strong>Avoid hot water for 2 hours:</strong> Polish needs time to fully cure. Hot water causes expansion and cracking
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-4 p-3 bg-gray-700 rounded-lg border border-gray-600">
-                    <p className="text-xs text-gray-300">
-                      <strong>Proven Results:</strong> Users following this system report 12-16 days of chip-free wear compared to the typical 3-5 days.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Removal and Product Hacks */}
-            <div className="mb-16">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">6</span>
-                Gentle Removal and Product Longevity Tips
-              </h3>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-6 rounded-xl border border-pink-200">
-                    <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center mr-2 text-white text-xs">💎</span>
-                      Glitter Polish Removal Hack
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Glitter polish is notoriously difficult to remove. The foil wrap method works perfectly without harsh scrubbing that damages nails.
-                    </p>
-                    <ol className="text-sm text-gray-600 space-y-2 ml-4 list-decimal">
-                      <li>Soak cotton pad in acetone remover</li>
-                      <li>Place saturated pad on nail</li>
-                      <li>Wrap entire fingertip in aluminum foil</li>
-                      <li>Wait 5-7 minutes for polish to dissolve</li>
-                      <li>Press pad firmly and slide off in one motion</li>
-                    </ol>
-                  </div>
-                  
-                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
-                    <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mr-2 text-white text-xs">🔄</span>
-                      Revive Thick or Goopy Polish
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Old nail polish becomes thick and difficult to apply. Instead of throwing away expensive bottles, restore them to perfect consistency.
-                    </p>
-                    <div className="bg-yellow-50 p-3 rounded-lg border border-yellow-200">
-                      <p className="text-xs text-gray-700">
-                        <strong>Add 3-5 drops of nail polish thinner</strong> (not remover!) and roll bottle between palms. Polish thinner breaks down polymers without weakening color or affecting dry time.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="space-y-6">
-                  <img
-                    src="/at-home-hacks-polish-storage.jpg"
-                    alt="Proper nail polish storage methods and organization system for maintaining product quality"
-                    className="rounded-2xl shadow-lg w-full"
-                    loading="lazy"
-                  />
-                  <div className="bg-white p-6 rounded-xl border-l-4 border-purple-400">
-                    <h4 className="font-semibold text-gray-800 mb-2">🎯 Product Storage Secrets</h4>
-                    <p className="text-gray-600 mb-3">
-                      Professional nail artists store polish differently than most people realize. These storage hacks extend product life by months or even years.
-                    </p>
-                    <ul className="text-sm text-gray-600 space-y-2">
-                      <li>• Store bottles upside down to prevent settling and separation</li>
-                      <li>• Keep in cool, dark place (not bathroom) to prevent heat damage</li>
-                      <li>• Clean bottle threads monthly with remover to ensure tight seal</li>
-                      <li>• Use within 2 years for best consistency and color accuracy</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Trending 2025 DIY Techniques */}
-            <div className="mb-16 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">7</span>
-                2025 Trending Techniques You Can Master at Home
-              </h3>
-              <p className="text-gray-600 mb-8">
-                Professional salons charge premium prices for these trending looks. Learning to recreate them at home saves money while keeping your nails on-trend. Explore more <Link href="/topics/seasonal-trends" className="text-blue-600 hover:text-blue-800 underline">seasonal nail trends</Link> throughout the year.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">✨</span>
-                  </div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Glass Nail Effect</h4>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Ultra-glossy translucent finish achieved by layering sheer polish with high-shine top coat. Apply 3 thin coats of jelly polish then 2 layers of glass top coat.
-                  </p>
-                  <div className="text-xs text-gray-500">
-                    <strong>Salon cost:</strong> $45-60 | <strong>At-home:</strong> $8-12
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                  <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">🌸</span>
-                  </div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Blooming Gel Water Marble</h4>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Watercolor effects created with special <Link href="/blog/blooming-gel-nails" className="text-blue-600 hover:text-blue-800 underline">blooming gel polish</Link>. Drop gel colors onto wet base, watch them spread organically for artistic patterns.
-                  </p>
-                  <div className="text-xs text-gray-500">
-                    <strong>Salon cost:</strong> $55-75 | <strong>At-home:</strong> $15-20
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-2xl">❄️</span>
-                  </div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Chrome Powder Accent</h4>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Mirror-finish chrome effect using powder rubbed over tacky gel top coat. Creates metallic shine perfect for <Link href="/blog/winter-nails-2025" className="text-blue-600 hover:text-blue-800 underline">winter nail designs</Link>.
-                  </p>
-                  <div className="text-xs text-gray-500">
-                    <strong>Salon cost:</strong> $50-70 | <strong>At-home:</strong> $10-18
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Seasonal Holiday Hacks */}
-            <div className="mb-16">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">8</span>
-                Holiday and Special Occasion Quick Hacks
-              </h3>
-              <p className="text-gray-600 mb-8">
-                Special occasions call for festive nails, but you do not need hours at the salon. These quick DIY techniques create celebration-worthy looks in under 30 minutes.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-gradient-to-br from-red-50 to-green-50 p-6 rounded-xl border border-red-200">
-                  <h4 className="font-semibold text-gray-800 mb-4 flex items-center">
-                    <span className="text-2xl mr-3">🎄</span>
-                    Christmas Nail Shortcuts
-                  </h4>
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <p className="font-medium text-gray-800">Instant Festive Looks:</p>
-                    <ul className="space-y-2 ml-4">
-                      <li>• <strong>Glitter gradient:</strong> Sponge gold glitter from tips down for sparkly <Link href="/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-blue-800 underline">Christmas nails</Link></li>
-                      <li>• <strong>Striping tape stars:</strong> Cut thin gold tape into star shapes</li>
-                      <li>• <strong>Dotted snowflakes:</strong> White dots in snowflake pattern with bobby pin</li>
-                      <li>• <strong>Candy cane stripes:</strong> Red and white tape in diagonal pattern</li>
-                    </ul>
-                  </div>
-                  <div className="mt-4 p-3 bg-red-100 rounded-lg">
-                    <p className="text-xs text-gray-700">
-                      <strong>Time-saver:</strong> Focus elaborate designs on accent nails only. Keep other nails solid color for cohesive look in half the time.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-pink-50 to-red-50 p-6 rounded-xl border border-pink-200">
-                  <h4 className="font-semibold text-gray-800 mb-4 flex items-center">
-                    <span className="text-2xl mr-3">💕</span>
-                    Valentine's Day Express
-                  </h4>
-                  <div className="space-y-3 text-sm text-gray-600">
-                    <p className="font-medium text-gray-800">Romantic Nails in Minutes:</p>
-                    <ul className="space-y-2 ml-4">
-                      <li>• <strong>Heart stencils:</strong> Paper hole reinforcements create perfect hearts</li>
-                      <li>• <strong>Ombre pink-to-red:</strong> Sponge technique blends romantic shades</li>
-                      <li>• <strong>Metallic accents:</strong> Gold foil pieces pressed into wet polish</li>
-                      <li>• <strong>Pearl details:</strong> Tiny pearls placed with toothpick create elegant <Link href="/blog/valentine-nails-2026" className="text-blue-600 hover:text-blue-800 underline">Valentine nail art</Link></li>
-                    </ul>
-                  </div>
-                  <div className="mt-4 p-3 bg-pink-100 rounded-lg">
-                    <p className="text-xs text-gray-700">
-                      <strong>Pro tip:</strong> Sheer pink base with one glittery accent nail looks expensive but takes only 10 minutes total.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Common Mistakes and Fixes */}
-            <div className="mb-16 bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-8">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">9</span>
-                Emergency Fixes for Common Manicure Disasters
-              </h3>
-              <p className="text-gray-600 mb-8">
-                Even professionals make mistakes. Knowing how to fix common problems saves your manicure without starting over completely.
-              </p>
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-orange-400">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl">😱</span>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-gray-800 mb-2">Smudged Polish While Still Wet</h4>
-                      <p className="text-sm text-gray-600 mb-3">
-                        <strong>Quick Fix:</strong> Lick your finger (saliva works!) and gently smooth the smudge. The moisture helps polish flow back together. Then add extra top coat to blend and seal.
-                      </p>
-                      <p className="text-xs text-gray-500">
-                        <strong>Prevention:</strong> Wait 2 full minutes between coats. Test with light finger tap - should feel dry to touch.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-400">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl">💔</span>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-gray-800 mb-2">Chipped Polish After One Day</h4>
-                      <p className="text-sm text-gray-600 mb-3">
-                        <strong>Quick Fix:</strong> Dab tiny amount of matching color onto chip with toothpick. Blend edges with finger. Seal entire nail with top coat. Looks intentional rather than damaged.
-                      </p>
-                      <p className="text-xs text-gray-500">
-                        <strong>Prevention:</strong> Always wrap tips with every layer of polish and top coat. This seals edges against daily wear.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-400">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl">🫧</span>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-gray-800 mb-2">Air Bubbles in Polish</h4>
-                      <p className="text-sm text-gray-600 mb-3">
-                        <strong>Quick Fix:</strong> If polish is still wet, gently puncture bubble with pin and smooth with brush. If dry, apply thin layer of polish over bubble to fill and even surface.
-                      </p>
-                      <p className="text-xs text-gray-500">
-                        <strong>Prevention:</strong> Roll bottle between palms instead of shaking. Apply thin coats in cool room away from fans or heat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-400">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl">🖌️</span>
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-gray-800 mb-2">Polish All Over Cuticles and Skin</h4>
-                      <p className="text-sm text-gray-600 mb-3">
-                        <strong>Quick Fix:</strong> Dip small flat brush in acetone remover. Carefully trace around nail edges to remove excess. Cotton swab works but leaves fuzz - brushes give cleaner results.
-                      </p>
-                      <p className="text-xs text-gray-500">
-                        <strong>Prevention:</strong> Apply petroleum jelly barrier before painting. Wipe excess polish from brush before each stroke.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Non-Dominant Hand Techniques */}
-            <div className="mb-16">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 text-white text-sm">10</span>
-                Mastering Your Non-Dominant Hand
-              </h3>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                  <img
-                    src="/at-home-hacks-dominant-hand-technique.jpg"
-                    alt="Proper hand positioning and stability techniques for painting non-dominant hand nails"
-                    className="rounded-2xl shadow-lg w-full mb-6"
-                    loading="lazy"
-                  />
-                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
-                    <h4 className="font-semibold text-gray-800 mb-2">💡 Game-Changing Tip</h4>
-                    <p className="text-sm text-gray-600">
-                      Professional nail technicians move the nail to the brush, not brush to nail. Rest non-dominant hand on table, hold brush still in dominant hand, and move each finger into position for painting.
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <p className="text-gray-600 leading-relaxed">
-                    Painting your non-dominant hand feels impossible at first. These specific techniques make the process easier and produce cleaner results every time.
-                  </p>
-                  <div className="space-y-3">
-                    <div className="bg-white p-4 rounded-lg border border-gray-200">
-                      <h5 className="font-semibold text-gray-800 mb-2">1. Stabilize Both Hands</h5>
-                      <p className="text-sm text-gray-600">
-                        Rest both elbows firmly on table. Touch pinkies together for extra stability. This creates steady platform that reduces shaking dramatically.
-                      </p>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg border border-gray-200">
-                      <h5 className="font-semibold text-gray-800 mb-2">2. Use Less Polish on Brush</h5>
-                      <p className="text-sm text-gray-600">
-                        Wipe brush extra thoroughly for non-dominant hand. Less polish means fewer drips and easier control even with shaky strokes.
-                      </p>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg border border-gray-200">
-                      <h5 className="font-semibold text-gray-800 mb-2">3. Paint in Shorter Strokes</h5>
-                      <p className="text-sm text-gray-600">
-                        Break each nail into 2-3 smaller sections instead of one long stroke. Easier to control and covers just as evenly when blended.
-                      </p>
-                    </div>
-                    <div className="bg-white p-4 rounded-lg border border-gray-200">
-                      <h5 className="font-semibold text-gray-800 mb-2">4. Clean Up After Completely Dry</h5>
-                      <p className="text-sm text-gray-600">
-                        Do not try for perfection while painting. Focus on coverage. Use cleanup brush with remover after polish dries completely for crisp edges.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* FAQ Section */}
-            <div className="mb-16" id="faq">
-              <h3 className="font-serif text-3xl font-bold text-gray-800 mb-8 text-center">
-                Frequently Asked Questions
-              </h3>
-              <div className="space-y-4">
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">How can I make my nail polish last longer at home?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Apply thin base coat first, followed by two thin color coats instead of one thick coat. Always seal the free edge of your nail with each layer including top coat. Reapply fresh top coat every 2-3 days to refresh the protective seal and prevent micro-chips from spreading.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">What household items can I use for nail art designs?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Common household items work perfectly for professional-looking nail art. Use scotch tape or painters tape for geometric designs, bobby pin tips for perfect dots, makeup sponges for ombre gradients, toothpicks for detailed work, and paper hole reinforcements for flawless half-moon manicures.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">How do I stop my nail polish from chipping so fast?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Chipping happens when polish loses adhesion to the nail. Prep nails by wiping with white vinegar or rubbing alcohol before painting to remove all oils. Apply thin coats, always wrap the free edge with each layer, and avoid hot water for two hours after painting. Quality top coat makes the biggest difference in preventing chips.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">What is the fastest way to dry nail polish at home?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    The ice water method works best for fast drying. Wait two minutes after your final coat, then submerge nails in a bowl of ice water for three to five minutes. The extreme cold hardens polish quickly without causing bubbles or texture issues that heat methods create.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">How do I remove glitter nail polish without damaging my nails?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Use the foil wrap method for gentle glitter removal. Soak cotton pads in acetone remover, place on nails, and wrap each finger in aluminum foil squares. Wait five to seven minutes for polish to dissolve completely, then press down firmly and slide off in one smooth motion. This prevents harsh scrubbing that damages nails.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">Why does my nail polish get bubbles and how can I prevent them?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Bubbles form when air gets trapped in polish. Never shake your polish bottle before use - this creates thousands of tiny air bubbles. Instead, roll the bottle gently between your palms to mix. Also avoid painting in hot rooms or near fans, as temperature changes cause bubbling. Apply thin even coats for bubble-free results.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">How do I fix a smudged nail without starting over completely?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    If polish is still wet, lick your finger and gently smooth the smudge - saliva helps polish flow back together. If polish is dry, apply tiny amount of matching color with toothpick to fill the damaged area, blend edges with fingertip, then seal entire nail with top coat. This camouflages the fix beautifully.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">What is the best way to apply nail polish on my non-dominant hand?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Stabilize both elbows firmly on a table and touch your pinkies together for extra stability. Move your nail to the brush instead of brush to nail - rest your non-dominant hand flat and hold the brush still while positioning each finger. Use less polish on the brush and paint in shorter strokes for better control.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">How can I make neon nail polish colors look more vibrant?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Apply white nail polish as your base coat before neon colors. The opaque white base prevents your natural nail color from dulling the neon pigments, making colors appear significantly brighter and more saturated. This technique makes drugstore neons look like expensive professional shades.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">Should I file my nails before or after removing polish?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Always file nails immediately after removing polish, never before. Polish makes nails swell slightly with moisture. When you remove it, nails contract back to normal size. Filing during this contracted state prevents splitting and breakage. Wait at least 10 minutes after removal, then file in one direction using a glass file.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">How do I revive old thick nail polish that has become goopy?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Add three to five drops of nail polish thinner (not remover) to the bottle and roll gently between palms. Polish thinner breaks down thickened polymers and restores smooth consistency without weakening color or affecting drying time. Never use nail polish remover as it breaks down polish permanently.
-                  </div>
-                </details>
-
-                <details className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
-                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
-                    <h4 className="font-semibold text-gray-900 pr-4">What causes yellow staining on nails and how can I prevent it?</h4>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
-                    Dark polish pigments penetrate nail plates and cause yellow staining, especially reds and deep wines. Always use base coat before any colored polish to create a protective barrier. Base coat is non-negotiable for stain prevention. To remove existing stains, soak nails in lemon juice for 10 minutes twice weekly.
-                  </div>
-                </details>
-              </div>
-            </div>
-
-            {/* E-E-A-T About Section */}
-            <div className="mb-16 bg-gradient-to-r from-gray-50 to-burgundy-50 rounded-2xl p-8">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-4">About Mirellé Team</h3>
-              <p className="text-gray-600 leading-relaxed">
-                We are nail enthusiasts who test and curate designs from artists worldwide. Our mission is bringing you trend-forward inspiration that is actually achievable at home. We personally test every hack and technique we recommend to ensure they deliver professional results without professional prices. <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">Learn more about us</Link>.
-              </p>
-            </div>
-
-            {/* Related Topics */}
-            <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-8">
-              <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 text-center">
-                Continue Your Nail Journey
-              </h3>
-              <p className="text-gray-600 text-center mb-8">
-                Master these complementary techniques to create a complete nail care system that delivers salon-quality results every time.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Link href="/topics/nail-care-guide" className="group">
-                  <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-pink-200">
-                    <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-                      <span className="text-2xl">💅</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors">
-                      Essential Nail Care Guide
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Build the healthy foundation every beautiful manicure needs. Learn professional techniques for stronger, faster-growing nails.
-                    </p>
-                    <div className="text-xs text-gray-500 flex items-center">
-                      <span className="mr-2">📖</span>
-                      10-minute read • Science-backed methods
-                    </div>
-                  </div>
-                </Link>
-
-                <Link href="/topics/nail-art-guides" className="group">
-                  <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-purple-200">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                      <span className="text-2xl">🎨</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-800 mb-2 group-hover:text-purple-600 transition-colors">
-                      Nail Art Tutorials
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Master step-by-step techniques from beginner basics to advanced designs. Create Instagram-worthy nail art at home.
-                    </p>
-                    <div className="text-xs text-gray-500 flex items-center">
-                      <span className="mr-2">✨</span>
-                      12-minute read • Visual tutorials included
-                    </div>
-                  </div>
-                </Link>
-
-                <Link href="/topics/skin-tones" className="group">
-                  <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-pink-200">
-                    <div className="w-12 h-12 bg-blush-100 rounded-lg flex items-center justify-center mb-4">
-                      <span className="text-2xl">💄</span>
-                    </div>
-                    <h4 className="font-semibold text-gray-800 mb-2 group-hover:text-blush-600 transition-colors">
-                      Perfect Colors for Your Skin Tone
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-3">
-                      Discover scientifically-proven color matching methods. Find shades that enhance your natural beauty and complement your undertones.
-                    </p>
-                    <div className="text-xs text-gray-500 flex items-center">
-                      <span className="mr-2">🎨</span>
-                      8-minute read • Personalized recommendations
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              {/* Additional Blog Links */}
-              <div className="mt-8 pt-8 border-t border-gray-300">
-                <h4 className="font-semibold text-gray-800 mb-4 text-center">Popular Nail Design Inspiration</h4>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                  <Link href="/blog/christmas-nail-designs-2025" className="text-sm text-blue-600 hover:text-blue-800 underline">
-                    Christmas Nails 2025
-                  </Link>
-                  <Link href="/blog/winter-nails-2025" className="text-sm text-blue-600 hover:text-blue-800 underline">
-                    Winter Nail Trends
-                  </Link>
-                  <Link href="/blog/valentine-nails-2026" className="text-sm text-blue-600 hover:text-blue-800 underline">
-                    Valentine's Day Nails
-                  </Link>
-                  <Link href="/blog/wedding-nail-designs" className="text-sm text-blue-600 hover:text-blue-800 underline">
-                    Wedding Nail Ideas
-                  </Link>
-                </div>
+            <div className="glass-card p-6 rounded-2xl">
+              <div className="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="#household-tools" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                  🏠 Household Tool Hacks
+                </a>
+                <span className="text-gray-300">|</span>
+                <a href="#nail-art" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                  🎨 Easy Nail Art
+                </a>
+                <span className="text-gray-300">|</span>
+                <a href="#removal" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                  🧼 Removal Tips
+                </a>
+                <span className="text-gray-300">|</span>
+                <a href="#trending" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                  🔥 2025 Trends
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Article',
-            headline: 'At-Home Nail Hacks: 50+ DIY Tips for Salon-Quality Nails',
-            description: 'Master easy nail hacks at home with professional techniques using everyday household items. Budget-friendly DIY manicure tips that deliver salon-quality results.',
-            image: 'https://mirelleinspo.com/athome.jpg',
-            author: {
-              '@type': 'Organization',
-              name: 'Mirellé Team',
-              url: 'https://mirelleinspo.com/about'
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Mirellé',
-              logo: {
-                '@type': 'ImageObject',
-                url: 'https://mirelleinspo.com/logo.png'
-              }
-            },
-            datePublished: '2024-11-22',
-            dateModified: '2025-11-22',
-            mainEntityOfPage: {
-              '@type': 'WebPage',
-              '@id': 'https://mirelleinspo.com/topics/at-home-hacks'
-            }
-          })
-        }}
-      />
+        {/* Main Content */}
+        <section className="py-20 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            {/* Introduction */}
+            <div className="mb-16">
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Here's the thing—you don't need fancy equipment or years of practice to get salon-quality nails at home. Most of the tricks professional nail techs use? You can do them with stuff you already have in your house.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                This guide breaks down 50+ nail hacks that actually work. We're talking quick-dry tricks that actually speed things up, application techniques that prevent those annoying bubbles, and fixes for when things go wrong (because they will, and that's totally normal).
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Whether you're dealing with chipped polish 24 hours after painting, struggling to get your non-dominant hand looking decent, or just want your manicure to last more than two days, we've got you covered. Let's start with the basics and build from there. For complete nail health fundamentals, check out our <Link href="https://mirelleinspo.com/topics/nail-care-guide" className="text-blue-600 hover:text-blue-800 underline">nail care guide</Link>.
+              </p>
+            </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Home',
-                item: 'https://mirelleinspo.com'
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'Topics',
-                item: 'https://mirelleinspo.com/topics'
-              },
-              {
-                '@type': 'ListItem',
-                position: 3,
-                name: 'At-Home Nail Hacks',
-                item: 'https://mirelleinspo.com/topics/at-home-hacks'
-              }
-            ]
-          })
-        }}
-      />
+            <hr className="my-12 border-cream-400" />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'How can I make my nail polish last longer at home?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Apply thin base coat first, followed by two thin color coats instead of one thick coat. Always seal the free edge of your nail with each layer including top coat. Reapply fresh top coat every 2-3 days to refresh the protective seal and prevent micro-chips from spreading.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'What household items can I use for nail art designs?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Common household items work perfectly for professional-looking nail art. Use scotch tape or painters tape for geometric designs, bobby pin tips for perfect dots, makeup sponges for ombre gradients, toothpicks for detailed work, and paper hole reinforcements for flawless half-moon manicures.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I stop my nail polish from chipping so fast?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Chipping happens when polish loses adhesion to the nail. Prep nails by wiping with white vinegar or rubbing alcohol before painting to remove all oils. Apply thin coats, always wrap the free edge with each layer, and avoid hot water for two hours after painting. Quality top coat makes the biggest difference in preventing chips.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'What is the fastest way to dry nail polish at home?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'The ice water method works best for fast drying. Wait two minutes after your final coat, then submerge nails in a bowl of ice water for three to five minutes. The extreme cold hardens polish quickly without causing bubbles or texture issues that heat methods create.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I remove glitter nail polish without damaging my nails?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Use the foil wrap method for gentle glitter removal. Soak cotton pads in acetone remover, place on nails, and wrap each finger in aluminum foil squares. Wait five to seven minutes for polish to dissolve completely, then press down firmly and slide off in one smooth motion. This prevents harsh scrubbing that damages nails.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'Why does my nail polish get bubbles and how can I prevent them?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Bubbles form when air gets trapped in polish. Never shake your polish bottle before use - this creates thousands of tiny air bubbles. Instead, roll the bottle gently between your palms to mix. Also avoid painting in hot rooms or near fans, as temperature changes cause bubbling. Apply thin even coats for bubble-free results.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I fix a smudged nail without starting over completely?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'If polish is still wet, lick your finger and gently smooth the smudge - saliva helps polish flow back together. If polish is dry, apply tiny amount of matching color with toothpick to fill the damaged area, blend edges with fingertip, then seal entire nail with top coat. This camouflages the fix beautifully.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'What is the best way to apply nail polish on my non-dominant hand?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Stabilize both elbows firmly on a table and touch your pinkies together for extra stability. Move your nail to the brush instead of brush to nail - rest your non-dominant hand flat and hold the brush still while positioning each finger. Use less polish on the brush and paint in shorter strokes for better control.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'How can I make neon nail polish colors look more vibrant?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Apply white nail polish as your base coat before neon colors. The opaque white base prevents your natural nail color from dulling the neon pigments, making colors appear significantly brighter and more saturated. This technique makes drugstore neons look like expensive professional shades.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'Should I file my nails before or after removing polish?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Always file nails immediately after removing polish, never before. Polish makes nails swell slightly with moisture. When you remove it, nails contract back to normal size. Filing during this contracted state prevents splitting and breakage. Wait at least 10 minutes after removal, then file in one direction using a glass file.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I revive old thick nail polish that has become goopy?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Add three to five drops of nail polish thinner (not remover) to the bottle and roll gently between palms. Polish thinner breaks down thickened polymers and restores smooth consistency without weakening color or affecting drying time. Never use nail polish remover as it breaks down polish permanently.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'What causes yellow staining on nails and how can I prevent it?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Dark polish pigments penetrate nail plates and cause yellow staining, especially reds and deep wines. Always use base coat before any colored polish to create a protective barrier. Base coat is non-negotiable for stain prevention. To remove existing stains, soak nails in lemon juice for 10 minutes twice weekly.'
-                }
-              }
-            ]
-          })
-        }}
-      />
+            {/* Section 1: Polish Application Hacks */}
+            <div id="application" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                💅 Polish Application Hacks
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Application technique makes the biggest difference between DIY nails and salon nails. These hacks fix the most common issues beginners face.
+              </p>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'HowTo',
-            name: 'How to Create Salon-Quality Nails at Home',
-            description: 'Step-by-step guide to achieving professional nail results using DIY techniques and household items',
-            totalTime: 'PT30M',
-            step: [
-              {
-                '@type': 'HowToStep',
-                position: 1,
-                name: 'Prepare Your Nails',
-                text: 'Remove old polish completely. Wipe nails with white vinegar or rubbing alcohol to remove all oils and create clean surface for better adhesion.',
-                image: 'https://mirelleinspo.com/at-home-hacks-nail-prep.jpg'
-              },
-              {
-                '@type': 'HowToStep',
-                position: 2,
-                name: 'Apply Base Coat',
-                text: 'Apply thin layer of base coat to entire nail surface. Wrap the free edge by swiping brush tip along nail edge. This creates foundation for color and prevents staining.',
-                image: 'https://mirelleinspo.com/at-home-hacks-base-coat.jpg'
-              },
-              {
-                '@type': 'HowToStep',
-                position: 3,
-                name: 'Paint Two Thin Color Coats',
-                text: 'Apply first thin coat using three strokes: center, left side, right side. Wait two minutes. Apply second thin coat. Always wrap tips with each coat.',
-                image: 'https://mirelleinspo.com/at-home-hacks-color-application.jpg'
-              },
-              {
-                '@type': 'HowToStep',
-                position: 4,
-                name: 'Seal With Top Coat',
-                text: 'Apply generous layer of top coat over entire nail and wrap the free edge. This seals color and prevents chipping. Let dry completely.',
-                image: 'https://mirelleinspo.com/at-home-hacks-top-coat.jpg'
-              },
-              {
-                '@type': 'HowToStep',
-                position: 5,
-                name: 'Quick Dry Method',
-                text: 'Wait two minutes, then submerge nails in bowl of ice water for 3-5 minutes. Cold temperature sets polish quickly without bubbles.',
-                image: 'https://mirelleinspo.com/at-home-hacks-ice-water-dry.jpg'
-              }
-            ]
-          })
-        }}
-      />
+              <div className="space-y-10">
+                {/* Hack 1 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    1. The Three-Stroke Method (Game-Changer)
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Stop trying to cover your entire nail in one stroke. Here's how pros do it: one stroke down the center from base to tip, one stroke down the left side, one stroke down the right side. That's it.
+                  </p>
+                  <img
+                    src="/at-home-three-stroke-method-polish-application-diagram.jpg"
+                    alt="Three stroke method for nail polish application showing center left and right stroke technique"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <div className="bg-cream-100 p-4 rounded-lg mt-4">
+                    <p className="text-sm text-gray-700"><strong>Why it works:</strong> Three controlled strokes give you better coverage and fewer streaks than trying to paint the whole nail at once. This technique alone improves application quality by like 50%.</p>
+                  </div>
+                </div>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            name: 'Essential DIY Nail Hacks for Home Manicures',
-            description: 'Professional nail techniques and tips for achieving salon-quality results at home',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                name: 'Ice Water Quick-Dry Method',
-                description: 'Submerge nails in ice water after painting to speed drying time by 60%'
-              },
-              {
-                '@type': 'ListItem',
-                position: 2,
-                name: 'Petroleum Jelly Barrier',
-                description: 'Apply around nails before painting for easy cleanup of mistakes'
-              },
-              {
-                '@type': 'ListItem',
-                position: 3,
-                name: 'Scotch Tape Nail Art',
-                description: 'Create geometric designs and perfect lines using regular household tape'
-              },
-              {
-                '@type': 'ListItem',
-                position: 4,
-                name: 'Bobby Pin Dots',
-                description: 'Use rounded end of bobby pin to create perfectly uniform polka dots'
-              },
-              {
-                '@type': 'ListItem',
-                position: 5,
-                name: 'Makeup Sponge Ombre',
-                description: 'Achieve gradient nail effects by dabbing polish from sponge onto nails'
-              },
-              {
-                '@type': 'ListItem',
-                position: 6,
-                name: 'Foil Wrap Glitter Removal',
-                description: 'Wrap acetone-soaked cotton in foil to dissolve stubborn glitter polish'
-              },
-              {
-                '@type': 'ListItem',
-                position: 7,
-                name: 'Vinegar Nail Prep',
-                description: 'Wipe nails with vinegar before polish for 3x stronger adhesion'
-              },
-              {
-                '@type': 'ListItem',
-                position: 8,
-                name: 'White Base for Neons',
-                description: 'Apply white polish first to make neon colors appear brighter and more vibrant'
-              }
-            ]
-          })
-        }}
-      />
-    </div>
+                {/* Hack 2 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    2. Thin Coats Are Everything
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Thick coats seem faster but they're actually slower because they take forever to dry and smudge easily. Two thin coats dry faster and look better than one thick coat every single time.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    How to tell if your coat is thin enough: you should see your nail through the first coat. That's normal! The second coat builds opacity. If you can't see through the first coat at all, you applied too much polish.
+                  </p>
+                </div>
+
+                {/* Hack 3 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    3. The Petroleum Jelly Cleanup Trick
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Before you start painting, dab petroleum jelly (like Vaseline) around your cuticles and sides of your nails with a cotton swab. When you inevitably get polish on your skin, it wipes right off because the jelly creates a barrier.
+                  </p>
+                  <img
+                    src="/at-home-petroleum-jelly-cuticle-barrier-trick.jpg"
+                    alt="Petroleum jelly barrier trick applied around cuticles for easy nail polish cleanup"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Pro tip:</strong> You can also use liquid latex specifically made for nails (sold as "peel-off base coat"), but petroleum jelly works just as well and you probably already have it.</p>
+                  </div>
+                </div>
+
+                {/* Hack 4 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    4. Dehydrate Before You Paint
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Wipe your nails with rubbing alcohol on a cotton pad right before applying base coat. This removes natural oils that prevent polish from sticking properly. It's like priming a wall before painting—makes everything adhere better.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Skip this step and your manicure will chip way faster. Do this step and you'll add 2-3 extra days of wear time. Worth the extra 30 seconds.
+                  </p>
+                </div>
+
+                {/* Hack 5 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    5. Seal the Free Edge
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    After each coat (base, color, AND top coat), swipe the brush horizontally across the very tip of your nail. This seals the edge where chipping usually starts.
+                  </p>
+                  <img
+                    src="/at-home-sealing-free-edge-technique-prevent-chipping.jpg"
+                    alt="Sealing free edge technique with polish brush to prevent nail chipping at tips"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    This is the #1 hack for preventing chips. Seriously, if you only remember one thing from this guide, remember to seal your tips.
+                  </p>
+                </div>
+
+                {/* Hack 6 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    6. Wait the Full 2 Minutes Between Coats
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    I know waiting is annoying, but applying the next coat too soon causes smudging and actually makes total drying time LONGER. Set a timer for 2 minutes between each coat. Scroll your phone. You've got time.
+                  </p>
+                  <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Real talk:</strong> If you rush this, you'll end up with dents, smudges, and a manicure that takes twice as long to fix. Just wait the 2 minutes. Future you will thank current you.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 2: Quick-Dry Hacks */}
+            <div id="quick-dry" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                ⏱️ Quick-Dry Tricks That Actually Work
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Nobody wants to sit around for an hour waiting for nails to dry. These methods actually speed up drying time—no gimmicks.
+              </p>
+
+              <div className="space-y-10">
+                {/* Hack 7 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    7. The Ice Water Method (Seriously Works)
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    This sounds weird but it's legit: fill a bowl with ice water. Once your polish feels dry to a light touch (about 5-10 minutes after your last coat), dip your nails in the ice water for 1-2 minutes. The cold hardens the polish faster.
+                  </p>
+                  <img
+                    src="/at-home-ice-water-quick-dry-hack-bowl.jpg"
+                    alt="Ice water bowl method for quick drying nail polish with cold water and ice cubes"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    Test by gently touching nails together. If they're hard and don't stick, you're good to go. This cuts drying time almost in half.
+                  </p>
+                </div>
+
+                {/* Hack 8 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    8. Quick-Dry Top Coat is Worth It
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Regular top coat takes forever to dry. Quick-dry top coats (like Seche Vite or Out the Door) actually do what they claim—they harden polish in 5-10 minutes instead of 30+ minutes.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    One bottle lasts months and makes every manicure faster. This is one of those rare cases where the specialized product is actually worth buying instead of using a household hack.
+                  </p>
+                </div>
+
+                {/* Hack 9 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    9. Don't Use a Hair Dryer or Fan
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    This seems like it would work but it actually causes bubbles in your polish. The air movement creates uneven drying and textured surfaces. Just let nails air dry naturally or use the ice water method.
+                  </p>
+                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Why this matters:</strong> Those tiny bubbles you see in your polish after blow-drying? That's what's happening. Save yourself the frustration and skip the hair dryer completely.</p>
+                  </div>
+                </div>
+
+                {/* Hack 10 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    10. Quick-Dry Drops (If You Want to Splurge)
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Quick-dry oil drops (like OPI Drip Dry) work by creating an oil layer over polish that speeds drying. One drop per nail after your last coat. They work, but honestly thin coats + quick-dry top coat gets you 90% of the same results for less money.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 3: Make Your Manicure Last */}
+            <div id="longevity" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                ✨ Make Your Manicure Last Longer
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                The difference between a manicure that lasts 2 days versus 7+ days comes down to these specific techniques. Small changes, big impact.
+              </p>
+
+              <div className="space-y-10">
+                {/* Hack 11 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    11. Base Coat is Not Optional
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Skipping base coat is the fastest way to get a manicure that chips in 24 hours. Base coat protects your natural nail from staining AND gives color polish something to grip onto. It's literally the foundation of your manicure.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Use a strengthening base coat if your nails are weak, or a ridge-filling base coat if your nails have texture. There's a base coat for every nail type—find yours and actually use it every time.
+                  </p>
+                </div>
+
+                {/* Hack 12 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    12. Avoid Water for 2 Hours After Painting
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Your nails might feel dry after 30 minutes, but polish continues hardening for 2 hours. Getting your hands wet during this time makes polish lift and peel faster.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Plan your manicure timing around this: don't paint nails right before dishes, showering, or swimming. Paint them at night before bed if possible—by morning they're fully hardened.
+                  </p>
+                </div>
+
+                {/* Hack 13 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    13. Reapply Top Coat Every 2-3 Days
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    This hack extends manicure life significantly. Your top coat wears down from daily activities. Adding a fresh layer every few days seals everything again and restores shine.
+                  </p>
+                  <img
+                    src="/at-home-reapply-top-coat-longevity-tip-technique.jpg"
+                    alt="Reapplying top coat every few days to extend manicure life and prevent chipping"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    Takes 2 minutes every few days and can double your manicure's lifespan. Worth it.
+                  </p>
+                </div>
+
+                {/* Hack 14 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    14. Wear Gloves for Wet Work
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Dishes, cleaning, showering—all that water exposure breaks down polish faster. Wear rubber gloves whenever your hands will be in water for more than a minute or two.
+                  </p>
+                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Real talk:</strong> This seems annoying but it's the single most effective way to prevent chipping. Get comfortable dish gloves and keep them by your sink. Game changer for manicure longevity.</p>
+                  </div>
+                </div>
+
+                {/* Hack 15 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    15. Moisturize Your Cuticles Daily
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Dry cuticles cause polish to lift and peel at the base. Apply cuticle oil or hand cream daily, pushing moisture into the base of your nails. This keeps the seal intact where polish meets skin.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Keep cuticle oil by your bed and apply before sleep. By morning your nails look better and your polish lasts longer. For more on nail health, check our complete <Link href="https://mirelleinspo.com/topics/nail-care-guide" className="text-blue-600 hover:text-blue-800 underline">nail strengthening guide</Link>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 4: Mistake Fixes */}
+            <div id="mistakes" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🔧 Fix Mistakes Without Starting Over
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Messed something up? Don't panic and remove everything. Most mistakes have quick fixes that save your manicure.
+              </p>
+
+              <div className="space-y-10">
+                {/* Hack 16 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    16. Fix Small Smudges While Wet
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    If you smudge polish while it's still very wet, lick your finger (yes really) and gently smooth the smudge. The moisture helps blend the polish back together.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    This only works on fresh smudges within 30 seconds of happening. If polish has started drying, move to the next fix instead.
+                  </p>
+                </div>
+
+                {/* Hack 17 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    17. Fix Deeper Smudges with Remover
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    For smudges that have dried slightly: dab tiny amount of polish remover on your finger, very gently smooth the smudged area to blend it, wait for that spot to fully dry (2-3 minutes), then apply thin coat of polish over just that nail.
+                  </p>
+                  <img
+                    src="/at-home-fix-smudged-nail-polish-remover-technique.jpg"
+                    alt="Fixing smudged nail polish using cotton swab with remover to smooth and blend damaged area"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Why this works:</strong> You're basically melting the smudge back into smooth polish, then building coverage back up. Takes 5 minutes versus 20 minutes to redo the whole nail.</p>
+                  </div>
+                </div>
+
+                {/* Hack 18 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    18. Remove Bubbles Before They Dry
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    See bubbles forming right after you paint? Quickly run the brush over them again while polish is still wet to smooth them out. If bubbles have dried, you'll need to remove that coat and reapply.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Prevent bubbles by: rolling polish bottle gently instead of shaking, applying thin coats, and avoiding blow dryers. Once you know what causes them, they're easy to avoid.
+                  </p>
+                </div>
+
+                {/* Hack 19 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    19. Clean Up Messy Edges with Precision
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Get an angled eyeliner brush (the stiff kind), dip it in polish remover, and trace around your nails to clean up messy application. This gives you those crisp edges that make manicures look professional.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Do this cleanup after polish is completely dry—if you try cleaning up while polish is wet, you'll just smudge everything worse.
+                  </p>
+                </div>
+
+                {/* Hack 20 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    20. Fix a Chipped Nail Instantly
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    For small chips: dab tiny amount of your color polish just on the chipped spot, let dry, then apply top coat over the entire nail to blend. For bigger chips: remove polish from just that nail and repaint it completely.
+                  </p>
+                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Pro tip:</strong> Carrying a small top coat in your bag lets you do emergency touch-ups anywhere. A fresh top coat layer can hide minor imperfections and buy you another day or two before a full redo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 5: Household Tool Hacks */}
+            <div id="household-tools" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🏠 Household Items That Replace Nail Tools
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                You don't need to buy specialized nail art tools. These household items work just as well (and you probably have them already).
+              </p>
+
+              <div className="space-y-10">
+                {/* Hack 21 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    21. Scotch Tape for Perfect Stripes
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Regular scotch tape makes perfect nail art stripes and geometric designs. Apply base color, let it fully dry, place tape in your pattern, paint over it, remove tape while second color is still slightly wet.
+                  </p>
+                  <img
+                    src="/at-home-scotch-tape-stripe-nail-art-hack.jpg"
+                    alt="Using scotch tape for perfect stripe nail art designs with clean geometric lines"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    Stick the tape to your hand first to remove some of the stickiness—this prevents it from pulling off your base color when you remove it. This trick makes <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-blue-800 underline">holiday nail designs</Link> way easier.
+                  </p>
+                </div>
+
+                {/* Hack 22 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    22. Bobby Pins for Perfect Dots
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Dip the round end of a bobby pin into polish and dot it onto your nails. Instant polka dots without buying a dotting tool. Different bobby pin sizes make different sized dots.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    Clean the bobby pin with remover between colors. This technique is perfect for simple nail art—dots, flowers, abstract patterns all work with this one tool.
+                  </p>
+                </div>
+
+                {/* Hack 23 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    23. Makeup Sponge for Ombre Gradients
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Paint stripes of different colors onto a makeup sponge (the kind you use for foundation), then dab the sponge onto your nail. Boom—instant ombre gradient effect.
+                  </p>
+                  <img
+                    src="/at-home-makeup-sponge-ombre-gradient-nail-technique.jpg"
+                    alt="Makeup sponge technique for creating ombre gradient nail designs with multiple colors"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    Use petroleum jelly around your nails first because this gets messy. But the results look so professional that people will think you went to a salon. For more ombre ideas, check <Link href="https://mirelleinspo.com/topics/seasonal-trends" className="text-blue-600 hover:text-blue-800 underline">seasonal nail trends</Link>.
+                  </p>
+                </div>
+
+                {/* Hack 24 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    24. Toothpick for Detail Work
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Wooden toothpicks work perfectly for drawing tiny details, swirling colors together, or creating marbled effects. Dip the pointy end in polish and use it like a tiny paint brush.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    This is especially good for fixing small mistakes or adding tiny details to nail art. Way cheaper than buying detail brushes and works just as well.
+                  </p>
+                </div>
+
+                {/* Hack 25 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    25. Old Card for Edge Cleanup
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Cut an old credit card or gift card into a pointed shape. Use the edge to scrape excess polish off your skin and cuticles after painting. Works better than cotton swabs for getting clean lines.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 6: Easy Nail Art Hacks */}
+            <div id="nail-art" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🎨 Easy Nail Art for Beginners
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                You don't need to be an artist to do cute nail designs. These techniques are beginner-proof and look way more complicated than they actually are.
+              </p>
+
+              <div className="space-y-10">
+                {/* Hack 26 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    26. Accent Nail Strategy
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Can't do detailed art on all 10 nails? Don't try. Paint 8 nails one solid color and do your nail art on just your ring fingers (one on each hand). This looks intentional and polished, not like you gave up halfway through.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    This is literally what nail techs do. Nobody does elaborate designs on every single nail unless they're charging $100+ for the service. Accent nails are the move.
+                  </p>
+                </div>
+
+                {/* Hack 27 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    27. Newspaper Transfer Nail Art
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Paint nails light gray or nude, let dry completely, dip nail in rubbing alcohol for 5 seconds, press newspaper or magazine print onto nail for 30 seconds, peel off. The text transfers to your nail.
+                  </p>
+                  <img
+                    src="/at-home-newspaper-transfer-nail-art-technique.jpg"
+                    alt="Newspaper transfer nail art technique using rubbing alcohol to transfer print onto nails"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    Seal with top coat immediately. This looks so cool and takes zero artistic skill. Great conversation starter.
+                  </p>
+                </div>
+
+                {/* Hack 28 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    28. Glitter Gradient (Easiest Design Ever)
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Paint nails any base color. While top coat is still wet, dip just the tip of your nail in loose glitter or apply glitter polish starting at the tip and dabbing less as you go toward the base. Instant gradient.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    This hides tip wear really well and looks fancy with minimal effort. Perfect for <Link href="https://mirelleinspo.com/blog/new-year-nails-2025" className="text-blue-600 hover:text-blue-800 underline">New Year's nails</Link> or any party situation.
+                  </p>
+                </div>
+
+                {/* Hack 29 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    29. Marble Effect with Water
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Drop different polish colors into room-temperature water, swirl with toothpick to create pattern, dip finger nail-down into the pattern, clean up skin with remover. Boom—marble nails.
+                  </p>
+                  <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Heads up:</strong> This takes practice and gets messy, but the results are so unique. Use petroleum jelly on your skin first and work over something you can get dirty. Check <Link href="https://mirelleinspo.com/topics/nail-art-guides" className="text-blue-600 hover:underline">nail art guides</Link> for detailed tutorials.</p>
+                  </div>
+                </div>
+
+                {/* Hack 30 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    30. Press-On Nail Art (Zero Shame)
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Can't do intricate designs? Buy press-on nails with the art already done. Modern press-ons look incredibly real and last 1-2 weeks. Nobody can tell the difference. This isn't cheating—it's being smart with your time. Check <Link href="https://mirelleinspo.com/shop/trendy" className="text-blue-600 hover:text-blue-800 underline">trendy nail designs</Link> for inspiration.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 7: Removal Hacks */}
+            <div id="removal" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🧼 Polish Removal Hacks
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Removal done wrong damages your nails. These methods get polish off quickly while keeping nails healthy.
+              </p>
+
+              <div className="space-y-10">
+                {/* Hack 31 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    31. The Foil Method for Glitter
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Glitter polish is notoriously hard to remove. Soak cotton pads in acetone remover, place on nails, wrap each finger in small piece of aluminum foil, wait 10 minutes, then wipe off. The foil traps heat and acetone, dissolving even stubborn glitter.
+                  </p>
+                  <img
+                    src="/at-home-foil-method-glitter-polish-removal-technique.jpg"
+                    alt="Foil method for removing glitter nail polish using cotton pads soaked in acetone wrapped in aluminum foil"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    This saves so much frustration. No more rubbing your nails raw trying to get glitter off.
+                  </p>
+                </div>
+
+                {/* Hack 32 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    32. Peel-Off Base Coat for Easy Removal
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Apply peel-off base coat (sold as "liquid peel" or "peel-off base"), then your regular manicure. When you're ready to remove, just peel the whole thing off like a sticker. No remover needed.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    This is great for people who change their nails frequently or anyone with sensitive skin who wants to avoid acetone. The downside: manicures don't last as long (3-5 days versus 7+ days).
+                  </p>
+                </div>
+
+                {/* Hack 33 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    33. Apply Cuticle Oil Immediately After Removal
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Polish remover (especially acetone-based) dries out nails and cuticles. The second you finish removing polish, apply cuticle oil or thick hand cream. This prevents that dry, brittle feeling and keeps nails healthy between manicures.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Section 8: Trending 2025 Techniques */}
+            <div id="trending" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+                🔥 Trending 2025 DIY Nail Techniques
+              </h2>
+              
+              <p className="text-gray-600 leading-relaxed mb-8">
+                These are the nail techniques blowing up right now that you can actually do at home. No salon required.
+              </p>
+
+              <div className="space-y-10">
+                {/* Hack 34 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    34. Glass Nails Effect at Home
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Glass nails (that super glossy, translucent look) are actually easy: use sheer pink or nude polish, apply 2-3 thin coats, finish with high-shine top coat, buff gently. The key is the glossy finish, not the nail art.
+                  </p>
+                  <img
+                    src="/at-home-glass-nails-glossy-effect-technique-2025.jpg"
+                    alt="Glass nails effect 2025 showing ultra glossy translucent finish achieved with sheer polish and high shine top coat"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
+                  <p className="text-gray-600 leading-relaxed mt-4">
+                    This trend is all about that mirror-like shine. Your nails need to be smooth (file and buff first) and you need a really good top coat. That's it. More on this in our <Link href="https://mirelleinspo.com/topics/seasonal-trends" className="text-blue-600 hover:text-blue-800 underline">seasonal trends guide</Link>.
+                  </p>
+                </div>
+
+                {/* Hack 35 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    35. Chrome Powder Dupe with Eyeshadow
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Don't have chrome powder? Use metallic eyeshadow! Apply no-wipe gel top coat, cure it, then rub silver or gold eyeshadow onto nails with your finger. Seal with regular top coat. Gives you that chrome effect without buying special powders.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed">
+                    This isn't as mirror-perfect as real chrome powder but it's like 70% of the way there and costs nothing if you already have metallic eyeshadow. Perfect for <Link href="https://mirelleinspo.com/blog/gold-silver-chrome-christmas-nails-2025" className="text-blue-600 hover:text-blue-800 underline">holiday chrome nails</Link>.
+                  </p>
+                </div>
+
+                {/* Hack 36 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    36. Aura Nails with Makeup Sponge
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-4">
+                    Aura nails (those dreamy cloudy gradients) are just ombre on steroids. Apply white base, then dab different colors onto a makeup sponge in a circular pattern, press onto nail, blend with more sponge dabbing. Creates that soft, diffused look.
+                  </p>
+                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 mt-4">
+                    <p className="text-sm text-gray-700"><strong>Real talk:</strong> This gets super messy, so definitely use that petroleum jelly barrier trick. But once you clean up the edges, it looks incredible. People will ask where you got your nails done.</p>
+                  </div>
+                </div>
+
+                {/* Hack 37 */}
+                <div className="glass-card p-8 rounded-2xl">
+                  <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
+                    37. Blooming Gel Hack Without Gel</                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Blooming gel creates those watercolor flower effects. Regular polish version: apply white base, while wet drop tiny dots of different colors, use toothpick to pull colors outward from center in petal shapes. Seal quickly with top coat before it dries.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* FAQ Section */}
+            <div id="faq" className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
+                ❓ Your Questions Answered
+              </h2>
+              
+              <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                These are the most common nail hack questions from beginners. If you're wondering it, chances are it's answered here.
+              </p>
+
+              <div className="space-y-4">
+                {/* FAQ 1 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">How can I make my nail polish last longer at home?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Make polish last longer by applying thin coats, sealing the free edge with top coat, avoiding water exposure for 2 hours after painting, using quality base and top coats, and reapplying top coat every 2 to 3 days. Wearing gloves for wet work and moisturizing cuticles daily also prevents chipping.
+                  </div>
+                </details>
+
+                {/* FAQ 2 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">What is the easiest way to do nails at home for beginners?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Start with simple one-color manicures using three-stroke application method. Apply thin base coat, two thin color coats waiting 2 minutes between each, and glossy top coat. Use petroleum jelly around cuticles for easy cleanup. This takes 15 minutes and works for complete beginners.
+                  </div>
+                </details>
+
+                {/* FAQ 3 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">How do I stop my nail polish from chipping so fast?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Prevent chipping by dehydrating nails with rubbing alcohol before polish, applying thin coats not thick ones, sealing nail tips with color and top coat, avoiding hot water for 12 hours after manicure, wearing gloves for housework, and reapplying top coat every 2 days for protection.
+                  </div>
+                </details>
+
+                {/* FAQ 4 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">Can I do professional-looking nails without going to a salon?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Yes, achieve salon-quality nails at home using proper technique. Clean nails with alcohol, apply thin coats, use three-stroke method, seal free edges, wait full drying time between coats, and finish with glossy top coat. Practice improves results—most people get salon-looking nails after 3 to 5 tries.
+                  </div>
+                </details>
+
+                {/* FAQ 5 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">What household items can I use for nail art?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Use household items like scotch tape for stripes, bobby pins for dots, makeup sponges for ombre gradients, toothpicks for detailed designs, petroleum jelly for cuticle protection, ice water for quick drying, and old credit cards for cleanup. These replace expensive nail art tools effectively.
+                  </div>
+                </details>
+
+                {/* FAQ 6 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">How long should I wait between coats of nail polish?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Wait 2 minutes between regular polish coats and 3 to 5 minutes before top coat. Test by gently touching nail corner—if it feels tacky but not wet, apply next coat. Gel polish needs full cure time under UV lamp. Rushing causes smudging and longer total drying time.
+                  </div>
+                </details>
+
+                {/* FAQ 7 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">Why does my nail polish bubble up?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Polish bubbles from shaking the bottle, applying thick coats, painting in humid conditions, using old expired polish, or blow-drying nails. Fix by rolling bottle gently instead of shaking, applying thin layers, painting in cool dry room, and letting nails air dry naturally.
+                  </div>
+                </details>
+
+                {/* FAQ 8 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">How do I remove glitter nail polish without damaging nails?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Remove glitter polish using foil method. Soak cotton pads in acetone-based remover, place on nails, wrap each finger in aluminum foil, wait 10 minutes, then wipe off. This dissolves glitter without excessive rubbing. Apply cuticle oil immediately after to restore moisture.
+                  </div>
+                </details>
+
+                {/* FAQ 9 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">What is the best way to dry nail polish quickly?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Dry polish quickly by applying thin coats, using quick-dry top coat, or dipping nails in ice water for 2 minutes after polish feels dry to touch. Avoid blow dryers and fans which cause bubbles. Quick-dry drops work but thin coats dry fastest naturally.
+                  </div>
+                </details>
+
+                {/* FAQ 10 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">How do I fix a smudged nail without starting over?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Fix smudges by dabbing tiny amount of polish remover on finger, gently smoothing smudged area, waiting to fully dry, then applying thin coat over problem spot. For small smudges, lick finger and smooth immediately. Deep smudges need full polish removal and reapplication.
+                  </div>
+                </details>
+
+                {/* FAQ 11 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">Should I push back or cut my cuticles?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Push back cuticles gently—never cut them. Cutting causes infection risk, bleeding, and permanent damage. After shower when cuticles are soft, use wooden stick to gently push back. Apply cuticle oil daily. Trimming hangnails with clean nippers is safe but avoid cutting cuticles themselves.
+                  </div>
+                </details>
+
+                {/* FAQ 12 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">How often should I do at-home manicures?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Do at-home manicures every 7 to 10 days for regular polish, every 2 to 3 weeks for gel manicures. Remove polish before it chips badly to prevent nail damage. Give nails a polish-free day between manicures to breathe. Apply cuticle oil daily regardless of manicure schedule.
+                  </div>
+                </details>
+
+                {/* FAQ 13 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">Can I mix different nail polish brands?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Yes, mix different polish brands safely. Use any base coat with any color with any top coat. Gel polish must match brand within system for proper curing. Regular polish mixes freely. Quality base and top coats work with budget color polishes for cost savings.
+                  </div>
+                </details>
+
+                {/* FAQ 14 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">What is the difference between base coat and top coat?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Base coat protects natural nails from staining, fills ridges, and helps color polish adhere better. Top coat seals color, adds shine, prevents chipping, and extends manicure life. Both are essential—base coat goes first, top coat goes last. Never skip either for best results.
+                  </div>
+                </details>
+
+                {/* FAQ 15 */}
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
+                    <h3 className="font-semibold text-gray-900 pr-4">How do I prevent nail polish from getting on my skin?</h3>
+                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    Prevent polish on skin by applying petroleum jelly or liquid latex around cuticles before painting, using brush with minimal polish, starting strokes slightly away from cuticles, and cleaning up with angled brush dipped in remover. Practice improves application precision significantly.
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* E-E-A-T Section */}
+            <div className="mb-16 bg-gradient-to-br from-cream-50 to-burgundy-50 rounded-2xl p-8">
+              <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">About Mirellé Team</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                We test every nail hack before recommending it. Our team includes nail care enthusiasts who've tried hundreds of DIY techniques to figure out what actually works versus what's just internet hype. All tips are tested on real beginners to ensure they're genuinely achievable at home without professional training.
+              </p>
+              <a href="https://mirelleinspo.com/about" className="text-blue-600 hover:text-blue-800 underline font-medium">
+                Learn more about our testing process →
+              </a>
+            </div>
+
+            <hr className="my-12 border-cream-400" />
+
+            {/* Related Topics */}
+            <div className="mb-16">
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-gray-900 mb-8 text-center">
+                Keep Learning
+              </h2>
+              
+              <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                Master the fundamentals, then level up with these guides
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* Related Topic 1 */}
+                <Link href="https://mirelleinspo.com/topics/nail-care-guide" className="group">
+                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="w-12 h-12 bg-burgundy-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl">💅</span>
+                    </div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                      Nail Care Essentials
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Build the foundation—15 expert tips for strengthening nails naturally so your DIY manicures actually have something good to work with.
+                    </p>
+                    <div className="text-xs text-gray-500 flex items-center">
+                      <span className="mr-2">📖</span>
+                      12-minute read • Health-focused
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Related Topic 2 */}
+                <Link href="https://mirelleinspo.com/topics/nail-art-guides" className="group">
+                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl">🎨</span>
+                    </div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                      Nail Art Tutorials
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Once you've mastered the basics, level up with step-by-step nail art tutorials for trending designs you can actually do.
+                    </p>
+                    <div className="text-xs text-gray-500 flex items-center">
+                      <span className="mr-2">🖌️</span>
+                      14-minute read • Creative techniques
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Related Topic 3 */}
+                <Link href="https://mirelleinspo.com/topics/seasonal-trends" className="group">
+                  <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl">✨</span>
+                    </div>
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                      Seasonal Nail Trends
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4">
+                      Stay current with trending designs for every season—from winter glam to summer brights, we've got your year-round inspiration covered.
+                    </p>
+                    <div className="text-xs text-gray-500 flex items-center">
+                      <span className="mr-2">📅</span>
+                      15-minute read • Trend-focused
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              {/* Additional Links */}
+              <div className="mt-12 pt-8 border-t border-cream-400">
+                <h3 className="font-serif text-xl font-semibold text-gray-800 mb-6 text-center">
+                  Design Inspiration
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                    Winter Nails 2025
+                  </Link>
+                  <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                    Christmas Designs
+                  </Link>
+                  <Link href="https://mirelleinspo.com/blog/wedding-nail-designs" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                    Wedding Nails
+                  </Link>
+                  <Link href="https://mirelleinspo.com/blog/valentine-nails-2026" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                    Valentine's Day
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Final CTA */}
+            <div className="bg-gradient-to-r from-burgundy-600 to-pink-600 rounded-2xl p-8 md:p-12 text-center text-white">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
+                Ready to Level Up Your DIY Nails?
+              </h2>
+              <p className="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
+                You've got the hacks. Now grab some polish and try them out. Remember: everyone starts somewhere, and even pros mess up sometimes. You've got this.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="https://mirelleinspo.com/shop" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                  Shop Nail Essentials
+                </Link>
+                <Link href="https://mirelleinspo.com/pinterest" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">
+                  Save These Hacks
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </>
   );
 }

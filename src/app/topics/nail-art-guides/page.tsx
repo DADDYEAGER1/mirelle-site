@@ -952,18 +952,47 @@ export default function NailArtGuides() {
                   </ul>
                 </div>
 
-                <div className="space-y-3 mb-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
-                      4
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-gray-700"><strong>Seal with top coat</strong></p>
-                      <p className="text-gray-600 text-sm">Same three strokes. Cap the tip (swipe across the very edge) to prevent chipping. Let dry 5 minutes before touching anything.</p>
-                    </div>
-                  </div>
-                </div>
+<div className="space-y-3 mb-4">
+  <div className="flex items-start gap-3">
+    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+      1
+    </div>
+    <div className="flex-1">
+      <p className="text-gray-700"><strong>Apply thin base coat</strong></p>
+      <p className="text-gray-600 text-sm">Start at the base of your nail, swipe to the tip in three strokes: middle, left side, right side. Don't flood your cuticles. Let dry 2 minutes.</p>
+    </div>
+  </div>
 
+  <div className="flex items-start gap-3">
+    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+      2
+    </div>
+    <div className="flex-1">
+      <p className="text-gray-700"><strong>First color coat (thin layer)</strong></p>
+      <p className="text-gray-600 text-sm">Same three-stroke method. Keep it thin—you're building color gradually. Thick coats bubble and take forever to dry. Let dry 2 minutes.</p>
+    </div>
+  </div>
+
+  <div className="flex items-start gap-3">
+    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+      3
+    </div>
+    <div className="flex-1">
+      <p className="text-gray-700"><strong>Second color coat</strong></p>
+      <p className="text-gray-600 text-sm">This coat covers any streaks from the first. Still thin. Wait 2 minutes. If it looks perfect after one coat, skip this step.</p>
+    </div>
+  </div>
+
+  <div className="flex items-start gap-3">
+    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+      4
+    </div>
+    <div className="flex-1">
+      <p className="text-gray-700"><strong>Seal with top coat</strong></p>
+      <p className="text-gray-600 text-sm">Same three strokes. Cap the tip (swipe across the very edge) to prevent chipping. Let dry 5 minutes before touching anything.</p>
+    </div>
+  </div>
+</div>
                 <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 border-l-4 border-green-600">
                   <p className="text-gray-700 text-sm">
                     <strong>💡 Pro tip:</strong> If you see bubbles, you're applying too thick or shaking the bottle (never shake—roll it between your palms). If it's streaky, you need a second thin coat, not one thick one.

@@ -258,16 +258,3 @@ export function generateWebPageSchema(
     dateModified: new Date().toISOString(),
   };
 }
-
-/**
- * Render all schemas as script tags (helper for server components)
- */
-export function renderSchemas(schemas: Array<Record<string, any>>) {
-  return schemas.map((schema, index) => (
-    <script
-      key={index}
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  ));
-}

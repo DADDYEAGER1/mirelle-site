@@ -3388,3 +3388,4 @@ export default function NailArtGuides() {
       </div>
     </>
   );
+}

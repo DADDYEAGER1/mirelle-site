@@ -1163,7 +1163,7 @@ export default function AtHomeHacks() {
                 {/* Hack 37 */}
                 <div className="glass-card p-8 rounded-2xl">
                   <h3 className="font-serif text-2xl font-semibold text-gray-800 mb-4">
-                    37. Blooming Gel Hack Without Gel</                  </h3>
+                    37. Blooming Gel Hack Without Gel</h3>
                   <p className="text-gray-600 leading-relaxed">
                     Blooming gel creates those watercolor flower effects. Regular polish version: apply white base, while wet drop tiny dots of different colors, use toothpick to pull colors outward from center in petal shapes. Seal quickly with top coat before it dries.
                   </p>

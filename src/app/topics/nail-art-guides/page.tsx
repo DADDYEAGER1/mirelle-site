@@ -2431,7 +2431,7 @@ export default function NailArtGuides() {
               {/* Design 19: Glass Nails */}
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl"1️⃣9️⃣</span>
+                  <span className="text-3xl">1️⃣9️⃣</span>
                   <div>
                     <h3 className="font-serif text-2xl font-semibold text-gray-800">Glass Nails</h3>
                     <div className="flex gap-4 text-sm text-gray-500 mt-1">

@@ -5,7 +5,7 @@ import { ProductPageData } from '@/types/shop';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, Package, Truck, Shield, ArrowRight } from 'lucide-react';
-import Breadcrumb from '@/components/Breadcrumb';
+import Breadcrumb from '@/components/Breadcrumbs';
 import RelatedProductsGrid from '@/components/Shop/RelatedProductsGrid';
 import InternalLinksSection from '@/components/Shop/InternalLinksSection';
 import { calculateDiscount } from '@/lib/shopProducts';

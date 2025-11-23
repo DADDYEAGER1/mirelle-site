@@ -2,22 +2,23 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Contact Mirellé - Questions? Collaborations? We Reply Fast",
-  description: "Got nail questions or collab ideas? Email team.mirelle@gmail.com. 24-48hr response time. Business inquiries, design requests, partnerships welcome. Let's chat!",
+  title: "Got Questions? We Reply in 24hrs (Collabs Welcome!)",
+  description: "Questions about 2026 nail trends? Brand collab ideas? Email contact@mirelleinspo.com. 24hr response guaranteed. Design requests, partnerships, press inquiries welcome!",
   keywords: [
-    "contact Mirellé",
-    "nail design inquiries",
-    "brand collaboration nails",
+    "contact Mirellè Inspo",
     "nail blog contact",
+    "brand collaboration nails",
+    "2026 nail trend inquiries",
     "partnership opportunities",
     "nail design requests",
-    "business inquiries nails",
-    "Mirellé email",
-    "nail inspiration contact"
+    "press inquiries nails",
+    "Mirellè Inspo email",
+    "business inquiries",
+    "nail influencer contact"
   ],
-  authors: [{ name: "Mirelle" }],
-  creator: "Mirelle",
-  publisher: "Mirelle",
+  authors: [{ name: "Mirellè Inspo Team" }],
+  creator: "Mirellè Inspo",
+  publisher: "Mirellè Inspo",
   alternates: {
     canonical: "https://mirelleinspo.com/contact",
   },
@@ -33,37 +34,38 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact Mirellé - We Reply Within 24-48 Hours",
-    description: "Questions about nails? Want to collaborate? Email team.mirelle@gmail.com. Business inquiries, design requests, partnerships welcome. Fast response guaranteed!",
+    title: "Questions? Collabs? We Reply Within 24 Hours!",
+    description: "Got 2026 nail trend questions? Brand collabs? Email contact@mirelleinspo.com. Fast replies guaranteed. Design requests, partnerships, press welcome. Let's chat!",
     type: "website",
     url: "https://mirelleinspo.com/contact",
-    siteName: "Mirelle",
+    siteName: "Mirellè Inspo",
     locale: "en_US",
     images: [
       {
-        url: "https://mirelleinspo.com/og-default.png",
+        url: "https://mirelleinspo.com/og-contact-mirelle.png",
         width: 1200,
         height: 630,
-        alt: "Contact Mirellé for nail design inquiries, brand collaborations, and partnership opportunities",
+        alt: "Contact Mirellè Inspo for nail trend inquiries, brand collaborations, partnerships - 24hr response time",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Mirellé - Fast Response Guaranteed",
-    description: "Questions? Collabs? Design requests? We reply in 24-48hrs. Email team.mirelle@gmail.com",
-    images: ["https://mirelleinspo.com/og-default.png"],
+    title: "Contact Mirellè Inspo - 24hr Response Guaranteed",
+    description: "Questions? Collabs? Design ideas? We reply fast! Email contact@mirelleinspo.com. Partnerships welcome →",
+    images: ["https://mirelleinspo.com/twitter-contact.png"],
     creator: "@mirelleinspo",
     site: "@mirelleinspo",
   },
   other: {
-    "pin:description": "Contact Mirellé for nail questions, collaborations, design requests. Fast 24-48hr response. Email team.mirelle@gmail.com",
+    "pin:description": "Contact Mirellè Inspo for nail questions, brand collabs, design requests. Fast 24hr response. Email contact@mirelleinspo.com. Partnerships welcome!",
     "pinterest-rich-pin": "true",
     "article:publisher": "https://www.pinterest.com/mirelle_inspo",
     "og:see_also": "https://mirelleinspo.com/contact",
   },
 };
+
 
 export default function ContactLayout({
   children,

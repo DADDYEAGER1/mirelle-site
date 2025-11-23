@@ -1,14 +1,12 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 export const metadata: Metadata = {
-  title: "Follow Mirellé on Pinterest - 2.5M+ Monthly Pin Views",
-  description:
-    "Join 50K+ nail lovers on Pinterest! Get 500+ nail designs, seasonal boards, DIY tutorials, and trending inspiration. 2.5M+ monthly views. Follow for daily nail ideas!",
-  keywords:
-    "Mirellé Pinterest, nail art Pinterest, nail design boards, Pinterest nail inspiration, trending nail pins, seasonal nail ideas, DIY nail tutorials Pinterest, nail care pins",
-  authors: [{ name: "Mirelle" }],
-  creator: "Mirelle",
-  publisher: "Mirelle",
+  title: "2.5M+ Monthly Saves - Join 50K+ on Pinterest",
+  description: "Follow @mirelle_inspo for 2026's hottest nail trends! 500+ boards: chrome, cat claw, square designs, milky pastels. 2.5M+ monthly views. Daily inspiration. Save now!",
+  keywords: "Mirellè Inspo Pinterest, nail trends Pinterest 2026, chrome nails Pinterest, cat claw nails, square nails inspiration, trending nail boards, DIY nail tutorials Pinterest, seasonal nail ideas, viral nail designs, Pinterest nail community, TikTok trending nails, nail art inspiration boards",
+  authors: [{ name: "Mirellè Inspo Team" }],
+  creator: "Mirellè Inspo",
+  publisher: "Mirellè Inspo",
   alternates: {
     canonical: "https://mirelleinspo.com/pinterest",
   },
@@ -24,39 +22,39 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Follow Mirellé on Pinterest - 2.5M+ Monthly Views",
-    description:
-      "Join 50K+ on Pinterest for 500+ nail designs, seasonal boards, and trending inspiration. 2.5M+ monthly views. Follow for daily nail ideas that actually work!",
+    title: "Follow Mirellè Inspo on Pinterest - 2.5M+ Monthly Views",
+    description: "Join 50K+ on Pinterest for 2026's trending nails! 500+ boards: chrome, cat claw, square, milky pastels. 2.5M+ monthly views. Daily inspiration. Follow @mirelle_inspo!",
     type: "website",
     url: "https://mirelleinspo.com/pinterest",
-    siteName: "Mirelle",
+    siteName: "Mirellè Inspo",
     locale: "en_US",
     images: [
       {
-        url: "https://mirelleinspo.com/og-default.png",
+        url: "https://mirelleinspo.com/og-pinterest-mirelle.png",
         width: 1200,
         height: 630,
-        alt: "Mirellé Pinterest profile featuring trending nail designs, seasonal boards, and DIY nail tutorials with 2.5M monthly views",
+        alt: "Mirellè Inspo Pinterest profile featuring 2026 trending nail designs with 2.5M monthly views and 500+ boards",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mirellé Pinterest - 2.5M+ Monthly Pin Views",
-    description: "500+ nail boards. Daily trending designs. Seasonal inspiration. Follow 50K+ nail lovers on Pinterest!",
-    images: ["https://mirelleinspo.com/og-default.png"],
+    title: "2.5M+ Monthly Pin Views - Follow on Pinterest",
+    description: "500+ boards. 2026 trending nails. Chrome, cat claw, square designs. Daily inspo. Follow @mirelle_inspo →",
+    images: ["https://mirelleinspo.com/twitter-pinterest.png"],
     creator: "@mirelleinspo",
     site: "@mirelleinspo",
   },
   other: {
-    "pin:description": "Follow Mirellé on Pinterest for 500+ nail designs, seasonal boards, DIY tutorials. 2.5M+ monthly views. Join 50K+ nail lovers!",
+    "pin:description": "Follow @mirelle_inspo on Pinterest for 2026's trending nails! 500+ boards, 2.5M+ monthly views. Chrome, cat claw, square designs. Daily inspiration. Join 50K+ nail lovers!",
     "pinterest-rich-pin": "true",
     "article:publisher": "https://www.pinterest.com/mirelle_inspo",
-    "pinterest:category": "nail art inspiration",
+    "pinterest:category": "Nail Art Inspiration 2026",
     "og:see_also": "https://mirelleinspo.com/pinterest",
   },
 };
+
 
 const pinterestBoards = [
   {

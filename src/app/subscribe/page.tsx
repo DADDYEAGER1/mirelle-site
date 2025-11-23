@@ -3,21 +3,37 @@ import NewsletterForm from '@/components/NewsletterForm';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Get 50+ Nail Hacks Free - Join 50K+ Nail Lovers Weekly",
-  description: "Join 50K+ getting weekly nail secrets, trending designs, exclusive discounts, and pro tips in their inbox. Free nail care guide + 20% off welcome gift inside!",
+  title: "Free 2026 Nail Trends Guide + 20% Off (Join 50K+)",
+  description: "Get weekly 2026 nail secrets: chrome tips, cat claw shaping, square trends. Free trend guide + 20% welcome code. 50K+ getting salon secrets in their inbox!",
+  keywords: "nail newsletter 2026, free nail guide, nail trends email, chrome nails tutorial, cat claw tips, square nails guide, exclusive nail discounts, DIY nail secrets, weekly nail inspiration, nail care tips email, trending designs newsletter, press-on deals, salon secrets free",
+  alternates: {
+    canonical: 'https://mirelleinspo.com/subscribe',
+  },
   openGraph: {
-    title: "Free Nail Secrets Every Week - Join 50K+ Subscribers",
-    description: "Get trending designs, salon secrets, and exclusive 20% off code. Free nail care guide when you subscribe. 50K+ nail lovers can't be wrong!",
+    title: "Free 2026 Trend Guide + 20% Off - Join 50K+ Getting Weekly Secrets",
+    description: "Weekly 2026 nail secrets: chrome, cat claw, square trends. Free guide + 20% welcome code. Exclusive designs, pro tips, discounts. 50K+ love it. Join now!",
+    url: 'https://mirelleinspo.com/subscribe',
+    siteName: 'Mirellè Inspo',
+    type: 'website',
+    images: [
+      {
+        url: 'https://mirelleinspo.com/og-subscribe-2026.png',
+        width: 1200,
+        height: 630,
+        alt: 'Join Mirellè Inspo newsletter for free 2026 nail trend guide and 20% off welcome gift',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Get Free Nail Hacks Weekly - 50K+ Already Subscribed",
-    description: "Trending designs, pro secrets, exclusive discounts. Free guide + 20% off inside!",
+    title: "Free 2026 Trends + 20% Off (50K+ Subscribed)",
+    description: "Weekly chrome, cat claw, square secrets. Free guide inside. 20% off welcome gift. Join 50K+ →",
     creator: "@mirelleinspo",
     site: "@mirelleinspo",
+    images: ['https://mirelleinspo.com/twitter-subscribe.png'],
   },
   other: {
-    "pin:description": "Join 50K+ getting weekly nail secrets, trending designs, exclusive discounts in their inbox. Free nail care guide + 20% off welcome gift!",
+    "pin:description": "Join 50K+ getting weekly 2026 nail secrets! Free trend guide + 20% off welcome code. Chrome, cat claw, square tips delivered to your inbox. Subscribe now!",
     "pinterest-rich-pin": "true",
   },
 };

@@ -4,23 +4,25 @@ import { Metadata } from 'next';
 
 // SEO Metadata Export
 export const metadata: Metadata = {
-  title: 'How to Strengthen Nails Naturally: 15 Expert Tips (2025) | Mirellé',
-  description: 'Discover 15 proven ways to strengthen nails naturally at home. From biotin-rich foods to DIY nail soaks, get stronger, healthier nails without harsh chemicals. Plus trending 2025 nail care tips!',
+  title: 'How to Strengthen Nails for Chrome & Cat Claw Styles (2026)',
+  description: 'Get salon-strong nails naturally! 23 proven methods for chrome-ready, cat claw-worthy nails. Biotin secrets, DIY soaks, growth hacks. From brittle to unbreakable in weeks!',
   keywords: [
-    'strengthen nails naturally',
+    'strengthen nails naturally 2026',
     'how to strengthen nails',
-    'natural nail strengthening',
+    'nails for chrome application',
+    'cat claw nail strength',
     'brittle nails home remedies',
-    'nail care tips',
-    'healthy nail growth',
+    'nail growth tips 2026',
     'biotin for nails',
-    'DIY nail care',
+    'DIY nail strengthening',
+    'healthy nail care routine',
     'weak nails treatment',
-    'nail strengthening routine'
+    'natural nail care 2026',
+    'salon-strong nails at home'
   ],
-  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
-  creator: 'Mirellé',
-  publisher: 'Mirellé',
+  authors: [{ name: 'Mirellè Inspo Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellè Inspo',
+  publisher: 'Mirellè Inspo',
   alternates: {
     canonical: 'https://mirelleinspo.com/topics/nail-care-guide',
   },
@@ -36,25 +38,30 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'How to Strengthen Nails Naturally: 15 Expert Tips (2025)',
-    description: 'Proven natural methods to strengthen weak, brittle nails at home. Expert tips, DIY remedies, and 2025 trends.',
+    title: 'How to Strengthen Nails for 2026 Trends (Chrome & Cat Claw Ready)',
+    description: 'Transform brittle nails naturally! 23 proven methods for chrome-ready, cat claw-worthy strength. Biotin secrets, DIY soaks, pro tips. Unbreakable nails in 4-6 weeks!',
     type: 'article',
     url: 'https://mirelleinspo.com/topics/nail-care-guide',
-    siteName: 'Mirellé',
+    siteName: 'Mirellè Inspo',
     locale: 'en_US',
     images: [{
-      url: 'https://mirelleinspo.com/nail-care-hero-healthy-strong-nails-natural.jpg',
+      url: 'https://mirelleinspo.com/nail-care-hero-healthy-strong-nails-2026.jpg',
       width: 1200,
       height: 630,
-      alt: 'Complete guide to strengthening nails naturally with expert tips for healthy nail growth',
+      alt: 'Complete guide to strengthening nails naturally for chrome and cat claw styles in 2026',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Strengthen Nails Naturally: 15 Expert Tips (2025)',
-    description: 'Transform weak, brittle nails with these proven natural remedies',
-    images: ['https://mirelleinspo.com/nail-care-hero-healthy-strong-nails-natural.jpg'],
+    title: 'Brittle to Unbreakable in Weeks (23 Natural Methods)',
+    description: 'Get chrome-ready, cat claw-worthy nails naturally. Biotin secrets, DIY soaks. Proven results →',
+    images: ['https://mirelleinspo.com/twitter-nail-care-2026.jpg'],
     creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    'pin:description': 'Strengthen nails naturally for 2026 trends! 23 proven methods for chrome-ready, cat claw-worthy nails. Biotin secrets, DIY soaks. From brittle to unbreakable!',
+    'pinterest-rich-pin': 'true',
   },
 };
 

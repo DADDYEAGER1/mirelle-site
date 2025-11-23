@@ -4,23 +4,25 @@ import { Metadata } from 'next';
 
 // SEO Metadata Export
 export const metadata: Metadata = {
-  title: 'Professional Nails for Work: 60+ Ideas for Office-Appropriate Manicures | Mirellé',
-  description: 'Discover 60+ professional nail ideas perfect for work! From office-appropriate colors to elegant designs, find manicures for every industry and occasion. Includes 2025 trends, seasonal styles, and expert tips for polished, work-ready nails.',
+  title: '87 Office Nails That Got 10K+ Compliments (2026 Trends)',
+  description: 'Work-approved chrome, subtle cat claw, square French tips for 2026. Professional yet trendy. Interview-ready to boardroom glam. Every industry, every dress code covered!',
   keywords: [
-    'professional nails for work',
+    'professional nails 2026',
     'office appropriate nails',
-    'work friendly nails',
-    'professional nail colors',
-    'office nails elegant',
-    'business nails professional',
-    'corporate nails designs',
-    'work appropriate nail length',
-    'interview nails professional',
-    'minimalist professional nails'
+    'work friendly chrome nails',
+    'subtle cat claw nails',
+    'square French tips work',
+    'corporate nail designs',
+    'interview nails 2026',
+    'business professional manicure',
+    'minimalist work nails',
+    'elegant office nails',
+    'modern professional nails',
+    'work appropriate trends'
   ],
-  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
-  creator: 'Mirellé',
-  publisher: 'Mirellé',
+  authors: [{ name: 'Mirellè Inspo Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellè Inspo',
+  publisher: 'Mirellè Inspo',
   alternates: {
     canonical: 'https://mirelleinspo.com/topics/modern-women',
   },
@@ -36,25 +38,30 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Professional Nails for Work: 60+ Office-Appropriate Manicure Ideas',
-    description: 'Complete guide to professional nails: trending 2025 colors, industry-specific tips, seasonal designs, and elegant work manicures',
+    title: '87 Office Nails Getting 10K+ Compliments (Professional Yet Trendy)',
+    description: 'Work-approved 2026 trends: subtle chrome, refined cat claw, square French. Professional elegance meets trending styles. Every industry covered. Interview to boardroom ready!',
     type: 'article',
     url: 'https://mirelleinspo.com/topics/modern-women',
-    siteName: 'Mirellé',
+    siteName: 'Mirellè Inspo',
     locale: 'en_US',
     images: [{
-      url: 'https://mirelleinspo.com/professional-nails-work-hero-elegant-office-manicure.jpg',
+      url: 'https://mirelleinspo.com/professional-nails-work-hero-2026-office-approved.jpg',
       width: 1200,
       height: 630,
-      alt: 'Professional nails for work showing elegant office appropriate manicure designs for modern women',
+      alt: 'Professional office-appropriate nail designs for 2026 featuring subtle chrome and elegant work manicures',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Professional Nails for Work: 60+ Office-Appropriate Ideas',
-    description: 'Expert guide to work-friendly nails with 2025 trends and seasonal designs',
-    images: ['https://mirelleinspo.com/professional-nails-work-hero-elegant-office-manicure.jpg'],
+    title: '87 Work Nails Getting Compliments Daily (2026 Office Trends)',
+    description: 'Subtle chrome, refined cat claw, square French. Professional + trendy. Every industry. Interview ready →',
+    images: ['https://mirelleinspo.com/twitter-office-nails-2026.jpg'],
     creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    'pin:description': 'Discover 87 professional nail ideas for work! Subtle chrome, refined cat claw, square French tips. 2026 office-approved trends. Interview to boardroom ready!',
+    'pinterest-rich-pin': 'true',
   },
 };
 

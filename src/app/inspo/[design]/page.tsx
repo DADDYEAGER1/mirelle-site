@@ -610,13 +610,14 @@ export default async function InspoDesignPage({
 }) {
   const { design } = await params;
 
-  const designData = getDesignData(design);
-  const images = await getDesignImages(design);
-  const relatedDesigns = getRelatedDesigns(design, 3);
+const designData = getDesignData(design);
+const images = await getDesignImages(design);
+const relatedDesigns = getRelatedDesigns(design, 3);
 
-  if (!designData) {
-    notFound();
-  }
+if (!designData) {
+  notFound();
+}
+
 
   // Get category-specific FAQs
   const faqs = categoryFAQs[design] || [];

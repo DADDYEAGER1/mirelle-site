@@ -3,12 +3,12 @@ import { Metadata } from 'next';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: 'Nail Care Topics & Guides - Expert Tips for Every Style | Mirelle',
-  description: 'Explore comprehensive nail care guides covering nail health, art techniques, skin tone matching, seasonal trends, at-home hacks, and modern inspiration. Expert advice for beautiful nails.',
-  keywords: 'nail care guide, nail art tutorials, nails for skin tones, seasonal nail trends, at-home nail hacks, DIY manicure, nail health tips, modern nail designs, nail care basics, professional nail techniques',
-  authors: [{ name: 'Mirelle' }],
-  creator: 'Mirelle',
-  publisher: 'Mirelle',
+  title: 'Complete 2026 Nail Guides: Chrome, Cat Claw, Square & More',
+  description: 'Master 2026 trending techniques with expert guides: chrome application, cat claw shaping, square filing, milky pastels, seasonal trends. Step-by-step for every skill level!',
+  keywords: 'nail care guides 2026, chrome nails tutorial, cat claw nail shaping, square nails how to, milky nail technique, 3D nail art guide, seasonal nail trends, DIY manicure tutorials, nail health tips, professional techniques, trending nail guides, at-home nail hacks, modern nail inspiration, skin tone matching nails',
+  authors: [{ name: 'Mirellè Inspo Team' }],
+  creator: 'Mirellè Inspo',
+  publisher: 'Mirellè Inspo',
   alternates: {
     canonical: 'https://mirelleinspo.com/topics',
   },
@@ -24,29 +24,33 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Nail Care Topics & Guides | Mirelle',
-    description: 'Expert nail care guides covering health, art, trends, and techniques for every style.',
+    title: 'Complete 2026 Nail Guides: Chrome, Cat Claw, Square & More',
+    description: 'Expert guides for trending 2026 techniques: chrome finishes, cat claw shapes, square filing, milky pastels. Step-by-step for every level. Master trending nails!',
     type: 'website',
     url: 'https://mirelleinspo.com/topics',
-    siteName: 'Mirelle',
+    siteName: 'Mirellè Inspo',
     locale: 'en_US',
     images: [{
-      url: 'https://mirelleinspo.com/featuretopicbanner.jpg',
+      url: 'https://mirelleinspo.com/featuretopicbanner-2026.jpg',
       width: 1200,
       height: 630,
-      alt: 'Mirelle Featured Nail Care Topics',
+      alt: 'Mirellè Inspo Complete Nail Guides for 2026 Trending Techniques',
       type: 'image/jpeg',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nail Care Topics & Guides | Mirelle',
-    description: 'Expert guides for nail health, art & trends',
-    images: ['https://mirelleinspo.com/featuretopicbanner.jpg'],
+    title: '2026 Nail Guides: Chrome, Cat Claw & Square (Expert Tips)',
+    description: 'Master trending techniques with step-by-step guides. Every skill level. Pro secrets inside →',
+    images: ['https://mirelleinspo.com/twitter-topics-2026.jpg'],
     creator: '@mirelleinspo',
     site: '@mirelleinspo',
   },
-};
+  other: {
+    'pin:description': 'Complete 2026 nail guides! Master chrome, cat claw, square & milky techniques. Expert step-by-step tutorials for every skill level. Save these guides!',
+    'pinterest-rich-pin': 'true',
+  },
+}
 
 const topics = [
   {

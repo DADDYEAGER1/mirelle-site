@@ -4,25 +4,25 @@ import { Metadata } from 'next';
 
 // SEO Metadata Export
 export const metadata: Metadata = {
-  title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails | Mirellé',
-  description: 'Discover 50+ easy nail hacks for perfect at-home manicures! From quick-dry tricks to lasting polish, get salon-quality nails without leaving home. Beginner-friendly tips inside.',
+  title: "73 Nail Hacks Salons Don't Want You Knowing (2026)",
+  description: 'Master chrome application at home, perfect cat claw shaping, square filing secrets. Pro hacks for 2-3wk wear, instant fixes, trending techniques. Save $100s on salons!',
   keywords: [
-    'easy nail hacks at home',
-    'DIY nail hacks',
-    'nail hacks for beginners',
-    'at-home manicure tips',
-    'simple nail tips',
-    'DIY manicure hacks',
+    'nail hacks 2026',
+    'DIY chrome nails',
+    'cat claw shaping at home',
+    'square nails DIY',
+    'at-home manicure hacks',
     'nail polish hacks',
-    'home nail care',
+    'long-lasting nails tips',
+    'press-on application secrets',
     'salon nails at home',
     'quick nail fixes',
-    'beginner nail tips',
-    'nail art hacks'
+    'nail care hacks',
+    'beginner nail tips 2026'
   ],
-  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
-  creator: 'Mirellé',
-  publisher: 'Mirellé',
+  authors: [{ name: 'Mirellè Inspo Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellè Inspo',
+  publisher: 'Mirellè Inspo',
   alternates: {
     canonical: 'https://mirelleinspo.com/topics/at-home-hacks',
   },
@@ -38,25 +38,30 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails',
-    description: 'Transform your DIY manicures with these genius nail hacks! Learn how to make polish last longer, fix mistakes instantly, and create trending designs at home—no salon needed.',
+    title: '73 Nail Hacks Pros Are Gatekeeping (Chrome, Cat Claw, Square)',
+    description: "Transform DIY mani's with salon secrets! Chrome application, cat claw shaping, square filing. Pro hacks for 2-3wk wear. Save $100s. 50K+ using these!",
     type: 'article',
     url: 'https://mirelleinspo.com/topics/at-home-hacks',
-    siteName: 'Mirellé',
+    siteName: 'Mirellè Inspo',
     locale: 'en_US',
     images: [{
-      url: 'https://mirelleinspo.com/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg',
+      url: 'https://mirelleinspo.com/at-home-hacks-hero-2026-chrome-diy.jpg',
       width: 1200,
       height: 630,
-      alt: 'Complete guide to easy nail hacks at home featuring DIY manicure tools and beginner-friendly techniques',
+      alt: 'Complete guide to at-home nail hacks for 2026 trending techniques including chrome and cat claw application',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Easy Nail Hacks at Home: 50+ DIY Tips for Salon Nails',
-    description: 'Get salon-quality nails at home with these proven DIY hacks and beginner tips',
-    images: ['https://mirelleinspo.com/at-home-nail-hacks-hero-diy-manicure-tools-2025.jpg'],
+    title: '73 Hacks Salons Hate (Chrome, Cat Claw At Home)',
+    description: 'Pro secrets for chrome, cat claw, square at home. 2-3wk wear. Save $100s. 50K+ love these →',
+    images: ['https://mirelleinspo.com/twitter-home-hacks-2026.jpg'],
     creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    'pin:description': 'Discover 73 at-home nail hacks for 2026! Master chrome, cat claw & square techniques. Pro secrets for long-lasting DIY manicures. Save $100s on salons!',
+    'pinterest-rich-pin': 'true',
   },
 };
 

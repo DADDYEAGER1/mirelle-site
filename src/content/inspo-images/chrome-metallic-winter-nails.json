@@ -1,0 +1,164 @@
+{
+  "images": [
+    {
+      "id": "chrome-metallic-winter-001",
+      "url": "/inspo/chrome-metallic-winter-nails/icy-silver-chrome-mirror-finish-coffin-winter-nails.webp",
+      "alt": "Icy silver chrome mirror finish coffin nails with ultra reflective metallic surface perfect for winter 2025 holiday parties",
+      "category": "silver",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-002",
+      "url": "/inspo/chrome-metallic-winter-nails/holographic-aurora-chrome-almond-iridescent-shift-nails.webp",
+      "alt": "Holographic aurora chrome almond nails with iridescent color shift effect creating rainbow metallic winter manicure 2025",
+      "category": "holographic",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-003",
+      "url": "/inspo/chrome-metallic-winter-nails/vanilla-chrome-white-base-soft-metallic-short-nails.webp",
+      "alt": "Vanilla chrome nails over white gel base creating soft metallic finish on short length perfect for everyday winter wear",
+      "category": "white",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "chrome-metallic-winter-004",
+      "url": "/inspo/chrome-metallic-winter-nails/platinum-chrome-coffin-ultra-shiny-mirror-metallic-nails.webp",
+      "alt": "Platinum chrome coffin nails with ultra shiny mirror metallic finish reflecting winter light for dramatic statement manicure",
+      "category": "silver",
+      "isPremium": false,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    },
+    {
+      "id": "chrome-metallic-winter-005",
+      "url": "/inspo/chrome-metallic-winter-nails/rose-gold-chrome-almond-warm-metallic-winter-nails.webp",
+      "alt": "Rose gold chrome almond nails with warm metallic finish creating elegant winter manicure trending for holiday season 2025",
+      "category": "rose-gold",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-006",
+      "url": "/inspo/chrome-metallic-winter-nails/magnetic-chrome-gradient-cat-eye-dimensional-winter-nails.webp",
+      "alt": "Magnetic chrome gradient nails with cat eye effect creating dimensional metallic winter manicure with light catching finish",
+      "category": "magnetic",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-007",
+      "url": "/inspo/chrome-metallic-winter-nails/oil-slick-chrome-almond-multi-color-shift-rainbow-nails.webp",
+      "alt": "Oil slick chrome almond nails with multi-color shift effect creating rainbow metallic winter nail art trending design 2025",
+      "category": "holographic",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "chrome-metallic-winter-008",
+      "url": "/inspo/chrome-metallic-winter-nails/gold-chrome-accent-burgundy-base-luxury-winter-party-nails.webp",
+      "alt": "Gold chrome accent nails over burgundy base creating luxury winter party manicure with metallic foil details for holidays",
+      "category": "gold",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-009",
+      "url": "/inspo/chrome-metallic-winter-nails/icy-pink-chrome-short-soft-metallic-easy-elegant-winter.webp",
+      "alt": "Icy pink chrome short nails with soft metallic finish creating easy elegant winter manicure perfect for everyday office wear",
+      "category": "pink",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-010",
+      "url": "/inspo/chrome-metallic-winter-nails/silver-glitter-chrome-long-coffin-sparkly-statement-winter.webp",
+      "alt": "Silver glitter chrome long coffin nails with sparkly metallic finish creating bold statement winter manicure for party season",
+      "category": "silver",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "chrome-metallic-winter-011",
+      "url": "/inspo/chrome-metallic-winter-nails/white-pearl-chrome-squoval-subtle-metallic-wedding-nails.webp",
+      "alt": "White pearl chrome squoval nails with subtle metallic shimmer creating elegant winter wedding manicure with soft shine finish",
+      "category": "white",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-012",
+      "url": "/inspo/chrome-metallic-winter-nails/lavender-chrome-ombre-purple-metallic-gradient-winter-nails.webp",
+      "alt": "Lavender chrome ombre nails with purple metallic gradient creating dreamy winter nail inspiration with soft color transition 2025",
+      "category": "purple",
+      "isPremium": false,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    },
+    {
+      "id": "chrome-metallic-winter-013",
+      "url": "/inspo/chrome-metallic-winter-nails/copper-chrome-almond-shape-warm-bronze-metallic-trendy-winter.webp",
+      "alt": "Copper chrome almond shape nails with warm bronze metallic finish creating trendy winter manicure perfect for neutral fashion lovers",
+      "category": "copper",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-014",
+      "url": "/inspo/chrome-metallic-winter-nails/blue-chrome-cat-eye-magnetic-dimensional-winter-party-nails.webp",
+      "alt": "Blue chrome cat eye nails with magnetic metallic finish creating dimensional winter party manicure with light catching stripe effect",
+      "category": "blue",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-015",
+      "url": "/inspo/chrome-metallic-winter-nails/titanium-chrome-coffin-dark-metallic-edgy-statement-winter-nails.webp",
+      "alt": "Titanium chrome coffin nails with dark metallic finish creating edgy statement winter manicure perfect for modern bold style 2025",
+      "category": "silver",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "chrome-metallic-winter-016",
+      "url": "/inspo/chrome-metallic-winter-nails/mint-chrome-french-tips-green-metallic-fresh-modern-winter.webp",
+      "alt": "Mint chrome French tips with green metallic accent creating fresh modern winter nail art perfect for unique seasonal manicure design",
+      "category": "green",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-017",
+      "url": "/inspo/chrome-metallic-winter-nails/black-chrome-short-dark-metallic-sleek-modern-winter-style.webp",
+      "alt": "Black chrome short nails with dark metallic finish creating sleek modern winter manicure perfect for minimalist edgy style 2025",
+      "category": "black",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-018",
+      "url": "/inspo/chrome-metallic-winter-nails/rainbow-chrome-glitter-holographic-festive-bold-party-winter-nails.webp",
+      "alt": "Rainbow chrome glitter nails with holographic shimmer creating bold festive winter party manicure perfect for New Year celebrations",
+      "category": "holographic",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "chrome-metallic-winter-019",
+      "url": "/inspo/chrome-metallic-winter-nails/pearl-white-chrome-3d-gems-luxury-wedding-metallic-winter.webp",
+      "alt": "Pearl white chrome nails with 3D gem accents creating luxury winter wedding manicure with soft metallic shine and rhinestone details",
+      "category": "white",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "chrome-metallic-winter-020",
+      "url": "/inspo/chrome-metallic-winter-nails/champagne-chrome-almond-elegant-subtle-metallic-holiday-winter.webp",
+      "alt": "Champagne chrome almond nails with elegant subtle metallic finish creating sophisticated holiday winter manicure perfect for formal events",
+      "category": "gold",
+      "isPremium": false,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    }
+  ]
+}

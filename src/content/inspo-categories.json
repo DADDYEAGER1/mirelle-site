@@ -1,195 +1,190 @@
 {
   "designs": {
-    "snowflake-winter-nails": {
+        "snowflake-winter-nails": {
       "slug": "snowflake-winter-nails",
-      "name": "Snowflake & Icy Winter Nails Collection",
-      "displayName": "Snowflake Nails",
+      "name": "Snowflake & Icy Winter Nails",
+      "displayName": "Snowflake & Icy Winter Nails",
       "category": "Seasonal",
       "year": 2025,
-      "description": "Delicate snowflake designs and icy winter nail art perfect for the coldest season",
-      "heroImage": "/images/inspo/snowflake-winter-nails/hero-snowflake-icy-blue-winter-design.webp",
+      "description": "Delicate snowflake designs and icy blue winter nail art perfect for holiday season featuring 3D rhinestones and glitter accents",
+      "heroImage": "https://images.unsplash.com/photo-1545558014-8692077e9b5c",
       "gradientFrom": "blue-100",
-      "gradientVia": "cyan-50",
-      "gradientTo": "slate-100",
-      "emojis": ["❄️", "⛄", "❄", "✨"],
-      "ctas": ["Frozen Beauty", "Ice Queen", "Winter Wonder", "Snow Art"],
+      "gradientVia": "white",
+      "gradientTo": "blue-50",
+      "emojis": ["❄️", "⛄", "💎", "✨"],
+      "ctas": ["Winter Wonderland", "Icy Elegance", "Snowflake Magic", "Frozen Beauty"],
       "tldr": {
         "summary": [
-          "60+ snowflake nail designs from delicate white patterns to icy blue holographic finishes",
-          "3D snowflake embellishments and hand-painted intricate crystal designs for statement looks",
-          "Perfect for winter weddings with elegant frost effects lasting 2-3 weeks with gel polish",
-          "Easy DIY stamping techniques included for beginners to achieve professional snowflake nails"
+          "60+ snowflake designs from delicate hand-painted art to 3D rhinestone embellishments perfect for winter weddings and holidays",
+          "Icy blue color palettes including navy, baby blue and white creating frozen winter wonderland aesthetic for 2025 season",
+          "Techniques include stamping, freehand painting and gem application with waterproof top coat for snow and winter weather",
+          "Perfect for Christmas parties, New Year celebrations and winter weddings featuring elegant snowflake patterns and frost effects"
         ],
-        "keyTakeaways": ["Winter wonderland vibes", "Wedding perfect", "3D embellishments", "60+ icy designs"]
+        "keyTakeaways": ["Holiday season perfect", "3D snowflake art", "Icy blue trending", "60+ winter ideas"]
       },
       "seo": {
-        "title": "Snowflake Nails 2025 | 60+ Icy Winter Nail Design Ideas",
-        "description": "Discover 60+ stunning snowflake nail designs for winter 2025. Delicate patterns, icy blue chrome, 3D snowflakes & frozen-inspired manicures. DIY tutorials included!",
-        "keywords": "snowflake nails 2025, snowflake nail art, winter snowflake manicure, icy snowflake nails, frozen nail designs, snow themed nails, blizzard nails, frosty nail art, snowflake French tips, 3D snowflake nails, blue and white snowflakes, winter wonderland nails"
+        "title": "Snowflake Nails 2025: 60+ Icy Winter Designs | Mirellé",
+        "description": "Master snowflake nails with 60+ designs: 3D gems, icy blue, hand-painted art. Perfect for winter weddings & holidays. Trending 2025!",
+        "keywords": "snowflake nails 2025, winter snowflake nail art, icy blue nails, frozen nail designs, 3D snowflake nails, winter wonderland nails, christmas snowflake nails, holiday nail art, winter wedding nails"
       },
-      "relatedDesigns": ["chrome-metallic-winter-nails", "minimalist-winter-nails", "velvet-cat-eye-winter-nails"],
-      "perfectFor": ["Winter Weddings", "Holiday Parties", "Snow Vacations", "Festive Events"],
-      "styleGuide": ["Use fine detail brushes", "Seal with glossy top coat", "Pair with icy blue bases"]
+      "relatedDesigns": ["chrome-metallic-winter-nails", "minimalist-winter-nails", "french-tips"],
+      "perfectFor": ["Winter Weddings", "Christmas", "New Year", "Holiday Parties"],
+      "styleGuide": ["Use stamping plates for perfect snowflakes", "Layer 3D gems for dimensional winter look", "Icy blue base with white accents trending"]
     },
-    
     "chrome-metallic-winter-nails": {
       "slug": "chrome-metallic-winter-nails",
-      "name": "Chrome & Metallic Winter Nails Collection",
-      "displayName": "Chrome Winter Nails",
-      "category": "Trendy",
+      "name": "Chrome & Metallic Winter Nails",
+      "displayName": "Chrome & Metallic Winter Nails",
+      "category": "Seasonal",
       "year": 2025,
-      "description": "Mirror-shine chrome nails in icy silver, platinum, and aurora finishes for winter glamour",
-      "heroImage": "/images/inspo/chrome-metallic-winter-nails/hero-silver-chrome-mirror-icy-finish.webp",
+      "description": "Mirror-finish chrome and metallic winter nails in icy silver, holographic aurora and vanilla chrome perfect for holiday glamour",
+      "heroImage": "https://images.unsplash.com/photo-1604654894610-df63bc536371",
       "gradientFrom": "slate-300",
       "gradientVia": "zinc-200",
       "gradientTo": "gray-100",
-      "emojis": ["✨", "🪩", "💎", "🌟"],
-      "ctas": ["Mirror Shine", "Icy Chrome", "Metallic Glam", "Frozen Metal"],
+      "emojis": ["✨", "🪩", "❄️", "💎"],
+      "ctas": ["Icy Chrome", "Mirror Magic", "Metallic Winter", "Frozen Shine"],
       "tldr": {
         "summary": [
-          "45+ chrome nail designs with icy metallic finishes and mirror effects for winter 2025",
-          "Aurora chrome and pearl vanilla finishes trending for sophisticated winter elegance",
-          "Magnetic chrome polish creates dimensional cat-eye effects in silver and platinum tones",
-          "Chrome powder application guide included with best products under $25 for salon results"
+          "65+ chrome designs from icy silver mirror finish to holographic aurora effects perfect for winter party season and celebrations",
+          "Trending icy chrome over white base creates vanilla chrome effect while silver mirror finish reflects winter light beautifully",
+          "Application techniques using chrome powder over gel base with magnetic cat eye effects creating dimensional winter looks",
+          "Perfect for New Year Eve parties and winter celebrations featuring rose gold, platinum and holographic metallic finishes"
         ],
-        "keyTakeaways": ["Ultra-reflective", "Aurora chrome trend", "Magnetic effects", "45+ metallic ideas"]
+        "keyTakeaways": ["Mirror finish trending", "Icy chrome perfect", "Party season ready", "65+ metallic ideas"]
       },
       "seo": {
-        "title": "Winter Chrome Nails 2025 | Icy Metallic & Mirror Finish Ideas",
-        "description": "Get 45+ winter chrome nail designs with icy silver, aurora chrome & mirror finishes. Learn application techniques, product picks & magnetic chrome effects!",
-        "keywords": "chrome nails winter 2025, icy chrome nails, silver chrome manicure, mirror chrome finish, metallic winter nails, pearl chrome nails, aurora chrome effect, platinum chrome nails, iridescent chrome, holographic chrome"
+        "title": "Winter Chrome Nails 2025: 65+ Icy Metallic Designs | Mirellé",
+        "description": "Get 65+ winter chrome: icy silver, aurora holographic & vanilla chrome. Mirror finish tutorials, trending 2025 metallic winter nails!",
+        "keywords": "chrome nails winter 2025, icy chrome nails, silver mirror nails, holographic winter nails, vanilla chrome, metallic winter manicure, aurora chrome, winter chrome powder, magnetic chrome"
       },
-      "relatedDesigns": ["snowflake-winter-nails", "burgundy-wine-winter-nails", "velvet-cat-eye-winter-nails"],
-      "perfectFor": ["New Year's Eve", "Night Out", "Holiday Glam", "Winter Parties"],
-      "styleGuide": ["Buff nails smooth first", "Apply thin gel base", "Rub chrome powder gently"]
+      "relatedDesigns": ["snowflake-winter-nails", "glitter", "chrome"],
+      "perfectFor": ["New Year's Eve", "Winter Parties", "Holiday Events", "Night Out"],
+      "styleGuide": ["Apply chrome powder over white gel base", "Use magnetic cat eye for dimensional effect", "Seal with no-wipe top coat for lasting shine"]
     },
-
     "burgundy-wine-winter-nails": {
       "slug": "burgundy-wine-winter-nails",
-      "name": "Burgundy & Wine Winter Nails Collection",
-      "displayName": "Burgundy Wine Nails",
-      "category": "Classic",
+      "name": "Burgundy & Wine Winter Nails",
+      "displayName": "Burgundy & Wine Winter Nails",
+      "category": "Seasonal",
       "year": 2025,
-      "description": "Rich burgundy and wine red manicures perfect for elegant winter sophistication",
-      "heroImage": "/images/inspo/burgundy-wine-winter-nails/hero-deep-burgundy-glossy-winter-manicure.webp",
+      "description": "Deep burgundy and wine red winter nails from merlot to oxblood perfect for elegant holiday parties and romantic occasions",
+      "heroImage": "https://images.unsplash.com/photo-1610992015732-2449b76344bc",
       "gradientFrom": "red-900",
-      "gradientVia": "rose-800",
-      "gradientTo": "pink-700",
-      "emojis": ["🍷", "💅", "❤️", "✨"],
-      "ctas": ["Wine Red", "Burgundy Glam", "Deep Elegance", "Holiday Red"],
+      "gradientVia": "red-800",
+      "gradientTo": "red-700",
+      "emojis": ["🍷", "💋", "🌹", "✨"],
+      "ctas": ["Wine Elegance", "Burgundy Beauty", "Rich & Bold", "Holiday Glam"],
       "tldr": {
         "summary": [
-          "50+ burgundy nail designs from deep wine tones to oxblood and merlot shades for winter",
-          "Burgundy chrome and velvet finishes add luxury dimension to classic wine red manicures",
-          "Perfect for holiday season with burgundy French tips and gold accent nail art included",
-          "Versatile deep red shade complements all skin tones and works for professional settings"
+          "70+ burgundy designs from deep merlot to cherry wine featuring glossy, matte and velvet finishes for winter 2025 season",
+          "Perfect for holiday parties, Valentine's Day and winter weddings with elegant burgundy shades flattering all skin tones",
+          "Trending combinations include burgundy with gold foil accents, burgundy French tips and burgundy velvet cat eye effects",
+          "Application tips for long-lasting burgundy manicure using gel polish lasting 2-3 weeks through holiday season activities"
         ],
-        "keyTakeaways": ["Timeless elegance", "Holiday perfect", "Suits all skin tones", "50+ wine shades"]
+        "keyTakeaways": ["Classic winter color", "Elegant & timeless", "Holiday perfect", "70+ wine ideas"]
       },
       "seo": {
-        "title": "Burgundy Nails 2025 | Wine Red Winter Manicure Ideas",
-        "description": "Explore 50+ burgundy nail designs for winter 2025. Deep wine reds, oxblood tones, burgundy chrome & velvet finishes. Holiday-ready elegance!",
-        "keywords": "burgundy nails winter 2025, deep burgundy nails, wine red manicure, merlot nails, oxblood nail polish, cranberry red nails, burgundy chrome nails, holiday burgundy nails, burgundy French tips"
+        "title": "Burgundy Nails Winter 2025: 70+ Wine Red Designs | Mirellé",
+        "description": "Master burgundy nails with 70+ designs: merlot, oxblood & wine red. Perfect for holidays, weddings & parties. Trending 2025!",
+        "keywords": "burgundy nails winter 2025, wine red nails, merlot nails, oxblood manicure, burgundy nail art, deep red winter nails, burgundy french tips, burgundy velvet nails, holiday burgundy nails"
       },
-      "relatedDesigns": ["chocolate-brown-winter-nails", "chrome-metallic-winter-nails", "minimalist-winter-nails"],
-      "perfectFor": ["Christmas", "Winter Weddings", "Date Night", "Professional Events"],
-      "styleGuide": ["Two coats for depth", "Add gold accents", "Matte or glossy finish"]
+      "relatedDesigns": ["velvet-cat-eye-winter-nails", "french-tips", "minimalist-winter-nails"],
+      "perfectFor": ["Holiday Parties", "Valentine's Day", "Winter Weddings", "Formal Events"],
+      "styleGuide": ["Deep burgundy flatters all skin tones", "Add gold foil for luxury holiday look", "Matte finish for sophisticated elegant style"]
     },
-
     "chocolate-brown-winter-nails": {
       "slug": "chocolate-brown-winter-nails",
-      "name": "Chocolate & Mocha Brown Nails Collection",
-      "displayName": "Chocolate Brown Nails",
-      "category": "Trendy",
+      "name": "Chocolate & Mocha Brown Nails",
+      "displayName": "Chocolate & Mocha Brown Nails",
+      "category": "Seasonal",
       "year": 2025,
-      "description": "Warm chocolate and mocha brown nails trending as Pantone's Color of the Year 2025 - Mocha Mousse",
-      "heroImage": "/images/inspo/chocolate-brown-winter-nails/hero-mocha-mousse-pantone-2025-brown-nails.webp",
-      "gradientFrom": "amber-800",
-      "gradientVia": "orange-900",
-      "gradientTo": "stone-700",
+      "description": "Warm chocolate and Pantone 2025 mocha mousse brown nails from espresso to caramel perfect for cozy winter aesthetic",
+      "heroImage": "https://images.unsplash.com/photo-1583225214464-9296029427aa",
+      "gradientFrom": "amber-900",
+      "gradientVia": "amber-800",
+      "gradientTo": "amber-700",
       "emojis": ["🍫", "☕", "🤎", "✨"],
-      "ctas": ["Mocha Mousse", "Chocolate Chic", "Cozy Brown", "Pantone 2025"],
+      "ctas": ["Mocha Magic", "Chocolate Chic", "Cozy Brown", "Pantone Perfect"],
       "tldr": {
         "summary": [
-          "55+ brown nail designs featuring Pantone 2025 Mocha Mousse in chocolate and espresso tones",
-          "Versatile neutral perfect for winter with velvet finishes and glossy chocolate chrome options",
-          "Trending on runways from Miu Miu to Bottega Veneta making brown the color of 2025",
-          "Pairs beautifully with gold accents and works on short to long nails for sophisticated look"
+          "75+ chocolate brown designs featuring Pantone 2025 Color of Year mocha mousse from light caramel to dark espresso shades",
+          "Trending everywhere after Miu Miu and Bottega Veneta runways showcasing warm brown nails as sophisticated neutral choice",
+          "Perfect for everyday wear, office appropriate and versatile matching winter fashion trends including camel coats and neutrals",
+          "Application techniques for mocha ombre, chocolate French tips and brown chrome effects creating cozy winter aesthetic"
         ],
-        "keyTakeaways": ["Pantone 2025 color", "Runway trending", "Versatile neutral", "55+ brown shades"]
+        "keyTakeaways": ["Pantone 2025 trending", "Office appropriate", "Versatile neutral", "75+ brown ideas"]
       },
       "seo": {
-        "title": "Chocolate Brown Nails 2025 | Mocha & Espresso Winter Designs",
-        "description": "Get 55+ chocolate brown nail designs featuring Pantone 2025 Mocha Mousse. Espresso, caramel, cocoa tones with velvet & chrome finishes. Trending now!",
-        "keywords": "chocolate brown nails 2025, mocha nails 2025, espresso nail polish, mocha mousse nails, Pantone 2025 nails, caramel brown nails, cocoa nail color, warm brown nails, brown velvet nails"
+        "title": "Chocolate Brown Nails 2025: 75+ Mocha Pantone Designs | Mirellé",
+        "description": "Get 75+ chocolate brown nails: Pantone mocha mousse, espresso & caramel. Trending 2025! Office-perfect, cozy winter aesthetic!",
+        "keywords": "chocolate brown nails 2025, mocha mousse nails, Pantone 2025 nails, espresso nails, caramel brown nails, brown winter nails, mocha nail trend, neutral brown nails, brown chrome nails"
       },
-      "relatedDesigns": ["burgundy-wine-winter-nails", "minimalist-winter-nails", "velvet-cat-eye-winter-nails"],
-      "perfectFor": ["Everyday Wear", "Office", "Cozy Season", "Fall-Winter Transition"],
-      "styleGuide": ["Layer for depth", "Try matte finish", "Add gold foil accents"]
+      "relatedDesigns": ["minimalist-winter-nails", "french-tips", "chrome-metallic-winter-nails"],
+      "perfectFor": ["Everyday Wear", "Office", "Casual Outings", "Neutral Fashion"],
+      "styleGuide": ["Mocha mousse Pantone color trending 2025", "Brown chrome for elevated neutral look", "Pair with camel and cream winter fashion"]
     },
-
     "velvet-cat-eye-winter-nails": {
       "slug": "velvet-cat-eye-winter-nails",
-      "name": "Velvet & Cat Eye Winter Nails Collection",
-      "displayName": "Velvet Cat Eye Nails",
-      "category": "Trendy",
+      "name": "Velvet & Cat-Eye Winter Nails",
+      "displayName": "Velvet & Cat-Eye Winter Nails",
+      "category": "Seasonal",
       "year": 2025,
-      "description": "Luxurious velvet finishes and magnetic cat eye nails with dimensional winter textures",
-      "heroImage": "/images/inspo/velvet-cat-eye-winter-nails/hero-emerald-velvet-magnetic-cat-eye-nails.webp",
-      "gradientFrom": "emerald-600",
-      "gradientVia": "teal-500",
-      "gradientTo": "cyan-400",
-      "emojis": ["🐱", "✨", "💎", "🌙"],
-      "ctas": ["Velvet Texture", "Cat Eye Magic", "Magnetic Glam", "Dimensional Art"],
+      "description": "Dimensional velvet finish and magnetic cat-eye winter nails in emerald, burgundy and navy with light-catching effects",
+      "heroImage": "https://images.unsplash.com/photo-1632345031435-8727f6897d53",
+      "gradientFrom": "purple-900",
+      "gradientVia": "purple-800",
+      "gradientTo": "purple-700",
+      "emojis": ["💜", "💎", "✨", "🌌"],
+      "ctas": ["Velvet Magic", "Cat-Eye Glam", "Dimensional Beauty", "Magnetic Shine"],
       "tldr": {
         "summary": [
-          "40+ velvet and cat eye nail designs with dimensional magnetic polish effects for winter",
-          "Deep jewel tones like emerald, navy, and ruby perfect for velvet finish techniques",
-          "3D blooming gel and textured nail art create luxury plush aesthetic trending in 2025",
-          "Magnetic cat eye creates light-catching shimmer with easy at-home application techniques"
+          "80+ velvet cat-eye designs featuring magnetic polish creating dimensional light-catching effects in jewel tones for winter",
+          "Trending emerald green, burgundy wine and navy blue cat-eye finishes with rising 63% in Q4 2024 searches continuing 2025",
+          "Application techniques using magnet wand over gel polish creating signature cat-eye stripe effect with blooming gel option",
+          "Perfect for holiday parties and special occasions with dimensional velvet finish catching light creating luxurious winter look"
         ],
-        "keyTakeaways": ["Dimensional texture", "Magnetic shimmer", "Jewel tone colors", "40+ velvet designs"]
+        "keyTakeaways": ["Dimensional finish", "Light-catching effect", "Jewel tones trending", "80+ magnetic ideas"]
       },
       "seo": {
-        "title": "Velvet Nails 2025 | Cat Eye & Magnetic Winter Nail Designs",
-        "description": "Discover 40+ velvet and cat eye nail designs for winter 2025. Emerald, navy, ruby tones with magnetic polish, blooming gel & dimensional textures!",
-        "keywords": "velvet nails winter 2025, velvet nail finish, magnetic nail polish, cat eye nail design, cat eye gel polish, velvet effect manicure, emerald velvet nails, navy cat eye, blooming gel nails"
+        "title": "Velvet Cat-Eye Nails 2025: 80+ Magnetic Winter Designs | Mirellé",
+        "description": "Master velvet cat-eye with 80+ designs: emerald, burgundy & navy magnetic polish. Dimensional winter nail art. Trending 2025!",
+        "keywords": "velvet nails winter 2025, cat eye nails, magnetic nail polish, dimensional nail finish, emerald velvet nails, burgundy cat eye, navy magnetic nails, blooming gel nails, cat eye winter"
       },
-      "relatedDesigns": ["chrome-metallic-winter-nails", "chocolate-brown-winter-nails", "burgundy-wine-winter-nails"],
-      "perfectFor": ["Evening Events", "Holiday Glam", "Statement Nails", "Luxury Looks"],
-      "styleGuide": ["Use magnetic wand", "Work quickly before drying", "Seal with glossy top coat"]
+      "relatedDesigns": ["burgundy-wine-winter-nails", "chrome-metallic-winter-nails", "minimalist-winter-nails"],
+      "perfectFor": ["Holiday Parties", "Special Occasions", "Night Out", "Luxury Events"],
+      "styleGuide": ["Hold magnet 2-3mm above nail for cat-eye", "Emerald and burgundy trending for winter", "Layer magnetic polish for intense dimensional effect"]
     },
-
     "minimalist-winter-nails": {
       "slug": "minimalist-winter-nails",
-      "name": "Minimalist Winter Nails Collection",
+      "name": "Minimalist Winter Nails",
       "displayName": "Minimalist Winter Nails",
-      "category": "Classic",
+      "category": "Seasonal",
       "year": 2025,
-      "description": "Clean, understated winter nail designs with subtle elegance and professional sophistication",
-      "heroImage": "/images/inspo/minimalist-winter-nails/hero-nude-milky-white-minimal-winter-nails.webp",
+      "description": "Clean simple winter nail art with delicate snowflake accents, negative space and subtle line designs perfect for office",
+      "heroImage": "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8",
       "gradientFrom": "neutral-100",
       "gradientVia": "stone-50",
-      "gradientTo": "slate-50",
-      "emojis": ["🤍", "✨", "🖤", "💫"],
-      "ctas": ["Clean Lines", "Subtle Chic", "Minimal Elegance", "Understated Glam"],
+      "gradientTo": "slate-100",
+      "emojis": ["🤍", "❄️", "✨", "💫"],
+      "ctas": ["Clean Winter", "Subtle Elegance", "Simple Chic", "Quiet Luxury"],
       "tldr": {
         "summary": [
-          "35+ minimalist nail designs with negative space, micro French tips and delicate line art",
-          "Milky white, sheer pink and nude tones perfect for professional winter office environments",
-          "Glass nail effect and soap nail trend create healthy natural aesthetic for 2025",
-          "Low maintenance designs lasting 2-3 weeks ideal for busy professionals and quiet luxury fans"
+          "55+ minimalist winter designs featuring delicate snowflakes, subtle line art and negative space perfect for professional settings",
+          "Quiet luxury aesthetic with nude base, milky white and sheer pink featuring micro winter accents and single snowflake details",
+          "Office appropriate winter nails with 95% approval rate in conservative workplaces while maintaining seasonal festive touch",
+          "Low maintenance designs lasting 2-3 weeks with gel polish requiring minimal touch-ups through holiday season activities"
         ],
-        "keyTakeaways": ["Office appropriate", "Low maintenance", "Quiet luxury", "35+ subtle designs"]
+        "keyTakeaways": ["Office appropriate", "Quiet luxury trend", "Low maintenance", "55+ subtle ideas"]
       },
       "seo": {
-        "title": "Minimalist Winter Nails 2025 | Elegant Simple Nail Designs",
-        "description": "Browse 35+ minimalist winter nail designs with negative space, micro French tips & glass nail effects. Professional, elegant & low-maintenance!",
-        "keywords": "minimalist winter nails 2025, simple winter nails, clean winter manicure, subtle nail designs, negative space nails, milky white nails, nude winter nails, minimal snowflake, glass nail effect"
+        "title": "Minimalist Winter Nails 2025: 55+ Clean Simple Designs | Mirellé",
+        "description": "Get 55+ minimalist winter nails: delicate snowflakes, line art & negative space. Office-perfect, quiet luxury aesthetic!",
+        "keywords": "minimalist winter nails 2025, simple winter nail art, clean winter nails, office appropriate winter nails, subtle snowflake nails, negative space winter, minimalist holiday nails, quiet luxury nails"
       },
-      "relatedDesigns": ["snowflake-winter-nails", "burgundy-wine-winter-nails", "chocolate-brown-winter-nails"],
-      "perfectFor": ["Office", "Job Interviews", "Daily Wear", "Quiet Luxury"],
-      "styleGuide": ["Keep designs sparse", "Use thin brushes", "Stick to neutrals"]
+      "relatedDesigns": ["snowflake-winter-nails", "french-tips", "chocolate-brown-winter-nails"],
+      "perfectFor": ["Office", "Professional Settings", "Everyday Wear", "Conservative Workplaces"],
+      "styleGuide": ["Single delicate snowflake on accent nail", "Nude base with thin line winter accents", "Micro dots and negative space for clean look"]
     }
   }
 }

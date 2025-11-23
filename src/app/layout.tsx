@@ -23,29 +23,30 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL('https://mirelleinspo.com'),
   title: {
-    default: "Mirellé | Nail Art Ideas, Trends & Tutorials 2025",
-    template: "%s | Mirellé"
+    default: "Mirellè Inspo | 1K+ Nail Designs Everyone's Saving for 2025-2026",
+    template: "%s | Mirellè Inspo"
   },
-  description: "Explore 2025's top nail art trends, DIY tutorials, seasonal nail designs, and expert tips. Get inspired for Pinterest-worthy nails every mood and occasion.",
+  description: "Get 1,000+ trending nail designs used by 50K+ nail lovers. Chrome, cat claw, milky pastels dominating 2026. DIY tutorials, seasonal collections, press-ons from $3.99. Save yours!",
   keywords: [
-    "nail art ideas 2025",
-    "nail trends 2025",
+    "nail designs 2025",
+    "nail trends 2026",
+    "chrome nails 2025",
+    "cat claw nails",
+    "milky nail trends",
+    "square nails 2026",
+    "3D nail art",
+    "press-on nails cheap",
     "DIY nail tutorials",
     "seasonal nail designs",
-    "Pinterest nails",
-    "modern nail inspiration",
-    "nail care tips",
-    "winter nails 2025",
-    "Christmas nails",
-    "acrylic nails",
-    "gel nail designs",
-    "nail art for beginners",
-    "salon nail ideas",
-    "at-home manicure"
+    "popsicle nail colors",
+    "pearl finish nails",
+    "trending nail ideas",
+    "Pinterest nail inspiration",
+    "TikTok viral nails"
   ],
-  authors: [{ name: "Mirellé Team", url: "https://mirelleinspo.com/about" }],
-  creator: "Mirellé Team",
-  publisher: "Mirellé",
+  authors: [{ name: "Mirellè Inspo Team", url: "https://mirelleinspo.com/about" }],
+  creator: "Mirellè Inspo",
+  publisher: "Mirellè Inspo",
   formatDetection: {
     telephone: false,
     email: false,
@@ -59,16 +60,14 @@ export const metadata: Metadata = {
     'target': 'all',
     'audience': 'all',
     'language': 'en-US',
-    'classification': 'Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle',
+    'classification': 'Beauty, Fashion, Nail Art, DIY Tutorials, Press-On Nails, Lifestyle',
     'referrer': 'always',
     'revisit-after': '7 days',
     
-    // Pinterest optimization (removed domain_verify - DNS already handles it)
     'pinterest-rich-pin': 'true',
     'pinterest:partner': 'true',
     
-    // Global Pinterest catalog hints
-    'og:site_name': 'Mirellé',
+    'og:site_name': 'Mirellè Inspo',
     'og:locale': 'en_US',
     'og:locale:alternate': 'en_GB',
   },
@@ -77,23 +76,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mirelleinspo.com",
-    siteName: "Mirellé",
-    title: "Mirellé | Nail Art Ideas, Trends & Tutorials 2025",
-    description: "Discover the latest nail art trends, creative tutorials, seasonal designs, and Pinterest-inspired nail ideas curated by Mirelle.",
+    siteName: "Mirellè Inspo",
+    title: "Mirellè Inspo | 1K+ Nail Designs Everyone's Saving for 2025-2026",
+    description: "Join 50K+ getting chrome, cat claw & milky pastel nails dominating 2026. Press-ons from $3.99, DIY tutorials, trending designs. Your next obsession awaits!",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mirellé Inspo - Nail Art Inspiration",
+        alt: "Mirellè Inspo - 1000+ trending nail designs for 2025-2026 including chrome, cat claw and square nails",
       },
     ],
   },
   
   twitter: {
     card: "summary_large_image",
-    title: "Mirellé | Nail Art Ideas & Tutorials 2025",
-    description: "Stay ahead with 2025 nail trends, seasonal designs, and Pinterest-worthy tutorials. Expert tips and inspiration for every mood.",
+    title: "Mirellè Inspo | 1K+ Designs 50K+ Are Saving Right Now",
+    description: "Chrome, cat claw, milky pastels taking over 2026. Press-ons $3.99+, DIY tutorials, trending collections. Join 50K+ nail obsessed!",
     images: ["/twitter-image.jpg"],
     creator: "@mirelleinspo",
     site: "@mirelleinspo",
@@ -137,14 +136,6 @@ export const metadata: Metadata = {
     },
   },
 };
-  
-//   verification: {
-//     google: 'YOUR_GOOGLE_VERIFICATION_CODE', // Get from Google Search Console
-//     other: {
-//       'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE',
-//     },
-//   },
-// };
 
 export default function RootLayout({
   children,
@@ -330,16 +321,7 @@ const organizationSchema = {
           `}
         </Script>
 
-        {/* Google AdSense */}
-        <Script
-          id="adsense-script"
-          strategy="afterInteractive"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/a
-          
-          dsbygoogle.js?client=ca-pub-1145734682794444"
-          crossOrigin="anonymous"
-        />
+{/* Google AdSense */}
         
         {/* Preload critical font */}
         <link
@@ -348,8 +330,6 @@ const organizationSchema = {
           as="style"
         />
 
-        {/* Canonical tag */}
-        <link rel="canonical" href="https://mirelleinspo.com" />
 
         {/* Mobile web app meta */}
         <meta name="mobile-web-app-capable" content="yes" />

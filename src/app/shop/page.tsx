@@ -32,46 +32,57 @@ function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
 }
 
 export const metadata: Metadata = {
-  title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirelle',
-  description: 'Salon-quality press-on nails in 10 minutes. Chrome, velvet & glazed 2025 trends last 7-14 days. Reusable 2-10x, zero damage. Shop 200+ designs from fall to festive.',
+  title: 'Press-Ons from $3.99: Chrome, Cat Claw & 2026 Trends',
+  description: 'Salon-quality press-ons in 10min. Chrome, cat claw, square & milky 2026 trends. Last 2-3 weeks, reusable 5-10x, zero damage. 200+ designs. Ships 24hrs. From $3.99!',
   keywords: [
-    'press-on nails',
-    'press on nails 2025',
-    'fake nails',
-    'reusable press-on nails',
-    'chrome nails',
-    'velvet nails',
-    'trendy nail designs',
+    'press-on nails 2026',
+    'chrome press-ons',
+    'cat claw press-on nails',
+    'square press-on nails',
+    'cheap press-on nails',
+    'reusable press-ons',
+    'trending nail designs',
     'salon quality press-ons',
-    'best press-on nails',
-    'affordable nail art'
+    'milky press-on nails',
+    'affordable nail art',
+    'press-ons under $10',
+    'no damage press-ons',
+    'fast shipping press-ons',
+    'DIY press-on application'
   ],
   openGraph: {
-    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs | Mirellé ',
-    description: 'Salon-quality press-on nails that last 7-14 days. 200+ trending designs including chrome, velvet, and seasonal collections. Apply in minutes, reusable 2-10 times.',
+    title: 'Press-Ons from $3.99: 2026 Trending Styles (Chrome, Cat Claw, Square)',
+    description: 'Salon nails in 10min! Chrome, cat claw, square & milky trends. Last 2-3 weeks, reusable 5-10x, zero damage. 200+ designs. Ships 24hrs. Affordable luxury from $3.99!',
     url: 'https://mirelleinspo.com/shop',
-    siteName: 'Mirelle',
+    siteName: 'Mirellè Inspo',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/images/shop-hero-press-on-nails.jpg',
+        url: '/images/shop-hero-press-ons-2026-trends.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mirelle Press-On Nails Collection 2025 - Chrome, Velvet and Trendy Designs'
+        alt: 'Mirellè Inspo Press-On Nails Collection 2026 - Chrome, Cat Claw, Square and Trending Designs from $3.99'
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Press-On Nails 2025: Chrome, Velvet & Trending Designs',
-    description: 'Salon-quality press-on nails in 10 minutes. 200+ designs, lasts 2 weeks, reusable.',
-    images: ['/images/shop-hero-press-on-nails.jpg'],
+    title: 'Press-Ons from $3.99: 2026 Trends (10min Application)',
+    description: 'Chrome, cat claw, square, milky. 200+ designs. Last 2-3wks. Reusable 5-10x. Ships 24hrs. From $3.99 →',
+    images: ['/images/twitter-shop-2026.jpg'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
   },
   alternates: {
     canonical: 'https://mirelleinspo.com/shop',
   },
-}
+  other: {
+    'pin:description': 'Shop salon-quality press-on nails from $3.99! Chrome, cat claw, square & milky 2026 trends. Last 2-3 weeks, reusable, zero damage. 200+ designs. Ships fast!',
+    'pinterest-rich-pin': 'true',
+  },
+};
+
 
 export default async function ShopPage() {
   const categorySlugs = getAllCategorySlugs();

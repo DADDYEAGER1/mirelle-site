@@ -1,293 +1,3 @@
-// import type { Metadata } from 'next';
-// import { generateAboutPageSchema } from '@/lib/generateSchemas';
-
-// export const metadata: Metadata = {
-  
-//   title: "About Mirellé - 50K+ Nail Lovers Trust Our Expert Tips",
-//   description: "Meet the team behind 1,000+ nail designs, 2.5M Pinterest views, and trusted tips. Our mission: Make salon-quality nails accessible to everyone. Join 50K+ DIY-ers!",
-//   keywords: [
-//     "about Mirellé",
-//     "nail inspiration platform",
-//     "nail art community",
-//     "trusted nail tips",
-//     "DIY nail experts",
-//     "nail design curators",
-//     "Mirellé mission",
-//     "nail care education"
-//   ],
-//   authors: [{ name: "Mirelle" }],
-//   creator: "Mirelle",
-//   publisher: "Mirelle",
-//   alternates: {
-//     canonical: 'https://mirelleinspo.com/about',
-//   },
-//   robots: {
-//     index: true,
-//     follow: true,
-//     googleBot: {
-//       index: true,
-//       follow: true,
-//       "max-video-preview": -1,
-//       "max-image-preview": "large",
-//       "max-snippet": -1,
-//     },
-//   },
-//   openGraph: {
-//     title: "About Mirellé - The Team Behind 1,000+ Nail Designs",
-//     description: "Discover how we curate 1,000+ designs, reach 2.5M on Pinterest, and help 50K+ achieve salon nails at home. Our story, mission, and nail obsession explained!",
-//     url: 'https://mirelleinspo.com/about',
-//     type: 'website',
-//     siteName: "Mirelle",
-//     locale: "en_US",
-//     images: [
-//       {
-//         url: "https://mirelleinspo.com/og-default.png",
-//         width: 1200,
-//         height: 630,
-//         alt: "About Mirellé nail inspiration platform trusted by 50K+ nail enthusiasts for expert DIY tips and trending designs",
-//         type: "image/png",
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "About Mirellé - 50K+ Trust Our Nail Expertise",
-//     description: "Meet the team behind 1,000+ designs, 2.5M Pinterest views. Our mission: Salon nails for everyone!",
-//     images: ["https://mirelleinspo.com/og-default.png"],
-//     creator: "@mirelleinspo",
-//     site: "@mirelleinspo",
-//   },
-//   other: {
-//     "pin:description": "Learn about Mirellé - trusted by 50K+ for expert nail tips, 1,000+ designs, 2.5M Pinterest views. Our mission: Make salon nails accessible to everyone!",
-//     "pinterest-rich-pin": "true",
-//     "article:publisher": "https://www.pinterest.com/mirelle_inspo",
-//     "og:see_also": "https://mirelleinspo.com/about",
-//   },
-// };
-// export default function AboutPage() {
-//   const baseUrl = 'https://mirelleinspo.com';
-//   const aboutPageSchema = generateAboutPageSchema();
-
-//   return (
-//     <>
-//       {/* AboutPage Schema */}
-//       <script
-//         type="application/ld+json"
-//         dangerouslySetInnerHTML={{
-//           __html: JSON.stringify(aboutPageSchema),
-//         }}
-//       />
-
-//       <div className="min-h-screen bg-white">
-//         {/* Hero Section */}
-//         <section className="bg-gradient-to-br from-pink-50 via-purple-50 to-white py-20">
-//           <div className="max-w-4xl mx-auto px-4 text-center">
-//             <h1 className="text-5xl md:text-6xl font-bold font-serif text-gray-900 mb-6">
-//               About Mirellé
-//             </h1>
-//             <p className="text-xl md:text-2xl text-gray-700 font-light max-w-3xl mx-auto leading-relaxed">
-//               Your Premier Destination for Expert Nail Art Inspiration, Seasonal Trends, and Professional Education
-//             </p>
-//           </div>
-//         </section>
-
-//         <div className="max-w-4xl mx-auto px-4 py-16">
-//           {/* Who We Are */}
-//           <section className="mb-16">
-//             <h2 className="text-4xl font-bold font-serif text-gray-900 mb-8">Who We Are</h2>
-//             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
-//               <p className="text-xl">
-//                 Mirellé is a leading digital content platform specializing in nail art inspiration, seasonal trend analysis, 
-//                 and expert beauty education. We curate and create comprehensive guides that bridge the gap between 
-//                 professional salon techniques and accessible at-home nail care.
-//               </p>
-//               <p>
-//                 Founded on the principle that exceptional nail art should be accessible to everyone, we've built a 
-//                 trusted resource that serves thousands of beauty enthusiasts, DIY practitioners, and nail care professionals 
-//                 seeking reliable, trend-forward content.
-//               </p>
-//               <p>
-//                 Our platform combines rigorous research, industry expertise, and creative vision to deliver content 
-//                 that educates, inspires, and empowers our community to achieve salon-quality results.
-//               </p>
-//             </div>
-//           </section>
-
-//           {/* What We Do */}
-//           <section className="mb-16">
-//             <h2 className="text-4xl font-bold font-serif text-gray-900 mb-8">What We Do</h2>
-//             <div className="grid md:grid-cols-2 gap-8">
-//               <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-8 border-l-4 border-pink-500">
-//                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Content Curation & Creation</h3>
-//                 <p className="text-gray-700 leading-relaxed">
-//                   We produce comprehensive guides, step-by-step tutorials, and trend analyses covering everything 
-//                   from seasonal nail designs to advanced techniques. Every piece of content is researched, tested, 
-//                   and crafted to meet professional standards.
-//                 </p>
-//               </div>
-
-//               <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 border-l-4 border-purple-500">
-//                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Trend Analysis & Forecasting</h3>
-//                 <p className="text-gray-700 leading-relaxed">
-//                   Our team monitors global beauty trends, seasonal patterns, and emerging techniques to deliver 
-//                   timely, relevant content. We identify what's trending, why it matters, and how to adapt it for 
-//                   real-world application.
-//                 </p>
-//               </div>
-
-//               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border-l-4 border-blue-500">
-//                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Product Research & Recommendations</h3>
-//                 <p className="text-gray-700 leading-relaxed">
-//                   We evaluate nail care products, tools, and accessories based on quality, performance, and value. 
-//                   Our recommendations are thoroughly vetted to ensure we're guiding our audience toward products 
-//                   that deliver results.
-//                 </p>
-//               </div>
-
-//               <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 border-l-4 border-green-500">
-//                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Educational Resources</h3>
-//                 <p className="text-gray-700 leading-relaxed">
-//                   From beginner basics to advanced techniques, we create educational content that breaks down 
-//                   complex processes into accessible, actionable steps. Our goal is to build confidence and 
-//                   competence in nail art practices.
-//                 </p>
-//               </div>
-//             </div>
-//           </section>
-
-//           {/* Our Approach */}
-// <section className="mb-16 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 rounded-2xl p-12 border border-pink-200">
-//   <h2 className="text-4xl font-bold font-serif mb-8 text-gray-900">Our Approach</h2>
-//   <div className="space-y-6 text-lg leading-relaxed">
-//     <div className="flex items-start gap-4">
-//       <span className="text-3xl">🎯</span>
-//       <div>
-//         <h3 className="text-xl font-bold mb-2 text-gray-900">Expert-Driven Content</h3>
-//         <p className="text-gray-700">
-//                     Every guide, tutorial, and recommendation is backed by industry research, professional insights, 
-//                     and real-world testing to ensure accuracy and reliability.
-//                   </p>
-//                 </div>
-//               </div>
-
-//               <div className="flex items-start gap-4">
-//                 <span className="text-3xl">🔍</span>
-//                 <div>
-//                   <h3 className="text-xl font-bold mb-2">Comprehensive Research</h3>
-//                   <p className="text-gray-300">
-//                     We invest significant time in researching techniques, testing products, and analyzing trends 
-//                     before publishing content. Quality and accuracy are non-negotiable.
-//                   </p>
-//                 </div>
-//               </div>
-
-//               <div className="flex items-start gap-4">
-//                 <span className="text-3xl">✨</span>
-//                 <div>
-//                   <h3 className="text-xl font-bold mb-2">Accessible Excellence</h3>
-//                   <p className="text-gray-300">
-//                     We believe exceptional nail art shouldn't require professional training or expensive equipment. 
-//                     Our content makes professional-quality techniques accessible to everyone.
-//                   </p>
-//                 </div>
-//               </div>
-
-//               <div className="flex items-start gap-4">
-//                 <span className="text-3xl">🌍</span>
-//                 <div>
-//                   <h3 className="text-xl font-bold mb-2">Global Perspective</h3>
-//                   <p className="text-gray-300">
-//                     We draw inspiration from international trends, diverse cultural aesthetics, and global beauty 
-//                     movements to offer a rich, varied content experience.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-//           </section>
-
-//           {/* Our Commitment */}
-//           <section className="mb-16">
-//             <h2 className="text-4xl font-bold font-serif text-gray-900 mb-8">Our Commitment</h2>
-//             <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-10">
-//               <ul className="space-y-4 text-lg text-gray-800">
-//                 <li className="flex items-start gap-3">
-//                   <span className="text-pink-600 font-bold text-xl">✓</span>
-//                   <span><strong>Quality First:</strong> Every piece of content meets rigorous editorial standards before publication</span>
-//                 </li>
-//                 <li className="flex items-start gap-3">
-//                   <span className="text-pink-600 font-bold text-xl">✓</span>
-//                   <span><strong>Transparency:</strong> We clearly disclose partnerships, affiliations, and sponsored content</span>
-//                 </li>
-//                 <li className="flex items-start gap-3">
-//                   <span className="text-pink-600 font-bold text-xl">✓</span>
-//                   <span><strong>Safety Standards:</strong> Nail health and safety guidelines are prioritized in all recommendations</span>
-//                 </li>
-//                 <li className="flex items-start gap-3">
-//                   <span className="text-pink-600 font-bold text-xl">✓</span>
-//                   <span><strong>Continuous Improvement:</strong> We regularly update content to reflect new research, techniques, and products</span>
-//                 </li>
-//                 <li className="flex items-start gap-3">
-//                   <span className="text-pink-600 font-bold text-xl">✓</span>
-//                   <span><strong>Community Focus:</strong> We listen to our audience and create content that addresses real needs and questions</span>
-//                 </li>
-//               </ul>
-//             </div>
-//           </section>
-
-//           {/* Our Expertise */}
-//           <section className="mb-16">
-//             <h2 className="text-4xl font-bold font-serif text-gray-900 mb-8">Our Expertise</h2>
-//             <div className="grid md:grid-cols-3 gap-6">
-//               <div className="text-center p-6 bg-white rounded-xl shadow-md">
-//                 <div className="text-5xl font-bold text-pink-600 mb-2">50+</div>
-//                 <p className="text-gray-700 font-semibold">Comprehensive Guides</p>
-//               </div>
-//               <div className="text-center p-6 bg-white rounded-xl shadow-md">
-//                 <div className="text-5xl font-bold text-purple-600 mb-2">1000+</div>
-//                 <p className="text-gray-700 font-semibold">Hours of Research</p>
-//               </div>
-//               <div className="text-center p-6 bg-white rounded-xl shadow-md">
-//                 <div className="text-5xl font-bold text-blue-600 mb-2">24/7</div>
-//                 <p className="text-gray-700 font-semibold">Content Availability</p>
-//               </div>
-//             </div>
-//           </section>
-
-//           {/* Partner With Us */}
-//           <section className="mb-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl p-12 text-white">
-//             <h2 className="text-4xl font-bold font-serif mb-6">Partner With Mirellé</h2>
-//             <p className="text-xl mb-6 leading-relaxed">
-//               We collaborate with beauty brands, professional nail technicians, and industry partners who share 
-//               our commitment to quality and innovation. If you're interested in partnership opportunities, 
-//               collaborations, or content syndication, we'd love to hear from you.
-//             </p>
-//             <div className="space-y-3 text-lg">
-//               <p>📧 <strong>Business Inquiries:</strong>contact@mirelleinspo.com</p>
-//               <p>💼 <strong>Brand Collaborations:</strong> Available for select partnerships</p>
-//               <p>📝 <strong>Content Licensing:</strong> Professional content syndication options available</p>
-//             </div>
-//           </section>
-
-//           {/* Contact Section */}
-//           <section className="text-center">
-//             <h2 className="text-3xl font-bold font-serif text-gray-900 mb-6">Get In Touch</h2>
-//             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-//               Have questions about our content, products we recommend, or partnership opportunities? 
-//               We're here to help.
-//             </p>
-//             <a 
-//               href="/contact" 
-//               className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200"
-//             >
-//               Contact Us
-//             </a>
-//           </section>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
 
 import type { Metadata } from 'next';
 import { generateAboutPageSchema } from '@/lib/generateSchemas';
@@ -295,21 +5,23 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "About Mirellé Inspo | Nail Trend Analyst & Inspiration Curator",
-  description: "Meet the team behind Mirellé Inspo - your trusted source for data-driven nail trends, curated inspiration, and seasonal forecasting. Discover how we analyze 10,000+ designs monthly.",
+  title: "Behind 1K+ Designs 50K+ Trust - The Mirellè Inspo Story",
+  description: "Meet the team curating 2026's hottest nail trends. 1,000+ designs, 2.5M Pinterest views, zero gatekeeping. Our mission: Make trending nails accessible to everyone. Join us!",
   keywords: [
-    "nail trends",
-    "nail art inspiration",
-    "nail design trends",
-    "seasonal nail trends",
-    "nail industry expert",
-    "nail trend analyst",
-    "about Mirellé",
-    "nail art community"
+    "about Mirellè Inspo",
+    "nail inspiration platform",
+    "trusted nail trends 2026",
+    "nail design curators",
+    "DIY nail community",
+    "2026 nail trend experts",
+    "Pinterest nail inspiration",
+    "affordable nail art",
+    "Mirellè Inspo mission",
+    "nail care education"
   ],
-  authors: [{ name: "Mirellé Team" }],
-  creator: "Mirellé",
-  publisher: "Mirellé",
+  authors: [{ name: "Mirellè Inspo Team" }],
+  creator: "Mirellè Inspo",
+  publisher: "Mirellè Inspo",
   alternates: {
     canonical: 'https://mirelleinspo.com/about',
   },
@@ -325,31 +37,38 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About Mirellé Inspo | Nail Trend Analyst & Curator",
-    description: "Discover how we curate and analyze nail trends using data, search patterns, and consumer behavior. Your go-to source for trending nail inspiration.",
+    title: "The Team Behind 1K+ Designs 50K+ Nail Lovers Trust",
+    description: "Discover how we curate 2026's trending nails: chrome, cat claw & square designs. 2.5M Pinterest views. Zero gatekeeping. Mission: Salon nails for everyone at home!",
     url: 'https://mirelleinspo.com/about',
     type: 'website',
-    siteName: "Mirellé",
+    siteName: "Mirellè Inspo",
     locale: "en_US",
     images: [
       {
-        url: "https://mirelleinspo.com/og-default.png",
+        url: "https://mirelleinspo.com/og-about-mirelle-team.png",
         width: 1200,
         height: 630,
-        alt: "About Mirellé Inspo - Nail trend analyst and inspiration curator",
+        alt: "About Mirellè Inspo - Team behind 1000+ trending nail designs trusted by 50K+ enthusiasts for 2026 trends",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Mirellé Inspo | Nail Trend Analyst",
-    description: "Your trusted source for data-driven nail trends and curated inspiration. Discover our approach to trend forecasting.",
-    images: ["https://mirelleinspo.com/og-default.png"],
+    title: "Meet the Team Behind 1K+ Designs 50K+ Save Daily",
+    description: "Curating 2026's hottest trends: chrome, cat claw, square nails. 2.5M Pinterest views. Zero gatekeeping. Mission: trending nails for all!",
+    images: ["https://mirelleinspo.com/twitter-about-team.png"],
     creator: "@mirelleinspo",
     site: "@mirelleinspo",
   },
+  other: {
+    "pin:description": "Meet Mirellè Inspo! Trusted by 50K+ for expert 2026 nail trends. 1,000+ designs, 2.5M Pinterest views. Mission: Make chrome, cat claw & square nails accessible to everyone!",
+    "pinterest-rich-pin": "true",
+    "article:publisher": "https://www.pinterest.com/mirelle_inspo",
+    "og:see_also": "https://mirelleinspo.com/about",
+  },
 };
+
 
 export default function AboutPage() {
   const baseUrl = 'https://mirelleinspo.com';

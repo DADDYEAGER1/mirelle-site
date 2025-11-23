@@ -2,12 +2,50 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Partner With Mirellé - Reach 50K+ Nail Enthusiasts',
-  description: "Collaborate with Mirellé. 50K+ monthly engaged users, 2.5M Pinterest views. Brand partnerships, sponsored content, product features. Let's grow together!",
+  title: 'Partner With Us - Reach 50K+ Nail Obsessed (2.5M Pinterest)',
+  description: "Collab with Mirellè Inspo. 50K+ monthly engaged users, 2.5M Pinterest views, trending 2026 content. Brand partnerships, sponsored posts, product features. Let's grow!",
+  keywords: "brand partnerships nails, nail influencer collaboration, sponsored nail content, product placement 2026, nail marketing partnerships, Pinterest nail campaigns, Instagram nail collabs, TikTok nail partnerships, press-on brand deals, nail blog sponsorship, beauty brand partnerships, nail product reviews",
+  alternates: {
+    canonical: 'https://mirelleinspo.com/work-with-us',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: 'Partner With Mirellé - Reach 50K+ Nail Lovers',
-    description: 'Join brands getting 50K+ impressions monthly. Sponsored posts, product reviews, Pinterest campaigns. Authentic nail community engagement guaranteed.',
+    title: 'Partner With Mirellè Inspo - 50K+ Engaged | 2.5M Pinterest Views',
+    description: 'Join brands reaching 50K+ nail-obsessed users monthly. 2.5M Pinterest views, trending 2026 content. Sponsored posts, product features, authentic community. Grow with us!',
     type: 'website',
+    url: 'https://mirelleinspo.com/work-with-us',
+    siteName: 'Mirellè Inspo',
+    locale: 'en_US',
+    images: [
+      {
+        url: 'https://mirelleinspo.com/og-work-with-us-partnerships.png',
+        width: 1200,
+        height: 630,
+        alt: 'Partner with Mirellè Inspo - Reach 50K+ engaged nail enthusiasts and 2.5M Pinterest monthly views',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Partner With Us - 50K+ Engaged | 2.5M Pinterest Views',
+    description: 'Reach nail-obsessed audience. Sponsored content, product features, authentic engagement. Let\'s grow →',
+    images: ['https://mirelleinspo.com/twitter-partnerships.png'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    'pin:description': 'Partner with Mirellè Inspo! Reach 50K+ engaged users, 2.5M Pinterest views monthly. Brand collaborations, sponsored posts, authentic nail community. Let\'s grow together!',
+    'pinterest-rich-pin': 'true',
   },
 };
 

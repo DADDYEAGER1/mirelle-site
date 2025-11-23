@@ -10,11 +10,49 @@ import InspoShowcase from '@/components/InspoShowcase'; // ✅ NEW
 
 
 export const metadata: Metadata = {
-  title: 'Mirellé - 500+ Nail Designs & Press-Ons from $3.99',
-  description: 'Get 500+ trending nail designs, premium press-ons from $3.99, and salon secrets. DIY tutorials, seasonal collections, expert tips. Join 50K+ nail lovers!',
-  keywords: 'nail inspiration 2025, press on nails, nail art ideas, trending nail designs, seasonal nails, DIY nail tutorials, cheap press ons, nail care tips, chrome nails, gel nail designs, holiday nails, nail products under $10',
+  title: '1,000+ Nail Designs 50K+ Are Obsessed With (Save Before Gone)',
+  description: 'Get chrome, cat claw & square nails dominating 2026. Press-ons from $3.99, trending tutorials, 2.5M Pinterest saves. 50K+ trust us. Your next mani starts here!',
+  keywords: 'trending nail designs 2026, chrome nails, cat claw nails, square nails 2026, press on nails cheap, nail inspiration Pinterest, DIY nail tutorials, seasonal nail collections, milky nails trend, 3D nail art, popsicle nail colors, pearl nails, TikTok viral nails, affordable press-ons, nail designs under $10',
   alternates: {
-    canonical: 'https://mirelleinspo.com',
+    canonical: 'https://mirelleinspo.com/topics',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Complete 2026 Nail Guides: Chrome, Cat Claw, Square & More',
+    description: 'Expert guides for trending 2026 techniques: chrome finishes, cat claw shapes, square filing, milky pastels. Step-by-step for every level. Master trending nails!',
+    type: 'website',
+    url: 'https://mirelleinspo.com/topics',
+    siteName: 'Mirellè Inspo',
+    locale: 'en_US',
+    images: [{
+      url: 'https://mirelleinspo.com/featuretopicbanner-2026.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Mirellè Inspo Complete Nail Guides for 2026 Trending Techniques',
+      type: 'image/jpeg',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '2026 Nail Guides: Chrome, Cat Claw & Square (Expert Tips)',
+    description: 'Master trending techniques with step-by-step guides. Every skill level. Pro secrets inside →',
+    images: ['https://mirelleinspo.com/twitter-topics-2026.jpg'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    'pin:description': 'Complete 2026 nail guides! Master chrome, cat claw, square & milky techniques. Expert step-by-step tutorials for every skill level. Save these guides!',
+    'pinterest-rich-pin': 'true',
   },
 };
 

@@ -3,24 +3,27 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 // SEO Metadata Export
+
 export const metadata: Metadata = {
-  title: 'How to Find Your Skin Undertone: Complete 2025 Guide | Mirellé',
-  description: 'Discover your skin undertone with 5 easy at-home tests. Learn warm vs cool vs neutral undertones, perfect foundation matching, and best nail colors for YOUR skin tone!',
+  title: 'Find Your Perfect Chrome & Cat Claw Colors (Skin Tone Guide 2026)',
+  description: 'Discover YOUR best chrome shades, cat claw colors, square tips! 5 quick undertone tests + matching guide for warm, cool, neutral, olive tones. Look stunning instantly!',
   keywords: [
-    'find your skin undertone',
-    'skin undertone test',
-    'warm cool neutral undertone',
-    'vein test undertone',
-    'foundation matching guide',
     'nail colors for skin tone',
-    'undertone vs skin tone',
-    'olive undertone',
-    'jewelry test skin tone',
-    'best nail polish for undertone'
+    'chrome nails skin undertone',
+    'cat claw colors guide',
+    'find your skin undertone',
+    'best nail polish undertone',
+    'warm cool neutral undertone',
+    'nail colors olive skin',
+    'undertone test 2026',
+    'foundation matching guide',
+    'nail colors dark skin',
+    'nail colors fair skin',
+    'perfect nail shade finder'
   ],
-  authors: [{ name: 'Mirellé Team', url: 'https://mirelleinspo.com/about' }],
-  creator: 'Mirellé',
-  publisher: 'Mirellé',
+  authors: [{ name: 'Mirellè Inspo Team', url: 'https://mirelleinspo.com/about' }],
+  creator: 'Mirellè Inspo',
+  publisher: 'Mirellè Inspo',
   alternates: {
     canonical: 'https://mirelleinspo.com/topics/skin-tones',
   },
@@ -36,25 +39,30 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'How to Find Your Skin Undertone: Complete 2025 Guide',
-    description: 'Master undertone identification with 5 simple tests. Plus discover the best nail colors for warm, cool, neutral, and olive undertones.',
+    title: 'Your Perfect Chrome & Cat Claw Colors by Skin Tone (2026 Guide)',
+    description: 'Stop buying wrong shades! 5 quick undertone tests + complete chrome, cat claw & square color guide. Warm, cool, neutral, olive covered. Look stunning effortlessly!',
     type: 'article',
     url: 'https://mirelleinspo.com/topics/skin-tones',
-    siteName: 'Mirellé',
+    siteName: 'Mirellè Inspo',
     locale: 'en_US',
     images: [{
-      url: 'https://mirelleinspo.com/skin-undertone-hero-diverse-hands-nail-polish.jpg',
+      url: 'https://mirelleinspo.com/skin-undertone-hero-diverse-hands-2026-chrome.jpg',
       width: 1200,
       height: 630,
-      alt: 'Complete guide to finding skin undertone with diverse hands showing nail polish colors for different undertones',
+      alt: 'Complete skin undertone guide for finding perfect chrome and cat claw nail colors in 2026',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Find Your Skin Undertone: Complete 2025 Guide',
-    description: 'Stop buying wrong makeup! Discover your undertone and perfect nail colors',
-    images: ['https://mirelleinspo.com/skin-undertone-hero-diverse-hands-nail-polish.jpg'],
+    title: 'Find YOUR Perfect Chrome Colors (5-Min Undertone Test)',
+    description: 'Stop buying wrong shades! Quick tests + complete color guide. Warm, cool, neutral, olive. Look stunning →',
+    images: ['https://mirelleinspo.com/twitter-skin-tones-2026.jpg'],
     creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    'pin:description': 'Discover your perfect chrome & cat claw colors! 5 quick undertone tests + matching guide for warm, cool, neutral, olive skin. 2026 complete color guide!',
+    'pinterest-rich-pin': 'true',
   },
 };
 

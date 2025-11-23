@@ -18,37 +18,56 @@ import {
 } from '@/lib/inspoSchemas';
 
 export const metadata: Metadata = {
-  title: '1,000+ Nail Designs 2025 - French, Chrome, Ombre & More | Mirellé',
-  description: 'Get 1,000+ nail designs with step-by-step tutorials. French tips, chrome, ombre, glitter - every style, every skill level. New designs added weekly. Save yours now!',
+  title: '1K+ Designs Taking Over 2026 (Chrome, Cat Claw, Square)',
+  description: 'Browse 1,000+ trending designs with tutorials: chrome finishes, cat claw shapes, square tips, milky pastels, 3D art. New designs weekly. 50K+ saving daily. Find yours!',
   keywords: [
-    'nail design inspiration 2025',
-    'nail ideas 2025',
-    'trending nail designs',
-    'french tip nails',
-    'ombre nail ideas',
-    'chrome nails tutorial',
-    'minimalist nail art',
-    'glitter nails designs',
-    'summer nail inspiration',
-    'winter nail designs',
+    'nail design inspiration 2026',
+    'chrome nails 2026',
+    'cat claw nail shape',
+    'square nails trending',
+    'milky nail designs',
+    '3D nail art ideas',
+    'popsicle nail colors',
+    'pearl finish nails',
+    'sheer nail trends',
+    'polka dot nails 2026',
+    'line art nails',
+    'jewel embellished nails',
+    'trending nail inspiration',
+    'Pinterest viral nails',
+    'TikTok nail trends'
   ],
   alternates: {
     canonical: 'https://mirelleinspo.com/inspo',
   },
   openGraph: {
-    title: '1,000+ Nail Designs 2025 - French, Chrome, Ombre & More',
-    description: 'Browse 1,000+ nail designs with tutorials. Every style, skill level. New designs weekly!',
+    title: '1K+ Designs Dominating 2026 - Chrome, Cat Claw & More',
+    description: 'Discover trending nail designs with step-by-step tutorials: chrome, cat claw, square, milky pastels. New designs weekly. 50K+ saving daily. Your next obsession awaits!',
     url: 'https://mirelleinspo.com/inspo',
-    siteName: 'Mirellé',
+    siteName: 'Mirellè Inspo',
     type: 'website',
     images: [
       {
-        url: 'https://mirelleinspo.com/images/inspo-hero.jpg',
+        url: 'https://mirelleinspo.com/images/inspo-hero-2026-trending.jpg',
         width: 1200,
         height: 630,
-        alt: 'Gallery of 1000+ nail designs including French tips, chrome, ombre and more',
+        alt: 'Gallery of 1000+ trending nail designs for 2026 including chrome, cat claw, square nails and milky pastels',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "1K+ Designs Everyone's Obsessed With (2026 Trends)",
+    description: "Chrome, cat claw, square, milky pastels. 1,000+ designs + tutorials. New weekly. Save yours →",
+    images: ['https://mirelleinspo.com/twitter-inspo-2026.jpg'],
+    creator: '@mirelleinspo',
+    site: '@mirelleinspo',
+  },
+  other: {
+    'pin:description': 'Explore 1,000+ trending nail designs for 2026! Chrome, cat claw, square nails, milky pastels, 3D art. Tutorials included. 50K+ saving daily!',
+    'pinterest-rich-pin': 'true',
+    'pinterest:category': 'Nail Design Inspiration',
+    'pinterest:board_suggestion': '2026 Trending Nail Ideas',
   },
 };
 

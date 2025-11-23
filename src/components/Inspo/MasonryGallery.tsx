@@ -12,6 +12,18 @@ interface MasonryGalleryProps {
 export default function MasonryGallery({ images, onImageClick }: MasonryGalleryProps) {
   const [likedImages, setLikedImages] = useState<Set<string>>(new Set());
   const [savedImages, setSavedImages] = useState<Set<string>>(new Set());
+  
+  // Generate fake but realistic view counts (5k-50k range)
+  const getViewCount = (imageId: string) => {
+    const hash = imageId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    return Math.floor(5000 + (hash % 45000)); // Range: 5,000 - 50,000
+  };
+  
+  // Generate fake like counts (500-5k range)
+  const getLikeCount = (imageId: string) => {
+    const hash = imageId.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    return Math.floor(500 + (hash % 4500)); // Range: 500 - 5,000
+  };
 
   // Load saved/liked from localStorage on mount
   useEffect(() => {
@@ -97,9 +109,26 @@ export default function MasonryGallery({ images, onImageClick }: MasonryGalleryP
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <p className="text-white text-sm font-medium line-clamp-2">
+                      <p className="text-white text-sm font-medium line-clamp-2 mb-3">
                         {image.alt}
                       </p>
+                      
+                      {/* Stats */}
+                      <div className="flex items-center gap-4 text-white/80 text-xs">
+                        <span className="flex items-center gap-1">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                          </svg>
+                          {getViewCount(image.id).toLocaleString()}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                          </svg>
+                          {getLikeCount(image.id).toLocaleString()}
+                        </span>
+                      </div>
                     </div>
                   </div>
 

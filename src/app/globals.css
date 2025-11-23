@@ -264,46 +264,21 @@ hr {
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0.95) translateY(20px);
+    transform: scale(0.95);
   }
   to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulseSubtle {
-  0%, 100% {
     opacity: 1;
     transform: scale(1);
-  }
-  50% {
-    opacity: 0.9;
-    transform: scale(1.02);
   }
 }
 
 .modal-backdrop {
   animation: fadeIn 0.3s ease-out;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .modal-container {
   animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.animate-pulse-subtle {
-  animation: pulseSubtle 2s ease-in-out infinite;
 }
 
 /* Smooth scroll behavior */
@@ -317,17 +292,17 @@ html {
 }
 
 .modal-container::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
 
 .modal-container::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
 .modal-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Line clamp utilities */
@@ -343,29 +318,6 @@ html {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-/* Glass morphism utilities */
-.glass-light {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.glass-dark {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Premium gradient text */
-.gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 /* Hover lift effect */

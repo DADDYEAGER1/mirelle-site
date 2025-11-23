@@ -6,7 +6,10 @@ import Link from 'next/link';
 import CategoryHero from './CategoryHero';
 import FilterBar from './FilterBar';
 import MasonryGallery from './MasonryGallery';
+import DesignTips from './DesignTips';
 import FAQSection from './FAQSection';
+import ShopCTA from './ShopCTA';
+import RelatedContent from './RelatedContent';
 import type { DesignData, DesignImage } from '@/types/inspo';
 import { filterImages, sortImages, type FilterState, type SortOption } from '@/lib/inspoFilters';
 
@@ -56,6 +59,30 @@ export default function CategoryClient({
 
       {/* Gallery */}
       <MasonryGallery images={displayedImages} onImageClick={setSelectedImage} />
+
+      {/* Design Tips Section */}
+      {designData.styleGuide && designData.styleGuide.length >= 3 && (
+        <DesignTips
+          categoryName={designData.displayName}
+          tips={[
+            {
+              icon: '🎯',
+              title: designData.styleGuide[0] || 'Application Technique',
+              description: 'Master the fundamentals with proper nail prep, base coat application, and curing times for long-lasting results.',
+            },
+            {
+              icon: '💡',
+              title: designData.styleGuide[1] || 'Color Selection',
+              description: 'Choose complementary shades that enhance your skin tone and match your style preferences for stunning results.',
+            },
+            {
+              icon: '⭐',
+              title: designData.styleGuide[2] || 'Maintenance Tips',
+              description: 'Keep your manicure looking fresh with daily cuticle oil, gentle care, and touch-ups when needed.',
+            },
+          ]}
+        />
+      )}
 
       {/* About This Style Section */}
       {designData.styleGuide && designData.styleGuide.length > 0 && (
@@ -137,6 +164,12 @@ export default function CategoryClient({
           faqs={faqs}
         />
       )}
+
+      {/* Shop CTA */}
+      <ShopCTA categoryName={designData.displayName} categorySlug={designData.slug} />
+
+      {/* Related Content */}
+      <RelatedContent categorySlug={designData.slug} />
 
       {/* Related Categories */}
       {relatedDesigns.length > 0 && (

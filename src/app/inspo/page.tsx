@@ -2,8 +2,11 @@
 import { Metadata } from 'next';
 import InspoHero from '@/components/Inspo/InspoHero';
 import StatsBar from '@/components/Inspo/StatsBar';
+import FeaturedCarousel from '@/components/Inspo/FeaturedCarousel';
 import CategoryGrid from '@/components/Inspo/CategoryGrid';
+import AboutInspo from '@/components/Inspo/AboutInspo';
 import FAQSection from '@/components/Inspo/FAQSection';
+import RelatedContent from '@/components/Inspo/RelatedContent';
 import { getAllDesignSlugs, getDesignData, getDesignsByCategory } from '@/lib/inspo';
 import {
   generateOrganizationSchema,
@@ -136,8 +139,14 @@ export default async function InspoPage() {
         {/* Stats Bar */}
         <StatsBar />
 
+        {/* Featured Carousel */}
+        <FeaturedCarousel designs={designs.slice(0, 6)} />
+
         {/* Category Grid */}
         <CategoryGrid designs={designs} designsByCategory={designsByCategory} />
+
+        {/* About Inspo Section */}
+        <AboutInspo />
 
         {/* Features Section */}
         <section className="bg-white py-20 border-y border-gray-100">
@@ -194,6 +203,9 @@ export default async function InspoPage() {
 
         {/* FAQ Section */}
         <FAQSection faqs={mainFAQs} />
+
+        {/* Related Content */}
+        <RelatedContent />
 
         {/* Newsletter CTA */}
         <section className="py-20 bg-gradient-to-br from-burgundy-50 to-pink-50">

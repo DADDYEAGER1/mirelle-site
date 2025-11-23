@@ -1,13 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import type { CategoryData, Product } from '@/types/shop';
 import { calculateDiscount } from '@/lib/shop';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ShopCategoryTLDR from './ShopCategoryTLDR';
+import ProductModal from './ProductModal';
 
 interface ShopClientProps {
   categoryData: CategoryData;
@@ -30,6 +31,7 @@ export default function ShopClient({
   const [filter, setFilter] = useState<'all' | 'new' | 'trending' | 'sale'>('all');
   const [showAll, setShowAll] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const filteredProducts = initialProducts.filter((product) => {
     if (filter === 'all') return true;
@@ -46,16 +48,61 @@ export default function ShopClient({
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
+  // Handle product modal with URL management
+  const handleProductClick = (product: Product, e: React.MouseEvent) => {
+    e.preventDefault();
+    
+    // Update URL without page reload
+    const productUrl = `/shop/${categoryData.slug}/${product.id}`;
+    window.history.pushState({ productId: product.id }, '', productUrl);
+    
+    setSelectedProduct(product);
+  };
+
+  const handleCloseModal = () => {
+    // Go back to category page
+    window.history.back();
+    setSelectedProduct(null);
+  };
+
+  // Handle browser back/forward buttons
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      if (event.state?.productId) {
+        const product = initialProducts.find(p => p.id.toString() === event.state.productId.toString());
+        if (product) {
+          setSelectedProduct(product);
+        }
+      } else {
+        setSelectedProduct(null);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [initialProducts]);
+
+  // Check URL on mount for direct product links
+  useEffect(() => {
+    const pathParts = window.location.pathname.split('/');
+    const productIdFromUrl = pathParts[pathParts.length - 1];
+    
+    if (productIdFromUrl && !isNaN(Number(productIdFromUrl))) {
+      const product = initialProducts.find(p => p.id.toString() === productIdFromUrl);
+      if (product) {
+        setSelectedProduct(product);
+      }
+    }
+  }, [initialProducts]);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-editorial-cream to-white">
-      {/* Breadcrumbs */}
       <Breadcrumbs 
         items={breadcrumbItems}
         currentPage={categoryData.displayName}
         includeSchema={false}
       />
 
-      {/* TL;DR Hero Section */}
       <ShopCategoryTLDR
         title={categoryData.displayName}
         year={categoryData.year}
@@ -64,7 +111,6 @@ export default function ShopClient({
         tldrSummary={categoryData.tldr?.summary}
         tldrKeyTakeaways={categoryData.tldr?.keyTakeaways}
       />
-
 
       {/* Filter Bar */}
       <section id="products-section" className="max-w-7xl mx-auto px-4 py-8">
@@ -96,30 +142,28 @@ export default function ShopClient({
       {/* Products Grid */}
       <section className="max-w-7xl mx-auto px-4 pb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-{displayProducts.map((product, index) => {
-  const discount = calculateDiscount(product.originalPrice, product.price);
-  const isAboveFold = index < 3; // First 3 products
+          {displayProducts.map((product, index) => {
+            const discount = calculateDiscount(product.originalPrice, product.price);
+            const isAboveFold = index < 3;
 
-  return (
-              <a
+            return (
+              <div
                 key={product.id}
-                href={product.affiliateUrl}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                onClick={(e) => handleProductClick(product, e)}
+                className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer"
               >
-      <div className="relative aspect-square overflow-hidden bg-gray-100">
-        <Image
-          src={product.image}
-          alt={product.imageAlt || product.description || product.name}
-          width={800}
-          height={800}
-          quality={85}
-          priority={isAboveFold}  // ⚡ Load first 3 immediately
-          loading={isAboveFold ? undefined : "lazy"}  // Lazy load rest
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-        />
+                <div className="relative aspect-square overflow-hidden bg-gray-100">
+                  <Image
+                    src={product.image}
+                    alt={product.imageAlt || product.description || product.name}
+                    width={800}
+                    height={800}
+                    quality={85}
+                    priority={isAboveFold}
+                    loading={isAboveFold ? undefined : "lazy"}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                   <div className="absolute top-2 left-2 flex flex-col gap-1">
                     {product.isNew && (
                       <span className="px-2 py-1 bg-blue-500 text-white text-xs font-bold rounded">
@@ -174,7 +218,7 @@ export default function ShopClient({
                     {product.cta}
                   </button>
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>
@@ -190,6 +234,15 @@ export default function ShopClient({
           </div>
         )}
       </section>
+
+      {/* Product Modal */}
+      {selectedProduct && (
+        <ProductModal
+          product={selectedProduct}
+          onClose={handleCloseModal}
+          category={categoryData.slug}
+        />
+      )}
 
       {/* FAQ Section */}
       {faqs && faqs.length > 0 && (
@@ -287,7 +340,7 @@ export default function ShopClient({
 
       {/* Trust Signals */}
       <section className="max-w-7xl mx-auto px-4 py-16 border-t border-gray-200">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
             <div className="text-4xl mb-3">💯</div>
             <h3 className="font-semibold text-gray-900 mb-2">Quality Guaranteed</h3>

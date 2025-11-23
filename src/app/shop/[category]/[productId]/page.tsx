@@ -70,7 +70,7 @@ export async function generateMetadata({
     openGraph: {
       title: seo.title,
       description: seo.description,
-      type: 'product',
+      type: 'website',
       url: productUrl,
       siteName: 'Mirellé',
       locale: 'en_US',

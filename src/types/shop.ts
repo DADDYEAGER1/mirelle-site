@@ -1,26 +1,88 @@
-
+// src/types/shop.ts - ENHANCED VERSION
 
 export interface Product {
   id: string;
   name: string;
-  price: string; // Changed to string to match "$X.XX" format
-  originalPrice: string; // Added - was missing
+  price: string;
+  originalPrice: string;
   image: string;
-  imageAlt?: string;  // ⬅️ ADD THIS
-  affiliateUrl: string; // Changed from affiliateLink
+  imageAlt?: string;
+  affiliateUrl: string;
   category: string;
   isNew?: boolean;
   isTrending?: boolean;
   rating?: number;
+  reviewCount?: number;
   description?: string;
-  cta: string; // Added - was missing
-  stockStatus?: 'in-stock' | 'low-stock' | 'out-of-stock'; // Added - was missing
+  cta: string;
+  stockStatus?: 'in-stock' | 'low-stock' | 'out-of-stock';
+  brand?: string;
+  sku?: string;
+}
+
+// 🆕 NEW: Extended product interface for individual product pages
+export interface ProductPageData extends Product {
+  slug: string; // URL-friendly version of name
+  seo: {
+    title: string;
+    description: string;
+    keywords: string[];
+    ogImage: string;
+  };
+  
+  // Rich 400-word description
+  fullDescription: {
+    html: string;
+    plainText: string;
+  };
+  
+  // Product specifications
+  specifications?: {
+    packageContents?: string;
+    material?: string;
+    finish?: string;
+    durability?: string;
+    applicationTime?: string;
+    reusable?: string;
+    sizes?: string;
+  };
+  
+  // Related content for internal linking
+  relatedProducts: string[]; // Array of product IDs
+  relatedCategories: string[]; // Array of category slugs
+  
+  internalLinks: {
+    blog?: {
+      title: string;
+      slug: string;
+      image: string;
+      excerpt?: string;
+    };
+    inspo?: {
+      title: string;
+      slug: string;
+      image: string;
+      category?: string;
+    };
+    topic?: {
+      title: string;
+      slug: string;
+      image: string;
+      description?: string;
+    };
+  };
+  
+  // FAQs for this specific product
+  faqs?: Array<{
+    question: string;
+    answer: string;
+  }>;
 }
 
 export interface CategorySEO {
   title: string;
   description: string;
-  keywords: string; // FIXED: Match actual JSON structure (comma-separated string)
+  keywords: string;
   ogImage: string;
 }
 
@@ -32,14 +94,12 @@ export interface HeroSection {
   floatingEmojis: string[];
 }
 
-
 export interface RelatedCategory {
   name: string;
   slug: string;
   image: string;
 }
 
-// FAQ interfaces
 export interface FAQ {
   question: string;
   answer: string;
@@ -51,14 +111,12 @@ export interface FAQData {
   faqs: FAQ[];
 }
 
-// Category Description interface
 export interface CategoryDescription {
   category: string;
   html: string;
   perfectFor?: string[];
 }
 
-// Rating data for schema
 export interface CategoryRating {
   rating: number;
   reviews: number;
@@ -67,28 +125,27 @@ export interface CategoryRating {
 export interface CategoryData {
   slug: string;
   displayName: string;
-  season: string; // Added - used in page.tsx
-  year: number; // Added - used in ShopClient
+  season: string;
+  year: number;
   description: string;
   heroImage: string;
   gradientFrom: string;
   gradientVia: string;
   gradientTo: string;
   emojis: string[];
-  ctas: string[]; // Added - in JSON but not type
+  ctas: string[];
   seo: CategorySEO;
-  relatedCategories: string[]; // Changed to string[] - actual slugs
-  whyChooseUs?: string[];  
+  relatedCategories: string[];
+  whyChooseUs?: string[];
   tldr?: {
     summary: string[];
     keyTakeaways?: string[];
   };
 }
 
-// Complete category page data
 export interface CompleteCategoryData extends CategoryData {
   faqs?: FAQ[];
-  categoryDescription?: CategoryDescription; // FIXED: Renamed to avoid conflict with CategoryData.description
+  categoryDescription?: CategoryDescription;
   rating?: CategoryRating;
   productCount?: number;
   priceRange?: {
@@ -97,7 +154,6 @@ export interface CompleteCategoryData extends CategoryData {
   };
 }
 
-// Added missing interfaces for shop.ts
 export interface CategoriesData {
   categories: {
     [slug: string]: CategoryData;
@@ -106,4 +162,13 @@ export interface CategoriesData {
 
 export interface ProductsData {
   products: Product[];
+}
+
+// 🆕 NEW: Product page data structure
+export interface ProductPageDataCollection {
+  category: string;
+  totalProducts: number;
+  products: {
+    [id: string]: ProductPageData;
+  };
 }

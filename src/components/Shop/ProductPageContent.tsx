@@ -15,6 +15,7 @@ interface ProductPageContentProps {
   category: string;
   categoryName: string;
   breadcrumbItems: Array<{ label: string; href: string }>;
+  relatedProducts?: ProductPageData[];
 }
 
 export default function ProductPageContent({
@@ -22,6 +23,7 @@ export default function ProductPageContent({
   category,
   categoryName,
   breadcrumbItems,
+  relatedProducts = [],
 }: ProductPageContentProps) {
   const discountPercent = calculateDiscount(product.originalPrice, product.price);
   const hasDiscount = discountPercent > 0;
@@ -202,12 +204,87 @@ export default function ProductPageContent({
       )}
 
       {/* Related Products */}
-      {product.relatedProducts && product.relatedProducts.length > 0 && (
-        <RelatedProductsGrid
-          category={category}
-          productIds={product.relatedProducts}
-          title="You May Also Like"
-        />
+      {relatedProducts && relatedProducts.length > 0 && (
+        <section className="container mx-auto px-4 pb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            You May Also Like
+          </h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {relatedProducts.map((relatedProduct) => {
+              const discount = calculateDiscount(relatedProduct.originalPrice, relatedProduct.price);
+              
+              return (
+                <Link
+                  key={relatedProduct.id}
+                  href={`/shop/${category}/${relatedProduct.slug}`}
+                  className="group relative bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                >
+                  {/* Image */}
+                  <div className="relative aspect-square overflow-hidden">
+                    <Image
+                      src={relatedProduct.image}
+                      alt={relatedProduct.imageAlt || relatedProduct.name}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    
+                    {/* Badges */}
+                    <div className="absolute top-2 left-2 flex flex-col gap-1">
+                      {relatedProduct.isNew && (
+                        <span className="bg-pink-500 text-white px-2 py-0.5 rounded-full text-xs font-semibold">
+                          NEW
+                        </span>
+                      )}
+                      {relatedProduct.isTrending && (
+                        <span className="bg-purple-500 text-white px-2 py-0.5 rounded-full text-xs font-semibold">
+                          HOT
+                        </span>
+                      )}
+                      {discount > 0 && (
+                        <span className="bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-semibold">
+                          -{discount}%
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Info */}
+                  <div className="p-4">
+                    <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-pink-600 transition-colors">
+                      {relatedProduct.name}
+                    </h3>
+                    
+                    {/* Rating */}
+                    {relatedProduct.rating && (
+                      <div className="flex items-center gap-1 mb-2">
+                        <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        <span className="text-sm text-gray-600">{relatedProduct.rating}</span>
+                      </div>
+                    )}
+
+                    {/* Price */}
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-lg font-bold text-pink-600">
+                        {relatedProduct.price}
+                      </span>
+                      {discount > 0 && (
+                        <span className="text-sm text-gray-400 line-through">
+                          {relatedProduct.originalPrice}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* CTA */}
+                    <div className="mt-3 text-sm text-pink-600 font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                      View Details <ArrowRight className="w-4 h-4" />
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
       )}
 
       {/* Internal Links Section */}
@@ -217,29 +294,37 @@ export default function ProductPageContent({
         topic={product.internalLinks.topic}
       />
 
-      {/* Related Categories */}
-      {product.relatedCategories && product.relatedCategories.length > 0 && (
-        <section className="container mx-auto px-4 pb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Explore More Collections
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {product.relatedCategories.map((catSlug) => (
-              <Link
-                key={catSlug}
-                href={`/shop/${catSlug}`}
-                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="aspect-video bg-gradient-to-br from-pink-400 to-purple-600 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold capitalize">
-                    {catSlug.replace('-', ' ')}
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+      {/* Related Categories - Only show if valid categories exist */}
+      {(() => {
+        const validCategories = product.relatedCategories?.filter((catSlug) => 
+          ['fall', 'christmas', 'winter', 'trendy', 'new-year', 'halloween'].includes(catSlug)
+        ) || [];
+        
+        if (validCategories.length === 0) return null;
+        
+        return (
+          <section className="container mx-auto px-4 pb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Explore More Collections
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {validCategories.map((catSlug) => (
+                <Link
+                  key={catSlug}
+                  href={`/shop/${catSlug}`}
+                  className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+                >
+                  <div className="aspect-video bg-gradient-to-br from-pink-400 to-purple-600 flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold capitalize">
+                      {catSlug.replace('-', ' ')}
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
 
       {/* FAQs */}
       {product.faqs && product.faqs.length > 0 && (

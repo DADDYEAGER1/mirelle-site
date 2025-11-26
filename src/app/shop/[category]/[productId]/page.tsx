@@ -1,17 +1,93 @@
-// src/app/shop/[category]/[productId]/page.tsx
+// src/app/shop/[category]/[productId]/page.tsx - CORRECTED VERSION
 
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ProductPageContent from '@/components/Shop/ProductPageContent';
 import {
-  getProductData,
-  getCategoryProductIds,
   generateProductSchema,
   generateProductBreadcrumbSchema,
   generateProductFAQSchema,
   getCategoryDisplayName,
 } from '@/lib/shopProducts';
 import { getAllCategorySlugs } from '@/lib/shop';
+import { ProductPageData } from '@/types/shop';
+
+// Helper function to get product by slug from JSON
+async function getProductBySlug(
+  category: string,
+  slug: string
+): Promise<ProductPageData | null> {
+  try {
+    const productsData = await import(
+      `@/content/shop-products/${category}.json`
+    );
+    
+    // Loop through all products to find matching slug
+    const productIds = Object.keys(productsData.products);
+    
+    for (const id of productIds) {
+      const product = productsData.products[id];
+      if (product.slug === slug) {
+        return product as ProductPageData;
+      }
+    }
+    
+    return null;
+  } catch (error) {
+    console.error(`Error loading product ${slug} from ${category}:`, error);
+    return null;
+  }
+}
+
+// Helper function to get all product slugs for a category
+async function getCategoryProductSlugs(category: string): Promise<string[]> {
+  try {
+    const productsData = await import(
+      `@/content/shop-products/${category}.json`
+    );
+    
+    const slugs: string[] = [];
+    const productIds = Object.keys(productsData.products);
+    
+    for (const id of productIds) {
+      const product = productsData.products[id];
+      if (product.slug) {
+        slugs.push(product.slug);
+      }
+    }
+    
+    return slugs;
+  } catch (error) {
+    console.error(`Error loading product slugs for ${category}:`, error);
+    return [];
+  }
+}
+
+// Helper function to get related products by IDs
+async function getRelatedProductsByIds(
+  category: string,
+  productIds: string[]
+): Promise<ProductPageData[]> {
+  try {
+    const productsData = await import(
+      `@/content/shop-products/${category}.json`
+    );
+    
+    const relatedProducts: ProductPageData[] = [];
+    
+    for (const id of productIds) {
+      const product = productsData.products[id];
+      if (product) {
+        relatedProducts.push(product as ProductPageData);
+      }
+    }
+    
+    return relatedProducts;
+  } catch (error) {
+    console.error(`Error loading related products for ${category}:`, error);
+    return [];
+  }
+}
 
 // Generate static params for all products
 export async function generateStaticParams() {
@@ -19,16 +95,13 @@ export async function generateStaticParams() {
   const params: Array<{ category: string; productId: string }> = [];
 
   for (const category of categorySlugs) {
-    const productIds = await getCategoryProductIds(category);
+    const productSlugs = await getCategoryProductSlugs(category);
     
-    for (const productId of productIds) {
-      const productData = await getProductData(category, productId);
-      if (productData) {
-        params.push({
-          category,
-          productId: productData.slug,
-        });
-      }
+    for (const slug of productSlugs) {
+      params.push({
+        category,
+        productId: slug, // This is actually the slug
+      });
     }
   }
 
@@ -43,17 +116,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category, productId } = await params;
   
-  // Find product by slug
-  const productIds = await getCategoryProductIds(category);
-  let product = null;
-  
-  for (const id of productIds) {
-    const p = await getProductData(category, id);
-    if (p && p.slug === productId) {
-      product = p;
-      break;
-    }
-  }
+  // productId in the URL is actually the slug
+  const product = await getProductBySlug(category, productId);
 
   if (!product) {
     return { title: 'Product Not Found' };
@@ -140,23 +204,19 @@ export default async function ProductPage({
 }) {
   const { category, productId } = await params;
 
-  // Find product by slug
-  const productIds = await getCategoryProductIds(category);
-  let product = null;
-  
-  for (const id of productIds) {
-    const p = await getProductData(category, id);
-    if (p && p.slug === productId) {
-      product = p;
-      break;
-    }
-  }
+  // productId in the URL is actually the slug
+  const product = await getProductBySlug(category, productId);
 
   if (!product) {
     notFound();
   }
 
   const categoryName = getCategoryDisplayName(category);
+
+  // Fetch related products
+  const relatedProducts = product.relatedProducts 
+    ? await getRelatedProductsByIds(category, product.relatedProducts.slice(0, 5))
+    : [];
 
   // Generate schemas
   const productSchema = generateProductSchema(product, category);
@@ -209,6 +269,7 @@ export default async function ProductPage({
         category={category}
         categoryName={categoryName}
         breadcrumbItems={breadcrumbItems}
+        relatedProducts={relatedProducts}
       />
     </>
   );

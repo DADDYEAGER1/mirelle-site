@@ -22,14 +22,19 @@ export function getCategoryData(slug: string): CategoryData | null {
  */
 export async function getCategoryProducts(slug: string): Promise<Product[]> {
   try {
-    const productsData = await import(`@/content/shop-products/${slug}.json`) as ProductsData;
+    const productsData = await import(`@/content/shop-products/${slug}.json`) as any;
+    
+    // Convert object to array
+    if (productsData.products && typeof productsData.products === 'object') {
+      return Object.values(productsData.products);
+    }
+    
     return productsData.products || [];
   } catch (error) {
     console.error(`Error loading products for category: ${slug}`, error);
     return [];
   }
 }
-
 /**
  * Get all category slugs for static generation
  */

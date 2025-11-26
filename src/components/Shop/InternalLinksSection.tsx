@@ -20,27 +20,63 @@ interface InternalLinksSectionProps {
   topic?: InternalLink;
 }
 
+// Valid internal links - only these will be shown
+const VALID_LINKS = {
+  blog: [
+    'christmas-nail-designs-2025',
+    'goddess-nails-2025',
+    'holiday-vacation-nails-travel-guide',
+    'new-year-nails-2025',
+    'valentine-nails-2026',
+    'vampire-nails-2025',
+    'wedding-nail-designs',
+    'winter-nails-2025',
+    'thanksgiving-nails-2025',
+    'gold-silver-chrome-christmas-nails-2025',
+    'short-christmas-nails-2025',
+    'red-green-christmas-nails-2025',
+    'white-christmas-nails-snowflake-designs-2025',
+    'blooming-gel-nails'
+  ],
+  inspo: [
+    'snowflake-winter-nails',
+    'velvet-cat-eye-winter-nails',
+    'minimalist-winter-nails',
+    'chocolate-brown-winter-nails',
+    'chrome-metallic-winter-nails',
+    'burgundy-wine-winter-nails'
+  ],
+  topics: [
+    'nail-care-guide',
+    'skin-tones',
+    'modern-women',
+    'nail-art-guides',
+    'seasonal-trends'
+  ]
+};
+
 export default function InternalLinksSection({
   blog,
   inspo,
   topic,
 }: InternalLinksSectionProps) {
+  // Filter and validate links
   const links = [
-    blog && {
+    blog && VALID_LINKS.blog.includes(blog.slug) && {
       ...blog,
       href: `/blog/${blog.slug}`,
       icon: BookOpen,
       label: 'Related Article',
       gradient: 'from-blue-500 to-cyan-500',
     },
-    inspo && {
+    inspo && VALID_LINKS.inspo.includes(inspo.slug) && {
       ...inspo,
       href: `/inspo/${inspo.slug}`,
       icon: Sparkles,
       label: 'Nail Inspiration',
       gradient: 'from-pink-500 to-rose-500',
     },
-    topic && {
+    topic && VALID_LINKS.topics.includes(topic.slug) && {
       ...topic,
       href: `/topics/${topic.slug}`,
       icon: Lightbulb,

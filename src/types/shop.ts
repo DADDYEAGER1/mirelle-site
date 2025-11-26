@@ -4,6 +4,7 @@ export interface Product {
   id: string;
   name: string;
   price: string;
+  slug?: string;  // ← ADD THIS LINE
   originalPrice: string;
   image: string;
   imageAlt?: string;

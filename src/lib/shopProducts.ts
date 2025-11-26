@@ -14,7 +14,7 @@ export async function getProductData(
 ): Promise<ProductPageData | null> {
   try {
     const productsData = await import(
-      `@/content/shop-product-pages/${category}.json`
+      `@/content/shop-products/${category}.json`
     );
     
     const product = productsData.products[productId];
@@ -34,7 +34,7 @@ export async function getProductData(
 export async function getCategoryProductIds(category: string): Promise<string[]> {
   try {
     const productsData = await import(
-      `@/content/shop-product-pages/${category}.json`
+      `@/content/shop-products/${category}.json`
     );
     
     return Object.keys(productsData.products);
@@ -54,7 +54,7 @@ export async function getRelatedProducts(
 ): Promise<Product[]> {
   try {
     const productsData = await import(
-      `@/content/shop-product-pages/${category}.json`
+      `@/content/shop-products/${category}.json`
     );
     
     const relatedProducts: Product[] = [];

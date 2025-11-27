@@ -3411,10 +3411,10 @@ export default function NailArtGuides() {
                 </a>
               </div>
             </div>
-
           </div>
-        </section>
-      </div>
-    </>
-  );
+        </div>  <!-- ADD THIS EXTRA </div> -->
+      </section>
+    </div>
+  </>
+);
 }

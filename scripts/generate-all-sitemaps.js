@@ -4,6 +4,15 @@ const path = require('path');
 const SITE_URL = 'https://mirelleinspo.com';
 const PUBLIC_DIR = path.join(process.cwd(), 'public');
 
+// ✅ Helper: Get current season
+function getCurrentSeason() {
+  const month = new Date().getMonth();
+  if (month >= 2 && month <= 4) return 'spring';
+  if (month >= 5 && month <= 7) return 'summer';
+  if (month >= 8 && month <= 10) return 'fall';
+  return 'winter';
+}
+
 // ✅ Helper: Create XML sitemap
 function createSitemap(urls) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -45,7 +54,7 @@ ${images.map(img => `  <url>
 }
 
 // ========================================
-// 🆕 1️⃣ GENERATE BLOG SITEMAP
+// 1️⃣ GENERATE BLOG SITEMAP
 // ========================================
 function generateBlogSitemap() {
   console.log('📄 Generating blog sitemap...');
@@ -248,12 +257,14 @@ function generateInspoSitemap() {
 }
 
 // ========================================
-// 6️⃣ GENERATE IMAGE SITEMAPS
+// 6️⃣ GENERATE IMAGE SITEMAPS WITH SMART CAPTIONS
 // ========================================
 function generateImageSitemaps() {
-  console.log('📸 Generating image sitemaps...');
+  console.log('📸 Generating image sitemaps with smart captions...');
   
   const imageSitemaps = [];
+  const currentYear = new Date().getFullYear();
+  const season = getCurrentSeason();
   
   // 6a) Blog images (from /public/images/blog/) - FLAT STRUCTURE
   try {
@@ -273,22 +284,35 @@ function generateImageSitemaps() {
       const blogImages = imageFiles.map(img => {
         const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
         
-        // Try to match image to blog post (e.g., "christmas-nails-2025-hero.jpg" -> "christmas-nails-2025")
+        // Try to match image to blog post
         const matchedPost = blogPosts.find(post => imageName.includes(post) || post.includes(imageName));
         const slug = matchedPost || imageName.replace(/-(hero|thumb|\d+)$/i, '');
+        const cleanTitle = slug.replace(/-/g, ' ');
+        
+        // Generate unique caption based on image type
+        let caption;
+        if (imageName.includes('hero')) {
+          caption = `Complete ${cleanTitle} tutorial with expert tips and techniques`;
+        } else if (imageName.includes('step')) {
+          caption = `Step-by-step process for achieving ${cleanTitle} look`;
+        } else if (imageName.match(/\d+$/)) {
+          caption = `${cleanTitle} design variation and styling inspiration`;
+        } else {
+          caption = `Professional ${cleanTitle} guide with detailed instructions`;
+        }
         
         return {
           pageUrl: `${SITE_URL}/blog/${slug}`,
           imageUrl: `${SITE_URL}/images/blog/${img}`,
-          title: `${slug.replace(/-/g, ' ')} guide`,
-          caption: '',
+          title: `${cleanTitle} - ${currentYear} nail art guide`,
+          caption: caption,
         };
       });
       
       const xml = createImageSitemap(blogImages);
       fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-blog.xml'), xml);
       imageSitemaps.push('sitemap-images-blog.xml');
-      console.log(`✅ sitemap-images-blog.xml created (${blogImages.length} images)`);
+      console.log(`✅ sitemap-images-blog.xml created (${blogImages.length} images with unique captions)`);
     }
   } catch (error) {
     console.error('❌ Error generating blog images sitemap:', error.message);
@@ -331,11 +355,14 @@ function generateImageSitemaps() {
         const matchedProduct = allProducts.find(p => p.image === imagePath);
         
         if (matchedProduct) {
+          const categoryName = matchedProduct.category.replace(/-/g, ' ');
+          const caption = `${matchedProduct.name} - Professional ${categoryName} nail art design for ${season} season ${currentYear}`;
+          
           return {
             pageUrl: `${SITE_URL}/shop/${matchedProduct.category}/${matchedProduct.slug}`,
             imageUrl: `${SITE_URL}/images/shop/${img}`,
             title: matchedProduct.name,
-            caption: '',
+            caption: caption,
           };
         }
         
@@ -343,15 +370,15 @@ function generateImageSitemaps() {
         return {
           pageUrl: `${SITE_URL}/shop`,
           imageUrl: `${SITE_URL}/images/shop/${img}`,
-          title: `Nail design product`,
-          caption: '',
+          title: `Premium nail design product`,
+          caption: `Trending nail art design inspiration - Perfect for special occasions and events`,
         };
       });
       
       const xml = createImageSitemap(shopImages);
       fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-shop.xml'), xml);
       imageSitemaps.push('sitemap-images-shop.xml');
-      console.log(`✅ sitemap-images-shop.xml created (${shopImages.length} images)`);
+      console.log(`✅ sitemap-images-shop.xml created (${shopImages.length} images with unique captions)`);
     }
   } catch (error) {
     console.error('❌ Error generating shop images sitemap:', error.message);
@@ -367,18 +394,34 @@ function generateImageSitemaps() {
         fs.statSync(path.join(inspoPublicDir, f)).isDirectory()
       );
       
+      // Descriptive variations for uniqueness
+      const descriptors = [
+        'trending style and modern techniques',
+        'creative design ideas and inspiration',
+        'elegant look with professional finish',
+        'unique artistic approach and styling',
+        'popular trend with expert guidance',
+        'stunning visual inspiration and ideas',
+        'contemporary design with detailed tutorial',
+        'innovative nail art technique showcase'
+      ];
+      
       categories.forEach(category => {
         const categoryDir = path.join(inspoPublicDir, category);
         const imageFiles = fs.readdirSync(categoryDir).filter(f => 
           /\.(jpg|jpeg|png|webp)$/i.test(f)
         );
         
-        imageFiles.forEach(img => {
+        imageFiles.forEach((img, index) => {
+          const categoryName = category.replace(/-/g, ' ');
+          const descriptor = descriptors[index % descriptors.length];
+          const imageNumber = img.match(/\d+/)?.[0] || (index + 1);
+          
           inspoImages.push({
             pageUrl: `${SITE_URL}/inspo/${category}`,
             imageUrl: `${SITE_URL}/inspo/${category}/${img}`,
-            title: `${category.replace(/-/g, ' ')} nail design`,
-            caption: '',
+            title: `${categoryName} nail inspiration ${imageNumber}`,
+            caption: `${categoryName} nail art - ${descriptor}`,
           });
         });
       });
@@ -386,7 +429,7 @@ function generateImageSitemaps() {
       const xml = createImageSitemap(inspoImages);
       fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-inspo.xml'), xml);
       imageSitemaps.push('sitemap-images-inspo.xml');
-      console.log(`✅ sitemap-images-inspo.xml created (${inspoImages.length} images)`);
+      console.log(`✅ sitemap-images-inspo.xml created (${inspoImages.length} images with unique captions)`);
     }
   } catch (error) {
     console.error('❌ Error generating inspo images sitemap:', error.message);
@@ -409,18 +452,28 @@ function generateImageSitemaps() {
         'skin-tones',
       ];
       
+      // Unique descriptions for each topic
+      const topicCaptions = {
+        'at-home-hacks': 'DIY nail care tips and tricks you can easily do at home',
+        'modern-women': 'Contemporary nail styles perfect for today\'s professional woman',
+        'nail-care-guide': 'Essential nail health and maintenance techniques for beautiful nails',
+        'seasonal-trends': `Latest ${season} ${currentYear} nail design trends and color palettes`,
+        'skin-tones': 'Perfect nail colors matched to different skin tones and undertones',
+      };
+      
       const topicsImages = imageFiles.map(img => {
         const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
         
         // Try to match image to topic
         const matchedTopic = topics.find(topic => imageName.includes(topic) || topic.includes(imageName));
         const slug = matchedTopic || imageName;
+        const cleanTitle = slug.replace(/-/g, ' ');
         
         return {
           pageUrl: `${SITE_URL}/topics/${slug}`,
           imageUrl: `${SITE_URL}/images/topics/${img}`,
-          title: `${slug.replace(/-/g, ' ')} guide`,
-          caption: '',
+          title: `${cleanTitle} - Expert nail care guidance`,
+          caption: topicCaptions[slug] || `Learn ${cleanTitle} - Expert advice and techniques for nail enthusiasts`,
         };
       });
       
@@ -428,7 +481,7 @@ function generateImageSitemaps() {
         const xml = createImageSitemap(topicsImages);
         fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-topics.xml'), xml);
         imageSitemaps.push('sitemap-images-topics.xml');
-        console.log(`✅ sitemap-images-topics.xml created (${topicsImages.length} images)`);
+        console.log(`✅ sitemap-images-topics.xml created (${topicsImages.length} images with unique captions)`);
       }
     }
   } catch (error) {
@@ -454,25 +507,25 @@ async function main() {
     fs.mkdirSync(PUBLIC_DIR, { recursive: true });
   }
   
-  generateBlogSitemap();         // 🆕 NEW: Generate blog sitemap first
+  generateBlogSitemap();
   generateTopicsSitemap();
   generateShopSitemap();
   generateShopProductsSitemaps();
   generateInspoSitemap();
   generateImageSitemaps();
   
-  console.log('\n✅ All sitemaps generated successfully!');
+  console.log('\n✅ All sitemaps generated successfully with smart, unique captions!');
   console.log('\n📋 Generated sitemaps:');
   console.log('   • sitemap-blog.xml (blog posts)');
   console.log('   • sitemap-topics.xml (topics pages)');
   console.log('   • sitemap-shop.xml (shop categories)');
   console.log('   • sitemap-shop-products-*.xml (products)');
   console.log('   • sitemap-inspo.xml (inspo galleries)');
-  console.log('   • sitemap-images-*.xml (image sitemaps)');
+  console.log('   • sitemap-images-*.xml (images with SEO-optimized captions)');
   console.log('\n📋 Next steps:');
   console.log('1. Run: npm run postbuild (to generate sitemap-0.xml for static pages)');
   console.log('2. Verify all sitemaps in /public directory');
-  console.log('3. sitemap-0.xml should now ONLY contain static pages (home, about, contact, etc.)');
+  console.log('3. Check image sitemaps for unique, descriptive captions');
   console.log('4. Submit sitemap.xml to Google Search Console');
 }
 

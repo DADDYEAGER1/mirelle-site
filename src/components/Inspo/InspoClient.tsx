@@ -599,7 +599,7 @@ export default function InspoClient({
               {designData.perfectFor.map((item, i) => (
                 <span
                   key={i}
-                  className="bg-gradient-toclassName="bg-gradient-to-r from-burgundy-50 to-pink-50 border border-burgundy-200 text-burgundy-800 px-5 py-3 rounded-full text-sm font-semibold shadow-sm"
+                  className="bg-gradient-to-r from-burgundy-50 to-pink-50 border border-burgundy-200 text-burgundy-800 px-5 py-3 rounded-full text-sm font-semibold shadow-sm"
                 >
                   {item}
                 </span>

@@ -191,7 +191,7 @@ useEffect(() => {
           <Breadcrumbs items={breadcrumbItems} currentPage={designData.displayName} />
         </div>
       </div>
-    </div>
+  
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="relative h-[60vh] md:h-[70vh] min-h-[500px]">
@@ -716,11 +716,6 @@ useEffect(() => {
           </div>
         </section>
       )}
-
-// 🎯 REPLACE THE ENTIRE LIGHTBOX MODAL SECTION (starting from line ~860)
-// Find the section that starts with: {selectedImage && (
-// Replace everything from that point until the closing )}
-
 {selectedImage && (
   <div
     className="fixed inset-0 bg-black/98 backdrop-blur-xl z-[100] flex items-center justify-center"

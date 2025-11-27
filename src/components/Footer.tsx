@@ -119,7 +119,7 @@ export default function Footer() {
               </svg>
             </a>
             <a 
-              href="https://x.com/mirelle_inspo" 
+              href="https://x.com/mirelleinspo" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -133,7 +133,7 @@ export default function Footer() {
         </div>
 
         {/* Collapsible Sections - Mobile / Multi-Column Desktop */}
-        <div className="lg:grid lg:grid-cols-4 lg:gap-8">
+        <div className="lg:grid lg:grid-cols-5 lg:gap-8">
           
           {/* Explore Section */}
           <AccordionSection title="Explore">
@@ -159,8 +159,34 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pinterest" className="text-gray-400 hover:text-white transition-colors text-sm block">
-                  Pinterest Showcase
+                <Link href="/inspo" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Inspo Gallery
+                </Link>
+              </li>
+            </ul>
+          </AccordionSection>
+
+          {/* Inspo Section (NEW) */}
+          <AccordionSection title="Inspo Gallery">
+            <ul className="space-y-3">
+              <li>
+                <Link href="/inspo/chrome-metallic-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Chrome Metallic
+                </Link>
+              </li>
+              <li>
+                <Link href="/inspo/burgundy-wine-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Burgundy Wine
+                </Link>
+              </li>
+              <li>
+                <Link href="/inspo/chocolate-brown-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Chocolate Brown
+                </Link>
+              </li>
+              <li>
+                <Link href="/inspo/velvet-cat-eye-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Velvet Cat Eye
                 </Link>
               </li>
             </ul>
@@ -223,27 +249,27 @@ export default function Footer() {
             </ul>
           </AccordionSection>
 
-          {/* Trending Topics Section */}
+          {/* Trending Topics Section (UPDATED) */}
           <AccordionSection title="Trending Topics">
             <ul className="space-y-3">
               <li>
-                <Link href="/blog/goddess-nails-2025" className="text-gray-400 hover:text-white transition-colors text-sm block">
-                  Goddess Nails 2025
+                <Link href="/blog/christmas-nail-designs-2025" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Christmas Nail Designs
                 </Link>
               </li>
               <li>
-                <Link href="/blog/vampire-nails-2025" className="text-gray-400 hover:text-white transition-colors text-sm block">
-                  Vampire Nails 2025
+                <Link href="/blog/short-christmas-nails-2025" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Short Christmas Nails
                 </Link>
               </li>
               <li>
-                <Link href="/blog/wedding-nail-designs" className="text-gray-400 hover:text-white transition-colors text-sm block">
-                  Wedding Nail Designs
+                <Link href="/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Candy Cane Designs
                 </Link>
               </li>
               <li>
-                <Link href="/blog/winter-nails-2025" className="text-gray-400 hover:text-white transition-colors text-sm block">
-                  Winter Nails 2025
+                <Link href="/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                  Character Nail Art
                 </Link>
               </li>
             </ul>

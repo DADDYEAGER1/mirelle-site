@@ -62,7 +62,7 @@ function ReadMoreText({ html }: { html: string }) {
           <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white via-white/90 to-transparent pointer-events-none" />
           <button
             onClick={() => setIsExpanded(true)}
-            className="mt-2 text-purple-600 hover:text-purple-700 font-semibold flex items-center gap-2 transition-all hover:gap-3"
+            className="mt-2 text-black-900 hover:text-purple-700 font-semibold flex items-center gap-2 transition-all hover:gap-3"
           >
             Read More <ChevronDown className="w-4 h-4" />
           </button>
@@ -137,13 +137,8 @@ export default function ProductPageContent({
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50/30 to-white">
-      {/* Breadcrumbs */}
-      <div className="container mx-auto px-4 pt-24 pb-8">
-        <Breadcrumb items={breadcrumbItems} currentPage={product.name} />
-      </div>
-
       {/* ========== HERO SECTION ========== */}
-      <section className="container mx-auto px-4 pb-12">
+      <section className="container mx-auto px-4 pt-24 pb-12">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Product Image */}
           <div className="relative">
@@ -188,6 +183,11 @@ export default function ProductPageContent({
 
           {/* Product Details */}
           <div className="space-y-6">
+            {/* Breadcrumbs - Moved here */}
+            <div className="mb-2">
+              <Breadcrumb items={breadcrumbItems} currentPage={product.name} />
+            </div>
+
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 {product.name}

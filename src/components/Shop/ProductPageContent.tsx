@@ -282,35 +282,33 @@ export default function ProductPageContent({
             Specifications
           </h2>
           
-          {/* Horizontal scrollable container */}
-          <div className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
-            <div className="flex gap-4 min-w-max">
-              {Object.entries(product.specifications).map(([key, value]) => {
-                const Icon = specIcons[key] || Package;
+          {/* Horizontal scrollable container - Auto-scroll animation */}
+          <div className="relative overflow-hidden">
+            <div className="flex gap-3 animate-scroll hover:pause-animation">
+              {/* Duplicate items for infinite scroll effect */}
+              {[...Object.entries(product.specifications), ...Object.entries(product.specifications)].map(([key, value], index) => {
                 const gradient = specGradients[key] || 'from-gray-500/80 to-gray-600/80';
                 
                 return (
                   <div
-                    key={key}
-                    className="group relative bg-white/40 backdrop-blur-md rounded-2xl p-4 border border-white/60 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 w-[280px] flex-shrink-0"
+                    key={`${key}-${index}`}
+                    className="group relative bg-white/30 backdrop-blur-lg rounded-lg px-4 py-3 border border-white/40 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 flex-shrink-0 w-[200px]"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%)',
+                      background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%)',
                     }}
                   >
-                    {/* Gradient icon background */}
-                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-md`}>
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    
                     {/* Spec Label */}
-                    <h3 className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-2">
+                    <h3 className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide mb-1.5">
                       {key.replace(/([A-Z])/g, ' $1').trim()}
                     </h3>
                     
                     {/* Spec Value */}
-                    <p className="text-sm font-medium text-gray-900 leading-snug">
+                    <p className="text-xs font-medium text-gray-900 leading-tight">
                       {value}
                     </p>
+                    
+                    {/* Subtle gradient accent */}
+                    <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r ${gradient} opacity-60`} />
                   </div>
                 );
               })}
@@ -318,11 +316,42 @@ export default function ProductPageContent({
           </div>
           
           {/* Scroll hint */}
-          <p className="text-center text-sm text-gray-500 mt-2">
-            ← Swipe to see more →
+          <p className="text-center text-xs text-gray-400 mt-3">
+            Touch to pause • Swipe to explore
           </p>
         </section>
       )}
+
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-scroll {
+          animation: scroll 30s linear infinite;
+          will-change: transform;
+        }
+
+        .animate-scroll:hover,
+        .pause-animation {
+          animation-play-state: paused;
+        }
+
+        /* Hide scrollbar */
+        .overflow-hidden::-webkit-scrollbar {
+          display: none;
+        }
+        
+        .overflow-hidden {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
 
       {/* ========== RELATED PRODUCTS (Horizontal Scroll - Premium Hover) ========== */}
       {relatedProducts && relatedProducts.length > 0 && (

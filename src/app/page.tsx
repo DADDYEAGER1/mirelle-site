@@ -63,7 +63,7 @@ export default function Home() {
       <AboutSection />
       <ShopSection />
       <FeaturedTopicsSection />
-      {/* <InspoShowcase />  */}
+      <InspoShowcase />
       <BlogSection />
       <SubscribeSection />
       

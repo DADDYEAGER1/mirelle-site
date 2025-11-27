@@ -7,7 +7,7 @@ dateModified: "2025-11-22"
 author: "MirellÉ Team"
 category: "Seasonal Nail Trends"
 tags: ["candy cane Christmas nails 2025", "candy cane nails", "candy cane nail art", "Christmas nail designs", "holiday nails", "red and white nails", "festive manicure", "candy cane stripes", "Christmas nail tutorial", "winter nail art"]
-image: "/images/blog/candy-cane-christmas-nails-festive-holiday-manicure.webp"
+image: "/images/blog/candy-cane-christmas-nails-festive-holiday-manicure.jpg"
 imageAlt: "Candy cane Christmas nails 2025 featuring festive red and white striped designs perfect for holiday celebrations"
 imageWidth: 1200
 imageHeight: 630

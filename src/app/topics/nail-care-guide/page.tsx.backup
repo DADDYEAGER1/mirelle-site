@@ -415,12 +415,10 @@ export default function NailCareGuide() {
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-                    src="/images/topic/healthy-strong-natural-nails-strengthening-guide.webp"
-                    alt="Complete guide to strengthening nails naturally with expert tips for healthy nail growth and stronger manicure foundation base"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+              src="/nail-care-hero-healthy-strong-nails-natural.jpg"
+              alt="Complete guide to strengthening nails naturally with expert tips for healthy nail growth"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
           </div>
           
@@ -518,11 +516,11 @@ export default function NailCareGuide() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img
-                    src="/images/topic/brittle-weak-peeling-nails-damage-closeup-dehydration.webp"
-                    alt="Close up of brittle weak peeling nails showing common damage from dehydration and nutrient deficiency causing nail splitting"
+                    src="/nail-care-brittle-weak-peeling-nails-closeup.jpg"
+                    alt="Close up of brittle weak peeling nails showing common damage from dehydration and nutrient deficiency"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
                 <div className="space-y-4">
@@ -593,12 +591,12 @@ export default function NailCareGuide() {
                   The best oils for nail health include jojoba oil (closely mimics natural skin oils), vitamin E oil (repairs damage), and argan oil (promotes faster growth). Massage one drop into each nail bed and cuticle using circular motions for 30 seconds to boost circulation.
                 </p>
                 <img
-                    src="/images/topic/cuticle-oil-application-massage-moisturizing-technique.webp"
-                    alt="Proper cuticle oil application technique massaging into nail beds for moisture and strength to prevent brittle breaking nails"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                  src="/nail-care-cuticle-oil-application-massage.jpg"
+                  alt="Proper cuticle oil application technique massaging into nail beds for moisture and strength"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
+                />
               </div>
 
               {/* Method 2 */}
@@ -632,12 +630,12 @@ export default function NailCareGuide() {
                   </div>
                 </div>
                 <img
-                    src="/images/topic/proper-filing-technique-glass-file-one-direction.webp"
-                    alt="Correct nail filing direction using glass file at 45 degree angle to prevent damage and splitting from improper filing method"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                  src="/nail-care-proper-filing-technique-glass-file.jpg"
+                  alt="Correct nail filing direction using glass file at 45 degree angle to prevent damage and splitting"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
+                />
               </div>
 
               {/* Method 4 */}
@@ -669,12 +667,12 @@ export default function NailCareGuide() {
                   Since nails are made of keratin protein, adequate protein intake is essential for strong nail growth. Aim for at least 50-60 grams of protein daily from sources like lean meat, fish, eggs, beans, and Greek yogurt.
                 </p>
                 <img
-                    src="/images/topic/biotin-rich-foods-eggs-almonds-salmon-nail-growth.webp"
-                    alt="Biotin rich foods including eggs almonds and salmon arranged on plate for stronger nail growth and healthy keratin production"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                  src="/nail-care-biotin-rich-foods-eggs-almonds-salmon.jpg"
+                  alt="Biotin rich foods including eggs, almonds, and salmon arranged on plate for stronger nail growth"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                />
                 <p className="text-gray-600 leading-relaxed">
                   Combine protein with foods rich in iron (spinach, lentils), zinc (pumpkin seeds, chickpeas), and omega-3 fatty acids (walnuts, flaxseed) for comprehensive nail nutrition. You'll notice improvements in nail strength and growth rate within 4-6 weeks of dietary changes.
                 </p>
@@ -785,12 +783,12 @@ export default function NailCareGuide() {
                   Intensive overnight treatments supercharge nail repair. Before bed, apply a thick layer of cuticle oil or petroleum jelly to nails and cuticles, then wear cotton gloves overnight. This occlusive treatment locks in moisture for deep conditioning.
                 </p>
                 <img
-                    src="/images/topic/overnight-cotton-gloves-intensive-nail-treatment-repair.webp"
-                    alt="Overnight intensive nail treatment using cotton gloves with cuticle oil for deep conditioning repair of damaged brittle nails"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                  src="/nail-care-overnight-cotton-gloves-intensive-treatment.jpg"
+                  alt="Overnight intensive nail treatment using cotton gloves with cuticle oil for deep conditioning repair"
+                  width={800}
+                  height={533}
+                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                />
                 <p className="text-gray-600 leading-relaxed">
                   Do this treatment 2-3 times weekly for severely damaged nails, or once weekly for maintenance. You'll notice softer cuticles, more flexible nails, and reduced peeling within just one week of consistent overnight treatments.
                 </p>
@@ -816,11 +814,11 @@ export default function NailCareGuide() {
                     This ultra-glossy, translucent nail look mimics the appearance of glass. It requires healthy, smooth natural nails as a base. Achieve this trend by buffing nails gently, applying a ridge-filling base coat, and finishing with high-shine top coat. The key is nail health—glass nails only look stunning on strong, well-maintained natural nails.
                   </p>
                   <img
-                    src="/images/topic/glass-nails-trend-2025-ultra-glossy-natural-finish.webp"
-                    alt="Glass nails trend 2025 showing ultra glossy transparent natural nail finish for healthy look prioritizing nail care wellness"
+                    src="/nail-care-glass-nails-trend-2025-glossy-natural.jpg"
+                    alt="Glass nails trend 2025 showing ultra glossy transparent natural nail finish for healthy look"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-lg w-full"
                   />
                 </div>
                 <div className="glass-card p-6 rounded-xl">
@@ -829,11 +827,11 @@ export default function NailCareGuide() {
                     The wellness nail movement emphasizes treating nails as an extension of overall health. This includes clean ingredient nail products, regular nail fasting (polish-free weeks), and transparent communication about nail health issues. Short, well-groomed natural nails are celebrated over long artificial enhancements.
                   </p>
                   <img
-                    src="/images/topic/wellness-aesthetic-short-natural-healthy-nails-2025.webp"
-                    alt="Wellness nail aesthetic 2025 featuring short well groomed natural nails prioritizing health over length in modern beauty trend"
+                    src="/nail-care-wellness-aesthetic-short-natural-healthy.jpg"
+                    alt="Wellness nail aesthetic 2025 featuring short well groomed natural nails prioritizing health over length"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-lg w-full"
                   />
                 </div>
               </div>

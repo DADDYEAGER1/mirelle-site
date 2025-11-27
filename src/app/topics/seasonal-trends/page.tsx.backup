@@ -399,12 +399,10 @@ export default function SeasonalTrends() {
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-                    src="/images/topic/seasonal-nail-designs-four-seasons-winter-spring-summer-fall.webp"
-                    alt="Complete guide to nail designs by season featuring winter spring summer and fall trends for 2025 with color palette examples"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+              src="/seasonal-nail-designs-hero-four-seasons-2025.jpg"
+              alt="Complete guide to nail designs by season featuring winter, spring, summer and fall trends for 2025"
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
           </div>
           
@@ -565,20 +563,20 @@ export default function SeasonalTrends() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img
-                    src="/images/topic/winter-2025-deer-print-velvet-burgundy-nails.webp"
-                    alt="Winter 2025 trending deer print nails with velvet burgundy finish and chocolate brown accents for cozy aesthetic look"
+                    src="/winter-nail-designs-2025-deer-print-velvet.jpg"
+                    alt="Winter 2025 trending deer print nails with velvet burgundy finish and chocolate brown accents"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
                 <div>
                   <img
-                    src="/images/topic/winter-2025-magnetic-cat-eye-burgundy-chrome-shimmer.webp"
-                    alt="Winter 2025 magnetic cat eye nails in deep burgundy with metallic chrome shimmer effect light shifting finish"
+                    src="/winter-nail-designs-2025-magnetic-cat-eye-chrome.jpg"
+                    alt="Winter 2025 magnetic cat eye nails in deep burgundy with metallic chrome shimmer effect"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
               </div>
@@ -606,12 +604,12 @@ export default function SeasonalTrends() {
                       Spotted at six Paris Fashion Week Fall 2024 presentations, this texture-forward design mimics knit sweater patterns on nails. Think horizontal stripes in contrasting winter colors—burgundy with cream, forest green with gold, navy with white. The 3D effect creates visual depth that photographs exceptionally well (hence the 180% increase in Instagram saves).
                     </p>
                     <img
-                    src="/images/topic/winter-2025-striped-sweater-knit-pattern-burgundy-cream.webp"
-                    alt="Winter 2025 striped sweater nail art featuring burgundy and cream horizontal knit texture pattern for cozy look"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/winter-nail-designs-2025-striped-sweater-knit-pattern.jpg"
+                      alt="Winter 2025 striped sweater nail art featuring burgundy and cream horizontal knit texture pattern"
+                      width={800}
+                      height={533}
+                      className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    />
                     <p className="text-gray-600 leading-relaxed">
                       This trend benefits from technical accessibility—nail artists can achieve the look with stamping plates or hand-painted stripes, making it salon-friendly without requiring advanced skills. The cozy aesthetic perfectly captures winter 2025's broader movement toward comfort-driven luxury.
                     </p>
@@ -636,19 +634,19 @@ export default function SeasonalTrends() {
                     </p>
                     <div className="grid grid-cols-2 gap-4 mb-4">
                       <img
-                    src="/images/topic/winter-2025-deep-cherry-red-glossy-short-square.webp"
-                    alt="Winter 2025 deep cherry red nails with high gloss finish short square shape elegant professional manicure"
-                    width={400}
-                    height={300}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                        src="/winter-nail-designs-2025-deep-cherry-red-glossy.jpg"
+                        alt="Winter 2025 deep cherry red nails with high gloss finish short square shape"
+                        width={400}
+                        height={300}
+                        className="rounded-lg shadow-md w-full"
+                      />
                       <img
-                    src="/images/topic/winter-2025-burgundy-velvet-matte-almond-micro-shimmer.webp"
-                    alt="Winter 2025 burgundy velvet matte nails with micro shimmer finish almond shape sophisticated texture finish"
-                    width={400}
-                    height={300}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                        src="/winter-nail-designs-2025-burgundy-velvet-matte.jpg"
+                        alt="Winter 2025 burgundy velvet matte nails with micro shimmer almond shape"
+                        width={400}
+                        height={300}
+                        className="rounded-lg shadow-md w-full"
+                      />
                     </div>
                     <p className="text-gray-600 leading-relaxed">
                       Pinterest data shows "deep red nails winter" searches at 2.4 million (up from 890K last year), indicating mainstream adoption accelerating. This shade works across skin tones, transitions easily into Valentine's Day styling, and offers sophistication without the commitment of darker colors like black or navy.
@@ -741,12 +739,12 @@ export default function SeasonalTrends() {
                       Champagne chrome, rose gold metallics, and black with gold foil accents dominate NYE searches (2.8M Pinterest saves for "New Year nails 2025"). The key is maximum shine—high-gloss top coats, reflective chromes, or strategic glitter placement that catches light without looking costume-y.
                     </p>
                     <img
-                    src="/images/topic/winter-2025-new-years-eve-champagne-chrome-rose-gold.webp"
-                    alt="New Years Eve 2025 champagne chrome nails with rose gold accent and high gloss finish for glamorous party look"
-                    width={400}
-                    height={300}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/winter-nail-designs-2025-new-years-eve-champagne-chrome.jpg"
+                      alt="New Years Eve 2025 champagne chrome nails with rose gold accent and high gloss finish"
+                      width={400}
+                      height={300}
+                      className="rounded-lg shadow-md w-full"
+                    />
                   </div>
 
                   <div className="glass-card p-6 rounded-xl">
@@ -755,12 +753,12 @@ export default function SeasonalTrends() {
                       Sophisticated Christmas nails lean into deep reds, forest greens, and metallics rather than literal Santa imagery. Think burgundy with gold pinstripes, emerald green with pearl accents, or deep red with subtle snowflake nail art that reads as texture rather than obvious holiday decor.
                     </p>
                     <img
-                    src="/images/topic/winter-2025-christmas-elegant-burgundy-gold-pinstripe.webp"
-                    alt="Elegant Christmas 2025 nails in burgundy with gold pinstripe accent and pearl details for festive holiday look"
-                    width={400}
-                    height={300}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/winter-nail-designs-2025-christmas-elegant-burgundy-gold.jpg"
+                      alt="Elegant Christmas 2025 nails in burgundy with gold pinstripe accent and pearl details"
+                      width={400}
+                      height={300}
+                      className="rounded-lg shadow-md w-full"
+                    />
                   </div>
                 </div>
 
@@ -831,20 +829,20 @@ export default function SeasonalTrends() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img
-                    src="/images/topic/spring-2025-butter-yellow-chrome-holographic-almond.webp"
-                    alt="Spring 2025 butter yellow chrome nails with holographic shimmer shift almond shape for trendy pastel look"
+                    src="/spring-nail-designs-2025-butter-yellow-chrome-holographic.jpg"
+                    alt="Spring 2025 butter yellow chrome nails with holographic shimmer shift almond shape"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
                 <div>
                   <img
-                    src="/images/topic/spring-2025-cherry-blossom-minimalist-art-soft-pink.webp"
-                    alt="Spring 2025 minimalist cherry blossom nail art on soft pink base with white petals delicate floral design"
+                    src="/spring-nail-designs-2025-cherry-blossom-minimalist-art.jpg"
+                    alt="Spring 2025 minimalist cherry blossom nail art on soft pink base with white petals"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
               </div>
@@ -872,12 +870,12 @@ export default function SeasonalTrends() {
                       Cherry blossom nails aren't new, but 2025's version skews minimalist. Instead of dense floral coverage, think single delicate branches with 2-3 blooms per nail, negative space designs, or micro cherry blossom details on accent nails only. This refined approach appeared in editorial shoots for three major fashion magazines in December.
                     </p>
                     <img
-                    src="/images/topic/spring-2025-cherry-blossom-negative-space-design.webp"
-                    alt="Spring 2025 minimalist cherry blossom art with negative space design soft pink white petals elegant floral"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/spring-nail-designs-2025-minimalist-cherry-blossom-negative-space.jpg"
+                      alt="Spring 2025 minimalist cherry blossom art with negative space design soft pink white petals"
+                      width={800}
+                      height={533}
+                      className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    />
                     <p className="text-gray-600 leading-relaxed">
                       The minimalist execution makes this trend more accessible—easier for nail artists to execute, more wearable for professional settings, and longer-lasting because simpler designs show less wear. TikTok tutorials for "simple cherry blossom nails" gained 12M views in January, suggesting DIY-friendly appeal that could accelerate mainstream adoption.
                     </p>
@@ -1000,12 +998,12 @@ export default function SeasonalTrends() {
                       Use a dotting tool to create five white dots in a circle, add yellow center dot. This simple technique gained 24M TikTok views for #daisynails, proving minimalist florals outperform complex hand-painted designs in both engagement and wearability.
                     </p>
                     <img
-                    src="/images/topic/spring-2025-simple-daisy-dotting-tool-tutorial-white-yellow.webp"
-                    alt="Spring 2025 simple daisy nail art tutorial using dotting tool with white petals yellow center easy design"
-                    width={600}
-                    height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/spring-nail-art-2025-simple-daisy-dotting-tool-tutorial.jpg"
+                      alt="Spring 2025 simple daisy nail art tutorial using dotting tool with white petals yellow center"
+                      width={600}
+                      height={400}
+                      className="rounded-lg shadow-md w-full"
+                    />
                   </div>
 
                   <div className="glass-card p-6 rounded-xl">
@@ -1076,20 +1074,20 @@ export default function SeasonalTrends() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img
-                    src="/images/topic/summer-2025-neon-coral-glossy-bright-short-square.webp"
-                    alt="Summer 2025 bright neon coral nails with high gloss finish short square shape vibrant vacation ready manicure"
+                    src="/summer-nail-designs-2025-neon-coral-glossy-bright.jpg"
+                    alt="Summer 2025 bright neon coral nails with high gloss finish short square shape"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
                 <div>
                   <img
-                    src="/images/topic/summer-2025-tropical-palm-tree-sunset-ombre-gradient.webp"
-                    alt="Summer 2025 tropical palm tree nail art with sunset ombre gradient orange pink yellow vacation beach theme"
+                    src="/summer-nail-designs-2025-tropical-palm-tree-sunset-ombre.jpg"
+                    alt="Summer 2025 tropical palm tree nail art with sunset ombre gradient orange pink yellow"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
               </div>
@@ -1117,12 +1115,12 @@ export default function SeasonalTrends() {
                       Vacation-inspired nail art becomes more elaborate. Think hand-painted palm trees, sunset gradients with silhouettes, ocean wave details, or tropical fruit designs (pineapples, watermelon, coconuts). This trend connects to revenge travel patterns—people booking big trips after years of restrictions want nails that match vacation energy.
                     </p>
                     <img
-                    src="/images/topic/summer-2025-tropical-maximalist-palm-pineapple-ocean.webp"
-                    alt="Summer 2025 tropical maximalist nail art featuring palm trees pineapples and ocean waves bright colorful design"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/summer-nail-designs-2025-tropical-maximalist-palm-pineapple.jpg"
+                      alt="Summer 2025 tropical maximalist nail art featuring palm trees pineapples and ocean waves"
+                      width={800}
+                      height={533}
+                      className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    />
                     <p className="text-gray-600 leading-relaxed">
                       Market research shows "vacation nails" searches peak 4-6 weeks before major travel periods (Memorial Day, Fourth of July, August trips). Smart planning means prepping vacation nail content in April-May for June travel, June-July for August trips. The designs photograph exceptionally well, making them social media favorites that drive additional organic reach.
                     </p>
@@ -1256,18 +1254,18 @@ export default function SeasonalTrends() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <img
-                    src="/images/topic/summer-2025-gel-vacation-proof-coral-pool-resistant.webp"
-                    alt="Summer 2025 vacation proof gel nails in bright coral with pool resistant top coat durable beach ready"
+                    src="/summer-nail-designs-2025-gel-vacation-proof-bright-coral.jpg"
+                    alt="Summer 2025 vacation proof gel nails in bright coral with pool resistant top coat"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-xl shadow-lg w-full"
                   />
                   <img
-                    src="/images/topic/summer-2025-short-bright-neon-pink-durable-length.webp"
-                    alt="Summer 2025 short bright neon nails in hot pink perfect length for beach activities vacation durable manicure"
+                    src="/summer-nail-designs-2025-short-bright-neon-durable.jpg"
+                    alt="Summer 2025 short bright neon nails in hot pink perfect length for beach activities"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-xl shadow-lg w-full"
                   />
                 </div>
               </div>
@@ -1292,20 +1290,20 @@ export default function SeasonalTrends() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img
-                    src="/images/topic/fall-2025-burgundy-tortoiseshell-accent-burnt-orange.webp"
-                    alt="Fall 2025 burgundy nails with tortoiseshell pattern accent nail burnt orange details sophisticated autumn look"
+                    src="/fall-nail-designs-2025-burgundy-tortoiseshell-accent.jpg"
+                    alt="Fall 2025 burgundy nails with tortoiseshell pattern accent nail burnt orange details"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
                 <div>
                   <img
-                    src="/images/topic/fall-2025-mocha-brown-matte-almond-velvet-finish.webp"
-                    alt="Fall 2025 mocha brown matte nails in almond shape with velvet finish elegant earth tone autumn manicure"
+                    src="/fall-nail-designs-2025-mocha-brown-matte-almond.jpg"
+                    alt="Fall 2025 mocha brown matte nails in almond shape with velvet finish"
                     width={600}
                     height={400}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    className="rounded-2xl shadow-lg w-full"
                   />
                 </div>
               </div>
@@ -1333,12 +1331,12 @@ export default function SeasonalTrends() {
                       Tortoiseshell nail art (brown, amber, and black marbled pattern) resurges with refined execution. The 2025 version uses sheerer application, creates negative space variations, or features tortoiseshell on accent nails only rather than full-hand coverage. This subtlety makes the look more wearable for professional settings while maintaining visual interest.
                     </p>
                     <img
-                    src="/images/topic/fall-2025-tortoiseshell-evolution-sheer-negative-space.webp"
-                    alt="Fall 2025 modern tortoiseshell nail art with sheer application and negative space design sophisticated pattern"
-                    width={800}
-                    height={533}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/fall-nail-designs-2025-tortoiseshell-evolution-sheer-modern.jpg"
+                      alt="Fall 2025 modern tortoiseshell nail art with sheer application and negative space design"
+                      width={800}
+                      height={533}
+                      className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                    />
                     <p className="text-gray-600 leading-relaxed">
                       Early Instagram data shows #tortoiseshellnails at 340K posts (up from 180K last fall), with engagement rates 34% higher for minimal executions versus heavy coverage. The pattern connects to fashion's embrace of animal prints broadly—leopard, zebra, tortoise all gaining runway prominence suggests this aesthetic has multi-season staying power.
                     </p>
@@ -1460,12 +1458,12 @@ export default function SeasonalTrends() {
                       Sophisticated Halloween nails avoid literal imagery (cartoon pumpkins, witches) in favor of moody color palettes and subtle seasonal elements. Think black with spider web line art, deep purple with minimal bat silhouettes, or burgundy ombre to black gradient. Pinterest data shows "elegant Halloween nails" searches at 890K (up 156% from last year), indicating audiences want festive without costume-y.
                     </p>
                     <img
-                    src="/images/topic/fall-2025-halloween-elegant-black-spider-web-line-art.webp"
-                    alt="Fall 2025 elegant Halloween nails in black with minimalist spider web line art design sophisticated festive"
-                    width={400}
-                    height={300}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/fall-nail-designs-2025-halloween-elegant-black-spider-web.jpg"
+                      alt="Fall 2025 elegant Halloween nails in black with minimalist spider web line art design"
+                      width={400}
+                      height={300}
+                      className="rounded-lg shadow-md w-full"
+                    />
                   </div>
 
                   <div>
@@ -1474,12 +1472,12 @@ export default function SeasonalTrends() {
                       Thanksgiving nails embrace rich fall colors without obvious turkey imagery. Burgundy with gold foil accents, chocolate brown with copper chrome, or burnt orange with cranberry tips create festive looks that work for the holiday and beyond. The versatility extends wear-time—these designs transition into general November styling rather than being single-use holiday nails.
                     </p>
                     <img
-                    src="/images/topic/fall-2025-thanksgiving-burgundy-gold-foil-elegant-dinner.webp"
-                    alt="Fall 2025 Thanksgiving nails in burgundy with gold foil accent elegant dinner ready festive autumn manicure"
-                    width={400}
-                    height={300}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                      src="/fall-nail-designs-2025-thanksgiving-burgundy-gold-foil.jpg"
+                      alt="Fall 2025 Thanksgiving nails in burgundy with gold foil accent elegant dinner ready"
+                      width={400}
+                      height={300}
+                      className="rounded-lg shadow-md w-full"
+                    />
                   </div>
                 </div>
               </div>
@@ -1518,19 +1516,19 @@ export default function SeasonalTrends() {
                         </p>
                         <div className="grid grid-cols-2 gap-4">
                           <img
-                    src="/images/topic/year-round-french-manicure-classic-white-tips-square.webp"
-                    alt="Year round classic French manicure with white tips on natural pink base short square shape timeless design"
-                    width={300}
-                    height={200}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                            src="/year-round-nail-designs-french-manicure-classic-white-tips.jpg"
+                            alt="Year round classic French manicure with white tips on natural pink base short square"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-md w-full"
+                          />
                           <img
-                    src="/images/topic/year-round-french-tip-seasonal-color-variations.webp"
-                    alt="Year round French tip seasonal variations in burgundy lavender coral colors adaptable classic manicure style"
-                    width={300}
-                    height={200}
-                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
-                  />
+                            src="/year-round-nail-designs-french-tip-seasonal-variations.jpg"
+                            alt="Year round French tip seasonal variations in burgundy lavender coral colors"
+                            width={300}
+                            height={200}
+                            className="rounded-lg shadow-md w-full"
+                          />
                         </div>
                       </div>
                     </div>

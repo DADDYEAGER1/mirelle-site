@@ -45,7 +45,59 @@ ${images.map(img => `  <url>
 }
 
 // ========================================
-// 1️⃣ GENERATE TOPICS SITEMAP
+// 🆕 1️⃣ GENERATE BLOG SITEMAP
+// ========================================
+function generateBlogSitemap() {
+  console.log('📄 Generating blog sitemap...');
+  
+  try {
+    const blogDir = path.join(process.cwd(), 'src/content/blogs');
+    const dateModifiedPath = path.join(process.cwd(), 'src/content/metadata/dateModified.json');
+    
+    if (!fs.existsSync(blogDir)) {
+      console.warn('⚠️  Blog directory not found, skipping...');
+      return;
+    }
+    
+    const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
+    
+    if (files.length === 0) {
+      console.warn('⚠️  No blog posts found');
+      return;
+    }
+    
+    // Load date modified metadata
+    let dateModified = {};
+    if (fs.existsSync(dateModifiedPath)) {
+      dateModified = JSON.parse(fs.readFileSync(dateModifiedPath, 'utf8'));
+    }
+    
+    // Generate URLs for all blog posts
+    const urls = files.map(file => {
+      const slug = file.replace('.md', '');
+      const lastmod = dateModified[slug]
+        ? new Date(dateModified[slug]).toISOString()
+        : new Date().toISOString();
+      
+      return {
+        loc: `${SITE_URL}/blog/${slug}`,
+        changefreq: 'weekly',
+        priority: 0.8,
+        lastmod,
+      };
+    });
+    
+    const xml = createSitemap(urls);
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-blog.xml'), xml);
+    console.log(`✅ sitemap-blog.xml created (${urls.length} blog posts)`);
+    
+  } catch (error) {
+    console.error('❌ Error generating blog sitemap:', error.message);
+  }
+}
+
+// ========================================
+// 2️⃣ GENERATE TOPICS SITEMAP
 // ========================================
 function generateTopicsSitemap() {
   console.log('📄 Generating topics sitemap...');
@@ -79,7 +131,7 @@ function generateTopicsSitemap() {
 }
 
 // ========================================
-// 2️⃣ GENERATE SHOP CATEGORY PAGES SITEMAP
+// 3️⃣ GENERATE SHOP CATEGORY PAGES SITEMAP
 // ========================================
 function generateShopSitemap() {
   console.log('📄 Generating shop category pages sitemap...');
@@ -107,7 +159,7 @@ function generateShopSitemap() {
 }
 
 // ========================================
-// 3️⃣ GENERATE SHOP PRODUCTS SITEMAPS (per category)
+// 4️⃣ GENERATE SHOP PRODUCTS SITEMAPS (per category)
 // ========================================
 function generateShopProductsSitemaps() {
   console.log('📄 Generating shop product sitemaps...');
@@ -162,7 +214,7 @@ function generateShopProductsSitemaps() {
 }
 
 // ========================================
-// 4️⃣ GENERATE INSPO CATEGORY PAGES SITEMAP
+// 5️⃣ GENERATE INSPO CATEGORY PAGES SITEMAP
 // ========================================
 function generateInspoSitemap() {
   console.log('📄 Generating inspo category pages sitemap...');
@@ -196,14 +248,14 @@ function generateInspoSitemap() {
 }
 
 // ========================================
-// 5️⃣ GENERATE IMAGE SITEMAPS
+// 6️⃣ GENERATE IMAGE SITEMAPS
 // ========================================
 function generateImageSitemaps() {
   console.log('📸 Generating image sitemaps...');
   
   const imageSitemaps = [];
   
-  // 5a) Blog images (from /public/images/blog/) - FLAT STRUCTURE
+  // 6a) Blog images (from /public/images/blog/) - FLAT STRUCTURE
   try {
     const blogImagesDir = path.join(PUBLIC_DIR, 'images', 'blog');
     
@@ -242,7 +294,7 @@ function generateImageSitemaps() {
     console.error('❌ Error generating blog images sitemap:', error.message);
   }
   
-  // 5b) Shop product images (from /public/images/shop/) - FLAT STRUCTURE
+  // 6b) Shop product images (from /public/images/shop/) - FLAT STRUCTURE
   try {
     const shopImagesDir = path.join(PUBLIC_DIR, 'images', 'shop');
     
@@ -305,7 +357,7 @@ function generateImageSitemaps() {
     console.error('❌ Error generating shop images sitemap:', error.message);
   }
   
-  // 5c) Inspo gallery images (from /public/inspo/)
+  // 6c) Inspo gallery images (from /public/inspo/)
   try {
     const inspoPublicDir = path.join(PUBLIC_DIR, 'inspo');
     
@@ -340,7 +392,7 @@ function generateImageSitemaps() {
     console.error('❌ Error generating inspo images sitemap:', error.message);
   }
   
-  // 5d) Topics images (from /public/images/topics/) - FLAT STRUCTURE
+  // 6d) Topics images (from /public/images/topics/) - FLAT STRUCTURE
   try {
     const topicsImagesDir = path.join(PUBLIC_DIR, 'images', 'topics');
     
@@ -402,6 +454,7 @@ async function main() {
     fs.mkdirSync(PUBLIC_DIR, { recursive: true });
   }
   
+  generateBlogSitemap();         // 🆕 NEW: Generate blog sitemap first
   generateTopicsSitemap();
   generateShopSitemap();
   generateShopProductsSitemaps();
@@ -409,10 +462,18 @@ async function main() {
   generateImageSitemaps();
   
   console.log('\n✅ All sitemaps generated successfully!');
+  console.log('\n📋 Generated sitemaps:');
+  console.log('   • sitemap-blog.xml (blog posts)');
+  console.log('   • sitemap-topics.xml (topics pages)');
+  console.log('   • sitemap-shop.xml (shop categories)');
+  console.log('   • sitemap-shop-products-*.xml (products)');
+  console.log('   • sitemap-inspo.xml (inspo galleries)');
+  console.log('   • sitemap-images-*.xml (image sitemaps)');
   console.log('\n📋 Next steps:');
-  console.log('1. Run: npm run postbuild (to generate main sitemap-0.xml)');
+  console.log('1. Run: npm run postbuild (to generate sitemap-0.xml for static pages)');
   console.log('2. Verify all sitemaps in /public directory');
-  console.log('3. Submit sitemap.xml to Google Search Console');
+  console.log('3. sitemap-0.xml should now ONLY contain static pages (home, about, contact, etc.)');
+  console.log('4. Submit sitemap.xml to Google Search Console');
 }
 
 main().catch(error => {

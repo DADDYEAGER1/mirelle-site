@@ -1,36 +1,5 @@
 {
   "designs": {
-        "snowflake-winter-nails": {
-      "slug": "snowflake-winter-nails",
-      "name": "Snowflake & Icy Winter Nails",
-      "displayName": "Snowflake & Icy Winter Nails",
-      "category": "Seasonal",
-      "year": 2025,
-      "description": "Delicate snowflake designs and icy blue winter nail art perfect for holiday season featuring 3D rhinestones and glitter accents",
-      "heroImage": "https://images.unsplash.com/photo-1545558014-8692077e9b5c",
-      "gradientFrom": "blue-100",
-      "gradientVia": "white",
-      "gradientTo": "blue-50",
-      "emojis": ["❄️", "⛄", "💎", "✨"],
-      "ctas": ["Winter Wonderland", "Icy Elegance", "Snowflake Magic", "Frozen Beauty"],
-      "tldr": {
-        "summary": [
-          "60+ snowflake designs from delicate hand-painted art to 3D rhinestone embellishments perfect for winter weddings and holidays",
-          "Icy blue color palettes including navy, baby blue and white creating frozen winter wonderland aesthetic for 2025 season",
-          "Techniques include stamping, freehand painting and gem application with waterproof top coat for snow and winter weather",
-          "Perfect for Christmas parties, New Year celebrations and winter weddings featuring elegant snowflake patterns and frost effects"
-        ],
-        "keyTakeaways": ["Holiday season perfect", "3D snowflake art", "Icy blue trending", "60+ winter ideas"]
-      },
-      "seo": {
-        "title": "Snowflake Nails 2025: 60+ Icy Winter Designs | Mirellé",
-        "description": "Master snowflake nails with 60+ designs: 3D gems, icy blue, hand-painted art. Perfect for winter weddings & holidays. Trending 2025!",
-        "keywords": "snowflake nails 2025, winter snowflake nail art, icy blue nails, frozen nail designs, 3D snowflake nails, winter wonderland nails, christmas snowflake nails, holiday nail art, winter wedding nails"
-      },
-      "relatedDesigns": ["chrome-metallic-winter-nails", "minimalist-winter-nails", "french-tips"],
-      "perfectFor": ["Winter Weddings", "Christmas", "New Year", "Holiday Parties"],
-      "styleGuide": ["Use stamping plates for perfect snowflakes", "Layer 3D gems for dimensional winter look", "Icy blue base with white accents trending"]
-    },
     "chrome-metallic-winter-nails": {
       "slug": "chrome-metallic-winter-nails",
       "name": "Chrome & Metallic Winter Nails",

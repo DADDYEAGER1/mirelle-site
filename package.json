@@ -1,3 +1,4 @@
+
 {
   "name": "mirelle-site",
   "version": "0.1.0",
@@ -6,7 +7,7 @@
     "dev": "next dev --turbopack",
     "prebuild": "node scripts/regenerate-metadata.js",
     "build": "next build --turbopack",
-    "postbuild": "next-sitemap && node scripts/generate-image-sitemaps.js",
+    "postbuild": "next-sitemap && node scripts/generate-all-sitemaps.js",
     "start": "next start",
     "lint": "eslint"
   },

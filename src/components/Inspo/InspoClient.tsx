@@ -106,6 +106,79 @@ export default function InspoClient({
       alert('Link copied to clipboard!');
     }
   };
+  // Keyboard Navigation for Lightbox
+useEffect(() => {
+  if (!selectedImage) return;
+
+  const handleKeyPress = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setSelectedImage(null);
+    } else if (e.key === 'ArrowLeft') {
+      // Previous image
+      const currentIndex = displayedImages.findIndex(img => img.id === selectedImage.id);
+      const prevIndex = currentIndex > 0 ? currentIndex - 1 : displayedImages.length - 1;
+      setSelectedImage(displayedImages[prevIndex]);
+    } else if (e.key === 'ArrowRight') {
+      // Next image
+      const currentIndex = displayedImages.findIndex(img => img.id === selectedImage.id);
+      const nextIndex = currentIndex < displayedImages.length - 1 ? currentIndex + 1 : 0;
+      setSelectedImage(displayedImages[nextIndex]);
+    }
+  };
+
+  window.addEventListener('keydown', handleKeyPress);
+  
+  // Prevent body scroll when lightbox is open
+  document.body.style.overflow = 'hidden';
+
+  return () => {
+    window.removeEventListener('keydown', handleKeyPress);
+    document.body.style.overflow = 'unset';
+  };
+}, [selectedImage, displayedImages]);
+
+// Touch Gesture Support for Mobile Swipe
+useEffect(() => {
+  if (!selectedImage) return;
+
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const handleTouchStart = (e: TouchEvent) => {
+    touchStartX = e.changedTouches[0].screenX;
+  };
+
+  const handleTouchEnd = (e: TouchEvent) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    const swipeThreshold = 50; // minimum distance for swipe
+
+    if (touchStartX - touchEndX > swipeThreshold) {
+      // Swiped left - show next image
+      const currentIndex = displayedImages.findIndex(img => img.id === selectedImage.id);
+      const nextIndex = currentIndex < displayedImages.length - 1 ? currentIndex + 1 : 0;
+      setSelectedImage(displayedImages[nextIndex]);
+    }
+
+    if (touchEndX - touchStartX > swipeThreshold) {
+      // Swiped right - show previous image
+      const currentIndex = displayedImages.findIndex(img => img.id === selectedImage.id);
+      const prevIndex = currentIndex > 0 ? currentIndex - 1 : displayedImages.length - 1;
+      setSelectedImage(displayedImages[prevIndex]);
+    }
+  };
+
+  window.addEventListener('touchstart', handleTouchStart);
+  window.addEventListener('touchend', handleTouchEnd);
+
+  return () => {
+    window.removeEventListener('touchstart', handleTouchStart);
+    window.removeEventListener('touchend', handleTouchEnd);
+  };
+}, [selectedImage, displayedImages]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50">
@@ -641,88 +714,224 @@ export default function InspoClient({
         </section>
       )}
 
-      {/* Lightbox Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
+// 🎯 REPLACE THE ENTIRE LIGHTBOX MODAL SECTION (starting from line ~860)
+// Find the section that starts with: {selectedImage && (
+// Replace everything from that point until the closing )}
+
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/98 backdrop-blur-xl z-[100] flex items-center justify-center"
+    onClick={() => setSelectedImage(null)}
+    style={{ animation: 'fadeIn 0.3s ease-out' }}
+  >
+    {/* Close Button - Top Right */}
+    <button
+      className="fixed top-6 right-6 z-[110] group"
+      onClick={() => setSelectedImage(null)}
+      aria-label="Close lightbox"
+    >
+      <div className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 shadow-2xl">
+        <svg className="w-6 h-6 text-white group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </button>
+
+    {/* Navigation Buttons */}
+    {displayedImages.length > 1 && (
+      <>
+        {/* Previous Button */}
+        <button
+          className="fixed left-6 top-1/2 -translate-y-1/2 z-[110] group"
+          onClick={(e) => {
+            e.stopPropagation();
+            const currentIndex = displayedImages.findIndex(img => img.id === selectedImage.id);
+            const prevIndex = currentIndex > 0 ? currentIndex - 1 : displayedImages.length - 1;
+            setSelectedImage(displayedImages[prevIndex]);
+          }}
+          aria-label="Previous image"
         >
-          <button
-            className="absolute top-4 right-4 w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white text-3xl hover:bg-white/20 transition-colors z-10"
-            onClick={() => setSelectedImage(null)}
-          >
-            ×
-          </button>
-          
-          <div className="max-w-5xl max-h-[90vh] overflow-auto" onClick={(e) => e.stopPropagation()}>
-            <div className="relative aspect-[3/4] max-h-[80vh]">
-              <Image
-                src={selectedImage.url}
-                alt={selectedImage.alt}
-                fill
-                className="object-contain rounded-lg"
-                sizes="(max-width: 1200px) 90vw, 1200px"
-              />
-            </div>
-            <div className="bg-white/10 backdrop-blur-md p-6 mt-4 rounded-2xl border border-white/20">
-              <p className="text-white text-lg mb-3">{selectedImage.alt}</p>
+          <div className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-2xl">
+            <svg className="w-6 h-6 text-white group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </div>
+        </button>
+
+        {/* Next Button */}
+        <button
+          className="fixed right-6 top-1/2 -translate-y-1/2 z-[110] group"
+          onClick={(e) => {
+            e.stopPropagation();
+            const currentIndex = displayedImages.findIndex(img => img.id === selectedImage.id);
+            const nextIndex = currentIndex < displayedImages.length - 1 ? currentIndex + 1 : 0;
+            setSelectedImage(displayedImages[nextIndex]);
+          }}
+          aria-label="Next image"
+        >
+          <div className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 hover:scale-110 transition-all duration-300 shadow-2xl">
+            <svg className="w-6 h-6 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </button>
+      </>
+    )}
+
+    {/* Main Content Container */}
+    <div 
+      className="relative w-full h-full flex flex-col items-center justify-center p-4 md:p-8"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Image Container - Perfect Fit */}
+      <div className="relative max-w-7xl max-h-[85vh] w-full flex items-center justify-center mb-4">
+        <Image
+          src={selectedImage.url}
+          alt={selectedImage.alt}
+          width={1920}
+          height={1280}
+          className="max-h-[85vh] w-auto max-w-full object-contain rounded-2xl shadow-2xl"
+          style={{ animation: 'scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)' }}
+          priority
+        />
+      </div>
+
+      {/* Glassmorphic Info Panel */}
+      <div className="w-full max-w-4xl bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 md:p-8 shadow-2xl">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          {/* Left Side - Description */}
+          <div className="flex-1">
+            <p className="text-white text-lg md:text-xl font-medium leading-relaxed mb-4">
+              {selectedImage.alt}
+            </p>
+            
+            {/* Image Counter */}
+            <div className="flex items-center gap-3 text-white/70 text-sm">
+              <span className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                {displayedImages.findIndex(img => img.id === selectedImage.id) + 1} / {displayedImages.length}
+              </span>
               
-              <div className="flex items-center gap-4 mb-4">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleLike(selectedImage.id);
-                  }}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all ${
-                    likedImages.has(selectedImage.id)
-                      ? 'bg-pink-500 text-white'
-                      : 'bg-white/20 text-white hover:bg-white/30'
-                  }`}
-                >
-                  <svg className="w-5 h-5" fill={likedImages.has(selectedImage.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                  {likedImages.has(selectedImage.id) ? 'Liked' : 'Like'}
-                </button>
-
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleSave(selectedImage.id);
-                  }}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all ${
-                    savedImages.has(selectedImage.id)
-                      ? 'bg-burgundy-600 text-white'
-                      : 'bg-white/20 text-white hover:bg-white/30'
-                  }`}
-                >
-                  <svg className="w-5 h-5" fill={savedImages.has(selectedImage.id) ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                  </svg>
-                  {savedImages.has(selectedImage.id) ? 'Saved' : 'Save'}
-                </button>
-              </div>
-
               {selectedImage.isPremium && (
-                <span className="inline-flex items-center gap-2 text-yellow-300 text-sm font-semibold mb-2">
-                  <span>⭐</span>
-                  Premium Design
+                <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 border border-yellow-400/30 px-4 py-2 rounded-full backdrop-blur-sm">
+                  <span className="text-yellow-300">⭐</span>
+                  <span className="text-yellow-200 font-semibold">Premium</span>
                 </span>
-              )}
-              {selectedImage.pinterestUrl && (
-                <a
-                  href={selectedImage.pinterestUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-cyan-300 hover:text-cyan-200 mt-2 text-sm font-semibold"
-                >
-                  View on Pinterest →
-                </a>
               )}
             </div>
           </div>
+
+          {/* Right Side - Action Buttons */}
+          <div className="flex items-center gap-3">
+            {/* Like Button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleLike(selectedImage.id);
+              }}
+              className={`group relative overflow-hidden px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-xl ${
+                likedImages.has(selectedImage.id)
+                  ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white scale-105'
+                  : 'bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-105'
+              }`}
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                <svg 
+                  className={`w-5 h-5 transition-transform ${likedImages.has(selectedImage.id) ? 'scale-110' : 'group-hover:scale-110'}`} 
+                  fill={likedImages.has(selectedImage.id) ? 'currentColor' : 'none'} 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                {likedImages.has(selectedImage.id) ? 'Liked' : 'Like'}
+              </span>
+            </button>
+
+            {/* Save Button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleSave(selectedImage.id);
+              }}
+              className={`group relative overflow-hidden px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-xl ${
+                savedImages.has(selectedImage.id)
+                  ? 'bg-gradient-to-r from-burgundy-600 to-purple-600 text-white scale-105'
+                  : 'bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-105'
+              }`}
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                <svg 
+                  className={`w-5 h-5 transition-transform ${savedImages.has(selectedImage.id) ? 'scale-110' : 'group-hover:scale-110'}`} 
+                  fill={savedImages.has(selectedImage.id) ? 'currentColor' : 'none'} 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                </svg>
+                {savedImages.has(selectedImage.id) ? 'Saved' : 'Save'}
+              </span>
+            </button>
+
+            {/* Pinterest Link */}
+            {selectedImage.pinterestUrl && (
+              <a
+                href={selectedImage.pinterestUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="group px-6 py-3 rounded-full font-semibold bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-xl"
+              >
+                <span className="flex items-center gap-2">
+                  <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                  </svg>
+                  Pin
+                </span>
+              </a>
+            )}
+          </div>
         </div>
-      )}
+
+        {/* Keyboard Hint */}
+        <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-center gap-6 text-white/60 text-sm">
+          <span className="flex items-center gap-2">
+            <kbd className="px-2 py-1 bg-white/10 rounded text-xs">←</kbd>
+            <kbd className="px-2 py-1 bg-white/10 rounded text-xs">→</kbd>
+            Navigate
+          </span>
+          <span className="flex items-center gap-2">
+            <kbd className="px-3 py-1 bg-white/10 rounded text-xs">ESC</kbd>
+            Close
+          </span>
+        </div>
+      </div>
     </div>
-  );
+
+    {/* Animations CSS - Add to your global CSS or component styles */}
+    <style jsx>{`
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    `}</style>
+  </div>
+)}
 }

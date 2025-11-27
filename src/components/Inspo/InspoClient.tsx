@@ -191,7 +191,7 @@ useEffect(() => {
           <Breadcrumbs items={breadcrumbItems} currentPage={designData.displayName} />
         </div>
       </div>
-
+    </div>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="relative h-[60vh] md:h-[70vh] min-h-[500px]">

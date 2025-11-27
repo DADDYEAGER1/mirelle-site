@@ -930,5 +930,6 @@ useEffect(() => {
         }
       }
     `}</style>
-  </div>
-);
+    </div>
+  );
+}

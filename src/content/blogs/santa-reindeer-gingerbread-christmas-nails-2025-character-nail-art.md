@@ -103,7 +103,7 @@ This guide breaks down everything you need to create Santa, reindeer, and ginger
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more Christmas character nail designs on Pinterest'>
     <img
-      src='/images/blog/festive-christmas-character-nail-art-santa-reindeer-gingerbread.jpg'
+      src='/images/blog/christmas-character-nail-art-santa-reindeer-gingerbread-2026-trends.jpg'
       alt='Santa, Rudolph reindeer, and gingerbread man character nail art designs for Christmas 2025 holiday manicure'
       width='800'
       height='800'

@@ -1,0 +1,421 @@
+const fs = require('fs');
+const path = require('path');
+
+const SITE_URL = 'https://mirelleinspo.com';
+const PUBLIC_DIR = path.join(process.cwd(), 'public');
+
+// ✅ Helper: Create XML sitemap
+function createSitemap(urls) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map(url => `  <url>
+    <loc>${url.loc}</loc>
+    <lastmod>${url.lastmod || new Date().toISOString()}</lastmod>
+    <changefreq>${url.changefreq || 'weekly'}</changefreq>
+    <priority>${url.priority || 0.7}</priority>
+  </url>`).join('\n')}
+</urlset>`;
+}
+
+// ✅ Helper: Create sitemap index
+function createSitemapIndex(sitemaps) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemaps.map(sitemap => `  <sitemap>
+    <loc>${SITE_URL}/${sitemap}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
+  </sitemap>`).join('\n')}
+</sitemapindex>`;
+}
+
+// ✅ Helper: Create image sitemap
+function createImageSitemap(images) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+${images.map(img => `  <url>
+    <loc>${img.pageUrl}</loc>
+    <image:image>
+      <image:loc>${img.imageUrl}</image:loc>
+      <image:title>${img.title}</image:title>
+      ${img.caption ? `<image:caption>${img.caption}</image:caption>` : ''}
+    </image:image>
+  </url>`).join('\n')}
+</urlset>`;
+}
+
+// ========================================
+// 1️⃣ GENERATE TOPICS SITEMAP
+// ========================================
+function generateTopicsSitemap() {
+  console.log('📄 Generating topics sitemap...');
+  
+  const topics = [
+    { slug: 'at-home-hacks', priority: 0.7 },
+    { slug: 'modern-women', priority: 0.7 },
+    { slug: 'nail-care-guide', priority: 0.8 },
+    { slug: 'seasonal-trends', priority: 0.8 },
+    { slug: 'skin-tones', priority: 0.7 },
+  ];
+  
+  const urls = [
+    {
+      loc: `${SITE_URL}/topics`,
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString(),
+    },
+    ...topics.map(topic => ({
+      loc: `${SITE_URL}/topics/${topic.slug}`,
+      changefreq: 'weekly',
+      priority: topic.priority,
+      lastmod: new Date().toISOString(),
+    }))
+  ];
+  
+  const xml = createSitemap(urls);
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-topics.xml'), xml);
+  console.log('✅ sitemap-topics.xml created');
+}
+
+// ========================================
+// 2️⃣ GENERATE SHOP CATEGORY PAGES SITEMAP
+// ========================================
+function generateShopSitemap() {
+  console.log('📄 Generating shop category pages sitemap...');
+  
+  const categories = ['christmas', 'fall', 'halloween', 'new-year', 'trendy', 'winter'];
+  
+  const urls = [
+    {
+      loc: `${SITE_URL}/shop`,
+      changefreq: 'daily',
+      priority: 0.9,
+      lastmod: new Date().toISOString(),
+    },
+    ...categories.map(cat => ({
+      loc: `${SITE_URL}/shop/${cat}`,
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString(),
+    }))
+  ];
+  
+  const xml = createSitemap(urls);
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-shop.xml'), xml);
+  console.log('✅ sitemap-shop.xml created');
+}
+
+// ========================================
+// 3️⃣ GENERATE SHOP PRODUCTS SITEMAPS (per category)
+// ========================================
+function generateShopProductsSitemaps() {
+  console.log('📄 Generating shop product sitemaps...');
+  
+  const categories = ['christmas', 'fall', 'halloween', 'new-year', 'trendy', 'winter'];
+  const productSitemaps = [];
+  
+  categories.forEach(category => {
+    try {
+      const productFile = path.join(process.cwd(), `src/content/shop-products/${category}.json`);
+      
+      if (!fs.existsSync(productFile)) {
+        console.warn(`⚠️  ${category}.json not found, skipping...`);
+        return;
+      }
+      
+      const data = JSON.parse(fs.readFileSync(productFile, 'utf8'));
+      
+      // Extract products from the nested structure: data.products is an object with numeric keys
+      const productsObj = data.products || {};
+      const products = Object.values(productsObj);
+      
+      if (products.length === 0) {
+        console.warn(`⚠️  No products found in ${category}.json`);
+        return;
+      }
+      
+      const urls = products.map(product => ({
+        loc: `${SITE_URL}/shop/${category}/${product.slug}`,
+        changefreq: 'weekly',
+        priority: 0.7,
+        lastmod: new Date().toISOString(),
+      }));
+      
+      const xml = createSitemap(urls);
+      const filename = `sitemap-shop-products-${category}.xml`;
+      fs.writeFileSync(path.join(PUBLIC_DIR, filename), xml);
+      productSitemaps.push(filename);
+      console.log(`✅ ${filename} created (${products.length} products)`);
+      
+    } catch (error) {
+      console.error(`❌ Error generating ${category} products sitemap:`, error.message);
+    }
+  });
+  
+  // Create products index
+  if (productSitemaps.length > 0) {
+    const indexXml = createSitemapIndex(productSitemaps);
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-shop-products-index.xml'), indexXml);
+    console.log('✅ sitemap-shop-products-index.xml created');
+  }
+}
+
+// ========================================
+// 4️⃣ GENERATE INSPO CATEGORY PAGES SITEMAP
+// ========================================
+function generateInspoSitemap() {
+  console.log('📄 Generating inspo category pages sitemap...');
+  
+  try {
+    const inspoDir = path.join(process.cwd(), 'src/content/inspo-images');
+    const files = fs.readdirSync(inspoDir).filter(f => f.endsWith('.json'));
+    
+    const urls = [
+      {
+        loc: `${SITE_URL}/inspo`,
+        changefreq: 'daily',
+        priority: 0.9,
+        lastmod: new Date().toISOString(),
+      },
+      ...files.map(file => ({
+        loc: `${SITE_URL}/inspo/${file.replace('.json', '')}`,
+        changefreq: 'weekly',
+        priority: 0.8,
+        lastmod: new Date().toISOString(),
+      }))
+    ];
+    
+    const xml = createSitemap(urls);
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-inspo.xml'), xml);
+    console.log(`✅ sitemap-inspo.xml created (${files.length} categories)`);
+    
+  } catch (error) {
+    console.error('❌ Error generating inspo sitemap:', error.message);
+  }
+}
+
+// ========================================
+// 5️⃣ GENERATE IMAGE SITEMAPS
+// ========================================
+function generateImageSitemaps() {
+  console.log('📸 Generating image sitemaps...');
+  
+  const imageSitemaps = [];
+  
+  // 5a) Blog images (from /public/images/blog/) - FLAT STRUCTURE
+  try {
+    const blogImagesDir = path.join(PUBLIC_DIR, 'images', 'blog');
+    
+    if (fs.existsSync(blogImagesDir)) {
+      const imageFiles = fs.readdirSync(blogImagesDir).filter(f => 
+        /\.(jpg|jpeg|png|webp)$/i.test(f)
+      );
+      
+      // Get all blog posts
+      const blogDir = path.join(process.cwd(), 'src/content/blogs');
+      const blogPosts = fs.existsSync(blogDir) 
+        ? fs.readdirSync(blogDir).filter(f => f.endsWith('.md')).map(f => f.replace('.md', ''))
+        : [];
+      
+      const blogImages = imageFiles.map(img => {
+        const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+        
+        // Try to match image to blog post (e.g., "christmas-nails-2025-hero.jpg" -> "christmas-nails-2025")
+        const matchedPost = blogPosts.find(post => imageName.includes(post) || post.includes(imageName));
+        const slug = matchedPost || imageName.replace(/-(hero|thumb|\d+)$/i, '');
+        
+        return {
+          pageUrl: `${SITE_URL}/blog/${slug}`,
+          imageUrl: `${SITE_URL}/images/blog/${img}`,
+          title: `${slug.replace(/-/g, ' ')} guide`,
+          caption: '',
+        };
+      });
+      
+      const xml = createImageSitemap(blogImages);
+      fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-blog.xml'), xml);
+      imageSitemaps.push('sitemap-images-blog.xml');
+      console.log(`✅ sitemap-images-blog.xml created (${blogImages.length} images)`);
+    }
+  } catch (error) {
+    console.error('❌ Error generating blog images sitemap:', error.message);
+  }
+  
+  // 5b) Shop product images (from /public/images/shop/) - FLAT STRUCTURE
+  try {
+    const shopImagesDir = path.join(PUBLIC_DIR, 'images', 'shop');
+    
+    if (fs.existsSync(shopImagesDir)) {
+      const imageFiles = fs.readdirSync(shopImagesDir).filter(f => 
+        /\.(jpg|jpeg|png|webp)$/i.test(f)
+      );
+      
+      // Get all products from all categories to match images
+      const categories = ['christmas', 'fall', 'halloween', 'new-year', 'trendy', 'winter'];
+      const allProducts = [];
+      
+      categories.forEach(category => {
+        const productFile = path.join(process.cwd(), `src/content/shop-products/${category}.json`);
+        if (fs.existsSync(productFile)) {
+          const data = JSON.parse(fs.readFileSync(productFile, 'utf8'));
+          const productsObj = data.products || {};
+          const products = Object.values(productsObj);
+          
+          products.forEach(product => {
+            allProducts.push({
+              category,
+              slug: product.slug,
+              image: product.image,
+              name: product.name || `${category} nail design`,
+            });
+          });
+        }
+      });
+      
+      const shopImages = imageFiles.map(img => {
+        // Try to find matching product by image path
+        const imagePath = `/images/shop/${img}`;
+        const matchedProduct = allProducts.find(p => p.image === imagePath);
+        
+        if (matchedProduct) {
+          return {
+            pageUrl: `${SITE_URL}/shop/${matchedProduct.category}/${matchedProduct.slug}`,
+            imageUrl: `${SITE_URL}/images/shop/${img}`,
+            title: matchedProduct.name,
+            caption: '',
+          };
+        }
+        
+        // Fallback: use shop main page if no match
+        return {
+          pageUrl: `${SITE_URL}/shop`,
+          imageUrl: `${SITE_URL}/images/shop/${img}`,
+          title: `Nail design product`,
+          caption: '',
+        };
+      });
+      
+      const xml = createImageSitemap(shopImages);
+      fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-shop.xml'), xml);
+      imageSitemaps.push('sitemap-images-shop.xml');
+      console.log(`✅ sitemap-images-shop.xml created (${shopImages.length} images)`);
+    }
+  } catch (error) {
+    console.error('❌ Error generating shop images sitemap:', error.message);
+  }
+  
+  // 5c) Inspo gallery images (from /public/inspo/)
+  try {
+    const inspoPublicDir = path.join(PUBLIC_DIR, 'inspo');
+    
+    if (fs.existsSync(inspoPublicDir)) {
+      const inspoImages = [];
+      const categories = fs.readdirSync(inspoPublicDir).filter(f => 
+        fs.statSync(path.join(inspoPublicDir, f)).isDirectory()
+      );
+      
+      categories.forEach(category => {
+        const categoryDir = path.join(inspoPublicDir, category);
+        const imageFiles = fs.readdirSync(categoryDir).filter(f => 
+          /\.(jpg|jpeg|png|webp)$/i.test(f)
+        );
+        
+        imageFiles.forEach(img => {
+          inspoImages.push({
+            pageUrl: `${SITE_URL}/inspo/${category}`,
+            imageUrl: `${SITE_URL}/inspo/${category}/${img}`,
+            title: `${category.replace(/-/g, ' ')} nail design`,
+            caption: '',
+          });
+        });
+      });
+      
+      const xml = createImageSitemap(inspoImages);
+      fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-inspo.xml'), xml);
+      imageSitemaps.push('sitemap-images-inspo.xml');
+      console.log(`✅ sitemap-images-inspo.xml created (${inspoImages.length} images)`);
+    }
+  } catch (error) {
+    console.error('❌ Error generating inspo images sitemap:', error.message);
+  }
+  
+  // 5d) Topics images (from /public/images/topics/) - FLAT STRUCTURE
+  try {
+    const topicsImagesDir = path.join(PUBLIC_DIR, 'images', 'topics');
+    
+    if (fs.existsSync(topicsImagesDir)) {
+      const imageFiles = fs.readdirSync(topicsImagesDir).filter(f => 
+        /\.(jpg|jpeg|png|webp)$/i.test(f) && f !== '.gitkeep'
+      );
+      
+      const topics = [
+        'at-home-hacks',
+        'modern-women',
+        'nail-care-guide',
+        'seasonal-trends',
+        'skin-tones',
+      ];
+      
+      const topicsImages = imageFiles.map(img => {
+        const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+        
+        // Try to match image to topic
+        const matchedTopic = topics.find(topic => imageName.includes(topic) || topic.includes(imageName));
+        const slug = matchedTopic || imageName;
+        
+        return {
+          pageUrl: `${SITE_URL}/topics/${slug}`,
+          imageUrl: `${SITE_URL}/images/topics/${img}`,
+          title: `${slug.replace(/-/g, ' ')} guide`,
+          caption: '',
+        };
+      });
+      
+      if (topicsImages.length > 0) {
+        const xml = createImageSitemap(topicsImages);
+        fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-topics.xml'), xml);
+        imageSitemaps.push('sitemap-images-topics.xml');
+        console.log(`✅ sitemap-images-topics.xml created (${topicsImages.length} images)`);
+      }
+    }
+  } catch (error) {
+    console.error('❌ Error generating topics images sitemap:', error.message);
+  }
+  
+  // Create images index
+  if (imageSitemaps.length > 0) {
+    const indexXml = createSitemapIndex(imageSitemaps);
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-index.xml'), indexXml);
+    console.log('✅ sitemap-images-index.xml created');
+  }
+}
+
+// ========================================
+// 🚀 RUN ALL GENERATORS
+// ========================================
+async function main() {
+  console.log('🚀 Starting sitemap generation...\n');
+  
+  // Ensure public directory exists
+  if (!fs.existsSync(PUBLIC_DIR)) {
+    fs.mkdirSync(PUBLIC_DIR, { recursive: true });
+  }
+  
+  generateTopicsSitemap();
+  generateShopSitemap();
+  generateShopProductsSitemaps();
+  generateInspoSitemap();
+  generateImageSitemaps();
+  
+  console.log('\n✅ All sitemaps generated successfully!');
+  console.log('\n📋 Next steps:');
+  console.log('1. Run: npm run postbuild (to generate main sitemap-0.xml)');
+  console.log('2. Verify all sitemaps in /public directory');
+  console.log('3. Submit sitemap.xml to Google Search Console');
+}
+
+main().catch(error => {
+  console.error('❌ Fatal error:', error);
+  process.exit(1);
+});

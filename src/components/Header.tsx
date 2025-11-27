@@ -4,8 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const BLOG_LINKS = [
-  { label: 'Latest Posts', href: '/blog' },
-  { label: 'Seasonal Trends', href: '/topics/seasonal-trends' },
+  { label: 'Christmas Nails', href: '/blog/christmas-nail-designs-2025' },
+  { label: 'Seasonal Nails Ideas', href: '/topics/seasonal-trends' },
+  { label: 'Nail Art Guide 2025', href: '/topics/nail-art-guides' },
+  { label: 'Professional Women', href: '/topics/modern-women' },
   { label: 'Browse All Topics', href: '/topics' },
 ];
 
@@ -17,12 +19,12 @@ const SHOP_LINKS = [
   { label: 'View All Collections', href: '/shop' },
 ];
 
-const TOPICS_LINKS = [
-  { label: 'Seasonal Trends', href: '/topics/seasonal-trends' },
-  { label: 'Nail Care Guide', href: '/topics/nail-care-guide' },
-  { label: 'At-Home Hacks', href: '/topics/at-home-hacks' },
-  { label: 'Modern Women', href: '/topics/modern-women' },
-  { label: 'Browse All Topics', href: '/topics' },
+const INSPO_LINKS = [
+  { label: 'Chrome Metallic Winter Nails', href: '/inspo/chrome-metallic-winter-nails' },
+  { label: 'Burgundy Wine Winter Nails', href: '/inspo/burgundy-wine-winter-nails' },
+  { label: 'Chocolate Brown Winter Nails', href: '/inspo/chocolate-brown-winter-nails' },
+  { label: 'Velvet Cat Eye Winter Nails', href: '/inspo/velvet-cat-eye-winter-nails' },
+  { label: 'View All Collections', href: '/inspo' },
 ];
 
 export default function Header() {
@@ -30,10 +32,10 @@ export default function Header() {
   const [mobileDropdowns, setMobileDropdowns] = useState({
     blog: false,
     shop: false,
-    topics: false,
+    inspo: false,
   });
 
-  const toggleMobileDropdown = (key: 'blog' | 'shop' | 'topics') => {
+  const toggleMobileDropdown = (key: 'blog' | 'shop' | 'inspo') => {
     setMobileDropdowns(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
@@ -119,10 +121,10 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Topics Dropdown */}
+            {/* Inspo Dropdown (Replaced Topics) */}
             <div className="relative group">
               <button className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium flex items-center gap-1">
-                Topics
+                Inspo
                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -132,11 +134,11 @@ export default function Header() {
                 <div className="bg-white/95 backdrop-blur-sm border-b border-blush-200 shadow-2xl">
                   <div className="max-w-7xl mx-auto px-8 py-12">
                     <div className="space-y-1">
-                      {TOPICS_LINKS.map((link) => (
+                      {INSPO_LINKS.map((link) => (
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-charcoal-600 hover:text-blush-400 transition-colors text-sm"
+                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
                         >
                           {link.label}
                         </Link>
@@ -259,20 +261,20 @@ export default function Header() {
               )}
             </div>
 
-            {/* Topics Accordion */}
+            {/* Inspo Accordion */}
             <div>
               <button
-                onClick={() => toggleMobileDropdown('topics')}
+                onClick={() => toggleMobileDropdown('inspo')}
                 className="w-full flex items-center justify-between text-charcoal-700 hover:text-blush-400 transition-colors font-medium"
               >
-                Topics
-                <svg className={`w-4 h-4 transition-transform ${mobileDropdowns.topics ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                Inspo
+                <svg className={`w-4 h-4 transition-transform ${mobileDropdowns.inspo ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              {mobileDropdowns.topics && (
+              {mobileDropdowns.inspo && (
                 <div className="mt-2 ml-4 space-y-2">
-                  {TOPICS_LINKS.map((link) => (
+                  {INSPO_LINKS.map((link) => (
                     <Link key={link.href} href={link.href} className="block text-charcoal-600 hover:text-blush-400 transition-colors text-sm">
                       {link.label}
                     </Link>

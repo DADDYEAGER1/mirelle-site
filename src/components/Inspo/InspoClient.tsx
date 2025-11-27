@@ -64,49 +64,9 @@ export default function InspoClient({
 
     return () => observer.disconnect();
   }, [hasMore]);
+  // 🎯 ADD THESE HANDLERS AFTER YOUR OTHER useEffect HOOKS (around line ~70)
 
-  // Like/Save handlers
-  const handleLike = (imageId: string) => {
-    setLikedImages(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(imageId)) {
-        newSet.delete(imageId);
-      } else {
-        newSet.add(imageId);
-      }
-      return newSet;
-    });
-  };
-
-  const handleSave = (imageId: string) => {
-    setSavedImages(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(imageId)) {
-        newSet.delete(imageId);
-      } else {
-        newSet.add(imageId);
-      }
-      return newSet;
-    });
-  };
-
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: designData.displayName,
-          text: designData.description,
-          url: window.location.href,
-        });
-      } catch (err) {
-        console.log('Share cancelled');
-      }
-    } else {
-      navigator.clipboard.writeText(window.location.href);
-      alert('Link copied to clipboard!');
-    }
-  };
-  // Keyboard Navigation for Lightbox
+// Keyboard Navigation for Lightbox
 useEffect(() => {
   if (!selectedImage) return;
 
@@ -179,6 +139,49 @@ useEffect(() => {
     window.removeEventListener('touchend', handleTouchEnd);
   };
 }, [selectedImage, displayedImages]);
+
+  // Like/Save handlers
+  const handleLike = (imageId: string) => {
+    setLikedImages(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(imageId)) {
+        newSet.delete(imageId);
+      } else {
+        newSet.add(imageId);
+      }
+      return newSet;
+    });
+  };
+
+  const handleSave = (imageId: string) => {
+    setSavedImages(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(imageId)) {
+        newSet.delete(imageId);
+      } else {
+        newSet.add(imageId);
+      }
+      return newSet;
+    });
+  };
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: designData.displayName,
+          text: designData.description,
+          url: window.location.href,
+        });
+      } catch (err) {
+        console.log('Share cancelled');
+      }
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      alert('Link copied to clipboard!');
+    }
+  };
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50">

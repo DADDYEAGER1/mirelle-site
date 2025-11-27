@@ -6,7 +6,7 @@ module.exports = {
   changefreq: 'daily',
   priority: 0.7,
   
-  // ✅ Exclude non-public pages and product pages (they have their own sitemaps)
+  // ✅ Exclude non-public pages and dynamic content (they have their own sitemaps)
   exclude: [
     '/api/*',
     '/admin/*',
@@ -15,13 +15,16 @@ module.exports = {
     '/static/*',
     '/404',
     '/500',
-    '/shop/*/[productId]', // Exclude product detail pages from main sitemap
+    '/blog/*',              // ⭐ Exclude all blog posts - they have their own sitemap
+    '/shop/*/[productId]',  // Exclude product detail pages
     '/shop/christmas/*',
     '/shop/fall/*',
     '/shop/halloween/*',
     '/shop/new-year/*',
     '/shop/trendy/*',
     '/shop/winter/*',
+    '/topics/*',            // ⭐ Exclude topic pages - they have their own sitemap
+    '/inspo/*',             // ⭐ Exclude inspo pages - they have their own sitemap
   ],
   
   // ✅ Enhanced robots.txt
@@ -65,7 +68,7 @@ module.exports = {
     ],
   },
   
-  // ✅ Transform for existing pages (static pages only)
+  // ✅ Transform for static pages only
   transform: async (config, path) => {
     let priority = config.priority;
     let changefreq = config.changefreq;
@@ -88,7 +91,7 @@ module.exports = {
       changefreq = 'weekly';
     } else if (['/about', '/contact', '/brands', '/pinterest', '/work-with-us'].includes(path)) {
       priority = 0.7;
-      changefreq = 'monthly';
+      changefreq: 'monthly';
     } else if (['/privacy-policy', '/terms', '/subscribe'].includes(path)) {
       priority = 0.5;
       changefreq = 'yearly';
@@ -103,55 +106,6 @@ module.exports = {
     };
   },
   
-  // ✅ Additional paths for blog posts only (main sitemap-0)
-  additionalPaths: async (config) => {
-    const result = [];
-    
-    try {
-      const fs = require('fs');
-      const pathModule = require('path');
-      
-      // Blog posts
-      const blogDir = pathModule.join(process.cwd(), 'src/content/blogs');
-      const dateModifiedPath = pathModule.join(process.cwd(), 'src/content/metadata/dateModified.json');
-      
-      if (fs.existsSync(blogDir)) {
-        const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
-        let dateModified = {};
-        
-        if (fs.existsSync(dateModifiedPath)) {
-          dateModified = JSON.parse(fs.readFileSync(dateModifiedPath, 'utf8'));
-        }
-        
-        files.forEach(file => {
-          const slug = file.replace('.md', '');
-          const lastmod = dateModified[slug]
-            ? new Date(dateModified[slug]).toISOString()
-            : new Date().toISOString();
-          
-          result.push({
-            loc: `/blog/${slug}`,
-            changefreq: 'weekly',
-            priority: 0.8,
-            lastmod,
-          });
-        });
-      }
-      
-    } catch (error) {
-      console.warn('Error generating blog posts:', error.message);
-    }
-    
-    return result;
-  },
-  
-  // ✅ Generate separate sitemaps after build
-  additionalSitemaps: [
-    'https://mirelleinspo.com/sitemap-blog.xml',
-    'https://mirelleinspo.com/sitemap-topics.xml',
-    'https://mirelleinspo.com/sitemap-shop.xml',
-    'https://mirelleinspo.com/sitemap-shop-products-index.xml',
-    'https://mirelleinspo.com/sitemap-inspo.xml',
-    'https://mirelleinspo.com/sitemap-images-index.xml',
-  ],
+  // ⭐ REMOVED additionalPaths - Blog posts are now in their own sitemap
+  // This ensures sitemap-0.xml only contains static pages
 };

@@ -1315,104 +1315,305 @@
         }
       ]
     },
+    "14": {
+      "id": "14",
+      "name": "Gold Chrome Stiletto Nails",
+      "slug": "gold-chrome-stiletto-nails",
+      "price": "$7.99",
+      "originalPrice": "$12.99",
+      "image": "/images/shop/gold-chrome-glitter-stiletto-press-on-nails.jpg",
+      "imageAlt": "Gold chrome stiletto press-on nails with glitter accents for trendy New Year party",
+      "description": "Dazzling gold chrome stiletto nails featuring mirror-finish metallics and glitter accents, perfect for New Year's Eve 2026 celebrations and glamorous party nights.",
+      "isNew": true,
+      "isTrending": false,
+      "rating": 4.8,
+      "reviewCount": 256,
+      "stockStatus": "in-stock",
+      "brand": "Chrome Luxe Pro",
+      "sku": "new-year-14",
+      "cta": "New Year Glow",
+      "affiliateUrl": "https://amzn.to/3Kk08dF",
+      "category": "new-year",
+      
+      "seo": {
+        "title": "Gold Chrome Stiletto Nails 2026 | Mirror Finish NYE Press-Ons",
+        "description": "Turn heads at NYE 2026 with luxurious gold chrome stiletto nails. Mirror-finish metallics with glitter sparkle. Salon-quality drama lasts 10-14 days. Party-ready shine.",
+        "keywords": [
+          "gold chrome nails 2026",
+          "stiletto press on nails new year",
+          "mirror finish gold nails",
+          "chrome party nails",
+          "metallic new year's eve nails",
+          "gold glitter stiletto nails",
+          "luxury nye nail designs",
+          "reflective chrome manicure"
+        ],
+        "ogImage": "/images/shop/gold-chrome-glitter-stiletto-press-on-nails.jpg"
+      },
+      
+      "fullDescription": {
+        "html": "<p>Command attention at every New Year's Eve celebration with these show-stopping <strong>Gold Chrome Stiletto Press-On Nails</strong> that deliver red-carpet glamour with mesmerizing mirror-finish metallics. The liquid-gold chrome coating creates a flawless reflective surface that captures and bounces light like molten precious metal, ensuring your hands sparkle brilliantly under disco balls, candlelight, and midnight firework displays throughout 2026's most glamorous night.</p><p>The dramatic stiletto shape amplifies the luxurious effect, with its sharp, tapered points elongating fingers while the ultra-reflective gold chrome creates the illusion of wearing actual jewelry on your nails. Unlike traditional gold glitter that can appear grainy or chunky, this advanced chrome powder technology delivers a seamless, liquid-metal finish that photographs stunningly—making these nails absolutely essential for your Instagram countdowns and New Year's Eve selfies. Strategic glitter accents catch additional light, creating multi-dimensional sparkle that transitions from molten gold to twinkling starlight depending on the angle.</p><p>What makes chrome nails the ultimate trend for 2026 is their futuristic elegance combined with timeless metallic appeal. Fashion experts predict chrome finishes will dominate party season, with gold specifically becoming the new power color that signals confidence and celebration. These nails embody that energy—they're bold without being over-the-top, luxurious without appearing costume-like, and dramatic while remaining surprisingly wearable for extended events including dinner parties, nightclub dancing, and champagne toasts lasting well past midnight.</p><p>Constructed using premium ABS material with professional-grade chrome pigment application, these stiletto nails resist chipping and maintain their mirror shine throughout 10-14 days of wear when properly applied with the included nail glue. The pointed tips feature reinforced construction at the apex to prevent folding or breakage—a common concern with dramatic nail shapes—allowing you to confidently open champagne bottles, adjust your outfit, and gesture expressively without worry. Each set includes 24 pieces across 15 size variations, ensuring a custom fit that feels natural despite the statement-making appearance.</p><p>Application takes just 10-15 minutes using the straightforward process: prep natural nails, select correct sizes, apply nail glue, press firmly, and you're ready to party. The chrome finish pairs beautifully with both metallic and jewel-toned party dresses, complementing sequins, velvet, and satin fabrics while adding that crucial finishing touch that elevates your entire look from nice to unforgettable. Whether you're attending an upscale gala, intimate gathering, or all-night dance party, these gold chrome stiletto nails ensure you ring in 2026 with hands that literally shine as bright as your future.</p>",
+        "plainText": "Command attention at every New Year's Eve celebration with these show-stopping Gold Chrome Stiletto Press-On Nails that deliver red-carpet glamour with mesmerizing mirror-finish metallics. The liquid-gold chrome coating creates a flawless reflective surface that captures and bounces light like molten precious metal, ensuring your hands sparkle brilliantly under disco balls, candlelight, and midnight firework displays throughout 2026's most glamorous night. The dramatic stiletto shape amplifies the luxurious effect, with its sharp, tapered points elongating fingers while the ultra-reflective gold chrome creates the illusion of wearing actual jewelry on your nails. Unlike traditional gold glitter that can appear grainy or chunky, this advanced chrome powder technology delivers a seamless, liquid-metal finish that photographs stunningly—making these nails absolutely essential for your Instagram countdowns and New Year's Eve selfies. Strategic glitter accents catch additional light, creating multi-dimensional sparkle that transitions from molten gold to twinkling starlight depending on the angle. What makes chrome nails the ultimate trend for 2026 is their futuristic elegance combined with timeless metallic appeal. Fashion experts predict chrome finishes will dominate party season, with gold specifically becoming the new power color that signals confidence and celebration. These nails embody that energy—they're bold without being over-the-top, luxurious without appearing costume-like, and dramatic while remaining surprisingly wearable for extended events including dinner parties, nightclub dancing, and champagne toasts lasting well past midnight. Constructed using premium ABS material with professional-grade chrome pigment application, these stiletto nails resist chipping and maintain their mirror shine throughout 10-14 days of wear when properly applied with the included nail glue. The pointed tips feature reinforced construction at the apex to prevent folding or breakage—a common concern with dramatic nail shapes—allowing you to confidently open champagne bottles, adjust your outfit, and gesture expressively without worry. Each set includes 24 pieces across 15 size variations, ensuring a custom fit that feels natural despite the statement-making appearance. Application takes just 10-15 minutes using the straightforward process: prep natural nails, select correct sizes, apply nail glue, press firmly, and you're ready to party. The chrome finish pairs beautifully with both metallic and jewel-toned party dresses, complementing sequins, velvet, and satin fabrics while adding that crucial finishing touch that elevates your entire look from nice to unforgettable. Whether you're attending an upscale gala, intimate gathering, or all-night dance party, these gold chrome stiletto nails ensure you ring in 2026 with hands that literally shine as bright as your future."
+      },
+      
+      "specifications": {
+        "packageContents": "24 pieces in 15 size variations",
+        "material": "Premium ABS plastic with chrome pigment",
+        "finish": "Mirror-finish gold chrome with glitter accents",
+        "durability": "10-14 days with nail glue",
+        "applicationTime": "10-15 minutes",
+        "reusable": "Yes, 2-3 times with gentle removal",
+        "sizes": "15 different sizes (XXS to XL)",
+        "shape": "Long stiletto (sharp pointed tips)",
+        "reinforcement": "Apex-reinforced tips prevent breakage",
+        "reflectivity": "High-mirror reflective surface",
+        "photography": "Optimized for photos and videos"
+      },
+      
+      "relatedProducts": ["16", "15", "17", "18", "13"],
+      "relatedCategories": ["party-nails", "chrome-finishes", "luxury-glam"],
+      
+      "internalLinks": {
+        "blog": {
+          "title": "Chrome Nails 2026: The Mirror-Finish Taking Over NYE",
+          "slug": "chrome-nails-2026-mirror-finish-nye",
+          "image": "/images/blog/chrome-nails-2026-trends.jpg",
+          "excerpt": "Why chrome nails are dominating New Year's Eve 2026. From gold mirror finishes to holographic variations, discover how this futuristic trend became the ultimate party statement."
+        },
+        "inspo": {
+          "title": "Metallic Magic: Gold Nail Gallery",
+          "slug": "metallic-magic-gold-nails",
+          "image": "/images/inspo/metallic-gold-gallery.jpg"
+        },
+        "topic": {
+          "title": "Stiletto Nail Mastery: Application & Care Guide",
+          "slug": "stiletto-nail-mastery-guide",
+          "image": "/images/topics/stiletto-nail-care.jpg",
+          "description": "Master the art of stiletto nails with our complete guide covering application techniques, maintenance tips, and styling advice for dramatic nail shapes."
+        }
+      },
+      
+      "faqs": [
+        {
+          "question": "How long do these gold chrome stiletto nails stay shiny during New Year's Eve?",
+          "answer": "The mirror-finish chrome coating maintains its full reflective shine for 10-14 days with proper application. Unlike regular metallic polish that can dull, the chrome pigment is sealed beneath a protective topcoat that preserves the liquid-metal appearance throughout your celebrations and beyond."
+        },
+        {
+          "question": "Will the pointed stiletto tips break during party activities?",
+          "answer": "These stiletto nails feature reinforced construction at the tip apex specifically designed to prevent breakage during normal party activities. You can confidently open champagne bottles, dance, and celebrate without worry, though we recommend avoiding excessive pressure on the very tips."
+        },
+        {
+          "question": "Can I photograph these chrome nails for social media without them looking weird?",
+          "answer": "Absolutely! The gold chrome finish is specifically optimized for photography and actually looks more stunning in photos than many other nail finishes. The mirror surface captures light beautifully, creating that coveted luxury aesthetic perfect for Instagram, TikTok, and NYE selfies."
+        },
+        {
+          "question": "How do I apply these chrome nails for the best mirror finish?",
+          "answer": "The chrome finish comes pre-applied, so your application process is simple: prep your natural nails by pushing back cuticles and lightly buffing, select the correct size for each finger, apply a thin layer of included nail glue to both surfaces, then press firmly for 30 seconds. Avoid water for one hour to ensure maximum adhesion and long-lasting shine."
+        },
+        {
+          "question": "Does the gold chrome color work with all party outfit colors?",
+          "answer": "Yes! Gold chrome is incredibly versatile and acts as a neutral metallic that complements virtually every color palette. It pairs beautifully with black, navy, burgundy, emerald, white, and even other metallics like silver or rose gold. The warm gold tone is universally flattering across all skin tones as well."
+        }
+      ]
+    },
+    "15": {
+      "id": "15",
+      "name": "Pink Green Rhinestone Almond",
+      "slug": "pink-green-rhinestone-almond",
+      "price": "$7.99",
+      "originalPrice": "$12.99",
+      "image": "/images/shop/pink-green-rhinestone-almond-press-on-nails.jpg",
+      "imageAlt": "Pink and green almond press-on nails with rhinestone designs for chic New Year",
+      "description": "Elegant almond-shaped press-on nails combining soft pink and jewel-tone green with sparkling rhinestone embellishments, creating a sophisticated yet festive look for New Year 2026.",
+      "isNew": false,
+      "isTrending": true,
+      "rating": 4.7,
+      "reviewCount": 214,
+      "stockStatus": "in-stock",
+      "brand": "Chic Rhinestone Co",
+      "sku": "new-year-15",
+      "cta": "Ring It In",
+      "affiliateUrl": "https://amzn.to/4pvGHyu",
+      "category": "new-year",
+      
+      "seo": {
+        "title": "Pink Green Rhinestone Almond Nails 2026 | Jewel-Tone NYE Press-Ons",
+        "description": "Celebrate NYE 2026 with chic pink and green almond nails featuring crystal rhinestones. Unexpected color combo with elegant sparkle. Lasts 7-14 days. Trending now.",
+        "keywords": [
+          "pink green nails 2026",
+          "rhinestone almond press on nails",
+          "jewel tone new year nails",
+          "unexpected color combo nails",
+          "crystal rhinestone nail art",
+          "almond shape new year nails",
+          "trendy pink green manicure",
+          "spring winter nail transition"
+        ],
+        "ogImage": "/images/shop/pink-green-rhinestone-almond-press-on-nails.jpg"
+      },
+      
+      "fullDescription": {
+        "html": "<p>Break away from predictable New Year's Eve color schemes with these refreshingly unique <strong>Pink Green Rhinestone Almond Press-On Nails</strong> that prove the most memorable celebrations embrace unexpected beauty. This innovative color combination pairs soft, romantic pink tones with rich jewel-tone green—a pairing that fashion insiders predict will define 2026's most fashion-forward looks. The contrast creates visual intrigue that's both sophisticated and playful, making these nails conversation starters at every gathering you attend.</p><p>The elegant almond shape provides the perfect elongated canvas for this artistic color story, with its tapered oval silhouette flattering every finger length and hand shape. This universally beloved nail shape hits the sweet spot between dramatic stiletto points and conservative round tips, offering modern elegance that feels appropriate for both upscale celebrations and casual New Year's Day brunches. The medium length is practical enough for comfortable wear throughout extended celebrations while still making a definitive style statement.</p><p>Strategically placed crystal rhinestones elevate the design from pretty to absolutely stunning, catching candlelight and party lights to create that coveted sparkle factor essential for ringing in the new year. Unlike flat glitter that can appear one-dimensional, these three-dimensional rhinestones create depth and movement, with each crystal positioned to maximize light reflection without overwhelming the sophisticated pink-green color palette. The embellishments are permanently secured during manufacturing and sealed with protective coating, ensuring they remain firmly attached through dancing, toasting, and celebrating.</p><p>What makes this color combination particularly compelling for 2026 is its versatility and trend-forward thinking. Pink and green together evoke both vintage charm and modern botanical aesthetics—simultaneously referencing Art Deco glamour and contemporary garden-party chic. This duality means the nails transition beautifully from New Year's Eve festivities into early spring celebrations, making them economical investment pieces that work for multiple occasions. The color pairing complements a wide range of outfit choices, from classic black dresses to emerald velvet, champagne metallics to blush satin.</p><p>Crafted from durable acrylic material with a smooth gel-polish finish, these almond nails resist chips and maintain their pristine appearance for 7-14 days when applied with the included professional nail glue. The set includes 24 pieces across 12 different size variations, allowing you to create a customized fit that feels natural and comfortable throughout extended wear. The almond shape's straight sidewalls provide structural stability that prevents accidental breakage, while the gently tapered tips avoid the extreme pointiness that can interfere with daily activities. Application is straightforward and takes approximately 10-15 minutes—simply prep, size, glue, press, and you're ready to celebrate the transition into 2026 with hands that reflect your unique, trend-setting style.</p>",
+        "plainText": "Break away from predictable New Year's Eve color schemes with these refreshingly unique Pink Green Rhinestone Almond Press-On Nails that prove the most memorable celebrations embrace unexpected beauty. This innovative color combination pairs soft, romantic pink tones with rich jewel-tone green—a pairing that fashion insiders predict will define 2026's most fashion-forward looks. The contrast creates visual intrigue that's both sophisticated and playful, making these nails conversation starters at every gathering you attend. The elegant almond shape provides the perfect elongated canvas for this artistic color story, with its tapered oval silhouette flattering every finger length and hand shape. This universally beloved nail shape hits the sweet spot between dramatic stiletto points and conservative round tips, offering modern elegance that feels appropriate for both upscale celebrations and casual New Year's Day brunches. The medium length is practical enough for comfortable wear throughout extended celebrations while still making a definitive style statement. Strategically placed crystal rhinestones elevate the design from pretty to absolutely stunning, catching candlelight and party lights to create that coveted sparkle factor essential for ringing in the new year. Unlike flat glitter that can appear one-dimensional, these three-dimensional rhinestones create depth and movement, with each crystal positioned to maximize light reflection without overwhelming the sophisticated pink-green color palette. The embellishments are permanently secured during manufacturing and sealed with protective coating, ensuring they remain firmly attached through dancing, toasting, and celebrating. What makes this color combination particularly compelling for 2026 is its versatility and trend-forward thinking. Pink and green together evoke both vintage charm and modern botanical aesthetics—simultaneously referencing Art Deco glamour and contemporary garden-party chic. This duality means the nails transition beautifully from New Year's Eve festivities into early spring celebrations, making them economical investment pieces that work for multiple occasions. The color pairing complements a wide range of outfit choices, from classic black dresses to emerald velvet, champagne metallics to blush satin. Crafted from durable acrylic material with a smooth gel-polish finish, these almond nails resist chips and maintain their pristine appearance for 7-14 days when applied with the included professional nail glue. The set includes 24 pieces across 12 different size variations, allowing you to create a customized fit that feels natural and comfortable throughout extended wear. The almond shape's straight sidewalls provide structural stability that prevents accidental breakage, while the gently tapered tips avoid the extreme pointiness that can interfere with daily activities. Application is straightforward and takes approximately 10-15 minutes—simply prep, size, glue, press, and you're ready to celebrate the transition into 2026 with hands that reflect your unique, trend-setting style."
+      },
+      
+      "specifications": {
+        "packageContents": "24 pieces in 12 size variations",
+        "material": "High-quality acrylic",
+        "finish": "Gel-polish glossy with rhinestone accents",
+        "durability": "7-14 days with nail glue",
+        "applicationTime": "10-15 minutes",
+        "reusable": "Yes, 2-3 times with proper care",
+        "sizes": "12 different sizes (0-11)",
+        "shape": "Medium almond (tapered oval)",
+        "embellishments": "Crystal rhinestones permanently secured",
+        "colorScheme": "Pink and jewel-tone green",
+        "versatility": "Transitions from NYE to spring events"
+      },
+      
+      "relatedProducts": ["14", "16", "36", "19", "20"],
+      "relatedCategories": ["color-contrast", "rhinestone-glam", "almond-shape"],
+      
+      "internalLinks": {
+        "blog": {
+          "title": "Pink & Green: 2026's Most Unexpected Nail Color Trend",
+          "slug": "pink-green-unexpected-nail-color-2026",
+          "image": "/images/blog/pink-green-color-trend-2026.jpg",
+          "excerpt": "Why the pink and green color combination is taking over 2026's nail scene. From New Year's Eve to spring weddings, discover how this vintage-meets-modern pairing creates unforgettable style moments."
+        },
+        "inspo": {
+          "title": "Jewel-Tone Elegance: Color Contrast Gallery",
+          "slug": "jewel-tone-elegance-gallery",
+          "image": "/images/inspo/jewel-tone-gallery.jpg"
+        },
+        "topic": {
+          "title": "Almond Nail Shape: The Universal Flattering Guide",
+          "slug": "almond-nail-shape-guide",
+          "image": "/images/topics/almond-shape-guide.jpg",
+          "description": "Discover why almond nails are 2026's most requested shape. Learn application techniques, styling tips, and maintenance advice for this universally flattering silhouette."
+        }
+      },
+      
+      "faqs": [
+        {
+          "question": "Why are pink and green nails trending for New Year 2026?",
+          "answer": "Pink and green represent 2026's shift toward unexpected, artistic color combinations that break from traditional red-and-gold or black-and-silver NYE schemes. This pairing references both vintage Art Deco glamour and modern botanical aesthetics, creating a sophisticated look that fashion insiders predict will dominate the year ahead."
+        },
+        {
+          "question": "Will the rhinestones stay attached during New Year's Eve celebrations?",
+          "answer": "Yes, the crystal rhinestones are permanently embedded during manufacturing and sealed with protective gel coating. They're designed to withstand normal party activities including dancing, hand-washing, and celebrating without any stones falling off during your event."
+        },
+        {
+          "question": "What outfits work best with pink and green nails?",
+          "answer": "These nails are surprisingly versatile! They complement classic black, emerald green velvet, champagne metallics, blush pink satin, and even neutral tones like beige or cream. The jewel-tone green and soft pink create a balanced palette that acts as a sophisticated neutral rather than competing with your outfit."
+        },
+        {
+          "question": "Why choose almond shape over stiletto or coffin for New Year's Eve?",
+          "answer": "Almond nails offer the perfect balance between elegance and practicality. The tapered oval shape elongates fingers beautifully like stilettos but without the extreme pointiness that can interfere with activities. It's sophisticated enough for upscale celebrations yet comfortable for extended wear through midnight and beyond."
+        },
+        {
+          "question": "Can I wear these nails after New Year's Eve for other occasions?",
+          "answer": "Absolutely! The pink and green color story transitions beautifully into spring celebrations including weddings, garden parties, and brunches. The unexpected color combination and rhinestone sparkle work for any special occasion where you want to make a sophisticated, fashion-forward statement throughout early 2026."
+        }
+      ]
+    },
     "16": {
       "id": "16",
-      "name": "Wine Red Gold Stiletto",
-      "slug": "wine-red-gold-stiletto",
+      "name": "Merlot Red Gold Rhinestone Stiletto",
+      "slug": "merlot-red-gold-rhinestone-stiletto",
       "price": "$7.99",
       "originalPrice": "$12.99",
       "image": "/images/shop/burgundy-gold-rhinestone-stiletto-press-on-nails.jpg",
       "imageAlt": "Burgundy stiletto press-on nails with gold rhinestone accents for classic New Year elegance",
-      "description": "Classic yet festive looks for your nails.",
+      "description": "Luxurious merlot burgundy stiletto nails featuring dazzling gold rhinestone embellishments, perfect for sophisticated New Year celebrations and formal events.",
       "isNew": true,
       "isTrending": true,
       "rating": 4.9,
-      "reviewCount": 224,
+      "reviewCount": 287,
       "stockStatus": "in-stock",
-      "brand": "WineGlam",
+      "brand": "Premium Luxe",
       "sku": "new-year-16",
       "cta": "Sparkle Now",
       "affiliateUrl": "https://amzn.to/4gD0rw2",
       "category": "new-year",
       
       "seo": {
-        "title": "Wine Red Gold Stiletto Nails 2025 | Burgundy New Year Press-Ons",
-        "description": "Sophisticated wine red stiletto press-on nails with gold rhinestone accents. Perfect for elegant New Year celebrations, lasting 10-14 days. Timeless luxury. Order now.",
+        "title": "Merlot Red Gold Rhinestone Stiletto Nails 2026 | New Year Press-Ons",
+        "description": "Elevate your New Year's Eve 2026 with luxurious merlot burgundy stiletto nails adorned with gold rhinestones. Salon-quality elegance that lasts 10-14 days. Shop now.",
         "keywords": [
-          "wine red nails",
-          "burgundy stiletto nails",
-          "gold rhinestone nails",
-          "wine colored press-ons",
-          "elegant stiletto nails",
-          "classic new year nails",
-          "luxe burgundy nails",
-          "sophisticated party nails"
+          "new year nails 2026",
+          "burgundy stiletto press on nails",
+          "merlot red nails with gold rhinestones",
+          "new year's eve nail designs",
+          "luxury press on nails",
+          "stiletto nails for celebrations",
+          "gold rhinestone nail art",
+          "burgundy wine colored nails"
         ],
         "ogImage": "/images/shop/burgundy-gold-rhinestone-stiletto-press-on-nails.jpg"
       },
       
       "fullDescription": {
-        "html": "<p>Embrace timeless sophistication with these exquisite <strong>Wine Red Gold Rhinestone Stiletto Press-On Nails</strong> that embody the perfect fusion of classic elegance and modern glamour. These stunning press-on nails feature a rich wine red base—deeper and more refined than traditional red—beautifully embellished with luxurious gold rhinestones, creating a manicure that exudes confidence and upscale style perfect for welcoming 2025 with grace.</p><p>Crafted from premium ABS plastic with a lustrous glossy finish, these nails deliver the rich depth of Bordeaux wine captured on your fingertips. Wine red, also known as burgundy, is universally recognized as one of the most flattering nail colors across all skin tones, and it's experiencing a major resurgence in 2025 as the go-to shade for quiet luxury and sophisticated style. The dramatic stiletto shape creates striking length with tapered sides and sharp points, making a bold yet refined statement. Each set includes 24 precisely shaped pieces in graduated sizes for perfect fit. The gold rhinestones are strategically placed to create elegant sparkle without overwhelming the sophisticated wine base, catching light during champagne toasts while maintaining the classy aesthetic appropriate for upscale celebrations.</p><p>Application takes 15-20 minutes and delivers salon-quality results instantly. Your package includes both adhesive tabs for temporary 2-3 day wear and professional nail glue for extended durability of 10-14 days. Unlike traditional gel manicures that damage natural nails or regular polish that chips within hours, these press-ons maintain their pristine appearance throughout all your New Year festivities. The stiletto shape is pre-filed to perfection, eliminating the precision work required when creating this dramatic look with traditional methods. The wine red color won't fade or dull, and the rhinestones stay securely embedded thanks to professional manufacturing standards.</p><p>Designed for women who appreciate classic beauty with luxurious touches. Wine red paired with gold creates one of fashion's most timeless combinations, working beautifully across decades and remaining eternally chic. This color scheme complements virtually every outfit choice, from little black dresses to metallic evening gowns, jewel-toned cocktail attire to elegant neutrals. The deep wine shade is sophisticated enough for corporate New Year galas while the rhinestone accents provide that essential celebratory sparkle. Unlike bright reds that can feel seasonal, wine red transitions beautifully year-round, making these nails valuable beyond just holiday celebrations. The stiletto length commands attention and projects confidence, perfect for women who want their presence felt when entering a room. These reusable press-ons can be worn 2-3 times with gentle removal and proper storage, offering exceptional value for multiple high-end events. Whether you're attending a formal New Year ball, enjoying an intimate dinner celebration, or toasting at midnight with loved ones, these wine red and gold stiletto nails provide that perfect balance of timeless elegance and festive glamour that makes you feel poised, polished, and utterly sophisticated as you step confidently into 2025.</p>",
-        "plainText": "Embrace timeless sophistication with these exquisite Wine Red Gold Rhinestone Stiletto Press-On Nails that embody the perfect fusion of classic elegance and modern glamour. These stunning press-on nails feature a rich wine red base—deeper and more refined than traditional red—beautifully embellished with luxurious gold rhinestones, creating a manicure that exudes confidence and upscale style perfect for welcoming 2025 with grace. Crafted from premium ABS plastic with a lustrous glossy finish, these nails deliver the rich depth of Bordeaux wine captured on your fingertips. Wine red, also known as burgundy, is universally recognized as one of the most flattering nail colors across all skin tones, and it's experiencing a major resurgence in 2025 as the go-to shade for quiet luxury and sophisticated style. The dramatic stiletto shape creates striking length with tapered sides and sharp points, making a bold yet refined statement. Each set includes 24 precisely shaped pieces in graduated sizes for perfect fit. The gold rhinestones are strategically placed to create elegant sparkle without overwhelming the sophisticated wine base, catching light during champagne toasts while maintaining the classy aesthetic appropriate for upscale celebrations. Application takes 15-20 minutes and delivers salon-quality results instantly. Your package includes both adhesive tabs for temporary 2-3 day wear and professional nail glue for extended durability of 10-14 days. Unlike traditional gel manicures that damage natural nails or regular polish that chips within hours, these press-ons maintain their pristine appearance throughout all your New Year festivities. The stiletto shape is pre-filed to perfection, eliminating the precision work required when creating this dramatic look with traditional methods. The wine red color won't fade or dull, and the rhinestones stay securely embedded thanks to professional manufacturing standards. Designed for women who appreciate classic beauty with luxurious touches. Wine red paired with gold creates one of fashion's most timeless combinations, working beautifully across decades and remaining eternally chic. This color scheme complements virtually every outfit choice, from little black dresses to metallic evening gowns, jewel-toned cocktail attire to elegant neutrals. The deep wine shade is sophisticated enough for corporate New Year galas while the rhinestone accents provide that essential celebratory sparkle. Unlike bright reds that can feel seasonal, wine red transitions beautifully year-round, making these nails valuable beyond just holiday celebrations. The stiletto length commands attention and projects confidence, perfect for women who want their presence felt when entering a room. These reusable press-ons can be worn 2-3 times with gentle removal and proper storage, offering exceptional value for multiple high-end events. Whether you're attending a formal New Year ball, enjoying an intimate dinner celebration, or toasting at midnight with loved ones, these wine red and gold stiletto nails provide that perfect balance of timeless elegance and festive glamour that makes you feel poised, polished, and utterly sophisticated as you step confidently into 2025."
+        "html": "<p>Step into 2026 with unmatched sophistication wearing these <strong>Merlot Red Gold Rhinestone Stiletto Press-On Nails</strong> that embody timeless elegance and modern glamour. The rich, wine-toned burgundy hue evokes the depth of fine merlot, while strategically placed gold rhinestone accents catch the light with every gesture, creating a mesmerizing sparkle perfect for midnight countdowns and champagne toasts.</p><p>The dramatic stiletto shape elongates your fingers and adds an element of bold confidence to your New Year's look, making these nails ideal for upscale celebrations, black-tie galas, and sophisticated soirées. Unlike traditional burgundy nails that can appear flat, these feature multi-dimensional shine from the glossy finish combined with the reflective gold rhinestones, ensuring your hands become a conversation piece throughout the evening.</p><p>Crafted from premium ABS material using advanced acrylic injection technology, these nails are chip-resistant and maintain their flawless appearance throughout extended wear. Each set includes 24 pieces in multiple sizes, ensuring a custom fit that feels natural and comfortable. The pointed stiletto tips are reinforced with a thicker design at the apex to prevent folding or breakage, addressing the common concern with dramatic nail shapes.</p><p>Application takes just 10-15 minutes using the included professional-grade nail glue for extended wear or adhesive tabs for temporary occasions. The deep burgundy color pairs beautifully with both gold and silver jewelry, while the wine-red undertones complement every skin tone. With proper application, these reusable nails last 10-14 days, making them economical for multiple New Year events. Whether you're toasting at an intimate dinner party or dancing until dawn at a glamorous celebration, these merlot stiletto nails deliver red-carpet worthy style with the convenience of at-home application. The combination of classic burgundy elegance with sparkling gold accents creates a manicure that's both sophisticated and festive, embodying the optimistic spirit of welcoming 2026.</p>",
+        "plainText": "Step into 2026 with unmatched sophistication wearing these Merlot Red Gold Rhinestone Stiletto Press-On Nails that embody timeless elegance and modern glamour. The rich, wine-toned burgundy hue evokes the depth of fine merlot, while strategically placed gold rhinestone accents catch the light with every gesture, creating a mesmerizing sparkle perfect for midnight countdowns and champagne toasts. The dramatic stiletto shape elongates your fingers and adds an element of bold confidence to your New Year's look, making these nails ideal for upscale celebrations, black-tie galas, and sophisticated soirées. Unlike traditional burgundy nails that can appear flat, these feature multi-dimensional shine from the glossy finish combined with the reflective gold rhinestones, ensuring your hands become a conversation piece throughout the evening. Crafted from premium ABS material using advanced acrylic injection technology, these nails are chip-resistant and maintain their flawless appearance throughout extended wear. Each set includes 24 pieces in multiple sizes, ensuring a custom fit that feels natural and comfortable. The pointed stiletto tips are reinforced with a thicker design at the apex to prevent folding or breakage, addressing the common concern with dramatic nail shapes. Application takes just 10-15 minutes using the included professional-grade nail glue for extended wear or adhesive tabs for temporary occasions. The deep burgundy color pairs beautifully with both gold and silver jewelry, while the wine-red undertones complement every skin tone. With proper application, these reusable nails last 10-14 days, making them economical for multiple New Year events. Whether you're toasting at an intimate dinner party or dancing until dawn at a glamorous celebration, these merlot stiletto nails deliver red-carpet worthy style with the convenience of at-home application. The combination of classic burgundy elegance with sparkling gold accents creates a manicure that's both sophisticated and festive, embodying the optimistic spirit of welcoming 2026."
       },
       
       "specifications": {
-        "packageContents": "24 pieces",
-        "material": "ABS plastic",
-        "finish": "Lustrous glossy",
-        "durability": "10-14 days",
-        "applicationTime": "15-20 minutes",
-        "reusable": "Yes, 2-3 times",
-        "sizes": "Multiple sizes included",
-        "shape": "Stiletto",
-        "colorFamily": "Wine red/Burgundy with gold",
-        "embellishments": "Gold rhinestones",
-        "versatility": "Year-round elegance"
+        "packageContents": "24 pieces in multiple sizes",
+        "material": "Premium ABS plastic",
+        "finish": "High-gloss with gold rhinestone accents",
+        "durability": "10-14 days with glue",
+        "applicationTime": "10-15 minutes",
+        "reusable": "Yes, 2-3 times with proper care",
+        "sizes": "15 size variations included",
+        "shape": "Long stiletto (pointed)",
+        "reinforcement": "Thickened tip design prevents breakage",
+        "compatibility": "Works with both glue and adhesive tabs"
       },
       
-      "relatedProducts": ["3", "4", "22", "27", "29"],
-      "relatedCategories": ["valentine", "winter", "wedding"],
+      "relatedProducts": ["21", "17", "18", "19", "20"],
+      "relatedCategories": ["winter", "formal-events", "luxury-nails"],
       
       "internalLinks": {
         "blog": {
-          "title": "Burgundy Nails: The Timeless Trend of 2025",
-          "slug": "burgundy-nails-timeless-trend-2025",
-          "image": "/images/blog/burgundy-nails-timeless-trend-2025.jpg",
-          "excerpt": "Discover why burgundy and wine red nails are dominating 2025. From classic sophistication to modern twists, explore this universally flattering shade."
+          "title": "New Year's Nail Trends 2026: Burgundy & Gold Elegance",
+          "slug": "new-year-nail-trends-2026-burgundy-gold",
+          "image": "/images/blog/new-year-nail-trends-2026.jpg",
+          "excerpt": "Discover why burgundy and gold nails are dominating New Year's Eve 2026. From stiletto shapes to rhinestone embellishments, learn how to create the perfect celebratory manicure."
         },
         "inspo": {
-          "title": "Wine & Gold Elegance Gallery",
-          "slug": "wine-gold-elegance-gallery",
-          "image": "/images/inspo/wine-gold-elegance-gallery.jpg"
+          "title": "Midnight Glamour: NYE Nail Gallery",
+          "slug": "midnight-glamour-nye-nails",
+          "image": "/images/inspo/midnight-glamour-nye.jpg"
         },
         "topic": {
-          "title": "Timeless Luxury Nails",
-          "slug": "timeless-luxury-nails",
-          "image": "/images/topics/timeless-luxury-nails.jpg",
-          "description": "Explore nail designs that transcend trends, offering enduring elegance and sophisticated style for any occasion."
+          "title": "Stiletto Nail Guide: Care & Styling",
+          "slug": "stiletto-nail-guide",
+          "image": "/images/topics/stiletto-nail-guide.jpg",
+          "description": "Master the art of wearing stiletto nails with our comprehensive guide covering application, maintenance, and styling tips."
         }
       },
       
       "faqs": [
         {
-          "question": "What's the difference between wine red and regular red nails?",
-          "answer": "Wine red (burgundy) is a deeper, more sophisticated shade with purple-brown undertones, similar to Bordeaux wine. It's more subtle and elegant than bright red, making it perfect for upscale events and universally flattering across all skin tones."
+          "question": "How long do these merlot stiletto nails with rhinestones last?",
+          "answer": "With professional nail glue application, these premium press-on nails last 10-14 days. For shorter wear like a single event, use the adhesive tabs which provide 1-3 days of secure hold. The gold rhinestones are permanently embedded so they won't fall off during wear."
         },
         {
-          "question": "Why is burgundy so popular in 2025?",
-          "answer": "Burgundy aligns with the 'quiet luxury' trend dominating 2025 fashion and beauty. It's sophisticated without being flashy, works year-round, complements all skin tones, and celebrities like Selena Gomez and Kylie Jenner have been spotted wearing it regularly."
+          "question": "Will the pointed stiletto shape break easily during New Year celebrations?",
+          "answer": "Not with our reinforced design. The tips feature a thicker apex construction that prevents folding and breakage, making them more durable than typical stiletto nails. They're designed to withstand normal activities including dancing, toasting, and celebrating throughout the night."
         },
         {
-          "question": "Will wine red nails work with my New Year outfit?",
-          "answer": "Absolutely! Wine red is incredibly versatile—it pairs beautifully with black, neutrals, metallics, jewel tones, and even bold colors. Think of it as the 'little black dress' of nail colors—it works with everything."
+          "question": "Can I reuse these burgundy rhinestone press-on nails after New Year's Eve?",
+          "answer": "Absolutely! These nails are reusable 2-3 times with gentle removal and proper care. After removing, clean off residual glue with a nail file or buffer, store in the original packaging, and reapply for your next special event using fresh adhesive."
         },
         {
-          "question": "Are gold rhinestones on wine nails too much for work?",
-          "answer": "These nails balance perfectly between elegant and celebratory. The wine base is professional and sophisticated, while rhinestones add subtle sparkle. They're perfect for transitioning from corporate New Year events to evening celebrations."
+          "question": "Does the merlot burgundy color work with different skin tones?",
+          "answer": "Yes, this deep wine-red burgundy shade is universally flattering across all skin tones. The rich color has both warm red and cool purple undertones that complement various complexions, while the gold rhinestone accents add brightness that enhances any look."
         },
         {
-          "question": "Can I wear these beyond New Year?",
-          "answer": "Definitely! Wine red with gold rhinestones is timeless and appropriate year-round—perfect for Valentine's Day, weddings, date nights, professional events, or anytime you want to feel elegant and polished."
+          "question": "How do I apply these stiletto nails for the best New Year's Eve results?",
+          "answer": "Start by prepping your natural nails—push back cuticles, lightly buff the surface, and clean with alcohol. Select the correct size for each finger, apply a thin layer of nail glue to both your natural nail and the press-on, then press firmly for 30 seconds while avoiding air bubbles. Wait one hour before water exposure for maximum adhesion that lasts through your celebrations."
         }
       ]
     },
@@ -1825,103 +2026,101 @@
     },
     "21": {
       "id": "21",
-      "name": "Black White Rhinestone Coffin",
-      "slug": "black-white-rhinestone-coffin",
+      "name": "Monochrome Crystal Rhinestone Coffin",
+      "slug": "monochrome-crystal-rhinestone-coffin",
       "price": "$5.55",
       "originalPrice": "$9.99",
       "image": "/images/shop/black-white-rhinestone-coffin-press-on-nails.jpg",
       "imageAlt": "Black and white coffin press-on nails with rhinestones for shining New Year night",
-      "description": "Celebrate night with nails that shine.",
+      "description": "Striking black and white coffin-shaped press-on nails adorned with crystal rhinestones, creating a modern monochrome look perfect for New Year's Eve 2026.",
       "isNew": false,
       "isTrending": false,
-      "rating": 4.7,
-      "reviewCount": 171,
+      "rating": 4.6,
+      "reviewCount": 198,
       "stockStatus": "low-stock",
-      "brand": "MonochromeGlam",
+      "brand": "Crystal Luxe",
       "sku": "new-year-21",
       "cta": "Ring It In",
       "affiliateUrl": "https://amzn.to/46E1OGr",
       "category": "new-year",
       
       "seo": {
-        "title": "Black White Rhinestone Coffin Nails 2025 | Monochrome New Year Press-Ons",
-        "description": "Classic black and white coffin press-on nails with rhinestone accents. Perfect for elegant New Year nights, lasting 7-14 days. Timeless contrast, budget price. Shop now.",
+        "title": "Black White Rhinestone Coffin Nails 2026 | Monochrome NYE Press-Ons",
+        "description": "Make a bold statement at NYE 2026 with monochrome black and white coffin nails featuring crystal rhinestones. Chic, modern design lasts 7-14 days. Limited stock.",
         "keywords": [
-          "black white nails",
-          "monochrome coffin nails",
-          "rhinestone press-on nails",
-          "classic new year nails",
-          "black white contrast nails",
-          "elegant coffin press-ons",
-          "timeless party nails",
-          "budget rhinestone nails"
+          "black and white nails 2026",
+          "coffin press on nails rhinestones",
+          "monochrome new year nails",
+          "crystal rhinestone nail art",
+          "new year's eve coffin nails",
+          "black white nail designs",
+          "modern press on nails",
+          "geometric new year nails"
         ],
         "ogImage": "/images/shop/black-white-rhinestone-coffin-press-on-nails.jpg"
       },
       
       "fullDescription": {
-        "html": "<p>Embrace timeless elegance with these sophisticated <strong>Black White Rhinestone Coffin Press-On Nails</strong> that prove classic color combinations never go out of style. These striking press-on nails feature the iconic black and white contrast beautifully enhanced with sparkling rhinestones, creating a monochrome manicure that's both dramatic and refined—perfect for welcoming 2025 with bold elegance that transcends fleeting trends.</p><p>Constructed from durable ABS plastic with glossy finishes on both colors, these nails deliver maximum visual impact through stark contrast. Black and white represents one of fashion's most enduring color pairings, offering sophisticated drama that works across all aesthetics from minimalist to maximalist. The trendy coffin shape with straight sides and squared-off tip provides edgy elegance that's currently dominating nail trends. Each set includes 24 pieces in graduated sizes for perfect fit. The rhinestone embellishments add luxury sparkle that elevates the classic monochrome palette into celebration-worthy territory. This timeless combination photographs stunningly, creating bold contrast in photos while remaining universally appropriate for any New Year event.</p><p>Application is simple and takes just 12-15 minutes from start to finish. Your package includes adhesive tabs for temporary 2-3 day wear (perfect for testing the coffin shape) and professional nail glue for extended durability of 7-14 days. Unlike attempting color-blocking designs with traditional polish—which requires steady hands, precise application, and extended drying time—these press-ons deliver perfect monochrome results instantly. The coffin shape comes pre-filed and symmetrical, eliminating hours of shaping work. The rhinestones are securely embedded and sealed, ensuring they stay attached throughout wear without falling off. At this accessible price point, you get sophisticated style without premium costs.</p><p>Designed for women who appreciate timeless style over trendy colors. Black and white is universally flattering, works with every outfit, and never looks dated or seasonal. These nails are perfect for minimalists who want impact through contrast rather than color, or for anyone who loves classic elegance. The monochrome palette ensures your nails never clash with clothing, jewelry, or makeup choices—they complement everything. Perfect for formal New Year galas where black-tie elegance matters, or casual celebrations where you want sophisticated style. The rhinestone accents add festive sparkle while maintaining the refined aesthetic of the black and white base. These nails work beautifully year-round, making them valuable beyond just holiday celebrations—perfect for formal events, weddings, professional settings, or everyday chic. These reusable press-ons can be worn 2-3 times with gentle removal and storage, stretching your beauty budget effectively. Whether you're attending an upscale New Year celebration, enjoying an intimate dinner party, or simply want bold yet elegant nails to start 2025, these black and white rhinestone coffin nails provide that perfect fusion of timeless contrast and luxury sparkle that makes you feel confident, sophisticated, and effortlessly stylish.</p>",
-        "plainText": "Embrace timeless elegance with these sophisticated Black White Rhinestone Coffin Press-On Nails that prove classic color combinations never go out of style. These striking press-on nails feature the iconic black and white contrast beautifully enhanced with sparkling rhinestones, creating a monochrome manicure that's both dramatic and refined—perfect for welcoming 2025 with bold elegance that transcends fleeting trends. Constructed from durable ABS plastic with glossy finishes on both colors, these nails deliver maximum visual impact through stark contrast. Black and white represents one of fashion's most enduring color pairings, offering sophisticated drama that works across all aesthetics from minimalist to maximalist. The trendy coffin shape with straight sides and squared-off tip provides edgy elegance that's currently dominating nail trends. Each set includes 24 pieces in graduated sizes for perfect fit. The rhinestone embellishments add luxury sparkle that elevates the classic monochrome palette into celebration-worthy territory. This timeless combination photographs stunningly, creating bold contrast in photos while remaining universally appropriate for any New Year event. Application is simple and takes just 12-15 minutes from start to finish. Your package includes adhesive tabs for temporary 2-3 day wear (perfect for testing the coffin shape) and professional nail glue for extended durability of 7-14 days. Unlike attempting color-blocking designs with traditional polish—which requires steady hands, precise application, and extended drying time—these press-ons deliver perfect monochrome results instantly. The coffin shape comes pre-filed and symmetrical, eliminating hours of shaping work. The rhinestones are securely embedded and sealed, ensuring they stay attached throughout wear without falling off. At this accessible price point, you get sophisticated style without premium costs. Designed for women who appreciate timeless style over trendy colors. Black and white is universally flattering, works with every outfit, and never looks dated or seasonal. These nails are perfect for minimalists who want impact through contrast rather than color, or for anyone who loves classic elegance. The monochrome palette ensures your nails never clash with clothing, jewelry, or makeup choices—they complement everything. Perfect for formal New Year galas where black-tie elegance matters, or casual celebrations where you want sophisticated style. The rhinestone accents add festive sparkle while maintaining the refined aesthetic of the black and white base. These nails work beautifully year-round, making them valuable beyond just holiday celebrations—perfect for formal events, weddings, professional settings, or everyday chic. These reusable press-ons can be worn 2-3 times with gentle removal and storage, stretching your beauty budget effectively. Whether you're attending an upscale New Year celebration, enjoying an intimate dinner party, or simply want bold yet elegant nails to start 2025, these black and white rhinestone coffin nails provide that perfect fusion of timeless contrast and luxury sparkle that makes you feel confident, sophisticated, and effortlessly stylish."
+        "html": "<p>Make an unforgettable entrance into 2026 with these <strong>Monochrome Crystal Rhinestone Coffin Press-On Nails</strong> that redefine contemporary elegance through striking contrast and geometric sophistication. The bold black and white color palette creates instant visual impact, while strategically placed crystal rhinestones add dimension and sparkle that catches every flash of light during midnight celebrations and champagne toasts.</p><p>The coffin shape—also known as ballerina nails—features a tapered square tip that's both fashion-forward and practical, providing ample surface area for the intricate monochrome design without the extreme length of stiletto styles. This versatile shape flatters every finger length and complements both minimalist and maximalist outfits, making these nails perfect for contemporary New Year's Eve parties where modern aesthetics reign supreme.</p><p>Each crystal rhinestone is precisely positioned to create patterns that draw the eye, transforming your hands into wearable art. The high-contrast black and white combination evokes timeless elegance reminiscent of Art Deco glamour while feeling distinctly modern and trend-forward for 2026. Unlike busy multi-colored designs, this monochrome palette offers versatility that pairs effortlessly with any outfit color scheme, from classic little black dresses to metallic party wear.</p><p>Constructed from durable acrylic material with a smooth gel-polish finish, these coffin nails resist chips and maintain their pristine appearance throughout extended celebrations. The set includes 24 pieces across 12 different size variations, ensuring every fingernail receives a perfect, custom fit. The coffin shape's straight sidewalls and flat, square-ish tips provide structural stability that prevents accidental breakage during activities like opening champagne bottles or dancing energetically.</p><p>Application is straightforward and takes approximately 10-15 minutes using either the included nail glue for 7-14 days of wear or adhesive tabs for temporary 1-3 day application. The reusable design means you can wear these stunning nails multiple times throughout the season for various winter celebrations. Perfect for style-conscious individuals who appreciate bold, modern aesthetics, these monochrome rhinestone coffin nails deliver high-fashion impact with accessible at-home convenience, ensuring you shine bright as you count down to the new year.</p>",
+        "plainText": "Make an unforgettable entrance into 2026 with these Monochrome Crystal Rhinestone Coffin Press-On Nails that redefine contemporary elegance through striking contrast and geometric sophistication. The bold black and white color palette creates instant visual impact, while strategically placed crystal rhinestones add dimension and sparkle that catches every flash of light during midnight celebrations and champagne toasts. The coffin shape—also known as ballerina nails—features a tapered square tip that's both fashion-forward and practical, providing ample surface area for the intricate monochrome design without the extreme length of stiletto styles. This versatile shape flatters every finger length and complements both minimalist and maximalist outfits, making these nails perfect for contemporary New Year's Eve parties where modern aesthetics reign supreme. Each crystal rhinestone is precisely positioned to create patterns that draw the eye, transforming your hands into wearable art. The high-contrast black and white combination evokes timeless elegance reminiscent of Art Deco glamour while feeling distinctly modern and trend-forward for 2026. Unlike busy multi-colored designs, this monochrome palette offers versatility that pairs effortlessly with any outfit color scheme, from classic little black dresses to metallic party wear. Constructed from durable acrylic material with a smooth gel-polish finish, these coffin nails resist chips and maintain their pristine appearance throughout extended celebrations. The set includes 24 pieces across 12 different size variations, ensuring every fingernail receives a perfect, custom fit. The coffin shape's straight sidewalls and flat, square-ish tips provide structural stability that prevents accidental breakage during activities like opening champagne bottles or dancing energetically. Application is straightforward and takes approximately 10-15 minutes using either the included nail glue for 7-14 days of wear or adhesive tabs for temporary 1-3 day application. The reusable design means you can wear these stunning nails multiple times throughout the season for various winter celebrations. Perfect for style-conscious individuals who appreciate bold, modern aesthetics, these monochrome rhinestone coffin nails deliver high-fashion impact with accessible at-home convenience, ensuring you shine bright as you count down to the new year."
       },
       
       "specifications": {
-        "packageContents": "24 pieces",
-        "material": "ABS plastic",
-        "finish": "Glossy dual-tone",
-        "durability": "7-14 days",
-        "applicationTime": "12-15 minutes",
-        "reusable": "Yes, 2-3 times",
-        "sizes": "Multiple sizes included",
-        "shape": "Coffin/Ballerina",
-        "colorFamily": "Black and white monochrome",
-        "embellishments": "Rhinestones",
-        "pricePoint": "Budget-friendly",
-        "styleAesthetic": "Timeless classic"
+        "packageContents": "24 pieces in 12 size variations",
+        "material": "High-quality acrylic",
+        "finish": "Gel-polish glossy finish",
+        "durability": "7-14 days with glue application",
+        "applicationTime": "10-15 minutes",
+        "reusable": "Yes, up to 3 times",
+        "sizes": "12 different size options (0-11)",
+        "shape": "Medium coffin (ballerina)",
+        "embellishments": "Crystal rhinestones embedded",
+        "colorScheme": "Monochrome black and white"
       },
       
-      "relatedProducts": ["11", "13", "18", "28", "34"],
-      "relatedCategories": ["trendy", "minimalist", "professional"],
+      "relatedProducts": ["16", "22", "23", "24", "25"],
+      "relatedCategories": ["modern-nails", "winter", "party-nails"],
       
       "internalLinks": {
         "blog": {
-          "title": "Monochrome Nails: Black & White Perfection",
-          "slug": "monochrome-nails-black-white-perfection",
-          "image": "/images/blog/monochrome-nails-black-white-perfection.jpg",
-          "excerpt": "Explore the timeless appeal of black and white nails. From graphic designs to elegant contrasts, master monochrome manicure magic."
+          "title": "2026 New Year Nail Trends: Monochrome Minimalism",
+          "slug": "2026-new-year-monochrome-nail-trends",
+          "image": "/images/blog/monochrome-nail-trends-2026.jpg",
+          "excerpt": "Black and white nails are dominating 2026's New Year's Eve celebrations. Discover why monochrome designs with rhinestone accents are the ultimate modern statement."
         },
         "inspo": {
-          "title": "Classic Contrast Gallery",
-          "slug": "classic-contrast-gallery",
-          "image": "/images/inspo/classic-contrast-gallery.jpg"
+          "title": "Geometric Glam: Modern NYE Nails",
+          "slug": "geometric-glam-modern-nye",
+          "image": "/images/inspo/geometric-glam-nye.jpg"
         },
         "topic": {
-          "title": "Timeless Nail Colors",
-          "slug": "timeless-nail-colors",
-          "image": "/images/topics/timeless-nail-colors.jpg",
-          "description": "Discover classic nail colors and combinations that never go out of style and work for every occasion."
+          "title": "Coffin Nail Shape Guide",
+          "slug": "coffin-nail-shape-guide",
+          "image": "/images/topics/coffin-nail-guide.jpg",
+          "description": "Everything you need to know about coffin-shaped nails, from application techniques to styling tips and maintenance advice."
         }
       },
       
       "faqs": [
         {
-          "question": "Are black and white nails too simple for New Year?",
-          "answer": "Not at all! The stark contrast creates bold visual impact, and the rhinestone accents add celebratory sparkle. Black and white is timeless elegance—sophisticated enough for the most formal celebrations while being universally appropriate."
+          "question": "How long do these black and white coffin press-on nails last?",
+          "answer": "When applied with nail glue, these coffin nails last 7-14 days depending on your lifestyle and aftercare. For shorter occasions like a single New Year's Eve party, the adhesive tabs provide secure hold for 1-3 days and make the nails fully reusable."
         },
         {
-          "question": "What makes monochrome nails timeless?",
-          "answer": "Black and white transcends trends because it's about contrast rather than color. This combination never looks dated, works with all fashion styles, and complements every outfit. It's the ultimate versatile nail choice."
+          "question": "Will the crystal rhinestones fall off during my New Year's celebration?",
+          "answer": "No, the rhinestones are securely embedded into the nail surface during manufacturing and sealed with protective gel polish. They're designed to withstand normal party activities including dancing, hand-washing, and celebrating without losing any embellishments."
         },
         {
-          "question": "Will these nails match my New Year outfit?",
-          "answer": "Guaranteed! Black and white matches literally everything—black dresses, white gowns, metallic outfits, jewel tones, bold colors, patterns. The monochrome palette ensures perfect coordination regardless of what you wear."
+          "question": "What makes coffin nails better than other shapes for New Year's Eve?",
+          "answer": "Coffin nails offer the perfect balance of style and practicality. The tapered square shape provides more surface area for intricate designs like these rhinestone patterns, while the flat tip is more stable than pointed stiletto nails, reducing breakage risk during active celebrations."
         },
         {
-          "question": "Can I wear monochrome nails to formal events?",
-          "answer": "Absolutely! Black and white is incredibly sophisticated and appropriate for formal occasions. The rhinestones add luxury without being flashy, making these perfect for black-tie events, galas, and upscale celebrations."
+          "question": "Can I wear these monochrome nails with any outfit color?",
+          "answer": "Absolutely! The black and white color scheme is universally versatile and pairs with any outfit—from metallics and sequins to bold colors and classic neutrals. This timeless monochrome palette ensures your nails complement rather than clash with your New Year's Eve ensemble."
         },
         {
-          "question": "How long will these stay in stock?",
-          "answer": "These are currently low stock! The timeless black and white combination is popular year-round, and at this budget-friendly price, they sell quickly. Order soon to ensure availability for your New Year celebration."
+          "question": "How do I remove and reuse these coffin press-on nails?",
+          "answer": "Soak your hands in warm soapy water for 10-15 minutes to loosen the adhesive, then gently lift the nails from the sides using a cuticle stick. Clean any residual glue from the nail backs using a gentle buffer, store in the original packaging, and they're ready to reapply for your next event."
         }
       ]
     },

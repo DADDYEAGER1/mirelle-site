@@ -7,7 +7,7 @@ dateModified: "2025-11-28"
 author: "MirellÉ Team"
 category: "Nail Care"
 tags: ["nail polish colors make you look younger", "best nail colors for aging hands", "anti-aging nail polish", "nail colors for mature hands", "youthful nail colors", "nail shape for aging hands", "rich girl nails 2025", "unhealthy nail colors", "nail polish for 60 year old woman", "hand anti-aging care"]
-image: "/images/blog/coral-peach-anti-aging-nail-polish-hands.webp"
+image: "/images/blog/coral-peach-anti-aging-nail-polish-hands.jpg"
 imageAlt: "Coral and peach nail polish colors on mature hands showing youthful anti-aging effect with elegant oval nail shape"
 imageWidth: 1200
 imageHeight: 630
@@ -49,15 +49,15 @@ tldr:
       answer: "Yes, very dark colors like deep burgundy, black, or navy can emphasize visible veins, wrinkles, and age spots on mature hands by creating stark contrast. While dark shades can be elegant, lighter or medium-toned colors generally create a more youthful appearance by minimizing the visibility of aging signs on hands."
 
 galleryImages:
-  - url: "/images/blog/warm-coral-peach-nail-polish-aging-hands.webp"
+  - url: "/images/blog/warm-coral-peach-nail-polish-aging-hands.jpg"
     alt: "Warm coral and peach nail polish shades on mature hands showing flattering anti-aging effect with natural lighting"
     width: 800
     height: 800
-  - url: "/images/blog/oval-almond-nail-shapes-mature-hands.webp"
+  - url: "/images/blog/oval-almond-nail-shapes-mature-hands.jpg"
     alt: "Oval and almond nail shapes comparison on aging hands demonstrating finger-elongating flattering effect"
     width: 800
     height: 800
-  - url: "/images/blog/soft-pink-nude-youthful-manicure.webp"
+  - url: "/images/blog/soft-pink-nude-youthful-manicure.jpg"
     alt: "Soft pink and warm nude nail polish creating youthful appearance on mature skin hands"
     width: 800
     height: 800

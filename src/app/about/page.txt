@@ -1,4 +1,4 @@
-
+back soon 
 // import type { Metadata } from 'next';
 // import { generateAboutPageSchema } from '@/lib/generateSchemas';
 // import Link from 'next/link';

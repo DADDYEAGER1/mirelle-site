@@ -71,7 +71,7 @@ export default function WorkWithUsPage() {
               📧 General Inquiries
             </a>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelleinspo@gmail.com&su=Brand%20Partnership%20Inquiry"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelle@gmail.com&su=Brand%20Partnership%20Inquiry"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-charcoal-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-charcoal-800 transition-all transform hover:scale-105 shadow-lg cursor-pointer"
@@ -343,12 +343,12 @@ export default function WorkWithUsPage() {
               <div className="border-t border-white/20 pt-4">
                 <p className="text-sm text-white/80 mb-2">Brand Partnerships & Collaborations:</p>
                 <a 
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelleinspo@gmail.com&su=Brand%20Partnership%20Inquiry"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelle@gmail.com&su=Brand%20Partnership%20Inquiry"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xl font-semibold hover:underline inline-flex items-center gap-2 cursor-pointer"
                 >
-                  🤝 team.mirelleinspo@gmail.com
+                  🤝 
                 </a>
               </div>
             </div>

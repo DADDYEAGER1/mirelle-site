@@ -88,11 +88,11 @@ export default function WorkWithUsPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-blush-400 mb-2">50K+</div>
-              <div className="text-gray-600">Monthly Readers</div>
+              <div className="text-gray-600">Page Views</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-blush-400 mb-2">100K+</div>
-              <div className="text-gray-600">Pinterest Followers</div>
+              <div className="text-gray-600">Audience</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-blush-400 mb-2">95%</div>
@@ -100,7 +100,7 @@ export default function WorkWithUsPage() {
             </div>
             <div>
               <div className="text-4xl font-bold text-blush-400 mb-2">25+</div>
-              <div className="text-gray-600">Brand Partners</div>
+              <div className="text-gray-600">Collaborators</div>
             </div>
           </div>
         </div>
@@ -348,7 +348,7 @@ export default function WorkWithUsPage() {
                   rel="noopener noreferrer"
                   className="text-xl font-semibold hover:underline inline-flex items-center gap-2 cursor-pointer"
                 >
-                  🤝 
+                  🤝 team.mirelle@gmail.com
                 </a>
               </div>
             </div>

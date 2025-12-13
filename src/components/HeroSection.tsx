@@ -28,11 +28,11 @@ export default function HeroSection() {
         <picture>
           <source 
             media="(max-width: 768px)" 
-            srcSet="/herosectionbg-mobile.jpg" 
+            srcSet="/images/hero/trending-chrome-cat-claw-square-nails-2026-designs-pinterest-mobile.webp" 
           />
           <img
-            src="/herosectionbg.jpg"
-            alt="Beautiful nail art background"
+            src="/images/hero/trending-chrome-cat-claw-square-nails-2026-viral-designs-pinterest.webp"
+            alt="Trending 2026 chrome nails, cat claw designs, square nail art with press-ons – 50K+ trust Mirellé for viral nail inspiration"
             className="w-full h-full object-cover opacity-90"
             loading="eager"
             fetchPriority="high"

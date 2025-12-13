@@ -257,6 +257,7 @@ const organizationSchema = {
   return (
     <html lang="en-US">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         {/* Global geo-targeting meta tags (won't hurt international reach) */}
         <meta name="distribution" content="global" />
         <meta name="coverage" content="worldwide" />

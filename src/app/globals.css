@@ -1,28 +1,19 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  /* Updated to match your burgundy logo */
-  --background: #fcfaf5;
-  --foreground: #2a2a2a;
-  --accent: #8b1f42; /* Your logo's burgundy */
-  --accent-light: #cc2d5c;
-  --accent-dark: #6b1833;
-  --text-secondary: #6a6a6a;
-  --border-color: #ede5d4;
-  --cream: #f8f4eb;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --background: #F7F7F7;
+  --foreground: #252220;
+  --accent: #E30088;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Source Serif 4', Georgia, serif;
   font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
@@ -31,8 +22,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--foreground);
@@ -60,13 +51,13 @@ p {
 }
 
 a {
-  color: var(--foreground);
+  color: var(--accent);
   text-decoration: none;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 a:hover {
-  color: var(--accent);
+  opacity: 0.7;
 }
 
 ::-webkit-scrollbar {
@@ -78,12 +69,12 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-light);
+  background: var(--accent);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+  opacity: 0.8;
 }
 
 html {
@@ -95,21 +86,16 @@ html {
   color: white;
 }
 
-img {
-  transition: opacity 0.4s ease;
-}
-
 button, .btn {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 500;
-  letter-spacing: 0.02em;
   transition: all 0.3s ease;
 }
 
 hr {
   border: none;
   height: 1px;
-  background: var(--border-color);
+  background: #E0E0E0;
   margin: 3rem 0;
 }
 
@@ -118,127 +104,6 @@ hr {
   outline-offset: 2px;
 }
 
-/* Mobile-First Utility Classes */
-@layer utilities {
-  .thumb-zone {
-    padding-bottom: 80px;
-  }
-
-  .touch-target {
-    min-height: 48px;
-    min-width: 48px;
-  }
-
-  .glass-card {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .glass-card-dark {
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .glass-card-accent {
-    background: rgba(139, 31, 66, 0.15); /* Burgundy with transparency */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(139, 31, 66, 0.2);
-  }
-
-  .glass-card-burgundy {
-    background: rgba(139, 31, 66, 0.9);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(204, 45, 92, 0.3);
-  }
-
-  /* Fallback for browsers without backdrop-filter */
-  @supports not (backdrop-filter: blur(10px)) {
-    .glass-card {
-      background: rgba(255, 255, 255, 0.95);
-    }
-    .glass-card-dark {
-      background: rgba(0, 0, 0, 0.85);
-    }
-    .glass-card-accent {
-      background: rgba(139, 31, 66, 0.85);
-    }
-    .glass-card-burgundy {
-      background: rgba(139, 31, 66, 0.95);
-    }
-  }
-}
-
-/* Animation Keyframes */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes tilt {
-  0%, 100% {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
-  }
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-
-/* Animation Utility Classes */
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out;
-}
-
-.animate-slide-up {
-  animation: slideUp 0.6s ease-out;
-}
-
-.animate-tilt {
-  animation: tilt 10s ease-in-out infinite;
-}
-
-/* Touch-Friendly Focus States */
-@media (hover: none) and (pointer: coarse) {
-  button:focus,
-  a:focus,
-  input:focus,
-  textarea:focus,
-  select:focus {
-    outline: 3px solid var(--accent);
-    outline-offset: 3px;
-  }
-}
-
-/* Reduced Motion Support */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -246,183 +111,4 @@ hr {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  
-  .animate-tilt {
-    animation: none !important;
-  }
 }
-/* Product Modal Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.modal-backdrop {
-  animation: fadeIn 0.3s ease-out;
-  background: rgba(0, 0, 0, 0.75);
-}
-
-.modal-container {
-  animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Custom scrollbar for modal */
-.modal-container::-webkit-scrollbar {
-  width: 8px;
-}
-
-.modal-container::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-
-.modal-container::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.modal-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-/* Line clamp utilities */
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Hover lift effect */
-.hover-lift {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
-}
-
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* ========================================
-   🌙 TEMPORARY DARK MODE OVERRIDE 🌙
-   Remove this entire section to restore light mode
-   ======================================== */
-/* 
-html {
-  background: #0a0a0a !important;
-  color-scheme: dark !important;
-}
-
-body {
-  background: #0a0a0a !important;
-  color: #e5e5e5 !important;
-}
-
-h1, h2, h3, h4, h5, h6, p, span, div, li, td, th, label {
-  color: #e5e5e5 !important;
-}
-
-a {
-  color: #e5e5e5 !important;
-}
-
-a:hover {
-  color: var(--accent-light) !important;
-}
-
-[class*="bg-white"],
-[class*="bg-gray-50"],
-[class*="bg-gray-100"],
-[style*="background: white"],
-[style*="background: #fff"],
-[style*="background-color: white"],
-[style*="background-color: #fff"] {
-  background: #1a1a1a !important;
-}
-
-[style*="background: #fcfaf5"],
-[style*="background: #f8f4eb"],
-[style*="background-color: #fcfaf5"],
-[style*="background-color: #f8f4eb"] {
-  background: #1a1a1a !important;
-}
-
-
-.glass-card {
-  background: rgba(30, 30, 30, 0.8) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-
-hr,
-[class*="border"] {
-  border-color: #333 !important;
-}
-
-
-input, textarea, select {
-  background: #1a1a1a !important;
-  color: #e5e5e5 !important;
-  border-color: #333 !important;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #666 !important;
-}
-
-
-button {
-  border-color: #333 !important;
-} */
-
-/* Scrollbar dark theme */
-/* ::-webkit-scrollbar-track {
-  background: #0a0a0a !important;
-} */
-
-/* ::-webkit-scrollbar-thumb {
-  background: var(--accent-light) !important;
-} */
-
-/* Images - slight brightness reduction for dark mode */
-/* img {
-  filter: brightness(0.9);
-} */
-
-/* Selection */
-/* ::selection {
-  background: var(--accent) !important;
-  color: white !important;
-} */
-
-/* ======================================== 
-   END OF TEMPORARY DARK MODE OVERRIDE
-   ======================================== */

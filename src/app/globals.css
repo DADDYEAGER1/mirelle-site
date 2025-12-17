@@ -31,6 +31,32 @@ header button,
 header span {
   color: #F7F7F7 !important;
 }
+header > nav > div:first-child {
+  justify-content: center !important;
+}
+
+footer {
+  background-color: #252220 !important;
+}
+
+footer a,
+footer button,
+footer span,
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+  color: #F7F7F7 !important;
+}
+
+footer input,
+footer textarea {
+  background-color: #F7F7F7 !important;
+  color: #252220 !important;
+}
 
 body {
   background: var(--background);

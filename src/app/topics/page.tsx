@@ -58,7 +58,7 @@ const topics = [
     description: "Essential tips for healthy, beautiful nails - from basic care to advanced treatments and strengthening techniques",
     image: "/nailcare.jpg",
     href: "/topics/nail-care-guide",
-    color: "from-nude-400 to-nude-600",
+    category: "NAIL HEALTH",
     icon: "💅"
   },
   {
@@ -66,7 +66,7 @@ const topics = [
     description: "Find the perfect nail colors for your skin tone - expert color matching and personalized recommendations",
     image: "/skintone.jpg",
     href: "/topics/skin-tones",
-    color: "from-blush-400 to-blush-600",
+    category: "COLOR GUIDE",
     icon: "🎨"
   },
   {
@@ -74,7 +74,7 @@ const topics = [
     description: "Step-by-step nail art tutorials and inspiration - from beginner techniques to advanced designs",
     image: "/nailart.jpg",
     href: "/topics/nail-art-guides",
-    color: "from-purple-400 to-purple-600",
+    category: "TUTORIALS",
     icon: "✨"
   },
   {
@@ -82,7 +82,7 @@ const topics = [
     description: "Stay updated with the latest seasonal nail trends - spring florals, summer brights, fall warmth, and winter elegance",
     image: "/nailtrends.jpg",
     href: "/topics/seasonal-trends",
-    color: "from-nude-500 to-blush-500",
+    category: "TRENDS",
     icon: "🍂"
   },
   {
@@ -90,7 +90,7 @@ const topics = [
     description: "Professional techniques you can do at home - DIY manicures, cost-saving tips, and salon-quality results",
     image: "/athome.jpg",
     href: "/topics/at-home-hacks",
-    color: "from-blush-500 to-purple-500",
+    category: "DIY TIPS",
     icon: "🏠"
   },
   {
@@ -98,7 +98,7 @@ const topics = [
     description: "Empowering nail looks for the modern woman - chic, confident styles for work, events, and everyday life",
     image: "/modern.jpg",
     href: "/topics/modern-women",
-    color: "from-purple-500 to-nude-500",
+    category: "INSPIRATION",
     icon: "👑"
   }
 ];
@@ -159,32 +159,48 @@ export default function Topics() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(topicListSchema) }} />
 
-      <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative h-96 flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="/featuretopicbanner.jpg"
-              alt="Featured Nail Care Topics and Expert Guides - Nail Health, Art Techniques & Trends"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-white/30 via-transparent to-white/30"></div>
+      <div className="min-h-screen bg-gray-50">
+        {/* Glassmorphism Hero Section */}
+        <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50">
+          {/* Animated gradient background */}
+          <div className="absolute inset-0 opacity-30">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+            <div className="absolute top-0 right-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-rose-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-2000"></div>
           </div>
-          <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-              Featured Topics
-            </h1>
-            <p className="text-xl md:text-2xl font-light drop-shadow-md">
-              Everything You Need to Know About Nails
-            </p>
+
+          {/* Glassmorphism card */}
+          <div className="relative z-10 max-w-4xl mx-auto px-4">
+            <div className="backdrop-blur-xl bg-white/40 border border-white/50 rounded-3xl shadow-2xl p-12 text-center">
+              <div className="w-20 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 mx-auto mb-8 rounded-full"></div>
+              
+              <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent">
+                Featured Topics
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed max-w-2xl mx-auto">
+                Everything You Need to Know About Nails
+              </p>
+              
+              <div className="flex justify-center gap-4 mt-8">
+                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-pink-200">
+                  <span className="text-2xl">✨</span>
+                  <span className="text-sm font-medium text-gray-700">Expert Guides</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-purple-200">
+                  <span className="text-2xl">💅</span>
+                  <span className="text-sm font-medium text-gray-700">Step-by-Step</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Topics Grid */}
+        {/* Topics Grid - Blog Style Cards */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-3xl font-bold text-gray-800 mb-4">
+              <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
                 Explore Our Topics
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -193,46 +209,35 @@ export default function Topics() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
               {topics.map((topic, index) => (
                 <Link
                   key={index}
                   href={topic.href}
-                  className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  className="group block bg-white"
                 >
-                  <div className="relative h-64">
-                    <img
-                      src={topic.image}
-                      alt={`${topic.title} - ${topic.description}`}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                      loading="lazy"
-                    />
-                    <div className={`absolute inset-0 bg-gradient-to-t ${topic.color} opacity-30`}></div>
-                    
-                    {/* Icon Badge */}
-                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-lg">
-                      {topic.icon}
+                  {/* Large Featured Image */}
+                  <div className="relative w-full overflow-hidden mb-6">
+                    <div className="relative w-full pb-[75%]">
+                      <img
+                        src={topic.image}
+                        alt={topic.title}
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
                     </div>
                   </div>
 
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="font-serif text-2xl font-bold mb-2">
+                  {/* Content - Centered */}
+                  <div className="space-y-3 text-center">
+                    {/* Category Label */}
+                    <div className="text-xs font-bold tracking-widest text-burgundy-800 uppercase">
+                      {topic.category}
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="font-serif text-xl md:text-2xl leading-tight text-gray-900 group-hover:text-gray-600 transition-colors duration-300 px-2">
                       {topic.title}
                     </h3>
-                    <p className="text-white/90 mb-4">
-                      {topic.description}
-                    </p>
-                    <div className="flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                      Explore
-                      <svg
-                        className="ml-2 w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </div>
                   </div>
                 </Link>
               ))}
@@ -240,25 +245,64 @@ export default function Topics() {
           </div>
         </section>
 
-        {/* FAQ Section for SEO */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2 text-gray-800">What topics do you cover?</h3>
-                <p className="text-gray-600">We cover comprehensive nail care guides including nail health basics, art techniques, color matching for different skin tones, seasonal trends, DIY home manicures, and modern nail inspiration.</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2 text-gray-800">Are these guides suitable for beginners?</h3>
-                <p className="text-gray-600">Yes! Our guides range from beginner-friendly basics to advanced techniques, with step-by-step instructions and professional tips for every skill level.</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2 text-gray-800">How often are topics updated?</h3>
-                <p className="text-gray-600">We regularly update our guides with the latest trends, techniques, and seasonal inspiration to keep you informed about current nail care practices.</p>
-              </div>
+        {/* Related Content Grid - Horizontal on Mobile */}
+        <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
+                Explore More
+              </h2>
+              <p className="text-lg text-gray-600">
+                Discover our curated collections
+              </p>
+            </div>
+
+            {/* Grid - Same row on mobile */}
+            <div className="grid grid-cols-3 gap-4 md:gap-8">
+              {/* Blog Card */}
+              <Link
+                href="/blog"
+                className="group relative overflow-hidden rounded-2xl aspect-square bg-gradient-to-br from-pink-500 to-rose-600 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-white">
+                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                    📝
+                  </div>
+                  <h3 className="text-sm md:text-2xl font-bold text-center leading-tight">
+                    Explore Nail Trends
+                  </h3>
+                </div>
+              </Link>
+
+              {/* Inspo Card */}
+              <Link
+                href="/inspo"
+                className="group relative overflow-hidden rounded-2xl aspect-square bg-gradient-to-br from-purple-500 to-indigo-600 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-white">
+                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                    ✨
+                  </div>
+                  <h3 className="text-sm md:text-2xl font-bold text-center leading-tight">
+                    Get Inspired
+                  </h3>
+                </div>
+              </Link>
+
+              {/* Shop Card */}
+              <Link
+                href="/shop"
+                className="group relative overflow-hidden rounded-2xl aspect-square bg-gradient-to-br from-rose-500 to-pink-600 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-white">
+                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                    🛍️
+                  </div>
+                  <h3 className="text-sm md:text-2xl font-bold text-center leading-tight">
+                    Shop Favorites
+                  </h3>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

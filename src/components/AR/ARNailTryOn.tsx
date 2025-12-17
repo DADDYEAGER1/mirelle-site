@@ -15,6 +15,7 @@ function ARNailTryOn() {
   const [handsDetected, setHandsDetected] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [useFrontCamera, setUseFrontCamera] = useState(true);
+  const [showPermissionHelp, setShowPermissionHelp] = useState(false);
   
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -110,6 +111,7 @@ function ARNailTryOn() {
 
     setIsLoading(true);
     setError(null);
+    setShowPermissionHelp(false);
 
     try {
       // Check if mediaDevices is available
@@ -119,23 +121,14 @@ function ARNailTryOn() {
 
       console.log('🎥 Requesting camera access...');
       
-      // Force browser to ask for permission with audio: false to be more permissive
-      const constraints = {
+      // Simplified constraints - this MUST trigger permission popup
+      const stream = await navigator.mediaDevices.getUserMedia({ 
         video: {
-          facingMode: useFrontCamera ? 'user' : 'environment',
-          width: { ideal: 1280 },
-          height: { ideal: 720 }
-        },
-        audio: false
-      };
+          facingMode: useFrontCamera ? 'user' : 'environment'
+        }
+      });
 
-      console.log('📋 Using constraints:', constraints);
-      
-      // This MUST trigger the browser permission popup
-      const stream = await navigator.mediaDevices.getUserMedia(constraints);
-
-      console.log('✅ SUCCESS! Camera stream:', stream);
-      console.log('📹 Video tracks:', stream.getVideoTracks());
+      console.log('✅ Camera permission granted!');
       
       streamRef.current = stream;
 
@@ -143,44 +136,60 @@ function ARNailTryOn() {
         videoRef.current.srcObject = stream;
         
         // Wait for video to be ready
-        videoRef.current.onloadedmetadata = () => {
-          console.log('📺 Video metadata loaded');
-          videoRef.current?.play().then(() => {
-            console.log('▶️ Video playing!');
-            setCameraActive(true);
-            setIsLoading(false);
-            initializeHandTracking();
-          }).catch(playErr => {
-            console.error('❌ Video play error:', playErr);
-            setError('Failed to start video playback: ' + playErr.message);
-            setIsLoading(false);
-          });
-        };
+        await new Promise<void>((resolve, reject) => {
+          if (!videoRef.current) {
+            reject(new Error('Video element not found'));
+            return;
+          }
+
+          videoRef.current.onloadedmetadata = () => {
+            console.log('📺 Video metadata loaded');
+            videoRef.current?.play()
+              .then(() => {
+                console.log('▶️ Video playing!');
+                resolve();
+              })
+              .catch(reject);
+          };
+
+          // Timeout after 10 seconds
+          setTimeout(() => reject(new Error('Video load timeout')), 10000);
+        });
+
+        setCameraActive(true);
+        setIsLoading(false);
+        initializeHandTracking();
       }
     } catch (err: any) {
       console.error('❌ Camera ERROR:', err);
-      console.error('Error name:', err.name);
-      console.error('Error message:', err.message);
-      console.error('Full error:', JSON.stringify(err, null, 2));
       
       let errorMessage = '';
+      let showHelp = false;
       
       if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
-        errorMessage = '🚫 CAMERA BLOCKED!\n\nPlease:\n1. Look at the address bar (top left)\n2. Click the camera icon or lock icon\n3. Change Camera permission to "Allow"\n4. Click "Start AR Try-On" again';
+        errorMessage = 'Camera access was denied. Please allow camera access to use AR Try-On.';
+        showHelp = true;
       } else if (err.name === 'NotFoundError') {
-        errorMessage = '📷 No camera found. Please connect a camera and try again.';
+        errorMessage = 'No camera found. Please connect a camera and try again.';
       } else if (err.name === 'NotReadableError') {
-        errorMessage = '⚠️ Camera is being used by another app. Close other apps (Zoom, Teams, etc.) and try again.';
+        errorMessage = 'Camera is being used by another app. Please close other apps and try again.';
       } else if (err.name === 'SecurityError') {
-        errorMessage = '🔒 Security error. Make sure you\'re on localhost or https://.';
+        errorMessage = 'Security error. Please make sure you\'re on a secure connection (HTTPS).';
       } else if (err.name === 'TypeError') {
-        errorMessage = '❌ Browser doesn\'t support camera access. Try Chrome, Firefox, or Safari.';
+        errorMessage = 'Browser doesn\'t support camera access. Try Chrome, Firefox, or Safari.';
       } else {
-        errorMessage = '❌ Unknown error: ' + (err.message || 'Please try refreshing the page.');
+        errorMessage = err.message || 'Failed to access camera. Please try again.';
       }
       
       setError(errorMessage);
+      setShowPermissionHelp(showHelp);
       setIsLoading(false);
+      
+      // Clean up
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach(track => track.stop());
+        streamRef.current = null;
+      }
     }
   };
 
@@ -352,6 +361,7 @@ function ARNailTryOn() {
     setNailImage(null);
     nailImgRef.current = null;
     setError(null);
+    setShowPermissionHelp(false);
     if (fileInputRef.current) {
       fileInputRef.current.value = '';
     }
@@ -445,7 +455,7 @@ function ARNailTryOn() {
                   {isLoading ? (
                     <>
                       <Loader className="w-5 h-5 animate-spin" />
-                      Requesting camera access...
+                      Starting camera...
                     </>
                   ) : (
                     <>
@@ -454,6 +464,19 @@ function ARNailTryOn() {
                     </>
                   )}
                 </button>
+              )}
+
+              {/* Camera Permission Help */}
+              {!cameraActive && (
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+                  <p className="text-sm text-blue-900 mb-2">
+                    📹 <strong>Camera Permission Required</strong>
+                  </p>
+                  <p className="text-sm text-blue-700">
+                    When you click "Start AR Try-On", your browser will ask for camera permission. 
+                    Please click <strong>"Allow"</strong> to continue.
+                  </p>
+                </div>
               )}
             </div>
 
@@ -482,6 +505,8 @@ function ARNailTryOn() {
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{ display: cameraActive ? 'block' : 'none' }}
                   playsInline
+                  autoPlay
+                  muted
                 />
                 <canvas
                   ref={canvasRef}
@@ -530,10 +555,32 @@ function ARNailTryOn() {
           </div>
         )}
 
-        {/* Error Message */}
+        {/* Error Message with Help */}
         {error && (
-          <div className="mx-6 mb-6 p-4 bg-red-50 border border-red-200 rounded-xl">
-            <p className="text-red-700 text-sm">{error}</p>
+          <div className="mx-6 mb-6">
+            <div className="p-4 bg-red-50 border border-red-200 rounded-xl">
+              <p className="text-red-800 font-medium mb-2">❌ {error}</p>
+              
+              {showPermissionHelp && (
+                <div className="mt-4 p-3 bg-white rounded-lg border border-red-100">
+                  <p className="text-sm font-semibold text-red-900 mb-2">
+                    How to allow camera access:
+                  </p>
+                  <ol className="text-sm text-red-700 space-y-1 list-decimal list-inside">
+                    <li>Look for the camera icon in your browser's address bar (top-left)</li>
+                    <li>Click on it and select "Allow"</li>
+                    <li>If you don't see it, check your browser settings</li>
+                    <li>Refresh the page and try again</li>
+                  </ol>
+                  <button
+                    onClick={() => window.location.reload()}
+                    className="mt-3 px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:bg-red-700 transition-colors"
+                  >
+                    Refresh Page
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>

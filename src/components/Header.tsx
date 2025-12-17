@@ -63,7 +63,7 @@ export default function Header() {
             {/* Right Links - Absolute positioned */}
             <div className="flex items-center gap-6 absolute right-0">
               <a 
-                href="#newsletter" 
+                href="https://mirelleinspo.com/subscribe" 
                 className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300 border border-background px-3 py-1.5"
               >
                 Newsletter

@@ -356,7 +356,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
                 {paginatedPosts.length > 0 ? (
                   <>
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
                       {paginatedPosts.map((post) => (
                         <BlogCard key={post.slug} post={post} />
                       ))}

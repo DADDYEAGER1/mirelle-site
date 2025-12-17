@@ -21,6 +21,16 @@
   --font-serif: 'Source Serif 4', Georgia, serif;
   --font-heading: 'Playfair Display', Georgia, serif;
 }
+/* In your globals.css or app.css */
+header {
+  background-color: #252220 !important;
+}
+
+header a,
+header button,
+header span {
+  color: #F7F7F7 !important;
+}
 
 body {
   background: var(--background);

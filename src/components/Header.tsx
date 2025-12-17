@@ -52,16 +52,16 @@ export default function Header() {
       {/* Top Bar */}
       <div className="border-b border-background/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-12">
-            {/* Logo/Brand */}
+          <div className="flex justify-center items-center h-12 relative">
+            {/* Logo/Brand - Centered */}
             <Link href="/" className="flex items-center group">
               <span className="font-serif text-2xl font-bold text-background">
                 Mirellé
               </span>
             </Link>
 
-            {/* Right Links */}
-            <div className="flex items-center gap-6">
+            {/* Right Links - Absolute positioned */}
+            <div className="flex items-center gap-6 absolute right-0">
               <Link 
                 href="/newsletter" 
                 className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300 border border-background px-3 py-1.5"

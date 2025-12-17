@@ -7,9 +7,9 @@ import type { Metadata } from 'next';
 import { generateSchemas } from '@/lib/generateSchemas';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // ✅ ISR: Revalidate every hour
@@ -22,8 +22,9 @@ export async function generateStaticParams() {
   }));
 }
 
+// ✅ FIX #1: Added await for params to fix Next.js 15 async params requirement
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params; // ✅ FIXED: Added await
   const post = await getBlogPost(slug);
   
   if (!post) {
@@ -34,19 +35,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  // ✅ FIX: Ensure tags is always an array
+  // ✅ Ensure tags is always an array
   const tagsArray = Array.isArray(post.tags) ? post.tags : [];
 
   const canonicalUrl = post.canonical || `https://mirelleinspo.com/blog/${slug}`;
   const imageUrl = post.image ? `https://mirelleinspo.com${post.image}` : 'https://mirelleinspo.com/og-default.png';
   const imageAltText = post.imageAlt || post.title;
   
-  // ✅ FIX: Use tagsArray instead of post.tags
   const keywords = tagsArray.length 
     ? tagsArray.join(', ')
     : 'nail art, nail care, nail trends, manicure tips, nail design';
   
-  // ✅ FIX: Use tagsArray
   const primaryTag = tagsArray[0] || 'nail art';
   
   return {
@@ -87,7 +86,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       modifiedTime: post.dateModified || post.updatedDate || post.date,
       authors: [post.author || 'Mirelle'],
       section: post.category || 'Nail Care',
-      tags: tagsArray, // ✅ FIX: Use tagsArray
+      tags: tagsArray,
     },
     twitter: {
       card: 'summary_large_image',
@@ -102,7 +101,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'article:modified_time': post.dateModified || post.updatedDate || post.date,
       'article:author': post.author || 'Mirelle',
       'article:section': post.category || 'Nail Care',
-      'article:tag': tagsArray.join(', '), // ✅ FIX: Use tagsArray (no need for || '')
+      'article:tag': tagsArray.join(', '),
       ...(post.wordCount && { 'article:word_count': post.wordCount.toString() }),
       
       'pin:description': post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirelle.`,
@@ -122,32 +121,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       'og:see_also': canonicalUrl,
       
       ...(post.readTime && { 'twitter:label1': 'Reading time', 'twitter:data1': post.readTime }),
-      ...(tagsArray.length && { 'twitter:label2': 'Filed under', 'twitter:data2': primaryTag }), // ✅ FIX
+      ...(tagsArray.length && { 'twitter:label2': 'Filed under', 'twitter:data2': primaryTag }),
     },
   };
 }
+
 export default async function BlogPostPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug } = await params; // ✅ FIXED: Added await
   const post = await getBlogPost(slug);
   
   if (!post) notFound();
 
-  // ✅ UPDATED: Generate schemas with all available data
+  // Generate schemas with all available data
   const schemas = generateSchemas({
     post,
-    slug: params.slug,
+    slug: slug,
     faqItems: post.faqItems,
     tutorialSteps: post.tutorialSteps,
     tutorialMetadata: post.tutorialMetadata,
     videoMetadata: post.videoMetadata,
     galleryImages: post.galleryImages,
-    eventData: post.eventData, 
-    // Note: rating removed for safety - add only when you have real reviews
+    eventData: post.eventData,
   });
 
   return (
     <>
-      {/* Core Structured Data - Always Present */}
+      {/* Core Structured Data */}
       <script 
         type="application/ld+json" 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.articleSchema) }} 
@@ -165,7 +164,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.organizationSchema) }} 
       />
       
-      {/* Conditional Structured Data - Only When Data Exists */}
+      {/* Conditional Structured Data */}
       {schemas.faqSchema && (
         <script 
           type="application/ld+json" 
@@ -190,7 +189,6 @@ export default async function BlogPostPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.imageGallerySchema) }} 
         />
       )}
-            {/* 🆕 EVENT SCHEMA */}
       {schemas.eventSchema && (
         <script 
           type="application/ld+json" 

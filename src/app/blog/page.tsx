@@ -57,49 +57,42 @@ export const metadata: Metadata = {
     site: '@mirelleinspo',
   },
   other: {
-    // 🆕 PINTEREST META FOR BLOG LISTING
     'pin:description': 'Browse 100+ expert nail care articles, seasonal trends, and tutorials. Get inspired with the latest nail art ideas and professional tips.',
     'pin:media': 'https://mirelleinspo.com/blog-hero.jpg',
     'pinterest-rich-pin': 'true',
-    
-    // 🆕 Enhanced image metadata
     'og:image:width': '1200',
     'og:image:height': '630',
     'og:image:alt': 'Mirelle Nail Care Blog - 100+ Expert Articles & Tutorials',
     'og:image:type': 'image/jpeg',
-    
-    // 🆕 Blog collection metadata
     'og:type': 'blog',
     'article:publisher': 'https://www.pinterest.com/mirelle_inspo',
-    
-    // 🆕 Pinterest category targeting
     'pinterest:category': 'Beauty',
     'pinterest:board_suggestion': 'Nail Care Tips',
-    
-    // 🆕 Content freshness signals
     'og:updated_time': new Date().toISOString(),
-    
-    // 🆕 Twitter card enhancements
     'twitter:label1': 'Articles',
     'twitter:data1': '100+ posts',
     'twitter:label2': 'Topics',
     'twitter:data2': 'Nail Art, Trends, Tutorials',
   },
 };
+
+// ✅ FIX #2: Changed searchParams to Promise type for Next.js 15
 interface PageProps {
-  searchParams: {
+  searchParams: Promise<{
     page?: string;
     tag?: string;
     category?: string;
     search?: string;
-  };
+  }>;
 }
 
 export default async function BlogPage({ searchParams }: PageProps) {
-  const currentPage = Number(searchParams.page) || 1;
-  const selectedTag = searchParams.tag;
-  const selectedCategory = searchParams.category;
-  const searchQuery = searchParams.search;
+  // ✅ FIX #2: Added await for searchParams
+  const params = await searchParams;
+  const currentPage = Number(params.page) || 1;
+  const selectedTag = params.tag;
+  const selectedCategory = params.category;
+  const searchQuery = params.search;
 
   // Get all posts
   const { posts: allPosts, totalPages: originalTotalPages, totalPosts: originalTotalPosts } = await getPaginatedPosts(1, 1000);
@@ -108,14 +101,12 @@ export default async function BlogPage({ searchParams }: PageProps) {
   let filteredPosts = allPosts;
 
   if (selectedTag) {
-    // Tags in markdown are already slugified (e.g., "october-2025")
     filteredPosts = filteredPosts.filter(post => 
       post.tags?.some(tag => tag === selectedTag)
     );
   }
 
   if (selectedCategory) {
-    // Slugify category for comparison
     const slugifyCategory = (cat: string) => cat.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
     filteredPosts = filteredPosts.filter(post => 
       slugifyCategory(post.category || '') === selectedCategory
@@ -169,12 +160,12 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
   // Build query params for pagination
   const buildPaginationUrl = (page: number) => {
-    const params = new URLSearchParams();
-    if (page > 1) params.set('page', page.toString());
-    if (selectedTag) params.set('tag', selectedTag);
-    if (selectedCategory) params.set('category', selectedCategory);
-    if (searchQuery) params.set('search', searchQuery);
-    return `/blog${params.toString() ? '?' + params.toString() : ''}`;
+    const urlParams = new URLSearchParams();
+    if (page > 1) urlParams.set('page', page.toString());
+    if (selectedTag) urlParams.set('tag', selectedTag);
+    if (selectedCategory) urlParams.set('category', selectedCategory);
+    if (searchQuery) urlParams.set('search', searchQuery);
+    return `/blog${urlParams.toString() ? '?' + urlParams.toString() : ''}`;
   };
 
   return (
@@ -197,7 +188,6 @@ export default async function BlogPage({ searchParams }: PageProps) {
         {/* Hero Section */}
         <section className="relative bg-background py-24 border-b border-editorial-stone">
           <div className="container mx-auto px-4">
-            {/* Decorative accent line */}
             <div className="w-16 h-0.5 bg-accent mx-auto mb-8"></div>
             
             <div className="text-center max-w-4xl mx-auto">
@@ -226,11 +216,10 @@ export default async function BlogPage({ searchParams }: PageProps) {
             </div>
           </div>
           
-          {/* Subtle bottom gradient fade */}
           <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
         </section>
 
-        {/* Search Section - Optional refined version */}
+        {/* Search Section */}
         <section className="bg-white py-8 border-b border-gray-100">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
@@ -373,7 +362,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                       ))}
                     </div>
 
-                    {/* Pagination Component */}
+                    {/* ✅ FIX #3: Pagination now uses client-side navigation */}
                     {totalPages > 1 && (
                       <div className="mt-8">
                         <div className="flex justify-center gap-2">

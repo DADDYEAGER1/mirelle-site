@@ -1,118 +1,57 @@
 // src/lib/inspoFilters.ts
 import type { DesignImage } from '@/types/inspo';
 
-export interface FilterState {
-  color?: string;
-  style?: string;
-  length?: string;
-  occasion?: string;
-  difficulty?: string;
-}
-
-export type SortOption = 'trending' | 'newest' | 'popular' | 'viewed';
-
 /**
- * Filter options for each category
+ * Filter images by category/tag
  */
-export const filterOptions = {
-  color: [
-    { value: 'all', label: 'All Colors' },
-    { value: 'white', label: 'White' },
-    { value: 'nude', label: 'Nude' },
-    { value: 'pink', label: 'Pink' },
-    { value: 'red', label: 'Red' },
-    { value: 'burgundy', label: 'Burgundy' },
-    { value: 'blue', label: 'Blue' },
-    { value: 'purple', label: 'Purple' },
-    { value: 'green', label: 'Green' },
-    { value: 'black', label: 'Black' },
-    { value: 'silver', label: 'Silver' },
-    { value: 'gold', label: 'Gold' },
-    { value: 'chrome', label: 'Chrome' },
-  ],
-  style: [
-    { value: 'all', label: 'All Styles' },
-    { value: 'classic', label: 'Classic' },
-    { value: 'modern', label: 'Modern' },
-    { value: 'minimalist', label: 'Minimalist' },
-    { value: 'glam', label: 'Glam' },
-    { value: 'artistic', label: 'Artistic' },
-    { value: 'seasonal', label: 'Seasonal' },
-  ],
-  length: [
-    { value: 'all', label: 'All Lengths' },
-    { value: 'short', label: 'Short' },
-    { value: 'medium', label: 'Medium' },
-    { value: 'long', label: 'Long' },
-    { value: 'extra-long', label: 'Extra Long' },
-  ],
-  occasion: [
-    { value: 'all', label: 'All Occasions' },
-    { value: 'everyday', label: 'Everyday' },
-    { value: 'office', label: 'Office' },
-    { value: 'party', label: 'Party' },
-    { value: 'wedding', label: 'Wedding' },
-    { value: 'vacation', label: 'Vacation' },
-    { value: 'formal', label: 'Formal' },
-  ],
-  difficulty: [
-    { value: 'all', label: 'All Levels' },
-    { value: 'beginner', label: 'Beginner' },
-    { value: 'intermediate', label: 'Intermediate' },
-    { value: 'advanced', label: 'Advanced' },
-  ],
-};
-
-/**
- * Sort options
- */
-export const sortOptions = [
-  { value: 'trending', label: '🔥 Trending' },
-  { value: 'newest', label: '🆕 Newest' },
-  { value: 'popular', label: '💖 Most Liked' },
-  { value: 'viewed', label: '👁️ Most Viewed' },
-];
-
-/**
- * Filter images based on active filters
- */
-export function filterImages(images: DesignImage[], filters: FilterState): DesignImage[] {
-  let filtered = [...images];
-
-  // Filter by color
-  if (filters.color && filters.color !== 'all') {
-    filtered = filtered.filter((img) =>
-      img.category?.toLowerCase().includes(filters.color!.toLowerCase())
-    );
+export function filterImages(
+  images: DesignImage[],
+  filter: 'all' | 'premium' | string
+): DesignImage[] {
+  switch (filter) {
+    case 'all':
+      return images;
+    case 'premium':
+      return images.filter(img => img.isPremium);
+    default:
+      // Filter by category if it's a custom filter
+      return images.filter(img => img.category === filter);
   }
-
-  // Add more filter logic as needed based on image metadata
-
-  return filtered;
 }
 
 /**
- * Sort images based on sort option
+ * Sort images by different criteria
  */
-export function sortImages(images: DesignImage[], sortBy: SortOption): DesignImage[] {
+export function sortImages(
+  images: DesignImage[],
+  sortBy: 'newest' | 'popular' | 'trending' | 'random'
+): DesignImage[] {
   const sorted = [...images];
 
   switch (sortBy) {
-    case 'trending':
-      // Could be based on recent engagement, for now random
-      return sorted.sort(() => Math.random() - 0.5);
-    
     case 'newest':
-      // Reverse order (assuming newer images are added last)
-      return sorted.reverse();
+      // Sort by ID in reverse (assuming higher IDs are newer)
+      return sorted.sort((a, b) => b.id.localeCompare(a.id));
     
     case 'popular':
-      // Would need likes metadata
-      return sorted;
+      // Sort by premium first, then by ID
+      return sorted.sort((a, b) => {
+        if (a.isPremium && !b.isPremium) return -1;
+        if (!a.isPremium && b.isPremium) return 1;
+        return b.id.localeCompare(a.id);
+      });
     
-    case 'viewed':
-      // Would need views metadata
-      return sorted;
+    case 'trending':
+      // Same as popular for now - could add view counts later
+      return sorted.sort((a, b) => {
+        if (a.isPremium && !b.isPremium) return -1;
+        if (!a.isPremium && b.isPremium) return 1;
+        return 0;
+      });
+    
+    case 'random':
+      // Shuffle array
+      return sorted.sort(() => Math.random() - 0.5);
     
     default:
       return sorted;
@@ -120,49 +59,88 @@ export function sortImages(images: DesignImage[], sortBy: SortOption): DesignIma
 }
 
 /**
- * Get active filter count
+ * Search images by alt text
  */
-export function getActiveFilterCount(filters: FilterState): number {
-  return Object.values(filters).filter(
-    (value) => value && value !== 'all'
-  ).length;
+export function searchImages(
+  images: DesignImage[],
+  query: string
+): DesignImage[] {
+  if (!query || query.trim() === '') return images;
+  
+  const lowerQuery = query.toLowerCase();
+  return images.filter(img =>
+    img.alt.toLowerCase().includes(lowerQuery)
+  );
 }
 
 /**
- * Get filter chips for display
+ * Get unique categories from images
  */
-export function getActiveFilterChips(filters: FilterState): Array<{
-  id: string;
-  label: string;
-  icon: string;
-  value: string;
-}> {
-  const chips: Array<{ id: string; label: string; icon: string; value: string }> = [];
+export function getUniqueCategories(images: DesignImage[]): string[] {
+  const categories = new Set<string>();
+  images.forEach(img => {
+    if (img.category) categories.add(img.category);
+  });
+  return Array.from(categories).sort();
+}
 
-  Object.entries(filters).forEach(([key, value]) => {
-    if (value && value !== 'all') {
-      const option = filterOptions[key as keyof typeof filterOptions]?.find(
-        (opt) => opt.value === value
-      );
-      
-      if (option) {
-        const icons: Record<string, string> = {
-          color: '🎨',
-          style: '✨',
-          length: '💅',
-          occasion: '🎉',
-          difficulty: '⭐',
-        };
-        
-        chips.push({
-          id: key,
-          label: option.label,
-          icon: icons[key] || '•',
-          value: value,
-        });
-      }
+/**
+ * Count images by category
+ */
+export function countByCategory(images: DesignImage[]): Record<string, number> {
+  const counts: Record<string, number> = {};
+  
+  images.forEach(img => {
+    if (img.category) {
+      counts[img.category] = (counts[img.category] || 0) + 1;
     }
   });
+  
+  return counts;
+}
 
-  return chips;
+/**
+ * Get premium images only
+ */
+export function getPremiumImages(images: DesignImage[]): DesignImage[] {
+  return images.filter(img => img.isPremium);
+}
+
+/**
+ * Get random images for featured section
+ */
+export function getRandomImages(
+  images: DesignImage[],
+  count: number = 6
+): DesignImage[] {
+  const shuffled = [...images].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+}
+
+/**
+ * Paginate images
+ */
+export function paginateImages(
+  images: DesignImage[],
+  page: number = 1,
+  perPage: number = 24
+): {
+  images: DesignImage[];
+  totalPages: number;
+  currentPage: number;
+  hasNextPage: boolean;
+  hasPrevPage: boolean;
+} {
+  const startIndex = (page - 1) * perPage;
+  const endIndex = startIndex + perPage;
+  const paginatedImages = images.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(images.length / perPage);
+
+  return {
+    images: paginatedImages,
+    totalPages,
+    currentPage: page,
+    hasNextPage: page < totalPages,
+    hasPrevPage: page > 1,
+  };
 }

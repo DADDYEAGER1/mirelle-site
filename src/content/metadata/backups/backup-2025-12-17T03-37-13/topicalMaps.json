@@ -42,37 +42,5 @@
     "primaryKeyword": "white christmas nails snowflake designs",
     "searchIntent": "informational",
     "topicalBoundary": "Winter wonderland theme-specific (white, snowflakes, icy blue) Christmas nail designs and snowflake painting techniques"
-  },
-  "blooming-gel-nails": {
-    "position": "standalone",
-    "parentPillar": null,
-    "relatedClusters": [],
-    "primaryKeyword": "blooming gel nails",
-    "searchIntent": "informational",
-    "topicalBoundary": "Complete tutorial on blooming gel technique, from basics through advanced designs, with troubleshooting"
-  },
-  "nail-polish-colors-make-hands-look-younger": {
-    "position": "standalone",
-    "parentPillar": null,
-    "relatedClusters": [
-      "nail-care-guide",
-      "skin-tones",
-      "seasonal-trends"
-    ],
-    "primaryKeyword": "nail polish colors make you look younger",
-    "searchIntent": "informational-commercial",
-    "topicalBoundary": "Comprehensive guide covering anti-aging nail colors, shapes, 2025 trends, health warnings, and complete hand care for mature women seeking youthful-looking hands"
-  },
-  "santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art": {
-    "position": "standalone",
-    "parentPillar": null,
-    "relatedClusters": [
-      "christmas-nail-designs-2025",
-      "red-green-christmas-nails-2025",
-      "short-christmas-nails-2025"
-    ],
-    "primaryKeyword": "santa reindeer gingerbread christmas nails",
-    "searchIntent": "informational",
-    "topicalBoundary": "Complete guide to creating Santa, Rudolph, and gingerbread character nail art with tutorials, difficulty ratings, and beginner alternatives"
   }
 }

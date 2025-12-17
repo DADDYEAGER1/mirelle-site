@@ -9,16 +9,16 @@
 //           {/* ✅ Content with ScrollReveal */}
 //           <ScrollReveal delay={100}>
 //             <div>
-//               <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-6">
+//               <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-6">
 //                 Your Nail Discovery Platform
 //               </h2>
-//               <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
+//               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
 //                 Mirellé curates the best nail trends, artist features, and product 
 //                 recommendations from across the internet. We spend hours researching 
 //                 so you don't have to—finding hidden gems, testing viral products, and 
 //                 spotting trends before they explode.
 //               </p>
-//               <p className="text-lg text-charcoal-600 mb-8 leading-relaxed">
+//               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
 //                 From seasonal inspiration galleries to honest product comparisons, we're 
 //                 your trusted source for discovering what's actually worth your time (and money). 
 //                 Think of us as your nail-obsessed friend who does all the research and sends 
@@ -70,16 +70,16 @@ export default function AboutSection() {
           {/* Content with ScrollReveal */}
           <ScrollReveal delay={100}>
             <div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-6">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-6">
                 Data-Driven Nail Trend Analysis
               </h2>
-              <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Mirellé Inspo isn't run by a nail artist—it's a trend analysis platform 
                 that curates and forecasts nail trends using search data, social signals, 
                 and consumer behavior patterns. I spend 40+ hours weekly researching so 
                 you can discover what's trending before it peaks.
               </p>
-              <p className="text-lg text-charcoal-600 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 From analyzing Pinterest search volumes to tracking Instagram engagement 
                 patterns, I combine data science with creative curation to help you stay 
                 ahead of the curve. No guesswork—just insights backed by real numbers.

@@ -128,11 +128,11 @@ export default function RelatedContent({ categorySlug }: RelatedContentProps) {
             <a
               key={link.url}
               href={link.url}
-              className="group relative bg-gradient-to-br from-cream-50 to-white rounded-2xl p-6 border-2 border-gray-100 hover:border-burgundy-200 hover:shadow-xl transition-all duration-300"
+              className="group relative bg-gradient-to-br from-cream-50 to-white rounded-2xl p-6 border-2 border-gray-100 hover:border-accent/30 hover:shadow-xl transition-all duration-300"
             >
               {/* Badge */}
               {link.badge && (
-                <div className="absolute top-4 right-4 px-3 py-1 bg-burgundy-600 text-white text-xs font-bold rounded-full">
+                <div className="absolute top-4 right-4 px-3 py-1 bg-accent/80 text-white text-xs font-bold rounded-full">
                   {link.badge}
                 </div>
               )}
@@ -143,7 +143,7 @@ export default function RelatedContent({ categorySlug }: RelatedContentProps) {
               </div>
 
               {/* Title */}
-              <h3 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-burgundy-700 transition-colors">
+              <h3 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-accent transition-colors">
                 {link.title}
               </h3>
 
@@ -153,7 +153,7 @@ export default function RelatedContent({ categorySlug }: RelatedContentProps) {
               </p>
 
               {/* Arrow */}
-              <div className="flex items-center text-burgundy-600 font-semibold text-sm group-hover:translate-x-2 transition-transform duration-300">
+              <div className="flex items-center text-accent/80 font-semibold text-sm group-hover:translate-x-2 transition-transform duration-300">
                 Read More
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -174,7 +174,7 @@ export default function RelatedContent({ categorySlug }: RelatedContentProps) {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="/blog"
-              className="px-8 py-3 bg-burgundy-600 text-white rounded-full font-bold hover:bg-burgundy-700 transition-colors inline-flex items-center gap-2"
+              className="px-8 py-3 bg-accent/80 text-white rounded-full font-bold hover:bg-accent transition-colors inline-flex items-center gap-2"
             >
               Browse All Articles
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -183,7 +183,7 @@ export default function RelatedContent({ categorySlug }: RelatedContentProps) {
             </a>
             <a
               href="/topics"
-              className="px-8 py-3 bg-white text-burgundy-600 border-2 border-burgundy-600 rounded-full font-bold hover:bg-burgundy-50 transition-colors"
+              className="px-8 py-3 bg-white text-accent/80 border-2 border-accent/80 rounded-full font-bold hover:bg-accent/10 transition-colors"
             >
               View Topics
             </a>

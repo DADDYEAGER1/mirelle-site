@@ -36,13 +36,13 @@ function CategoryCard({ design, imageCount = 0 }: CategoryCardProps) {
 
           {/* Category badge */}
           <div className="mb-3">
-            <span className="inline-block px-3 py-1 bg-burgundy-600/80 backdrop-blur-sm rounded-full text-white text-xs font-bold uppercase tracking-wider">
+            <span className="inline-block px-3 py-1 bg-accent/80/80 backdrop-blur-sm rounded-full text-white text-xs font-bold uppercase tracking-wider">
               {design.category}
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 group-hover:text-cream-100 transition-colors">
+          <h3 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 group-hover:text-background transition-colors">
             {design.displayName}
           </h3>
 
@@ -95,7 +95,7 @@ export default function CategoryGrid({ designs, designsByCategory }: CategoryGri
             {/* Category Header */}
             <div className="mb-12 text-center md:text-left">
               <div className="inline-block mb-4">
-                <span className="px-4 py-2 bg-burgundy-100 text-burgundy-700 rounded-full text-sm font-bold uppercase tracking-wide">
+                <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-bold uppercase tracking-wide">
                   {categoryName} Collection
                 </span>
               </div>

@@ -6,7 +6,7 @@ export default function AboutInspo() {
     <section className="py-16 bg-gradient-to-b from-cream-50 to-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <details className="group bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-gray-100">
-          <summary className="cursor-pointer px-8 py-6 flex justify-between items-center hover:bg-cream-50 transition-colors list-none">
+          <summary className="cursor-pointer px-8 py-6 flex justify-between items-center hover:bg-background transition-colors list-none">
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 bg-gradient-to-br from-burgundy-100 to-pink-100 rounded-2xl flex items-center justify-center">
                 <span className="text-3xl">💡</span>
@@ -22,7 +22,7 @@ export default function AboutInspo() {
             </div>
 
             <svg
-              className="w-7 h-7 text-burgundy-600 transform group-open:rotate-180 transition-transform flex-shrink-0"
+              className="w-7 h-7 text-accent/80 transform group-open:rotate-180 transition-transform flex-shrink-0"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -46,25 +46,25 @@ export default function AboutInspo() {
               </h3>
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-cream-50 rounded-2xl p-6">
+                <div className="bg-background rounded-2xl p-6">
                   <div className="text-3xl mb-3">✨</div>
                   <h4 className="font-bold text-lg text-gray-900 mb-2">Curated Quality</h4>
                   <p className="text-gray-600 text-sm">Every design undergoes careful selection to ensure it meets our standards for beauty, originality, and reproducibility.</p>
                 </div>
 
-                <div className="bg-cream-50 rounded-2xl p-6">
+                <div className="bg-background rounded-2xl p-6">
                   <div className="text-3xl mb-3">📚</div>
                   <h4 className="font-bold text-lg text-gray-900 mb-2">Skill Level Friendly</h4>
                   <p className="text-gray-600 text-sm">From beginner to advanced, we categorize designs by difficulty so you can find looks that match your expertise.</p>
                 </div>
 
-                <div className="bg-cream-50 rounded-2xl p-6">
+                <div className="bg-background rounded-2xl p-6">
                   <div className="text-3xl mb-3">🔄</div>
                   <h4 className="font-bold text-lg text-gray-900 mb-2">Daily Updates</h4>
                   <p className="text-gray-600 text-sm">New designs added daily, seasonal collections updated weekly, and trending styles highlighted in real-time.</p>
                 </div>
 
-                <div className="bg-cream-50 rounded-2xl p-6">
+                <div className="bg-background rounded-2xl p-6">
                   <div className="text-3xl mb-3">💾</div>
                   <h4 className="font-bold text-lg text-gray-900 mb-2">Save & Organize</h4>
                   <p className="text-gray-600 text-sm">Create your personal collection by saving favorite designs and accessing them anytime across devices.</p>
@@ -89,7 +89,7 @@ export default function AboutInspo() {
                   <strong>Get Tutorials:</strong> Many designs include step-by-step guides, product recommendations, and technique tips.
                 </li>
                 <li className="text-gray-700">
-                  <strong>Shop the Look:</strong> Browse our <a href="/shop" className="text-burgundy-600 hover:text-burgundy-700 font-semibold underline">press-on nail collection</a> to recreate your favorite designs instantly.
+                  <strong>Shop the Look:</strong> Browse our <a href="/shop" className="text-accent/80 hover:text-accent font-semibold underline">press-on nail collection</a> to recreate your favorite designs instantly.
                 </li>
               </ol>
 
@@ -106,13 +106,13 @@ export default function AboutInspo() {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href="/topics/nail-art-guides" className="text-burgundy-600 hover:text-burgundy-700 font-semibold underline">
+                <a href="/topics/nail-art-guides" className="text-accent/80 hover:text-accent font-semibold underline">
                   Explore Nail Art Guides →
                 </a>
-                <a href="/topics/seasonal-trends" className="text-burgundy-600 hover:text-burgundy-700 font-semibold underline">
+                <a href="/topics/seasonal-trends" className="text-accent/80 hover:text-accent font-semibold underline">
                   View Seasonal Trends →
                 </a>
-                <a href="/blog/winter-nails-2025" className="text-burgundy-600 hover:text-burgundy-700 font-semibold underline">
+                <a href="/blog/winter-nails-2025" className="text-accent/80 hover:text-accent font-semibold underline">
                   Winter Nail Ideas →
                 </a>
               </div>

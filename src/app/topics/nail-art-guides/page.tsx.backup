@@ -432,10 +432,12 @@ export default function NailArtGuides() {
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/nail-art-hero-beginner-designs-progression.jpg"
-              alt="Easy nail art designs for beginners showing simple to advanced progression with household tools"
-              className="w-full h-full object-cover"
-            />
+                    src="/images/topic/beginner-progression-simple-advanced-household-tools.webp"
+                    alt="Beginner to advanced progression showing dots stripes gradients created with toothpicks tape sponges on manicured hands"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
           </div>
           
@@ -698,11 +700,11 @@ export default function NailArtGuides() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img
-                    src="/nail-art-household-tools-toothpick-bobby-pin-tape-sponge.jpg"
-                    alt="Household items that work as nail art tools including toothpicks, bobby pins, tape, and makeup sponges"
+                    src="/images/topic/household-essentials-toothpick-bobby-pin-tape-sponge-flatlay.webp"
+                    alt="Flatlay of everyday household items toothpicks bobby pins scotch tape makeup sponges arranged for beginner manicure"
                     width={600}
                     height={400}
-                    className="rounded-2xl shadow-lg w-full"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
                 </div>
                 <div className="space-y-4">
@@ -864,11 +866,11 @@ export default function NailArtGuides() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                 <div>
                   <img
-                    src="/nail-art-prep-clean-file-buff-cuticles.jpg"
-                    alt="Nail preparation steps showing cleaned filed buffed nails with pushed back cuticles"
+                    src="/images/topic/preparation-clean-shaped-buffed-cuticles-pushed-back.webp"
+                    alt="Prepped hands showing cleaned shaped buffed nails with gently pushed back cuticles ready for polish application"
                     width={600}
                     height={400}
-                    className="rounded-2xl shadow-lg w-full"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
                 </div>
                 <div className="space-y-6">
@@ -1000,12 +1002,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-single-color-perfect-application-technique.jpg"
-                  alt="Single color nail polish perfect application showing three stroke method for smooth finish"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mt-6"
-                />
+                    src="/images/topic/single-color-smooth-application-bubble-free-technique.webp"
+                    alt="Perfect single color manicure showing smooth bubble free application with clean cuticle lines and even coverage"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 2: Simple Glitter Tips */}
@@ -1083,12 +1085,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-glitter-tips-sponge-gradient-method.jpg"
-                  alt="Glitter tips nail design using makeup sponge showing gradient effect application"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/glitter-gradient-sponge-dab-sparkle-fade-tips.webp"
+                    alt="Sparkle gradient created by dabbing sponge with glitter polish from tips fading toward base for ombre effect"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 3: One-Finger Accent Nail */}
@@ -1156,12 +1158,12 @@ export default function NailArtGuides() {
                 </p>
 
                 <img
-                  src="/nail-art-one-finger-accent-nail-ring-finger.jpg"
-                  alt="One finger accent nail design showing ring finger in contrasting color for minimalist look"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/accent-ring-finger-contrasting-color-minimalist-style.webp"
+                    alt="Minimalist manicure with four nails in nude and ring finger featuring bold contrasting burgundy accent color"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 4: Half & Half Color Block */}
@@ -1239,12 +1241,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-half-half-color-block-tape-method.jpg"
-                  alt="Half and half color block nail design using tape for clean straight line division"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/geometric-color-block-tape-guide-clean-division.webp"
+                    alt="Geometric design with two colors split diagonally using tape guide creating sharp clean line for modern look"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 5: Random Dots */}
@@ -1321,12 +1323,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-random-dots-scattered-toothpick-technique.jpg"
-                  alt="Random scattered dots nail design using toothpick showing forgiving placement pattern"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/scattered-dots-organic-placement-forgiving-pattern.webp"
+                    alt="Random scattered dots in varying sizes placed organically across nails using toothpick for forgiving artistic look"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
 
                 <p className="text-gray-600 text-sm mt-4">
                   Works beautifully for <a href="https://mirelleinspo.com/blog/valentine-nails-2026" style={{color: '#2563eb', textDecoration: 'underline'}}>Valentine's nails</a> (pink dots on red base) or <a href="https://mirelleinspo.com/blog/winter-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}}>winter designs</a> (white dots on navy = snowfall effect).
@@ -1422,12 +1424,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-polka-dots-toothpick-technique-tutorial.jpg"
-                  alt="Classic polka dot nail art using toothpick showing evenly spaced dot pattern technique"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/structured-polka-dots-evenly-spaced-grid-pattern.webp"
+                    alt="Classic polka dots arranged in evenly spaced grid pattern created with toothpick showing consistent dot sizing"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 7: Simple French Tips */}
@@ -1505,12 +1507,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-simple-french-tips-tape-method-beginner.jpg"
-                  alt="Simple French tip manicure using scotch tape guide for clean white smile line"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/french-manicure-tape-guide-white-tips-pink-base.webp"
+                    alt="Classic French manicure with pink base and white tips created using tape guide for perfect smile line curve"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 8: Vertical Stripes */}
@@ -1588,12 +1590,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-vertical-stripes-striping-tape-application.jpg"
-                  alt="Vertical stripe nail design using striping tape for clean modern lines"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/vertical-lines-metallic-tape-elongating-modern-style.webp"
+                    alt="Vertical metallic striping tape on solid base creating elongating lines sealed with top coat for modern style"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 9: Glitter Gradient */}
@@ -1671,12 +1673,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-glitter-gradient-sponge-fade-technique.jpg"
-                  alt="Glitter gradient nail design using makeup sponge for ombre sparkle effect"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/full-glitter-ombre-sponge-bounce-tip-to-base.webp"
+                    alt="Full glitter gradient from dense tips fading to base created by bouncing loaded sponge for ombre sparkle effect"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               </div>
 
               {/* Design 10: Ombre Two-Tone */}
@@ -1755,12 +1757,12 @@ export default function NailArtGuides() {
                 </div>
 
                 <img
-                  src="/nail-art-ombre-two-tone-sponge-blend-gradient.jpg"
-                  alt="Two tone ombre nail design using sponge technique for color gradient blend"
-                  width={800}
-                  height={533}
-                  className="rounded-xl shadow-lg w-full max-w-2xl mx-auto"
-                />
+                    src="/images/topic/two-color-blend-sponge-gradient-seamless-transition.webp"
+                    alt="Two complementary colors blending seamlessly from tip to base using sponge technique for gradient ombre transition"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
 
                 <p className="text-gray-600 text-sm mt-4">
                   Beautiful color combos: pink to purple, blue to teal, peach to coral, nude to burgundy. For seasonal inspiration, check out <a href="https://mirelleinspo.com/topics/seasonal-trends" style={{color: '#2563eb', textDecoration: 'underline'}}>trending seasonal palettes</a>.

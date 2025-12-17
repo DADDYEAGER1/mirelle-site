@@ -162,7 +162,7 @@ export default function MasonryGallery({ images, onImageClick }: MasonryGalleryP
                     onClick={(e) => toggleSave(image.id, e)}
                     className={`absolute top-3 left-3 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 z-10 ${
                       isSaved
-                        ? 'bg-burgundy-600 scale-110'
+                        ? 'bg-accent/80 scale-110'
                         : 'bg-white/90 hover:bg-white hover:scale-110'
                     }`}
                     aria-label={isSaved ? 'Unsave' : 'Save'}

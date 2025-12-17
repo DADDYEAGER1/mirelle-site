@@ -54,20 +54,20 @@ export default function Header() {
     priority={true}
     className="w-auto h-12"
   />
-  <span className="font-serif text-2xl font-bold text-charcoal-800">
+  <span className="font-serif text-2xl font-bold text-gray-800">
     Mirellé
   </span>
 </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link href="/" className="text-gray-700 hover:text-blush-400 transition-colors font-medium">
               Home
             </Link>
 
             {/* Blog Dropdown */}
             <div className="relative group">
-              <button className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium flex items-center gap-1">
+              <button className="text-gray-700 hover:text-blush-400 transition-colors font-medium flex items-center gap-1">
                 Blog
                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -82,7 +82,7 @@ export default function Header() {
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
+                          className="block py-3 text-lg text-gray-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
                         >
                           {link.label}
                         </Link>
@@ -95,7 +95,7 @@ export default function Header() {
 
             {/* Shop Dropdown */}
             <div className="relative group">
-              <button className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium flex items-center gap-1">
+              <button className="text-gray-700 hover:text-blush-400 transition-colors font-medium flex items-center gap-1">
                 Shop
                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -110,7 +110,7 @@ export default function Header() {
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
+                          className="block py-3 text-lg text-gray-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
                         >
                           {link.label}
                         </Link>
@@ -123,7 +123,7 @@ export default function Header() {
 
             {/* Inspo Dropdown (Replaced Topics) */}
             <div className="relative group">
-              <button className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium flex items-center gap-1">
+              <button className="text-gray-700 hover:text-blush-400 transition-colors font-medium flex items-center gap-1">
                 Inspo
                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -138,7 +138,7 @@ export default function Header() {
                         <Link
                           key={link.href}
                           href={link.href}
-                          className="block py-3 text-lg text-charcoal-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
+                          className="block py-3 text-lg text-gray-700 hover:text-blush-400 hover:pl-2 transition-all duration-200"
                         >
                           {link.label}
                         </Link>
@@ -149,10 +149,10 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/about" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link href="/about" className="text-gray-700 hover:text-blush-400 transition-colors font-medium">
               About
             </Link>
-            <Link href="/work-with-us" className="text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link href="/work-with-us" className="text-gray-700 hover:text-blush-400 transition-colors font-medium">
               Collaborate
             </Link>
           </div>
@@ -163,7 +163,7 @@ export default function Header() {
               href="https://in.pinterest.com/mirelle_inspo/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
+              className="text-gray-600 hover:text-blush-400 transition-colors"
               aria-label="Pinterest"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -174,7 +174,7 @@ export default function Header() {
               href="https://instagram.com/mirelle_inspo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
+              className="text-gray-600 hover:text-blush-400 transition-colors"
               aria-label="Instagram"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -185,7 +185,7 @@ export default function Header() {
               href="https://x.com/mirelleinspo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
+              className="text-gray-600 hover:text-blush-400 transition-colors"
               aria-label="X (Twitter)"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -197,7 +197,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-charcoal-700"
+            className="md:hidden text-gray-700"
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,7 +213,7 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-3 border-t border-blush-200">
-            <Link href="/" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link href="/" className="block text-gray-700 hover:text-blush-400 transition-colors font-medium">
               Home
             </Link>
 
@@ -221,7 +221,7 @@ export default function Header() {
             <div>
               <button
                 onClick={() => toggleMobileDropdown('blog')}
-                className="w-full flex items-center justify-between text-charcoal-700 hover:text-blush-400 transition-colors font-medium"
+                className="w-full flex items-center justify-between text-gray-700 hover:text-blush-400 transition-colors font-medium"
               >
                 Blog
                 <svg className={`w-4 h-4 transition-transform ${mobileDropdowns.blog ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -231,7 +231,7 @@ export default function Header() {
               {mobileDropdowns.blog && (
                 <div className="mt-2 ml-4 space-y-2">
                   {BLOG_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-charcoal-600 hover:text-blush-400 transition-colors text-sm">
+                    <Link key={link.href} href={link.href} className="block text-gray-600 hover:text-blush-400 transition-colors text-sm">
                       {link.label}
                     </Link>
                   ))}
@@ -243,7 +243,7 @@ export default function Header() {
             <div>
               <button
                 onClick={() => toggleMobileDropdown('shop')}
-                className="w-full flex items-center justify-between text-charcoal-700 hover:text-blush-400 transition-colors font-medium"
+                className="w-full flex items-center justify-between text-gray-700 hover:text-blush-400 transition-colors font-medium"
               >
                 Shop
                 <svg className={`w-4 h-4 transition-transform ${mobileDropdowns.shop ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -253,7 +253,7 @@ export default function Header() {
               {mobileDropdowns.shop && (
                 <div className="mt-2 ml-4 space-y-2">
                   {SHOP_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-charcoal-600 hover:text-blush-400 transition-colors text-sm">
+                    <Link key={link.href} href={link.href} className="block text-gray-600 hover:text-blush-400 transition-colors text-sm">
                       {link.label}
                     </Link>
                   ))}
@@ -265,7 +265,7 @@ export default function Header() {
             <div>
               <button
                 onClick={() => toggleMobileDropdown('inspo')}
-                className="w-full flex items-center justify-between text-charcoal-700 hover:text-blush-400 transition-colors font-medium"
+                className="w-full flex items-center justify-between text-gray-700 hover:text-blush-400 transition-colors font-medium"
               >
                 Inspo
                 <svg className={`w-4 h-4 transition-transform ${mobileDropdowns.inspo ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,7 +275,7 @@ export default function Header() {
               {mobileDropdowns.inspo && (
                 <div className="mt-2 ml-4 space-y-2">
                   {INSPO_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-charcoal-600 hover:text-blush-400 transition-colors text-sm">
+                    <Link key={link.href} href={link.href} className="block text-gray-600 hover:text-blush-400 transition-colors text-sm">
                       {link.label}
                     </Link>
                   ))}
@@ -283,22 +283,22 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/about" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link href="/about" className="block text-gray-700 hover:text-blush-400 transition-colors font-medium">
               About
             </Link>
-            <Link href="/work-with-us" className="block text-charcoal-700 hover:text-blush-400 transition-colors font-medium">
+            <Link href="/work-with-us" className="block text-gray-700 hover:text-blush-400 transition-colors font-medium">
               Collaborate
             </Link>
             
             {/* Mobile Social Links */}
             <div className="flex space-x-6 pt-4 border-t border-blush-200">
-              <a href="https://in.pinterest.com/mirelle_inspo/" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-blush-400">
+              <a href="https://in.pinterest.com/mirelle_inspo/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blush-400">
                 Pinterest
               </a>
-              <a href="https://instagram.com/mirelle_inspo" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-blush-400">
+              <a href="https://instagram.com/mirelle_inspo" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blush-400">
                 Instagram
               </a>
-              <a href="https://x.com/mirelleinspo" target="_blank" rel="noopener noreferrer" className="text-charcoal-600 hover:text-blush-400">
+              <a href="https://x.com/mirelleinspo" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blush-400">
                 X (Twitter)
               </a>
             </div>

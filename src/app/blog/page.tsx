@@ -195,13 +195,13 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative bg-editorial-cream py-24 border-b border-editorial-stone">
+        <section className="relative bg-background py-24 border-b border-editorial-stone">
           <div className="container mx-auto px-4">
             {/* Decorative accent line */}
-            <div className="w-16 h-0.5 bg-editorial-accent mx-auto mb-8"></div>
+            <div className="w-16 h-0.5 bg-accent mx-auto mb-8"></div>
             
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="font-serif text-display-lg md:text-display-xl text-editorial-charcoal mb-6">
+              <h1 className="font-serif text-display-lg md:text-display-xl text-text-primary mb-6">
                 Nail Care Blog - Expert Tips & Trends
               </h1>
               <p className="text-body-lg text-editorial-slate max-w-2xl mx-auto leading-relaxed">
@@ -212,15 +212,15 @@ export default async function BlogPage({ searchParams }: PageProps) {
               <div className="flex flex-wrap justify-center gap-8 mt-12">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">📝</span>
-                  <span className="font-medium text-editorial-charcoal text-body">{originalTotalPosts}+ Articles</span>
+                  <span className="font-medium text-text-primary text-body">{originalTotalPosts}+ Articles</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">✨</span>
-                  <span className="font-medium text-editorial-charcoal text-body">Expert Advice</span>
+                  <span className="font-medium text-text-primary text-body">Expert Advice</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">📆</span>
-                  <span className="font-medium text-editorial-charcoal text-body">Updated Weekly</span>
+                  <span className="font-medium text-text-primary text-body">Updated Weekly</span>
                 </div>
               </div>
             </div>

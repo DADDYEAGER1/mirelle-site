@@ -74,7 +74,7 @@ export default function WorkWithUsPage() {
               href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelle@gmail.com&su=Brand%20Partnership%20Inquiry"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-charcoal-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-charcoal-800 transition-all transform hover:scale-105 shadow-lg cursor-pointer"
+              className="inline-block bg-text-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg cursor-pointer"
             >
               🤝 Brand Partnerships
             </a>
@@ -109,7 +109,7 @@ export default function WorkWithUsPage() {
       {/* Collaboration Opportunities */}
       <section className="py-16 bg-blush-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center text-charcoal-800 mb-12">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             How We Can Collaborate
           </h2>
           
@@ -118,7 +118,7 @@ export default function WorkWithUsPage() {
             {/* Brand Collaborations */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-2xl font-bold text-charcoal-800 mb-4">Brand Collaborations</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Brand Collaborations</h3>
               <p className="text-gray-600 mb-4">
                 Long-term partnerships to showcase your brand authentically to our engaged audience through multiple touchpoints.
               </p>
@@ -141,7 +141,7 @@ export default function WorkWithUsPage() {
             {/* Product Features */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">💅</div>
-              <h3 className="text-2xl font-bold text-charcoal-800 mb-4">Product Features</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Product Features</h3>
               <p className="text-gray-600 mb-4">
                 Showcase your products in our curated shop section with affiliate links and honest reviews.
               </p>
@@ -164,7 +164,7 @@ export default function WorkWithUsPage() {
             {/* Sponsored Content */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">✍️</div>
-              <h3 className="text-2xl font-bold text-charcoal-800 mb-4">Sponsored Blog Posts</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Sponsored Blog Posts</h3>
               <p className="text-gray-600 mb-4">
                 High-quality, SEO-optimized blog content featuring your products naturally within trending nail art guides.
               </p>
@@ -187,7 +187,7 @@ export default function WorkWithUsPage() {
             {/* Design Features */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">🎨</div>
-              <h3 className="text-2xl font-bold text-charcoal-800 mb-4">Design Features</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Design Features</h3>
               <p className="text-gray-600 mb-4">
                 Dedicated pages showcasing your nail art designs and collections to inspire our community.
               </p>
@@ -210,7 +210,7 @@ export default function WorkWithUsPage() {
             {/* Pinterest Promotion */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">📌</div>
-              <h3 className="text-2xl font-bold text-charcoal-800 mb-4">Pinterest Promotion</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Pinterest Promotion</h3>
               <p className="text-gray-600 mb-4">
                 Amplify your reach through our highly engaged Pinterest audience with custom pins and boards.
               </p>
@@ -233,7 +233,7 @@ export default function WorkWithUsPage() {
             {/* Guest Posting */}
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl mb-4">📝</div>
-              <h3 className="text-2xl font-bold text-charcoal-800 mb-4">Guest Posting</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Guest Posting</h3>
               <p className="text-gray-600 mb-4">
                 Share your expertise with our audience through high-quality guest posts with proper attribution.
               </p>
@@ -260,7 +260,7 @@ export default function WorkWithUsPage() {
       {/* Why Partner With Us */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center text-charcoal-800 mb-12">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             Why Partner With Mirellé Inspo?
           </h2>
           
@@ -270,7 +270,7 @@ export default function WorkWithUsPage() {
                 <span className="text-2xl">🎯</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-charcoal-800 mb-2">Targeted Audience</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Targeted Audience</h3>
                 <p className="text-gray-600">
                   Reach nail art enthusiasts, beauty lovers, and trend-conscious consumers actively seeking product recommendations.
                 </p>
@@ -282,7 +282,7 @@ export default function WorkWithUsPage() {
                 <span className="text-2xl">✨</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-charcoal-800 mb-2">Authentic Content</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Authentic Content</h3>
                 <p className="text-gray-600">
                   We prioritize genuine recommendations and honest reviews that resonate with our community's trust.
                 </p>
@@ -294,7 +294,7 @@ export default function WorkWithUsPage() {
                 <span className="text-2xl">📈</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-charcoal-800 mb-2">Growing Platform</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Growing Platform</h3>
                 <p className="text-gray-600">
                   Join us as we expand across multiple channels including web, Pinterest, Instagram, and beyond.
                 </p>
@@ -306,7 +306,7 @@ export default function WorkWithUsPage() {
                 <span className="text-2xl">💎</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-charcoal-800 mb-2">Premium Quality</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Premium Quality</h3>
                 <p className="text-gray-600">
                   Professional photography, well-researched content, and strategic promotion for maximum impact.
                 </p>

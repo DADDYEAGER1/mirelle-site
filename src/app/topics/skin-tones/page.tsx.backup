@@ -372,10 +372,12 @@ export default function SkinTonesGuide() {
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/skin-undertone-hero-diverse-hands-nail-polish.jpg"
-              alt="Complete guide to finding skin undertone with diverse hands showing nail polish colors for different undertones"
-              className="w-full h-full object-cover"
-            />
+                    src="/images/topic/skin-undertone-diverse-hands-nail-polish-guide.webp"
+                    alt="Complete guide to finding skin undertone with diverse hands showing nail polish colors for different undertones warm cool neutral"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
           </div>
           
@@ -537,12 +539,12 @@ export default function SkinTonesGuide() {
               </div>
 
               <img
-                src="/skin-undertone-chart-warm-cool-neutral-olive-comparison.jpg"
-                alt="Complete undertone chart comparing warm, cool, neutral, and olive undertones across all skin depths from fair to deep"
-                width={1200}
-                height={800}
-                className="rounded-2xl shadow-lg w-full mb-6"
-              />
+                    src="/images/topic/skin-undertone-chart-warm-cool-neutral-olive-comparison.webp"
+                    alt="Complete undertone chart comparing warm cool neutral and olive undertones across all skin depths from fair to deep tone"
+                    width={1200}
+                    height={800}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
               <p className="text-sm text-gray-500 text-center">Visual guide showing how each undertone appears across different skin tone depths</p>
             </div>
 
@@ -752,11 +754,11 @@ export default function SkinTonesGuide() {
                     This is the most popular and reliable undertone test. Look at the veins on the inside of your wrist in natural daylight (not artificial lighting).
                   </p>
                   <img
-                    src="/skin-undertone-vein-test-wrist-comparison.jpg"
-                    alt="Vein test showing blue veins indicating cool undertones and green veins indicating warm undertones on wrist"
+                    src="/images/topic/skin-undertone-vein-test-wrist-blue-green-comparison.webp"
+                    alt="Vein test showing blue veins indicating cool undertones and green veins indicating warm undertones on wrist for identification"
                     width={800}
                     height={533}
-                    className="rounded-xl shadow-lg w-full mb-6"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="glass-card p-4 rounded-lg border-l-4 border-green-500">
@@ -786,11 +788,11 @@ export default function SkinTonesGuide() {
                     Hold gold jewelry next to your face, then silver jewelry. Notice which metal makes your skin look brighter, more radiant, and harmonious.
                   </p>
                   <img
-                    src="/skin-undertone-jewelry-test-gold-silver-comparison.jpg"
-                    alt="Jewelry test comparing gold and silver accessories to determine skin undertone by which metal looks more flattering"
+                    src="/images/topic/skin-undertone-jewelry-test-gold-silver-comparison.webp"
+                    alt="Jewelry test comparing gold and silver accessories to determine skin undertone by which metal looks more flattering on face"
                     width={800}
                     height={533}
-                    className="rounded-xl shadow-lg w-full mb-6"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="glass-card p-4 rounded-lg border-l-4 border-yellow-500">
@@ -958,11 +960,11 @@ export default function SkinTonesGuide() {
                     Warm undertones look stunning in colors with yellow, orange, or golden bases. These shades enhance your natural golden glow.
                   </p>
                   <img
-                    src="/skin-undertone-nail-polish-warm-tones-swatches-hands.jpg"
-                    alt="Warm undertone nail polish swatches on diverse hands showing coral, peach, terracotta, and gold shades"
+                    src="/images/topic/skin-undertone-nail-polish-warm-tones-swatches-diverse.webp"
+                    alt="Warm undertone nail polish swatches on diverse hands showing coral peach terracotta and gold shades for yellow undertone"
                     width={800}
                     height={533}
-                    className="rounded-xl shadow-lg w-full mb-6"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="glass-card p-4 rounded-lg text-center">
@@ -1012,11 +1014,11 @@ export default function SkinTonesGuide() {
                     Cool undertones shine in colors with blue, pink, or purple bases. These shades complement your rosy, bluish complexion beautifully.
                   </p>
                   <img
-                    src="/skin-undertone-nail-polish-cool-tones-swatches-hands.jpg"
-                    alt="Cool undertone nail polish swatches on diverse hands showing berry, lavender, plum, and silver shades"
+                    src="/images/topic/skin-undertone-nail-polish-cool-tones-swatches-diverse.webp"
+                    alt="Cool undertone nail polish swatches on diverse hands showing berry lavender plum and silver shades for pink undertone"
                     width={800}
                     height={533}
-                    className="rounded-xl shadow-lg w-full mb-6"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="glass-card p-4 rounded-lg text-center">

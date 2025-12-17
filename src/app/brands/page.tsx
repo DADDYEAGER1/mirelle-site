@@ -94,32 +94,32 @@ export default async function BrandsPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             <div className="text-center">
               <div className="text-4xl font-bold text-blush-600 mb-2">{brands.length}</div>
-              <div className="text-charcoal-600">Trusted Brands</div>
+              <div className="text-gray-600">Trusted Brands</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-blush-600 mb-2">
                 {brands.filter(b => b.featured).length}
               </div>
-              <div className="text-charcoal-600">Featured Partners</div>
+              <div className="text-gray-600">Featured Partners</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-blush-600 mb-2">
                 {Object.keys(brandsByCategory).length}
               </div>
-              <div className="text-charcoal-600">Categories</div>
+              <div className="text-gray-600">Categories</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-blush-600 mb-2">100%</div>
-              <div className="text-charcoal-600">Quality Tested</div>
+              <div className="text-gray-600">Quality Tested</div>
             </div>
           </div>
 
           {/* Partnership Info */}
           <div className="bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8 mb-16">
-            <h2 className="text-2xl font-bold text-charcoal-800 mb-4">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
               How We Choose Brands
             </h2>
-            <div className="grid md:grid-cols-3 gap-6 text-charcoal-700">
+            <div className="grid md:grid-cols-3 gap-6 text-gray-700">
               <div>
                 <h3 className="font-semibold mb-2">✓ Quality Testing</h3>
                 <p className="text-sm">
@@ -148,10 +148,10 @@ export default async function BrandsPage() {
           {Object.entries(brandsByCategory).map(([category, categoryBrands]) => (
             <div key={category} className="mb-16">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-charcoal-800 mb-2">
+                <h2 className="text-3xl font-bold text-gray-800 mb-2">
                   {BRAND_CATEGORIES[category as keyof typeof BRAND_CATEGORIES].label}
                 </h2>
-                <p className="text-charcoal-600">
+                <p className="text-gray-600">
                   {BRAND_CATEGORIES[category as keyof typeof BRAND_CATEGORIES].description}
                 </p>
               </div>
@@ -174,7 +174,7 @@ export default async function BrandsPage() {
                       />
                       {/* Partnership Badge */}
                       {brand.featured && (
-                        <div className="absolute top-4 right-4 bg-white px-2 py-1 rounded-full text-xs font-semibold text-charcoal-800 shadow-md">
+                        <div className="absolute top-4 right-4 bg-white px-2 py-1 rounded-full text-xs font-semibold text-gray-800 shadow-md">
                           {PARTNERSHIP_TIERS[brand.partnershipTier].badge}
                         </div>
                       )}
@@ -182,10 +182,10 @@ export default async function BrandsPage() {
 
                     {/* Brand Info */}
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-charcoal-800 mb-2 group-hover:text-blush-600 transition-colors">
+                      <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blush-600 transition-colors">
                         {brand.name}
                       </h3>
-                      <p className="text-charcoal-600 text-sm leading-relaxed mb-4">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
                         {brand.tagline}
                       </p>
 

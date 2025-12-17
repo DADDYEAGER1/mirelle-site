@@ -62,10 +62,10 @@ export default function PinterestShowcaseSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Mirellé's Showcase
           </h2>
-          <p className="text-xl text-charcoal-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             Follow Mirellé on Pinterest for daily nail inspiration, trending designs, 
             and creative ideas that will transform your nail game.
           </p>
@@ -90,7 +90,7 @@ export default function PinterestShowcaseSection() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-300/25 via-transparent to-blush-300/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-white/70 via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-charcoal-800 font-semibold text-sm drop-shadow">
+                  <h3 className="text-gray-800 font-semibold text-sm drop-shadow">
                     {pin.title}
                   </h3>
                 </div>

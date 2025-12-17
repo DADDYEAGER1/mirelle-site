@@ -51,7 +51,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-charcoal-900 text-white">
+    <footer className="bg-text-primary text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         
@@ -84,7 +84,7 @@ export default function Footer() {
           </p>
           <Link 
             href="/#newsletter"
-            className="inline-block bg-white text-charcoal-900 px-6 py-2.5 rounded-sm font-semibold text-sm hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white text-text-primary px-6 py-2.5 rounded-sm font-semibold text-sm hover:bg-gray-100 transition-colors"
           >
             Subscribe Now
           </Link>

@@ -93,10 +93,12 @@ export default function ProfessionalNailsGuide() {
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="/professional-nails-work-hero-elegant-office-manicure.jpg"
-              alt="Professional nails for work showing elegant office appropriate manicure designs for modern women"
-              className="w-full h-full object-cover"
-            />
+                    src="/images/topic/professional-elegant-office-manicure-workplace-nails.webp"
+                    alt="Professional nails for work showing elegant office appropriate manicure designs for modern women in corporate workplace setting"
+                    width={800}
+                    height={533}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
           </div>
           
@@ -247,12 +249,12 @@ export default function ProfessionalNailsGuide() {
                   Neutral professional nail colors work in every industry and occasion. These shades complement all <a href="https://mirelleinspo.com/topics/skin-tones" className="text-blue-600 hover:underline">skin undertones</a> and create an elegant, polished look.
                 </p>
                 <img
-                  src="/professional-nails-neutral-nude-beige-office-appropriate-colors.jpg"
-                  alt="Professional neutral nail colors including nude, beige, soft pink, and taupe for office work"
-                  width={1200}
-                  height={800}
-                  className="rounded-2xl shadow-lg w-full mb-6"
-                />
+                    src="/images/topic/neutral-nude-beige-professional-office-nail-colors.webp"
+                    alt="Professional neutral nail colors including nude beige soft pink and taupe shades for office work and corporate environments"
+                    width={1200}
+                    height={800}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="glass-card p-4 rounded-lg text-center">
                     <div className="w-16 h-16 bg-stone-300 rounded-full mx-auto mb-3"></div>
@@ -293,11 +295,11 @@ export default function ProfessionalNailsGuide() {
                     Mocha Mousse—a warm, sophisticated brown with coffee undertones—is Pantone's 2025 Color of the Year. This rich neutral is perfect for professional settings, offering depth and elegance without being too bold. It complements all skin tones and works beautifully from fall through spring.
                   </p>
                   <img
-                    src="/professional-nails-mocha-mousse-pantone-2025-work-appropriate.jpg"
-                    alt="Mocha Mousse professional nails Pantone 2025 color of year warm brown office manicure"
+                    src="/images/topic/mocha-mousse-pantone-2025-professional-work-nails.webp"
+                    alt="Mocha Mousse professional nails Pantone 2025 color of year warm brown office manicure for workplace appropriate style"
                     width={800}
                     height={533}
-                    className="rounded-xl shadow-lg w-full mb-4"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
                   <p className="text-sm text-gray-600">
                     <strong>Perfect for:</strong> All industries, especially finance, law, and corporate settings where you want to be fashion-forward while staying professional. Pairs beautifully with gold jewelry and warm-toned business attire.
@@ -463,12 +465,12 @@ export default function ProfessionalNailsGuide() {
               </p>
 
               <img
-                src="/professional-nail-shapes-work-comparison-squoval-oval-rounded.jpg"
-                alt="Professional nail shapes for work comparison showing squoval, oval, and rounded shapes side by side"
-                width={1200}
-                height={800}
-                className="rounded-2xl shadow-lg w-full mb-8"
-              />
+                    src="/images/topic/professional-nail-shapes-comparison-squoval-oval-rounded.webp"
+                    alt="Professional nail shapes for work comparison chart showing squoval oval and rounded shapes side by side for office settings"
+                    width={1200}
+                    height={800}
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
+                  />
 
               {/* Short Rounded Nails */}
               <div className="mb-10">
@@ -844,11 +846,11 @@ export default function ProfessionalNailsGuide() {
                   </p>
                   
                   <img
-                    src="/professional-holiday-office-nails-subtle-christmas-elegant.jpg"
-                    alt="Professional holiday office nails with subtle Christmas nail design festive work appropriate manicure"
+                    src="/images/topic/holiday-office-nails-subtle-christmas-professional-festive.webp"
+                    alt="Professional holiday office nails with subtle Christmas nail design festive work appropriate manicure for corporate parties"
                     width={1200}
                     height={800}
-                    className="rounded-xl shadow-lg w-full mb-6"
+                    className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

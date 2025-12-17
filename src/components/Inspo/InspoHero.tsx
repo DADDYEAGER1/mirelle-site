@@ -52,7 +52,7 @@ export default function InspoHero() {
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
           <a
             href="#categories"
-            className="px-8 py-4 bg-white text-burgundy-700 rounded-full font-semibold hover:bg-cream-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 inline-flex items-center justify-center gap-2"
+            className="px-8 py-4 bg-white text-accent rounded-full font-semibold hover:bg-background transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 inline-flex items-center justify-center gap-2"
           >
             Explore Gallery
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

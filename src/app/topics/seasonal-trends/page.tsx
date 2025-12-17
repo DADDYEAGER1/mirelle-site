@@ -422,7 +422,7 @@ export default function SeasonalTrends() {
             </p>
             
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="#trend-radar" className="bg-burgundy-600 hover:bg-burgundy-700 px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+              <a href="#trend-radar" className="bg-accent/80 hover:bg-accent px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
                 See What's Trending
               </a>
               <a href="#faq" className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
@@ -456,9 +456,9 @@ export default function SeasonalTrends() {
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl">❄️</span>
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-burgundy-600">Winter 2025</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-accent/80">Winter 2025</h3>
                 <p className="text-sm text-gray-600 mb-3">Deer prints, velvet finishes, magnetic cat-eye. Deep cherry red + chocolate brown dominating.</p>
-                <div className="text-xs text-burgundy-600 font-semibold">🔥 TRENDING NOW →</div>
+                <div className="text-xs text-accent/80 font-semibold">🔥 TRENDING NOW →</div>
               </a>
 
               {/* Spring Card */}
@@ -466,7 +466,7 @@ export default function SeasonalTrends() {
                 <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl">🌸</span>
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-burgundy-600">Spring 2025</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-accent/80">Spring 2025</h3>
                 <p className="text-sm text-gray-600 mb-3">Butter yellow chromes, cherry blossoms, jelly nails. Pastels with unexpected edge.</p>
                 <div className="text-xs text-gray-500">Coming March →</div>
               </a>
@@ -476,7 +476,7 @@ export default function SeasonalTrends() {
                 <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl">☀️</span>
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-burgundy-600">Summer 2025</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-accent/80">Summer 2025</h3>
                 <p className="text-sm text-gray-600 mb-3">Neon comeback, tropical maximalism, glossy brights. Festival-ready designs that last.</p>
                 <div className="text-xs text-gray-500">Coming June →</div>
               </a>
@@ -486,7 +486,7 @@ export default function SeasonalTrends() {
                 <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mb-4">
                   <span className="text-2xl">🍂</span>
                 </div>
-                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-burgundy-600">Fall 2025</h3>
+                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-accent/80">Fall 2025</h3>
                 <p className="text-sm text-gray-600 mb-3">Burgundy surge, tortoiseshell evolution, mocha tones. Cozy sophistication meets editorial.</p>
                 <div className="text-xs text-gray-500">Coming September →</div>
               </a>
@@ -495,23 +495,23 @@ export default function SeasonalTrends() {
             {/* Quick Links Bar */}
             <div className="glass-card p-6 rounded-2xl">
               <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <a href="#year-round" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#year-round" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   ⭐ Year-Round Classics
                 </a>
                 <span className="text-gray-300">|</span>
-                <a href="#how-to-choose" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#how-to-choose" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   🎯 How to Choose
                 </a>
                 <span className="text-gray-300">|</span>
-                <a href="#transitioning" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#transitioning" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   🔄 Transitioning Tips
                 </a>
                 <span className="text-gray-300">|</span>
-                <a href="#seasonal-care" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#seasonal-care" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   💅 Seasonal Care
                 </a>
                 <span className="text-gray-300">|</span>
-                <a href="#faq" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#faq" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   ❓ FAQs
                 </a>
               </div>
@@ -711,9 +711,9 @@ export default function SeasonalTrends() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-accent/80 rounded-xl flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">💡</span>
                     </div>
                     <div>
@@ -793,19 +793,19 @@ export default function SeasonalTrends() {
 
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Double moisturizer frequency:</strong> Apply cuticle oil morning and night minimum, plus after every hand washing. Winter air strips moisture faster than other seasons.</div>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Use humidifiers:</strong> Indoor heating drops humidity below 30%, ideal is 40-50% for nail health. A bedroom humidifier improves overnight nail recovery significantly.</div>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Choose cream-based removers:</strong> Acetone is extra drying in winter. Switch to acetone-free or cream-based removers that include moisturizing ingredients.</div>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Invest in silk glove liners:</strong> Wear thin silk gloves under winter gloves to prevent friction damage and maintain nail moisture. This simple hack reduces winter breakage by 40% according to nail technician surveys.</div>
                   </li>
                 </ul>
@@ -1212,9 +1212,9 @@ export default function SeasonalTrends() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-accent/80 rounded-xl flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">💡</span>
                     </div>
                     <div>
@@ -1237,19 +1237,19 @@ export default function SeasonalTrends() {
 
                 <ul className="space-y-4 text-gray-600 mb-6">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Choose gel over regular polish:</strong> Gel manicures withstand water exposure significantly better, lasting 2-3 weeks in summer conditions versus 3-5 days for regular polish. The UV-cured formula creates stronger adhesion that resists chipping.</div>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Apply pool-proof top coat:</strong> Specialized top coats designed for water resistance (brands like Seche Vite's gel effect or OPI's top coats) add extra protection. Reapply every 3-4 days during heavy beach weeks.</div>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Avoid ultra-light pastels:</strong> While trendy, very pale colors show wear more obviously. Opt for saturated brights or medium-toned colors that hide minor chips better.</div>
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <div><strong>Keep nails shorter for vacation:</strong> Long nails break more easily during active summer activities. A short-to-medium length (just past fingertip) provides durability while still looking polished.</div>
                   </li>
                 </ul>
@@ -1508,7 +1508,7 @@ export default function SeasonalTrends() {
                 <div className="space-y-8">
                   <div className="glass-card p-8 rounded-2xl">
                     <div className="flex items-start gap-6">
-                      <div className="w-16 h-16 bg-cream-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-16 h-16 bg-background rounded-xl flex items-center justify-center flex-shrink-0">
                         <span className="text-3xl">💅</span>
                       </div>
                       <div>
@@ -1695,15 +1695,15 @@ export default function SeasonalTrends() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-accent/80 rounded-xl flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">💡</span>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Pro Tip: Testing Seasonal Colors</h4>
                       <p className="text-gray-700">
-                        Before committing to a full manicure in a trendy seasonal color, paint one nail as a test. Observe it in different lighting (natural daylight, indoor lighting, evening) and against your typical clothing colors for 24 hours. This simple test prevents the disappointment of getting a full manicure in a color that looked good in the bottle but clashes with your wardrobe or washes out your hands. For more guidance, check our complete <a href="https://mirelleinspo.com/topics/skin-tones" className="text-burgundy-600 hover:underline">nail colors for skin tones guide</a>.
+                        Before committing to a full manicure in a trendy seasonal color, paint one nail as a test. Observe it in different lighting (natural daylight, indoor lighting, evening) and against your typical clothing colors for 24 hours. This simple test prevents the disappointment of getting a full manicure in a color that looked good in the bottle but clashes with your wardrobe or washes out your hands. For more guidance, check our complete <a href="https://mirelleinspo.com/topics/skin-tones" className="text-accent/80 hover:underline">nail colors for skin tones guide</a>.
                       </p>
                     </div>
                   </div>
@@ -1719,7 +1719,7 @@ export default function SeasonalTrends() {
                 </p>
 
                 <div className="space-y-6">
-                  <div className="glass-card p-6 rounded-xl border-l-4 border-burgundy-500">
+                  <div className="glass-card p-6 rounded-xl border-l-4 border-accent/100">
                     <h4 className="font-semibold text-gray-800 mb-3">Winter Wardrobe Pairing</h4>
                     <p className="text-sm text-gray-600">
                       Winter clothing leans dark and rich—black coats, burgundy sweaters, navy blazers, camel outerwear. Nail colors that complement: burgundy echoes sweater tones, chocolate brown pairs with camel, deep cherry red pops against black and navy. Avoid: pastels that look out-of-season against heavy winter fabrics.
@@ -1836,19 +1836,19 @@ export default function SeasonalTrends() {
                   </div>
                   <ul className="space-y-3 text-sm text-gray-600">
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Triple moisturizer frequency—cuticle oil minimum 3x daily due to indoor heating</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Use humidifiers to maintain 40-50% indoor humidity for nail health</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Wear silk glove liners under winter gloves to prevent friction damage</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Switch to cream-based polish removers (acetone extra drying in winter)</div>
                     </li>
                   </ul>
@@ -1863,19 +1863,19 @@ export default function SeasonalTrends() {
                   </div>
                   <ul className="space-y-3 text-sm text-gray-600">
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Intensive nail treatments with biotin and keratin to rebuild winter damage</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Gentle buffing to remove winter dullness but avoid over-filing</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Weekly olive oil soaks (10 minutes) to restore flexibility and moisture</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Consider a 7-day polish break to let nails breathe and recover naturally</div>
                     </li>
                   </ul>
@@ -1890,19 +1890,19 @@ export default function SeasonalTrends() {
                   </div>
                   <ul className="space-y-3 text-sm text-gray-600">
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Apply SPF hand cream before sun exposure to prevent yellowing and weakening</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Use gel polish with UV protection or apply UV-protective top coat</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Rinse chlorine and salt water immediately after swimming to prevent damage</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Reapply cuticle oil after water activities (pool, beach, water sports)</div>
                     </li>
                   </ul>
@@ -1917,19 +1917,19 @@ export default function SeasonalTrends() {
                   </div>
                   <ul className="space-y-3 text-sm text-gray-600">
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Build nail strength with protein treatments before harsh winter conditions</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Gradually increase moisturizer frequency as temperatures drop</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Start taking biotin supplements in September for winter nail resilience</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>Keep nails slightly shorter heading into winter to reduce breakage risk</div>
                     </li>
                   </ul>
@@ -1965,10 +1965,10 @@ export default function SeasonalTrends() {
 
               <div className="space-y-4">
                 {/* FAQ 1 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What are the best nail designs for each season?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1978,10 +1978,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 2 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I choose the right nail design for the current season?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1991,10 +1991,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 3 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What nail colors are trending for winter 2025?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2004,10 +2004,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 4 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Can I wear dark nails in summer?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2017,10 +2017,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 5 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What is the difference between seasonal and year-round nail designs?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2030,10 +2030,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 6 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How often should I change my seasonal nail designs?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2043,10 +2043,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 7 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What are the easiest seasonal nail designs for beginners?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2056,10 +2056,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 8 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Do seasonal nail designs work on short nails?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2069,10 +2069,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 9 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What nail shapes work best for each season?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2082,10 +2082,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 10 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I transition my nails between seasons?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2095,10 +2095,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 11 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What are the most popular spring nail trends for 2025?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2108,10 +2108,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 12 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How can I make seasonal nail designs last longer?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2121,10 +2121,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 13 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What seasonal nail designs are appropriate for work?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2134,10 +2134,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 14 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Can I do seasonal nail designs at home?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2147,10 +2147,10 @@ export default function SeasonalTrends() {
                 </details>
 
                 {/* FAQ 15 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What are the biggest seasonal nail mistakes to avoid?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -2190,10 +2190,10 @@ export default function SeasonalTrends() {
                 {/* Related Topic 1 */}
                 <Link href="https://mirelleinspo.com/topics/nail-care-guide" className="group">
                   <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div className="w-12 h-12 bg-burgundy-100 rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">💅</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Care Essentials
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -2212,7 +2212,7 @@ export default function SeasonalTrends() {
                     <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">🎨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Colors for Your Skin Tone
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -2231,7 +2231,7 @@ export default function SeasonalTrends() {
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">✨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Art Techniques
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -2251,16 +2251,16 @@ export default function SeasonalTrends() {
                   Seasonal Design Inspiration
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Winter Nails 2025
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/spring-nail-designs" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/spring-nail-designs" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Spring Designs
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/summer-nail-trends" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/summer-nail-trends" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Summer Trends
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/fall-nail-colors" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/fall-nail-colors" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Fall Colors
                   </Link>
                 </div>
@@ -2276,7 +2276,7 @@ export default function SeasonalTrends() {
                 Stay ahead of every trend cycle. Join thousands who get seasonal nail intelligence before it hits mainstream—backed by runway data, social metrics, and fashion analysis.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="https://mirelleinspo.com/pinterest" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                <Link href="https://mirelleinspo.com/pinterest" className="bg-white text-accent/80 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
                   Follow on Pinterest
                 </Link>
                 <Link href="https://mirelleinspo.com/topics" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">

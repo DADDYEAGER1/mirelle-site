@@ -148,10 +148,10 @@ export default function PinterestPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl font-bold text-charcoal-800 mb-4">
+            <h2 className="font-serif text-3xl font-bold text-gray-800 mb-4">
               Discover Mirellé's Pinterest Boards
             </h2>
-            <p className="text-lg text-charcoal-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Explore curated collections of nail art inspiration, care tips, and trending 
               designs. Follow along for daily doses of nail creativity and expert advice.
             </p>
@@ -215,7 +215,7 @@ export default function PinterestPage() {
 
           {/* Why Follow Section */}
           <div className="bg-gradient-to-br from-blush-50 to-purple-50 rounded-2xl p-8">
-            <h3 className="font-serif text-2xl font-bold text-charcoal-800 mb-6 text-center">
+            <h3 className="font-serif text-2xl font-bold text-gray-800 mb-6 text-center">
               Why Follow Mirellé on Pinterest?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -223,8 +223,8 @@ export default function PinterestPage() {
                 <div className="w-16 h-16 bg-blush-200 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📌</span>
                 </div>
-                <h4 className="font-semibold text-charcoal-800 mb-2">Daily Inspiration</h4>
-                <p className="text-sm text-charcoal-600">
+                <h4 className="font-semibold text-gray-800 mb-2">Daily Inspiration</h4>
+                <p className="text-sm text-gray-600">
                   Fresh nail art ideas and trending designs updated regularly
                 </p>
               </div>
@@ -232,8 +232,8 @@ export default function PinterestPage() {
                 <div className="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💡</span>
                 </div>
-                <h4 className="font-semibold text-charcoal-800 mb-2">Expert Tips</h4>
-                <p className="text-sm text-charcoal-600">
+                <h4 className="font-semibold text-gray-800 mb-2">Expert Tips</h4>
+                <p className="text-sm text-gray-600">
                   Professional advice and techniques from nail care experts
                 </p>
               </div>
@@ -241,8 +241,8 @@ export default function PinterestPage() {
                 <div className="w-16 h-16 bg-nude-200 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🎨</span>
                 </div>
-                <h4 className="font-semibold text-charcoal-800 mb-2">Creative Ideas</h4>
-                <p className="text-sm text-charcoal-600">
+                <h4 className="font-semibold text-gray-800 mb-2">Creative Ideas</h4>
+                <p className="text-sm text-gray-600">
                   Unique and creative nail art concepts for every occasion
                 </p>
               </div>

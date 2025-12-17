@@ -11,10 +11,10 @@ export default async function FeaturedBrandsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-charcoal-800 mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Brands We Love
           </h2>
-          <p className="text-lg text-charcoal-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             We partner with brands that share our passion for quality, innovation, 
             and helping you achieve beautiful nails. Each brand is carefully curated 
             based on product quality, customer reviews, and real-world performance.
@@ -38,7 +38,7 @@ export default async function FeaturedBrandsSection() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 {/* Partnership Badge */}
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-charcoal-800 shadow-md">
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold text-gray-800 shadow-md">
                   {PARTNERSHIP_TIERS[brand.partnershipTier].badge} {PARTNERSHIP_TIERS[brand.partnershipTier].label}
                 </div>
               </div>
@@ -57,16 +57,16 @@ export default async function FeaturedBrandsSection() {
                 </div>
 
                 {/* Brand Name & Tagline */}
-                <h3 className="text-xl font-bold text-charcoal-800 mb-2 group-hover:text-blush-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blush-600 transition-colors">
                   {brand.name}
                 </h3>
-                <p className="text-charcoal-600 text-sm leading-relaxed mb-4">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {brand.tagline}
                 </p>
 
                 {/* Stats */}
                 {brand.stats && (
-                  <div className="flex items-center gap-4 text-sm text-charcoal-500 mb-4">
+                  <div className="flex items-center gap-4 text-sm text-gray-1000 mb-4">
                     {brand.stats.avgRating && (
                       <div className="flex items-center">
                         <span className="text-yellow-500 mr-1">⭐</span>
@@ -113,26 +113,26 @@ export default async function FeaturedBrandsSection() {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-16 pt-12 border-t border-charcoal-200">
+        <div className="mt-16 pt-12 border-t border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl mb-2">✓</div>
-              <h4 className="font-semibold text-charcoal-800 mb-2">Quality Verified</h4>
-              <p className="text-sm text-charcoal-600">
+              <h4 className="font-semibold text-gray-800 mb-2">Quality Verified</h4>
+              <p className="text-sm text-gray-600">
                 Every brand tested and reviewed by our team
               </p>
             </div>
             <div>
               <div className="text-3xl mb-2">🤝</div>
-              <h4 className="font-semibold text-charcoal-800 mb-2">Direct Partnerships</h4>
-              <p className="text-sm text-charcoal-600">
+              <h4 className="font-semibold text-gray-800 mb-2">Direct Partnerships</h4>
+              <p className="text-sm text-gray-600">
                 Authentic relationships with each brand
               </p>
             </div>
             <div>
               <div className="text-3xl mb-2">💎</div>
-              <h4 className="font-semibold text-charcoal-800 mb-2">Exclusive Offers</h4>
-              <p className="text-sm text-charcoal-600">
+              <h4 className="font-semibold text-gray-800 mb-2">Exclusive Offers</h4>
+              <p className="text-sm text-gray-600">
                 Special deals for Mirellé community members
               </p>
             </div>

@@ -407,7 +407,7 @@ export default function AtHomeHacks() {
         <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-                    src="/diy-nail-manicure-tools-polish-base-coat-setup.webp"
+                    src="/images/topic/diy-nail-manicure-tools-polish-base-coat-setup.webp"
                     alt="Complete DIY nail manicure setup with polish bottles base coat top coat files and tools on clean white workspace surface"
                     width={800}
                     height={533}
@@ -538,7 +538,7 @@ export default function AtHomeHacks() {
                     Stop trying to cover your entire nail in one stroke. Here's how pros do it: one stroke down the center from base to tip, one stroke down the left side, one stroke down the right side. That's it.
                   </p>
                   <img
-                    src="/three-stroke-nail-polish-application-technique-diagram.webp"
+                    src="/images/topic/three-stroke-nail-polish-application-technique-diagram.webp"
                     alt="Diagram showing three stroke nail polish application method with center stroke left side and right side stroke technique"
                     width={800}
                     height={533}
@@ -571,7 +571,7 @@ export default function AtHomeHacks() {
                     Before you start painting, dab petroleum jelly (like Vaseline) around your cuticles and sides of your nails with a cotton swab. When you inevitably get polish on your skin, it wipes right off because the jelly creates a barrier.
                   </p>
                   <img
-                    src="/petroleum-jelly-cuticle-barrier-cleanup-hack.webp"
+                    src="/images/topic/petroleum-jelly-cuticle-barrier-cleanup-hack.webp"
                     alt="Applying petroleum jelly barrier around cuticles with cotton swab for easy nail polish cleanup and mess free manicure"
                     width={800}
                     height={533}
@@ -604,7 +604,7 @@ export default function AtHomeHacks() {
                     After each coat (base, color, AND top coat), swipe the brush horizontally across the very tip of your nail. This seals the edge where chipping usually starts.
                   </p>
                   <img
-                    src="/sealing-nail-free-edge-prevent-chipping-technique.webp"
+                    src="/images/topic/sealing-nail-free-edge-prevent-chipping-technique.webp"
                     alt="Sealing nail free edge with polish brush horizontally across tip to prevent chipping and extend manicure wear time"
                     width={800}
                     height={533}
@@ -652,7 +652,7 @@ export default function AtHomeHacks() {
                     This sounds weird but it's legit: fill a bowl with ice water. Once your polish feels dry to a light touch (about 5-10 minutes after your last coat), dip your nails in the ice water for 1-2 minutes. The cold hardens the polish faster.
                   </p>
                   <img
-                    src="/ice-water-bowl-quick-dry-nail-polish-method.webp"
+                    src="/images/topic/ice-water-bowl-quick-dry-nail-polish-method.webp"
                     alt="Bowl filled with ice water for quick drying nail polish method showing hands dipping painted nails into cold water"
                     width={800}
                     height={533}
@@ -749,7 +749,7 @@ export default function AtHomeHacks() {
                     This hack extends manicure life significantly. Your top coat wears down from daily activities. Adding a fresh layer every few days seals everything again and restores shine.
                   </p>
                   <img
-                    src="/reapplying-top-coat-extend-manicure-longevity.webp"
+                    src="/images/topic/reapplying-top-coat-extend-manicure-longevity.webp"
                     alt="Reapplying clear top coat over existing manicure every few days to seal polish restore shine and extend wear time"
                     width={800}
                     height={533}
@@ -823,7 +823,7 @@ export default function AtHomeHacks() {
                     For smudges that have dried slightly: dab tiny amount of polish remover on your finger, very gently smooth the smudged area to blend it, wait for that spot to fully dry (2-3 minutes), then apply thin coat of polish over just that nail.
                   </p>
                   <img
-                    src="/fixing-smudged-nail-polish-cotton-swab-remover.webp"
+                    src="/images/topic/fixing-smudged-nail-polish-cotton-swab-remover.webp"
                     alt="Using cotton swab dipped in nail polish remover to smooth and blend smudged nail polish area before reapplying coat"
                     width={800}
                     height={533}
@@ -897,7 +897,7 @@ export default function AtHomeHacks() {
                     Regular scotch tape makes perfect nail art stripes and geometric designs. Apply base color, let it fully dry, place tape in your pattern, paint over it, remove tape while second color is still slightly wet.
                   </p>
                   <img
-                    src="/scotch-tape-geometric-stripe-nail-art-design.webp"
+                    src="/images/topic/scotch-tape-geometric-stripe-nail-art-design.webp"
                     alt="Creating perfect geometric stripe nail art using scotch tape as guide for clean lines and professional looking designs"
                     width={800}
                     height={533}
@@ -930,7 +930,7 @@ export default function AtHomeHacks() {
                     Paint stripes of different colors onto a makeup sponge (the kind you use for foundation), then dab the sponge onto your nail. Boom—instant ombre gradient effect.
                   </p>
                   <img
-                    src="/makeup-sponge-ombre-gradient-nail-blending-technique.webp"
+                    src="/images/topic/makeup-sponge-ombre-gradient-nail-blending-technique.webp"
                     alt="Using makeup sponge to create ombre gradient nail effect by dabbing multiple polish colors for smooth blended design"
                     width={800}
                     height={533}
@@ -1001,7 +1001,7 @@ export default function AtHomeHacks() {
                     Paint nails light gray or nude, let dry completely, dip nail in rubbing alcohol for 5 seconds, press newspaper or magazine print onto nail for 30 seconds, peel off. The text transfers to your nail.
                   </p>
                   <img
-                    src="/newspaper-print-transfer-nail-art-rubbing-alcohol.webp"
+                    src="/images/topic/newspaper-print-transfer-nail-art-rubbing-alcohol.webp"
                     alt="Newspaper print transfer nail art technique using rubbing alcohol to transfer text and images onto painted nail surface"
                     width={800}
                     height={533}
@@ -1072,7 +1072,7 @@ export default function AtHomeHacks() {
                     Glitter polish is notoriously hard to remove. Soak cotton pads in acetone remover, place on nails, wrap each finger in small piece of aluminum foil, wait 10 minutes, then wipe off. The foil traps heat and acetone, dissolving even stubborn glitter.
                   </p>
                   <img
-                    src="/glass-nails-ultra-glossy-translucent-finish-effect.webp"
+                    src="/images/topic/glass-nails-ultra-glossy-translucent-finish-effect.webp"
                     alt="Glass nails effect showing ultra glossy translucent finish achieved with sheer polish and mirror shine top coat look"
                     width={800}
                     height={533}
@@ -1130,7 +1130,7 @@ export default function AtHomeHacks() {
                     Glass nails (that super glossy, translucent look) are actually easy: use sheer pink or nude polish, apply 2-3 thin coats, finish with high-shine top coat, buff gently. The key is the glossy finish, not the nail art.
                   </p>
                   <img
-                    src="/aluminum-foil-glitter-polish-removal-acetone-wrap.webp"
+                    src="/images/topic/aluminum-foil-glitter-polish-removal-acetone-wrap.webp"
                     alt="Aluminum foil wrapped around fingers with acetone soaked cotton pads for easy glitter nail polish removal technique"
                     width={800}
                     height={533}

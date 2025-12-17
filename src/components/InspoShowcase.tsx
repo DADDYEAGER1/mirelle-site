@@ -11,10 +11,10 @@ export default function InspoShowcase() {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="max-w-3xl mb-18">
-          <p className="text-overline text-editorial-accent uppercase tracking-widest mb-4 font-semibold">
+          <p className="text-overline text-accent uppercase tracking-widest mb-4 font-semibold">
             Design Inspiration
           </p>
-          <h2 className="font-display text-display-md text-editorial-charcoal mb-6 tracking-magazine">
+          <h2 className="font-display text-display-md text-text-primary mb-6 tracking-magazine">
             Nail Inspo Gallery
           </h2>
           <p className="text-body-lg text-editorial-slate leading-relaxed font-light">
@@ -80,7 +80,7 @@ export default function InspoShowcase() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                     {/* Animated underline */}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-editorial-accent transition-all duration-300 group-hover:w-full origin-left"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full origin-left"></span>
                   </div>
                 </div>
               </Link>
@@ -92,7 +92,7 @@ export default function InspoShowcase() {
         <div className="text-center">
           <Link
             href="/inspo"
-            className="inline-flex items-center gap-3 bg-editorial-charcoal text-white px-8 py-4 hover:bg-editorial-accent transition-colors duration-300 font-sans uppercase tracking-wider text-sm font-semibold shadow-editorial hover:shadow-editorial-lg"
+            className="inline-flex items-center gap-3 bg-editorial-charcoal text-white px-8 py-4 hover:bg-accent transition-colors duration-300 font-sans uppercase tracking-wider text-sm font-semibold shadow-editorial hover:shadow-editorial-lg"
           >
             <span>Explore All Designs</span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>

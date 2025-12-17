@@ -65,7 +65,7 @@ export default function Breadcrumbs({ items, currentPage, includeSchema = true }
           <li>
             <Link 
               href="/" 
-              className="text-charcoal-600 hover:text-blush-400 transition-colors"
+              className="text-gray-600 hover:text-blush-400 transition-colors"
             >
               Home
             </Link>
@@ -74,10 +74,10 @@ export default function Breadcrumbs({ items, currentPage, includeSchema = true }
           {/* Dynamic Breadcrumb Items */}
           {items.map((item, index) => (
             <li key={index} className="flex items-center space-x-2">
-              <span className="text-charcoal-400">/</span>
+              <span className="text-gray-400">/</span>
               <Link 
                 href={item.href} 
-                className="text-charcoal-600 hover:text-blush-400 transition-colors"
+                className="text-gray-600 hover:text-blush-400 transition-colors"
               >
                 {item.label}
               </Link>
@@ -86,8 +86,8 @@ export default function Breadcrumbs({ items, currentPage, includeSchema = true }
 
           {/* Current Page (not linked) */}
           <li className="flex items-center space-x-2">
-            <span className="text-charcoal-400">/</span>
-            <span className="text-charcoal-800 font-medium" aria-current="page">
+            <span className="text-gray-400">/</span>
+            <span className="text-gray-800 font-medium" aria-current="page">
               {currentPage}
             </span>
           </li>

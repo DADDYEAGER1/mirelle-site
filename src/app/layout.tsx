@@ -343,7 +343,7 @@ const organizationSchema = {
         <meta name="application-name" content="Mirellé" />
 
         {/* Theme color */}
-        <meta name="theme-color" content="#8b1f42" />
+        <meta name="theme-color" content="#E30088" />
         
         {/* ADD WEB VITALS TRACKING HERE - AFTER ADSENSE */}
         <Script id="web-vitals" strategy="afterInteractive">

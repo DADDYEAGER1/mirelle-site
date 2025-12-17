@@ -4,20 +4,15 @@
 @import "tailwindcss";
 
 :root {
-  /* OLD colors - keep for now */
-  --background: #fcfaf5;
-  --foreground: #2a2a2a;
-  --accent: #8b1f42;
-  --accent-light: #cc2d5c;
-  --accent-dark: #6b1833;
-  --text-secondary: #6a6a6a;
-  --border-color: #ede5d4;
-  --cream: #f8f4eb;
-  
-  /* NEW colors - use these in new components */
-  --brand-bg: #F7F7F7;
-  --brand-text: #252220;
-  --brand-accent: #E30088;
+  /* Updated colors */
+  --background: #F7F7F7;
+  --foreground: #252220;
+  --accent: #E30088;
+  --accent-light: #FF1AA3;
+  --accent-dark: #B0006B;
+  --text-secondary: #666666;
+  --border-color: #E0E0E0;
+  --cream: #F7F7F7;
 }
 
 @theme inline {
@@ -151,17 +146,17 @@ hr {
   }
 
   .glass-card-accent {
-    background: rgba(139, 31, 66, 0.15);
+    background: rgba(227, 0, 136, 0.15);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(139, 31, 66, 0.2);
+    border: 1px solid rgba(227, 0, 136, 0.2);
   }
 
   .glass-card-burgundy {
-    background: rgba(139, 31, 66, 0.9);
+    background: rgba(227, 0, 136, 0.9);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(204, 45, 92, 0.3);
+    border: 1px solid rgba(255, 26, 163, 0.3);
   }
 
   @supports not (backdrop-filter: blur(10px)) {
@@ -172,10 +167,10 @@ hr {
       background: rgba(0, 0, 0, 0.85);
     }
     .glass-card-accent {
-      background: rgba(139, 31, 66, 0.85);
+      background: rgba(227, 0, 136, 0.85);
     }
     .glass-card-burgundy {
-      background: rgba(139, 31, 66, 0.95);
+      background: rgba(227, 0, 136, 0.95);
     }
   }
 }

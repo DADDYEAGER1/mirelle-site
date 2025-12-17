@@ -89,9 +89,9 @@ export default function CategoryClient({
         <section className="py-16 bg-white border-y border-gray-100">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <details className="group bg-gradient-to-br from-cream-50 to-white rounded-3xl shadow-xl overflow-hidden border-2 border-gray-100">
-              <summary className="cursor-pointer px-8 py-6 flex justify-between items-center hover:bg-cream-50 transition-colors list-none">
+              <summary className="cursor-pointer px-8 py-6 flex justify-between items-center hover:bg-background transition-colors list-none">
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-burgundy-100 rounded-2xl flex items-center justify-center">
+                  <div className="w-14 h-14 bg-accent/20 rounded-2xl flex items-center justify-center">
                     <span className="text-3xl">💡</span>
                   </div>
                   <div>
@@ -105,7 +105,7 @@ export default function CategoryClient({
                 </div>
 
                 <svg
-                  className="w-7 h-7 text-burgundy-600 transform group-open:rotate-180 transition-transform"
+                  className="w-7 h-7 text-accent/80 transform group-open:rotate-180 transition-transform"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -126,7 +126,7 @@ export default function CategoryClient({
                   <ul className="space-y-3">
                     {designData.styleGuide.map((guide, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <span className="text-burgundy-600 mt-1 font-bold text-lg">✓</span>
+                        <span className="text-accent/80 mt-1 font-bold text-lg">✓</span>
                         <span className="text-lg">{guide}</span>
                       </li>
                     ))}
@@ -141,7 +141,7 @@ export default function CategoryClient({
                         {designData.perfectFor.map((occasion) => (
                           <span
                             key={occasion}
-                            className="px-4 py-2 bg-burgundy-100 text-burgundy-800 rounded-full text-base font-semibold"
+                            className="px-4 py-2 bg-accent/20 text-accent rounded-full text-base font-semibold"
                           >
                             {occasion}
                           </span>
@@ -202,7 +202,7 @@ export default function CategoryClient({
                         View Gallery
                       </span>
 
-                      <h3 className="font-serif text-3xl font-bold text-white mb-2 group-hover:text-cream-100 transition-colors">
+                      <h3 className="font-serif text-3xl font-bold text-white mb-2 group-hover:text-background transition-colors">
                         {related.displayName}
                       </h3>
 
@@ -232,7 +232,7 @@ export default function CategoryClient({
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-6 right-6 text-white text-5xl hover:text-burgundy-300 transition-colors z-10"
+            className="absolute top-6 right-6 text-white text-5xl hover:text-accent/40 transition-colors z-10"
             onClick={() => setSelectedImage(null)}
           >
             ×
@@ -251,7 +251,7 @@ export default function CategoryClient({
                   href={selectedImage.pinterestUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-burgundy-300 hover:text-burgundy-200 text-base font-semibold"
+                  className="inline-flex items-center gap-2 text-accent/40 hover:text-accent/30 text-base font-semibold"
                 >
                   View on Pinterest
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

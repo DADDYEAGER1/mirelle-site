@@ -430,7 +430,7 @@ export default function AtHomeHacks() {
             </p>
             
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="#hacks" className="bg-burgundy-600 hover:bg-burgundy-700 px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+              <a href="#hacks" className="bg-accent/80 hover:bg-accent px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
                 See the Hacks
               </a>
               <a href="#faq" className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
@@ -479,19 +479,19 @@ export default function AtHomeHacks() {
 
             <div className="glass-card p-6 rounded-2xl">
               <div className="flex flex-wrap justify-center gap-4 text-sm">
-                <a href="#household-tools" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#household-tools" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   🏠 Household Tool Hacks
                 </a>
                 <span className="text-gray-300">|</span>
-                <a href="#nail-art" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#nail-art" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   🎨 Easy Nail Art
                 </a>
                 <span className="text-gray-300">|</span>
-                <a href="#removal" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#removal" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   🧼 Removal Tips
                 </a>
                 <span className="text-gray-300">|</span>
-                <a href="#trending" className="text-blue-600 hover:text-burgundy-600 hover:underline font-medium">
+                <a href="#trending" className="text-blue-600 hover:text-accent/80 hover:underline font-medium">
                   🔥 2025 Trends
                 </a>
               </div>
@@ -544,7 +544,7 @@ export default function AtHomeHacks() {
                     height={533}
                     className="rounded-xl shadow-lg w-full max-w-2xl mx-auto mb-4"
                   />
-                  <div className="bg-cream-100 p-4 rounded-lg mt-4">
+                  <div className="bg-background p-4 rounded-lg mt-4">
                     <p className="text-sm text-gray-700"><strong>Why it works:</strong> Three controlled strokes give you better coverage and fewer streaks than trying to paint the whole nail at once. This technique alone improves application quality by like 50%.</p>
                   </div>
                 </div>
@@ -1192,10 +1192,10 @@ export default function AtHomeHacks() {
 
               <div className="space-y-4">
                 {/* FAQ 1 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How can I make my nail polish last longer at home?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1205,10 +1205,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 2 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What is the easiest way to do nails at home for beginners?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1218,10 +1218,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 3 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I stop my nail polish from chipping so fast?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1231,10 +1231,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 4 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Can I do professional-looking nails without going to a salon?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1244,10 +1244,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 5 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What household items can I use for nail art?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1257,10 +1257,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 6 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How long should I wait between coats of nail polish?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1270,10 +1270,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 7 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Why does my nail polish bubble up?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1283,10 +1283,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 8 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I remove glitter nail polish without damaging nails?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1296,10 +1296,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 9 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What is the best way to dry nail polish quickly?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1309,10 +1309,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 10 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I fix a smudged nail without starting over?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1322,10 +1322,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 11 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Should I push back or cut my cuticles?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1335,10 +1335,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 12 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How often should I do at-home manicures?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1348,10 +1348,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 13 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Can I mix different nail polish brands?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1361,10 +1361,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 14 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What is the difference between base coat and top coat?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1374,10 +1374,10 @@ export default function AtHomeHacks() {
                 </details>
 
                 {/* FAQ 15 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I prevent nail polish from getting on my skin?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1417,10 +1417,10 @@ export default function AtHomeHacks() {
                 {/* Related Topic 1 */}
                 <Link href="https://mirelleinspo.com/topics/nail-care-guide" className="group">
                   <div className="glass-card p-6 rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div className="w-12 h-12 bg-burgundy-100 rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">💅</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Care Essentials
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1439,7 +1439,7 @@ export default function AtHomeHacks() {
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">🎨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Art Tutorials
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1458,7 +1458,7 @@ export default function AtHomeHacks() {
                     <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">✨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Seasonal Nail Trends
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1478,16 +1478,16 @@ export default function AtHomeHacks() {
                   Design Inspiration
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Winter Nails 2025
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Christmas Designs
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/wedding-nail-designs" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/wedding-nail-designs" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Wedding Nails
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/valentine-nails-2026" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/valentine-nails-2026" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Valentine's Day
                   </Link>
                 </div>
@@ -1503,7 +1503,7 @@ export default function AtHomeHacks() {
                 You've got the hacks. Now grab some polish and try them out. Remember: everyone starts somewhere, and even pros mess up sometimes. You've got this.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="https://mirelleinspo.com/shop" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                <Link href="https://mirelleinspo.com/shop" className="bg-white text-accent/80 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
                   Shop Nail Essentials
                 </Link>
                 <Link href="https://mirelleinspo.com/pinterest" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">

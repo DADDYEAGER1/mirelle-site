@@ -52,11 +52,11 @@ export default function PremiumButton({
     
     switch (variant) {
       case 'primary':
-        return `${baseClasses} bg-editorial-charcoal text-white hover:bg-editorial-accent hover:text-editorial-charcoal`;
+        return `${baseClasses} bg-editorial-charcoal text-white hover:bg-accent hover:text-text-primary`;
       case 'secondary':
-        return `${baseClasses} border-2 border-editorial-charcoal text-editorial-charcoal hover:bg-editorial-sand`;
+        return `${baseClasses} border-2 border-editorial-charcoal text-text-primary hover:bg-background`;
       case 'ghost':
-        return `${baseClasses} text-editorial-charcoal hover:bg-editorial-stone`;
+        return `${baseClasses} text-text-primary hover:bg-editorial-stone`;
       default:
         return baseClasses;
     }

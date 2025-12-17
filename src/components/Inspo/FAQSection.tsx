@@ -23,7 +23,7 @@ export default function FAQSection({
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-block mb-4">
-            <span className="px-4 py-2 bg-burgundy-100 text-burgundy-700 rounded-full text-sm font-bold uppercase tracking-wide">
+            <span className="px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-bold uppercase tracking-wide">
               FAQ
             </span>
           </div>
@@ -40,14 +40,14 @@ export default function FAQSection({
           {faqs.map((faq, index) => (
             <details
               key={index}
-              className="group bg-white rounded-2xl border-2 border-gray-200 overflow-hidden hover:border-burgundy-300 transition-all duration-300 shadow-sm hover:shadow-lg"
+              className="group bg-white rounded-2xl border-2 border-gray-200 overflow-hidden hover:border-accent/40 transition-all duration-300 shadow-sm hover:shadow-lg"
             >
               <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target list-none">
                 <h3 className="font-semibold text-gray-900 pr-4 text-lg">
                   {faq.question}
                 </h3>
                 <svg
-                  className="w-6 h-6 text-burgundy-600 transform group-open:rotate-45 transition-transform flex-shrink-0"
+                  className="w-6 h-6 text-accent/80 transform group-open:rotate-45 transition-transform flex-shrink-0"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -68,7 +68,7 @@ export default function FAQSection({
           <p className="text-gray-600 mb-4">Still have questions?</p>
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-burgundy-600 text-white rounded-full font-semibold hover:bg-burgundy-700 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-accent/80 text-white rounded-full font-semibold hover:bg-accent transition-colors"
           >
             Contact Us
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -70,7 +70,7 @@ export default function FilterBar({
             {Object.values(activeFilters).some((v) => v && v !== 'all') && (
               <button
                 onClick={onClearFilters}
-                className="px-4 py-2 text-burgundy-600 hover:text-burgundy-700 text-sm font-medium underline"
+                className="px-4 py-2 text-accent/80 hover:text-accent text-sm font-medium underline"
               >
                 Clear all
               </button>
@@ -139,7 +139,7 @@ export default function FilterBar({
                 </button>
                 <button
                   onClick={() => setMobileFilterOpen(false)}
-                  className="flex-1 px-4 py-3 bg-burgundy-600 text-white rounded-lg font-medium hover:bg-burgundy-700 transition-colors"
+                  className="flex-1 px-4 py-3 bg-accent/80 text-white rounded-lg font-medium hover:bg-accent transition-colors"
                 >
                   Apply
                 </button>

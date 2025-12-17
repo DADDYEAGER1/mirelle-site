@@ -21,7 +21,7 @@ export default function NewsletterSection() {
     <section id="newsletter" className="py-26 bg-editorial-charcoal">
       <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
         {/* Header */}
-        <p className="text-overline text-editorial-accent uppercase tracking-widest mb-6 font-semibold">
+        <p className="text-overline text-accent uppercase tracking-widest mb-6 font-semibold">
           Newsletter
         </p>
         <h2 className="font-display text-display-md text-white mb-8 tracking-magazine">
@@ -52,7 +52,7 @@ export default function NewsletterSection() {
               />
               <button
                 type="submit"
-                className="w-full bg-white text-editorial-charcoal px-8 py-4 font-sans text-caption uppercase tracking-widest font-semibold hover:bg-editorial-accent hover:text-white transition-all duration-500 shadow-editorial"
+                className="w-full bg-white text-text-primary px-8 py-4 font-sans text-caption uppercase tracking-widest font-semibold hover:bg-accent hover:text-white transition-all duration-500 shadow-editorial"
               >
                 Subscribe Now
               </button>
@@ -61,7 +61,7 @@ export default function NewsletterSection() {
         ) : (
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-12 shadow-editorial-lg max-w-lg mx-auto">
             <div className="w-16 h-16 border-2 border-editorial-accent flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-editorial-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>

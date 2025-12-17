@@ -54,7 +54,7 @@ export default function ShopCTA({ categoryName, categorySlug }: ShopCTAProps) {
 
             {/* Content Side */}
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              <span className="inline-block w-fit px-4 py-2 bg-gradient-to-r from-burgundy-100 to-pink-100 text-burgundy-700 rounded-full text-sm font-bold mb-6">
+              <span className="inline-block w-fit px-4 py-2 bg-gradient-to-r from-burgundy-100 to-pink-100 text-accent rounded-full text-sm font-bold mb-6">
                 🛍️ Shop the Look
               </span>
 
@@ -100,7 +100,7 @@ export default function ShopCTA({ categoryName, categorySlug }: ShopCTAProps) {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href={shopUrl}
-                  className="flex-1 px-8 py-4 bg-burgundy-600 text-white text-center rounded-full font-bold hover:bg-burgundy-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2"
+                  className="flex-1 px-8 py-4 bg-accent/80 text-white text-center rounded-full font-bold hover:bg-accent transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2"
                 >
                   Shop {categoryName || 'Press-On Nails'}
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function ShopCTA({ categoryName, categorySlug }: ShopCTAProps) {
                 </a>
                 <a
                   href="/shop"
-                  className="flex-1 px-8 py-4 bg-white text-burgundy-600 text-center rounded-full font-bold border-2 border-burgundy-600 hover:bg-burgundy-50 transition-colors"
+                  className="flex-1 px-8 py-4 bg-white text-accent/80 text-center rounded-full font-bold border-2 border-accent/80 hover:bg-accent/10 transition-colors"
                 >
                   View All Collections
                 </a>

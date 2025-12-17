@@ -438,7 +438,7 @@ export default function NailCareGuide() {
             </p>
             
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="#content" className="bg-burgundy-600 hover:bg-burgundy-700 px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+              <a href="#content" className="bg-accent/80 hover:bg-accent px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
                 Start Reading
               </a>
               <a href="#faq" className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
@@ -459,10 +459,10 @@ export default function NailCareGuide() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="glass-card p-6 rounded-2xl text-center">
-                <div className="w-16 h-16 bg-burgundy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-accent/80 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">💅</span>
                 </div>
-                <div className="text-3xl font-bold text-burgundy-600 mb-2">85%</div>
+                <div className="text-3xl font-bold text-accent/80 mb-2">85%</div>
                 <p className="text-gray-600 text-sm">Of women report stronger nails within 2-4 weeks using natural methods</p>
                 <p className="text-xs text-gray-400 mt-2">Source: <a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/nails/art-20044954" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Mayo Clinic 2024</a></p>
               </div>
@@ -529,27 +529,27 @@ export default function NailCareGuide() {
                   <h3 className="font-serif text-xl font-semibold text-gray-800 mb-4">Common Causes of Nail Weakness</h3>
                   <ul className="space-y-3 text-gray-600">
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Excessive water exposure:</strong> Prolonged contact with water weakens nail structure by causing expansion and contraction</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Protein and biotin deficiency:</strong> Inadequate nutrition prevents proper keratin formation</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Harsh chemical exposure:</strong> Cleaning products and acetone-based removers strip natural oils</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Iron deficiency anemia:</strong> Low iron levels cause vertical ridges and brittleness</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Thyroid dysfunction:</strong> Both hypothyroidism and hyperthyroidism affect nail health</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Natural aging:</strong> Nail growth slows and structure weakens after age 40</div>
                     </li>
                   </ul>
@@ -838,15 +838,15 @@ export default function NailCareGuide() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600">
+              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-accent/80 rounded-xl flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl">💡</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Pro Tip</h4>
                     <p className="text-gray-700">
-                      To achieve the coveted glass nail look, focus on nail health first. Use our 15-step strengthening routine for 4 weeks before attempting this trend. Buff nails gently with a 4-way buffer, apply a smoothing base coat, and finish with gel-like top coat. The result is a mirror-shine finish that showcases your naturally strong, healthy nails. Check out our <a href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-burgundy-600 hover:underline">winter nail designs</a> for seasonal glass nail inspiration.
+                      To achieve the coveted glass nail look, focus on nail health first. Use our 15-step strengthening routine for 4 weeks before attempting this trend. Buff nails gently with a 4-way buffer, apply a smoothing base coat, and finish with gel-like top coat. The result is a mirror-shine finish that showcases your naturally strong, healthy nails. Check out our <a href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-accent/80 hover:underline">winter nail designs</a> for seasonal glass nail inspiration.
                     </p>
                   </div>
                 </div>
@@ -1003,10 +1003,10 @@ export default function NailCareGuide() {
 
               <div className="space-y-4">
                 {/* FAQ 1 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How can I make my nails stronger naturally?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1016,10 +1016,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 2 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What home remedies strengthen nails?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1029,10 +1029,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 3 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Why are my nails so weak and brittle?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1042,10 +1042,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 4 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I fix peeling nails at home?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1055,10 +1055,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 5 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What oil is best for nail health?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1068,10 +1068,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 6 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Can lemon juice strengthen nails?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1081,10 +1081,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 7 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How long does it take to strengthen nails naturally?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1094,10 +1094,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 8 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What vitamins help nails grow faster?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1107,10 +1107,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 9 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I prevent my nails from breaking?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1120,10 +1120,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 10 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What causes nails to split and peel?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1133,10 +1133,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 11 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Is biotin good for nail growth?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1146,10 +1146,10 @@ export default function NailCareGuide() {
                 </details>
 
                 {/* FAQ 12 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How often should I moisturize my nails?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1192,7 +1192,7 @@ export default function NailCareGuide() {
                     <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">🎨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Perfect Nail Colors for Your Skin Tone
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1211,7 +1211,7 @@ export default function NailCareGuide() {
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">✨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Art Guides for Healthy Nails
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1230,7 +1230,7 @@ export default function NailCareGuide() {
                     <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">🍂</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Seasonal Nail Trends 2025
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1250,16 +1250,16 @@ export default function NailCareGuide() {
                   Popular Nail Design Inspiration
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Winter Nails 2025
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Christmas Designs
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/wedding-nail-designs" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/wedding-nail-designs" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Wedding Nails
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/valentine-nails-2026" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/valentine-nails-2026" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Valentine's Day Nails
                   </Link>
                 </div>
@@ -1275,7 +1275,7 @@ export default function NailCareGuide() {
                 Join thousands of women who have strengthened their nails naturally using these proven techniques. Start your journey to healthy, beautiful nails today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="https://mirelleinspo.com/pinterest" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                <Link href="https://mirelleinspo.com/pinterest" className="bg-white text-accent/80 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
                   Follow on Pinterest
                 </Link>
                 <Link href="https://mirelleinspo.com/shop" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">

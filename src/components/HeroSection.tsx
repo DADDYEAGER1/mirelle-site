@@ -16,7 +16,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-editorial-cream">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* ✅ Background Image with Parallax */}
       <div 
         className="absolute inset-0 z-0"

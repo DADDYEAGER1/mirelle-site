@@ -395,7 +395,7 @@ export default function SkinTonesGuide() {
             </p>
             
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="#quiz" className="bg-burgundy-600 hover:bg-burgundy-700 px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+              <a href="#quiz" className="bg-accent/80 hover:bg-accent px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
                 Take the Quiz
               </a>
               <a href="#nail-colors" className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
@@ -416,10 +416,10 @@ export default function SkinTonesGuide() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="glass-card p-6 rounded-2xl text-center">
-                <div className="w-16 h-16 bg-burgundy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-accent/80 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">🎨</span>
                 </div>
-                <div className="text-3xl font-bold text-burgundy-600 mb-2">4 Types</div>
+                <div className="text-3xl font-bold text-accent/80 mb-2">4 Types</div>
                 <p className="text-gray-600 text-sm">Main skin undertones: warm, cool, neutral, and olive with distinct characteristics</p>
                 <p className="text-xs text-gray-400 mt-2">Source: Dermatology Research</p>
               </div>
@@ -480,19 +480,19 @@ export default function SkinTonesGuide() {
                   </p>
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Fair:</strong> Pale skin that burns easily</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Light:</strong> Light beige complexion</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Medium:</strong> Tan or olive coloring</div>
                     </li>
                     <li className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div><strong>Deep/Dark:</strong> Rich brown to ebony</div>
                     </li>
                   </ul>
@@ -716,9 +716,9 @@ export default function SkinTonesGuide() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600">
+              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-accent/80 rounded-xl flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl">💡</span>
                   </div>
                   <div>
@@ -747,7 +747,7 @@ export default function SkinTonesGuide() {
               <div className="mb-12">
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
                   <div className="flex items-center mb-4">
-                    <span className="w-10 h-10 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold mr-4">1</span>
+                    <span className="w-10 h-10 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold mr-4">1</span>
                     <h3 className="font-serif text-2xl font-semibold text-gray-800">The Vein Test</h3>
                   </div>
                   <p className="text-gray-600 mb-6">
@@ -781,7 +781,7 @@ export default function SkinTonesGuide() {
               <div className="mb-12">
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
                   <div className="flex items-center mb-4">
-                    <span className="w-10 h-10 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold mr-4">2</span>
+                    <span className="w-10 h-10 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold mr-4">2</span>
                     <h3 className="font-serif text-2xl font-semibold text-gray-800">The Jewelry Test</h3>
                   </div>
                   <p className="text-gray-600 mb-6">
@@ -815,7 +815,7 @@ export default function SkinTonesGuide() {
               <div className="mb-12">
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
                   <div className="flex items-center mb-4">
-                    <span className="w-10 h-10 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold mr-4">3</span>
+                    <span className="w-10 h-10 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold mr-4">3</span>
                     <h3 className="font-serif text-2xl font-semibold text-gray-800">The White Paper Test</h3>
                   </div>
                   <p className="text-gray-600 mb-6">
@@ -859,7 +859,7 @@ export default function SkinTonesGuide() {
               <div className="mb-12">
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
                   <div className="flex items-center mb-4">
-                    <span className="w-10 h-10 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold mr-4">4</span>
+                    <span className="w-10 h-10 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold mr-4">4</span>
                     <h3 className="font-serif text-2xl font-semibold text-gray-800">The Sun Exposure Test</h3>
                   </div>
                   <p className="text-gray-600 mb-6">
@@ -895,7 +895,7 @@ export default function SkinTonesGuide() {
               <div className="mb-12">
                 <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
                   <div className="flex items-center mb-4">
-                    <span className="w-10 h-10 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold mr-4">5</span>
+                    <span className="w-10 h-10 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold mr-4">5</span>
                     <h3 className="font-serif text-2xl font-semibold text-gray-800">The Clothing Test</h3>
                   </div>
                   <p className="text-gray-600 mb-6">
@@ -1209,15 +1209,15 @@ export default function SkinTonesGuide() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600">
+              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-accent/80 rounded-xl flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl">💡</span>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Pro Shopping Tip</h4>
                     <p className="text-gray-700">
-                      Always test foundation on your jawline, not your wrist or hand. Your jawline shows the true match between your face and neck. Apply three shades (one lighter, one darker, one exact match) and check in natural daylight. The shade that disappears into your skin is your perfect match. According to <a href="https://www.lorealparisusa.com/beauty-magazine/makeup/face-makeup/how-to-determine-undertones" target="_blank" rel="noopener" className="text-burgundy-600 hover:underline">makeup experts at L'Oréal Paris</a>, this method ensures accurate color matching regardless of lighting conditions.
+                      Always test foundation on your jawline, not your wrist or hand. Your jawline shows the true match between your face and neck. Apply three shades (one lighter, one darker, one exact match) and check in natural daylight. The shade that disappears into your skin is your perfect match. According to <a href="https://www.lorealparisusa.com/beauty-magazine/makeup/face-makeup/how-to-determine-undertones" target="_blank" rel="noopener" className="text-accent/80 hover:underline">makeup experts at L'Oréal Paris</a>, this method ensures accurate color matching regardless of lighting conditions.
                     </p>
                   </div>
                 </div>
@@ -1238,10 +1238,10 @@ export default function SkinTonesGuide() {
 
               <div className="space-y-4">
                 {/* FAQ 1 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How do I find my skin undertone?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1251,10 +1251,10 @@ export default function SkinTonesGuide() {
                 </details>
 
                 {/* FAQ 2 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What is the difference between skin tone and undertone?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1264,10 +1264,10 @@ export default function SkinTonesGuide() {
                 </details>
 
                 {/* FAQ 3 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">How can I tell if I have warm or cool undertones?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1277,10 +1277,10 @@ export default function SkinTonesGuide() {
                 </details>
 
                 {/* FAQ 4 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What undertone am I if my veins are blue?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1290,10 +1290,10 @@ export default function SkinTonesGuide() {
                 </details>
 
                 {/* FAQ 5 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What undertone am I if my veins are green?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1303,10 +1303,10 @@ export default function SkinTonesGuide() {
                 </details>
 
                 {/* FAQ 6 */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Can I have neutral undertones?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1316,10 +1316,10 @@ export default function SkinTonesGuide() {
                 </details>
 
                 {/* FAQ 7-12 continue... */}
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What is olive undertone?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1328,10 +1328,10 @@ export default function SkinTonesGuide() {
                   </div>
                 </details>
 
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Why does my foundation look orange on me?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1340,10 +1340,10 @@ export default function SkinTonesGuide() {
                   </div>
                 </details>
 
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What nail colors look best on warm undertones?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1352,10 +1352,10 @@ export default function SkinTonesGuide() {
                   </div>
                 </details>
 
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">What nail colors look best on cool undertones?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1364,10 +1364,10 @@ export default function SkinTonesGuide() {
                   </div>
                 </details>
 
-                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                <details className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                   <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                     <h3 className="font-semibold text-gray-900 pr-4">Can dark skin have cool undertones?</h3>
-                    <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   </summary>
@@ -1410,7 +1410,7 @@ export default function SkinTonesGuide() {
                     <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">💅</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Care Guide
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1429,7 +1429,7 @@ export default function SkinTonesGuide() {
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">✨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Art Guides
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1448,7 +1448,7 @@ export default function SkinTonesGuide() {
                     <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">🍂</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Seasonal Nail Trends 2025
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -1468,16 +1468,16 @@ export default function SkinTonesGuide() {
                   Nail Design Inspiration by Undertone
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                  <Link href="https://mirelleinspo.com/blog/wedding-nail-designs" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/wedding-nail-designs" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Wedding Nails
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Christmas Designs
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/valentine-nails-2026" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/valentine-nails-2026" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Valentine's Nails
                   </Link>
-                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-burgundy-600 text-sm hover:underline">
+                  <Link href="https://mirelleinspo.com/blog/winter-nails-2025" className="text-blue-600 hover:text-accent/80 text-sm hover:underline">
                     Winter Nails 2025
                   </Link>
                 </div>
@@ -1493,7 +1493,7 @@ export default function SkinTonesGuide() {
                 Now that you know your undertone, explore our curated nail polish collections designed to flatter YOUR unique skin. Shop by undertone for guaranteed gorgeous results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="https://in.pinterest.com/mirelle_inspo/" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                <Link href="https://in.pinterest.com/mirelle_inspo/" className="bg-white text-accent/80 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
                   Follow on Pinterest
                 </Link>
                 <Link href="https://mirelleinspo.com/shop" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">

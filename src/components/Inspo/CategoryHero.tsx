@@ -78,7 +78,7 @@ export default function CategoryHero({ designData, imageCount }: CategoryHeroPro
             <ul className="space-y-3 text-white/90">
               {designData.tldr.summary.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-burgundy-300 mt-1 font-bold">✓</span>
+                  <span className="text-accent/40 mt-1 font-bold">✓</span>
                   <span>{item}</span>
                 </li>
               ))}

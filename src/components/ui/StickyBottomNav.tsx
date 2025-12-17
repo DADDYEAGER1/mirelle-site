@@ -44,8 +44,8 @@ export default function StickyBottomNav() {
               href={item.href}
               className={`flex flex-col items-center justify-center flex-1 h-full touch-target transition-all duration-300 ${
                 item.isActive
-                  ? 'text-editorial-accent'
-                  : 'text-editorial-slate hover:text-editorial-charcoal'
+                  ? 'text-accent'
+                  : 'text-editorial-slate hover:text-text-primary'
               }`}
             >
               <Icon

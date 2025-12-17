@@ -184,10 +184,10 @@ export default function Topics() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-3xl font-bold text-charcoal-800 mb-4">
+              <h2 className="font-serif text-3xl font-bold text-gray-800 mb-4">
                 Explore Our Topics
               </h2>
-              <p className="text-lg text-charcoal-600 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 From nail care basics to advanced techniques, discover everything you need
                 to know about beautiful, healthy nails.
               </p>

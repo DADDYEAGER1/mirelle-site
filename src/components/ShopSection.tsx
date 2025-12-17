@@ -60,10 +60,10 @@ export default function ShopSection() {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="max-w-3xl mb-18">
-          <p className="text-overline text-editorial-accent uppercase tracking-widest mb-4 font-semibold">
+          <p className="text-overline text-accent uppercase tracking-widest mb-4 font-semibold">
             Shop
           </p>
-          <h2 className="font-display text-display-md text-editorial-charcoal mb-6 tracking-magazine">
+          <h2 className="font-display text-display-md text-text-primary mb-6 tracking-magazine">
             Shop Mirellé's Favs
           </h2>
           <p className="text-body-lg text-editorial-slate leading-relaxed font-light">
@@ -103,7 +103,7 @@ export default function ShopSection() {
 
                   {/* Trending badge */}
                   {category.trending && (
-                    <div className="absolute top-6 left-6 border border-editorial-accent text-editorial-accent backdrop-blur-sm bg-white/80 px-3 py-1 text-caption uppercase tracking-widest font-semibold animate-fade-in">
+                    <div className="absolute top-6 left-6 border border-editorial-accent text-accent backdrop-blur-sm bg-white/80 px-3 py-1 text-caption uppercase tracking-widest font-semibold animate-fade-in">
                       Trending
                     </div>
                   )}
@@ -131,7 +131,7 @@ export default function ShopSection() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                     {/* ✅ Animated underline */}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-editorial-accent transition-all duration-300 group-hover:w-full origin-left"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full origin-left"></span>
                   </div>
                 </div>
               </Link>

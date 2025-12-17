@@ -11,7 +11,7 @@ export default function Error({
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center">
-        <h2 className="font-serif text-3xl font-bold text-charcoal-800 mb-4">
+        <h2 className="font-serif text-3xl font-bold text-gray-800 mb-4">
           Something went wrong!
         </h2>
         <button

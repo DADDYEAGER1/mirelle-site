@@ -74,7 +74,7 @@ export default function NewsletterPopup() {
         <GlassCard className="max-w-md w-full relative">
           <button
             onClick={dismissPopup}
-            className="absolute top-4 right-4 text-editorial-charcoal hover:text-editorial-accent transition-colors touch-target"
+            className="absolute top-4 right-4 text-text-primary hover:text-accent transition-colors touch-target"
             aria-label="Close popup"
           >
             <X className="w-6 h-6" />
@@ -83,36 +83,36 @@ export default function NewsletterPopup() {
           {isSuccess ? (
             <div className="text-center py-8">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-              <h3 className="text-2xl font-cormorant font-bold text-editorial-charcoal mb-2">
+              <h3 className="text-2xl font-cormorant font-bold text-text-primary mb-2">
                 You're In! 💅
               </h3>
-              <p className="text-editorial-charcoal/70">
+              <p className="text-text-primary/70">
                 Check your inbox for weekly nail inspo!
               </p>
             </div>
           ) : (
             <>
               <div className="text-center mb-6">
-                <Mail className="w-12 h-12 text-editorial-accent mx-auto mb-4" />
-                <h3 className="text-3xl font-cormorant font-bold text-editorial-charcoal mb-2">
+                <Mail className="w-12 h-12 text-accent mx-auto mb-4" />
+                <h3 className="text-3xl font-cormorant font-bold text-text-primary mb-2">
                   Get Weekly Nail Inspo 💅
                 </h3>
-                <p className="text-editorial-charcoal/80 text-sm">
+                <p className="text-text-primary/80 text-sm">
                   Join 10,000+ nail lovers getting:
                 </p>
               </div>
 
-              <div className="space-y-2 mb-6 text-editorial-charcoal/70 text-sm">
+              <div className="space-y-2 mb-6 text-text-primary/70 text-sm">
                 <div className="flex items-center gap-2">
-                  <span className="text-editorial-accent">✓</span>
+                  <span className="text-accent">✓</span>
                   <span>Trending designs every week</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-editorial-accent">✓</span>
+                  <span className="text-accent">✓</span>
                   <span>Expert tips & tutorials</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-editorial-accent">✓</span>
+                  <span className="text-accent">✓</span>
                   <span>Exclusive product finds</span>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function NewsletterPopup() {
                 </PremiumButton>
               </form>
 
-              <p className="text-xs text-editorial-charcoal/50 text-center mt-4">
+              <p className="text-xs text-text-primary/50 text-center mt-4">
                 Unsubscribe anytime. No spam, ever. 🎨
               </p>
             </>

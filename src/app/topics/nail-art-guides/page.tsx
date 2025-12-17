@@ -455,7 +455,7 @@ export default function NailArtGuides() {
             </p>
             
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="#quick-nav" className="bg-burgundy-600 hover:bg-burgundy-700 px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+              <a href="#quick-nav" className="bg-accent/80 hover:bg-accent px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
                 Start Learning
               </a>
               <a href="#faq" className="glass-card px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
@@ -550,7 +550,7 @@ export default function NailArtGuides() {
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-burgundy-50 rounded-xl border-l-4 border-burgundy-600">
+              <div className="mt-8 p-6 bg-accent/10 rounded-xl border-l-4 border-accent/80">
                 <h3 className="font-bold text-gray-900 mb-2">📍 First time here?</h3>
                 <p className="text-gray-700 text-sm">
                   Start with <a href="#ultra-easy" style={{color: '#2563eb', textDecoration: 'underline'}}>Ultra Easy Designs</a> (seriously, anyone can do these). Once you nail those (pun intended), move to <a href="#super-easy" style={{color: '#2563eb', textDecoration: 'underline'}}>Super Easy</a>. Don't skip ahead or you'll get frustrated. Trust the process!
@@ -565,10 +565,10 @@ export default function NailArtGuides() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="glass-card p-6 rounded-2xl text-center">
-                <div className="w-16 h-16 bg-burgundy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-accent/80 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">🎨</span>
                 </div>
-                <div className="text-3xl font-bold text-burgundy-600 mb-2">20+</div>
+                <div className="text-3xl font-bold text-accent/80 mb-2">20+</div>
                 <p className="text-gray-600 text-sm">Beginner-friendly designs you can actually do at home</p>
                 <p className="text-xs text-gray-400 mt-2">No salon experience needed</p>
               </div>
@@ -622,7 +622,7 @@ export default function NailArtGuides() {
               </p>
 
               <div className="space-y-6 mb-8">
-                <div className="glass-card p-6 rounded-xl border-l-4 border-burgundy-400">
+                <div className="glass-card p-6 rounded-xl border-l-4 border-accent/50">
                   <h3 className="font-semibold text-gray-800 mb-3 flex items-center">
                     <span className="text-2xl mr-3">❌</span>
                     Myth: "You need artistic talent"
@@ -711,21 +711,21 @@ export default function NailArtGuides() {
                   <h3 className="font-serif text-xl font-semibold text-gray-800 mb-4">The Bare Minimum (Need These)</h3>
                   <div className="space-y-3">
                     <div className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>
                         <strong className="text-gray-800">Base coat:</strong>
                         <span className="text-gray-600"> Protects your nails from staining. Not optional. Any drugstore brand works ($4-8).</span>
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>
                         <strong className="text-gray-800">2-3 nail polish colors:</strong>
                         <span className="text-gray-600"> Start with contrasting shades like white + navy, or nude + gold. High contrast makes designs visible ($3-5 each).</span>
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                       <div>
                         <strong className="text-gray-800">Top coat:</strong>
                         <span className="text-gray-600"> Seals everything and makes it last. Also adds shine. Essie or Sally Hansen work great ($5-8).</span>
@@ -810,9 +810,9 @@ export default function NailArtGuides() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600">
+              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-burgundy-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-accent/80 rounded-xl flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl">💰</span>
                   </div>
                   <div>
@@ -833,19 +833,19 @@ export default function NailArtGuides() {
               </p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div><strong>Cleanup brush:</strong> Small brush for acetone cleanup (makes edges cleaner) - $3-5</div>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div><strong>Actual dotting tool:</strong> Comes in a set with different sizes - $5-8</div>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div><strong>Striping brush:</strong> Thin brush for lines (toothpicks work fine though) - $3-6</div>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-burgundy-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span className="w-2 h-2 bg-accent/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <div><strong>Practice nail tips or wheels:</strong> For trying designs before your real nails - $8-12</div>
                 </li>
               </ul>
@@ -956,7 +956,7 @@ export default function NailArtGuides() {
 
 <div className="space-y-3 mb-4">
   <div className="flex items-start gap-3">
-    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
       1
     </div>
     <div className="flex-1">
@@ -966,7 +966,7 @@ export default function NailArtGuides() {
   </div>
 
   <div className="flex items-start gap-3">
-    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
       2
     </div>
     <div className="flex-1">
@@ -976,7 +976,7 @@ export default function NailArtGuides() {
   </div>
 
   <div className="flex items-start gap-3">
-    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
       3
     </div>
     <div className="flex-1">
@@ -986,7 +986,7 @@ export default function NailArtGuides() {
   </div>
 
   <div className="flex items-start gap-3">
-    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
       4
     </div>
     <div className="flex-1">
@@ -1078,7 +1078,7 @@ export default function NailArtGuides() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-accent/80 mb-4">
                   <p className="text-gray-700 text-sm">
                     <strong>💡 Pro tip:</strong> This looks especially good for <a href="https://mirelleinspo.com/blog/wedding-nail-designs" style={{color: '#2563eb', textDecoration: 'underline'}}>wedding nails</a> or <a href="https://mirelleinspo.com/blog/new-year-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}}>New Year's celebrations</a>. Nude base with gold glitter tips = instant elegance.
                   </p>
@@ -1276,7 +1276,7 @@ export default function NailArtGuides() {
 
                 <div className="space-y-3 mb-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       1
                     </div>
                     <div className="flex-1">
@@ -1286,7 +1286,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       2
                     </div>
                     <div className="flex-1">
@@ -1296,7 +1296,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       3
                     </div>
                     <div className="flex-1">
@@ -1306,7 +1306,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       4
                     </div>
                     <div className="flex-1">
@@ -1417,7 +1417,7 @@ export default function NailArtGuides() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-accent/80 mb-4">
                   <p className="text-gray-700 text-sm">
                     <strong>💡 Pro tip:</strong> Use the blunt end of a toothpick or a bobby pin head for larger, more uniform dots. Pointed end for tiny dots. Mixing sizes adds visual interest—try large dots on ring finger, small dots on the rest.
                   </p>
@@ -1626,7 +1626,7 @@ export default function NailArtGuides() {
 
                 <div className="space-y-3 mb-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       1
                     </div>
                     <div className="flex-1">
@@ -1636,7 +1636,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       2
                     </div>
                     <div className="flex-1">
@@ -1646,7 +1646,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       3
                     </div>
                     <div className="flex-1">
@@ -1656,7 +1656,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       4
                     </div>
                     <div className="flex-1">
@@ -1666,7 +1666,7 @@ export default function NailArtGuides() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-accent/80 mb-4">
                   <p className="text-gray-700 text-sm">
                     <strong>💡 Pro tip:</strong> This design is perfect for <a href="https://mirelleinspo.com/blog/new-year-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}}>New Year's Eve</a> or any party. The gradient catches light beautifully. For extra dimension, use a chunky glitter over a fine glitter base.
                   </p>
@@ -1919,7 +1919,7 @@ export default function NailArtGuides() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-accent/80 mb-4">
                   <p className="text-gray-700 text-sm">
                     <strong>💡 Pro tip:</strong> This design went viral because it's genuinely easy but looks detailed. White petals with yellow center on light blue = daisy vibes. Pink petals with red center on nude = cherry blossom aesthetic. Perfect for spring and <a href="https://mirelleinspo.com/blog/wedding-nail-designs" style={{color: '#2563eb', textDecoration: 'underline'}}>wedding season</a>.
                   </p>
@@ -1977,7 +1977,7 @@ export default function NailArtGuides() {
 
                 <div className="space-y-3 mb-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       1
                     </div>
                     <div className="flex-1">
@@ -1987,7 +1987,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       2
                     </div>
                     <div className="flex-1">
@@ -1997,7 +1997,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       3
                     </div>
                     <div className="flex-1">
@@ -2007,7 +2007,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       4
                     </div>
                     <div className="flex-1">
@@ -2264,7 +2264,7 @@ export default function NailArtGuides() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-accent/80 mb-4">
                   <p className="text-gray-700 text-sm">
                     <strong>💡 Pro tip:</strong> Try black micro tips instead of white for an edgy modern vibe. Or alternate white and black tips on different nails. This style works especially well for <a href="https://mirelleinspo.com/topics/modern-women" style={{color: '#2563eb', textDecoration: 'underline'}}>professional settings</a> because it's subtle but still styled.
                   </p>
@@ -2307,7 +2307,7 @@ export default function NailArtGuides() {
 
                 <div className="space-y-3 mb-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       1
                     </div>
                     <div className="flex-1">
@@ -2317,7 +2317,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       2
                     </div>
                     <div className="flex-1">
@@ -2327,7 +2327,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       3
                     </div>
                     <div className="flex-1">
@@ -2337,7 +2337,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       4
                     </div>
                     <div className="flex-1">
@@ -2429,7 +2429,7 @@ export default function NailArtGuides() {
     </div>
   </div>
 
-  <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+  <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-accent/80 mb-4">
     <p className="text-gray-700 text-sm">
       <strong>💡 Pro tip:</strong> This is the design to try when you're tired or don't have time for precision. Black lines on white base = classic. Gold lines on nude = expensive looking. Use a contrasting color so your lines are visible. Perfect for days when you want to look put together without the effort.
     </p>
@@ -2641,7 +2641,7 @@ export default function NailArtGuides() {
 
                 <div className="space-y-3 mb-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       1
                     </div>
                     <div className="flex-1">
@@ -2651,7 +2651,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       2
                     </div>
                     <div className="flex-1">
@@ -2661,7 +2661,7 @@ export default function NailArtGuides() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-burgundy-600 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent/80 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-1">
                       3
                     </div>
                     <div className="flex-1">
@@ -2671,7 +2671,7 @@ export default function NailArtGuides() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-burgundy-600 mb-4">
+                <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-xl p-6 border-l-4 border-accent/80 mb-4">
                   <p className="text-gray-700 text-sm">
                     <strong>💡 Pro tip:</strong> This is the ultimate "clean girl" aesthetic nail. Works for literally any occasion. Professional enough for work, chic enough for events, simple enough for everyday. Bonus: any chips or wear blend in better than with dark colors, so it lasts longer looking fresh.
                   </p>
@@ -2874,7 +2874,7 @@ export default function NailArtGuides() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-burgundy-600 mt-8">
+              <div className="bg-gradient-to-br from-burgundy-50 to-pink-50 rounded-2xl p-8 border-l-4 border-accent/80 mt-8">
                 <h3 className="font-bold text-gray-900 mb-3 text-lg">🛠️ Mid-Design Fixes</h3>
                 <div className="space-y-3 text-gray-700 text-sm">
                   <p><strong>Smudged before drying?</strong> Let it dry completely, then apply another thin coat over it. The fresh coat will smooth out the smudge.</p>
@@ -3131,7 +3131,7 @@ export default function NailArtGuides() {
               </p>
 
               <div className="space-y-6">
-                <div className="glass-card p-6 rounded-xl border-l-4 border-burgundy-400">
+                <div className="glass-card p-6 rounded-xl border-l-4 border-accent/50">
                   <h3 className="font-semibold text-gray-800 mb-3">Week 1: Master the Basics</h3>
                   <ul className="space-y-2 text-gray-600 text-sm">
                     <li>• Try designs 1-5 (Ultra Easy category)</li>
@@ -3263,10 +3263,10 @@ export default function NailArtGuides() {
                     a: "Toothpicks are perfect for nail art. Use the pointed end for tiny dots and fine lines. Use the blunt end for larger dots. Drag through wet polish to create marble effects, swirls, or floral designs. Toothpicks offer excellent control and precision for beginners at zero cost."
                   }
                 ].map((faq, index) => (
-                  <details key={index} className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-burgundy-300 transition-colors">
+                  <details key={index} className="group glass-card rounded-xl border border-gray-200 overflow-hidden hover:border-accent/40 transition-colors">
                     <summary className="cursor-pointer px-6 py-5 flex justify-between items-center touch-target">
                       <h3 className="font-semibold text-gray-900 pr-4">{faq.q}</h3>
-                      <svg className="w-5 h-5 text-burgundy-600 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-accent/80 transform group-open:rotate-45 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                       </svg>
                     </summary>
@@ -3310,7 +3310,7 @@ export default function NailArtGuides() {
                     <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">💅</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Nail Care & Strengthening
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -3329,7 +3329,7 @@ export default function NailArtGuides() {
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">🎨</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Colors for Your Skin Tone
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -3348,7 +3348,7 @@ export default function NailArtGuides() {
                     <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                       <span className="text-2xl">🍂</span>
                     </div>
-                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-burgundy-600 transition-colors">
+                    <h3 className="font-serif text-xl font-semibold text-gray-800 mb-3 group-hover:text-accent/80 transition-colors">
                       Seasonal Nail Trends
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
@@ -3368,28 +3368,28 @@ export default function NailArtGuides() {
                   Design Inspiration by Occasion
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                  <a href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/christmas-nail-designs-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     Christmas Nails
                   </a>
-                  <a href="https://mirelleinspo.com/blog/wedding-nail-designs" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/wedding-nail-designs" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     Wedding Designs
                   </a>
-                  <a href="https://mirelleinspo.com/blog/valentine-nails-2026" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/valentine-nails-2026" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     Valentine's Day
                   </a>
-                  <a href="https://mirelleinspo.com/blog/winter-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/winter-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     Winter Nails
                   </a>
-                  <a href="https://mirelleinspo.com/blog/new-year-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/new-year-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     New Year's Eve
                   </a>
-                  <a href="https://mirelleinspo.com/blog/thanksgiving-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/thanksgiving-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     Thanksgiving
                   </a>
-                  <a href="https://mirelleinspo.com/blog/holiday-vacation-nails-travel-guide" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/holiday-vacation-nails-travel-guide" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     Vacation Nails
                   </a>
-                  <a href="https://mirelleinspo.com/blog/goddess-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-burgundy-600">
+                  <a href="https://mirelleinspo.com/blog/goddess-nails-2025" style={{color: '#2563eb', textDecoration: 'underline'}} className="text-sm hover:text-accent/80">
                     Goddess Nails
                   </a>
                 </div>
@@ -3405,7 +3405,7 @@ export default function NailArtGuides() {
                 You've got everything you need. Pick one design from the Ultra Easy section and try it this week. No pressure, no judgment—just have fun creating.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://mirelleinspo.com/pinterest" className="bg-white text-burgundy-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                <a href="https://mirelleinspo.com/pinterest" className="bg-white text-accent/80 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
                   Follow for More Inspo
                 </a>
                 <a href="https://mirelleinspo.com/shop" className="glass-card-dark px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all">

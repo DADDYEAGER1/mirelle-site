@@ -65,7 +65,7 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={scrollLeft}
-              className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-burgundy-50 hover:text-burgundy-600 transition-all group"
+              className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-accent/10 hover:text-accent/80 transition-all group"
               aria-label="Previous slide"
             >
               <svg className="w-6 h-6 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
             </button>
             <button
               onClick={scrollRight}
-              className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-burgundy-50 hover:text-burgundy-600 transition-all group"
+              className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-accent/10 hover:text-accent/80 transition-all group"
               aria-label="Next slide"
             >
               <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -126,7 +126,7 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
                     </span>
                   </div>
 
-                  <h3 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 group-hover:text-cream-100 transition-colors">
+                  <h3 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 group-hover:text-background transition-colors">
                     {design.displayName}
                   </h3>
 
@@ -154,7 +154,7 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
               onClick={() => scrollToSlide(index)}
               className={`transition-all duration-300 rounded-full ${
                 currentSlide === index
-                  ? 'w-8 h-3 bg-burgundy-600'
+                  ? 'w-8 h-3 bg-accent/80'
                   : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
               }`}
               aria-label={`Go to slide ${index + 1}`}

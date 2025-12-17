@@ -34,6 +34,27 @@ header span {
 header > nav > div:first-child {
   justify-content: center !important;
 }
+/* Remove blur from dropdowns */
+header .group:hover > div,
+header .group:focus-within > div {
+  backdrop-filter: none !important;
+}
+
+/* Ensure dropdown background matches header */
+header [class*="fixed"] > div {
+  background-color: #252220 !important;
+  backdrop-filter: none !important;
+}
+
+/* More specific targeting */
+.bg-text-primary {
+  backdrop-filter: none !important;
+}
+
+header .backdrop-blur-sm,
+header [class*="backdrop-blur"] {
+  backdrop-filter: none !important;
+}
 
 footer {
   background-color: #252220 !important;

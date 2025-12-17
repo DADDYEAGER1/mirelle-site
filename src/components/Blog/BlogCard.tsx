@@ -29,20 +29,20 @@ export default function BlogCard({ post }: BlogCardProps) {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="space-y-3">
+      {/* Content - Centered */}
+      <div className="space-y-3 text-center">
         {/* Category Label */}
         <div className="text-xs font-bold tracking-widest text-burgundy-800 uppercase">
           {post.category || 'NAIL CARE'}
         </div>
 
-        {/* Title */}
-        <h3 className="font-serif text-2xl md:text-3xl leading-tight text-gray-900 group-hover:text-gray-600 transition-colors duration-300">
+        {/* Title - Smaller Font */}
+        <h3 className="font-serif text-xl md:text-2xl leading-tight text-gray-900 group-hover:text-gray-600 transition-colors duration-300 px-2">
           {post.title}
         </h3>
 
         {/* Author Byline */}
-        <div className="text-sm text-gray-600 uppercase tracking-wide font-medium">
+        <div className="text-xs text-gray-600 uppercase tracking-wide font-medium">
           BY MIRELLÈ INSPO TEAM
         </div>
       </div>

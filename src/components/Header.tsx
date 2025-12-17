@@ -62,12 +62,12 @@ export default function Header() {
 
             {/* Right Links - Absolute positioned */}
             <div className="flex items-center gap-6 absolute right-0">
-              <Link 
-                href="/newsletter" 
+              <a 
+                href="#newsletter" 
                 className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300 border border-background px-3 py-1.5"
               >
                 Newsletter
-              </Link>
+              </a>
               <Link 
                 href="/work-with-us" 
                 className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300"
@@ -114,7 +114,7 @@ export default function Header() {
               </button>
               {/* Dropdown */}
               <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                <div className="bg-text-primary border-b border-background/20 shadow-2xl">
+                <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
                   <div className="max-w-7xl mx-auto px-8 py-12">
                     <div className="space-y-1">
                       {BLOG_LINKS.map((link) => (
@@ -142,7 +142,7 @@ export default function Header() {
               </button>
               {/* Dropdown */}
               <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                <div className="bg-text-primary border-b border-background/20 shadow-2xl">
+                <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
                   <div className="max-w-7xl mx-auto px-8 py-12">
                     <div className="space-y-1">
                       {SHOP_LINKS.map((link) => (
@@ -170,7 +170,7 @@ export default function Header() {
               </button>
               {/* Dropdown */}
               <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                <div className="bg-text-primary border-b border-background/20 shadow-2xl">
+                <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
                   <div className="max-w-7xl mx-auto px-8 py-12">
                     <div className="space-y-1">
                       {DESIGNS_LINKS.map((link) => (

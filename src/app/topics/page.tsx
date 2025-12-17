@@ -160,36 +160,57 @@ export default function Topics() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(topicListSchema) }} />
 
       <div className="min-h-screen bg-gray-50">
-        {/* Glassmorphism Hero Section */}
+        {/* Glassmorphism Hero Section - WITH KEYFRAME ANIMATIONS */}
         <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50">
-          {/* Animated gradient background */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-0 left-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-            <div className="absolute top-0 right-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-rose-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-2000"></div>
+          {/* Animated gradient orbs with inline keyframes to prevent override */}
+          <style jsx>{`
+            @keyframes float1 {
+              0%, 100% { transform: translate(0, 0) scale(1); }
+              33% { transform: translate(30px, -30px) scale(1.1); }
+              66% { transform: translate(-20px, 20px) scale(0.9); }
+            }
+            @keyframes float2 {
+              0%, 100% { transform: translate(0, 0) scale(1); }
+              33% { transform: translate(-30px, 30px) scale(1.1); }
+              66% { transform: translate(20px, -20px) scale(0.9); }
+            }
+            @keyframes float3 {
+              0%, 100% { transform: translate(0, 0) scale(1); }
+              33% { transform: translate(20px, 30px) scale(1.1); }
+              66% { transform: translate(-30px, -20px) scale(0.9); }
+            }
+            .orb1 { animation: float1 8s ease-in-out infinite; }
+            .orb2 { animation: float2 10s ease-in-out infinite; }
+            .orb3 { animation: float3 12s ease-in-out infinite; }
+          `}</style>
+          
+          <div className="absolute inset-0 opacity-40">
+            <div className="orb1 absolute top-0 left-0 w-96 h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div className="orb2 absolute top-0 right-0 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div className="orb3 absolute bottom-0 left-1/2 w-96 h-96 bg-rose-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
           </div>
 
           {/* Glassmorphism card */}
           <div className="relative z-10 max-w-4xl mx-auto px-4">
-            <div className="backdrop-blur-xl bg-white/40 border border-white/50 rounded-3xl shadow-2xl p-12 text-center">
+            <div className="backdrop-blur-xl bg-white/40 border border-white/50 rounded-3xl shadow-2xl p-8 md:p-12 text-center">
               <div className="w-20 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 mx-auto mb-8 rounded-full"></div>
               
-              <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent">
+              <h1 className="font-serif text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent">
                 Featured Topics
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-700 font-light leading-relaxed max-w-2xl mx-auto">
+              <p className="text-lg md:text-2xl text-gray-700 font-light leading-relaxed max-w-2xl mx-auto">
                 Everything You Need to Know About Nails
               </p>
               
-              <div className="flex justify-center gap-4 mt-8">
-                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-pink-200">
-                  <span className="text-2xl">✨</span>
-                  <span className="text-sm font-medium text-gray-700">Expert Guides</span>
+              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-8">
+                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 md:px-4 py-2 rounded-full border border-pink-200">
+                  <span className="text-xl md:text-2xl">✨</span>
+                  <span className="text-xs md:text-sm font-medium text-gray-700">Expert Guides</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full border border-purple-200">
-                  <span className="text-2xl">💅</span>
-                  <span className="text-sm font-medium text-gray-700">Step-by-Step</span>
+                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 md:px-4 py-2 rounded-full border border-purple-200">
+                  <span className="text-xl md:text-2xl">💅</span>
+                  <span className="text-xs md:text-sm font-medium text-gray-700">Step-by-Step</span>
                 </div>
               </div>
             </div>
@@ -245,30 +266,30 @@ export default function Topics() {
           </div>
         </section>
 
-        {/* Related Content Grid - Horizontal on Mobile */}
+        {/* Related Content Grid - Using Header Text Color on Background */}
         <section className="py-20 bg-gradient-to-b from-white to-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Explore More
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-base md:text-lg text-gray-600">
                 Discover our curated collections
               </p>
             </div>
 
-            {/* Grid - Same row on mobile */}
-            <div className="grid grid-cols-3 gap-4 md:gap-8">
-              {/* Blog Card */}
+            {/* Grid - Same row on mobile with responsive text */}
+            <div className="grid grid-cols-3 gap-3 md:gap-6 lg:gap-8">
+              {/* Blog Card - Using charcoal-900 (header text color) */}
               <Link
                 href="/blog"
-                className="group relative overflow-hidden rounded-2xl aspect-square bg-gradient-to-br from-pink-500 to-rose-600 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="group relative overflow-hidden rounded-xl md:rounded-2xl aspect-square bg-charcoal-900 hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-white">
-                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-3 md:p-6 text-background">
+                  <div className="text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
                     📝
                   </div>
-                  <h3 className="text-sm md:text-2xl font-bold text-center leading-tight">
+                  <h3 className="text-xs md:text-xl lg:text-2xl font-bold text-center leading-tight">
                     Explore Nail Trends
                   </h3>
                 </div>
@@ -277,14 +298,14 @@ export default function Topics() {
               {/* Inspo Card */}
               <Link
                 href="/inspo"
-                className="group relative overflow-hidden rounded-2xl aspect-square bg-gradient-to-br from-purple-500 to-indigo-600 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="group relative overflow-hidden rounded-xl md:rounded-2xl aspect-square bg-charcoal-900 hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-white">
-                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-3 md:p-6 text-background">
+                  <div className="text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
                     ✨
                   </div>
-                  <h3 className="text-sm md:text-2xl font-bold text-center leading-tight">
-                    Get Inspired
+                  <h3 className="text-xs md:text-xl lg:text-2xl font-bold text-center leading-tight">
+                    Nail Inspo
                   </h3>
                 </div>
               </Link>
@@ -292,14 +313,14 @@ export default function Topics() {
               {/* Shop Card */}
               <Link
                 href="/shop"
-                className="group relative overflow-hidden rounded-2xl aspect-square bg-gradient-to-br from-rose-500 to-pink-600 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="group relative overflow-hidden rounded-xl md:rounded-2xl aspect-square bg-charcoal-900 hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-white">
-                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-3 md:p-6 text-background">
+                  <div className="text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
                     🛍️
                   </div>
-                  <h3 className="text-sm md:text-2xl font-bold text-center leading-tight">
-                    Shop Favorites
+                  <h3 className="text-xs md:text-xl lg:text-2xl font-bold text-center leading-tight">
+                    Shop Press-On Nails
                   </h3>
                 </div>
               </Link>

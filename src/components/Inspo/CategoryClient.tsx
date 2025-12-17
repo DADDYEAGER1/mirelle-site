@@ -101,51 +101,6 @@ export default function CategoryClient({
         </div>
       </section>
 
-      {/* TLDR Section */}
-      {designData.tldr && (
-        <section className="bg-gradient-to-br from-accent/5 to-transparent py-12">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-3xl shadow-xl p-8 border-2 border-accent/20">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <h2 className="font-serif text-2xl font-bold text-gray-900 mb-4">
-                    TL;DR: Quick Overview
-                  </h2>
-                  <ul className="space-y-3">
-                    {designData.tldr.summary.map((point, index) => (
-                      <li key={index} className="flex items-start gap-3 text-gray-700">
-                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent/80 text-sm font-bold mt-0.5">
-                          {index + 1}
-                        </span>
-                        <span className="flex-1">{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  {designData.tldr.keyTakeaways && (
-                    <div className="mt-6 flex flex-wrap gap-2">
-                      {designData.tldr.keyTakeaways.map((takeaway, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-accent/10 text-accent/80 rounded-full text-sm font-semibold"
-                        >
-                          {takeaway}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Filter Bar */}
       <FilterBar
         currentFilter={filter}

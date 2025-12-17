@@ -160,34 +160,13 @@ export default function Topics() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(topicListSchema) }} />
 
       <div className="min-h-screen bg-gray-50">
-        {/* Glassmorphism Hero Section - WITH KEYFRAME ANIMATIONS */}
+        {/* Glassmorphism Hero Section - Using Tailwind animate-pulse */}
         <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50">
-          {/* Animated gradient orbs with inline keyframes to prevent override */}
-          <style jsx>{`
-            @keyframes float1 {
-              0%, 100% { transform: translate(0, 0) scale(1); }
-              33% { transform: translate(30px, -30px) scale(1.1); }
-              66% { transform: translate(-20px, 20px) scale(0.9); }
-            }
-            @keyframes float2 {
-              0%, 100% { transform: translate(0, 0) scale(1); }
-              33% { transform: translate(-30px, 30px) scale(1.1); }
-              66% { transform: translate(20px, -20px) scale(0.9); }
-            }
-            @keyframes float3 {
-              0%, 100% { transform: translate(0, 0) scale(1); }
-              33% { transform: translate(20px, 30px) scale(1.1); }
-              66% { transform: translate(-30px, -20px) scale(0.9); }
-            }
-            .orb1 { animation: float1 8s ease-in-out infinite; }
-            .orb2 { animation: float2 10s ease-in-out infinite; }
-            .orb3 { animation: float3 12s ease-in-out infinite; }
-          `}</style>
-          
-          <div className="absolute inset-0 opacity-40">
-            <div className="orb1 absolute top-0 left-0 w-96 h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
-            <div className="orb2 absolute top-0 right-0 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
-            <div className="orb3 absolute bottom-0 left-1/2 w-96 h-96 bg-rose-400 rounded-full mix-blend-multiply filter blur-3xl"></div>
+          {/* Animated gradient orbs - Using Tailwind's animate-pulse */}
+          <div className="absolute inset-0 opacity-50">
+            <div className="absolute top-0 left-0 w-72 md:w-96 h-72 md:h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+            <div className="absolute top-0 right-0 w-72 md:w-96 h-72 md:h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-72 md:w-96 h-72 md:h-96 bg-rose-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
           </div>
 
           {/* Glassmorphism card */}

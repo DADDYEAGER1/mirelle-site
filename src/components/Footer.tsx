@@ -74,22 +74,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Stay Inspired - Newsletter CTA */}
-        <div className="mb-6 pb-6 border-b border-gray-700">
-          <h3 className="font-semibold text-sm uppercase tracking-wider mb-2">
-            Stay Inspired
-          </h3>
-          <p className="text-gray-400 text-sm mb-3">
-            Get weekly trend reports and exclusive finds
-          </p>
-          <Link 
-            href="/#newsletter"
-            className="inline-block bg-white text-text-primary px-6 py-2.5 rounded-sm font-semibold text-sm hover:bg-gray-100 transition-colors"
-          >
-            Subscribe Now
-          </Link>
-        </div>
-
         {/* Social Icons - Always Visible on Mobile */}
         <div className="mb-6 pb-6 border-b border-gray-700">
           <h3 className="font-semibold text-sm uppercase tracking-wider mb-3">

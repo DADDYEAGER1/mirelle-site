@@ -13,7 +13,6 @@ interface ImageModalProps {
 
 export default function ImageModal({ image, images, onClose, onNavigate }: ImageModalProps) {
   const [isLiked, setIsLiked] = useState(false);
-  const [isSaved, setIsSaved] = useState(false);
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -30,9 +29,7 @@ export default function ImageModal({ image, images, onClose, onNavigate }: Image
     
     try {
       const liked = localStorage.getItem('likedDesigns');
-      const saved = localStorage.getItem('savedDesigns');
       if (liked) setIsLiked(JSON.parse(liked).includes(image.id));
-      if (saved) setIsSaved(JSON.parse(saved).includes(image.id));
     } catch (error) {
       console.error('Error loading saved state:', error);
     }
@@ -114,27 +111,6 @@ export default function ImageModal({ image, images, onClose, onNavigate }: Image
     }
   };
 
-  const toggleSave = () => {
-    if (!image) return;
-    
-    try {
-      const saved = localStorage.getItem('savedDesigns');
-      const savedArray = saved ? JSON.parse(saved) : [];
-      
-      if (isSaved) {
-        const updated = savedArray.filter((id: string) => id !== image.id);
-        localStorage.setItem('savedDesigns', JSON.stringify(updated));
-        setIsSaved(false);
-      } else {
-        savedArray.push(image.id);
-        localStorage.setItem('savedDesigns', JSON.stringify(savedArray));
-        setIsSaved(true);
-      }
-    } catch (error) {
-      console.error('Error toggling save:', error);
-    }
-  };
-
   const handleDownload = async () => {
     if (!image) return;
     
@@ -192,41 +168,115 @@ export default function ImageModal({ image, images, onClose, onNavigate }: Image
       className="fixed inset-0 z-[9999] bg-black/95 backdrop-blur-sm"
       onClick={onClose}
     >
-      {/* Close button - top right */}
-      <button
-        onClick={onClose}
-        className="fixed top-4 right-4 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md flex items-center justify-center transition-all duration-300 group"
-        aria-label="Close modal"
-      >
-        <svg className="w-6 h-6 text-white group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
+      {/* MOBILE VIEW (< 1024px) - Simple fullscreen with download button */}
+      <div className="lg:hidden h-full w-full relative">
+        {/* Top Bar - Close and Download buttons */}
+        <div className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-gradient-to-b from-black/60 to-transparent">
+          <button
+            onClick={onClose}
+            className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
+            aria-label="Close modal"
+          >
+            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
 
-      {/* Desktop: Side-by-side layout | Mobile: Full screen image */}
-      <div className="h-full flex items-center justify-center p-4 md:p-8">
-        <div
-          className="relative w-full max-w-7xl h-full md:h-[85vh] flex flex-col md:flex-row gap-0 md:gap-6 bg-black md:bg-transparent rounded-none md:rounded-3xl overflow-hidden"
+          <button
+            onClick={handleDownload}
+            className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
+            aria-label="Download image"
+          >
+            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Image Container with swipe navigation */}
+        <div 
+          className="h-full flex items-center justify-center"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
           onClick={(e) => e.stopPropagation()}
         >
-          {/* LEFT SIDE: Image (Desktop) / Full screen (Mobile) */}
+          {/* Navigation arrows */}
+          {!isFirst && onNavigate && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onNavigate('prev');
+              }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
+              aria-label="Previous image"
+            >
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+          )}
+
+          {!isLast && onNavigate && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onNavigate('next');
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
+              aria-label="Next image"
+            >
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          )}
+
+          <img
+            src={image.url}
+            alt={image.alt}
+            className="w-full h-full object-contain px-4"
+          />
+        </div>
+
+        {/* Image counter - bottom center */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 bg-black/60 backdrop-blur-md rounded-full text-white text-sm font-medium">
+          {currentIndex + 1} / {images.length}
+        </div>
+      </div>
+
+      {/* DESKTOP/TABLET VIEW (>= 1024px) - Side-by-side layout */}
+      <div className="hidden lg:flex h-full items-center justify-center p-8">
+        {/* Close button - top right */}
+        <button
+          onClick={onClose}
+          className="fixed top-4 right-4 z-50 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md flex items-center justify-center transition-all duration-300 group"
+          aria-label="Close modal"
+        >
+          <svg className="w-6 h-6 text-white group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div
+          className="relative w-full max-w-7xl h-[85vh] flex gap-6"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* LEFT SIDE: Image */}
           <div 
-            className="relative flex-1 flex items-center justify-center bg-black md:rounded-2xl overflow-hidden"
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
+            className="relative flex-1 flex items-center justify-center bg-black rounded-2xl overflow-hidden"
           >
-            {/* Navigation arrows - on image for mobile, outside for desktop */}
+            {/* Navigation arrows */}
             {!isFirst && onNavigate && (
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   onNavigate('prev');
                 }}
-                className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
                 aria-label="Previous image"
               >
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
@@ -238,10 +288,10 @@ export default function ImageModal({ image, images, onClose, onNavigate }: Image
                   e.stopPropagation();
                   onNavigate('next');
                 }}
-                className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300"
                 aria-label="Next image"
               >
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -259,8 +309,8 @@ export default function ImageModal({ image, images, onClose, onNavigate }: Image
             </div>
           </div>
 
-          {/* RIGHT SIDE: Details panel (Desktop only) */}
-          <div className="hidden md:flex md:flex-col w-full md:w-80 lg:w-96 bg-white rounded-2xl p-6 overflow-y-auto">
+          {/* RIGHT SIDE: Details panel */}
+          <div className="flex flex-col w-80 lg:w-96 bg-white rounded-2xl p-6 overflow-y-auto">
             {/* Description */}
             <div className="mb-6">
               <h3 className="font-serif text-xl font-bold text-gray-900 mb-3">
@@ -286,21 +336,6 @@ export default function ImageModal({ image, images, onClose, onNavigate }: Image
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
                 <span className="font-semibold">{isLiked ? 'Liked' : 'Like'}</span>
-              </button>
-
-              {/* Save button */}
-              <button
-                onClick={toggleSave}
-                className={`w-full flex items-center justify-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 ${
-                  isSaved
-                    ? 'bg-accent text-white'
-                    : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
-                }`}
-              >
-                <svg className="w-5 h-5" fill={isSaved ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                </svg>
-                <span className="font-semibold">{isSaved ? 'Saved' : 'Save'}</span>
               </button>
 
               {/* Download button */}
@@ -376,11 +411,11 @@ export default function ImageModal({ image, images, onClose, onNavigate }: Image
             )}
           </div>
         </div>
-      </div>
 
-      {/* Keyboard shortcuts hint - desktop only */}
-      <div className="hidden md:block fixed bottom-4 left-1/2 -translate-x-1/2 text-white/40 text-xs">
-        ESC to close • Arrow keys to navigate
+        {/* Keyboard shortcuts hint */}
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 text-white/40 text-xs">
+          ESC to close • Arrow keys to navigate
+        </div>
       </div>
     </div>
   );

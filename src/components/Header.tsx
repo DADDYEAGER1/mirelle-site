@@ -34,6 +34,20 @@ const TOPICS_LINKS = [
   { label: 'Browse All Topics', href: '/topics' },
 ];
 
+// Scrolling items for mobile
+const SCROLLING_ITEMS = [
+  'NEWSLETTER',
+  'BEST OF BEAUTY',
+  'NEWS',
+  'SKIN',
+  'MAKEUP',
+  'HAIR',
+  'WELLNESS',
+  'NAILS',
+  'FRAGRANCE',
+  'SHOPPING',
+];
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdowns, setMobileDropdowns] = useState({
@@ -49,193 +63,79 @@ export default function Header() {
 
   return (
     <header className="bg-text-primary">
-      {/* Top Bar */}
-      <div className="border-b border-background/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center items-center h-12 relative">
-            {/* Logo/Brand - Centered */}
-            <Link href="/" className="flex items-center group">
+      {/* Mobile Header - Allure Style */}
+      <div className="md:hidden">
+        {/* Top Row */}
+        <div className="border-b border-background/20">
+          <div className="px-4 h-16 flex items-center justify-between">
+            {/* Logo - Left aligned */}
+            <Link href="/" className="flex items-center">
               <span className="font-serif text-2xl font-bold text-background">
                 Mirellé
               </span>
             </Link>
 
-            {/* Right Links - Absolute positioned */}
-            <div className="flex items-center gap-6 absolute right-0">
+            {/* Right Side - Newsletter and Work With Us */}
+            <div className="flex items-center gap-3">
               <a 
                 href="https://mirelleinspo.com/subscribe" 
-                className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300 border border-background px-3 py-1.5"
+                className="text-[10px] tracking-wider uppercase text-background hover:text-background/70 transition-colors"
               >
                 Newsletter
               </a>
               <Link 
                 href="/work-with-us" 
-                className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300"
+                className="text-[10px] tracking-wider uppercase text-background hover:text-background/70 transition-colors"
               >
                 Work With Us
               </Link>
-              <button className="text-background hover:text-background/70 transition-colors">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Main Navigation */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center items-center h-12">
-          
-          {/* Center Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="/" 
-              className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium"
-            >
-              Home
-            </Link>
-
-            <Link 
-              href="/about" 
-              className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium"
-            >
-              About
-            </Link>
-
-            {/* Blog Dropdown */}
-            <div className="relative group">
-              <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                Blog
-                <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {/* Dropdown */}
-              <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
-                  <div className="max-w-7xl mx-auto px-8 py-12">
-                    <div className="space-y-1">
-                      {BLOG_LINKS.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Shop Dropdown */}
-            <div className="relative group">
-              <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                Shop
-                <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {/* Dropdown */}
-              <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
-                  <div className="max-w-7xl mx-auto px-8 py-12">
-                    <div className="space-y-1">
-                      {SHOP_LINKS.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Designs Dropdown */}
-            <div className="relative group">
-              <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                Designs
-                <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {/* Dropdown */}
-              <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
-                  <div className="max-w-7xl mx-auto px-8 py-12">
-                    <div className="space-y-1">
-                      {DESIGNS_LINKS.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Topics Dropdown */}
-            <div className="relative group">
-              <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                Topics
-                <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {/* Dropdown */}
-              <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                <div className="bg-text-primary border-b border-background/20 shadow-2xl">
-                  <div className="max-w-7xl mx-auto px-8 py-12">
-                    <div className="space-y-1">
-                      {TOPICS_LINKS.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* Scrolling Bar Row */}
+        <div className="border-b border-background/20 overflow-hidden bg-text-primary h-10 flex items-center">
+          <div className="flex animate-scroll whitespace-nowrap">
+            {/* Duplicate items for seamless loop */}
+            {[...SCROLLING_ITEMS, ...SCROLLING_ITEMS, ...SCROLLING_ITEMS].map((item, index) => (
+              <span 
+                key={index}
+                className="text-[11px] tracking-widest uppercase text-background font-medium px-4"
+              >
+                {item}
+              </span>
+            ))}
           </div>
-
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-background absolute right-4"
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {mobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Menu Icon Row */}
+        <div className="border-b border-background/20">
+          <div className="px-4 h-12 flex items-center justify-between">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="text-background"
+              aria-label="Toggle menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {mobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+
+            <button className="text-background hover:text-background/70 transition-colors">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu Dropdown */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-3 border-t border-background/20">
+          <div className="py-4 px-4 space-y-3 border-b border-background/20">
             <Link href="/" className="block text-background hover:text-background/70 transition-colors font-medium">
               Home
             </Link>
@@ -330,13 +230,201 @@ export default function Header() {
                 </div>
               </div>
             </div>
-
-            <Link href="/work-with-us" className="block text-background hover:text-background/70 transition-colors font-medium">
-              Work With Us
-            </Link>
           </div>
         )}
-      </nav>
+      </div>
+
+      {/* Desktop Header - Unchanged */}
+      <div className="hidden md:block">
+        {/* Top Bar */}
+        <div className="border-b border-background/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-center items-center h-12 relative">
+              {/* Logo/Brand - Centered */}
+              <Link href="/" className="flex items-center group">
+                <span className="font-serif text-2xl font-bold text-background">
+                  Mirellé
+                </span>
+              </Link>
+
+              {/* Right Links - Absolute positioned */}
+              <div className="flex items-center gap-6 absolute right-0">
+                <a 
+                  href="https://mirelleinspo.com/subscribe" 
+                  className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300 border border-background px-3 py-1.5"
+                >
+                  Newsletter
+                </a>
+                <Link 
+                  href="/work-with-us" 
+                  className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300"
+                >
+                  Work With Us
+                </Link>
+                <button className="text-background hover:text-background/70 transition-colors">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Navigation */}
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center items-center h-12">
+            
+            {/* Center Navigation */}
+            <div className="flex items-center space-x-8">
+              <Link 
+                href="/" 
+                className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium"
+              >
+                Home
+              </Link>
+
+              <Link 
+                href="/about" 
+                className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium"
+              >
+                About
+              </Link>
+
+              {/* Blog Dropdown */}
+              <div className="relative group">
+                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
+                  Blog
+                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {/* Dropdown */}
+                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
+                  <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
+                    <div className="max-w-7xl mx-auto px-8 py-12">
+                      <div className="space-y-1">
+                        {BLOG_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Shop Dropdown */}
+              <div className="relative group">
+                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
+                  Shop
+                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {/* Dropdown */}
+                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
+                  <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
+                    <div className="max-w-7xl mx-auto px-8 py-12">
+                      <div className="space-y-1">
+                        {SHOP_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Designs Dropdown */}
+              <div className="relative group">
+                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
+                  Designs
+                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {/* Dropdown */}
+                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
+                  <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
+                    <div className="max-w-7xl mx-auto px-8 py-12">
+                      <div className="space-y-1">
+                        {DESIGNS_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Topics Dropdown */}
+              <div className="relative group">
+                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
+                  Topics
+                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {/* Dropdown */}
+                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
+                  <div className="bg-text-primary border-b border-background/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-8 py-12">
+                      <div className="space-y-1">
+                        {TOPICS_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-33.333%);
+          }
+        }
+
+        .animate-scroll {
+          animation: scroll 30s linear infinite;
+        }
+
+        .animate-scroll:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </header>
   );
 }

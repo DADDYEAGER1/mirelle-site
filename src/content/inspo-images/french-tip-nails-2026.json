@@ -1,0 +1,404 @@
+{
+  "images": [
+    {
+      "id": "french-tip-2026-001",
+      "url": "/inspo/french-tip-nails-2026/classic-white-french-tips-nude-base-timeless-elegant-bridal-wedding.webp",
+      "alt": "Classic white french tips with nude base creating timeless elegant bridal wedding manicure for ceremony",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-002",
+      "url": "/inspo/french-tip-nails-2026/micro-french-tips-whisper-thin-lines-quiet-luxury-minimalist-professional.webp",
+      "alt": "Micro french tips whisper thin lines quiet luxury creating minimalist professional manicure elegant",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-003",
+      "url": "/inspo/french-tip-nails-2026/chrome-pink-french-tips-metallic-modern-trendy-statement-glamorous.webp",
+      "alt": "Chrome pink french tips with metallic modern creating trendy statement glamorous manicure for party",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-004",
+      "url": "/inspo/french-tip-nails-2026/colored-french-tips-blue-modern-twist-trendy-bold-statement-chic.webp",
+      "alt": "Colored french tips blue with modern twist creating trendy bold statement chic manicure for style",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-005",
+      "url": "/inspo/french-tip-nails-2026/black-french-tips-edgy-bold-dramatic-modern-statement-sophisticated.webp",
+      "alt": "Black french tips edgy bold creating dramatic modern statement sophisticated manicure for confident",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-006",
+      "url": "/inspo/french-tip-nails-2026/chocolate-brown-french-tips-neutral-trendy-modern-elegant-professional.webp",
+      "alt": "Chocolate brown french tips neutral trendy creating modern elegant professional manicure for work",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-007",
+      "url": "/inspo/french-tip-nails-2026/double-line-french-tips-geometric-modern-artistic-trendy-bold-unique.webp",
+      "alt": "Double line french tips geometric modern creating artistic trendy bold unique manicure for statement",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-008",
+      "url": "/inspo/french-tip-nails-2026/glitter-french-tips-sparkle-glamorous-party-festive-celebration-fun.webp",
+      "alt": "Glitter french tips with sparkle creating glamorous party festive celebration fun manicure events",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-009",
+      "url": "/inspo/french-tip-nails-2026/ombre-french-tips-gradient-fade-modern-elegant-romantic-soft-wedding.webp",
+      "alt": "Ombre french tips gradient fade modern elegant creating romantic soft wedding manicure for bridal",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-010",
+      "url": "/inspo/french-tip-nails-2026/reverse-french-tips-inverted-cuticle-modern-trendy-artistic-unique.webp",
+      "alt": "Reverse french tips inverted cuticle modern creating trendy artistic unique manicure for creative",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    },
+    {
+      "id": "french-tip-2026-011",
+      "url": "/inspo/french-tip-nails-2026/gold-french-tips-metallic-luxury-elegant-glamorous-party-celebration.webp",
+      "alt": "Gold french tips metallic luxury elegant creating glamorous party celebration manicure for special",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-012",
+      "url": "/inspo/french-tip-nails-2026/short-french-tips-natural-office-appropriate-professional-clean-elegant.webp",
+      "alt": "Short french tips natural office appropriate creating professional clean elegant manicure for work",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-013",
+      "url": "/inspo/french-tip-nails-2026/red-french-tips-classic-bold-statement-romantic-valentine-passionate.webp",
+      "alt": "Red french tips classic bold creating statement romantic valentine passionate manicure for love",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-014",
+      "url": "/inspo/french-tip-nails-2026/v-shaped-french-tips-modern-geometric-trendy-artistic-bold-unique.webp",
+      "alt": "V shaped french tips modern geometric creating trendy artistic bold unique manicure for statement",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-015",
+      "url": "/inspo/french-tip-nails-2026/asymmetrical-french-tips-diagonal-modern-trendy-artistic-bold-creative.webp",
+      "alt": "Asymmetrical french tips diagonal modern creating trendy artistic bold creative manicure for style",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-016",
+      "url": "/inspo/french-tip-nails-2026/navy-french-tips-dark-sophisticated-professional-elegant-conservative.webp",
+      "alt": "Navy french tips dark sophisticated creating professional elegant conservative manicure for work",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-017",
+      "url": "/inspo/french-tip-nails-2026/holographic-french-tips-iridescent-rainbow-party-festival-trendy-fun.webp",
+      "alt": "Holographic french tips iridescent rainbow creating party festival trendy fun manicure for events",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-018",
+      "url": "/inspo/french-tip-nails-2026/pastel-french-tips-soft-spring-feminine-romantic-delicate-sweet-cute.webp",
+      "alt": "Pastel french tips soft spring feminine creating romantic delicate sweet cute manicure for gentle",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-019",
+      "url": "/inspo/french-tip-nails-2026/neon-french-tips-bright-vibrant-bold-party-summer-statement-trendy.webp",
+      "alt": "Neon french tips bright vibrant bold creating party summer statement trendy manicure for festival",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-020",
+      "url": "/inspo/french-tip-nails-2026/outline-french-tips-frame-effect-modern-geometric-artistic-trendy.webp",
+      "alt": "Outline french tips frame effect modern creating geometric artistic trendy manicure for statement",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    },
+    {
+      "id": "french-tip-2026-021",
+      "url": "/inspo/french-tip-nails-2026/burgundy-french-tips-deep-red-elegant-winter-sophisticated-luxe.webp",
+      "alt": "Burgundy french tips deep red elegant creating winter sophisticated luxe manicure for celebrations",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-022",
+      "url": "/inspo/french-tip-nails-2026/heart-shaped-french-tips-valentine-romantic-cute-playful-whimsical.webp",
+      "alt": "Heart shaped french tips valentine romantic creating cute playful whimsical manicure for love",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-023",
+      "url": "/inspo/french-tip-nails-2026/silver-chrome-french-tips-metallic-modern-futuristic-party-glamorous.webp",
+      "alt": "Silver chrome french tips metallic modern creating futuristic party glamorous manicure for events",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-024",
+      "url": "/inspo/french-tip-nails-2026/polka-dot-french-tips-playful-cute-fun-trendy-whimsical-artistic.webp",
+      "alt": "Polka dot french tips playful cute fun creating trendy whimsical artistic manicure for cheerful",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-025",
+      "url": "/inspo/french-tip-nails-2026/matte-french-tips-soft-sophisticated-modern-elegant-professional.webp",
+      "alt": "Matte french tips soft sophisticated modern creating elegant professional manicure for understated",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-026",
+      "url": "/inspo/french-tip-nails-2026/lavender-french-tips-purple-soft-feminine-romantic-spring-delicate.webp",
+      "alt": "Lavender french tips purple soft feminine creating romantic spring delicate manicure for gentle",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-027",
+      "url": "/inspo/french-tip-nails-2026/rhinestone-french-tips-crystal-luxury-wedding-glamorous-sparkle-elegant.webp",
+      "alt": "Rhinestone french tips crystal luxury creating wedding glamorous sparkle elegant manicure bridal",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-028",
+      "url": "/inspo/french-tip-nails-2026/sage-green-french-tips-earthy-neutral-calming-natural-bohemian-modern.webp",
+      "alt": "Sage green french tips earthy neutral creating calming natural bohemian modern manicure for boho",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-029",
+      "url": "/inspo/french-tip-nails-2026/coral-french-tips-peach-warm-summer-tropical-cheerful-bright-vibrant.webp",
+      "alt": "Coral french tips peach warm summer creating tropical cheerful bright vibrant manicure for vacation",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-030",
+      "url": "/inspo/french-tip-nails-2026/marble-french-tips-artistic-sophisticated-elegant-modern-luxe-unique.webp",
+      "alt": "Marble french tips artistic sophisticated elegant creating modern luxe unique manicure for statement",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    },
+    {
+      "id": "french-tip-2026-031",
+      "url": "/inspo/french-tip-nails-2026/baby-blue-french-tips-soft-pastel-spring-feminine-delicate-sweet.webp",
+      "alt": "Baby blue french tips soft pastel spring creating feminine delicate sweet manicure for gentle",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-032",
+      "url": "/inspo/french-tip-nails-2026/abstract-french-tips-artistic-modern-trendy-creative-bold-unique-statement.webp",
+      "alt": "Abstract french tips artistic modern trendy creating creative bold unique statement manicure for style",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-033",
+      "url": "/inspo/french-tip-nails-2026/caramel-french-tips-warm-brown-autumn-cozy-neutral-trendy-elegant.webp",
+      "alt": "Caramel french tips warm brown autumn creating cozy neutral trendy elegant manicure for fall",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-034",
+      "url": "/inspo/french-tip-nails-2026/rose-gold-french-tips-metallic-shimmer-luxury-elegant-glamorous-party.webp",
+      "alt": "Rose gold french tips metallic shimmer luxury creating elegant glamorous party manicure for events",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-035",
+      "url": "/inspo/french-tip-nails-2026/multicolor-french-tips-rainbow-colorful-playful-fun-trendy-whimsical.webp",
+      "alt": "Multicolor french tips rainbow colorful creating playful fun trendy whimsical manicure for cheerful",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-036",
+      "url": "/inspo/french-tip-nails-2026/grey-french-tips-neutral-sophisticated-professional-modern-minimalist.webp",
+      "alt": "Grey french tips neutral sophisticated creating professional modern minimalist manicure for work",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-037",
+      "url": "/inspo/french-tip-nails-2026/leopard-print-french-tips-animal-bold-trendy-statement-edgy-fun.webp",
+      "alt": "Leopard print french tips animal bold creating trendy statement edgy fun manicure for fierce",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-038",
+      "url": "/inspo/french-tip-nails-2026/mint-green-french-tips-fresh-pastel-spring-cheerful-bright-airy.webp",
+      "alt": "Mint green french tips fresh pastel spring creating cheerful bright airy manicure for sunny",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-039",
+      "url": "/inspo/french-tip-nails-2026/pearl-french-tips-shimmer-iridescent-luxury-wedding-elegant-bridal.webp",
+      "alt": "Pearl french tips shimmer iridescent luxury creating wedding elegant bridal manicure for ceremony",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-040",
+      "url": "/inspo/french-tip-nails-2026/magenta-french-tips-vibrant-pink-bold-statement-party-fun-trendy.webp",
+      "alt": "Magenta french tips vibrant pink bold creating statement party fun trendy manicure for nights",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    },
+    {
+      "id": "french-tip-2026-041",
+      "url": "/inspo/french-tip-nails-2026/latte-beige-french-tips-creamy-neutral-sophisticated-elegant-professional.webp",
+      "alt": "Latte beige french tips creamy neutral creating sophisticated elegant professional manicure work",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-042",
+      "url": "/inspo/french-tip-nails-2026/striped-french-tips-geometric-modern-artistic-trendy-bold-creative.webp",
+      "alt": "Striped french tips geometric modern creating artistic trendy bold creative manicure for statement",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-043",
+      "url": "/inspo/french-tip-nails-2026/aqua-turquoise-french-tips-blue-summer-tropical-vibrant-cheerful-bright.webp",
+      "alt": "Aqua turquoise french tips blue summer creating tropical vibrant cheerful bright manicure beach",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-044",
+      "url": "/inspo/french-tip-nails-2026/copper-metallic-french-tips-autumn-warm-shimmer-luxe-trendy-glamorous.webp",
+      "alt": "Copper metallic french tips autumn warm shimmer creating luxe trendy glamorous manicure for fall",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-045",
+      "url": "/inspo/french-tip-nails-2026/ivory-cream-french-tips-neutral-elegant-bridal-wedding-classic-timeless.webp",
+      "alt": "Ivory cream french tips neutral elegant creating bridal wedding classic timeless manicure ceremony",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+    },
+    {
+      "id": "french-tip-2026-046",
+      "url": "/inspo/french-tip-nails-2026/orange-french-tips-bright-vibrant-summer-bold-cheerful-fun-tropical.webp",
+      "alt": "Orange french tips bright vibrant summer creating bold cheerful fun tropical manicure for vacation",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-047",
+      "url": "/inspo/french-tip-nails-2026/velvet-french-tips-matte-textured-luxe-sophisticated-elegant-modern.webp",
+      "alt": "Velvet french tips matte textured luxe creating sophisticated elegant modern manicure for refined",
+      "category": "french",
+      "isPremium": true,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-048",
+      "url": "/inspo/french-tip-nails-2026/dusty-rose-french-tips-muted-pink-romantic-vintage-feminine-elegant.webp",
+      "alt": "Dusty rose french tips muted pink romantic creating vintage feminine elegant manicure for wedding",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-049",
+      "url": "/inspo/french-tip-nails-2026/tie-dye-french-tips-colorful-playful-fun-trendy-whimsical-artistic.webp",
+      "alt": "Tie dye french tips colorful playful fun creating trendy whimsical artistic manicure for cheerful",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+    },
+    {
+      "id": "french-tip-2026-050",
+      "url": "/inspo/french-tip-nails-2026/emerald-green-french-tips-jewel-tone-luxe-elegant-sophisticated-regal.webp",
+      "alt": "Emerald green french tips jewel tone luxe creating elegant sophisticated regal manicure for royalty",
+      "category": "french",
+      "isPremium": false,
+      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+    }
+  ]
+}

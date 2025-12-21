@@ -1,35 +1,8 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 import { getAllCategorySlugs, getCategoryData, getShowcaseProducts } from '@/lib/shop';
-import ShopHeroTLDR from '@/components/Shop/ShopHeroTLDR';
-
-// Import main FAQs
-async function getMainFAQs() {
-  try {
-    const faqModule = await import('@/content/shop-faqs/main.json');
-    return faqModule.default.faqs || faqModule.faqs || [];
-  } catch {
-    return [];
-  }
-}
-
-// Generate FAQ Schema
-function generateFAQSchema(faqs: Array<{ question: string; answer: string }>) {
-  if (!faqs || faqs.length === 0) return null;
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((faq) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  };
-}
+import HeroCarousel from '@/components/Shop/HeroCarousel';
+import ShopCategoryNav from '@/components/Shop/ShopCategoryNav';
+import CategoryCard from '@/components/Shop/CategoryCard';
 
 export const metadata: Metadata = {
   title: 'Press-Ons from $3.99: Chrome, Cat Claw & 2026 Trends',
@@ -45,169 +18,91 @@ export const metadata: Metadata = {
     'salon quality press-ons',
     'milky press-on nails',
     'affordable nail art',
-    'press-ons under $10',
-    'no damage press-ons',
-    'fast shipping press-ons',
-    'DIY press-on application'
   ],
   openGraph: {
     title: 'Press-Ons from $3.99: 2026 Trending Styles (Chrome, Cat Claw, Square)',
-    description: 'Salon nails in 10min! Chrome, cat claw, square & milky trends. Last 2-3 weeks, reusable 5-10x, zero damage. 200+ designs. Ships 24hrs. Affordable luxury from $3.99!',
+    description: 'Salon nails in 10min! Chrome, cat claw, square & milky trends. Last 2-3 weeks, reusable 5-10x, zero damage. 200+ designs. Ships 24hrs.',
     url: 'https://mirelleinspo.com/shop',
     siteName: 'Mirellè Inspo',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/images/shop-hero-press-ons-2026-trends.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Mirellè Inspo Press-On Nails Collection 2026 - Chrome, Cat Claw, Square and Trending Designs from $3.99'
-      }
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Press-Ons from $3.99: 2026 Trends (10min Application)',
-    description: 'Chrome, cat claw, square, milky. 200+ designs. Last 2-3wks. Reusable 5-10x. Ships 24hrs. From $3.99 →',
-    images: ['/images/twitter-shop-2026.jpg'],
-    creator: '@mirelleinspo',
-    site: '@mirelleinspo',
   },
   alternates: {
     canonical: 'https://mirelleinspo.com/shop',
   },
-  other: {
-    'pin:description': 'Shop salon-quality press-on nails from $3.99! Chrome, cat claw, square & milky 2026 trends. Last 2-3 weeks, reusable, zero damage. 200+ designs. Ships fast!',
-    'pinterest-rich-pin': 'true',
-  },
 };
-
 
 export default async function ShopPage() {
   const categorySlugs = getAllCategorySlugs();
-  const categories = categorySlugs.map(slug => getCategoryData(slug)).filter(Boolean);
-  
-  // Get showcase products and FAQs
-  const showcaseProducts = await getShowcaseProducts();
-  const showcaseImages = showcaseProducts.map(p => p.image);
-  const faqs = await getMainFAQs();
-  
-  const faqSchema = generateFAQSchema(faqs);
+  const categories = categorySlugs
+    .map(slug => getCategoryData(slug))
+    .filter(Boolean);
 
-  // Category hero images mapping (using showcase images)
+  // Get showcase products for carousel
+  const showcaseProducts = await getShowcaseProducts();
+  
+  // Map to carousel format with 8 images
+  const carouselImages = showcaseProducts.slice(0, 8).map(product => ({
+    url: product.image,
+    name: product.name,
+  }));
+
+  // Category hero images
   const categoryHeroImages: { [key: string]: string } = {
-    'fall': showcaseImages[0] || '/fallsection.jpg',
-    'christmas': showcaseImages[1] || '/christmassection.jpg',
-    'winter': showcaseImages[2] || '/wintersection.jpg',
-    'halloween': showcaseImages[3] || '/halloweenbannerimg.jpg',
-    'new-year': showcaseImages[4] || '/newyearsection.jpeg',
-    'trendy': showcaseImages[5] || '/trendsection.jpg',
+    'fall': showcaseProducts[0]?.image || '/fallsection.jpg',
+    'christmas': showcaseProducts[1]?.image || '/christmassection.jpg',
+    'winter': showcaseProducts[2]?.image || '/wintersection.jpg',
+    'halloween': showcaseProducts[3]?.image || '/halloweenbannerimg.jpg',
+    'new-year': showcaseProducts[4]?.image || '/newyearsection.jpeg',
+    'trendy': showcaseProducts[5]?.image || '/trendsection.jpg',
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      {/* FAQ Schema */}
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      )}
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="container-standard pt-20 pb-16 sm:pt-24 sm:pb-20">
+        {/* Title */}
+        <div className="text-center mb-12">
+          <h1 className="font-heading text-[36px] sm:text-[42px] leading-tight tracking-tight mb-4">
+            Press-On Nails
+          </h1>
+          <p className="font-body text-base sm:text-lg text-foreground/80 max-w-[800px] mx-auto leading-relaxed">
+            60+ curated designs starting at $3.99 • 2-week wear guaranteed • 
+            Free shipping on orders $35+ • Easy 5-minute application
+            <br />
+            <span className="text-sm">Curated by Mirellè editors</span>
+          </p>
+        </div>
 
-      {/* Hero TL;DR Section */}
-      <ShopHeroTLDR showcaseImages={showcaseImages} faqs={faqs} />
+        {/* Vogue-style Carousel */}
+        <HeroCarousel images={carouselImages} />
+      </section>
 
-      {/* Categories Grid */}
-      <section id="categories-section" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-          Browse Collections
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Horizontal Category Navigation */}
+      <ShopCategoryNav 
+        categories={categories.map(c => ({
+          slug: c!.slug,
+          displayName: c!.displayName,
+        }))} 
+      />
+
+      {/* Category Grid */}
+      <section className="container-wide py-20 sm:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
           {categories.map((category) => {
             if (!category) return null;
             
-            // Use showcase image or fallback
             const categoryImage = categoryHeroImages[category.slug] || category.heroImage;
             
             return (
-              <Link
+              <CategoryCard
                 key={category.slug}
-                href={`/shop/${category.slug}`}
-                className="group relative bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
-              >
-                {/* Category Image */}
-                <div className="relative h-80 overflow-hidden">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
-                    style={{ backgroundImage: `url(${categoryImage})` }}
-                  />
-                  {/* Premium gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent group-hover:from-black/70 transition-all duration-500" />
-                  
-                  {/* Category Info Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-2 group-hover:text-purple-300 transition-colors">
-                      {category.displayName}
-                    </h3>
-                    <p className="text-white/90 mb-4 text-sm">
-                      {category.description}
-                    </p>
-                    <div className="inline-flex items-center text-white font-semibold border-b-2 border-transparent group-hover:border-purple-300 transition-all">
-                      Shop Now
-                      <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+                slug={category.slug}
+                displayName={category.displayName}
+                imageUrl={categoryImage}
+              />
             );
           })}
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            Why Shop With Us?
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Premium Quality</h3>
-              <p className="text-gray-600">Handpicked designs that last and look amazing</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Affordable Prices</h3>
-              <p className="text-gray-600">Starting at just $3.99 with free shipping</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Fast Delivery</h3>
-              <p className="text-gray-600">Quick shipping so you can rock your new nails ASAP</p>
-            </div>
-          </div>
         </div>
       </section>
     </div>

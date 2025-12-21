@@ -1,11 +1,67 @@
-/* Fonts Import */
+/* Import ALL fonts FIRST - both old and new */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* EMERGENCY FIX - Force all images to respect container sizes */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+
+img[alt] {
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
+main {
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100vw;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Rest of your CSS continues below... */
+/* Custom Fonts */
+@font-face {
+  font-family: 'Jeremiah';
+  src: url('/fonts/Jeremiah.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boriboon';
+  src: url('/fonts/BoriboonDemoRegular-RpZeE.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boriboon';
+  src: url('/fonts/BoriboonDemoBold-MVemP.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* COLOR SYSTEM - Keep both until migration complete */
 :root {
-  --background: #F7F7F7;
+  /* NEW COLORS */
+  --background: #f9fafb;
   --foreground: #252220;
+  
+  /* OLD COLORS - Keep these */
   --accent: #E30088;
   --accent-light: #FF1AA3;
   --accent-dark: #B0006B;
@@ -14,14 +70,46 @@
   --card-bg: #FFFFFF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-serif: 'Source Serif 4', Georgia, serif;
-  --font-heading: 'Playfair Display', Georgia, serif;
+/* BASE STYLES */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
-/* In your globals.css or app.css */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jeremiah', Georgia, serif;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+/* Links in body text get underline */
+main a:not(.btn):not(button),
+article a:not(.btn):not(button),
+p a:not(.btn):not(button) {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.3s ease;
+}
+
+main a:not(.btn):not(button):hover,
+article a:not(.btn):not(button):hover,
+p a:not(.btn):not(button):hover {
+  opacity: 0.7;
+}
+
+/* Header and Footer - NO underlines */
+header a,
+footer a,
+nav a {
+  text-decoration: none !important;
+}
+
+/* Header/Footer styles */
 header {
   background-color: #252220 !important;
 }
@@ -30,30 +118,6 @@ header a,
 header button,
 header span {
   color: #F7F7F7 !important;
-}
-header > nav > div:first-child {
-  justify-content: center !important;
-}
-/* Remove blur from dropdowns */
-header .group:hover > div,
-header .group:focus-within > div {
-  backdrop-filter: none !important;
-}
-
-/* Ensure dropdown background matches header */
-header [class*="fixed"] > div {
-  background-color: #252220 !important;
-  backdrop-filter: none !important;
-}
-
-/* More specific targeting */
-.bg-text-primary {
-  backdrop-filter: none !important;
-}
-
-header .backdrop-blur-sm,
-header [class*="backdrop-blur"] {
-  backdrop-filter: none !important;
 }
 
 footer {
@@ -78,25 +142,88 @@ footer textarea {
   color: #252220 !important;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 16px;
-  line-height: 1.7;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', Georgia, serif;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scroll snap */
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-mandatory {
+  scroll-snap-type: x mandatory;
+}
+
+/* Article Content Styling */
+.prose {
+  color: #252220;
+}
+
+.prose h2 {
+  font-family: 'Jeremiah', Georgia, serif;
+  font-size: 28px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--foreground);
 }
 
+.prose h3 {
+  font-family: 'Jeremiah', Georgia, serif;
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.prose p {
+  margin-bottom: 24px;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.prose img {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.prose a {
+  color: #252220;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  opacity: 0.7;
+}
+
+.prose ul, .prose ol {
+  margin: 24px 0;
+  padding-left: 24px;
+}
+
+.prose li {
+  margin-bottom: 8px;
+}
+
+.prose blockquote {
+  border-left: 4px solid #252220;
+  padding-left: 24px;
+  margin: 24px 0;
+  font-style: italic;
+}
+
+/* OLD Typography - Keep until migration */
 h1 {
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   line-height: 1.1;
@@ -128,6 +255,7 @@ a:hover {
   opacity: 0.8;
 }
 
+/* OLD Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -145,27 +273,13 @@ a:hover {
   opacity: 0.8;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* OLD Selection */
 ::selection {
   background: var(--accent);
   color: white;
 }
 
-img {
-  transition: opacity 0.4s ease;
-}
-
-button, .btn {
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: all 0.3s ease;
-}
-
-/* Button utility classes for AI agents */
+/* OLD Button Styles */
 .btn-primary {
   background-color: var(--accent);
   color: white;
@@ -222,6 +336,7 @@ hr {
   outline-offset: 2px;
 }
 
+/* Utilities */
 @layer utilities {
   .thumb-zone {
     padding-bottom: 80px;
@@ -266,152 +381,68 @@ hr {
   }
 }
 
+/* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes tilt {
-  0%, 100% {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
-  }
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
+  0%, 100% { transform: perspective(1000px) rotateX(0deg) rotateY(0deg); }
+  50% { transform: perspective(1000px) rotateX(2deg) rotateY(2deg); }
 }
 
 @keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 @keyframes slideInFromTop {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideInFromBottom {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes pulse-soft {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
 }
 
 @keyframes scaleUp {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .animate-shimmer {
   animation: shimmer 2s infinite linear;
-  background: linear-gradient(
-    90deg,
-    #f3f4f6 0%,
-    #e5e7eb 20%,
-    #f3f4f6 40%,
-    #f3f4f6 100%
-  );
+  background: linear-gradient(90deg, #f3f4f6 0%, #e5e7eb 20%, #f3f4f6 40%, #f3f4f6 100%);
   background-size: 200% 100%;
 }
 
-.animate-slide-in-top {
-  animation: slideInFromTop 0.2s ease-out;
-}
-
-.animate-slide-in-bottom {
-  animation: slideInFromBottom 0.2s ease-out;
-}
-
-.animate-pulse-soft {
-  animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.animate-scale-up {
-  animation: scaleUp 0.3s ease-out;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out;
-}
-
-.animate-slide-up {
-  animation: slideUp 0.6s ease-out;
-}
-
-.animate-tilt {
-  animation: tilt 10s ease-in-out infinite;
-}
+.animate-slide-in-top { animation: slideInFromTop 0.2s ease-out; }
+.animate-slide-in-bottom { animation: slideInFromBottom 0.2s ease-out; }
+.animate-pulse-soft { animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.animate-scale-up { animation: scaleUp 0.3s ease-out; }
+.animate-fade-in { animation: fadeIn 0.6s ease-out; }
+.animate-slide-up { animation: slideUp 0.6s ease-out; }
+.animate-tilt { animation: tilt 10s ease-in-out infinite; }
 
 @media (hover: none) and (pointer: coarse) {
-  button:focus,
-  a:focus,
-  input:focus,
-  textarea:focus,
-  select:focus {
+  button:focus, a:focus, input:focus, textarea:focus, select:focus {
     outline: 3px solid var(--accent);
     outline-offset: 3px;
   }
@@ -424,10 +455,7 @@ hr {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  
-  .animate-tilt {
-    animation: none !important;
-  }
+  .animate-tilt { animation: none !important; }
 }
 
 .modal-backdrop {
@@ -439,23 +467,10 @@ hr {
   animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.modal-container::-webkit-scrollbar {
-  width: 8px;
-}
-
-.modal-container::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-
-.modal-container::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.modal-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
+.modal-container::-webkit-scrollbar { width: 8px; }
+.modal-container::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.05); border-radius: 4px; }
+.modal-container::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.2); border-radius: 4px; }
+.modal-container::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.3); }
 
 .line-clamp-2 {
   display: -webkit-box;
@@ -506,4 +521,19 @@ hr {
 
 .hover-glow:hover::before {
   opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  transition: opacity 0.4s ease;
+}
+
+button, .btn {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
 }

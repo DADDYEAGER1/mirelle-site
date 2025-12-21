@@ -2,67 +2,82 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getRelatedPosts } from '@/lib/blog';
 
-interface RelatedPostsProps {
+interface RelatedArticlesProps {
   currentSlug: string;
-  limit?: number;
 }
 
-export default async function RelatedPosts({ currentSlug, limit = 3 }: RelatedPostsProps) {
-  const relatedPosts = await getRelatedPosts(currentSlug, limit);
-  if (relatedPosts.length === 0) {
-    return null;
-  }
+export default async function RelatedArticles({ currentSlug }: RelatedArticlesProps) {
+  const relatedPosts = await getRelatedPosts(currentSlug, 6);
+
+  if (relatedPosts.length === 0) return null;
 
   return (
-    <section className="mt-16 pt-16 border-t border-gray-200">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-8">Related Articles</h2>
+    <section className="py-16 bg-white">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-16 lg:px-20">
+        {/* Heading */}
+        <h2 
+          className="text-3xl md:text-4xl text-center mb-12"
+          style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+        >
+          Related Articles
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Grid - 3 columns on desktop, 2 on tablet, 1 on mobile */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {relatedPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="group block"
             >
               {/* Image */}
-              {post.image ? (
-                <div className="relative w-full h-48 overflow-hidden">
-                  <Image
-                    src={post.image}
-                    alt={post.imageAlt || post.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
-                  />
+              <div className="relative w-full overflow-hidden mb-4">
+                <div className="relative w-full pb-[75%]">
+                  {post.image ? (
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gray-200" />
+                  )}
                 </div>
-              ) : (
-                <div className="w-full h-48 bg-gradient-to-br from-pink-200 to-purple-200 flex items-center justify-center">
-                  <span className="text-4xl">💅</span>
-                </div>
-              )}
+              </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="space-y-2">
+                {/* Category */}
                 {post.category && (
-                  <span className="inline-block px-3 py-1 text-xs font-semibold text-pink-600 bg-pink-100 rounded-full mb-3">
+                  <div 
+                    className="text-xs uppercase tracking-wider"
+                    style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
+                  >
                     {post.category}
-                  </span>
+                  </div>
                 )}
 
-                <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-pink-600 transition-colors line-clamp-2">
+                {/* Title */}
+                <h3 
+                  className="text-lg leading-tight line-clamp-2 group-hover:opacity-70 transition-opacity"
+                  style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+                >
                   {post.title}
                 </h3>
 
-                <p className="text-sm text-gray-600 mb-4 line-clamp-2">
-                  {post.excerpt}
-                </p>
-
-                <div className="flex items-center justify-between text-xs text-gray-500">
-                  <span>{post.readTime}</span>
-                  <span className="text-pink-600 font-medium group-hover:underline">
-                    Read more →
+                {/* Author & Read Time */}
+                <div className="flex items-center gap-3 text-xs text-gray-600">
+                  <span style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}>
+                    BY {post.author?.toUpperCase() || 'MIRELLÈ INSPO TEAM'}
                   </span>
+                  {post.readTime && (
+                    <>
+                      <span>•</span>
+                      <span>{post.readTime}</span>
+                    </>
+                  )}
                 </div>
               </div>
             </Link>
@@ -72,5 +87,3 @@ export default async function RelatedPosts({ currentSlug, limit = 3 }: RelatedPo
     </section>
   );
 }
-
-

@@ -3,22 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-import NewsletterPopup from "@/components/NewsletterPopup"; // ✅ NEW: Phase 3 Newsletter Popup
-import { Inter, Cormorant_Garamond } from 'next/font/google';
+import NewsletterPopup from "@/components/NewsletterPopup";
 import { generatePersonSchema } from '@/lib/generateSchemas';
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-});
-
-const cormorant = Cormorant_Garamond({
-  weight: ['400', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-cormorant',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mirelleinspo.com'),
@@ -144,50 +130,45 @@ export default function RootLayout({
 }) {
   const baseUrl = 'https://mirelleinspo.com';
   
-  // Enhanced structured data for AI bots
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": `${baseUrl}/#organization`,
-  "name": "Mirellé",
-  "alternateName": "Mirelle",
-  "url": baseUrl,
-  "logo": {
-    "@type": "ImageObject",
-    "url": `${baseUrl}/apple-touch-icon.png`,
-    "width": 512,
-    "height": 512
-  },
-  "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women",
-  "sameAs": [
-    "https://www.pinterest.com/mirelle_inspo",
-    "https://www.instagram.com/mirelle_inspo",
-    "https://www.wikidata.org/wiki/mirelle_inspo",
-    "https://x.com/mirelleinspo",
-    "https://www.wikidata.org/wiki/Q136769265",
-  ],
-  
-  // 🆕 ADD PINTEREST-SPECIFIC SCHEMA
-  "image": `${baseUrl}/og-image.jpg`,
-  "potentialAction": {
-    "@type": "InteractAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://www.pinterest.com/pin/create/button/?url={url}&media={media}&description={description}",
-      "actionPlatform": [
-        "http://schema.org/DesktopWebPlatform",
-        "http://schema.org/MobileWebPlatform"
-      ]
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${baseUrl}/#organization`,
+    "name": "Mirellé",
+    "alternateName": "Mirelle",
+    "url": baseUrl,
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${baseUrl}/apple-touch-icon.png`,
+      "width": 512,
+      "height": 512
     },
-    "name": "Save to Pinterest"
-  },
-
+    "description": "Expert nail art inspiration, tutorials, and seasonal beauty trends for modern women",
+    "sameAs": [
+      "https://www.pinterest.com/mirelle_inspo",
+      "https://www.instagram.com/mirelle_inspo",
+      "https://www.wikidata.org/wiki/mirelle_inspo",
+      "https://x.com/mirelleinspo",
+      "https://www.wikidata.org/wiki/Q136769265",
+    ],
+    "image": `${baseUrl}/og-image.jpg`,
+    "potentialAction": {
+      "@type": "InteractAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.pinterest.com/pin/create/button/?url={url}&media={media}&description={description}",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "name": "Save to Pinterest"
+    },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
       "url": `${baseUrl}/contact`
     },
-
     "areaServed": {
       "@type": "Place",
       "name": "Worldwide"
@@ -225,10 +206,8 @@ const organizationSchema = {
     }
   };
 
-  // NEW: Generate Person schema for author entity
   const personSchema = generatePersonSchema();
 
-  // BreadcrumbList for better content structure
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -258,7 +237,6 @@ const organizationSchema = {
     <html lang="en-US">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        {/* Global geo-targeting meta tags (won't hurt international reach) */}
         <meta name="distribution" content="global" />
         <meta name="coverage" content="worldwide" />
         <meta name="target" content="all" />
@@ -267,31 +245,18 @@ const organizationSchema = {
         <meta name="language" content="English" />
         <meta name="rating" content="general" />
         <meta name="revisit-after" content="7 days" />
-        
-        {/* AI Bot friendly meta tags */}
         <meta name="referrer" content="always" />
         <meta name="classification" content="Beauty, Fashion, Nail Art, Tutorials, DIY, Lifestyle" />
         
-
-        {/* ✅ KEEP THESE */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
-        {/* Fonts with display=swap for better performance */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-
         {/* AdSense verification meta tag */}
         <meta name="google-adsense-account" content="ca-pub-1145734682794444" />
-        
-        {/* Pinterest Save Button Script */}
-        {/* <script async defer src="//assets.pinterest.com/js/pinit.js"></script> */}
       </head>
 
       <body 
-        className={`${inter.variable} ${cormorant.variable} antialiased`}
+        className="antialiased"
         suppressHydrationWarning
       >
         {/* Google Tag Manager (noscript) */}
@@ -322,16 +287,6 @@ const organizationSchema = {
           `}
         </Script>
 
-{/* Google AdSense */}
-        
-        {/* Preload critical font */}
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
-          as="style"
-        />
-
-
         {/* Mobile web app meta */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -341,11 +296,8 @@ const organizationSchema = {
         <meta name="format-detection" content="address=no" />
         <meta name="apple-mobile-web-app-title" content="Mirellé" />
         <meta name="application-name" content="Mirellé" />
-
-        {/* Theme color */}
-        <meta name="theme-color" content="#E30088" />
+        <meta name="theme-color" content="#252220" />
         
-        {/* ADD WEB VITALS TRACKING HERE - AFTER ADSENSE */}
         <Script id="web-vitals" strategy="afterInteractive">
           {`
             (function() {
@@ -361,7 +313,6 @@ const organizationSchema = {
               }
               
               if ('PerformanceObserver' in window) {
-                // Track Largest Contentful Paint (LCP)
                 try {
                   const lcpObserver = new PerformanceObserver((list) => {
                     const entries = list.getEntries();
@@ -375,7 +326,6 @@ const organizationSchema = {
                   lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
                 } catch (e) {}
                 
-                // Track First Input Delay (FID)
                 try {
                   const fidObserver = new PerformanceObserver((list) => {
                     const entries = list.getEntries();
@@ -390,7 +340,6 @@ const organizationSchema = {
                   fidObserver.observe({ entryTypes: ['first-input'] });
                 } catch (e) {}
                 
-                // Track Cumulative Layout Shift (CLS)
                 try {
                   let clsValue = 0;
                   const clsObserver = new PerformanceObserver((list) => {
@@ -402,7 +351,6 @@ const organizationSchema = {
                   });
                   clsObserver.observe({ entryTypes: ['layout-shift'] });
                   
-                  // Send CLS on page hide
                   addEventListener('visibilitychange', () => {
                     if (document.visibilityState === 'hidden') {
                       sendToAnalytics({
@@ -431,7 +379,6 @@ const organizationSchema = {
             __html: JSON.stringify(websiteSchema),
           }}
         />
-        {/* NEW: Person Schema for Author Entity */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -450,7 +397,7 @@ const organizationSchema = {
           {children}
         </main>
         <Footer />
-        <NewsletterPopup /> {/* ✅ NEW: Phase 3 - Newsletter popup with timing triggers */}
+        <NewsletterPopup />
       </body>
     </html>
   );

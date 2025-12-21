@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface FAQ {
   question: string;
@@ -8,7 +8,7 @@ interface FAQ {
 }
 
 interface TLDRProps {
-  summary: string | string[];  // ✅ Accept both string and array
+  summary: string | string[];
   readTime: string;
   faqs?: FAQ[];
   creativeLine?: string;
@@ -24,7 +24,6 @@ export default function TLDRSection({
 }: TLDRProps) {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   
-  // ✅ FIX: Handle both string and array
   const summaryText = Array.isArray(summary) ? summary.join(' ') : summary;
   
   const toggleFAQ = (index: number) => {
@@ -33,26 +32,42 @@ export default function TLDRSection({
   
   return (
     <section 
-      className="tldr-section bg-gradient-to-br from-rose-50 to-pink-100 border-l-4 border-pink-500 rounded-xl p-5 sm:p-6 mb-8 shadow-sm"
-      itemProp="abstract"
+      className="bg-[#f9fafb] border border-gray-200 rounded-sm p-6 mb-8"
       aria-label="Article overview"
     >
       {/* Main Heading */}
-      <div className="flex items-center justify-between mb-5 pb-4 border-b border-pink-200">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2">
-          <span className="text-2xl" aria-hidden="true">⚡</span>
+      <div className="flex items-center justify-between mb-5 pb-4 border-b border-gray-200">
+        <h2 
+          className="text-xl"
+          style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+        >
+          <span className="text-xl mr-2">⚡</span>
           Wrap Up
         </h2>
-        <span className="text-xs sm:text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow-sm whitespace-nowrap">{readTime}</span>
+        <span 
+          className="text-xs text-gray-600 bg-white px-3 py-1 border border-gray-200"
+          style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
+        >
+          {readTime}
+        </span>
       </div>
       
       {/* Summary */}
       <div className="mb-5">
-        <h3 className="text-sm font-bold text-gray-800 mb-2">Quick Glance</h3>
-        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+        <h3 
+          className="text-sm font-semibold mb-2"
+          style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
+        >
+          Quick Glance
+        </h3>
+        <p 
+          className="text-gray-700 text-sm leading-relaxed"
+          style={{ fontFamily: 'Crimson Text, Georgia, serif' }}
+        >
           {summaryText}
         </p>
       </div>
+
       {/* FAQ Section */}
       {faqs.length > 0 && (
         <div className="mb-5">
@@ -60,26 +75,35 @@ export default function TLDRSection({
             {faqs.slice(0, 3).map((faq, index) => (
               <div 
                 key={index} 
-                className="bg-white rounded-lg border border-pink-200 overflow-hidden"
+                className="bg-white border border-gray-200 overflow-hidden"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-4 py-2.5 flex items-center justify-between text-left hover:bg-pink-50 transition-colors"
+                  className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                   aria-expanded={openFAQ === index}
                 >
-                  <span className="text-gray-800 font-medium text-sm pr-3">{faq.question}</span>
                   <span 
-                    className={`text-pink-500 text-lg flex-shrink-0 transition-transform duration-200 ${
+                    className="text-sm pr-3"
+                    style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
+                  >
+                    {faq.question}
+                  </span>
+                  <span 
+                    className={`text-lg transition-transform duration-200 ${
                       openFAQ === index ? 'rotate-180' : ''
                     }`}
-                    aria-hidden="true"
                   >
                     ↓
                   </span>
                 </button>
                 {openFAQ === index && (
-                  <div className="px-4 pb-3 pt-1 bg-pink-50/50">
-                    <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
+                  <div className="px-4 pb-3 pt-1 bg-gray-50">
+                    <p 
+                      className="text-gray-600 text-sm leading-relaxed"
+                      style={{ fontFamily: 'Crimson Text, Georgia, serif' }}
+                    >
+                      {faq.answer}
+                    </p>
                   </div>
                 )}
               </div>
@@ -90,8 +114,11 @@ export default function TLDRSection({
 
       {/* Creative Line */}
       {creativeLine && (
-        <div className="mb-5 bg-gradient-to-r from-pink-100 to-rose-100 rounded-lg p-4 border-l-3 border-pink-400">
-          <p className="text-gray-800 font-medium text-sm sm:text-base italic text-center">
+        <div className="mb-5 bg-white border border-gray-200 p-4">
+          <p 
+            className="text-sm italic text-center"
+            style={{ fontFamily: 'Crimson Text, Georgia, serif' }}
+          >
             "{creativeLine}"
           </p>
         </div>
@@ -100,12 +127,18 @@ export default function TLDRSection({
       {/* Key Takeaways */}
       {keyTakeaways.length > 0 && (
         <div>
-          <h3 className="text-sm font-bold text-gray-800 mb-2">Key Takeaways</h3>
+          <h3 
+            className="text-sm font-semibold mb-2"
+            style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
+          >
+            Key Takeaways
+          </h3>
           <div className="flex flex-wrap gap-2">
             {keyTakeaways.map((takeaway, index) => (
               <span 
                 key={index} 
-                className="bg-white border border-pink-300 text-gray-700 px-3 py-1.5 rounded-full text-xs font-medium shadow-sm"
+                className="bg-white border border-gray-200 text-gray-700 px-3 py-1.5 text-xs"
+                style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
               >
                 {takeaway}
               </span>

@@ -14,21 +14,18 @@ export default async function Hero2Section() {
   // Middle: 1 tall blog post
   const tallPost = allPosts[0];
   
-  // Right: 2 small blog posts stacked
-  const smallPosts = allPosts.slice(1, 3);
+  // Right: 3 horizontal blog posts
+  const horizontalPosts = allPosts.slice(1, 4);
 
   return (
     <section className="bg-background py-8 md:py-12">
-      {/* Top Line */}
-      <div className="w-full h-[1px] bg-border-color mb-8" />
-      
-      {/* Desktop: 3 Column Symmetrical Grid */}
+      {/* Desktop: 3 Column Grid */}
       <div className="hidden md:grid md:grid-cols-12 gap-4 max-w-7xl mx-auto px-6">
-        {/* Left: 2 Small Stacked (Shop Categories) */}
+        {/* Left: 2 Square Categories Stacked */}
         <div className="col-span-3 flex flex-col gap-4">
           {shopCategory1 && (
             <Link href={`/shop/${shopCategory1.slug}`} className="block group">
-              <div className="relative w-full aspect-[4/3] mb-2">
+              <div className="relative w-full aspect-square mb-2">
                 <Image
                   src={shopCategory1.heroImage}
                   alt={shopCategory1.displayName}
@@ -45,7 +42,7 @@ export default async function Hero2Section() {
           
           {shopCategory2 && (
             <Link href={`/shop/${shopCategory2.slug}`} className="block group">
-              <div className="relative w-full aspect-[4/3] mb-2">
+              <div className="relative w-full aspect-square mb-2">
                 <Image
                   src={shopCategory2.heroImage}
                   alt={shopCategory2.displayName}
@@ -83,24 +80,41 @@ export default async function Hero2Section() {
           )}
         </div>
         
-        {/* Right: 2 Small Blog Posts Stacked */}
-        <div className="col-span-3 flex flex-col gap-4">
-          {smallPosts.map((post) => (
+        {/* Right: 3 Horizontal Blog Posts */}
+        <div className="col-span-3 flex flex-col gap-6">
+          {horizontalPosts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
-              <div className="relative w-full aspect-[4/3] mb-2">
-                {post.image && (
-                  <Image
-                    src={post.image}
-                    alt={post.imageAlt || post.title}
-                    fill
-                    className="object-cover"
-                    sizes="25vw"
-                  />
-                )}
+              <div className="flex gap-3 items-start">
+                {/* Square Image Left */}
+                <div className="relative w-24 h-24 flex-shrink-0">
+                  {post.image && (
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt || post.title}
+                      fill
+                      className="object-cover"
+                      sizes="96px"
+                    />
+                  )}
+                </div>
+                
+                {/* Text Right */}
+                <div className="flex-1 min-w-0">
+                  {post.category && (
+                    <p className="font-product text-xs uppercase tracking-wider text-foreground mb-1">
+                      {post.category}
+                    </p>
+                  )}
+                  <h4 className="font-heading text-sm text-foreground group-hover:opacity-70 transition-opacity line-clamp-3">
+                    {post.title}
+                  </h4>
+                  {post.author && (
+                    <p className="font-product text-xs text-foreground mt-1">
+                      BY {post.author.toUpperCase()}
+                    </p>
+                  )}
+                </div>
               </div>
-              <h4 className="font-heading text-sm text-foreground group-hover:opacity-70 transition-opacity">
-                {post.title}
-              </h4>
             </Link>
           ))}
         </div>
@@ -163,8 +177,8 @@ export default async function Hero2Section() {
           </Link>
         )}
         
-        {/* Small Blog Posts */}
-        {smallPosts.map((post) => (
+        {/* Horizontal Blog Posts */}
+        {horizontalPosts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
             <div className="relative w-full aspect-[4/3] mb-2">
               {post.image && (
@@ -183,9 +197,6 @@ export default async function Hero2Section() {
           </Link>
         ))}
       </div>
-      
-      {/* Bottom Line */}
-      <div className="w-full h-[1px] bg-border-color mt-8" />
     </section>
   );
 }

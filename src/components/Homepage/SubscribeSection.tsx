@@ -4,10 +4,7 @@ import Link from 'next/link';
 
 export default function SubscribeSection() {
   return (
-    <section className="bg-white py-4 md:py-4">
-      {/* Top Line */}
-      <div className="w-full h-[1px] bg-border-color" />
-      
+    <section className="bg-white pt-8 pb-8">
       {/* Desktop Layout */}
       <div className="hidden md:flex items-center justify-center gap-8 px-3 md:px-6 lg:px-12 py-4">
         {/* Image */}
@@ -68,9 +65,6 @@ export default function SubscribeSection() {
           </Link>
         </div>
       </div>
-      
-      {/* Bottom Line */}
-      <div className="w-full h-[1px] bg-border-color" />
     </section>
   );
 }

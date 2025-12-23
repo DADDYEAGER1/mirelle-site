@@ -18,9 +18,9 @@ export default async function Hero2Section() {
   const horizontalPosts = allPosts.slice(1, 4);
 
   return (
-    <section className="bg-background py-8 md:py-12">
+    <section className="bg-background py-12 md:py-16">
       {/* Desktop: 3 Column Grid */}
-      <div className="hidden md:grid md:grid-cols-12 gap-4 max-w-7xl mx-auto px-6">
+      <div className="hidden md:grid md:grid-cols-12 gap-4 max-w-7xl mx-auto px-6 md:px-8 lg:px-16">
         {/* Left: 2 Square Categories Stacked */}
         <div className="col-span-3 flex flex-col gap-4">
           {shopCategory1 && (
@@ -121,7 +121,7 @@ export default async function Hero2Section() {
       </div>
       
       {/* Mobile: Vertical Stack */}
-      <div className="md:hidden flex flex-col gap-6 px-6">
+      <div className="md:hidden flex flex-col gap-6 px-6 md:px-8 lg:px-16">
         {/* Tall Post First */}
         {tallPost && (
           <Link href={`/blog/${tallPost.slug}`} className="block group">

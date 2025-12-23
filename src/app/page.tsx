@@ -61,7 +61,7 @@ export default async function Home() {
       <Hero2Section />
       
       {/* 4. Subscribe Section (Duplicate) */}
-      <SubscribeSection />
+      {/* <SubscribeSection /> */}
       
       {/* 5. Blog Carousel - 8 Featured Posts */}
       <BlogCarousel posts={allBlogPosts} />

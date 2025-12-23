@@ -26,8 +26,6 @@
   font-display: swap;
 }
 
-/* Crimson Text should be loaded from Google Fonts or add @font-face here if you have the file */
-
 /* ============================================
    CSS VARIABLES
    ============================================ */
@@ -39,11 +37,11 @@
   --font-ui: 'General Sans', system-ui, sans-serif;
   --font-brand: 'Larken', 'Georgia', serif;
   
-  /* Colors - Light Theme Only */
-  --background: #ffffff;
-  --foreground: #171717;
+  /* NEW BRAND COLORS */
+  --background: #f9fafb;
+  --foreground: #252220;
   
-  /* Legacy colors preserved for gradual migration */
+  /* OLD COLORS (temporary - remove after migration) */
   --accent: #E30088;
   --accent-light: #FF1AA3;
   --accent-dark: #B0006B;
@@ -193,11 +191,11 @@ strong, b,
    ============================================ */
 
 ::selection {
-  background-color: var(--accent);
-  color: white;
+  background-color: var(--foreground);
+  color: var(--background);
 }
 
 ::-moz-selection {
-  background-color: var(--accent);
-  color: white;
+  background-color: var(--foreground);
+  color: var(--background);
 }

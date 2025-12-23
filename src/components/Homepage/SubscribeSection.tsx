@@ -9,26 +9,26 @@ export default function SubscribeSection() {
       <div className="w-full h-[1px] bg-border-color" />
       
       {/* Desktop Layout */}
-      <div className="hidden md:flex items-center justify-between px-8 lg:px-16 py-6">
-        {/* Left: Image */}
+      <div className="hidden md:flex items-center justify-center gap-8 px-8 lg:px-16 py-6">
+        {/* Image */}
         <div className="flex-shrink-0">
           <Image
             src="/images/vogue-magazine.jpg"
-            alt="Vogue Magazine"
+            alt="Mirellé Magazine"
             width={60}
             height={60}
             className="object-cover"
           />
         </div>
         
-        {/* Center: Text */}
-        <div className="flex-1 text-center px-8">
-          <p className="font-body italic text-foreground text-lg">
-            Elevate the Season with Vogue
+        {/* Text */}
+        <div className="flex-shrink-0">
+          <p className="font-body text-foreground text-lg">
+            Elevate the Season with <span className="italic">Mirellé</span>
           </p>
         </div>
         
-        {/* Right: Button */}
+        {/* Button */}
         <div className="flex-shrink-0">
           <Link 
             href="/subscribe"
@@ -39,31 +39,30 @@ export default function SubscribeSection() {
         </div>
       </div>
       
-      {/* Mobile Layout - Vertical Stack */}
-      <div className="md:hidden flex flex-col items-center py-6 px-6 space-y-4">
+      {/* Mobile Layout - Horizontal with Image Left */}
+      <div className="md:hidden flex items-center py-6 px-6 gap-4">
         {/* Image */}
-        <div>
+        <div className="flex-shrink-0">
           <Image
             src="/images/vogue-magazine.jpg"
-            alt="Vogue Magazine"
+            alt="Mirellé Magazine"
             width={50}
             height={50}
             className="object-cover"
           />
         </div>
         
-        {/* Text */}
-        <div className="text-center">
-          <p className="font-body italic text-foreground text-base">
-            Elevate the Season with Vogue
+        {/* Text and Button */}
+        <div className="flex flex-col gap-3">
+          {/* Text */}
+          <p className="font-body text-foreground text-sm">
+            Elevate the Season with <span className="italic">Mirellé</span>
           </p>
-        </div>
-        
-        {/* Button */}
-        <div>
+          
+          {/* Button */}
           <Link 
             href="/subscribe"
-            className="bg-foreground text-white px-5 py-2.5 font-product text-xs uppercase tracking-wider hover:opacity-80 transition-opacity inline-block"
+            className="bg-foreground text-white px-5 py-2.5 font-product text-xs uppercase tracking-wider hover:opacity-80 transition-opacity inline-block text-center"
           >
             SUBSCRIBE NOW
           </Link>

@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: 'Complete 2026 Nail Guides: Chrome, Cat Claw, Square & More',
-  description: 'Master 2026 trending techniques with expert guides: chrome application, cat claw shaping, square filing, milky pastels, seasonal trends. Step-by-step for every skill level!',
-  keywords: 'nail care guides 2026, chrome nails tutorial, cat claw nail shaping, square nails how to, milky nail technique, 3D nail art guide, seasonal nail trends, DIY manicure tutorials, nail health tips, professional techniques, trending nail guides, at-home nail hacks, modern nail inspiration, skin tone matching nails',
-  authors: [{ name: 'Mirellè Inspo Team' }],
+  title: 'Nail Care Topics & Expert Guides | Long Reads on Nail Trends 2026',
+  description: 'In-depth editorial guides on nail care, trending techniques, seasonal styles, and professional tips. Expert journalism for nail enthusiasts.',
+  keywords: 'nail care guides, chrome nails tutorial, nail art techniques, seasonal nail trends, professional manicure tips, nail health editorial, beauty journalism',
+  authors: [{ name: 'Mirellè Editorial Team' }],
   creator: 'Mirellè Inspo',
   publisher: 'Mirellè Inspo',
   alternates: {
@@ -24,82 +24,70 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Complete 2026 Nail Guides: Chrome, Cat Claw, Square & More',
-    description: 'Expert guides for trending 2026 techniques: chrome finishes, cat claw shapes, square filing, milky pastels. Step-by-step for every level. Master trending nails!',
+    title: 'Nail Care Topics & Expert Guides | Mirellè Inspo',
+    description: 'In-depth editorial guides on nail care, trending techniques, and professional tips.',
     type: 'website',
     url: 'https://mirelleinspo.com/topics',
     siteName: 'Mirellè Inspo',
     locale: 'en_US',
     images: [{
-      url: 'https://mirelleinspo.com/featuretopicbanner-2026.jpg',
+      url: 'https://mirelleinspo.com/og-topics.jpg',
       width: 1200,
       height: 630,
-      alt: 'Mirellè Inspo Complete Nail Guides for 2026 Trending Techniques',
-      type: 'image/jpeg',
+      alt: 'Mirellè Inspo Topics and Editorial Guides',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '2026 Nail Guides: Chrome, Cat Claw & Square (Expert Tips)',
-    description: 'Master trending techniques with step-by-step guides. Every skill level. Pro secrets inside →',
-    images: ['https://mirelleinspo.com/twitter-topics-2026.jpg'],
+    title: 'Nail Care Topics & Expert Guides | Mirellè Inspo',
+    description: 'In-depth editorial guides on nail care and trending techniques.',
+    images: ['https://mirelleinspo.com/twitter-topics.jpg'],
     creator: '@mirelleinspo',
-    site: '@mirelleinspo',
-  },
-  other: {
-    'pin:description': 'Complete 2026 nail guides! Master chrome, cat claw, square & milky techniques. Expert step-by-step tutorials for every skill level. Save these guides!',
-    'pinterest-rich-pin': 'true',
   },
 }
 
 const topics = [
   {
     title: "Nail Care Guide",
-    description: "Essential tips for healthy, beautiful nails - from basic care to advanced treatments and strengthening techniques",
+    description: "Essential tips for healthy, beautiful nails - from basic care to advanced treatments",
     image: "/nailcare.jpg",
     href: "/topics/nail-care-guide",
-    category: "NAIL HEALTH",
-    icon: "💅"
+    category: "HEALTH"
   },
   {
     title: "For Skin Tones",
-    description: "Find the perfect nail colors for your skin tone - expert color matching and personalized recommendations",
+    description: "Find the perfect nail colors for your skin tone with expert color matching",
     image: "/skintone.jpg",
     href: "/topics/skin-tones",
-    category: "COLOR GUIDE",
-    icon: "🎨"
+    category: "COLOR THEORY"
   },
   {
     title: "Nail Art Guides",
-    description: "Step-by-step nail art tutorials and inspiration - from beginner techniques to advanced designs",
+    description: "Step-by-step tutorials from beginner techniques to advanced designs",
     image: "/nailart.jpg",
     href: "/topics/nail-art-guides",
-    category: "TUTORIALS",
-    icon: "✨"
+    category: "TECHNIQUE"
   },
   {
     title: "Seasonal Trends",
-    description: "Stay updated with the latest seasonal nail trends - spring florals, summer brights, fall warmth, and winter elegance",
+    description: "Latest seasonal nail trends - spring florals, summer brights, fall warmth, winter elegance",
     image: "/nailtrends.jpg",
     href: "/topics/seasonal-trends",
-    category: "TRENDS",
-    icon: "🍂"
+    category: "TRENDS"
   },
   {
     title: "At-Home Nail Hacks",
-    description: "Professional techniques you can do at home - DIY manicures, cost-saving tips, and salon-quality results",
+    description: "Professional techniques you can do at home - DIY manicures and salon-quality results",
     image: "/athome.jpg",
     href: "/topics/at-home-hacks",
-    category: "DIY TIPS",
-    icon: "🏠"
+    category: "DIY"
   },
   {
     title: "Modern Women Inspiration",
-    description: "Empowering nail looks for the modern woman - chic, confident styles for work, events, and everyday life",
+    description: "Empowering nail looks for the modern woman - chic, confident styles for work and life",
     image: "/modern.jpg",
     href: "/topics/modern-women",
-    category: "INSPIRATION",
-    icon: "👑"
+    category: "LIFESTYLE"
   }
 ];
 
@@ -107,16 +95,12 @@ export default function Topics() {
   // JSON-LD Structured Data
   const websiteSchema = {
     '@context': 'https://schema.org',
-    '@type': 'WebPage',
+    '@type': 'CollectionPage',
     '@id': 'https://mirelleinspo.com/topics',
     name: 'Nail Care Topics & Expert Guides',
-    description: 'Comprehensive nail care guides covering health, art, trends, and techniques',
+    description: 'Comprehensive editorial guides covering nail care, art, trends, and professional techniques',
     url: 'https://mirelleinspo.com/topics',
     inLanguage: 'en-US',
-    isPartOf: {
-      '@type': 'WebSite',
-      '@id': 'https://mirelleinspo.com/#website',
-    },
   };
 
   const breadcrumbSchema = {
@@ -138,175 +122,170 @@ export default function Topics() {
     ],
   };
 
-  const topicListSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Nail Care Topic Guides',
-    description: 'Expert guides covering all aspects of nail care, art, and styling',
-    itemListElement: topics.map((topic, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: topic.title,
-      description: topic.description,
-      url: `https://mirelleinspo.com${topic.href}`,
-    })),
-  };
-
   return (
     <>
       {/* Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(topicListSchema) }} />
 
-      <div className="min-h-screen bg-gray-50">
-        {/* Glassmorphism Hero Section - Using Tailwind animate-pulse */}
-        <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-purple-50 to-rose-50">
-          {/* Animated gradient orbs - Using Tailwind's animate-pulse */}
-          <div className="absolute inset-0 opacity-50">
-            <div className="absolute top-0 left-0 w-72 md:w-96 h-72 md:h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-            <div className="absolute top-0 right-0 w-72 md:w-96 h-72 md:h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-72 md:w-96 h-72 md:h-96 bg-rose-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
-          </div>
+      <main className="min-h-screen bg-background">
+        {/* Editorial Hero - Featured Long Read */}
+        <section className="border-b border-foreground/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <div className="mb-8 md:mb-12">
+              <span className="font-ui text-xs tracking-wider text-foreground/60 uppercase">
+                Long Reads
+              </span>
+            </div>
 
-          {/* Glassmorphism card */}
-          <div className="relative z-10 max-w-4xl mx-auto px-4">
-            <div className="backdrop-blur-xl bg-white/40 border border-white/50 rounded-3xl shadow-2xl p-8 md:p-12 text-center">
-              <div className="w-20 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 mx-auto mb-8 rounded-full"></div>
-              
-              <h1 className="font-serif text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent">
-                Featured Topics
-              </h1>
-              
-              <p className="text-lg md:text-2xl text-gray-700 font-light leading-relaxed max-w-2xl mx-auto">
-                Everything You Need to Know About Nails
-              </p>
-              
-              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-8">
-                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 md:px-4 py-2 rounded-full border border-pink-200">
-                  <span className="text-xl md:text-2xl">✨</span>
-                  <span className="text-xs md:text-sm font-medium text-gray-700">Expert Guides</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-3 md:px-4 py-2 rounded-full border border-purple-200">
-                  <span className="text-xl md:text-2xl">💅</span>
-                  <span className="text-xs md:text-sm font-medium text-gray-700">Step-by-Step</span>
-                </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+              {/* Featured Image */}
+              <div className="lg:col-span-7">
+                <Link href={topics[0].href} className="group block">
+                  <div className="relative w-full overflow-hidden bg-foreground/5">
+                    <div className="relative w-full pb-[66%]">
+                      <img
+                        src={topics[0].image}
+                        alt={topics[0].title}
+                        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-90"
+                      />
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              {/* Featured Content */}
+              <div className="lg:col-span-5 flex flex-col justify-center">
+                <Link href={topics[0].href} className="group">
+                  <span className="font-ui text-xs tracking-wider text-foreground/60 uppercase mb-4 block">
+                    {topics[0].category}
+                  </span>
+                  
+                  <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight group-hover:text-foreground/70 transition-colors duration-300">
+                    {topics[0].title}
+                  </h1>
+                  
+                  <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed mb-8">
+                    {topics[0].description}
+                  </p>
+
+                  <span className="font-ui text-sm text-foreground border-b border-foreground inline-block pb-1 group-hover:border-foreground/50 transition-colors duration-300">
+                    Read More
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Topics Grid - Blog Style Cards */}
-        <section className="py-20 bg-white">
+        {/* All Topics Grid - Editorial Style */}
+        <section className="py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl font-bold text-gray-900 mb-4">
-                Explore Our Topics
+            <div className="mb-12 md:mb-16">
+              <h2 className="font-heading text-2xl md:text-4xl text-foreground mb-4">
+                Explore Topics
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                From nail care basics to advanced techniques, discover everything you need
-                to know about beautiful, healthy nails.
+              <p className="font-body text-base md:text-lg text-foreground/70 max-w-2xl">
+                Comprehensive guides covering every aspect of nail care, from fundamentals to advanced techniques.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-              {topics.map((topic, index) => (
-                <Link
-                  key={index}
-                  href={topic.href}
-                  className="group block bg-white"
-                >
-                  {/* Large Featured Image */}
-                  <div className="relative w-full overflow-hidden mb-6">
-                    <div className="relative w-full pb-[75%]">
-                      <img
-                        src={topic.image}
-                        alt={topic.title}
-                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Content - Centered */}
-                  <div className="space-y-3 text-center">
-                    {/* Category Label */}
-                    <div className="text-xs font-bold tracking-widest text-burgundy-800 uppercase">
-                      {topic.category}
+            {/* Grid - Masonry style on larger screens */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 md:gap-x-8 md:gap-y-16">
+              {topics.slice(1).map((topic, index) => (
+                <article key={index} className="group">
+                  <Link href={topic.href} className="block">
+                    {/* Image */}
+                    <div className="relative w-full overflow-hidden bg-foreground/5 mb-5">
+                      <div className="relative w-full pb-[75%]">
+                        <img
+                          src={topic.image}
+                          alt={topic.title}
+                          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-90"
+                        />
+                      </div>
                     </div>
 
-                    {/* Title */}
-                    <h3 className="font-serif text-xl md:text-2xl leading-tight text-gray-900 group-hover:text-gray-600 transition-colors duration-300 px-2">
-                      {topic.title}
-                    </h3>
-                  </div>
-                </Link>
+                    {/* Content */}
+                    <div className="space-y-3">
+                      <span className="font-ui text-xs tracking-wider text-foreground/60 uppercase block">
+                        {topic.category}
+                      </span>
+                      
+                      <h3 className="font-heading text-xl md:text-2xl text-foreground leading-tight group-hover:text-foreground/70 transition-colors duration-300">
+                        {topic.title}
+                      </h3>
+                      
+                      <p className="font-body text-sm md:text-base text-foreground/70 leading-relaxed">
+                        {topic.description}
+                      </p>
+                    </div>
+                  </Link>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Related Content Grid - Using Header Text Color on Background */}
-        <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        {/* Related Sections - Minimal Editorial */}
+        <section className="border-t border-foreground/10 py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Explore More
-              </h2>
-              <p className="text-base md:text-lg text-gray-600">
-                Discover our curated collections
-              </p>
-            </div>
+            <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-8 md:mb-12">
+              More from Mirellè
+            </h2>
 
-            {/* Grid - Same row on mobile with responsive text */}
-            <div className="grid grid-cols-3 gap-3 md:gap-6 lg:gap-8">
-              {/* Blog Card - Using charcoal-900 (header text color) */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
+              {/* Blog */}
               <Link
                 href="/blog"
-                className="group relative overflow-hidden rounded-xl md:rounded-2xl aspect-square bg-charcoal-900 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="group border border-foreground/10 p-8 md:p-10 hover:border-foreground/30 transition-all duration-300"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-3 md:p-6 text-background">
-                  <div className="text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                    📝
-                  </div>
-                  <h3 className="text-xs md:text-xl lg:text-2xl font-bold text-center leading-tight">
-                    Explore Nail Trends
-                  </h3>
-                </div>
+                <span className="font-ui text-xs tracking-wider text-foreground/60 uppercase block mb-4">
+                  Editorial
+                </span>
+                <h3 className="font-heading text-xl md:text-2xl text-foreground mb-3 group-hover:text-foreground/70 transition-colors">
+                  Nail Trends
+                </h3>
+                <p className="font-body text-sm text-foreground/70">
+                  Latest insights and analysis
+                </p>
               </Link>
 
-              {/* Inspo Card */}
+              {/* Inspo */}
               <Link
                 href="/inspo"
-                className="group relative overflow-hidden rounded-xl md:rounded-2xl aspect-square bg-charcoal-900 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="group border border-foreground/10 p-8 md:p-10 hover:border-foreground/30 transition-all duration-300"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-3 md:p-6 text-background">
-                  <div className="text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                    ✨
-                  </div>
-                  <h3 className="text-xs md:text-xl lg:text-2xl font-bold text-center leading-tight">
-                    Nail Inspo
-                  </h3>
-                </div>
+                <span className="font-ui text-xs tracking-wider text-foreground/60 uppercase block mb-4">
+                  Gallery
+                </span>
+                <h3 className="font-heading text-xl md:text-2xl text-foreground mb-3 group-hover:text-foreground/70 transition-colors">
+                  Inspiration
+                </h3>
+                <p className="font-body text-sm text-foreground/70">
+                  Curated visual stories
+                </p>
               </Link>
 
-              {/* Shop Card */}
+              {/* Shop */}
               <Link
                 href="/shop"
-                className="group relative overflow-hidden rounded-xl md:rounded-2xl aspect-square bg-charcoal-900 hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="group border border-foreground/10 p-8 md:p-10 hover:border-foreground/30 transition-all duration-300"
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-3 md:p-6 text-background">
-                  <div className="text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                    🛍️
-                  </div>
-                  <h3 className="text-xs md:text-xl lg:text-2xl font-bold text-center leading-tight">
-                    Shop Press-On Nails
-                  </h3>
-                </div>
+                <span className="font-ui text-xs tracking-wider text-foreground/60 uppercase block mb-4">
+                  Collection
+                </span>
+                <h3 className="font-heading text-xl md:text-2xl text-foreground mb-3 group-hover:text-foreground/70 transition-colors">
+                  Press-On Nails
+                </h3>
+                <p className="font-body text-sm text-foreground/70">
+                  Thoughtfully designed sets
+                </p>
               </Link>
             </div>
           </div>
         </section>
-      </div>
+      </main>
     </>
   );
 }

@@ -18,9 +18,9 @@ export default async function Hero2Section() {
   const horizontalPosts = allPosts.slice(1, 4);
 
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section className="bg-background pt-16 md:pt-24 pb-8">
       {/* Desktop: 3 Column Grid */}
-      <div className="hidden md:grid md:grid-cols-12 gap-4 max-w-7xl mx-auto px-6 md:px-8 lg:px-16">
+      <div className="hidden md:grid md:grid-cols-12 gap-4 max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
         {/* Left: 2 Square Categories Stacked */}
         <div className="col-span-3 flex flex-col gap-4">
           {shopCategory1 && (
@@ -101,7 +101,7 @@ export default async function Hero2Section() {
                 {/* Text Right */}
                 <div className="flex-1 min-w-0">
                   {post.category && (
-                    <p className="font-product text-xs uppercase tracking-wider text-foreground mb-1">
+                    <p className="font-ui text-xs uppercase tracking-wider text-foreground mb-1">
                       {post.category}
                     </p>
                   )}
@@ -109,7 +109,7 @@ export default async function Hero2Section() {
                     {post.title}
                   </h4>
                   {post.author && (
-                    <p className="font-product text-xs text-foreground mt-1">
+                    <p className="font-ui text-xs text-foreground mt-1">
                       BY {post.author.toUpperCase()}
                     </p>
                   )}
@@ -121,7 +121,7 @@ export default async function Hero2Section() {
       </div>
       
       {/* Mobile: Vertical Stack */}
-      <div className="md:hidden flex flex-col gap-6 px-6 md:px-8 lg:px-16">
+      <div className="md:hidden flex flex-col gap-6 px-3 md:px-6 lg:px-12">
         {/* Tall Post First */}
         {tallPost && (
           <Link href={`/blog/${tallPost.slug}`} className="block group">

@@ -40,7 +40,7 @@ export default function SubscribeSection() {
       </div>
       
       {/* Mobile Layout - Horizontal with Image Left */}
-      <div className="md:hidden flex items-center py-6 px-6 gap-4">
+      <div className="md:hidden flex items-center justify-center py-6 px-6 gap-4">
         {/* Image */}
         <div className="flex-shrink-0">
           <Image

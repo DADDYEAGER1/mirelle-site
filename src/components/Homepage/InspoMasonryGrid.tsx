@@ -13,7 +13,7 @@ export default function InspoMasonryGrid({ images }: InspoMasonryGridProps) {
   const mobileImages = images.slice(0, 6);
 
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section className="bg-background pt-16 md:pt-24 pb-8">
       {/* Section Title */}
       <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mb-8">
         <h2 className="font-heading text-3xl md:text-4xl text-foreground text-center">

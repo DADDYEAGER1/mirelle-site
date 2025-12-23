@@ -507,17 +507,17 @@ export default function WorkWithUsPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-20 bg-foreground">
+        <section className="py-20 bg-background border-t border-foreground/10">
           <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-            <h2 className="font-heading text-4xl text-white mb-6">
+            <h2 className="font-heading text-4xl text-foreground mb-6">
               Start Your Partnership Today
             </h2>
-            <p className="font-body text-lg text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="font-body text-lg text-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
               Ready to collaborate? Send us your proposal, portfolio, or partnership inquiry. We review all submissions and respond within 5-7 business days.
             </p>
             <a 
               href="mailto:contact@mirelleinspo.com"
-              className="inline-block bg-white text-foreground px-8 py-4 font-ui text-sm uppercase tracking-wider hover:bg-white/90 transition-colors"
+              className="inline-block bg-foreground text-background px-8 py-4 font-ui text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
             >
               contact@mirelleinspo.com
             </a>

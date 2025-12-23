@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 export default function SubscribeSection() {
   return (
-    <section className="bg-white">
+    <section className="bg-white py-4 md:py-4">
       {/* Top Line */}
       <div className="w-full h-[1px] bg-border-color" />
       
       {/* Desktop Layout */}
-      <div className="hidden md:flex items-center justify-center gap-8 px-8 lg:px-16 py-6">
+      <div className="hidden md:flex items-center justify-center gap-8 px-3 md:px-6 lg:px-12 py-4">
         {/* Image */}
         <div className="flex-shrink-0">
           <Image
@@ -32,7 +32,7 @@ export default function SubscribeSection() {
         <div className="flex-shrink-0">
           <Link 
             href="/subscribe"
-            className="bg-foreground text-white px-6 py-3 font-product text-sm uppercase tracking-wider hover:opacity-80 transition-opacity"
+            className="bg-foreground text-white px-6 py-3 font-ui text-sm uppercase tracking-wider hover:opacity-80 transition-opacity"
           >
             SUBSCRIBE NOW
           </Link>
@@ -40,29 +40,29 @@ export default function SubscribeSection() {
       </div>
       
       {/* Mobile Layout - Horizontal with Image Left */}
-      <div className="md:hidden flex items-center justify-center py-6 px-6 gap-4">
+      <div className="md:hidden flex items-center justify-center py-4 px-3 gap-3">
         {/* Image */}
         <div className="flex-shrink-0">
           <Image
             src="/images/vogue-magazine.jpg"
             alt="Mirellé Magazine"
-            width={50}
-            height={50}
+            width={45}
+            height={45}
             className="object-cover"
           />
         </div>
         
         {/* Text and Button */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2.5">
           {/* Text */}
-          <p className="font-body text-foreground text-sm">
+          <p className="font-body text-foreground text-sm leading-tight">
             Elevate the Season with <span className="italic">Mirellé</span>
           </p>
           
           {/* Button */}
           <Link 
             href="/subscribe"
-            className="bg-foreground text-white px-5 py-2.5 font-product text-xs uppercase tracking-wider hover:opacity-80 transition-opacity inline-block text-center"
+            className="bg-foreground text-white px-4 py-2 font-ui text-xs uppercase tracking-wider hover:opacity-80 transition-opacity inline-block text-center"
           >
             SUBSCRIBE NOW
           </Link>

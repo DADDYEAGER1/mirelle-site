@@ -11,7 +11,7 @@ export default async function Hero1Section() {
 
   return (
     <section className="bg-background py-12 md:py-16">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
         <Link href={`/blog/${heroPost.slug}`} className="block group">
           {/* Desktop: Full image */}
           <div className="hidden md:block relative w-full aspect-[16/9] mb-6">
@@ -41,7 +41,7 @@ export default async function Hero1Section() {
             )}
           </div>
           
-          {/* Title - Centered, Jeremiah font */}
+          {/* Title - Centered */}
           <h2 className="font-heading text-center text-2xl md:text-4xl text-foreground group-hover:opacity-70 transition-opacity">
             {heroPost.title}
           </h2>

@@ -1,86 +1,91 @@
+// src/app/page.tsx
+import '@/app/globals.css'
 import type { Metadata } from 'next';
-import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
-import BlogSection from '@/components/BlogSection';
-import FeaturedTopicsSection from '@/components/FeaturedTopicsSection';
-import ShopSection from '@/components/ShopSection';
-import SubscribeSection from '@/components/SubscribeSection';
-import StickyBottomNav from '@/components/ui/StickyBottomNav'; // ✅ NEW: Phase 4
-import InspoShowcase from '@/components/InspoShowcase'; // ✅ NEW
-
+import SubscribeSection from '@/components/Homepage/SubscribeSection';
+import Hero1Section from '@/components/Homepage/Hero1Section';
+import Hero2Section from '@/components/Homepage/Hero2Section';
+import BlogCarousel from '@/components/Homepage/BlogCarousel';
+import MustReadSection from '@/components/Homepage/MustReadSection';
+import ShopCarousel from '@/components/Homepage/ShopCarousel';
+import InspoCategoriesCarousel from '@/components/Homepage/InspoCategoriesCarousel';
+import InspoMasonryGrid from '@/components/Homepage/InspoMasonryGrid';
+import { getAllBlogPosts } from '@/lib/blog';
+import { getAllCategorySlugs, getCategoryData } from '@/lib/shop';
+import { getAllDesignSlugs, getDesignData, getDesignImages } from '@/lib/inspo';
 
 export const metadata: Metadata = {
-  title: '1,000+ Nail Designs 50K+ Are Obsessed With (Save Before Gone)',
-  description: 'Get chrome, cat claw & square nails dominating 2026. Press-ons from $3.99, trending tutorials, 2.5M Pinterest saves. 50K+ trust us. Your next mani starts here!',
-  keywords: 'trending nail designs 2026, chrome nails, cat claw nails, square nails 2026, press on nails cheap, nail inspiration Pinterest, DIY nail tutorials, seasonal nail collections, milky nails trend, 3D nail art, popsicle nail colors, pearl nails, TikTok viral nails, affordable press-ons, nail designs under $10',
-  alternates: {
-    canonical: 'https://mirelleinspo.com/topics',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+  title: 'Mirellè - Premium Nail Design & Inspiration',
+  description: 'Discover trending nail designs, expert tutorials, and premium press-ons. Your destination for nail art inspiration.',
+  keywords: 'nail designs, nail art, press on nails, nail inspiration, nail tutorials, trending nails',
   openGraph: {
-    title: 'Complete 2026 Nail Guides: Chrome, Cat Claw, Square & More',
-    description: 'Expert guides for trending 2026 techniques: chrome finishes, cat claw shapes, square filing, milky pastels. Step-by-step for every level. Master trending nails!',
+    title: 'Mirellè - Premium Nail Design & Inspiration',
+    description: 'Discover trending nail designs, expert tutorials, and premium press-ons.',
     type: 'website',
-    url: 'https://mirelleinspo.com/topics',
+    url: 'https://mirelleinspo.com',
     siteName: 'Mirellè Inspo',
-    locale: 'en_US',
-    images: [{
-      url: 'https://mirelleinspo.com/featuretopicbanner-2026.jpg',
-      width: 1200,
-      height: 630,
-      alt: 'Mirellè Inspo Complete Nail Guides for 2026 Trending Techniques',
-      type: 'image/jpeg',
-    }],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '2026 Nail Guides: Chrome, Cat Claw & Square (Expert Tips)',
-    description: 'Master trending techniques with step-by-step guides. Every skill level. Pro secrets inside →',
-    images: ['https://mirelleinspo.com/twitter-topics-2026.jpg'],
-    creator: '@mirelleinspo',
-    site: '@mirelleinspo',
-  },
-  other: {
-    'pin:description': 'Complete 2026 nail guides! Master chrome, cat claw, square & milky techniques. Expert step-by-step tutorials for every skill level. Save these guides!',
-    'pinterest-rich-pin': 'true',
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  // Fetch all data
+  const allBlogPosts = await getAllBlogPosts();
+  
+  // Get 6 shop categories with null checking
+  const shopCategorySlugs = getAllCategorySlugs();
+  const shopCategories = shopCategorySlugs
+    .slice(0, 6)
+    .map(slug => getCategoryData(slug))
+    .filter((cat): cat is NonNullable<typeof cat> => cat !== null);
+  
+  // Get 6 inspo categories with null checking
+  const inspoSlugs = getAllDesignSlugs();
+  const inspoCategories = inspoSlugs
+    .slice(0, 6)
+    .map(slug => getDesignData(slug))
+    .filter((cat): cat is NonNullable<typeof cat> => cat !== null);
+  
+  // Get masonry grid images (using first category) with safety check
+  const masonryImages = inspoSlugs.length > 0 
+    ? await getDesignImages(inspoSlugs[0]) 
+    : [];
+
   return (
-    <div>
-      <HeroSection />
-      <AboutSection />
-      <ShopSection />
-      <FeaturedTopicsSection />
-      <InspoShowcase />
-      <BlogSection />
+    <div className="font-body bg-background text-foreground">
+      {/* 1. Subscribe Section */}
       <SubscribeSection />
       
-      <StickyBottomNav /> {/* ✅ NEW: Phase 4 - Mobile sticky nav */}
+      {/* 2. Hero1 - Single Featured Blog Post */}
+      <Hero1Section />
+      
+      {/* 3. Hero2 - Mixed Content Grid */}
+      <Hero2Section />
+      
+      {/* 4. Subscribe Section (Duplicate) */}
+      <SubscribeSection />
+      
+      {/* 5. Blog Carousel - 8 Featured Posts */}
+      <BlogCarousel posts={allBlogPosts} />
+      
+      {/* 6. Must Read Section - 4 Topics */}
+      <MustReadSection posts={allBlogPosts} />
+      
+      {/* 7. Shop Carousel - 6 Shop Categories */}
+      {shopCategories.length > 0 && (
+        <ShopCarousel categories={shopCategories} />
+      )}
+      
+      {/* 8. Inspo Categories Carousel - 6 Categories */}
+      {inspoCategories.length > 0 && (
+        <InspoCategoriesCarousel categories={inspoCategories} />
+      )}
+      
+      {/* 9. Inspo Masonry Grid */}
+      {masonryImages.length > 0 && (
+        <InspoMasonryGrid images={masonryImages} />
+      )}
+      
+      {/* 10. Subscribe Section (Final) */}
+      <SubscribeSection />
     </div>
   );
 }
-
-const websiteSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'Mirelle',
-  url: 'https://mirelleinspo.com',
-  description: 'Premium nail care, inspiration & expert tips',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: 'https://mirelleinspo.com/search?q={search_term_string}',
-    'query-input': 'required name=search_term_string'
-  }
-};

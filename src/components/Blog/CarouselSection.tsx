@@ -54,7 +54,7 @@ export default function CarouselSection({ posts, title }: CarouselSectionProps) 
         <div className="flex items-center justify-between mb-8">
           <h2 
             className="text-3xl md:text-4xl"
-            style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+            className="font-heading"
           >
             {title}
           </h2>
@@ -74,7 +74,7 @@ export default function CarouselSection({ posts, title }: CarouselSectionProps) 
 
             <span 
               className="text-sm"
-              style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
+              className="font-ui"
             >
               {currentIndex + 1} / {totalCards}
             </span>

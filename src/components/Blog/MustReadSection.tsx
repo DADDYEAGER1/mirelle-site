@@ -15,7 +15,7 @@ export default function MustReadSection({ posts }: MustReadSectionProps) {
         {/* Section Heading */}
         <h2 
           className="text-3xl md:text-4xl text-center mb-12"
-          style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+          className="font-heading"
         >
           MUST READ
         </h2>

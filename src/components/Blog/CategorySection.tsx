@@ -50,7 +50,7 @@ export default function CategorySection({ categoryName, posts }: CategorySection
         {/* Category Heading */}
         <h2 
           className="text-3xl md:text-4xl text-center mb-12"
-          style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+          className="font-heading"
         >
           {categoryName.toUpperCase()}
         </h2>

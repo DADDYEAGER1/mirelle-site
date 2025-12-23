@@ -34,234 +34,43 @@ const TOPICS_LINKS = [
   { label: 'Browse All Topics', href: '/topics' },
 ];
 
-// Scrolling items for mobile
-const SCROLLING_ITEMS = [
-  'NEWSLETTER',
-  'BEST OF BEAUTY',
-  'NEWS',
-  'SKIN',
-  'MAKEUP',
-  'HAIR',
-  'WELLNESS',
-  'NAILS',
-  'FRAGRANCE',
-  'SHOPPING',
-];
-
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mobileDropdowns, setMobileDropdowns] = useState({
-    blog: false,
-    shop: false,
-    designs: false,
-    topics: false,
-  });
-
-  const toggleMobileDropdown = (key: 'blog' | 'shop' | 'designs' | 'topics') => {
-    setMobileDropdowns(prev => ({ ...prev, [key]: !prev[key] }));
-  };
-
   return (
-    <header className="bg-text-primary">
-      {/* Mobile Header - Allure Style */}
-      <div className="md:hidden">
-        {/* Top Row */}
-        <div className="border-b border-background/20">
-          <div className="px-4 h-16 flex items-center justify-between">
-            {/* Logo - Left aligned */}
-            <Link href="/" className="flex items-center">
-              <span className="font-serif text-2xl font-bold text-background">
-                Mirellé
-              </span>
-            </Link>
-
-            {/* Right Side - Newsletter and Work With Us */}
-            <div className="flex items-center gap-3">
-              <a 
-                href="https://mirelleinspo.com/subscribe" 
-                className="text-[10px] tracking-wider uppercase text-background hover:text-background/70 transition-colors"
-              >
-                Newsletter
-              </a>
-              <Link 
-                href="/work-with-us" 
-                className="text-[10px] tracking-wider uppercase text-background hover:text-background/70 transition-colors"
-              >
-                Work With Us
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Scrolling Bar Row */}
-        <div className="border-b border-background/20 overflow-hidden bg-text-primary h-10 flex items-center">
-          <div className="flex animate-scroll whitespace-nowrap">
-            {/* Duplicate items for seamless loop */}
-            {[...SCROLLING_ITEMS, ...SCROLLING_ITEMS, ...SCROLLING_ITEMS].map((item, index) => (
-              <span 
-                key={index}
-                className="text-[11px] tracking-widest uppercase text-background font-medium px-4"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Menu Icon Row */}
-        <div className="border-b border-background/20">
-          <div className="px-4 h-12 flex items-center justify-between">
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-background"
-              aria-label="Toggle menu"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {mobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-
-            <button className="text-background hover:text-background/70 transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Menu Dropdown */}
-        {mobileMenuOpen && (
-          <div className="py-4 px-4 space-y-3 border-b border-background/20">
-            <Link href="/" className="block text-background hover:text-background/70 transition-colors font-medium">
-              Home
-            </Link>
-            <Link href="/about" className="block text-background hover:text-background/70 transition-colors font-medium">
-              About
-            </Link>
-
-            {/* Blog Accordion */}
-            <div>
-              <button
-                onClick={() => toggleMobileDropdown('blog')}
-                className="w-full flex items-center justify-between text-background hover:text-background/70 transition-colors font-medium"
-              >
-                Blog
-                <svg className={`w-4 h-4 transition-transform duration-300 ${mobileDropdowns.blog ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className={`overflow-hidden transition-all duration-500 ease-out ${mobileDropdowns.blog ? 'max-h-96 mt-2 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <div className="ml-4 space-y-2">
-                  {BLOG_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-background/80 hover:text-background transition-colors text-sm">
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Shop Accordion */}
-            <div>
-              <button
-                onClick={() => toggleMobileDropdown('shop')}
-                className="w-full flex items-center justify-between text-background hover:text-background/70 transition-colors font-medium"
-              >
-                Shop
-                <svg className={`w-4 h-4 transition-transform duration-300 ${mobileDropdowns.shop ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className={`overflow-hidden transition-all duration-500 ease-out ${mobileDropdowns.shop ? 'max-h-96 mt-2 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <div className="ml-4 space-y-2">
-                  {SHOP_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-background/80 hover:text-background transition-colors text-sm">
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Designs Accordion */}
-            <div>
-              <button
-                onClick={() => toggleMobileDropdown('designs')}
-                className="w-full flex items-center justify-between text-background hover:text-background/70 transition-colors font-medium"
-              >
-                Designs
-                <svg className={`w-4 h-4 transition-transform duration-300 ${mobileDropdowns.designs ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className={`overflow-hidden transition-all duration-500 ease-out ${mobileDropdowns.designs ? 'max-h-96 mt-2 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <div className="ml-4 space-y-2">
-                  {DESIGNS_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-background/80 hover:text-background transition-colors text-sm">
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Topics Accordion */}
-            <div>
-              <button
-                onClick={() => toggleMobileDropdown('topics')}
-                className="w-full flex items-center justify-between text-background hover:text-background/70 transition-colors font-medium"
-              >
-                Topics
-                <svg className={`w-4 h-4 transition-transform duration-300 ${mobileDropdowns.topics ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <div className={`overflow-hidden transition-all duration-500 ease-out ${mobileDropdowns.topics ? 'max-h-96 mt-2 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <div className="ml-4 space-y-2">
-                  {TOPICS_LINKS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block text-background/80 hover:text-background transition-colors text-sm">
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Desktop Header - Unchanged */}
+    <header className="bg-[#252220]">
+      {/* Desktop Header */}
       <div className="hidden md:block">
-        {/* Top Bar */}
-        <div className="border-b border-background/20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-center items-center h-12 relative">
-              {/* Logo/Brand - Centered */}
-              <Link href="/" className="flex items-center group">
-                <span className="font-serif text-2xl font-bold text-background">
-                  Mirellé
-                </span>
+        {/* Top Row - Newsletter, Work With Us, Search on Right */}
+        <div className="border-b border-[#f9fafb]/20">
+          <div className="container-standard mx-auto px-16">
+            <div className="flex justify-center items-center h-16 relative">
+              {/* Brand - Centered */}
+              <Link href="/" className="flex items-center">
+              <span 
+                data-logo="true" 
+                className="font-heading" 
+                className="text-3xl font-bold text-[#f9fafb]"
+              >
+                Mirellè
+              </span>
               </Link>
 
-              {/* Right Links - Absolute positioned */}
+              {/* Right Links */}
               <div className="flex items-center gap-6 absolute right-0">
                 <a 
                   href="https://mirelleinspo.com/subscribe" 
-                  className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300 border border-background px-3 py-1.5"
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-xs tracking-widest uppercase text-[#f9fafb] hover:opacity-70 transition-opacity border border-[#f9fafb] px-4 py-2"
                 >
-                  Newsletter
+                  NEWSLETTER
                 </a>
                 <Link 
-                  href="/work-with-us" 
-                  className="text-xs tracking-widest uppercase text-background hover:text-background/70 transition-colors duration-300"
+                  href="/work-with-us"
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-xs tracking-widest uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
                 >
-                  Work With Us
+                  WORK WITH US
                 </Link>
-                <button className="text-background hover:text-background/70 transition-colors">
+                <button className="text-[#f9fafb] hover:opacity-70 transition-opacity">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
@@ -271,100 +80,97 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Main Navigation */}
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center items-center h-12">
-            
-            {/* Center Navigation */}
-            <div className="flex items-center space-x-8">
+        {/* Bottom Row - Main Navigation Links */}
+        <nav className="border-b border-[#f9fafb]/20">
+          <div className="container-standard mx-auto px-16">
+            <div className="flex justify-center items-center h-12 gap-10">
               <Link 
-                href="/" 
-                className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium"
+                href="/"
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
               >
-                Home
+                HOME
               </Link>
-
               <Link 
-                href="/about" 
-                className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium"
+                href="/about"
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
               >
-                About
+                ABOUT
               </Link>
-
-              {/* Blog Dropdown */}
+              
+              {/* Blog Dropdown - No Arrow */}
               <div className="relative group">
-                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                  Blog
-                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {/* Dropdown */}
-                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                  <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
-                    <div className="max-w-7xl mx-auto px-8 py-12">
-                      <div className="space-y-1">
-                        {BLOG_LINKS.map((link) => (
-                          <Link
-                            key={link.href}
-                            href={link.href}
-                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
-                          >
-                            {link.label}
-                          </Link>
-                        ))}
-                      </div>
+                <Link 
+                  href="/blog"
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  BLOG
+                </Link>
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                  <div className="bg-[#252220] border border-[#f9fafb]/20 shadow-xl min-w-[240px]">
+                    <div className="py-4 px-6">
+                      {BLOG_LINKS.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          style={{ fontFamily: 'General Sans, sans-serif' }}
+                          className="block py-2.5 text-sm text-[#f9fafb] hover:opacity-70 transition-opacity"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Shop Dropdown */}
+              {/* Shop Dropdown - No Arrow */}
               <div className="relative group">
-                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                  Shop
-                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {/* Dropdown */}
-                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                  <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
-                    <div className="max-w-7xl mx-auto px-8 py-12">
-                      <div className="space-y-1">
-                        {SHOP_LINKS.map((link) => (
-                          <Link
-                            key={link.href}
-                            href={link.href}
-                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
-                          >
-                            {link.label}
-                          </Link>
-                        ))}
-                      </div>
+                <Link 
+                  href="/shop"
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  SHOP
+                </Link>
+                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                  <div className="bg-[#252220] border border-[#f9fafb]/20 shadow-xl min-w-[240px]">
+                    <div className="py-4 px-6">
+                      {SHOP_LINKS.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          style={{ fontFamily: 'General Sans, sans-serif' }}
+                          className="block py-2.5 text-sm text-[#f9fafb] hover:opacity-70 transition-opacity"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Designs Dropdown */}
+              {/* Designs Dropdown - No Arrow */}
               <div className="relative group">
-                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                  Designs
-                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+                <button 
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  DESIGNS
                 </button>
-                {/* Dropdown */}
-                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                  <div className="bg-text-primary border-b border-background/20 shadow-2xl" style={{backdropFilter: 'none'}}>
-                    <div className="max-w-7xl mx-auto px-8 py-12">
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
                       <div className="space-y-1">
                         {DESIGNS_LINKS.map((link) => (
                           <Link
                             key={link.href}
                             href={link.href}
-                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
                           >
                             {link.label}
                           </Link>
@@ -375,24 +181,24 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Topics Dropdown */}
+              {/* Topics Dropdown - No Arrow */}
               <div className="relative group">
-                <button className="text-sm tracking-wider uppercase text-background hover:text-background/70 transition-colors duration-300 font-medium flex items-center gap-1">
-                  Topics
-                  <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
+                <button 
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                >
+                  TOPICS
                 </button>
-                {/* Dropdown */}
-                <div className="fixed left-0 right-0 top-24 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out delay-150 z-50">
-                  <div className="bg-text-primary border-b border-background/20 shadow-2xl">
-                    <div className="max-w-7xl mx-auto px-8 py-12">
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
                       <div className="space-y-1">
                         {TOPICS_LINKS.map((link) => (
                           <Link
                             key={link.href}
                             href={link.href}
-                            className="block py-3 text-lg text-background hover:text-background/70 hover:pl-2 transition-all duration-300"
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
                           >
                             {link.label}
                           </Link>
@@ -407,22 +213,94 @@ export default function Header() {
         </nav>
       </div>
 
+      {/* Mobile Header */}
+      <div className="md:hidden">
+        {/* Top Row - Brand + Newsletter & Work With Us */}
+        <div className="border-b border-[#f9fafb]/20">
+          <div className="px-6 h-16 flex items-center justify-between">
+            {/* Brand */}
+            <Link href="/" className="flex items-center">
+              <span className="font-heading" className="text-2xl font-bold text-[#f9fafb]">
+                Mirellè
+              </span>
+            </Link>
+
+            {/* Right Side */}
+            <div className="flex items-center gap-4">
+              <a 
+                href="https://mirelleinspo.com/subscribe"
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-[10px] tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+              >
+                NEWSLETTER
+              </a>
+              <Link 
+                href="/work-with-us"
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-[10px] tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+              >
+                WORK WITH US
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Swipeable Navigation Row */}
+        <div className="border-b border-[#f9fafb]/20 overflow-x-auto scrollbar-hide">
+          <div className="flex gap-8 px-6 h-12 items-center whitespace-nowrap">
+            <Link 
+              href="/"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              HOME
+            </Link>
+            <Link 
+              href="/about"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              ABOUT
+            </Link>
+            <Link 
+              href="/blog"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              BLOG
+            </Link>
+            <Link 
+              href="/shop"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              SHOP
+            </Link>
+            <Link 
+              href="/inspo"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              DESIGNS
+            </Link>
+            <Link 
+              href="/topics"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              TOPICS
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-33.333%);
-          }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
         }
-
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-
-        .animate-scroll:hover {
-          animation-play-state: paused;
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </header>

@@ -23,10 +23,15 @@ module.exports = {
         'card-bg': '#FFFFFF',
       },
       fontFamily: {
-        heading: ['Jeremiah', 'Georgia', 'serif'],
-        product: ['Boriboon', 'system-ui', 'sans-serif'],
-        body: ['Crimson Text', 'Georgia', 'serif'],
-        // OLD FONTS (keep until migration complete)
+        // PRIMARY FONT SYSTEM
+        heading: ['Larken', 'Georgia', 'serif'],        // Article titles, main headings
+        body: ['Crimson Text', 'Georgia', 'serif'],     // Paragraphs, article content
+        ui: ['General Sans', 'system-ui', 'sans-serif'], // Categories, labels, nav, header, footer
+        
+        // Keep brand for logo
+        brand: ['Larken', 'Georgia', 'serif'],
+        
+        // OLD FONTS - keeping for backwards compatibility during migration
         playfair: ['Playfair Display', 'serif'],
         source: ['Source Serif 4', 'serif'],
         jakarta: ['Plus Jakarta Sans', 'sans-serif'],

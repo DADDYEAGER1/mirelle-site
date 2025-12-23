@@ -17,7 +17,7 @@ export default async function RelatedArticles({ currentSlug }: RelatedArticlesPr
         {/* Heading */}
         <h2 
           className="text-3xl md:text-4xl text-center mb-12"
-          style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+          className="font-heading"
         >
           Related Articles
         </h2>
@@ -53,7 +53,7 @@ export default async function RelatedArticles({ currentSlug }: RelatedArticlesPr
                 {post.category && (
                   <div 
                     className="text-xs uppercase tracking-wider"
-                    style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}
+                    className="font-ui"
                   >
                     {post.category}
                   </div>
@@ -62,14 +62,14 @@ export default async function RelatedArticles({ currentSlug }: RelatedArticlesPr
                 {/* Title */}
                 <h3 
                   className="text-lg leading-tight line-clamp-2 group-hover:opacity-70 transition-opacity"
-                  style={{ fontFamily: 'Jeremiah, Georgia, serif' }}
+                  className="font-heading"
                 >
                   {post.title}
                 </h3>
 
                 {/* Author & Read Time */}
                 <div className="flex items-center gap-3 text-xs text-gray-600">
-                  <span style={{ fontFamily: 'Boriboon, system-ui, sans-serif' }}>
+                  <span className="font-ui">
                     BY {post.author?.toUpperCase() || 'MIRELLÈ INSPO TEAM'}
                   </span>
                   {post.readTime && (

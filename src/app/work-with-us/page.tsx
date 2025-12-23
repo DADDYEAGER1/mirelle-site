@@ -1,395 +1,529 @@
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Partner With Us - Reach 50K+ Nail Obsessed (2.5M Pinterest)',
-  description: "Collab with Mirellè Inspo. 50K+ monthly engaged users, 2.5M Pinterest views, trending 2026 content. Brand partnerships, sponsored posts, product features. Let's grow!",
-  keywords: "brand partnerships nails, nail influencer collaboration, sponsored nail content, product placement 2026, nail marketing partnerships, Pinterest nail campaigns, Instagram nail collabs, TikTok nail partnerships, press-on brand deals, nail blog sponsorship, beauty brand partnerships, nail product reviews",
+  title: "Nail Salon & Artist Collaboration Opportunities | Partner with Mirellé",
+  description: "Collaborate with Mirellé - 1M weekly Pinterest views, 50K monthly site visits. Nail salon partnerships, artist features, brand campaigns, guest posting opportunities for beauty professionals.",
+  keywords: "nail salon collaboration, partner with nail salon, nail artist collaboration opportunities, beauty blog guest posting, nail brand partnerships, get featured on nail blog, nail salon marketing partnerships, Pinterest collaboration for nail salons, submit nail art for publication, beauty influencer partnerships",
   alternates: {
     canonical: 'https://mirelleinspo.com/work-with-us',
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
   openGraph: {
-    title: 'Partner With Mirellè Inspo - 50K+ Engaged | 2.5M Pinterest Views',
-    description: 'Join brands reaching 50K+ nail-obsessed users monthly. 2.5M Pinterest views, trending 2026 content. Sponsored posts, product features, authentic community. Grow with us!',
-    type: 'website',
+    title: "Collaborate with Mirellé | Nail Salon & Artist Partnership Opportunities",
+    description: "Professional collaboration for nail salons, artists, and brands. 1M weekly Pinterest views, 50K monthly website visitors. Get featured, run campaigns, submit content.",
     url: 'https://mirelleinspo.com/work-with-us',
-    siteName: 'Mirellè Inspo',
-    locale: 'en_US',
-    images: [
+    siteName: 'Mirellé Inspo',
+    type: 'website',
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Nail Salon & Artist Collaboration Opportunities",
+  "description": "Professional partnership opportunities for nail salons, artists, brands, and content creators",
+  "url": "https://mirelleinspo.com/work-with-us",
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        url: 'https://mirelleinspo.com/og-work-with-us-partnerships.png',
-        width: 1200,
-        height: 630,
-        alt: 'Partner with Mirellè Inspo - Reach 50K+ engaged nail enthusiasts and 2.5M Pinterest monthly views',
+        "@type": "Question",
+        "name": "How do I get my nail salon featured on Mirellé?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Contact us at contact@mirelleinspo.com with your salon information, services offered, and high-quality images. We review all submissions and feature salons that align with our editorial standards and audience interests."
+        }
       },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Partner With Us - 50K+ Engaged | 2.5M Pinterest Views',
-    description: 'Reach nail-obsessed audience. Sponsored content, product features, authentic engagement. Let\'s grow →',
-    images: ['https://mirelleinspo.com/twitter-partnerships.png'],
-    creator: '@mirelleinspo',
-    site: '@mirelleinspo',
-  },
-  other: {
-    'pin:description': 'Partner with Mirellè Inspo! Reach 50K+ engaged users, 2.5M Pinterest views monthly. Brand collaborations, sponsored posts, authentic nail community. Let\'s grow together!',
-    'pinterest-rich-pin': 'true',
-  },
+      {
+        "@type": "Question",
+        "name": "What are the requirements for nail artist collaboration?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nail artists can submit original work for blog features, get listed on our creators page, or have their designs featured on our Pinterest (1M weekly views). Quality photography and original designs are essential. No minimum follower count required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can beauty brands run campaigns on Mirellé?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Brands can run sponsored campaigns on our Pinterest account (1M weekly views) and website (50K monthly visitors). We offer product features in our shop section, sponsored blog content, and social media partnerships."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a cost to get featured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Organic features based on editorial merit are free. Sponsored placements, guaranteed features, and branded campaigns are paid opportunities. Contact us for specific pricing and partnership packages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the collaboration process take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Review time is typically 5-7 business days. Once approved, features are scheduled based on our editorial calendar. Urgent requests and paid partnerships can be expedited."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What content formats do you accept for guest posting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept tutorial articles, trend analyses, salon business guides, product reviews, and nail art showcases. Content must be original, well-written, and include high-quality images. Word count minimum is 800 words."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I measure the results of a partnership?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide analytics for all partnerships including page views, Pinterest impressions, click-through rates, and engagement metrics. Branded partnerships receive detailed monthly reports."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I retain rights to my submitted content?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Creators retain full rights to their work. We request non-exclusive publishing rights for submitted content. You may republish your work elsewhere while maintaining proper attribution."
+        }
+      }
+    ]
+  }
 };
 
 export default function WorkWithUsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-blush-50">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blush-400 to-blush-300 text-white py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-            Let's Create Something Beautiful Together
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8">
-            Partner with Mirellé Inspo to reach our passionate nail art community
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@mirelleinspo.com&su=General%20Inquiry%20from%20Website"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-blush-400 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg cursor-pointer"
-            >
-              📧 General Inquiries
-            </a>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelle@gmail.com&su=Brand%20Partnership%20Inquiry"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-text-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg cursor-pointer"
-            >
-              🤝 Brand Partnerships
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-blush-400 mb-2">50K+</div>
-              <div className="text-gray-600">Page Views</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blush-400 mb-2">100K+</div>
-              <div className="text-gray-600">Audience</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blush-400 mb-2">95%</div>
-              <div className="text-gray-600">Engagement Rate</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-blush-400 mb-2">25+</div>
-              <div className="text-gray-600">Collaborators</div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      <div className="min-h-screen bg-background">
+        {/* Hero Section */}
+        <section className="py-20 bg-white border-b border-foreground/10">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h1 className="font-heading text-5xl md:text-6xl text-foreground mb-6">
+              Collaboration Opportunities for Nail Salons, Artists, and Brands
+            </h1>
+            <p className="font-body text-xl text-foreground/70 leading-relaxed mb-8">
+              Partner with Mirellé to reach a dedicated audience of nail enthusiasts. Our platform serves 50,000 monthly website visitors and generates 1 million weekly Pinterest views, connecting professional nail salons, independent artists, beauty brands, and content creators with an engaged community.
+            </p>
+            <div className="flex flex-wrap gap-4 font-ui text-sm text-foreground/60">
+              <span>1M Weekly Pinterest Views</span>
+              <span className="text-foreground/20">•</span>
+              <span>50K Monthly Website Visitors</span>
+              <span className="text-foreground/20">•</span>
+              <span>Professional Editorial Platform</span>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Collaboration Opportunities */}
-      <section className="py-16 bg-blush-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            How We Can Collaborate
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Salon Owners Section */}
+        <section className="py-20 bg-background">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h2 className="font-heading text-4xl text-foreground mb-12">
+              For Nail Salon Owners
+            </h2>
             
-            {/* Brand Collaborations */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Brand Collaborations</h3>
-              <p className="text-gray-600 mb-4">
-                Long-term partnerships to showcase your brand authentically to our engaged audience through multiple touchpoints.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Multi-channel promotion</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Dedicated brand spotlight</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Authentic storytelling</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Product Features */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">💅</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Product Features</h3>
-              <p className="text-gray-600 mb-4">
-                Showcase your products in our curated shop section with affiliate links and honest reviews.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Shop section placement</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Affiliate partnerships</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Honest product reviews</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Sponsored Content */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">✍️</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Sponsored Blog Posts</h3>
-              <p className="text-gray-600 mb-4">
-                High-quality, SEO-optimized blog content featuring your products naturally within trending nail art guides.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>SEO-optimized content</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Product recommendations</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Evergreen content value</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Design Features */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">🎨</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Design Features</h3>
-              <p className="text-gray-600 mb-4">
-                Dedicated pages showcasing your nail art designs and collections to inspire our community.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Exclusive design galleries</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Collection spotlights</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Artist collaborations</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Pinterest Promotion */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">📌</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Pinterest Promotion</h3>
-              <p className="text-gray-600 mb-4">
-                Amplify your reach through our highly engaged Pinterest audience with custom pins and boards.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Custom pin designs</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Branded board curation</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Link back to your site</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Guest Posting */}
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl mb-4">📝</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Guest Posting</h3>
-              <p className="text-gray-600 mb-4">
-                Share your expertise with our audience through high-quality guest posts with proper attribution.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Expert contributions</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Author bio & backlinks</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blush-400 mr-2">✓</span>
-                  <span>Industry thought leadership</span>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Why Partner With Us */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            Why Partner With Mirellé Inspo?
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-blush-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Targeted Audience</h3>
-                <p className="text-gray-600">
-                  Reach nail art enthusiasts, beauty lovers, and trend-conscious consumers actively seeking product recommendations.
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Salon Directory Listing
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Get your nail salon featured in our curated directory. Showcase your services, specialties, location, and contact information to potential clients actively searching for professional nail care.
                 </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Dedicated salon profile page</li>
+                  <li>• High-quality image gallery</li>
+                  <li>• Service menu and pricing visibility</li>
+                  <li>• Direct booking link integration</li>
+                </ul>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-blush-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">✨</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Authentic Content</h3>
-                <p className="text-gray-600">
-                  We prioritize genuine recommendations and honest reviews that resonate with our community's trust.
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Pinterest Feature Opportunities
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Amplify your salon's visibility with features on our Pinterest account reaching 1 million weekly views. Showcase your best work to a highly engaged audience of nail art enthusiasts and potential clients.
                 </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Featured pins with salon attribution</li>
+                  <li>• Direct traffic to your salon website</li>
+                  <li>• Increased brand awareness</li>
+                  <li>• Access to trending nail design audiences</li>
+                </ul>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-blush-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">📈</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Growing Platform</h3>
-                <p className="text-gray-600">
-                  Join us as we expand across multiple channels including web, Pinterest, Instagram, and beyond.
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Blog Feature Articles
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Position your salon as an industry authority through editorial blog features. Share your expertise, signature techniques, and business insights with our audience of 50,000 monthly readers.
                 </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• In-depth salon spotlight articles</li>
+                  <li>• Behind-the-scenes content</li>
+                  <li>• Owner interviews and success stories</li>
+                  <li>• SEO benefits and backlinks</li>
+                </ul>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-blush-100 rounded-full flex items-center justify-center">
-                <span className="text-2xl">💎</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Premium Quality</h3>
-                <p className="text-gray-600">
-                  Professional photography, well-researched content, and strategic promotion for maximum impact.
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Cross-Promotion Partnerships
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Collaborate on seasonal campaigns, trend launches, and promotional content. Leverage our platform's reach to attract new clients and establish your salon as a trendsetter in nail design.
                 </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Seasonal trend collaborations</li>
+                  <li>• Exclusive service launch features</li>
+                  <li>• Social media content partnerships</li>
+                  <li>• Event coverage and promotion</li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blush-400 to-blush-300 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-            Ready to Collaborate?
-          </h2>
-          <p className="text-xl mb-8 text-white/90">
-            Let's discuss how we can create amazing content together and grow your brand visibility.
-          </p>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-8">
-            <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
-            <div className="space-y-4">
-              <div>
-                <p className="text-sm text-white/80 mb-2">General Inquiries:</p>
-                <a 
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@mirelleinspo.com&su=General%20Inquiry%20from%20Website"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl font-semibold hover:underline inline-flex items-center gap-2 cursor-pointer"
-                >
-                  📧 contact@mirelleinspo.com
-                </a>
+        {/* Nail Artists Section */}
+        <section className="py-20 bg-white border-y border-foreground/10">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h2 className="font-heading text-4xl text-foreground mb-12">
+              For Nail Artists & Technicians
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-background p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Creator Portfolio Listings
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Independent nail artists can establish a professional presence on our dedicated creators page. Build your portfolio, connect with potential clients, and grow your personal brand within the nail art community.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Individual artist profile page</li>
+                  <li>• Portfolio gallery showcasing your work</li>
+                  <li>• Contact information and booking links</li>
+                  <li>• Specialties and technique highlights</li>
+                </ul>
               </div>
-              <div className="border-t border-white/20 pt-4">
-                <p className="text-sm text-white/80 mb-2">Brand Partnerships & Collaborations:</p>
-                <a 
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=team.mirelle@gmail.com&su=Brand%20Partnership%20Inquiry"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl font-semibold hover:underline inline-flex items-center gap-2 cursor-pointer"
-                >
-                  🤝 team.mirelle@gmail.com
-                </a>
+
+              <div className="bg-background p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Blog Content Submissions
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Submit original nail art designs, tutorials, and technique articles for publication on our blog. Share your expertise with thousands of engaged readers and establish yourself as a thought leader.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Tutorial and how-to articles</li>
+                  <li>• Design inspiration showcases</li>
+                  <li>• Technique breakdowns and tips</li>
+                  <li>• Author byline and bio inclusion</li>
+                </ul>
+              </div>
+
+              <div className="bg-background p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Pinterest Design Features
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Get your nail art designs featured on our high-traffic Pinterest account. Reach 1 million weekly views and gain exposure to an audience actively seeking nail inspiration and booking services.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Featured pins with creator credit</li>
+                  <li>• Traffic directed to your social profiles</li>
+                  <li>• Exposure to trend-seeking audiences</li>
+                  <li>• Potential viral reach for standout designs</li>
+                </ul>
+              </div>
+
+              <div className="bg-background p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Guest Artist Collaborations
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Participate in themed content series, seasonal collections, and trend forecasting articles. Collaborate with our editorial team to create valuable content that showcases your unique artistic perspective.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Seasonal trend collaborations</li>
+                  <li>• Expert roundup features</li>
+                  <li>• Technique demonstration content</li>
+                  <li>• Interview and spotlight opportunities</li>
+                </ul>
               </div>
             </div>
           </div>
+        </section>
 
-          <p className="text-sm text-white/80">
-            We typically respond within 24-48 hours during business days.
-          </p>
-        </div>
-      </section>
+        {/* Brands Section */}
+        <section className="py-20 bg-background">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h2 className="font-heading text-4xl text-foreground mb-12">
+              For Beauty & Nail Brands
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Shop Section Product Features
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Showcase your products in our curated shop section. Reach beauty consumers actively researching and purchasing nail care products, tools, and accessories.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Featured product listings with images</li>
+                  <li>• Detailed product descriptions and specs</li>
+                  <li>• Direct purchase links to your store</li>
+                  <li>• Category placement for discoverability</li>
+                </ul>
+              </div>
 
-      {/* Additional Links */}
-      <section className="py-12 bg-white border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-600 mb-4">
-            Want to learn more about us first?
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link 
-              href="/about"
-              className="text-blush-400 hover:text-blush-500 font-semibold underline"
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Sponsored Blog Content
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Create branded editorial content that educates and engages our audience. Sponsored articles receive prominent placement and drive traffic directly to your product pages or website.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Product review and tutorial content</li>
+                  <li>• Brand story features</li>
+                  <li>• Launch announcements and coverage</li>
+                  <li>• Clear sponsored disclosure standards</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Pinterest Campaign Management
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Run targeted brand campaigns on our Pinterest account reaching 1 million weekly engaged viewers. Drive awareness, consideration, and conversions through strategic pin placements and content.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Sponsored pin placements</li>
+                  <li>• Product-focused content creation</li>
+                  <li>• Campaign performance analytics</li>
+                  <li>• Multi-pin campaign packages available</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Brand Ambassador Programs
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Establish long-term partnerships with integrated brand presence across our platform. Benefit from consistent visibility, authentic product integration, and ongoing audience engagement.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Multi-channel brand integration</li>
+                  <li>• Regular product features and mentions</li>
+                  <li>• Exclusive partnership benefits</li>
+                  <li>• Performance tracking and reporting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Content Creators Section */}
+        <section className="py-20 bg-white border-y border-foreground/10">
+          <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h2 className="font-heading text-4xl text-foreground mb-12">
+              For Content Creators & Publishers
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-background p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Guest Posting Opportunities
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Writers and content creators can contribute high-quality articles to our blog. Build your portfolio, earn backlinks, and reach our engaged audience of nail care enthusiasts.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Editorial guidelines and submission process</li>
+                  <li>• Author byline and bio with social links</li>
+                  <li>• SEO-optimized content placement</li>
+                  <li>• Minimum 800 words, original content only</li>
+                </ul>
+              </div>
+
+              <div className="bg-background p-8 border border-foreground/10">
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Content Partnerships
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed mb-6">
+                  Informational websites and nail-focused publications can collaborate on content syndication, cross-promotion, and joint editorial projects to expand reach and authority.
+                </p>
+                <ul className="space-y-3 font-body text-base text-foreground/70">
+                  <li>• Content syndication agreements</li>
+                  <li>• Co-created editorial projects</li>
+                  <li>• Cross-promotional opportunities</li>
+                  <li>• Link exchange and SEO collaboration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Submission Requirements */}
+        <section className="py-20 bg-background">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h2 className="font-heading text-4xl text-foreground mb-12">
+              Submission Requirements & Guidelines
+            </h2>
+            
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Image Quality Standards
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  All submissions must include high-resolution images (minimum 1200px width). Photos should be well-lit, properly focused, and professionally composed. Images must be original work or used with proper licensing and attribution.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Content Originality
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  We only accept original, unpublished content. Submitted articles must not have been previously published elsewhere. Creators retain full rights to their work but grant non-exclusive publishing rights to Mirellé.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Editorial Review Process
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  All submissions undergo editorial review for quality, relevance, and alignment with our audience. Review typically takes 5-7 business days. Approved content is scheduled according to our editorial calendar. We reserve the right to edit submissions for clarity, length, and style consistency.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-heading text-2xl text-foreground mb-4">
+                  Partnership Pricing
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  Organic features based on editorial merit are provided at no cost. Sponsored placements, guaranteed features, and branded campaigns are paid opportunities. Contact us for detailed pricing information and partnership packages tailored to your specific needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-white border-t border-foreground/10">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+            <h2 className="font-heading text-4xl text-foreground mb-12">
+              Your Questions Answered
+            </h2>
+            
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  How do I get my nail salon featured on Mirellé?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  Contact us at contact@mirelleinspo.com with your salon information, services offered, and high-quality images. We review all submissions and feature salons that align with our editorial standards and audience interests.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  What are the requirements for nail artist collaboration?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  Nail artists can submit original work for blog features, get listed on our creators page, or have their designs featured on our Pinterest (1M weekly views). Quality photography and original designs are essential. No minimum follower count required.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  Can beauty brands run campaigns on Mirellé?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  Yes. Brands can run sponsored campaigns on our Pinterest account (1M weekly views) and website (50K monthly visitors). We offer product features in our shop section, sponsored blog content, and social media partnerships.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  Is there a cost to get featured?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  Organic features based on editorial merit are free. Sponsored placements, guaranteed features, and branded campaigns are paid opportunities. Contact us for specific pricing and partnership packages.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  How long does the collaboration process take?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  Review time is typically 5-7 business days. Once approved, features are scheduled based on our editorial calendar. Urgent requests and paid partnerships can be expedited.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  What content formats do you accept for guest posting?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  We accept tutorial articles, trend analyses, salon business guides, product reviews, and nail art showcases. Content must be original, well-written, and include high-quality images. Word count minimum is 800 words.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  How can I measure the results of a partnership?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  We provide analytics for all partnerships including page views, Pinterest impressions, click-through rates, and engagement metrics. Branded partnerships receive detailed monthly reports.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-ui text-lg text-foreground mb-3 uppercase tracking-wide">
+                  Do I retain rights to my submitted content?
+                </h3>
+                <p className="font-body text-base text-foreground/70 leading-relaxed">
+                  Yes. Creators retain full rights to their work. We request non-exclusive publishing rights for submitted content. You may republish your work elsewhere while maintaining proper attribution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-20 bg-foreground">
+          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+            <h2 className="font-heading text-4xl text-white mb-6">
+              Start Your Partnership Today
+            </h2>
+            <p className="font-body text-lg text-white/80 leading-relaxed mb-8 max-w-2xl mx-auto">
+              Ready to collaborate? Send us your proposal, portfolio, or partnership inquiry. We review all submissions and respond within 5-7 business days.
+            </p>
+            <a 
+              href="mailto:contact@mirelleinspo.com"
+              className="inline-block bg-white text-foreground px-8 py-4 font-ui text-sm uppercase tracking-wider hover:bg-white/90 transition-colors"
             >
-              About Mirellé Inspo
-            </Link>
-            <span className="text-gray-400">•</span>
-            <Link 
-              href="/blog"
-              className="text-blush-400 hover:text-blush-500 font-semibold underline"
-            >
-              Read Our Blog
-            </Link>
-            <span className="text-gray-400">•</span>
-            <Link 
-              href="/pinterest"
-              className="text-blush-400 hover:text-blush-500 font-semibold underline"
-            >
-              View Pinterest Showcase
-            </Link>
+              contact@mirelleinspo.com
+            </a>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 }

@@ -54,7 +54,7 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
   return (
     <section className="bg-background py-8 md:py-12">
       {/* Section Title with Lines */}
-      <div className="max-w-7xl mx-auto px-6 mb-8">
+      <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mb-8">
         <div className="w-full h-[1px] bg-border-color mb-4" />
         <h2 className="font-heading text-2xl md:text-3xl text-foreground text-center">
           NAIL ART INSPIRATION
@@ -63,12 +63,12 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
       </div>
       
       {/* Pagination - Desktop: Top Right, Mobile: Bottom */}
-      <div className="hidden md:block absolute top-0 right-6 font-product text-sm text-foreground z-10">
+      <div className="hidden md:block absolute top-0 right-6 font-ui text-sm text-foreground z-10">
         &lt;{currentIndex + 1}/{categories.length}&gt;
       </div>
       
       {/* Carousel Container */}
-      <div className="relative max-w-7xl mx-auto px-6 mt-8">
+      <div className="relative max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mt-8">
         <div 
           className="overflow-hidden cursor-grab active:cursor-grabbing"
           onMouseDown={handleDragStart}
@@ -99,12 +99,12 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
                     />
                   </div>
                   
-                  {/* Category Label - Boriboon */}
+                  {/* Category Label */}
                   <p className="font-ui uppercase text-xs text-text-secondary mb-2 tracking-wider">
                     {category.category}
                   </p>
                   
-                  {/* Title - Jeremiah */}
+                  {/* Title */}
                   <h3 className="font-heading text-lg md:text-xl text-foreground group-hover:opacity-70 transition-opacity">
                     {category.displayName}
                   </h3>

@@ -15,14 +15,14 @@ export default function InspoMasonryGrid({ images }: InspoMasonryGridProps) {
   return (
     <section className="bg-background py-12 md:py-16">
       {/* Section Title */}
-      <div className="max-w-7xl mx-auto px-6 mb-8">
+      <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mb-8">
         <h2 className="font-heading text-3xl md:text-4xl text-foreground text-center">
           NAIL ART INSPIRATION
         </h2>
       </div>
       
       {/* Desktop: 5 Columns Grid */}
-      <div className="hidden md:grid grid-cols-5 gap-[6px] max-w-7xl mx-auto px-6 mb-8">
+      <div className="hidden md:grid grid-cols-5 gap-[6px] max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mb-8">
         {desktopImages.map((image, idx) => (
           <div 
             key={image.id}
@@ -40,7 +40,7 @@ export default function InspoMasonryGrid({ images }: InspoMasonryGridProps) {
       </div>
       
       {/* Mobile: 3 Columns Grid */}
-      <div className="md:hidden grid grid-cols-3 gap-[6px] px-6 mb-8">
+      <div className="md:hidden grid grid-cols-3 gap-[6px] px-3 md:px-6 lg:px-12 mb-8">
         {mobileImages.map((image) => (
           <div 
             key={image.id}
@@ -61,7 +61,7 @@ export default function InspoMasonryGrid({ images }: InspoMasonryGridProps) {
       <div className="text-center">
         <Link 
           href="/inspo"
-          className="inline-block font-product text-sm text-foreground hover:opacity-70 transition-opacity uppercase tracking-wider"
+          className="inline-block font-ui text-sm text-foreground hover:opacity-70 transition-opacity uppercase tracking-wider"
         >
           Explore Full Gallery →
         </Link>

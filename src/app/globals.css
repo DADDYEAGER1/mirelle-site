@@ -39,7 +39,7 @@
   --font-ui: 'General Sans', system-ui, sans-serif;
   --font-brand: 'Larken', 'Georgia', serif;
   
-  /* Colors - New System */
+  /* Colors - Light Theme Only */
   --background: #ffffff;
   --foreground: #171717;
   
@@ -47,13 +47,6 @@
   --accent: #E30088;
   --accent-light: #FF1AA3;
   --accent-dark: #B0006B;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 /* ============================================
@@ -207,14 +200,4 @@ strong, b,
 ::-moz-selection {
   background-color: var(--accent);
   color: white;
-}
-
-/* ============================================
-   DARK MODE SUPPORT
-   ============================================ */
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

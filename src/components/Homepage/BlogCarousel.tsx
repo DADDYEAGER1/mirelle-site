@@ -117,7 +117,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
   };
 
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section className="bg-background pt-16 md:pt-24 pb-8">
       {/* Section Title with Full-Width Lines */}
       <div className="mb-8 md:mb-12">
         <div className="w-full h-[1px] bg-foreground" />

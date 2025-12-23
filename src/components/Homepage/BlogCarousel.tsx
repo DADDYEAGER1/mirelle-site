@@ -12,8 +12,9 @@ interface BlogCarouselProps {
 
 export default function BlogCarousel({ posts }: BlogCarouselProps) {
   const [currentPage, setCurrentPage] = useState(0);
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const dragStartX = useRef(0);
+  const dragOffset = useRef(0);
   const containerRef = useRef<HTMLDivElement>(null);
   
   const featuredPosts = posts.slice(0, 12);
@@ -41,68 +42,89 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
     setCurrentPage(prev => prev > 0 ? prev - 1 : prev);
   };
 
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
+  // Touch/Drag handlers for smooth swipe
+  const handleDragStart = (clientX: number) => {
+    setIsDragging(true);
+    dragStartX.current = clientX;
+    dragOffset.current = 0;
   };
 
-  const handleTouchMove = (e: React.TouchEvent) => {
-    touchEndX.current = e.touches[0].clientX;
+  const handleDragMove = (clientX: number) => {
+    if (!isDragging) return;
+    dragOffset.current = clientX - dragStartX.current;
   };
 
-  const handleTouchEnd = () => {
-    const diff = touchStartX.current - touchEndX.current;
-    if (Math.abs(diff) > 75) {
-      if (diff > 0) {
+  const handleDragEnd = () => {
+    if (!isDragging) return;
+    setIsDragging(false);
+    
+    const threshold = 75;
+    if (Math.abs(dragOffset.current) > threshold) {
+      if (dragOffset.current < 0) {
         handleNext();
       } else {
         handlePrev();
       }
     }
+    dragOffset.current = 0;
   };
 
+  // Mouse events
   const handleMouseDown = (e: React.MouseEvent) => {
     e.preventDefault();
-    const startX = e.clientX;
-    let hasMoved = false;
-    
-    const handleMouseMove = (moveE: MouseEvent) => {
-      const diff = startX - moveE.clientX;
-      if (Math.abs(diff) > 75) {
-        hasMoved = true;
-        if (diff > 0) {
-          handleNext();
-        } else {
-          handlePrev();
-        }
-        document.removeEventListener('mousemove', handleMouseMove);
-      }
-    };
-    
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseup', () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-    }, { once: true });
+    handleDragStart(e.clientX);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    handleDragMove(e.clientX);
+  };
+
+  const handleMouseUp = () => {
+    handleDragEnd();
+  };
+
+  const handleMouseLeave = () => {
+    if (isDragging) {
+      handleDragEnd();
+    }
+  };
+
+  // Touch events
+  const handleTouchStart = (e: React.TouchEvent) => {
+    handleDragStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    handleDragMove(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    handleDragEnd();
   };
 
   // Calculate transform for desktop (3 cards + peek)
   const getDesktopTransform = () => {
-    return `translateX(-${currentPage * 100}%)`;
+    const baseTransform = currentPage * 100;
+    const dragPercent = isDragging ? (dragOffset.current / window.innerWidth) * 100 : 0;
+    return `translateX(-${baseTransform - dragPercent}%)`;
   };
 
   // Calculate transform for mobile (1 card + peek)
   const getMobileTransform = () => {
-    return `translateX(-${currentPage * 90}%)`;
+    const baseTransform = currentPage * 90;
+    const dragPercent = isDragging ? (dragOffset.current / window.innerWidth) * 90 : 0;
+    return `translateX(-${baseTransform - dragPercent}%)`;
   };
 
   return (
     <section className="bg-background py-12 md:py-16">
-      {/* Section Title with Full-Width Lines */}
-      <div className="px-6 md:px-8 lg:px-16 mb-8">
-        <div className="w-full h-[1px] bg-border-color mb-4" />
-        <h2 className="font-product text-xl md:text-2xl text-foreground text-center tracking-wider">
-          BLOG SECTION
-        </h2>
-        <div className="w-full h-[1px] bg-border-color mt-4" />
+      {/* Section Title with Border */}
+      <div className="px-6 md:px-8 lg:px-16 mb-8 md:mb-12 flex justify-center">
+        <div className="border border-foreground px-6 py-2">
+          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase">
+            BLOG SECTION
+          </h2>
+        </div>
       </div>
       
       {/* Desktop Pagination with Arrows */}
@@ -117,7 +139,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
             <polyline points="15 18 9 12 15 6" />
           </svg>
         </button>
-        <span className="font-product text-base text-foreground tracking-wider">
+        <span className="font-ui text-sm text-foreground tracking-wider">
           {currentPage + 1} / {totalPagesDesktop}
         </span>
         <button 
@@ -138,56 +160,61 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
           ref={containerRef}
           className="overflow-hidden cursor-grab active:cursor-grabbing select-none"
           onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseLeave}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
           {/* Desktop: 3 cards + 4th peeking */}
           <div 
-            className="hidden md:flex transition-transform duration-500 ease-out"
+            className="hidden md:flex transition-transform ease-out"
             style={{ 
               transform: getDesktopTransform(),
+              transitionDuration: isDragging ? '0ms' : '500ms',
             }}
           >
             {Array.from({ length: totalPagesDesktop }).map((_, pageIndex) => (
               <div 
                 key={pageIndex}
-                className="flex-shrink-0 w-full flex gap-4"
+                className="flex-shrink-0 w-full flex gap-6"
               >
                 {featuredPosts.slice(pageIndex * cardsPerPageDesktop, (pageIndex + 1) * cardsPerPageDesktop).map((post) => (
                   <div 
                     key={post.slug}
-                    className="flex-shrink-0 w-[calc(33.33%-0.67rem)]"
+                    className="flex-shrink-0 w-[calc(33.33%-1rem)]"
                   >
                     <Link href={`/blog/${post.slug}`} className="block group">
                       {/* Image - 4:3 Ratio */}
-                      <div className="relative w-full aspect-[4/3] mb-4">
+                      <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
                         {post.image && (
                           <Image
                             src={post.image}
                             alt={post.imageAlt || post.title}
                             fill
-                            className="object-cover"
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
                             sizes="33vw"
+                            draggable={false}
                           />
                         )}
                       </div>
                       
                       {/* Category */}
                       {post.category && (
-                        <p className="font-product uppercase text-xs text-foreground/70 mb-2 tracking-wider">
+                        <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
                           {post.category}
                         </p>
                       )}
                       
                       {/* Title */}
-                      <h3 className="font-heading text-lg text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
+                      <h3 className="font-heading text-xl text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
                         {post.title}
                       </h3>
                       
                       {/* Author */}
                       {post.author && (
-                        <p className="font-product text-xs text-foreground/70 uppercase tracking-wider">
+                        <p className="font-ui text-xs text-foreground/70 uppercase tracking-wider">
                           BY {post.author.toUpperCase()}
                         </p>
                       )}
@@ -200,9 +227,10 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
 
           {/* Mobile: 1 card + 2nd peeking */}
           <div 
-            className="md:hidden flex transition-transform duration-500 ease-out"
+            className="md:hidden flex transition-transform ease-out"
             style={{ 
               transform: getMobileTransform(),
+              transitionDuration: isDragging ? '0ms' : '500ms',
             }}
           >
             {featuredPosts.map((post) => (
@@ -212,33 +240,34 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
               >
                 <Link href={`/blog/${post.slug}`} className="block group">
                   {/* Image - 4:3 Ratio */}
-                  <div className="relative w-full aspect-[4/3] mb-4">
+                  <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
                     {post.image && (
                       <Image
                         src={post.image}
                         alt={post.imageAlt || post.title}
                         fill
-                        className="object-cover"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                         sizes="90vw"
+                        draggable={false}
                       />
                     )}
                   </div>
                   
                   {/* Category */}
                   {post.category && (
-                    <p className="font-product uppercase text-xs text-foreground/70 mb-2 tracking-wider">
+                    <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
                       {post.category}
                     </p>
                   )}
                   
                   {/* Title */}
-                  <h3 className="font-heading text-base text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
+                  <h3 className="font-heading text-lg text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
                     {post.title}
                   </h3>
                   
                   {/* Author */}
                   {post.author && (
-                    <p className="font-product text-xs text-foreground/70 uppercase tracking-wider">
+                    <p className="font-ui text-xs text-foreground/70 uppercase tracking-wider">
                       BY {post.author.toUpperCase()}
                     </p>
                   )}

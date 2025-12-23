@@ -118,12 +118,14 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
 
   return (
     <section className="bg-background py-12 md:py-16">
-      {/* Section Title with Border */}
-      <div className="px-6 md:px-8 lg:px-16 mb-8 md:mb-12 flex justify-center">
-        <div className="border border-foreground px-6 py-2">
-          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase">
+      {/* Section Title with Lines */}
+      <div className="px-6 md:px-8 lg:px-16 mb-8 md:mb-12">
+        <div className="flex items-center gap-4">
+          <div className="flex-1 h-[1px] bg-foreground" />
+          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase whitespace-nowrap">
             BLOG SECTION
           </h2>
+          <div className="flex-1 h-[1px] bg-foreground" />
         </div>
       </div>
       
@@ -158,7 +160,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
       <div className="relative px-6 md:px-8 lg:px-16">
         <div 
           ref={containerRef}
-          className="overflow-hidden cursor-grab active:cursor-grabbing select-none"
+          className="overflow-visible cursor-grab active:cursor-grabbing select-none"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
@@ -168,61 +170,63 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
           onTouchEnd={handleTouchEnd}
         >
           {/* Desktop: 3 cards + 4th peeking */}
-          <div 
-            className="hidden md:flex transition-transform ease-out"
-            style={{ 
-              transform: getDesktopTransform(),
-              transitionDuration: isDragging ? '0ms' : '500ms',
-            }}
-          >
-            {Array.from({ length: totalPagesDesktop }).map((_, pageIndex) => (
-              <div 
-                key={pageIndex}
-                className="flex-shrink-0 w-full flex gap-6"
-              >
-                {featuredPosts.slice(pageIndex * cardsPerPageDesktop, (pageIndex + 1) * cardsPerPageDesktop).map((post) => (
-                  <div 
-                    key={post.slug}
-                    className="flex-shrink-0 w-[calc(33.33%-1rem)]"
-                  >
-                    <Link href={`/blog/${post.slug}`} className="block group">
-                      {/* Image - 4:3 Ratio */}
-                      <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
-                        {post.image && (
-                          <Image
-                            src={post.image}
-                            alt={post.imageAlt || post.title}
-                            fill
-                            className="object-cover group-hover:scale-105 transition-transform duration-300"
-                            sizes="33vw"
-                            draggable={false}
-                          />
+          <div className="hidden md:block overflow-hidden">
+            <div 
+              className="flex transition-transform ease-out"
+              style={{ 
+                transform: getDesktopTransform(),
+                transitionDuration: isDragging ? '0ms' : '500ms',
+              }}
+            >
+              {Array.from({ length: totalPagesDesktop }).map((_, pageIndex) => (
+                <div 
+                  key={pageIndex}
+                  className="flex-shrink-0 w-full flex gap-6"
+                >
+                  {featuredPosts.slice(pageIndex * cardsPerPageDesktop, (pageIndex + 1) * cardsPerPageDesktop).map((post) => (
+                    <div 
+                      key={post.slug}
+                      className="flex-shrink-0 w-[calc(33.33%-1rem)]"
+                    >
+                      <Link href={`/blog/${post.slug}`} className="block group">
+                        {/* Image - 4:3 Ratio */}
+                        <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
+                          {post.image && (
+                            <Image
+                              src={post.image}
+                              alt={post.imageAlt || post.title}
+                              fill
+                              className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              sizes="33vw"
+                              draggable={false}
+                            />
+                          )}
+                        </div>
+                        
+                        {/* Category */}
+                        {post.category && (
+                          <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
+                            {post.category}
+                          </p>
                         )}
-                      </div>
-                      
-                      {/* Category */}
-                      {post.category && (
-                        <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
-                          {post.category}
-                        </p>
-                      )}
-                      
-                      {/* Title */}
-                      <h3 className="font-heading text-xl text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
-                        {post.title}
-                      </h3>
-                      
-                      {/* Author */}
-                      {post.author && (
-                        <p className="font-ui text-xs text-foreground/70 uppercase tracking-wider">
-                          BY {post.author.toUpperCase()}
-                        </p>
-                      )}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            ))}
+                        
+                        {/* Title */}
+                        <h3 className="font-heading text-xl text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
+                          {post.title}
+                        </h3>
+                        
+                        {/* Author */}
+                        {post.author && (
+                          <p className="font-ui text-xs text-foreground/70 uppercase tracking-wider">
+                            BY {post.author.toUpperCase()}
+                          </p>
+                        )}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Mobile: 1 card + 2nd peeking */}

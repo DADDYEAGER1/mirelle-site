@@ -52,7 +52,7 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
   };
 
   return (
-    <section className="bg-background py-8 md:py-12">
+    <section className="bg-background pt-16 md:pt-24 pb-8">
       {/* Section Title with Lines */}
       <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mb-8">
         <div className="w-full h-[1px] bg-border-color mb-4" />

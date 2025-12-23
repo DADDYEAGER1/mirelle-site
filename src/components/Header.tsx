@@ -99,7 +99,7 @@ export default function Header() {
                 ABOUT
               </Link>
               
-              {/* Blog Dropdown - No Arrow */}
+              {/* Blog Dropdown - Full Width Style */}
               <div className="relative group">
                 <Link 
                   href="/blog"
@@ -108,25 +108,27 @@ export default function Header() {
                 >
                   BLOG
                 </Link>
-                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                  <div className="bg-[#252220] border border-[#f9fafb]/20 shadow-xl min-w-[240px]">
-                    <div className="py-4 px-6">
-                      {BLOG_LINKS.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          style={{ fontFamily: 'General Sans, sans-serif' }}
-                          className="block py-2.5 text-sm text-[#f9fafb] hover:opacity-70 transition-opacity"
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
+                      <div className="space-y-1">
+                        {BLOG_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Shop Dropdown - No Arrow */}
+              {/* Shop Dropdown - Full Width Style */}
               <div className="relative group">
                 <Link 
                   href="/shop"
@@ -135,25 +137,27 @@ export default function Header() {
                 >
                   SHOP
                 </Link>
-                <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                  <div className="bg-[#252220] border border-[#f9fafb]/20 shadow-xl min-w-[240px]">
-                    <div className="py-4 px-6">
-                      {SHOP_LINKS.map((link) => (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          style={{ fontFamily: 'General Sans, sans-serif' }}
-                          className="block py-2.5 text-sm text-[#f9fafb] hover:opacity-70 transition-opacity"
-                        >
-                          {link.label}
-                        </Link>
-                      ))}
+                <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
+                  <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
+                    <div className="max-w-7xl mx-auto px-16 py-12">
+                      <div className="space-y-1">
+                        {SHOP_LINKS.map((link) => (
+                          <Link
+                            key={link.href}
+                            href={link.href}
+                            style={{ fontFamily: 'General Sans, sans-serif' }}
+                            className="block py-3 text-lg text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+                          >
+                            {link.label}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Designs Dropdown - No Arrow */}
+              {/* Designs Dropdown - Full Width Style */}
               <div className="relative group">
                 <button 
                   style={{ fontFamily: 'General Sans, sans-serif' }}
@@ -181,7 +185,7 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Topics Dropdown - No Arrow */}
+              {/* Topics Dropdown - Full Width Style */}
               <div className="relative group">
                 <button 
                   style={{ fontFamily: 'General Sans, sans-serif' }}

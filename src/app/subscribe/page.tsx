@@ -42,15 +42,15 @@ export default function SubscribePage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="py-26 bg-foreground">
+      <section className="py-20 bg-background">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="font-ui text-white uppercase tracking-widest mb-6 text-sm">
+          <p className="font-ui text-foreground uppercase tracking-widest mb-6 text-sm">
             Join Our Community
           </p>
-          <h1 className="font-heading text-5xl md:text-6xl text-white mb-8">
+          <h1 className="font-heading text-5xl md:text-6xl text-foreground mb-8">
             Never Miss a Trend
           </h1>
-          <p className="font-body text-xl text-white/80 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-xl text-foreground leading-relaxed max-w-2xl mx-auto">
             Subscribe to receive exclusive nail art inspiration, seasonal trends, expert tutorials, 
             and curated product picks delivered straight to your inbox.
           </p>
@@ -58,7 +58,7 @@ export default function SubscribePage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background border-t border-foreground/10">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
@@ -77,7 +77,7 @@ export default function SubscribePage() {
               <h3 className="font-heading text-2xl text-foreground mb-4">
                 Weekly Inspiration
               </h3>
-              <p className="font-body text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground leading-relaxed">
                 Fresh nail art ideas, seasonal trends, and Pinterest-worthy designs delivered every week.
               </p>
             </div>
@@ -92,7 +92,7 @@ export default function SubscribePage() {
               <h3 className="font-heading text-2xl text-foreground mb-4">
                 Expert Tutorials
               </h3>
-              <p className="font-body text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground leading-relaxed">
                 Step-by-step guides from licensed nail techs to master techniques at home.
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function SubscribePage() {
               <h3 className="font-heading text-2xl text-foreground mb-4">
                 Exclusive Deals
               </h3>
-              <p className="font-body text-base text-foreground/70 leading-relaxed">
+              <p className="font-body text-base text-foreground leading-relaxed">
                 First access to product recommendations, special offers, and curated favorites.
               </p>
             </div>
@@ -116,13 +116,13 @@ export default function SubscribePage() {
       </section>
 
       {/* Newsletter Form Section */}
-      <section className="py-26 bg-background">
+      <section className="py-20 bg-background border-t border-foreground/10">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-12">
             <h2 className="font-heading text-4xl md:text-5xl text-foreground mb-6">
               Join the Mirellé Community
             </h2>
-            <p className="font-body text-lg text-foreground/70 leading-relaxed">
+            <p className="font-body text-lg text-foreground leading-relaxed">
               Subscribe now and get your first inspiration guide instantly
             </p>
           </div>
@@ -132,19 +132,19 @@ export default function SubscribePage() {
       </section>
 
       {/* Trust Section */}
-      <section className="py-20 bg-white border-t border-foreground/10">
+      <section className="py-20 bg-background border-t border-foreground/10">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <div className="space-y-6">
-            <p className="font-body text-base text-foreground/70 leading-relaxed">
+            <p className="font-body text-base text-foreground leading-relaxed">
               No spam, ever. We respect your inbox and only send content you'll love.
             </p>
-            <p className="font-body text-base text-foreground/70 leading-relaxed">
+            <p className="font-body text-base text-foreground leading-relaxed">
               Unsubscribe anytime with one click. Your privacy is important to us.
             </p>
             <div className="pt-8 border-t border-foreground/10">
               <Link 
                 href="/privacy-policy"
-                className="font-ui text-sm text-foreground/70 hover:text-foreground uppercase tracking-wide underline transition-colors duration-300"
+                className="font-ui text-sm text-foreground uppercase tracking-wide underline hover:opacity-70 transition-opacity"
               >
                 Read Our Privacy Policy
               </Link>

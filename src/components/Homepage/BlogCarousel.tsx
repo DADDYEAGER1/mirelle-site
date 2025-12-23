@@ -118,15 +118,15 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
 
   return (
     <section className="bg-background py-12 md:py-16">
-      {/* Section Title with Lines */}
-      <div className="px-6 md:px-8 lg:px-16 mb-8 md:mb-12">
-        <div className="flex items-center gap-4">
-          <div className="flex-1 h-[1px] bg-foreground" />
-          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase whitespace-nowrap">
+      {/* Section Title with Full-Width Lines */}
+      <div className="mb-8 md:mb-12">
+        <div className="w-full h-[1px] bg-foreground" />
+        <div className="px-6 md:px-8 lg:px-16 py-6">
+          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase">
             BLOG SECTION
           </h2>
-          <div className="flex-1 h-[1px] bg-foreground" />
         </div>
+        <div className="w-full h-[1px] bg-foreground" />
       </div>
       
       {/* Desktop Pagination with Arrows */}

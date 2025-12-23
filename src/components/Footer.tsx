@@ -16,13 +16,13 @@ function AccordionSection({
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="border-b border-gray-700 lg:border-none">
+    <div className="border-b border-[#f9fafb]/20 lg:border-none">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full py-4 flex items-center justify-between text-left lg:cursor-default"
         aria-expanded={isOpen}
       >
-        <h3 className="font-semibold text-base uppercase tracking-wider">
+        <h3 className="font-ui text-base uppercase tracking-wider text-[#f9fafb]">
           {title}
         </h3>
         <svg
@@ -51,12 +51,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-text-primary text-white">
+    <footer className="bg-[#252220] text-[#f9fafb]">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         
        {/* Logo & Description - Always Visible */}
-        <div className="mb-8 pb-6 border-b border-gray-700">
+        <div className="mb-8 pb-6 border-b border-[#f9fafb]/20">
           <Link href="/" className="flex items-center space-x-2 mb-4">
             <Image 
               src="/logo.png" 
@@ -65,18 +65,18 @@ export default function Footer() {
               height={32}
               className="lg:w-10 lg:h-10"
             />
-            <span className="font-serif text-xl lg:text-2xl font-bold">Mirellé Inspo</span>
+            <span className="font-brand text-xl lg:text-2xl" data-logo="true">Mirellé Inspo</span>
           </Link>
 
-          <p className="text-gray-400 text-sm lg:text-base max-w-md leading-relaxed">
+          <p className="font-body text-[#f9fafb]/70 text-sm lg:text-base max-w-md leading-relaxed">
             Your trusted source for curated nail trends, honest product reviews, and artist discoveries. 
             We find the best so you don't have to scroll for hours.
           </p>
         </div>
 
         {/* Social Icons - Always Visible on Mobile */}
-        <div className="mb-6 pb-6 border-b border-gray-700">
-          <h3 className="font-semibold text-sm uppercase tracking-wider mb-3">
+        <div className="mb-6 pb-6 border-b border-[#f9fafb]/20">
+          <h3 className="font-ui text-sm uppercase tracking-wider mb-3 text-[#f9fafb]">
             Follow Us
           </h3>
           <div className="flex space-x-5">
@@ -84,7 +84,7 @@ export default function Footer() {
               href="https://in.pinterest.com/mirelle_inspo/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors"
               aria-label="Pinterest"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ export default function Footer() {
               href="https://instagram.com/mirelle_inspo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors"
               aria-label="Instagram"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -106,7 +106,7 @@ export default function Footer() {
               href="https://x.com/mirelleinspo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors"
               aria-label="X (Twitter)"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -123,53 +123,53 @@ export default function Footer() {
           <AccordionSection title="Explore">
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/blog" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/shop" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/shop" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Shop
                 </Link>
               </li>
               <li>
-                <Link href="/topics" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/topics" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Topics
                 </Link>
               </li>
               <li>
-                <Link href="/inspo" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/inspo" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Inspo Gallery
                 </Link>
               </li>
             </ul>
           </AccordionSection>
 
-          {/* Inspo Section (NEW) */}
+          {/* Inspo Section */}
           <AccordionSection title="Inspo Gallery">
             <ul className="space-y-3">
               <li>
-                <Link href="/inspo/chrome-metallic-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/inspo/chrome-metallic-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Chrome Metallic
                 </Link>
               </li>
               <li>
-                <Link href="/inspo/burgundy-wine-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/inspo/burgundy-wine-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Burgundy Wine
                 </Link>
               </li>
               <li>
-                <Link href="/inspo/chocolate-brown-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/inspo/chocolate-brown-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Chocolate Brown
                 </Link>
               </li>
               <li>
-                <Link href="/inspo/velvet-cat-eye-winter-nails" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/inspo/velvet-cat-eye-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Velvet Cat Eye
                 </Link>
               </li>
@@ -180,22 +180,22 @@ export default function Footer() {
           <AccordionSection title="Popular Topics">
             <ul className="space-y-3">
               <li>
-                <Link href="/topics/seasonal-trends" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/topics/seasonal-trends" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Seasonal Trends
                 </Link>
               </li>
               <li>
-                <Link href="/topics/nail-care-guide" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/topics/nail-care-guide" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Nail Care Guide
                 </Link>
               </li>
               <li>
-                <Link href="/topics/at-home-hacks" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/topics/at-home-hacks" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   At-Home Hacks
                 </Link>
               </li>
               <li>
-                <Link href="/topics/modern-women" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/topics/modern-women" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Modern Women
                 </Link>
               </li>
@@ -206,53 +206,53 @@ export default function Footer() {
           <AccordionSection title="Company">
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/about" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/contact" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/work-with-us" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/work-with-us" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Work With Us
                 </Link>
               </li>
               <li>
-                <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/privacy-policy" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/terms" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Terms & Conditions
                 </Link>
               </li>
             </ul>
           </AccordionSection>
 
-          {/* Trending Topics Section (UPDATED) */}
+          {/* Trending Topics Section */}
           <AccordionSection title="Trending Topics">
             <ul className="space-y-3">
               <li>
-                <Link href="/blog/christmas-nail-designs-2025" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/blog/christmas-nail-designs-2025" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Christmas Nail Designs
                 </Link>
               </li>
               <li>
-                <Link href="/blog/short-christmas-nails-2025" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/blog/short-christmas-nails-2025" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Short Christmas Nails
                 </Link>
               </li>
               <li>
-                <Link href="/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Candy Cane Designs
                 </Link>
               </li>
               <li>
-                <Link href="/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art" className="text-gray-400 hover:text-white transition-colors text-sm block">
+                <Link href="/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Character Nail Art
                 </Link>
               </li>
@@ -262,13 +262,13 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright Bar */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-[#f9fafb]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="text-center lg:text-left">
-            <p className="text-gray-500 text-xs lg:text-sm">
+            <p className="font-body text-[#f9fafb]/50 text-xs lg:text-sm">
               © {currentYear} Mirellé Inspo. All rights reserved. | Curated Nail Trends & Product Reviews
             </p>
-            <p className="text-gray-600 text-xs mt-2">
+            <p className="font-body text-[#f9fafb]/40 text-xs mt-2">
               Made with 💅 for nail enthusiasts
             </p>
           </div>

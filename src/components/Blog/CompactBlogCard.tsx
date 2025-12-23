@@ -32,7 +32,7 @@ export default function CompactBlogCard({ post }: CompactBlogCardProps) {
         {/* Category - Boriboon Font */}
         <div 
           className="text-xs uppercase tracking-wider"
-          className="font-ui"
+          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
           {post.category || 'NAIL CARE'}
         </div>
@@ -40,7 +40,7 @@ export default function CompactBlogCard({ post }: CompactBlogCardProps) {
         {/* Title - Jeremiah Font */}
         <h3 
           className="text-base leading-tight line-clamp-2"
-          className="font-heading"
+          style={{ fontFamily: 'Larken, Georgia, serif' }}
         >
           {post.title}
         </h3>
@@ -48,7 +48,7 @@ export default function CompactBlogCard({ post }: CompactBlogCardProps) {
         {/* Author - Boriboon Font */}
         <div 
           className="text-xs uppercase tracking-wide text-gray-600"
-          className="font-ui"
+          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
           BY {post.author || 'MIRELLÈ INSPO TEAM'}
         </div>

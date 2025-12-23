@@ -25,7 +25,7 @@ export default function ShareButtons({ title, url }: ShareButtonsProps) {
     <div className="flex items-center gap-3">
       <span 
         className="text-sm uppercase tracking-wider"
-        className="font-ui"
+        style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
       >
         Share on →
       </span>

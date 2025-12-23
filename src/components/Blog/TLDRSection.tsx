@@ -39,14 +39,14 @@ export default function TLDRSection({
       <div className="flex items-center justify-between mb-5 pb-4 border-b border-gray-200">
         <h2 
           className="text-xl"
-          className="font-heading"
+          style={{ fontFamily: 'Larken, Georgia, serif' }}
         >
           <span className="text-xl mr-2">⚡</span>
           Wrap Up
         </h2>
         <span 
           className="text-xs text-gray-600 bg-white px-3 py-1 border border-gray-200"
-          className="font-ui"
+          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
           {readTime}
         </span>
@@ -56,7 +56,7 @@ export default function TLDRSection({
       <div className="mb-5">
         <h3 
           className="text-sm font-semibold mb-2"
-          className="font-ui"
+          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
           Quick Glance
         </h3>
@@ -84,7 +84,7 @@ export default function TLDRSection({
                 >
                   <span 
                     className="text-sm pr-3"
-                    className="font-ui"
+                    style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
                   >
                     {faq.question}
                   </span>
@@ -129,7 +129,7 @@ export default function TLDRSection({
         <div>
           <h3 
             className="text-sm font-semibold mb-2"
-            className="font-ui"
+            style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
           >
             Key Takeaways
           </h3>
@@ -138,7 +138,7 @@ export default function TLDRSection({
               <span 
                 key={index} 
                 className="bg-white border border-gray-200 text-gray-700 px-3 py-1.5 text-xs"
-                className="font-ui"
+                style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
               >
                 {takeaway}
               </span>

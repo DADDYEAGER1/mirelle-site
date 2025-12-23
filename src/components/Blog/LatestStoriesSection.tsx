@@ -12,7 +12,7 @@ export default function LatestStoriesSection({ posts }: LatestStoriesSectionProp
         {/* Section Heading */}
         <h2 
           className="text-3xl md:text-4xl text-center mb-12"
-          className="font-heading"
+          style={{ fontFamily: 'Larken, Georgia, serif' }}
         >
           — LATEST STORIES —
         </h2>

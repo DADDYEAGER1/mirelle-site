@@ -68,7 +68,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
       {images[currentIndex].caption && (
         <p 
           className="text-sm text-gray-600 mt-3 text-center"
-          className="font-ui"
+          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
           {images[currentIndex].caption}
         </p>

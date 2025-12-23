@@ -10,7 +10,7 @@ export default function NextPageButton({ href }: NextPageButtonProps) {
       <Link
         href={href}
         className="group px-12 py-4 border-2 border-[#252220] bg-white hover:bg-[#252220] text-[#252220] hover:text-white transition-all duration-300 font-medium tracking-wide"
-        className="font-ui"
+        style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
       >
         <span className="text-sm uppercase">NEXT</span>
       </Link>

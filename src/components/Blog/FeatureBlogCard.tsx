@@ -34,7 +34,7 @@ export default function FeatureBlogCard({ post }: FeatureBlogCardProps) {
         {/* Category - Boriboon Font */}
         <div 
           className="text-xs uppercase tracking-wider"
-          className="font-ui"
+          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
           {post.category || 'NAIL CARE'}
         </div>
@@ -42,7 +42,7 @@ export default function FeatureBlogCard({ post }: FeatureBlogCardProps) {
         {/* Title - Jeremiah Font */}
         <h3 
           className="text-xl md:text-2xl leading-tight"
-          className="font-heading"
+          style={{ fontFamily: 'Larken, Georgia, serif' }}
         >
           {post.title}
         </h3>
@@ -50,7 +50,7 @@ export default function FeatureBlogCard({ post }: FeatureBlogCardProps) {
         {/* Author - Boriboon Font */}
         <div 
           className="text-xs uppercase tracking-wide text-gray-600"
-          className="font-ui"
+          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
           BY {post.author || 'MIRELLÈ INSPO TEAM'}
         </div>

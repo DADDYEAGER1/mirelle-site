@@ -40,7 +40,7 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
     <div className="bg-[#f9fafb] border border-gray-200 p-6 mb-8 sticky top-4">
       <h3 
         className="text-lg mb-4"
-        className="font-heading"
+        style={{ fontFamily: 'Larken, Georgia, serif' }}
       >
         Table of Contents
       </h3>

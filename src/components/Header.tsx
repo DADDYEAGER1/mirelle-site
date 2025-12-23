@@ -47,7 +47,7 @@ export default function Header() {
               <Link href="/" className="flex items-center">
               <span 
                 data-logo="true" 
-                className="font-heading" 
+                style={{ fontFamily: 'Larken, Georgia, serif' }} 
                 className="text-3xl font-bold text-[#f9fafb]"
               >
                 Mirellè
@@ -220,7 +220,7 @@ export default function Header() {
           <div className="px-6 h-16 flex items-center justify-between">
             {/* Brand */}
             <Link href="/" className="flex items-center">
-              <span className="font-heading" className="text-2xl font-bold text-[#f9fafb]">
+              <span style={{ fontFamily: 'Larken, Georgia, serif' }} className="text-2xl font-bold text-[#f9fafb]">
                 Mirellè
               </span>
             </Link>

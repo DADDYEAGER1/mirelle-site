@@ -121,7 +121,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
       {/* Section Title with Full-Width Lines */}
       <div className="mb-8 md:mb-12">
         <div className="w-full h-[1px] bg-foreground" />
-        <div className="px-6 md:px-8 lg:px-16 py-6">
+        <div className="px-3 md:px-6 lg:px-12 py-6">
           <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase">
             BLOG SECTION
           </h2>
@@ -130,7 +130,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
       </div>
       
       {/* Desktop Pagination with Arrows */}
-      <div className="hidden md:flex justify-end items-center gap-4 px-6 md:px-8 lg:px-16 mb-6">
+      <div className="hidden md:flex justify-end items-center gap-4 px-3 md:px-6 lg:px-12 mb-6">
         <button 
           onClick={handlePrev}
           disabled={currentPage === 0}
@@ -157,7 +157,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
       </div>
       
       {/* Carousel Container */}
-      <div className="relative px-6 md:px-8 lg:px-16">
+      <div className="relative px-3 md:px-6 lg:px-12">
         <div 
           ref={containerRef}
           className="overflow-visible cursor-grab active:cursor-grabbing select-none"
@@ -283,7 +283,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
       </div>
 
       {/* Mobile Pagination - Dots below carousel */}
-      <div className="md:hidden flex justify-center gap-2 mt-6">
+      <div className="md:hidden flex justify-center gap-2 mt-6 px-3 md:px-6 lg:px-12">
         {featuredPosts.map((_, index) => (
           <button
             key={index}

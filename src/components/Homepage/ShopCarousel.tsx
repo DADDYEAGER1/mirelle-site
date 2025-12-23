@@ -1,123 +1,266 @@
-// src/components/Homepage/ShopCarousel.tsx
+// src/components/Homepage/BlogCarousel.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CategoryData } from '@/types/shop';
+import { BlogMetadata } from '@/types/blog';
 
-interface ShopCarouselProps {
-  categories: CategoryData[];
+interface BlogCarouselProps {
+  posts: BlogMetadata[];
 }
 
-export default function ShopCarousel({ categories }: ShopCarouselProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(false); // Disabled
+export default function BlogCarousel({ posts }: BlogCarouselProps) {
+  const [currentPage, setCurrentPage] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const containerRef = useRef<HTMLDivElement>(null);
   
-  if (!categories || categories.length === 0) {
+  const featuredPosts = posts.slice(0, 12);
+  
+  if (!featuredPosts || featuredPosts.length === 0) {
     return null;
   }
 
-  // Remove useEffect for auto-play
+  // Desktop: 3 cards per page
+  const cardsPerPageDesktop = 3;
+  const totalPagesDesktop = Math.ceil(featuredPosts.length / cardsPerPageDesktop);
   
+  // Mobile: 1 card per page
+  const cardsPerPageMobile = 1;
+  const totalPagesMobile = featuredPosts.length;
+
   const handleNext = () => {
-    setCurrentIndex(prev => (prev + 1) % categories.length);
+    setCurrentPage(prev => {
+      const totalPages = window.innerWidth >= 768 ? totalPagesDesktop : totalPagesMobile;
+      return prev < totalPages - 1 ? prev + 1 : prev;
+    });
   };
   
   const handlePrev = () => {
-    setCurrentIndex(prev => (prev - 1 + categories.length) % categories.length);
+    setCurrentPage(prev => prev > 0 ? prev - 1 : prev);
   };
 
-  const handleDragStart = (e: React.MouseEvent) => {
-    setIsAutoPlaying(false);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const diff = touchStartX.current - touchEndX.current;
+    if (Math.abs(diff) > 75) {
+      if (diff > 0) {
+        handleNext();
+      } else {
+        handlePrev();
+      }
+    }
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
     const startX = e.clientX;
+    let hasMoved = false;
     
-    const handleDragMove = (moveE: MouseEvent) => {
+    const handleMouseMove = (moveE: MouseEvent) => {
       const diff = startX - moveE.clientX;
-      if (Math.abs(diff) > 50) {
+      if (Math.abs(diff) > 75) {
+        hasMoved = true;
         if (diff > 0) {
-          setCurrentIndex(prev => (prev + 1) % categories.length);
+          handleNext();
         } else {
-          setCurrentIndex(prev => (prev - 1 + categories.length) % categories.length);
+          handlePrev();
         }
-        document.removeEventListener('mousemove', handleDragMove);
+        document.removeEventListener('mousemove', handleMouseMove);
       }
     };
     
-    document.addEventListener('mousemove', handleDragMove);
+    document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', () => {
-      document.removeEventListener('mousemove', handleDragMove);
-      setTimeout(() => setIsAutoPlaying(true), 5000);
+      document.removeEventListener('mousemove', handleMouseMove);
     }, { once: true });
   };
 
+  // Calculate transform for desktop (3 cards + peek)
+  const getDesktopTransform = () => {
+    return `translateX(-${currentPage * 100}%)`;
+  };
+
+  // Calculate transform for mobile (1 card + peek)
+  const getMobileTransform = () => {
+    return `translateX(-${currentPage * 90}%)`;
+  };
+
   return (
-    <section className="bg-background py-8 md:py-12">
-      {/* Section Title with Lines */}
-      <div className="max-w-7xl mx-auto px-6 mb-8">
+    <section className="bg-background py-12 md:py-16">
+      {/* Section Title with Full-Width Lines */}
+      <div className="px-6 md:px-8 lg:px-16 mb-8">
         <div className="w-full h-[1px] bg-border-color mb-4" />
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground text-center">
-          SHOP THE EDITS
+        <h2 className="font-product text-xl md:text-2xl text-foreground text-center tracking-wider">
+          BLOG SECTION
         </h2>
         <div className="w-full h-[1px] bg-border-color mt-4" />
       </div>
       
-      {/* Pagination - Desktop: Top Right, Mobile: Bottom */}
-      <div className="hidden md:block absolute top-0 right-6 font-product text-sm text-foreground z-10">
-        &lt;{currentIndex + 1}/{categories.length}&gt;
+      {/* Desktop Pagination with Arrows */}
+      <div className="hidden md:flex justify-end items-center gap-4 px-6 md:px-8 lg:px-16 mb-6">
+        <button 
+          onClick={handlePrev}
+          disabled={currentPage === 0}
+          className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
+          aria-label="Previous"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <span className="font-product text-base text-foreground tracking-wider">
+          {currentPage + 1} / {totalPagesDesktop}
+        </span>
+        <button 
+          onClick={handleNext}
+          disabled={currentPage === totalPagesDesktop - 1}
+          className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
+          aria-label="Next"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
       </div>
       
       {/* Carousel Container */}
-      <div className="relative max-w-7xl mx-auto px-6 mt-8">
+      <div className="relative px-6 md:px-8 lg:px-16">
         <div 
-          className="overflow-hidden cursor-grab active:cursor-grabbing"
-          onMouseDown={handleDragStart}
+          ref={containerRef}
+          className="overflow-hidden cursor-grab active:cursor-grabbing select-none"
+          onMouseDown={handleMouseDown}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
+          {/* Desktop: 3 cards + 4th peeking */}
           <div 
-            className="flex transition-transform duration-500 ease-out"
+            className="hidden md:flex transition-transform duration-500 ease-out"
             style={{ 
-              transform: `translateX(-${currentIndex * 24}%)`,
+              transform: getDesktopTransform(),
             }}
           >
-            {categories.map((category) => (
+            {Array.from({ length: totalPagesDesktop }).map((_, pageIndex) => (
               <div 
-                key={category.slug}
-                className="flex-shrink-0 w-[85%] md:w-[24%] px-2"
+                key={pageIndex}
+                className="flex-shrink-0 w-full flex gap-4"
               >
-                <Link 
-                  href={`/shop/${category.slug}`}
-                  className="block group"
-                >
+                {featuredPosts.slice(pageIndex * cardsPerPageDesktop, (pageIndex + 1) * cardsPerPageDesktop).map((post) => (
+                  <div 
+                    key={post.slug}
+                    className="flex-shrink-0 w-[calc(33.33%-0.67rem)]"
+                  >
+                    <Link href={`/blog/${post.slug}`} className="block group">
+                      {/* Image - 4:3 Ratio */}
+                      <div className="relative w-full aspect-[4/3] mb-4">
+                        {post.image && (
+                          <Image
+                            src={post.image}
+                            alt={post.imageAlt || post.title}
+                            fill
+                            className="object-cover"
+                            sizes="33vw"
+                          />
+                        )}
+                      </div>
+                      
+                      {/* Category */}
+                      {post.category && (
+                        <p className="font-product uppercase text-xs text-foreground/70 mb-2 tracking-wider">
+                          {post.category}
+                        </p>
+                      )}
+                      
+                      {/* Title */}
+                      <h3 className="font-heading text-lg text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
+                        {post.title}
+                      </h3>
+                      
+                      {/* Author */}
+                      {post.author && (
+                        <p className="font-product text-xs text-foreground/70 uppercase tracking-wider">
+                          BY {post.author.toUpperCase()}
+                        </p>
+                      )}
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile: 1 card + 2nd peeking */}
+          <div 
+            className="md:hidden flex transition-transform duration-500 ease-out"
+            style={{ 
+              transform: getMobileTransform(),
+            }}
+          >
+            {featuredPosts.map((post) => (
+              <div 
+                key={post.slug}
+                className="flex-shrink-0 w-[90%] pr-4"
+              >
+                <Link href={`/blog/${post.slug}`} className="block group">
                   {/* Image - 4:3 Ratio */}
                   <div className="relative w-full aspect-[4/3] mb-4">
-                    <Image
-                      src={category.heroImage}
-                      alt={category.displayName}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 85vw, (max-width: 1024px) 33vw, 24vw"
-                    />
+                    {post.image && (
+                      <Image
+                        src={post.image}
+                        alt={post.imageAlt || post.title}
+                        fill
+                        className="object-cover"
+                        sizes="90vw"
+                      />
+                    )}
                   </div>
                   
-                  {/* Season Label - Boriboon */}
-                  <p className="font-ui uppercase text-xs text-text-secondary mb-2 tracking-wider">
-                    {category.season}
-                  </p>
+                  {/* Category */}
+                  {post.category && (
+                    <p className="font-product uppercase text-xs text-foreground/70 mb-2 tracking-wider">
+                      {post.category}
+                    </p>
+                  )}
                   
-                  {/* Title - Jeremiah */}
-                  <h3 className="font-heading text-lg md:text-xl text-foreground mb-2 group-hover:opacity-70 transition-opacity">
-                    {category.displayName}
+                  {/* Title */}
+                  <h3 className="font-heading text-base text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
+                    {post.title}
                   </h3>
                   
-                  {/* Description snippet - Boriboon */}
-                  <p className="font-product text-xs text-text-secondary uppercase line-clamp-2">
-                    {category.description}
-                  </p>
+                  {/* Author */}
+                  {post.author && (
+                    <p className="font-product text-xs text-foreground/70 uppercase tracking-wider">
+                      BY {post.author.toUpperCase()}
+                    </p>
+                  )}
                 </Link>
               </div>
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Mobile Pagination - Dots below carousel */}
+      <div className="md:hidden flex justify-center gap-2 mt-6">
+        {featuredPosts.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentPage(index)}
+            className={`w-2 h-2 rounded-full transition-colors ${
+              index === currentPage ? 'bg-foreground' : 'bg-foreground/30'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
     </section>
   );

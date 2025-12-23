@@ -3,7 +3,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-import NewsletterPopup from "@/components/NewsletterPopup";
 import { generatePersonSchema } from '@/lib/generateSchemas';
 
 export const metadata: Metadata = {
@@ -397,7 +396,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <NewsletterPopup />
       </body>
     </html>
   );

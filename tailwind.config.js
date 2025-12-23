@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // NEW COLOR SYSTEM (keep these)
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // NEW COLOR SYSTEM
+        background: "#f9fafb",
+        foreground: "#252220",
         
-        // OLD COLOR SYSTEM (keep until migration complete)
+        // OLD COLOR SYSTEM (temporary - remove after migration)
         accent: {
           DEFAULT: '#E30088',
           light: '#FF1AA3',
@@ -31,7 +31,7 @@ module.exports = {
         // Keep brand for logo
         brand: ['Larken', 'Georgia', 'serif'],
         
-        // OLD FONTS - keeping for backwards compatibility during migration
+        // OLD FONTS (temporary - remove after migration)
         playfair: ['Playfair Display', 'serif'],
         source: ['Source Serif 4', 'serif'],
         jakarta: ['Plus Jakarta Sans', 'sans-serif'],

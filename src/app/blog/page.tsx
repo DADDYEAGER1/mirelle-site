@@ -70,7 +70,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
           <div className="max-w-[1200px] mx-auto px-6 text-center">
             <h1 
               className="text-5xl md:text-6xl"
-              className="font-heading"
+              style={{ fontFamily: 'Larken, serif' }}
             >
               Nails
             </h1>
@@ -84,7 +84,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
               <Link
                 href="/blog"
                 className="text-sm uppercase tracking-wider hover:opacity-70 transition-opacity"
-                className="font-ui"
+                style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
               >
                 View All
               </Link>
@@ -93,7 +93,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                   key={category.slug}
                   href={`/blog?category=${category.slug}`}
                   className="text-sm uppercase tracking-wider hover:opacity-70 transition-opacity"
-                  className="font-ui"
+                  style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
                 >
                   {category.name}
                 </Link>
@@ -158,7 +158,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
           <div className="max-w-[1200px] mx-auto px-6 text-center">
             <h1 
               className="text-4xl md:text-5xl uppercase"
-              className="font-heading"
+              style={{ fontFamily: 'Larken, Georgia, serif' }}
             >
               {selectedCategory.replace('-', ' ')}
             </h1>
@@ -173,7 +173,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
             <Link
               href="/blog"
               className="text-sm uppercase tracking-wider hover:opacity-70 transition-opacity"
-              className="font-ui"
+              style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
             >
               View All
             </Link>
@@ -182,7 +182,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                 key={category.slug}
                 href={`/blog?category=${category.slug}`}
                 className="text-sm uppercase tracking-wider hover:opacity-70 transition-opacity"
-                className="font-ui"
+                style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
               >
                 {category.name}
               </Link>

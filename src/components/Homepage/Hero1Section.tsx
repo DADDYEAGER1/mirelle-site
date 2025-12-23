@@ -10,7 +10,7 @@ export default async function Hero1Section() {
   if (!heroPost) return null;
 
   return (
-    <section className="bg-background py-12 md:py-16">
+    <section className="bg-background py-12 md:py-16 pb-8">
       <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
         <Link href={`/blog/${heroPost.slug}`} className="block group">
           {/* Desktop: Full image */}

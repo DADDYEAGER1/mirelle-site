@@ -1,4 +1,4 @@
-// src/components/Homepage/BlogCarousel.tsx
+// src/components/Homepage/blogCarousel.tsx
 'use client';
 
 import { useState, useRef } from 'react';
@@ -6,18 +6,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BlogMetadata } from '@/types/blog';
 
-interface BlogCarouselProps {
+interface LongReadsCarouselProps {
   posts: BlogMetadata[];
 }
 
-export default function BlogCarousel({ posts }: BlogCarouselProps) {
+export default function LongReadsCarousel({ posts }: LongReadsCarouselProps) {
   const [currentPage, setCurrentPage] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const dragStartX = useRef(0);
   const dragOffset = useRef(0);
   const containerRef = useRef<HTMLDivElement>(null);
   
-  const featuredPosts = posts.slice(0, 12);
+  const featuredPosts = posts.slice(0, 9);
   
   if (!featuredPosts || featuredPosts.length === 0) {
     return null;
@@ -118,42 +118,47 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
 
   return (
     <section className="bg-background pt-16 md:pt-24 pb-8">
-      {/* Section Title with Full-Width Lines */}
-      <div className="mb-8 md:mb-12">
+      {/* Section Title with Lines and Arrows */}
+      <div className="px-3 md:px-6 lg:px-12 mb-8 md:mb-12">
+        {/* Top Line */}
         <div className="w-full h-[1px] bg-foreground" />
-        <div className="px-3 md:px-6 lg:px-12 py-6">
-          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase">
-            BLOG SECTION
+        
+        {/* Title and Arrows Row */}
+        <div className="py-4 flex items-center justify-between">
+          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase flex-1">
+            LONG READS
           </h2>
+          
+          {/* Desktop Pagination with Arrows */}
+          <div className="hidden md:flex items-center gap-4">
+            <button 
+              onClick={handlePrev}
+              disabled={currentPage === 0}
+              className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
+              aria-label="Previous"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <span className="font-ui text-sm text-foreground tracking-wider">
+              {currentPage + 1} / {totalPagesDesktop}
+            </span>
+            <button 
+              onClick={handleNext}
+              disabled={currentPage === totalPagesDesktop - 1}
+              className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
+              aria-label="Next"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </div>
         </div>
+        
+        {/* Bottom Line */}
         <div className="w-full h-[1px] bg-foreground" />
-      </div>
-      
-      {/* Desktop Pagination with Arrows */}
-      <div className="hidden md:flex justify-end items-center gap-4 px-3 md:px-6 lg:px-12 mb-6">
-        <button 
-          onClick={handlePrev}
-          disabled={currentPage === 0}
-          className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
-          aria-label="Previous"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <polyline points="15 18 9 12 15 6" />
-          </svg>
-        </button>
-        <span className="font-ui text-sm text-foreground tracking-wider">
-          {currentPage + 1} / {totalPagesDesktop}
-        </span>
-        <button 
-          onClick={handleNext}
-          disabled={currentPage === totalPagesDesktop - 1}
-          className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
-          aria-label="Next"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <polyline points="9 18 15 12 9 6" />
-          </svg>
-        </button>
       </div>
       
       {/* Carousel Container */}
@@ -196,7 +201,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
                               src={post.image}
                               alt={post.imageAlt || post.title}
                               fill
-                              className="object-cover group-hover:scale-105 transition-transform duration-300"
+                              className="object-cover"
                               sizes="33vw"
                               draggable={false}
                             />
@@ -211,7 +216,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
                         )}
                         
                         {/* Title */}
-                        <h3 className="font-heading text-xl text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
+                        <h3 className="font-ui text-xl text-foreground mb-2 line-clamp-2">
                           {post.title}
                         </h3>
                         
@@ -250,7 +255,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
                         src={post.image}
                         alt={post.imageAlt || post.title}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="object-cover"
                         sizes="90vw"
                         draggable={false}
                       />
@@ -265,7 +270,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
                   )}
                   
                   {/* Title */}
-                  <h3 className="font-heading text-lg text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
+                  <h3 className="font-ui text-lg text-foreground mb-2 line-clamp-2">
                     {post.title}
                   </h3>
                   

@@ -7,7 +7,7 @@
       "season": "Autumn",
       "year": 2025,
       "description": "Embrace autumn's warmth with rich mocha chrome, burgundy cat claw shapes, and cozy seasonal designs trending into 2026",
-      "heroImage": "https://images.unsplash.com/photo-1604991405679-98d08f7fbb08",
+      "heroImage": "/og-fall-2026-chrome-mocha.png",
       "gradientFrom": "amber-900",
       "gradientVia": "orange-800",
       "gradientTo": "red-900",
@@ -47,6 +47,7 @@
         }
       ]
     },
+
     "christmas": {
       "slug": "christmas",
       "name": "Christmas Nail Collection",
@@ -54,7 +55,7 @@
       "season": "Winter Holiday",
       "year": 2025,
       "description": "Celebrate holidays with festive 2026 trends: chrome snowflakes, 3D embellished designs, velvet finishes",
-      "heroImage": "https://images.unsplash.com/photo-1543589077-47d81606c1bf",
+      "heroImage": "/og-christmas-2026-chrome-3d.png",
       "gradientFrom": "red-900",
       "gradientVia": "green-800",
       "gradientTo": "red-800",
@@ -94,6 +95,7 @@
         }
       ]
     },
+
     "winter": {
       "slug": "winter",
       "name": "Winter Nail Collection",
@@ -101,7 +103,7 @@
       "season": "Winter",
       "year": 2025,
       "description": "Elegant winter 2026 trends: icy chrome blues, cat claw shapes, mocha velvet, sheer milky finishes",
-      "heroImage": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5",
+      "heroImage": "/og-winter-2026-chrome-cat-claw.png",
       "gradientFrom": "blue-900",
       "gradientVia": "cyan-800",
       "gradientTo": "slate-900",
@@ -141,6 +143,7 @@
         }
       ]
     },
+
     "halloween": {
       "slug": "halloween",
       "name": "Halloween Nail Collection",
@@ -148,7 +151,7 @@
       "season": "Fall Holiday",
       "year": 2025,
       "description": "Spooky 2026 trends: chrome ghosts, 3D spider webs, cat claw shapes, gothic glam designs",
-      "heroImage": "https://images.unsplash.com/photo-1509557965875-b88c97052f0e",
+      "heroImage": "/og-halloween-2026-chrome-3d.png",
       "gradientFrom": "orange-900",
       "gradientVia": "purple-800",
       "gradientTo": "black",
@@ -188,6 +191,7 @@
         }
       ]
     },
+
     "new-year": {
       "slug": "new-year",
       "name": "New Year Nail Collection",
@@ -195,7 +199,7 @@
       "season": "Winter Holiday",
       "year": 2025,
       "description": "Glamorous 2026 NYE trends: chrome glitter, cat claw shapes, 3D jewels, midnight sparkle magic",
-      "heroImage": "https://images.unsplash.com/photo-1467810563316-b5476525c0f9",
+      "heroImage": "/og-new-year-2026-chrome-glitter.png",
       "gradientFrom": "yellow-600",
       "gradientVia": "purple-800",
       "gradientTo": "pink-900",
@@ -235,6 +239,7 @@
         }
       ]
     },
+
     "trendy": {
       "slug": "trendy",
       "name": "Trendy Nail Collection",
@@ -242,7 +247,7 @@
       "season": "Year-round",
       "year": 2025,
       "description": "Latest 2026 trends: chrome finishes, cat claw shapes, square tips, milky pastels, 3D art, popsicle hues",
-      "heroImage": "https://images.unsplash.com/photo-1604654894610-df63bc536371",
+      "heroImage": "/og-trendy-2026-chrome-cat-claw.png",
       "gradientFrom": "pink-600",
       "gradientVia": "purple-600",
       "gradientTo": "blue-600",

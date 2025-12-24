@@ -1,4 +1,4 @@
-// src/components/Homepage/blogCarousel.tsx
+// src/components/Homepage/LongReadsCarousel.tsx
 'use client';
 
 import { useState, useRef } from 'react';
@@ -124,13 +124,13 @@ export default function LongReadsCarousel({ posts }: LongReadsCarouselProps) {
         <div className="w-full h-[1px] bg-foreground" />
         
         {/* Title and Arrows Row */}
-        <div className="py-4 flex items-center justify-between">
-          <h2 className="font-ui text-base md:text-lg text-foreground text-center tracking-wider uppercase flex-1">
+        <div className="py-4 flex items-center justify-center relative">
+          <h2 className="font-ui text-base md:text-lg text-foreground tracking-wider uppercase">
             LONG READS
           </h2>
           
-          {/* Desktop Pagination with Arrows */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* Desktop Pagination with Arrows - Absolute positioned */}
+          <div className="hidden md:flex items-center gap-4 absolute right-0">
             <button 
               onClick={handlePrev}
               disabled={currentPage === 0}
@@ -216,7 +216,7 @@ export default function LongReadsCarousel({ posts }: LongReadsCarouselProps) {
                         )}
                         
                         {/* Title */}
-                        <h3 className="font-ui text-xl text-foreground mb-2 line-clamp-2">
+                        <h3 className="font-heading text-xl text-foreground mb-2 line-clamp-2">
                           {post.title}
                         </h3>
                         
@@ -270,7 +270,7 @@ export default function LongReadsCarousel({ posts }: LongReadsCarouselProps) {
                   )}
                   
                   {/* Title */}
-                  <h3 className="font-ui text-lg text-foreground mb-2 line-clamp-2">
+                  <h3 className="font-heading text-lg text-foreground mb-2 line-clamp-2">
                     {post.title}
                   </h3>
                   

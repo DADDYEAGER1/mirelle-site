@@ -1,7 +1,7 @@
 // src/components/Homepage/InspoCategoriesCarousel.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { DesignData } from '@/types/inspo';
@@ -11,101 +11,255 @@ interface InspoCategoriesCarouselProps {
 }
 
 export default function InspoCategoriesCarousel({ categories }: InspoCategoriesCarouselProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(false); // Disabled
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const dragStartX = useRef(0);
+  const dragOffset = useRef(0);
+  const containerRef = useRef<HTMLDivElement>(null);
   
-  if (!categories || categories.length === 0) {
+  const featuredCategories = categories.slice(0, 9);
+  
+  if (!featuredCategories || featuredCategories.length === 0) {
     return null;
   }
 
-  // Remove useEffect
+  // Desktop: 3 cards per page
+  const cardsPerPageDesktop = 3;
+  const totalPagesDesktop = Math.ceil(featuredCategories.length / cardsPerPageDesktop);
   
+  // Mobile: 1 card per page
+  const cardsPerPageMobile = 1;
+  const totalPagesMobile = featuredCategories.length;
+
   const handleNext = () => {
-    setCurrentIndex(prev => (prev + 1) % categories.length);
+    setCurrentPage(prev => {
+      const totalPages = window.innerWidth >= 768 ? totalPagesDesktop : totalPagesMobile;
+      return prev < totalPages - 1 ? prev + 1 : prev;
+    });
   };
   
   const handlePrev = () => {
-    setCurrentIndex(prev => (prev - 1 + categories.length) % categories.length);
+    setCurrentPage(prev => prev > 0 ? prev - 1 : prev);
   };
 
-  const handleDragStart = (e: React.MouseEvent) => {
-    setIsAutoPlaying(false);
-    const startX = e.clientX;
+  // Touch/Drag handlers for smooth swipe
+  const handleDragStart = (clientX: number) => {
+    setIsDragging(true);
+    dragStartX.current = clientX;
+    dragOffset.current = 0;
+  };
+
+  const handleDragMove = (clientX: number) => {
+    if (!isDragging) return;
+    dragOffset.current = clientX - dragStartX.current;
+  };
+
+  const handleDragEnd = () => {
+    if (!isDragging) return;
+    setIsDragging(false);
     
-    const handleDragMove = (moveE: MouseEvent) => {
-      const diff = startX - moveE.clientX;
-      if (Math.abs(diff) > 50) {
-        if (diff > 0) {
-          setCurrentIndex(prev => (prev + 1) % categories.length);
-        } else {
-          setCurrentIndex(prev => (prev - 1 + categories.length) % categories.length);
-        }
-        document.removeEventListener('mousemove', handleDragMove);
+    const threshold = 75;
+    if (Math.abs(dragOffset.current) > threshold) {
+      if (dragOffset.current < 0) {
+        handleNext();
+      } else {
+        handlePrev();
       }
-    };
-    
-    document.addEventListener('mousemove', handleDragMove);
-    document.addEventListener('mouseup', () => {
-      document.removeEventListener('mousemove', handleDragMove);
-      setTimeout(() => setIsAutoPlaying(true), 5000);
-    }, { once: true });
+    }
+    dragOffset.current = 0;
+  };
+
+  // Mouse events
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    handleDragStart(e.clientX);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    handleDragMove(e.clientX);
+  };
+
+  const handleMouseUp = () => {
+    handleDragEnd();
+  };
+
+  const handleMouseLeave = () => {
+    if (isDragging) {
+      handleDragEnd();
+    }
+  };
+
+  // Touch events
+  const handleTouchStart = (e: React.TouchEvent) => {
+    handleDragStart(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    handleDragMove(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    handleDragEnd();
+  };
+
+  // Calculate transform for desktop (3 cards + peek)
+  const getDesktopTransform = () => {
+    const baseTransform = currentPage * 100;
+    const dragPercent = isDragging ? (dragOffset.current / window.innerWidth) * 100 : 0;
+    return `translateX(-${baseTransform - dragPercent}%)`;
+  };
+
+  // Calculate transform for mobile (1 card + peek)
+  const getMobileTransform = () => {
+    const baseTransform = currentPage * 90;
+    const dragPercent = isDragging ? (dragOffset.current / window.innerWidth) * 90 : 0;
+    return `translateX(-${baseTransform - dragPercent}%)`;
   };
 
   return (
     <section className="bg-background pt-16 md:pt-24 pb-8">
-      {/* Section Title with Lines */}
-      <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mb-8">
-        <div className="w-full h-[1px] bg-border-color mb-4" />
-        <h2 className="font-heading text-2xl md:text-3xl text-foreground text-center">
-          NAIL ART INSPIRATION
-        </h2>
-        <div className="w-full h-[1px] bg-border-color mt-4" />
-      </div>
-      
-      {/* Pagination - Desktop: Top Right, Mobile: Bottom */}
-      <div className="hidden md:block absolute top-0 right-6 font-ui text-sm text-foreground z-10">
-        &lt;{currentIndex + 1}/{categories.length}&gt;
+      {/* Section Title with Lines and Arrows */}
+      <div className="px-3 md:px-6 lg:px-12 mb-8 md:mb-12">
+        {/* Top Line */}
+        <div className="w-full h-[1px] bg-foreground" />
+        
+        {/* Title and Arrows Row */}
+        <div className="py-4 flex items-center justify-center relative">
+          <h2 className="font-ui text-base md:text-lg text-foreground tracking-wider uppercase">
+            NAIL ART INSPIRATION
+          </h2>
+          
+          {/* Desktop Pagination with Arrows - Absolute positioned */}
+          <div className="hidden md:flex items-center gap-4 absolute right-0">
+            <button 
+              onClick={handlePrev}
+              disabled={currentPage === 0}
+              className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
+              aria-label="Previous"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <span className="font-ui text-sm text-foreground tracking-wider">
+              {currentPage + 1} / {totalPagesDesktop}
+            </span>
+            <button 
+              onClick={handleNext}
+              disabled={currentPage === totalPagesDesktop - 1}
+              className="text-foreground disabled:opacity-30 hover:opacity-70 transition-opacity"
+              aria-label="Next"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        {/* Bottom Line */}
+        <div className="w-full h-[1px] bg-foreground" />
       </div>
       
       {/* Carousel Container */}
-      <div className="relative max-w-7xl mx-auto px-3 md:px-6 lg:px-12 mt-8">
+      <div className="relative px-3 md:px-6 lg:px-12">
         <div 
-          className="overflow-hidden cursor-grab active:cursor-grabbing"
-          onMouseDown={handleDragStart}
+          ref={containerRef}
+          className="overflow-visible cursor-grab active:cursor-grabbing select-none"
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseLeave}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
+          {/* Desktop: 3 cards + 4th peeking */}
+          <div className="hidden md:block overflow-hidden">
+            <div 
+              className="flex transition-transform ease-out"
+              style={{ 
+                transform: getDesktopTransform(),
+                transitionDuration: isDragging ? '0ms' : '500ms',
+              }}
+            >
+              {Array.from({ length: totalPagesDesktop }).map((_, pageIndex) => (
+                <div 
+                  key={pageIndex}
+                  className="flex-shrink-0 w-full flex gap-6"
+                >
+                  {featuredCategories.slice(pageIndex * cardsPerPageDesktop, (pageIndex + 1) * cardsPerPageDesktop).map((category) => (
+                    <div 
+                      key={category.slug}
+                      className="flex-shrink-0 w-[calc(33.33%-1rem)]"
+                    >
+                      <Link href={`/inspo/${category.slug}`} className="block group">
+                        {/* Image - 4:3 Ratio */}
+                        <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
+                          <Image
+                            src={category.heroImage}
+                            alt={category.displayName}
+                            fill
+                            className="object-cover"
+                            sizes="33vw"
+                            draggable={false}
+                          />
+                        </div>
+                        
+                        {/* Category */}
+                        {category.category && (
+                          <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
+                            {category.category}
+                          </p>
+                        )}
+                        
+                        {/* Title */}
+                        <h3 className="font-heading text-xl text-foreground mb-2 line-clamp-2">
+                          {category.displayName}
+                        </h3>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile: 1 card + 2nd peeking */}
           <div 
-            className="flex transition-transform duration-500 ease-out"
+            className="md:hidden flex transition-transform ease-out"
             style={{ 
-              transform: `translateX(-${currentIndex * 24}%)`,
+              transform: getMobileTransform(),
+              transitionDuration: isDragging ? '0ms' : '500ms',
             }}
           >
-            {categories.map((category) => (
+            {featuredCategories.map((category) => (
               <div 
                 key={category.slug}
-                className="flex-shrink-0 w-[85%] md:w-[24%] px-2"
+                className="flex-shrink-0 w-[90%] pr-4"
               >
-                <Link 
-                  href={`/inspo/${category.slug}`}
-                  className="block group"
-                >
+                <Link href={`/inspo/${category.slug}`} className="block group">
                   {/* Image - 4:3 Ratio */}
-                  <div className="relative w-full aspect-[4/3] mb-4">
+                  <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
                     <Image
                       src={category.heroImage}
                       alt={category.displayName}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 85vw, 70vw"
+                      sizes="90vw"
+                      draggable={false}
                     />
                   </div>
                   
-                  {/* Category Label */}
-                  <p className="font-ui uppercase text-xs text-text-secondary mb-2 tracking-wider">
-                    {category.category}
-                  </p>
+                  {/* Category */}
+                  {category.category && (
+                    <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
+                      {category.category}
+                    </p>
+                  )}
                   
                   {/* Title */}
-                  <h3 className="font-heading text-lg md:text-xl text-foreground group-hover:opacity-70 transition-opacity">
+                  <h3 className="font-heading text-lg text-foreground mb-2 line-clamp-2">
                     {category.displayName}
                   </h3>
                 </Link>
@@ -114,9 +268,20 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
           </div>
         </div>
       </div>
-      
-      {/* Bottom Line */}
-      <div className="w-full h-[1px] bg-border-color mt-6" />
+
+      {/* Mobile Pagination - Dots below carousel */}
+      <div className="md:hidden flex justify-center gap-2 mt-6 px-3 md:px-6 lg:px-12">
+        {featuredCategories.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentPage(index)}
+            className={`w-2 h-2 rounded-full transition-colors ${
+              index === currentPage ? 'bg-foreground' : 'bg-foreground/30'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </section>
   );
 }

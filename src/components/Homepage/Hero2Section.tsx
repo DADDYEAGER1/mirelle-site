@@ -19,10 +19,10 @@ export default async function Hero2Section() {
 
   return (
     <section className="bg-background pt-16 md:pt-24 pb-8">
-      {/* Desktop: 3 Column Grid */}
-      <div className="hidden md:grid md:grid-cols-12 gap-4 max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
-        {/* Left: 2 Square Categories Stacked */}
-        <div className="col-span-3 flex flex-col gap-4">
+      {/* Desktop: 3 Column Grid - 1:2:1 ratio */}
+      <div className="hidden md:flex gap-4 max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
+        {/* Left: 2 Square Categories Stacked - 1 unit */}
+        <div className="flex-1 flex flex-col gap-4">
           {shopCategory1 && (
             <Link href={`/shop/${shopCategory1.slug}`} className="block group">
               <div className="relative w-full aspect-square mb-2">
@@ -58,8 +58,8 @@ export default async function Hero2Section() {
           )}
         </div>
         
-        {/* Middle: 1 Tall Blog Post */}
-        <div className="col-span-6">
+        {/* Middle: 1 Tall Blog Post - 2 units */}
+        <div className="flex-[2]">
           {tallPost && (
             <Link href={`/blog/${tallPost.slug}`} className="block group h-full">
               <div className="relative w-full h-full mb-3">
@@ -80,8 +80,8 @@ export default async function Hero2Section() {
           )}
         </div>
         
-        {/* Right: 3 Horizontal Blog Posts */}
-        <div className="col-span-3 flex flex-col gap-6">
+        {/* Right: 3 Horizontal Blog Posts - 1 unit */}
+        <div className="flex-1 flex flex-col gap-6">
           {horizontalPosts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
               <div className="flex gap-3 items-start">
@@ -101,7 +101,7 @@ export default async function Hero2Section() {
                 {/* Text Right */}
                 <div className="flex-1 min-w-0">
                   {post.category && (
-                    <p className="font-ui text-xs uppercase tracking-wider text-foreground mb-1">
+                    <p className="font-ui text-xs uppercase tracking-wider text-foreground/70 mb-1">
                       {post.category}
                     </p>
                   )}
@@ -109,7 +109,7 @@ export default async function Hero2Section() {
                     {post.title}
                   </h4>
                   {post.author && (
-                    <p className="font-ui text-xs text-foreground mt-1">
+                    <p className="font-ui text-xs text-foreground/70 mt-1 uppercase tracking-wider">
                       BY {post.author.toUpperCase()}
                     </p>
                   )}

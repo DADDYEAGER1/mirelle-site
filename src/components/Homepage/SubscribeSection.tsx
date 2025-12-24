@@ -10,7 +10,7 @@ export default function SubscribeSection() {
         {/* Image */}
         <div className="flex-shrink-0">
           <Image
-            src="/public/logo.png"
+            src="/logo.png"
             alt="Mirellé Inspo"
             width={60}
             height={60}
@@ -41,7 +41,7 @@ export default function SubscribeSection() {
         {/* Image */}
         <div className="flex-shrink-0">
           <Image
-            src="/public/logo.png"
+            src="/logo.png"
             alt="Mirellé Magazine"
             width={45}
             height={45}

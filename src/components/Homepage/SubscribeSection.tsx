@@ -10,7 +10,7 @@ export default function SubscribeSection() {
         {/* Image */}
         <div className="flex-shrink-0">
           <Image
-            src="/images/vogue-magazine.jpg"
+            src="/logo.png"
             alt="Mirellé Magazine"
             width={60}
             height={60}

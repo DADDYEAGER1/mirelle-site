@@ -13,15 +13,15 @@ interface ShopCategoryNavProps {
 
 export default function ShopCategoryNav({ categories }: ShopCategoryNavProps) {
   return (
-    <nav className="w-full border-t border-b border-gray-200 bg-background">
-      {/* Desktop - Horizontal */}
-      <div className="hidden md:block max-w-[1200px] mx-auto px-16">
+    <nav className="w-full border-t border-b border-border-color bg-background">
+      {/* Desktop - Horizontal Centered */}
+      <div className="hidden md:block max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
         <ul className="flex items-center justify-center gap-8 py-4">
           {categories.map((category) => (
             <li key={category.slug}>
               <Link
                 href={`/shop/${category.slug}`}
-                className="text-sm uppercase tracking-widest font-body hover:opacity-70 transition-opacity"
+                className="font-ui text-sm uppercase tracking-widest text-foreground hover:opacity-70 transition-opacity"
               >
                 {category.displayName}
               </Link>
@@ -30,21 +30,33 @@ export default function ShopCategoryNav({ categories }: ShopCategoryNavProps) {
         </ul>
       </div>
 
-      {/* Mobile - Stacked */}
-      <div className="md:hidden max-w-[1200px] mx-auto px-6">
-        <ul className="flex flex-col divide-y divide-gray-200">
-          {categories.map((category) => (
-            <li key={category.slug}>
-              <Link
-                href={`/shop/${category.slug}`}
-                className="block py-4 text-sm uppercase tracking-widest font-body hover:opacity-70 transition-opacity"
-              >
-                {category.displayName}
-              </Link>
-            </li>
-          ))}
-        </ul>
+      {/* Mobile - Horizontal Scroll with Peek */}
+      <div className="md:hidden">
+        <div className="overflow-x-auto scrollbar-hide px-3">
+          <ul className="flex gap-6 py-4 w-max">
+            {categories.map((category) => (
+              <li key={category.slug} className="flex-shrink-0">
+                <Link
+                  href={`/shop/${category.slug}`}
+                  className="font-ui text-sm uppercase tracking-widest text-foreground whitespace-nowrap hover:opacity-70 transition-opacity"
+                >
+                  {category.displayName}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
+      
+      <style jsx global>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </nav>
   );
 }

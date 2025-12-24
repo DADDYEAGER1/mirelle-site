@@ -119,7 +119,7 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
   return (
     <section className="bg-background pt-16 md:pt-24 pb-8">
       {/* Section Title with Lines and Arrows */}
-      <div className="px-3 mb-8 md:mb-12">
+      <div className="px-3 md:px-6 lg:px-12 mb-8 md:mb-12">
         {/* Top Line */}
         <div className="w-full h-[1px] bg-border-color" />
         
@@ -162,7 +162,7 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
       </div>
       
       {/* Carousel Container */}
-      <div className="relative px-3">
+      <div className="relative px-3 md:px-6 lg:px-12">
         <div 
           ref={containerRef}
           className="overflow-visible cursor-grab active:cursor-grabbing select-none"
@@ -270,7 +270,7 @@ export default function InspoCategoriesCarousel({ categories }: InspoCategoriesC
       </div>
 
       {/* Mobile Pagination - Dots below carousel */}
-      <div className="md:hidden flex justify-center gap-2 mt-6 px-3">
+      <div className="md:hidden flex justify-center gap-2 mt-6 px-3 md:px-6 lg:px-12">
         {featuredCategories.map((_, index) => (
           <button
             key={index}

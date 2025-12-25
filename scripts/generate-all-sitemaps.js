@@ -453,7 +453,7 @@ try {
   
   // 6e) Topics images (from /public/images/topics/) - ALL LINK TO /topics
 try {
-  const topicsImagesDir = path.join(PUBLIC_DIR, 'images', 'topics');
+  const topicsImagesDir = path.join(PUBLIC_DIR, 'images', 'topic');
   
   if (fs.existsSync(topicsImagesDir)) {
     const imageFiles = fs.readdirSync(topicsImagesDir).filter(f => 
@@ -478,7 +478,7 @@ try {
       
       return {
         pageUrl: `${SITE_URL}/topics`,
-        imageUrl: `${SITE_URL}/images/topics/${img}`,
+        imageUrl: `${SITE_URL}/images/topic/${img}`,
         title: `Nail care and design inspiration ${imageNumber}`,
         caption: caption,
       };

@@ -1,21 +1,107 @@
-# Allow all bots
+# *
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /blog/tag/
 
-# Sitemap location
-Sitemap: https://mirelleinspo.com/sitemap.xml
-
-# Crawl delay
+# GPTBot
+User-agent: GPTBot
+Allow: /
 Crawl-delay: 1
 
-# Disallow nothing (your site should be fully crawlable)
-Disallow:
+# ChatGPT-User
+User-agent: ChatGPT-User
+Allow: /
 
-# Specific rules for search engines
+# Claude-Web
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 1
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 1
+
+# anthropic-ai
+User-agent: anthropic-ai
+Allow: /
+
+# Googlebot
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0.5
 
+# Bingbot
 User-agent: Bingbot
 Allow: /
+
+# CCBot
+User-agent: CCBot
+Allow: /
+Crawl-delay: 2
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
 Crawl-delay: 1
+
+# YouBot
+User-agent: YouBot
+Allow: /
+
+# Pinterestbot
+User-agent: Pinterestbot
+Allow: /
+
+# facebookexternalhit
+User-agent: facebookexternalhit
+Allow: /
+
+# PetalBot
+User-agent: PetalBot
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
+# Slurp
+User-agent: Slurp
+Allow: /
+
+# Baiduspider
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# SemrushBot
+User-agent: SemrushBot
+Disallow: /
+
+# AhrefsBot
+User-agent: AhrefsBot
+Disallow: /
+
+# MJ12bot
+User-agent: MJ12bot
+Disallow: /
+
+# DotBot
+User-agent: DotBot
+Disallow: /
+
+# Host
+Host: https://mirelleinspo.com
+
+# Sitemaps
+Sitemap: https://mirelleinspo.com/sitemap.xml
+Sitemap: https://mirelleinspo.com/sitemap-blog.xml
+Sitemap: https://mirelleinspo.com/sitemap-topics.xml
+Sitemap: https://mirelleinspo.com/sitemap-shop.xml
+Sitemap: https://mirelleinspo.com/sitemap-shop-products-index.xml
+Sitemap: https://mirelleinspo.com/sitemap-inspo.xml
+Sitemap: https://mirelleinspo.com/sitemap-images-index.xml

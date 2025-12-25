@@ -266,57 +266,73 @@ function generateImageSitemaps() {
   const currentYear = new Date().getFullYear();
   const season = getCurrentSeason();
   
-  // 6a) Blog images (from /public/images/blog/) - FLAT STRUCTURE
-  try {
-    const blogImagesDir = path.join(PUBLIC_DIR, 'images', 'blog');
+// 6a) Blog images (from /public/images/blog/) - FIXED VERSION
+try {
+  const blogImagesDir = path.join(PUBLIC_DIR, 'images', 'blog');
+  const blogDir = path.join(process.cwd(), 'src/content/blogs');
+  
+  if (fs.existsSync(blogImagesDir) && fs.existsSync(blogDir)) {
+    const imageFiles = fs.readdirSync(blogImagesDir).filter(f => 
+      /\.(jpg|jpeg|png|webp)$/i.test(f)
+    );
     
-    if (fs.existsSync(blogImagesDir)) {
-      const imageFiles = fs.readdirSync(blogImagesDir).filter(f => 
-        /\.(jpg|jpeg|png|webp)$/i.test(f)
-      );
+    // Get all blog post slugs
+    const blogPosts = fs.readdirSync(blogDir)
+      .filter(f => f.endsWith('.md'))
+      .map(f => f.replace('.md', ''));
+    
+    const blogImages = [];
+    
+    imageFiles.forEach(img => {
+      const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
       
-      // Get all blog posts
-      const blogDir = path.join(process.cwd(), 'src/content/blogs');
-      const blogPosts = fs.existsSync(blogDir) 
-        ? fs.readdirSync(blogDir).filter(f => f.endsWith('.md')).map(f => f.replace('.md', ''))
-        : [];
-      
-      const blogImages = imageFiles.map(img => {
-        const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
-        
-        // Try to match image to blog post
-        const matchedPost = blogPosts.find(post => imageName.includes(post) || post.includes(imageName));
-        const slug = matchedPost || imageName.replace(/-(hero|thumb|\d+)$/i, '');
-        const cleanTitle = slug.replace(/-/g, ' ');
-        
-        // Generate unique caption based on image type
-        let caption;
-        if (imageName.includes('hero')) {
-          caption = `Complete ${cleanTitle} tutorial with expert tips and techniques`;
-        } else if (imageName.includes('step')) {
-          caption = `Step-by-step process for achieving ${cleanTitle} look`;
-        } else if (imageName.match(/\d+$/)) {
-          caption = `${cleanTitle} design variation and styling inspiration`;
-        } else {
-          caption = `Professional ${cleanTitle} guide with detailed instructions`;
-        }
-        
-        return {
-          pageUrl: `${SITE_URL}/blog/${slug}`,
-          imageUrl: `${SITE_URL}/images/blog/${img}`,
-          title: `${cleanTitle} - ${currentYear} nail art guide`,
-          caption: caption,
-        };
+      // Match image to blog post by exact filename match
+      const matchedPost = blogPosts.find(post => {
+        // Remove any suffixes like -hero, -thumb, -1, -2 etc from image name
+        const baseImageName = imageName.replace(/-(hero|thumb|\d+)$/i, '');
+        return post === imageName || post === baseImageName;
       });
       
+      // Skip if no matching blog post found
+      if (!matchedPost) {
+        console.warn(`⚠️  No blog post found for image: ${img}`);
+        return;
+      }
+      
+      const cleanTitle = matchedPost.replace(/-/g, ' ');
+      
+      // Generate unique caption based on image type
+      let caption;
+      if (imageName.includes('hero')) {
+        caption = `Complete ${cleanTitle} tutorial with expert tips and techniques`;
+      } else if (imageName.includes('step')) {
+        caption = `Step-by-step process for achieving ${cleanTitle} look`;
+      } else if (imageName.match(/\d+$/)) {
+        caption = `${cleanTitle} design variation and styling inspiration`;
+      } else {
+        caption = `Professional ${cleanTitle} guide with detailed instructions`;
+      }
+      
+      blogImages.push({
+        pageUrl: `${SITE_URL}/blog/${matchedPost}`,
+        imageUrl: `${SITE_URL}/images/blog/${img}`,
+        title: `${cleanTitle} - ${currentYear} nail art guide`,
+        caption: caption,
+      });
+    });
+    
+    if (blogImages.length > 0) {
       const xml = createImageSitemap(blogImages);
       fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-blog.xml'), xml);
       imageSitemaps.push('sitemap-images-blog.xml');
-      console.log(`✅ sitemap-images-blog.xml created (${blogImages.length} images with unique captions)`);
+      console.log(`✅ sitemap-images-blog.xml created (${blogImages.length} images matched to blog posts)`);
+    } else {
+      console.warn('⚠️  No blog images matched to posts');
     }
-  } catch (error) {
-    console.error('❌ Error generating blog images sitemap:', error.message);
   }
+} catch (error) {
+  console.error('❌ Error generating blog images sitemap:', error.message);
+}
   
   // 6b) Shop product images (from /public/images/shop/) - FLAT STRUCTURE
   try {
@@ -435,58 +451,49 @@ function generateImageSitemaps() {
     console.error('❌ Error generating inspo images sitemap:', error.message);
   }
   
-  // 6d) Topics images (from /public/images/topics/) - FLAT STRUCTURE
-  try {
-    const topicsImagesDir = path.join(PUBLIC_DIR, 'images', 'topics');
+  // 6e) Topics images (from /public/images/topics/) - ALL LINK TO /topics
+try {
+  const topicsImagesDir = path.join(PUBLIC_DIR, 'images', 'topics');
+  
+  if (fs.existsSync(topicsImagesDir)) {
+    const imageFiles = fs.readdirSync(topicsImagesDir).filter(f => 
+      /\.(jpg|jpeg|png|webp)$/i.test(f) && f !== '.gitkeep'
+    );
     
-    if (fs.existsSync(topicsImagesDir)) {
-      const imageFiles = fs.readdirSync(topicsImagesDir).filter(f => 
-        /\.(jpg|jpeg|png|webp)$/i.test(f) && f !== '.gitkeep'
-      );
+    // Varied captions for uniqueness
+    const captions = [
+      'Professional nail care tips and expert guidance',
+      'Trending nail art styles and techniques',
+      'Essential nail health and beauty advice',
+      'Expert tutorials for perfect manicures',
+      'Seasonal nail design inspiration and ideas',
+      'Modern nail care solutions for every style',
+      'Step-by-step nail art techniques and tips',
+      'Beautiful nail designs for all occasions'
+    ];
+    
+    const topicsImages = imageFiles.map((img, index) => {
+      const caption = captions[index % captions.length];
+      const imageNumber = index + 1;
       
-      const topics = [
-        'at-home-hacks',
-        'modern-women',
-        'nail-care-guide',
-        'seasonal-trends',
-        'skin-tones',
-      ];
-      
-      // Unique descriptions for each topic
-      const topicCaptions = {
-        'at-home-hacks': 'DIY nail care tips and tricks you can easily do at home',
-        'modern-women': 'Contemporary nail styles perfect for today\'s professional woman',
-        'nail-care-guide': 'Essential nail health and maintenance techniques for beautiful nails',
-        'seasonal-trends': `Latest ${season} ${currentYear} nail design trends and color palettes`,
-        'skin-tones': 'Perfect nail colors matched to different skin tones and undertones',
+      return {
+        pageUrl: `${SITE_URL}/topics`,
+        imageUrl: `${SITE_URL}/images/topics/${img}`,
+        title: `Nail care and design inspiration ${imageNumber}`,
+        caption: caption,
       };
-      
-      const topicsImages = imageFiles.map(img => {
-        const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
-        
-        // Try to match image to topic
-        const matchedTopic = topics.find(topic => imageName.includes(topic) || topic.includes(imageName));
-        const slug = matchedTopic || imageName;
-        const cleanTitle = slug.replace(/-/g, ' ');
-        
-        return {
-          pageUrl: `${SITE_URL}/topics/${slug}`,
-          imageUrl: `${SITE_URL}/images/topics/${img}`,
-          title: `${cleanTitle} - Expert nail care guidance`,
-          caption: topicCaptions[slug] || `Learn ${cleanTitle} - Expert advice and techniques for nail enthusiasts`,
-        };
-      });
-      
-      if (topicsImages.length > 0) {
-        const xml = createImageSitemap(topicsImages);
-        fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-topics.xml'), xml);
-        imageSitemaps.push('sitemap-images-topics.xml');
-        console.log(`✅ sitemap-images-topics.xml created (${topicsImages.length} images with unique captions)`);
-      }
+    });
+    
+    if (topicsImages.length > 0) {
+      const xml = createImageSitemap(topicsImages);
+      fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-topics.xml'), xml);
+      imageSitemaps.push('sitemap-images-topics.xml');
+      console.log(`✅ sitemap-images-topics.xml created (${topicsImages.length} images)`);
     }
-  } catch (error) {
-    console.error('❌ Error generating topics images sitemap:', error.message);
   }
+} catch (error) {
+  console.error('❌ Error generating topics images sitemap:', error.message);
+}
   
   // Create images index
   if (imageSitemaps.length > 0) {

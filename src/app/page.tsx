@@ -79,10 +79,10 @@ export default async function Home() {
         <InspoCategoriesCarousel categories={inspoCategories} />
       )}
       
-      {/* 9. Inspo Masonry Grid */}
+{/* 
       {masonryImages.length > 0 && (
         <InspoMasonryGrid images={masonryImages} />
-      )}
+      )} */}
       
       {/* 10. Subscribe Section (Final) */}
       <SubscribeSection />

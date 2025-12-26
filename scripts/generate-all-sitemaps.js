@@ -267,72 +267,153 @@ function generateImageSitemaps() {
   const currentYear = new Date().getFullYear();
   const season = getCurrentSeason();
   
-// 6a) Blog images (from /public/images/blog/) - FIXED VERSION
+// 6a) Blog images - Read from blog markdown files (handles MD + HTML syntax)
 try {
   const blogImagesDir = path.join(PUBLIC_DIR, 'images', 'blog');
   const blogDir = path.join(process.cwd(), 'src/content/blogs');
   
   if (fs.existsSync(blogImagesDir) && fs.existsSync(blogDir)) {
-    const imageFiles = fs.readdirSync(blogImagesDir).filter(f => 
-      /\.(jpg|jpeg|png|webp)$/i.test(f)
-    );
+    const blogFiles = fs.readdirSync(blogDir).filter(f => f.endsWith('.md'));
     
-    // Get all blog post slugs
-    const blogPosts = fs.readdirSync(blogDir)
-      .filter(f => f.endsWith('.md'))
-      .map(f => f.replace('.md', ''));
+    console.log(`📊 Processing ${blogFiles.length} blog posts for images...`);
     
     const blogImages = [];
+    let totalImagesFound = 0;
     
-    imageFiles.forEach(img => {
-      const imageName = img.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+    blogFiles.forEach(file => {
+      const slug = file.replace('.md', '');
+      const filePath = path.join(blogDir, file);
+      const content = fs.readFileSync(filePath, 'utf8');
       
-      // Match image to blog post by exact filename match
-      const matchedPost = blogPosts.find(post => {
-        // Remove any suffixes like -hero, -thumb, -1, -2 etc from image name
-        const baseImageName = imageName.replace(/-(hero|thumb|\d+)$/i, '');
-        return post === imageName || post === baseImageName;
-      });
+      const images = [];
       
-      // Skip if no matching blog post found
-      if (!matchedPost) {
-        console.warn(`⚠️  No blog post found for image: ${img}`);
-        return;
+      // 1️⃣ Extract Markdown images: ![alt text](/images/blog/image.jpg)
+      const mdImageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+      let match;
+      
+      while ((match = mdImageRegex.exec(content)) !== null) {
+        const altText = match[1];
+        const imagePath = match[2];
+        
+        if (imagePath.includes('/images/blog/')) {
+          const imageName = imagePath.split('/').pop().split('?')[0]; // Remove query params
+          const fullImagePath = path.join(blogImagesDir, imageName);
+          
+          if (fs.existsSync(fullImagePath) && !images.find(img => img.name === imageName)) {
+            images.push({
+              path: imagePath,
+              name: imageName,
+              alt: altText,
+              type: 'markdown'
+            });
+          }
+        }
       }
       
-      const cleanTitle = matchedPost.replace(/-/g, ' ');
+      // 2️⃣ Extract HTML images: <img src="/images/blog/image.jpg" alt="text" />
+      const htmlImageRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/gi;
       
-      // Generate unique caption based on image type
-      let caption;
-      if (imageName.includes('hero')) {
-        caption = `Complete ${cleanTitle} tutorial with expert tips and techniques`;
-      } else if (imageName.includes('step')) {
-        caption = `Step-by-step process for achieving ${cleanTitle} look`;
-      } else if (imageName.match(/\d+$/)) {
-        caption = `${cleanTitle} design variation and styling inspiration`;
+      while ((match = htmlImageRegex.exec(content)) !== null) {
+        const fullMatch = match[0];
+        const imagePath = match[1];
+        
+        if (imagePath.includes('/images/blog/')) {
+          const imageName = imagePath.split('/').pop().split('?')[0]; // Remove query params
+          const fullImagePath = path.join(blogImagesDir, imageName);
+          
+          // Extract alt text from HTML tag
+          const altMatch = fullMatch.match(/alt=["']([^"']*)["']/i);
+          const altText = altMatch ? altMatch[1] : '';
+          
+          if (fs.existsSync(fullImagePath) && !images.find(img => img.name === imageName)) {
+            images.push({
+              path: imagePath,
+              name: imageName,
+              alt: altText,
+              type: 'html'
+            });
+          }
+        }
+      }
+      
+      // 3️⃣ Check frontmatter for featured/hero images
+      const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---/);
+      if (frontmatterMatch) {
+        const frontmatter = frontmatterMatch[1];
+        
+        const imageFields = ['image:', 'heroImage:', 'featuredImage:', 'thumbnail:', 'cover:'];
+        imageFields.forEach(field => {
+          const fieldRegex = new RegExp(`${field}\\s*["']?([^"'\\n]+)["']?`, 'i');
+          const fieldMatch = frontmatter.match(fieldRegex);
+          
+          if (fieldMatch && fieldMatch[1].includes('/images/blog/')) {
+            const imageName = fieldMatch[1].split('/').pop().split('?')[0];
+            const fullImagePath = path.join(blogImagesDir, imageName);
+            
+            if (fs.existsSync(fullImagePath) && !images.find(img => img.name === imageName)) {
+              images.push({
+                path: fieldMatch[1],
+                name: imageName,
+                alt: `${slug.replace(/-/g, ' ')} featured image`,
+                type: 'frontmatter'
+              });
+            }
+          }
+        });
+      }
+      
+      // 4️⃣ Create sitemap entries for each image found in this blog post
+      if (images.length > 0) {
+        const cleanTitle = slug.replace(/-/g, ' ');
+        
+        images.forEach((img, index) => {
+          let caption;
+          
+          // Use alt text if meaningful, otherwise generate caption
+          if (img.alt && img.alt.length > 10 && !img.alt.match(/^(image|picture|photo)\s*\d*$/i)) {
+            caption = img.alt;
+          } else {
+            // Generate caption based on image position and name
+            if (index === 0 || img.type === 'frontmatter') {
+              caption = `Complete ${cleanTitle} tutorial with expert tips and techniques`;
+            } else if (img.name.match(/step|process/i)) {
+              caption = `Step-by-step process for achieving ${cleanTitle} look`;
+            } else if (img.name.match(/finish|texture|result/i)) {
+              caption = `Final ${cleanTitle} result and finish details`;
+            } else if (img.name.match(/comparison|vs/i)) {
+              caption = `Detailed ${cleanTitle} comparison and analysis`;
+            } else {
+              caption = `${cleanTitle} design variation ${index + 1} - styling inspiration`;
+            }
+          }
+          
+          blogImages.push({
+            pageUrl: `${SITE_URL}/blog/${slug}`,
+            imageUrl: `${SITE_URL}${img.path.startsWith('/') ? img.path : '/' + img.path}`,
+            title: `${cleanTitle} - ${currentYear} nail art guide`,
+            caption: caption,
+          });
+        });
+        
+        totalImagesFound += images.length;
+        console.log(`   ✓ ${slug}: ${images.length} image(s) [MD: ${images.filter(i => i.type === 'markdown').length}, HTML: ${images.filter(i => i.type === 'html').length}, FM: ${images.filter(i => i.type === 'frontmatter').length}]`);
       } else {
-        caption = `Professional ${cleanTitle} guide with detailed instructions`;
+        console.warn(`   ⚠️  ${slug}: No images found`);
       }
-      
-      blogImages.push({
-        pageUrl: `${SITE_URL}/blog/${matchedPost}`,
-        imageUrl: `${SITE_URL}/images/blog/${img}`,
-        title: `${cleanTitle} - ${currentYear} nail art guide`,
-        caption: caption,
-      });
     });
     
     if (blogImages.length > 0) {
       const xml = createImageSitemap(blogImages);
       fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-blog.xml'), xml);
       imageSitemaps.push('sitemap-images-blog.xml');
-      console.log(`✅ sitemap-images-blog.xml created (${blogImages.length} images matched to blog posts)`);
+      console.log(`\n✅ sitemap-images-blog.xml created (${totalImagesFound} images from ${blogFiles.length} posts)`);
     } else {
-      console.warn('⚠️  No blog images matched to posts');
+      console.warn('⚠️  No blog images found in any posts');
     }
   }
 } catch (error) {
   console.error('❌ Error generating blog images sitemap:', error.message);
+  console.error(error.stack);
 }
 
   

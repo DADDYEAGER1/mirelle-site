@@ -12,6 +12,8 @@ import {
 import { getAllCategorySlugs } from '@/lib/shop';
 import { ProductPageData } from '@/types/shop';
 
+export const revalidate = 86400; // 24 hours
+
 // Helper function to get product by slug from JSON
 async function getProductBySlug(
   category: string,

@@ -5,7 +5,6 @@ const SITE_URL = 'https://mirelleinspo.com';
 const PUBLIC_DIR = path.join(process.cwd(), 'public');
 const CLOUDINARY_BASE = 'https://res.cloudinary.com/de1yf0iuo/image/upload';  // ← ADD THIS
 
-
 // ✅ Helper: Get current season
 function getCurrentSeason() {
   const month = new Date().getMonth();

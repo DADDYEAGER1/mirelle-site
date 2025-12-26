@@ -13,7 +13,7 @@ interface PageProps {
 }
 
 // ✅ ISR: Revalidate every hour
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export async function generateStaticParams() {
   const slugs = await getAllBlogSlugs();

@@ -1,0 +1,24 @@
+BROKEN LINKS REPORT
+============================================================
+
+Broken link: /**
+  - next.config.ts:18
+
+Broken link: /images/**
+  - next.config.ts:14
+
+Broken link: /images/shop/**
+  - next.config.ts:10
+
+Broken link: /products
+  - src\app\about\page.tsx:179
+  - src\app\about\page.tsx:319
+
+Broken link: /trends
+  - src\app\about\page.tsx:149
+  - src\app\about\page.tsx:293
+
+Broken link: /tutorials
+  - src\app\about\page.tsx:164
+  - src\app\about\page.tsx:306
+

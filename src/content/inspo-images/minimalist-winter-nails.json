@@ -2,163 +2,243 @@
   "images": [
     {
       "id": "minimalist-winter-001",
-      "url": "/inspo/minimalist-winter-nails/delicate-line-art-nude-base-simple-clean-elegant-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/delicate-line-art-nude-base-simple-clean-elegant-winter-manicure.webp",
       "alt": "Delicate line art nude base nails with simple clean design creating elegant minimalist winter manicure perfect for office professional wear",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-002",
-      "url": "/inspo/minimalist-winter-nails/negative-space-white-accent-modern-clean-minimalist-winter-nail-art.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/negative-space-white-accent-modern-clean-minimalist-winter-nail-art.webp",
       "alt": "Negative space white accent nails creating modern clean minimalist winter nail art perfect for contemporary sophisticated style 2025",
       "category": "white",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-003",
-      "url": "/inspo/minimalist-winter-nails/clean-minimal-short-nude-office-appropriate-professional-chic-winter.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/clean-minimal-short-nude-office-appropriate-professional-chic-winter.webp",
       "alt": "Clean minimal short nude nails creating office appropriate professional chic winter manicure perfect for conservative workplace style",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "minimalist-winter-004",
-      "url": "/inspo/minimalist-winter-nails/subtle-dot-design-almond-delicate-elegant-minimalist-winter-nail-art.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/subtle-dot-design-almond-delicate-elegant-minimalist-winter-nail-art.webp",
       "alt": "Subtle dot design almond nails with delicate elegant minimalist winter nail art perfect for understated sophisticated manicure 2025",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "minimalist-winter-005",
-      "url": "/inspo/minimalist-winter-nails/nude-white-micro-french-tips-thin-line-elegant-minimalist-winter-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/nude-white-micro-french-tips-thin-line-elegant-minimalist-winter-design.webp",
       "alt": "Nude white micro French tips with thin line creating elegant minimalist winter manicure design perfect for classic timeless style",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-006",
-      "url": "/inspo/minimalist-winter-nails/milky-white-glossy-short-clean-simple-trending-minimalist-winter-nails.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/milky-white-glossy-short-clean-simple-trending-minimalist-winter-nails.webp",
       "alt": "Milky white glossy short nails creating clean simple trending minimalist winter manicure perfect for fresh modern elegant aesthetic",
       "category": "white",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-007",
-      "url": "/inspo/minimalist-winter-nails/beige-minimal-line-art-simple-neutral-elegant-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/beige-minimal-line-art-simple-neutral-elegant-winter-manicure.webp",
       "alt": "Beige minimal line art nails with simple neutral elegant winter manicure creating sophisticated understated professional style design",
       "category": "beige",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "minimalist-winter-008",
-      "url": "/inspo/minimalist-winter-nails/sheer-pink-minimalist-coffin-soft-clean-elegant-jelly-finish-winter.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/sheer-pink-minimalist-coffin-soft-clean-elegant-jelly-finish-winter.webp",
       "alt": "Sheer pink minimalist coffin nails with soft clean elegant jelly finish creating subtle winter manicure perfect for romantic style",
       "category": "pink",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-009",
-      "url": "/inspo/minimalist-winter-nails/white-negative-space-almond-modern-clean-minimalist-winter-nail-art-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/white-negative-space-almond-modern-clean-minimalist-winter-nail-art-design.webp",
       "alt": "White negative space almond nails creating modern clean minimalist winter nail art design perfect for contemporary professional manicure",
       "category": "white",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-010",
-      "url": "/inspo/minimalist-winter-nails/nude-single-thin-line-short-delicate-office-appropriate-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/nude-single-thin-line-short-delicate-office-appropriate-winter-manicure.webp",
       "alt": "Nude single thin line short nails with delicate design creating office appropriate minimalist winter manicure perfect for professional style",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "minimalist-winter-011",
-      "url": "/inspo/minimalist-winter-nails/cream-minimal-geometric-simple-clean-modern-elegant-winter-nail-art.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/cream-minimal-geometric-simple-clean-modern-elegant-winter-nail-art.webp",
       "alt": "Cream minimal geometric nails with simple clean modern design creating elegant minimalist winter nail art perfect for understated style",
       "category": "cream",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-012",
-      "url": "/inspo/minimalist-winter-nails/soft-pink-micro-dots-subtle-accent-minimalist-winter-manicure-trendy.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/soft-pink-micro-dots-subtle-accent-minimalist-winter-manicure-trendy.webp",
       "alt": "Soft pink micro dots nails with subtle accent creating minimalist winter manicure trendy design perfect for delicate feminine style 2025",
       "category": "pink",
       "isPremium": true,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "minimalist-winter-013",
-      "url": "/inspo/minimalist-winter-nails/white-matte-clean-simple-elegant-modern-minimalist-winter-style-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/white-matte-clean-simple-elegant-modern-minimalist-winter-style-manicure.webp",
       "alt": "White matte clean nails creating simple elegant modern minimalist winter manicure style perfect for contemporary understated fashion look",
       "category": "white",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-014",
-      "url": "/inspo/minimalist-winter-nails/nude-rose-gold-thin-accent-line-delicate-modern-minimalist-winter-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/nude-rose-gold-thin-accent-line-delicate-modern-minimalist-winter-design.webp",
       "alt": "Nude nails with rose gold thin accent line creating delicate modern minimalist winter manicure design perfect for elegant professional style",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-015",
-      "url": "/inspo/minimalist-winter-nails/sheer-nude-glossy-short-natural-clean-elegant-minimalist-winter-nails.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/sheer-nude-glossy-short-natural-clean-elegant-minimalist-winter-nails.webp",
       "alt": "Sheer nude glossy short nails creating natural clean elegant minimalist winter manicure perfect for effortless understated beauty style",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "minimalist-winter-016",
-      "url": "/inspo/minimalist-winter-nails/white-thin-french-tip-almond-classic-modern-minimalist-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/white-thin-french-tip-almond-classic-modern-minimalist-winter-manicure.webp",
       "alt": "White thin French tip almond nails creating classic modern minimalist winter manicure perfect for timeless elegant professional style 2025",
       "category": "white",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-017",
-      "url": "/inspo/minimalist-winter-nails/beige-negative-space-ombre-gradient-elegant-minimalist-winter-nail-art-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/beige-negative-space-ombre-gradient-elegant-minimalist-winter-nail-art-design.webp",
       "alt": "Beige negative space ombre nails with gradient creating elegant minimalist winter nail art design perfect for sophisticated neutral manicure",
       "category": "beige",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-018",
-      "url": "/inspo/minimalist-winter-nails/ivory-clean-glossy-coffin-simple-elegant-statement-minimalist-winter-nails.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/ivory-clean-glossy-coffin-simple-elegant-statement-minimalist-winter-nails.webp",
       "alt": "Ivory clean glossy coffin nails creating simple elegant statement minimalist winter manicure perfect for sophisticated understated luxury style",
       "category": "white",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "minimalist-winter-019",
-      "url": "/inspo/minimalist-winter-nails/nude-silver-micro-thin-line-delicate-metallic-accent-minimalist-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/nude-silver-micro-thin-line-delicate-metallic-accent-minimalist-winter-manicure.webp",
       "alt": "Nude silver micro thin line nails with delicate metallic accent creating minimalist winter manicure perfect for elegant professional style",
       "category": "nude",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "minimalist-winter-020",
-      "url": "/inspo/minimalist-winter-nails/milky-white-pearl-accent-subtle-luxury-minimalist-winter-design-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/minimalist-winter-nails/milky-white-pearl-accent-subtle-luxury-minimalist-winter-design-manicure.webp",
       "alt": "Milky white pearl accent nails creating subtle luxury minimalist winter manicure design perfect for elegant understated sophisticated style 2025",
       "category": "white",
       "isPremium": true,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     }
   ]
 }

@@ -2,403 +2,603 @@
   "images": [
     {
       "id": "ombre-gradient-2026-001",
-      "url": "/inspo/ombre-gradient-nails-2026/pink-nude-ombre-soft-gradient-romantic-elegant-wedding-bridal.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/pink-nude-ombre-soft-gradient-romantic-elegant-wedding-bridal.webp",
       "alt": "Pink nude ombre soft gradient romantic elegant nails creating wedding bridal manicure for ceremony",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-002",
-      "url": "/inspo/ombre-gradient-nails-2026/aura-nails-northern-lights-rainbow-multi-color-halo-dimensional.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/aura-nails-northern-lights-rainbow-multi-color-halo-dimensional.webp",
       "alt": "Aura nails northern lights rainbow with multi color halo creating dimensional manicure for trendy",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-003",
-      "url": "/inspo/ombre-gradient-nails-2026/sunset-ombre-orange-pink-purple-gradient-summer-artistic-vibrant.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/sunset-ombre-orange-pink-purple-gradient-summer-artistic-vibrant.webp",
       "alt": "Sunset ombre orange pink purple gradient nails creating summer artistic vibrant manicure tropical",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-004",
-      "url": "/inspo/ombre-gradient-nails-2026/neon-ombre-electric-glowing-vibrant-party-festival-bold-trendy.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/neon-ombre-electric-glowing-vibrant-party-festival-bold-trendy.webp",
       "alt": "Neon ombre electric glowing vibrant nails creating party festival bold trendy manicure for events",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-005",
-      "url": "/inspo/ombre-gradient-nails-2026/mocha-cream-ombre-pantone-2025-neutral-elegant-professional-chic.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/mocha-cream-ombre-pantone-2025-neutral-elegant-professional-chic.webp",
       "alt": "Mocha cream ombre pantone 2025 neutral elegant nails creating professional chic manicure for work",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-006",
-      "url": "/inspo/ombre-gradient-nails-2026/burgundy-nude-ombre-deep-red-gradient-elegant-winter-sophisticated.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/burgundy-nude-ombre-deep-red-gradient-elegant-winter-sophisticated.webp",
       "alt": "Burgundy nude ombre deep red gradient elegant nails creating winter sophisticated manicure classy",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-007",
-      "url": "/inspo/ombre-gradient-nails-2026/iced-french-ombre-frosted-gradient-tips-modern-elegant-chic.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/iced-french-ombre-frosted-gradient-tips-modern-elegant-chic.webp",
       "alt": "Iced french ombre frosted gradient tips modern elegant nails creating chic manicure for weddings",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-008",
-      "url": "/inspo/ombre-gradient-nails-2026/blue-white-ombre-icy-gradient-winter-cool-elegant-sophisticated.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/blue-white-ombre-icy-gradient-winter-cool-elegant-sophisticated.webp",
       "alt": "Blue white ombre icy gradient winter nails creating cool elegant sophisticated manicure for season",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-009",
-      "url": "/inspo/ombre-gradient-nails-2026/sage-cream-ombre-green-neutral-soft-calming-natural-bohemian.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/sage-cream-ombre-green-neutral-soft-calming-natural-bohemian.webp",
       "alt": "Sage cream ombre green neutral soft nails creating calming natural bohemian manicure for earthy",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-010",
-      "url": "/inspo/ombre-gradient-nails-2026/galaxy-ombre-navy-purple-glitter-cosmic-dimensional-party-trendy.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/galaxy-ombre-navy-purple-glitter-cosmic-dimensional-party-trendy.webp",
       "alt": "Galaxy ombre navy purple glitter cosmic nails creating dimensional party trendy manicure for night",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "ombre-gradient-2026-011",
-      "url": "/inspo/ombre-gradient-nails-2026/lavender-white-ombre-purple-gradient-soft-feminine-romantic-sweet.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/lavender-white-ombre-purple-gradient-soft-feminine-romantic-sweet.webp",
       "alt": "Lavender white ombre purple gradient soft feminine nails creating romantic sweet manicure delicate",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-012",
-      "url": "/inspo/ombre-gradient-nails-2026/peach-coral-ombre-warm-summer-gradient-cheerful-bright-tropical.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/peach-coral-ombre-warm-summer-gradient-cheerful-bright-tropical.webp",
       "alt": "Peach coral ombre warm summer gradient nails creating cheerful bright tropical manicure vacation",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-013",
-      "url": "/inspo/ombre-gradient-nails-2026/chrome-ombre-metallic-gradient-silver-pink-modern-trendy-glamorous.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/chrome-ombre-metallic-gradient-silver-pink-modern-trendy-glamorous.webp",
       "alt": "Chrome ombre metallic gradient silver pink modern nails creating trendy glamorous manicure party",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-014",
-      "url": "/inspo/ombre-gradient-nails-2026/rainbow-ombre-colorful-vibrant-gradient-pride-fun-playful-cheerful.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/rainbow-ombre-colorful-vibrant-gradient-pride-fun-playful-cheerful.webp",
       "alt": "Rainbow ombre colorful vibrant gradient pride nails creating fun playful cheerful manicure festive",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-015",
-      "url": "/inspo/ombre-gradient-nails-2026/black-grey-ombre-dark-gradient-edgy-sophisticated-gothic-dramatic.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/black-grey-ombre-dark-gradient-edgy-sophisticated-gothic-dramatic.webp",
       "alt": "Black grey ombre dark gradient edgy sophisticated nails creating gothic dramatic manicure statement",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-016",
-      "url": "/inspo/ombre-gradient-nails-2026/mint-white-ombre-fresh-pastel-spring-light-airy-cheerful-bright.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/mint-white-ombre-fresh-pastel-spring-light-airy-cheerful-bright.webp",
       "alt": "Mint white ombre fresh pastel spring nails creating light airy cheerful bright manicure for days",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-017",
-      "url": "/inspo/ombre-gradient-nails-2026/rose-gold-ombre-metallic-shimmer-gradient-luxury-elegant-glamorous.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/rose-gold-ombre-metallic-shimmer-gradient-luxury-elegant-glamorous.webp",
       "alt": "Rose gold ombre metallic shimmer gradient nails creating luxury elegant glamorous manicure party",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-018",
-      "url": "/inspo/ombre-gradient-nails-2026/teal-turquoise-ombre-blue-green-gradient-tropical-summer-vibrant.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/teal-turquoise-ombre-blue-green-gradient-tropical-summer-vibrant.webp",
       "alt": "Teal turquoise ombre blue green gradient nails creating tropical summer vibrant manicure vacation",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-019",
-      "url": "/inspo/ombre-gradient-nails-2026/caramel-nude-ombre-warm-brown-gradient-autumn-cozy-neutral-elegant.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/caramel-nude-ombre-warm-brown-gradient-autumn-cozy-neutral-elegant.webp",
       "alt": "Caramel nude ombre warm brown gradient autumn nails creating cozy neutral elegant manicure fall",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-020",
-      "url": "/inspo/ombre-gradient-nails-2026/holographic-ombre-iridescent-rainbow-gradient-party-festival-trendy.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/holographic-ombre-iridescent-rainbow-gradient-party-festival-trendy.webp",
       "alt": "Holographic ombre iridescent rainbow gradient nails creating party festival trendy manicure events",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "ombre-gradient-2026-021",
-      "url": "/inspo/ombre-gradient-nails-2026/baby-blue-white-ombre-soft-pastel-gradient-spring-feminine-delicate.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/baby-blue-white-ombre-soft-pastel-gradient-spring-feminine-delicate.webp",
       "alt": "Baby blue white ombre soft pastel gradient spring nails creating feminine delicate manicure sweet",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-022",
-      "url": "/inspo/ombre-gradient-nails-2026/red-pink-ombre-valentine-romantic-gradient-bold-feminine-passionate.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/red-pink-ombre-valentine-romantic-gradient-bold-feminine-passionate.webp",
       "alt": "Red pink ombre valentine romantic gradient bold nails creating feminine passionate manicure love",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-023",
-      "url": "/inspo/ombre-gradient-nails-2026/emerald-gold-ombre-green-metallic-gradient-luxe-elegant-sophisticated.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/emerald-gold-ombre-green-metallic-gradient-luxe-elegant-sophisticated.webp",
       "alt": "Emerald gold ombre green metallic gradient nails creating luxe elegant sophisticated manicure regal",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-024",
-      "url": "/inspo/ombre-gradient-nails-2026/grey-white-ombre-neutral-gradient-sophisticated-professional-minimalist.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/grey-white-ombre-neutral-gradient-sophisticated-professional-minimalist.webp",
       "alt": "Grey white ombre neutral gradient sophisticated nails creating professional minimalist manicure work",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-025",
-      "url": "/inspo/ombre-gradient-nails-2026/yellow-white-ombre-sunny-bright-gradient-cheerful-summer-fun-playful.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/yellow-white-ombre-sunny-bright-gradient-cheerful-summer-fun-playful.webp",
       "alt": "Yellow white ombre sunny bright gradient cheerful nails creating summer fun playful manicure joy",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-026",
-      "url": "/inspo/ombre-gradient-nails-2026/dusty-rose-nude-ombre-muted-pink-gradient-vintage-romantic-elegant.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/dusty-rose-nude-ombre-muted-pink-gradient-vintage-romantic-elegant.webp",
       "alt": "Dusty rose nude ombre muted pink gradient vintage nails creating romantic elegant manicure wedding",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-027",
-      "url": "/inspo/ombre-gradient-nails-2026/copper-brown-ombre-metallic-autumn-gradient-warm-luxe-trendy-seasonal.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/copper-brown-ombre-metallic-autumn-gradient-warm-luxe-trendy-seasonal.webp",
       "alt": "Copper brown ombre metallic autumn gradient warm nails creating luxe trendy seasonal manicure fall",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-028",
-      "url": "/inspo/ombre-gradient-nails-2026/aqua-white-ombre-blue-gradient-fresh-tropical-summer-cheerful-bright.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/aqua-white-ombre-blue-gradient-fresh-tropical-summer-cheerful-bright.webp",
       "alt": "Aqua white ombre blue gradient fresh tropical nails creating summer cheerful bright manicure beach",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-029",
-      "url": "/inspo/ombre-gradient-nails-2026/plum-purple-ombre-deep-gradient-rich-luxe-elegant-royal-sophisticated.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/plum-purple-ombre-deep-gradient-rich-luxe-elegant-royal-sophisticated.webp",
       "alt": "Plum purple ombre deep gradient rich luxe elegant nails creating royal sophisticated manicure regal",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-030",
-      "url": "/inspo/ombre-gradient-nails-2026/champagne-gold-ombre-shimmer-gradient-luxury-wedding-elegant-glamorous.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/champagne-gold-ombre-shimmer-gradient-luxury-wedding-elegant-glamorous.webp",
       "alt": "Champagne gold ombre shimmer gradient luxury nails creating wedding elegant glamorous manicure bridal",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "ombre-gradient-2026-031",
-      "url": "/inspo/ombre-gradient-nails-2026/hot-pink-white-ombre-vibrant-gradient-bold-statement-party-fun.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/hot-pink-white-ombre-vibrant-gradient-bold-statement-party-fun.webp",
       "alt": "Hot pink white ombre vibrant gradient bold nails creating statement party fun manicure for nights",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-032",
-      "url": "/inspo/ombre-gradient-nails-2026/navy-blue-ombre-dark-gradient-sophisticated-professional-elegant-chic.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/navy-blue-ombre-dark-gradient-sophisticated-professional-elegant-chic.webp",
       "alt": "Navy blue ombre dark gradient sophisticated professional nails creating elegant chic manicure work",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-033",
-      "url": "/inspo/ombre-gradient-nails-2026/violet-pink-ombre-purple-gradient-romantic-feminine-dreamy-ethereal.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/violet-pink-ombre-purple-gradient-romantic-feminine-dreamy-ethereal.webp",
       "alt": "Violet pink ombre purple gradient romantic feminine nails creating dreamy ethereal manicure fairy",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-034",
-      "url": "/inspo/ombre-gradient-nails-2026/orange-yellow-ombre-sunset-gradient-warm-tropical-summer-vibrant.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/orange-yellow-ombre-sunset-gradient-warm-tropical-summer-vibrant.webp",
       "alt": "Orange yellow ombre sunset gradient warm tropical nails creating summer vibrant manicure for beach",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-035",
-      "url": "/inspo/ombre-gradient-nails-2026/silver-chrome-ombre-metallic-gradient-futuristic-modern-trendy-party.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/silver-chrome-ombre-metallic-gradient-futuristic-modern-trendy-party.webp",
       "alt": "Silver chrome ombre metallic gradient futuristic modern nails creating trendy party manicure event",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-036",
-      "url": "/inspo/ombre-gradient-nails-2026/terracotta-cream-ombre-earthy-gradient-warm-bohemian-natural-autumn.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/terracotta-cream-ombre-earthy-gradient-warm-bohemian-natural-autumn.webp",
       "alt": "Terracotta cream ombre earthy gradient warm bohemian nails creating natural autumn manicure boho",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-037",
-      "url": "/inspo/ombre-gradient-nails-2026/magenta-purple-ombre-vibrant-gradient-bold-statement-party-dramatic.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/magenta-purple-ombre-vibrant-gradient-bold-statement-party-dramatic.webp",
       "alt": "Magenta purple ombre vibrant gradient bold nails creating statement party dramatic manicure event",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-038",
-      "url": "/inspo/ombre-gradient-nails-2026/ivory-champagne-ombre-soft-gradient-bridal-wedding-elegant-classic.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/ivory-champagne-ombre-soft-gradient-bridal-wedding-elegant-classic.webp",
       "alt": "Ivory champagne ombre soft gradient bridal wedding nails creating elegant classic manicure ceremony",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-039",
-      "url": "/inspo/ombre-gradient-nails-2026/lime-green-ombre-neon-gradient-bright-summer-vibrant-bold-playful.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/lime-green-ombre-neon-gradient-bright-summer-vibrant-bold-playful.webp",
       "alt": "Lime green ombre neon gradient bright summer nails creating vibrant bold playful manicure for fun",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-040",
-      "url": "/inspo/ombre-gradient-nails-2026/maroon-burgundy-ombre-deep-red-gradient-elegant-winter-sophisticated.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/maroon-burgundy-ombre-deep-red-gradient-elegant-winter-sophisticated.webp",
       "alt": "Maroon burgundy ombre deep red gradient elegant nails creating winter sophisticated manicure luxe",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "ombre-gradient-2026-041",
-      "url": "/inspo/ombre-gradient-nails-2026/glitter-ombre-sparkle-gradient-fade-glamorous-party-festive-celebration.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/glitter-ombre-sparkle-gradient-fade-glamorous-party-festive-celebration.webp",
       "alt": "Glitter ombre sparkle gradient fade glamorous nails creating party festive celebration manicure fun",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-042",
-      "url": "/inspo/ombre-gradient-nails-2026/peachy-pink-ombre-coral-gradient-soft-romantic-feminine-sweet-summer.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/peachy-pink-ombre-coral-gradient-soft-romantic-feminine-sweet-summer.webp",
       "alt": "Peachy pink ombre coral gradient soft romantic feminine nails creating sweet summer manicure warm",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-043",
-      "url": "/inspo/ombre-gradient-nails-2026/forest-green-ombre-dark-gradient-earthy-natural-sophisticated-autumn.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/forest-green-ombre-dark-gradient-earthy-natural-sophisticated-autumn.webp",
       "alt": "Forest green ombre dark gradient earthy natural nails creating sophisticated autumn manicure elegant",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-044",
-      "url": "/inspo/ombre-gradient-nails-2026/pearl-ombre-shimmer-gradient-iridescent-luxury-wedding-elegant-bridal.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/pearl-ombre-shimmer-gradient-iridescent-luxury-wedding-elegant-bridal.webp",
       "alt": "Pearl ombre shimmer gradient iridescent luxury nails creating wedding elegant bridal manicure classy",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-045",
-      "url": "/inspo/ombre-gradient-nails-2026/berry-pink-ombre-deep-gradient-bold-romantic-feminine-statement-trendy.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/berry-pink-ombre-deep-gradient-bold-romantic-feminine-statement-trendy.webp",
       "alt": "Berry pink ombre deep gradient bold romantic feminine nails creating statement trendy manicure love",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "ombre-gradient-2026-046",
-      "url": "/inspo/ombre-gradient-nails-2026/charcoal-silver-ombre-grey-gradient-sophisticated-modern-edgy-chic.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/charcoal-silver-ombre-grey-gradient-sophisticated-modern-edgy-chic.webp",
       "alt": "Charcoal silver ombre grey gradient sophisticated modern nails creating edgy chic manicure statement",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-047",
-      "url": "/inspo/ombre-gradient-nails-2026/tangerine-orange-ombre-bright-gradient-vibrant-summer-cheerful-tropical.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/tangerine-orange-ombre-bright-gradient-vibrant-summer-cheerful-tropical.webp",
       "alt": "Tangerine orange ombre bright gradient vibrant summer nails creating cheerful tropical manicure fun",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-048",
-      "url": "/inspo/ombre-gradient-nails-2026/frosted-ombre-winter-ice-gradient-cool-elegant-sophisticated-seasonal.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/frosted-ombre-winter-ice-gradient-cool-elegant-sophisticated-seasonal.webp",
       "alt": "Frosted ombre winter ice gradient cool elegant nails creating sophisticated seasonal manicure holiday",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-049",
-      "url": "/inspo/ombre-gradient-nails-2026/cotton-candy-ombre-pink-blue-gradient-sweet-playful-whimsical-cute.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/cotton-candy-ombre-pink-blue-gradient-sweet-playful-whimsical-cute.webp",
       "alt": "Cotton candy ombre pink blue gradient sweet playful nails creating whimsical cute manicure for fun",
       "category": "ombre",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "ombre-gradient-2026-050",
-      "url": "/inspo/ombre-gradient-nails-2026/midnight-blue-ombre-dark-gradient-celestial-elegant-sophisticated-night.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/ombre-gradient-nails-2026/midnight-blue-ombre-dark-gradient-celestial-elegant-sophisticated-night.webp",
       "alt": "Midnight blue ombre dark gradient celestial elegant nails creating sophisticated night manicure regal",
       "category": "ombre",
       "isPremium": false,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     }
   ]
 }

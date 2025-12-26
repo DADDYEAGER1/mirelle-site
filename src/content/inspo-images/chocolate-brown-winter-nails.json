@@ -2,163 +2,243 @@
   "images": [
     {
       "id": "chocolate-brown-winter-001",
-      "url": "/inspo/chocolate-brown-winter-nails/mocha-brown-pantone-2025-almond-warm-elegant-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/mocha-brown-pantone-2025-almond-warm-elegant-winter-manicure.webp",
       "alt": "Mocha brown Pantone 2025 almond nails with warm elegant finish creating trending winter manicure perfect for cozy neutral style",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-002",
-      "url": "/inspo/chocolate-brown-winter-nails/rich-chocolate-brown-almond-shape-classic-neutral-winter-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/rich-chocolate-brown-almond-shape-classic-neutral-winter-design.webp",
       "alt": "Rich chocolate brown almond shape nails creating classic neutral winter manicure design perfect for everyday sophisticated style 2025",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-003",
-      "url": "/inspo/chocolate-brown-winter-nails/espresso-brown-short-dark-coffee-office-appropriate-chic-winter.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/espresso-brown-short-dark-coffee-office-appropriate-chic-winter.webp",
       "alt": "Espresso brown short nails with dark coffee color creating office appropriate chic winter manicure perfect for professional wear",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "chocolate-brown-winter-004",
-      "url": "/inspo/chocolate-brown-winter-nails/mocha-mousse-glossy-pantone-color-year-2025-trending-winter-style.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/mocha-mousse-glossy-pantone-color-year-2025-trending-winter-style.webp",
       "alt": "Mocha mousse glossy nails Pantone color of year 2025 creating trending winter manicure style perfect for fashion forward look",
       "category": "brown",
       "isPremium": true,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "chocolate-brown-winter-005",
-      "url": "/inspo/chocolate-brown-winter-nails/caramel-brown-ombre-gradient-warm-neutral-winter-nail-art-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/caramel-brown-ombre-gradient-warm-neutral-winter-nail-art-design.webp",
       "alt": "Caramel brown ombre nails with gradient creating warm neutral winter nail art design perfect for cozy season aesthetic 2025",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-006",
-      "url": "/inspo/chocolate-brown-winter-nails/dark-chocolate-matte-coffin-soft-finish-sophisticated-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/dark-chocolate-matte-coffin-soft-finish-sophisticated-winter-manicure.webp",
       "alt": "Dark chocolate matte coffin nails with soft finish creating sophisticated winter manicure perfect for elegant neutral everyday style",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-007",
-      "url": "/inspo/chocolate-brown-winter-nails/hazelnut-brown-short-light-chocolate-everyday-elegant-winter-style.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/hazelnut-brown-short-light-chocolate-everyday-elegant-winter-style.webp",
       "alt": "Hazelnut brown short nails with light chocolate color creating everyday elegant winter manicure style perfect for casual wear 2025",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "chocolate-brown-winter-008",
-      "url": "/inspo/chocolate-brown-winter-nails/chocolate-brown-french-tips-nude-base-modern-classic-winter-nail-art.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/chocolate-brown-french-tips-nude-base-modern-classic-winter-nail-art.webp",
       "alt": "Chocolate brown French tips with nude base creating modern classic winter nail art perfect for sophisticated versatile manicure look",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-009",
-      "url": "/inspo/chocolate-brown-winter-nails/mocha-brown-chrome-metallic-finish-trendy-pantone-2025-winter-nails.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/mocha-brown-chrome-metallic-finish-trendy-pantone-2025-winter-nails.webp",
       "alt": "Mocha brown chrome nails with metallic finish creating trendy Pantone 2025 winter manicure perfect for elevated neutral style look",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-010",
-      "url": "/inspo/chocolate-brown-winter-nails/espresso-brown-almond-dark-coffee-rich-elegant-statement-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/espresso-brown-almond-dark-coffee-rich-elegant-statement-winter-manicure.webp",
       "alt": "Espresso brown almond nails with dark coffee color creating rich elegant statement winter manicure perfect for sophisticated style",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "chocolate-brown-winter-011",
-      "url": "/inspo/chocolate-brown-winter-nails/chocolate-velvet-cat-eye-magnetic-dimensional-finish-trendy-winter-nails.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/chocolate-velvet-cat-eye-magnetic-dimensional-finish-trendy-winter-nails.webp",
       "alt": "Chocolate velvet cat eye nails with magnetic dimensional finish creating trendy winter manicure with light catching brown effect",
       "category": "brown",
       "isPremium": true,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-012",
-      "url": "/inspo/chocolate-brown-winter-nails/warm-brown-nude-gradient-ombre-natural-elegant-transition-winter-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/warm-brown-nude-gradient-ombre-natural-elegant-transition-winter-design.webp",
       "alt": "Warm brown to nude gradient nails with ombre transition creating natural elegant winter manicure design perfect for neutral lovers",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     },
     {
       "id": "chocolate-brown-winter-013",
-      "url": "/inspo/chocolate-brown-winter-nails/mocha-brown-glitter-accent-sparkly-pantone-2025-winter-party-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/mocha-brown-glitter-accent-sparkly-pantone-2025-winter-party-manicure.webp",
       "alt": "Mocha brown glitter accent nails creating sparkly Pantone 2025 winter party manicure perfect for festive holiday season celebrations",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-014",
-      "url": "/inspo/chocolate-brown-winter-nails/milk-chocolate-squoval-medium-brown-versatile-neutral-winter-style.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/milk-chocolate-squoval-medium-brown-versatile-neutral-winter-style.webp",
       "alt": "Milk chocolate squoval nails with medium brown color creating versatile neutral winter manicure style perfect for everyday fashion",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-015",
-      "url": "/inspo/chocolate-brown-winter-nails/dark-brown-matte-short-chocolate-everyday-chic-winter-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/dark-brown-matte-short-chocolate-everyday-chic-winter-design.webp",
       "alt": "Dark brown matte short nails with chocolate color creating everyday chic winter manicure design perfect for professional casual wear",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "chocolate-brown-winter-016",
-      "url": "/inspo/chocolate-brown-winter-nails/coffee-brown-glossy-almond-shiny-warm-trendy-pantone-winter-style.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/coffee-brown-glossy-almond-shiny-warm-trendy-pantone-winter-style.webp",
       "alt": "Coffee brown glossy almond nails with shiny warm finish creating trendy Pantone winter manicure style perfect for cozy aesthetic",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-017",
-      "url": "/inspo/chocolate-brown-winter-nails/mocha-brown-ombre-french-tips-gradient-modern-elegant-winter-nail-art.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/mocha-brown-ombre-french-tips-gradient-modern-elegant-winter-nail-art.webp",
       "alt": "Mocha brown ombre French tips with gradient creating modern elegant winter nail art perfect for sophisticated neutral manicure 2025",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-018",
-      "url": "/inspo/chocolate-brown-winter-nails/chocolate-brown-long-coffin-dramatic-statement-neutral-winter-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/chocolate-brown-long-coffin-dramatic-statement-neutral-winter-design.webp",
       "alt": "Chocolate brown long coffin nails creating dramatic statement neutral winter manicure design perfect for bold sophisticated style look",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1920, "aspectRatio": "9:16" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1920,
+        "aspectRatio": "9:16"
+      }
     },
     {
       "id": "chocolate-brown-winter-019",
-      "url": "/inspo/chocolate-brown-winter-nails/caramel-brown-gold-glitter-sparkly-warm-festive-winter-party-design.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/caramel-brown-gold-glitter-sparkly-warm-festive-winter-party-design.webp",
       "alt": "Caramel brown gold glitter nails creating sparkly warm festive winter party manicure design perfect for holiday season celebrations",
       "category": "brown",
       "isPremium": false,
-      "dimensions": { "width": 1080, "height": 1080, "aspectRatio": "1:1" }
+      "dimensions": {
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "1:1"
+      }
     },
     {
       "id": "chocolate-brown-winter-020",
-      "url": "/inspo/chocolate-brown-winter-nails/espresso-brown-3d-art-design-luxury-wedding-chocolate-winter-manicure.webp",
+      "url": "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/inspo/chocolate-brown-winter-nails/espresso-brown-3d-art-design-luxury-wedding-chocolate-winter-manicure.webp",
       "alt": "Espresso brown nails with 3D art design creating luxury winter wedding manicure with chocolate color perfect for elegant bridal style",
       "category": "brown",
       "isPremium": true,
-      "dimensions": { "width": 1920, "height": 1080, "aspectRatio": "16:9" }
+      "dimensions": {
+        "width": 1920,
+        "height": 1080,
+        "aspectRatio": "16:9"
+      }
     }
   ]
 }

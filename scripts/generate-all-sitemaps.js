@@ -3,6 +3,8 @@ const path = require('path');
 
 const SITE_URL = 'https://mirelleinspo.com';
 const PUBLIC_DIR = path.join(process.cwd(), 'public');
+const CLOUDINARY_BASE = 'https://res.cloudinary.com/de1yf0iuo/image/upload';  // ← ADD THIS
+
 
 // ✅ Helper: Get current season
 function getCurrentSeason() {
@@ -435,7 +437,7 @@ try {
           
           inspoImages.push({
             pageUrl: `${SITE_URL}/inspo/${category}`,
-            imageUrl: `${SITE_URL}/inspo/${category}/${img}`,
+            imageUrl: `${CLOUDINARY_BASE}/mirelleinspo/inspo/${category}/${img}`,
             title: `${categoryName} nail inspiration ${imageNumber}`,
             caption: `${categoryName} nail art - ${descriptor}`,
           });

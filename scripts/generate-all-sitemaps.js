@@ -334,6 +334,7 @@ try {
 } catch (error) {
   console.error('❌ Error generating blog images sitemap:', error.message);
 }
+
   
   // 6b) Shop product images (from /public/images/shop/) - FLAT STRUCTURE
   try {

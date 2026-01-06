@@ -7,7 +7,7 @@ dateModified: "2026-01-05T12:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Guides"
 tags: ["valentine french tip nails", "red tip nails valentine", "pink french manicure valentine", "heart french tips", "micro french tips", "colored french tips valentine", "romantic french tip nails", "modern french manicure"]
-image: "/images/blog/valentine-french-tip-nails-modern-precision-hero.webp"
+image: "/images/blog/valentine-french-tip-nails/valentine-french-tip-nails-modern-precision-hero.webp"
 imageAlt: "Valentine French tip nails showing red and pink tip variations with precision"
 imageWidth: 1080
 imageHeight: 1080
@@ -24,24 +24,24 @@ topicalMap:
   topicalBoundary: "French tip variations and precision techniques for Valentine's Day nail designs"
   hierarchyLevel: 2
 galleryImages:
-  - url: "/images/blog/classic-red-french-tips-valentine-bold.webp"
+  - url: "/images/blog/valentine-french-tip-nails/classic-red-french-tips-valentine-bold.webp"
     alt: "Classic red French tips replacing traditional white with bold valentine color"
     width: 800
     height: 800
-  - url: "/images/blog/micro-french-tips-minimalist-valentine-line.webp"
+  - url: "/images/blog/valentine-french-tip-nails/micro-french-tips-minimalist-valentine-line.webp"
     alt: "Micro French tips showing ultra-thin valentine nail line precision"
     width: 800
     height: 800
-  - url: "/images/blog/heart-shaped-french-tips-romantic-curve.webp"
+  - url: "/images/blog/valentine-french-tip-nails/heart-shaped-french-tips-romantic-curve.webp"
     alt: "Heart-shaped French tips with romantic curved tip geometry"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/pink-french-tips-soft-blush-variation.webp"
+  - url: "/images/blog/valentine-french-tip-nails/pink-french-tips-soft-blush-variation.webp"
     alt: "Pink French tips in soft blush shade for romantic valentine manicure"
-  - url: "/images/blog/double-french-tips-layered-precision-design.webp"
+  - url: "/images/blog/valentine-french-tip-nails/double-french-tips-layered-precision-design.webp"
     alt: "Double French tips showing two-tone layered valentine nail precision"
-  - url: "/images/blog/ombre-french-tips-gradient-valentine-blend.webp"
+  - url: "/images/blog/valentine-french-tip-nails/ombre-french-tips-gradient-valentine-blend.webp"
     alt: "Ombré French tips with pink to red gradient valentine transition"
 ---
 

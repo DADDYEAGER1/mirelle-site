@@ -7,7 +7,7 @@ dateModified: "2026-01-05T14:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Guides"
 tags: ["jelly valentine nails", "sheer heart nails", "translucent nail art", "milky pink base nails", "glass nail effect", "jelly gel nails valentine", "korean jelly nails", "see-through valentine nails"]
-image: "/images/blog/jelly-valentine-nails-translucent-elegance-hero.webp"
+image: "/images/blog/jelly-valentine-nails/jelly-valentine-nails-translucent-elegance-hero.webp"
 imageAlt: "Jelly Valentine nails showing translucent pink with glass-like finish"
 imageWidth: 1080
 imageHeight: 1080
@@ -24,24 +24,24 @@ topicalMap:
   topicalBoundary: "Translucent nail techniques and opacity control for Valentine jelly polish designs"
   hierarchyLevel: 2
 galleryImages:
-  - url: "/images/blog/opacity-control-layering-progression-guide.webp"
+  - url: "/images/blog/jelly-valentine-nails/opacity-control-layering-progression-guide.webp"
     alt: "Opacity control showing one coat to four coat jelly polish progression"
     width: 800
     height: 800
-  - url: "/images/blog/milky-pink-valentine-jelly-palette.webp"
+  - url: "/images/blog/jelly-valentine-nails/milky-pink-valentine-jelly-palette.webp"
     alt: "Milky pink sheer cranberry valentine jelly nail color palette"
     width: 800
     height: 800
-  - url: "/images/blog/jelly-french-tips-translucent-valentine.webp"
+  - url: "/images/blog/jelly-valentine-nails/jelly-french-tips-translucent-valentine.webp"
     alt: "Jelly French tips with translucent pink on sheer nude base"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/sheer-single-tone-date-night-elegance.webp"
+  - url: "/images/blog/jelly-valentine-nails/sheer-single-tone-date-night-elegance.webp"
     alt: "Sheer single tone jelly nails in one coat for date night elegance"
-  - url: "/images/blog/buildable-gradient-opacity-variation.webp"
+  - url: "/images/blog/jelly-valentine-nails/buildable-gradient-opacity-variation.webp"
     alt: "Buildable gradient showing nail to nail opacity variation technique"
-  - url: "/images/blog/encased-hearts-jelly-suspension-layers.webp"
+  - url: "/images/blog/jelly-valentine-nails/encased-hearts-jelly-suspension-layers.webp"
     alt: "Encased heart embellishments suspended in translucent jelly layers"
 ---
 

@@ -7,7 +7,7 @@ dateModified: "2026-01-15T13:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Art"
 tags: ["red chrome Valentine nails", "Valentine red chrome manicure", "metallic red Valentine nails", "chrome Valentine nail designs", "red mirror nails Valentine", "scarlet chrome nails", "molten red chrome nails", "chrome powder application"]
-image: "/images/blog/red-chrome-valentine-nails-molten-metal-finish.webp"
+image: "/images/blog/red-chrome-valentine-nails/red-chrome-valentine-nails-molten-metal-finish.webp"
 imageAlt: "Red chrome Valentine nails featuring reflective mirror-like metallic finish with liquid garnet appearance"
 imageWidth: 1080
 imageHeight: 1080
@@ -24,46 +24,46 @@ topicalMap:
   topicalBoundary: "Chrome powder application technique for Valentine's Day nails covering burnishing methods, sealing protocols, and troubleshooting mirror finish issues"
   hierarchyLevel: 2
 galleryImages:
-  - url: "/images/blog/chrome-powder-burnishing-technique-application.webp"
+  - url: "/images/blog/red-chrome-valentine-nails/chrome-powder-burnishing-technique-application.webp"
     alt: "Chrome powder burnishing technique showing silicone applicator creating mirror finish on red base"
     width: 800
     height: 800
-  - url: "/images/blog/red-chrome-vs-flat-polish-comparison-refraction.webp"
+  - url: "/images/blog/red-chrome-valentine-nails/red-chrome-vs-flat-polish-comparison-refraction.webp"
     alt: "Side by side comparison showing red chrome light refraction versus flat red polish finish"
     width: 800
     height: 800
-  - url: "/images/blog/chrome-free-edge-sealing-encapsulation-technique.webp"
+  - url: "/images/blog/red-chrome-valentine-nails/chrome-free-edge-sealing-encapsulation-technique.webp"
     alt: "Free edge sealing technique for chrome nails demonstrating proper encapsulation method"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/chrome-powder-burnishing-technique-application.webp"
+  - url: "/images/blog/red-chrome-valentine-nails/chrome-powder-burnishing-technique-application.webp"
     alt: "Chrome powder burnishing technique showing silicone applicator creating mirror finish on red base"
-  - url: "/images/blog/red-chrome-vs-flat-polish-comparison-refraction.webp"
+  - url: "/images/blog/red-chrome-valentine-nails/red-chrome-vs-flat-polish-comparison-refraction.webp"
     alt: "Side by side comparison showing red chrome light refraction versus flat red polish finish"
-  - url: "/images/blog/chrome-free-edge-sealing-encapsulation-technique.webp"
+  - url: "/images/blog/red-chrome-valentine-nails/chrome-free-edge-sealing-encapsulation-technique.webp"
     alt: "Free edge sealing technique for chrome nails demonstrating proper encapsulation method"
 tutorialSteps:
   - position: 1
     name: "Prepare Base Surface"
     text: "Buff natural nail to smooth canvas. Apply black or burgundy gel base—dark bases amplify chrome intensity. Cure thirty seconds under LED lamp for flash cure effect."
-    image: "/images/blog/chrome-nail-base-preparation-dark-color.webp"
+    image: "/images/blog/red-chrome-valentine-nails/chrome-nail-base-preparation-dark-color.webp"
   - position: 2
     name: "Apply Chrome Powder"
     text: "Using silicone applicator, pick minimal chrome powder. Burnish onto no-wipe top coat using firm circular motion. Less powder produces mirror finish—excess creates sparkly appearance."
-    image: "/images/blog/chrome-powder-application-burnishing-circular-motion.webp"
+    image: "/images/blog/red-chrome-valentine-nails/chrome-powder-application-burnishing-circular-motion.webp"
   - position: 3
     name: "Test Light Reflection"
     text: "Hold nail at angle under light source. Mirror-like reflection indicates completion. Matte appearance requires additional buffing. Dust excess powder with soft brush."
-    image: "/images/blog/chrome-nail-light-reflection-test-mirror-finish.webp"
+    image: "/images/blog/red-chrome-valentine-nails/chrome-nail-light-reflection-test-mirror-finish.webp"
   - position: 4
     name: "Seal Free Edges"
     text: "File nail tips gently to remove chrome powder from edges. Apply gel bonder to free edge. This prevents ninety percent of premature chipping issues."
-    image: "/images/blog/chrome-nail-free-edge-filing-sealing.webp"
+    image: "/images/blog/red-chrome-valentine-nails/chrome-nail-free-edge-filing-sealing.webp"
   - position: 5
     name: "Apply Top Coat"
     text: "Use no-wipe gel top coat in thin layer. Cap free edges deliberately. Cure sixty seconds under LED lamp. Second thin coat after curing ensures dimensional depth preservation."
-    image: "/images/blog/chrome-nail-top-coat-sealing-curing.webp"
+    image: "/images/blog/red-chrome-valentine-nails/chrome-nail-top-coat-sealing-curing.webp"
 tutorialMetadata:
   name: "Red Chrome Valentine Nail Application Tutorial"
   description: "Precision chrome powder burnishing technique for achieving mirror-like metallic Valentine nails with proper sealing protocol"

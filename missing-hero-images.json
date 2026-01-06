@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "scanDate": "2026-01-06T12:59:37.277Z",
+    "totalMdFiles": 27,
+    "missingHeroImages": 10
+  },
+  "missingHeroImages": [
+    {
+      "mdFile": "blogs\\halloween-nail-ideas-2025.md",
+      "slug": "halloween-nail-ideas-2025",
+      "heroImage": "/images/blog/halloween-nail-ideas-2025/halloweenhero.png",
+      "filename": "halloweenhero.png"
+    },
+    {
+      "mdFile": "blogs\\jelly-valentine-nails.md",
+      "slug": "jelly-valentine-nails",
+      "heroImage": "/images/blog/jelly-valentine-nails/jelly-valentine-nails-translucent-elegance-hero.webp",
+      "filename": "jelly-valentine-nails-translucent-elegance-hero.webp"
+    },
+    {
+      "mdFile": "blogs\\lace-valentine-nails.md",
+      "slug": "lace-valentine-nails",
+      "heroImage": "/images/blog/lace-valentine-nails/lace-valentine-nails-delicate-romantic-pattern.webp",
+      "filename": "lace-valentine-nails-delicate-romantic-pattern.webp"
+    },
+    {
+      "mdFile": "blogs\\mismatched-valentine-nails.md",
+      "slug": "mismatched-valentine-nails",
+      "heroImage": "/images/blog/mismatched-valentine-nails/mismatched-valentine-nails-asymmetric-design-2026.webp",
+      "filename": "mismatched-valentine-nails-asymmetric-design-2026.webp"
+    },
+    {
+      "mdFile": "blogs\\pink-cat-eye-valentine-nails.md",
+      "slug": "pink-cat-eye-valentine-nails",
+      "heroImage": "/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-valentine-nails-magnetic-shimmer.webp",
+      "filename": "pink-cat-eye-valentine-nails-magnetic-shimmer.webp"
+    },
+    {
+      "mdFile": "blogs\\red-chrome-valentine-nails.md",
+      "slug": "red-chrome-valentine-nails",
+      "heroImage": "/images/blog/red-chrome-valentine-nails/red-chrome-valentine-nails-molten-metal-finish.webp",
+      "filename": "red-chrome-valentine-nails-molten-metal-finish.webp"
+    },
+    {
+      "mdFile": "blogs\\tomato-red-valentine-nails.md",
+      "slug": "tomato-red-valentine-nails",
+      "heroImage": "/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp",
+      "filename": "tomato-red-valentine-nails-modern-warm-2026.webp"
+    },
+    {
+      "mdFile": "blogs\\valentine-french-tip-nails.md",
+      "slug": "valentine-french-tip-nails",
+      "heroImage": "/images/blog/valentine-french-tip-nails/valentine-french-tip-nails-modern-precision-hero.webp",
+      "filename": "valentine-french-tip-nails-modern-precision-hero.webp"
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "slug": "valentine-day-nails-2026",
+      "heroImage": "/images/blog/valentine-day-nails-2026/valentines-day-2026-nail-trends-hero.webp",
+      "filename": "valentines-day-2026-nail-trends-hero.webp"
+    },
+    {
+      "mdFile": "blogs\\velvet-cat-eye-valentine-nails.md",
+      "slug": "velvet-cat-eye-valentine-nails",
+      "heroImage": "/images/blog/velvet-cat-eye-valentine-nails/velvet-cat-eye-valentine-nails-burgundy-hero.webp",
+      "filename": "velvet-cat-eye-valentine-nails-burgundy-hero.webp"
+    }
+  ]
+}

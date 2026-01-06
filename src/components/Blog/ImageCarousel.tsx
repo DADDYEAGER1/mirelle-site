@@ -1,96 +1,79 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState, useRef, useEffect } from 'react';
 
 interface ImageCarouselProps {
-  images: {
-    src: string;
-    caption?: string;
-  }[];
+  images: { url: string; alt: string }[];
 }
 
 export default function ImageCarousel({ images }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  const scrollToIndex = (index: number) => {
+    if (scrollRef.current) {
+      const scrollWidth = scrollRef.current.scrollWidth;
+      const itemWidth = scrollWidth / images.length;
+      scrollRef.current.scrollTo({
+        left: itemWidth * index,
+        behavior: 'smooth'
+      });
+      setCurrentIndex(index);
+    }
   };
 
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const scrollLeft = scrollRef.current.scrollLeft;
+      const itemWidth = scrollRef.current.scrollWidth / images.length;
+      const index = Math.round(scrollLeft / itemWidth);
+      setCurrentIndex(index);
+    }
   };
 
-  if (images.length === 0) return null;
+  useEffect(() => {
+    const ref = scrollRef.current;
+    if (ref) {
+      ref.addEventListener('scroll', handleScroll);
+      return () => ref.removeEventListener('scroll', handleScroll);
+    }
+  }, []);
 
   return (
-    <div className="my-12">
-      {/* Carousel Container */}
-      <div className="relative w-full">
-        {/* Main Image */}
-        <div className="relative w-full pb-[66.67%] bg-gray-100">
-          <Image
-            src={images[currentIndex].src}
-            alt={images[currentIndex].caption || `Image ${currentIndex + 1}`}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 800px"
-          />
-        </div>
-
-        {/* Navigation Arrows */}
-        {images.length > 1 && (
-          <>
-            <button
-              onClick={goToPrevious}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg transition-all"
-              aria-label="Previous image"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            <button
-              onClick={goToNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg transition-all"
-              aria-label="Next image"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </>
-        )}
+    <div className="my-12 md:my-16">
+      <div
+        ref={scrollRef}
+        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      >
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-full snap-center"
+          >
+            <img
+              src={image.url}
+              alt={image.alt}
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        ))}
       </div>
 
-      {/* Caption */}
-      {images[currentIndex].caption && (
-        <p 
-          className="text-sm text-gray-600 mt-3 text-center"
-          style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
-        >
-          {images[currentIndex].caption}
-        </p>
-      )}
-
-      {/* Dots Navigation */}
-      {images.length > 1 && (
-        <div className="flex justify-center gap-2 mt-4">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                index === currentIndex 
-                  ? 'bg-[#252220] w-6' 
-                  : 'bg-gray-300'
-              }`}
-              aria-label={`Go to image ${index + 1}`}
-            />
-          ))}
-        </div>
-      )}
+      <div className="flex justify-center gap-2 mt-6">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => scrollToIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              currentIndex === index
+                ? 'bg-foreground w-8'
+                : 'bg-gray-300'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 }

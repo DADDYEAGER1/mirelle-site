@@ -2,13 +2,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { BlogMetadata } from '@/types/blog';
+import { TopicMetadata } from '@/types/topic';
 
 interface MustReadSectionProps {
-  posts: BlogMetadata[];
+  posts?: BlogMetadata[];
+  topics?: TopicMetadata[];
 }
 
-export default function MustReadSection({ posts }: MustReadSectionProps) {
-  const topics = posts.slice(0, 4);
+export default function MustReadSection({ posts, topics }: MustReadSectionProps) {
+  // Use topics if provided, otherwise use posts
+  const items = topics ? topics.slice(0, 4) : (posts || []).slice(0, 4);
+  const linkPrefix = topics ? '/topics' : '/blog';
 
   return (
     <section className="bg-background py-8 md:py-12">
@@ -23,19 +27,19 @@ export default function MustReadSection({ posts }: MustReadSectionProps) {
       
       {/* Desktop: 4 Cards in Row */}
       <div className="hidden md:grid md:grid-cols-4 gap-6 max-w-7xl mx-auto px-6">
-        {topics.map((post) => (
+        {items.map((item) => (
           <Link 
-            key={post.slug} 
-            href={`/blog/${post.slug}`}
+            key={item.slug} 
+            href={`${linkPrefix}/${item.slug}`}
             className="block group"
           >
             <div className="flex flex-row gap-4">
               {/* Image Left */}
               <div className="relative w-24 h-24 flex-shrink-0">
-                {post.image && (
+                {item.image && (
                   <Image
-                    src={post.image}
-                    alt={post.imageAlt || post.title}
+                    src={item.image}
+                    alt={item.imageAlt || item.title}
                     fill
                     className="object-cover"
                     sizes="100px"
@@ -46,20 +50,20 @@ export default function MustReadSection({ posts }: MustReadSectionProps) {
               {/* Text Right */}
               <div className="flex-1">
                 {/* Category - Boriboon */}
-                {post.category && (
+                {item.category && (
                   <p className="font-product uppercase text-xs text-text-secondary mb-1 tracking-wider">
-                    {post.category}
+                    {item.category}
                   </p>
                 )}
                 
                 {/* Title - Jeremiah */}
                 <h3 className="font-heading text-sm text-foreground mb-2 group-hover:opacity-70 transition-opacity line-clamp-2">
-                  {post.title}
+                  {item.title}
                 </h3>
                 
                 {/* Author - Boriboon */}
                 <p className="font-product text-xs text-text-secondary uppercase">
-                  BY {post.author.toUpperCase()}
+                  BY {item.author.toUpperCase()}
                 </p>
               </div>
             </div>
@@ -69,19 +73,19 @@ export default function MustReadSection({ posts }: MustReadSectionProps) {
       
       {/* Mobile: Vertical Stack */}
       <div className="md:hidden flex flex-col gap-6 px-6">
-        {topics.map((post) => (
+        {items.map((item) => (
           <Link 
-            key={post.slug} 
-            href={`/blog/${post.slug}`}
+            key={item.slug} 
+            href={`${linkPrefix}/${item.slug}`}
             className="block group"
           >
             <div className="flex flex-row gap-4">
               {/* Image Left */}
               <div className="relative w-28 h-28 flex-shrink-0">
-                {post.image && (
+                {item.image && (
                   <Image
-                    src={post.image}
-                    alt={post.imageAlt || post.title}
+                    src={item.image}
+                    alt={item.imageAlt || item.title}
                     fill
                     className="object-cover"
                     sizes="120px"
@@ -92,20 +96,20 @@ export default function MustReadSection({ posts }: MustReadSectionProps) {
               {/* Text Right */}
               <div className="flex-1">
                 {/* Category */}
-                {post.category && (
+                {item.category && (
                   <p className="font-ui uppercase text-xs text-text-secondary mb-2 tracking-wider">
-                    {post.category}
+                    {item.category}
                   </p>
                 )}
                 
                 {/* Title */}
                 <h3 className="font-heading text-base text-foreground mb-2 group-hover:opacity-70 transition-opacity">
-                  {post.title}
+                  {item.title}
                 </h3>
                 
                 {/* Author */}
                 <p className="font-product text-xs text-text-secondary uppercase">
-                  BY {post.author.toUpperCase()}
+                  BY {item.author.toUpperCase()}
                 </p>
               </div>
             </div>

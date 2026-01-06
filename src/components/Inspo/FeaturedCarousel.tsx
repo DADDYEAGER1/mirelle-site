@@ -16,7 +16,7 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
   const scrollTo = (direction: 'left' | 'right') => {
     if (scrollContainerRef.current) {
       const cardWidth = scrollContainerRef.current.children[0]?.clientWidth || 0;
-      const gap = 32; // 32px gap between cards
+      const gap = 32;
       const scrollAmount = cardWidth + gap;
       
       if (direction === 'left') {
@@ -31,8 +31,7 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
 
   return (
     <section className="py-16 md:py-20 bg-[#f9fafb]">
-      <div className="max-w-[1400px] mx-auto px-16 md:px-20">
-        {/* Header with pagination on desktop */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between mb-12">
           <h2 
             className="text-[#252220]"
@@ -45,7 +44,6 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
             This Week's Styles
           </h2>
           
-          {/* Desktop pagination */}
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => scrollTo('left')}
@@ -81,7 +79,6 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
           </div>
         </div>
 
-        {/* Carousel */}
         <div
           ref={scrollContainerRef}
           className="flex gap-8 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory pb-4"
@@ -94,7 +91,6 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
               className="flex-shrink-0 w-[85%] md:w-[45%] lg:w-[30%] snap-start group"
             >
               <div className="relative overflow-hidden bg-[#f9fafb]">
-                {/* Image */}
                 <div className="relative h-[400px] overflow-hidden">
                   <img
                     src={design.heroImage}
@@ -103,7 +99,6 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
                   />
                 </div>
 
-                {/* Text below image */}
                 <div className="pt-4">
                   <p 
                     className="text-[#252220] mb-2"
@@ -132,7 +127,6 @@ export default function FeaturedCarousel({ designs }: FeaturedCarouselProps) {
           ))}
         </div>
 
-        {/* Mobile dots */}
         <div className="flex md:hidden justify-center gap-2 mt-6">
           {designs.map((_, index) => (
             <button

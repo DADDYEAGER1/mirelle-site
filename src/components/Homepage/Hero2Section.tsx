@@ -80,25 +80,12 @@ export default async function Hero2Section() {
           )}
         </div>
         
-        {/* Right: 3 Horizontal Blog Posts - 1 unit */}
+        {/* Right: 3 Horizontal Blog Posts - 1 unit - IMAGE ON RIGHT */}
         <div className="flex-1 flex flex-col gap-6">
           {horizontalPosts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
               <div className="flex gap-3 items-start">
-                {/* Square Image Left */}
-                <div className="relative w-24 h-24 flex-shrink-0">
-                  {post.image && (
-                    <Image
-                      src={post.image}
-                      alt={post.imageAlt || post.title}
-                      fill
-                      className="object-cover"
-                      sizes="96px"
-                    />
-                  )}
-                </div>
-                
-                {/* Text Right */}
+                {/* Text Left */}
                 <div className="flex-1 min-w-0">
                   {post.category && (
                     <p className="font-ui text-xs uppercase tracking-wider text-foreground/70 mb-1">
@@ -112,6 +99,19 @@ export default async function Hero2Section() {
                     <p className="font-ui text-xs text-foreground/70 mt-1 uppercase tracking-wider">
                       BY {post.author.toUpperCase()}
                     </p>
+                  )}
+                </div>
+                
+                {/* Square Image Right */}
+                <div className="relative w-24 h-24 flex-shrink-0">
+                  {post.image && (
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt || post.title}
+                      fill
+                      className="object-cover"
+                      sizes="96px"
+                    />
                   )}
                 </div>
               </div>

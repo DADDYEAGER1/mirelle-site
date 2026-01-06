@@ -38,7 +38,7 @@ const exploreCards: ExploreCard[] = [
 export default function ExploreSection() {
   return (
     <section className="py-16 md:py-20 bg-[#f9fafb]">
-      <div className="max-w-[1400px] mx-auto px-16 md:px-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         <h2 
           className="text-[#252220] mb-12"
           style={{
@@ -58,7 +58,6 @@ export default function ExploreSection() {
               className="group block"
             >
               <div className="relative overflow-hidden bg-[#f9fafb]">
-                {/* Image */}
                 <div className="relative h-[400px] overflow-hidden mb-4">
                   <img
                     src={card.image}
@@ -67,7 +66,6 @@ export default function ExploreSection() {
                   />
                 </div>
 
-                {/* Text */}
                 <div>
                   <p 
                     className="text-[#252220] mb-2"

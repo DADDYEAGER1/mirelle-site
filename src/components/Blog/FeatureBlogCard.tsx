@@ -7,6 +7,9 @@ interface FeatureBlogCardProps {
 }
 
 export default function FeatureBlogCard({ post }: FeatureBlogCardProps) {
+  // Extract title before colon
+  const displayTitle = post.title.split(':')[0].trim();
+  
   return (
     <Link 
       href={`/blog/${post.slug}`}
@@ -39,12 +42,12 @@ export default function FeatureBlogCard({ post }: FeatureBlogCardProps) {
           {post.category || 'NAIL CARE'}
         </div>
 
-        {/* Title - Jeremiah Font */}
+        {/* Title - Jeremiah Font - Only show before colon */}
         <h3 
           className="text-xl md:text-2xl leading-tight"
           style={{ fontFamily: 'Larken, Georgia, serif' }}
         >
-          {post.title}
+          {displayTitle}
         </h3>
 
         {/* Author - Boriboon Font */}

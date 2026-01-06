@@ -1,107 +1,146 @@
 ---
-title: "Christmas Nails 2025: 50+ Festive Designs from Classic to Chrome"
-excerpt: "Discover 50+ stunning Christmas nail designs for 2025. From timeless red and green to trending chrome finishes, find your perfect festive manicure with expert tips for long-lasting holiday nails."
-date: "2025-10-07T14:30:00-04:00"
-updatedDate: "2025-10-24T10:00:00-04:00"
-author: "Mirellé Team"
-category: "Seasonal Nail Trends"
-tags:
-  - "christmas nails"
-  - "holiday nail art"
-  - "festive nail designs"
-  - "winter nails"
-  - "seasonal trends"
-image: "/images/blog/hero-christmas-nails-2025.jpg"
-readTime: "12 min"
-slug: "christmas-nails-2025"
-canonical: "https://mirelleinspo.com/blog/christmas-nails-2025"
-imageAlt: "Christmas nails 2025 featuring festive red, green, and chrome designs for holiday season"
-imageWidth: 1200
-imageHeight: 630
-dateModified: "2025-10-24"
-wordCount: 4200
-
-galleryImages:
-  - url: "/images/blog/christmas-colors-2025.png"
-    alt: "Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome"
-    width: 1200
-    height: 800
-    caption: "2025's most sophisticated Christmas color combinations"
-  - url: "/images/blog/christmas-shapes-2025.png"
-    alt: "Christmas nail designs on different nail shapes almond square round coffin"
-    width: 1200
-    height: 800
-    caption: "Festive designs tailored for every nail shape"
-  - url: "/images/blog/christmas-tutorial-2025.png"
-    alt: "Step by step red and gold Christmas nails with chrome accent tutorial"
-    width: 1200
-    height: 800
-    caption: "Classic red and gold Christmas manicure technique"
-
+author: Mirellé Team
+canonical: https://mirelleinspo.com/blog/christmas-nails-2025
+category: Seasonal Nail Trends
+date: '2025-10-07T14:30:00-04:00'
+dateModified: '2025-10-24'
+topicalMap:
+  position: pillar
+  primaryKeyword: christmas nail designs
+excerpt: Discover 50+ stunning Christmas nail designs for 2025. From timeless red
+  and green to trending chrome finishes, find your perfect festive manicure with expert
+  tips for long-lasting holiday nails.
 faqItems:
-  - question: "What are the most popular Christmas nail colors for 2025"
-    answer: "Deep burgundy, emerald green, and champagne gold dominate 2025 trends. Chrome finishes in silver and rose gold are massive. Classic red remains timeless but with modern twists like glazed or metallic topcoats for elevated looks."
-  - question: "How long do Christmas nail designs last"
-    answer: "Gel Christmas nails last 2-3 weeks with proper care, while regular polish lasts 5-7 days. Gel lasts longer because UV curing creates harder finishes resistant to chipping. Apply cuticle oil daily and wear gloves for chores to extend wear time."
-  - question: "Can I do Christmas nails at home without gel"
-    answer: "Absolutely! Regular polish works great for festive designs. Use quality base coat, thin layers, and quick-dry topcoat. Nail stickers and press-ons offer salon results in minutes. Practice simple designs like candy canes or snowflakes first before attempting complex art."
-  - question: "What nail shapes work best for Christmas designs"
-    answer: "Almond and coffin shapes showcase intricate designs beautifully with their elongated canvas. Short round nails suit minimalist festive looks perfectly. Medium square nails balance practicality with design space. Choose based on lifestyle—longer shapes need extra care during holiday cooking and wrapping."
-  - question: "How do I make Christmas nails last through New Year"
-    answer: "Book appointments December 20-23 for optimal timing. Use gel polish for longevity and apply cuticle oil twice daily. Wear gloves when doing dishes or wrapping gifts. Avoid picking at edges and schedule touch-ups if attending multiple holiday events through New Year."
-  - question: "Are chrome Christmas nails difficult to apply"
-    answer: "Chrome powder requires gel base but application takes just minutes with practice. Apply gel color, cure, rub powder with applicator, seal with no-wipe topcoat. Start with silver or gold chrome before trying complex hues. Beetles and ILNP chrome powders work beautifully for beginners."
-  - question: "What are easy Christmas nail designs for beginners"
-    answer: "Candy cane stripes using striping tape, single snowflake accent nails with dotting tools, red base with gold glitter tips, or simple holly leaves with green polish and red dots. Nail stickers eliminate artistic skill requirements while delivering professional results instantly."
-  - question: "How much do Christmas nails cost at salons"
-    answer: "Basic gel manicures with festive colors run $45-65. Intricate hand-painted Christmas art costs $75-120 depending on complexity and location. Press-on sets cost $15-40 for DIY application. Factor in time—detailed designs require 90+ minutes versus 45 minutes for simple gel color."
-  - question: "Can Christmas nails work for professional settings"
-    answer: "Absolutely! Choose burgundy, forest green, or champagne gold in classic shapes. Keep designs minimal with subtle accent nails. Avoid chunky glitter or 3D embellishments. French tips with festive colors or glazed finishes look polished and office-appropriate while celebrating the season."
-  - question: "What products do I need for DIY Christmas nails"
-    answer: "Quality gel polish in red, green, gold, and white. UV/LED lamp (120W minimum), base and topcoat, striping brushes, dotting tools, and nail art stickers. Beetles gel polish sets offer great value. ILNP chrome powders and Twinkled T brushes elevate results. Budget $80-150 for complete starter kit."
-
+- answer: Deep burgundy, emerald green, and champagne gold dominate 2025 trends. Chrome
+    finishes in silver and rose gold are massive. Classic red remains timeless but
+    with modern twists like glazed or metallic topcoats for elevated looks.
+  question: What are the most popular Christmas nail colors for 2025
+- answer: Gel Christmas nails last 2-3 weeks with proper care, while regular polish
+    lasts 5-7 days. Gel lasts longer because UV curing creates harder finishes resistant
+    to chipping. Apply cuticle oil daily and wear gloves for chores to extend wear
+    time.
+  question: How long do Christmas nail designs last
+- answer: Absolutely! Regular polish works great for festive designs. Use quality
+    base coat, thin layers, and quick-dry topcoat. Nail stickers and press-ons offer
+    salon results in minutes. Practice simple designs like candy canes or snowflakes
+    first before attempting complex art.
+  question: Can I do Christmas nails at home without gel
+- answer: Almond and coffin shapes showcase intricate designs beautifully with their
+    elongated canvas. Short round nails suit minimalist festive looks perfectly. Medium
+    square nails balance practicality with design space. Choose based on lifestyle—longer
+    shapes need extra care during holiday cooking and wrapping.
+  question: What nail shapes work best for Christmas designs
+- answer: Book appointments December 20-23 for optimal timing. Use gel polish for
+    longevity and apply cuticle oil twice daily. Wear gloves when doing dishes or
+    wrapping gifts. Avoid picking at edges and schedule touch-ups if attending multiple
+    holiday events through New Year.
+  question: How do I make Christmas nails last through New Year
+- answer: Chrome powder requires gel base but application takes just minutes with
+    practice. Apply gel color, cure, rub powder with applicator, seal with no-wipe
+    topcoat. Start with silver or gold chrome before trying complex hues. Beetles
+    and ILNP chrome powders work beautifully for beginners.
+  question: Are chrome Christmas nails difficult to apply
+- answer: Candy cane stripes using striping tape, single snowflake accent nails with
+    dotting tools, red base with gold glitter tips, or simple holly leaves with green
+    polish and red dots. Nail stickers eliminate artistic skill requirements while
+    delivering professional results instantly.
+  question: What are easy Christmas nail designs for beginners
+- answer: Basic gel manicures with festive colors run $45-65. Intricate hand-painted
+    Christmas art costs $75-120 depending on complexity and location. Press-on sets
+    cost $15-40 for DIY application. Factor in time—detailed designs require 90+ minutes
+    versus 45 minutes for simple gel color.
+  question: How much do Christmas nails cost at salons
+- answer: Absolutely! Choose burgundy, forest green, or champagne gold in classic
+    shapes. Keep designs minimal with subtle accent nails. Avoid chunky glitter or
+    3D embellishments. French tips with festive colors or glazed finishes look polished
+    and office-appropriate while celebrating the season.
+  question: Can Christmas nails work for professional settings
+- answer: Quality gel polish in red, green, gold, and white. UV/LED lamp (120W minimum),
+    base and topcoat, striping brushes, dotting tools, and nail art stickers. Beetles
+    gel polish sets offer great value. ILNP chrome powders and Twinkled T brushes
+    elevate results. Budget $80-150 for complete starter kit.
+  question: What products do I need for DIY Christmas nails
+galleryImages:
+- alt: Modern Christmas nail color palette featuring burgundy sage green and rose
+    gold chrome
+  caption: 2025's most sophisticated Christmas color combinations
+  height: 800
+  url: /images/blog/christmas-nails-2025/christmas-colors-2025.png
+  width: 1200
+- alt: Christmas nail designs on different nail shapes almond square round coffin
+  caption: Festive designs tailored for every nail shape
+  height: 800
+  url: /images/blog/christmas-nails-2025/christmas-shapes-2025.png
+  width: 1200
+- alt: Step by step red and gold Christmas nails with chrome accent tutorial
+  caption: Classic red and gold Christmas manicure technique
+  height: 800
+  url: /images/blog/christmas-nails-2025/christmas-tutorial-2025.png
+  width: 1200
+image: /images/blog/christmas-nails-2025/hero-christmas-nails-2025.jpg
+imageAlt: Christmas nails 2025 featuring festive red, green, and chrome designs for
+  holiday season
+imageHeight: 630
+imageWidth: 1200
+readTime: 12 min
+slug: christmas-nails-2025
+tags:
+- christmas nails
+- holiday nail art
+- festive nail designs
+- winter nails
+- seasonal trends
+title: 'Christmas Nails 2025: 50+ Festive Designs from Classic to Chrome'
 tutorialMetadata:
-  name: "Classic Red and Gold Christmas Nails Tutorial"
-  description: "Step-by-step guide for elegant festive manicure"
-  totalTime: "PT45M"
+  description: Step-by-step guide for elegant festive manicure
   estimatedCost:
-    currency: "USD"
-    value: "35"
-  tools:
-    - "UV/LED lamp 120W"
-    - "Striping brush"
-    - "Dotting tool"
-    - "Cleanup brush"
+    currency: USD
+    value: '35'
+  name: Classic Red and Gold Christmas Nails Tutorial
   supplies:
-    - "Red gel polish"
-    - "Gold chrome powder"
-    - "Base coat"
-    - "No-wipe topcoat"
-    - "Isopropyl alcohol"
-    - "70% alcohol prep pads"
-
+  - Red gel polish
+  - Gold chrome powder
+  - Base coat
+  - No-wipe topcoat
+  - Isopropyl alcohol
+  - 70% alcohol prep pads
+  tools:
+  - UV/LED lamp 120W
+  - Striping brush
+  - Dotting tool
+  - Cleanup brush
+  totalTime: PT45M
 tutorialSteps:
-  - position: 1
-    name: "Prep natural nails"
-    text: "Push back cuticles, buff nail surface lightly, wipe with alcohol prep pad to remove oils. Clean nail plate ensures proper gel adhesion."
-  - position: 2
-    name: "Apply base coat"
-    text: "Thin layer of base coat, cap free edges. Cure 60 seconds under LED lamp. Base coat protects natural nails and prevents staining from pigmented colors."
-  - position: 3
-    name: "First color coat"
-    text: "Apply thin layer of red gel polish. Cure 60 seconds. Thin layers prevent bubbling and ensure even curing for chip-resistant finish."
-  - position: 4
-    name: "Second color coat"
-    text: "Apply second thin coat for opacity. Cure 60 seconds. Two thin coats beat one thick coat for durability and smooth finish."
-  - position: 5
-    name: "Chrome powder application"
-    text: "On accent nails, apply gold chrome powder with applicator sponge. Rub gently until mirror finish appears. Brush off excess powder with soft brush."
-  - position: 6
-    name: "Seal with topcoat"
-    text: "Apply no-wipe topcoat over all nails, cap edges thoroughly. Cure 60 seconds. Topcoat seals chrome and adds glossy protective layer."
-  - position: 7
-    name: "Cleanup and finishing"
-    text: "Use cleanup brush dipped in alcohol to remove any polish on skin. Apply cuticle oil and massage into nails and cuticles for hydration."
+- name: Prep natural nails
+  position: 1
+  text: Push back cuticles, buff nail surface lightly, wipe with alcohol prep pad
+    to remove oils. Clean nail plate ensures proper gel adhesion.
+- name: Apply base coat
+  position: 2
+  text: Thin layer of base coat, cap free edges. Cure 60 seconds under LED lamp. Base
+    coat protects natural nails and prevents staining from pigmented colors.
+- name: First color coat
+  position: 3
+  text: Apply thin layer of red gel polish. Cure 60 seconds. Thin layers prevent bubbling
+    and ensure even curing for chip-resistant finish.
+- name: Second color coat
+  position: 4
+  text: Apply second thin coat for opacity. Cure 60 seconds. Two thin coats beat one
+    thick coat for durability and smooth finish.
+- name: Chrome powder application
+  position: 5
+  text: On accent nails, apply gold chrome powder with applicator sponge. Rub gently
+    until mirror finish appears. Brush off excess powder with soft brush.
+- name: Seal with topcoat
+  position: 6
+  text: Apply no-wipe topcoat over all nails, cap edges thoroughly. Cure 60 seconds.
+    Topcoat seals chrome and adds glossy protective layer.
+- name: Cleanup and finishing
+  position: 7
+  text: Use cleanup brush dipped in alcohol to remove any polish on skin. Apply cuticle
+    oil and massage into nails and cuticles for hydration.
+updatedDate: '2025-10-24T10:00:00-04:00'
+wordCount: 4200
 ---
 
 We're obsessed with what's happening in holiday nail art right now. After curating designs from hundreds of top nail artists and analyzing trending manicures across Pinterest, Instagram, and TikTok, we can confirm: Christmas nails in 2025 are absolutely next-level.
@@ -150,7 +189,7 @@ One nail salon we visited showed us their most-requested design board from last 
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/christmas-colors-2025.png" alt="Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/christmas-colors-2025.png" alt="Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save This Color Palette to Pinterest →</span>
   </a>
 </div>
@@ -163,7 +202,7 @@ We curated the most sophisticated color combinations that feel festive without o
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/navy-blue-rose-gold-christmas-nails-elegant-winter-2025.webp" alt="Navy blue rose gold Christmas nails elegant winter holiday manicure sophisticated festive designs chrome accents 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/navy-blue-rose-gold-christmas-nails-elegant-winter-2025.webp" alt="Navy blue rose gold Christmas nails elegant winter holiday manicure sophisticated festive designs chrome accents 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Navy Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -178,7 +217,7 @@ We curated the most sophisticated color combinations that feel festive without o
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/cat-eye-magnetic-christmas-nails-red-green-metallic-2025.webp" alt="Cat eye magnetic Christmas nails red green silver metallic shimmer holiday manicure festive nail art design 2025 trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/cat-eye-magnetic-christmas-nails-red-green-metallic-2025.webp" alt="Cat eye magnetic Christmas nails red green silver metallic shimmer holiday manicure festive nail art design 2025 trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Cat Eye Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -207,7 +246,7 @@ Chrome application intimidated us initially until we researched the actual proce
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/minimalist-micro-christmas-nail-art-french-tips-subtle.webp="Minimalist micro Christmas nail art French tips subtle snowflakes tiny festive designs professional holiday manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/minimalist-micro-christmas-nail-art-french-tips-subtle.webp="Minimalist micro Christmas nail art French tips subtle snowflakes tiny festive designs professional holiday manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Minimalist Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -232,7 +271,7 @@ Not everyone has professional nail training, and that's completely fine. We cura
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/christmas-shapes-2025.png" alt="Christmas nail designs on different nail shapes almond square round coffin" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/christmas-shapes-2025.png" alt="Christmas nail designs on different nail shapes almond square round coffin" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Explore Shape-Specific Designs on Pinterest →</span>
   </a>
 </div>
@@ -275,7 +314,7 @@ We discovered snowflake designs trending heavily on Pinterest with 100,000+ save
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/polka-dot-christmas-nails-red-green-gold-festive-2025.webp" alt="Polka dot Christmas nails red green gold white festive holiday manicure easy nail art design winter 2025 nail trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/polka-dot-christmas-nails-red-green-gold-festive-2025.webp" alt="Polka dot Christmas nails red green gold white festive holiday manicure easy nail art design winter 2025 nail trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Polka Dot Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -302,7 +341,7 @@ We avoided red-green combinations initially thinking they were too basic. After 
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/champagne-shard-glitter-christmas-nails-holographic-2025.webp" alt="Champagne shard glitter Christmas nails holographic geometric modern elegant holiday manicure festive sparkle 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/champagne-shard-glitter-christmas-nails-holographic-2025.webp" alt="Champagne shard glitter Christmas nails holographic geometric modern elegant holiday manicure festive sparkle 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Champagne Glitter Nails to Pinterest →</span>
   </a>
 </div>
@@ -315,7 +354,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/ombre-glitter-christmas-nails-gradient-red-gold-sparkle.webp" alt="Ombre glitter Christmas nails gradient red gold sparkle festive holiday manicure easy DIY nail art design winter 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/ombre-glitter-christmas-nails-gradient-red-gold-sparkle.webp" alt="Ombre glitter Christmas nails gradient red gold sparkle festive holiday manicure easy DIY nail art design winter 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Ombre Glitter Nails to Pinterest →</span>
   </a>
 </div>
@@ -332,7 +371,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/gingerbread-cookie-christmas-nails-brown-icing-candy-cane.webp" alt="Gingerbread cookie Christmas nails brown white icing candy cane stripes festive holiday nail art designs cozy winter" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/gingerbread-cookie-christmas-nails-brown-icing-candy-cane.webp" alt="Gingerbread cookie Christmas nails brown white icing candy cane stripes festive holiday nail art designs cozy winter" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Gingerbread Nail Designs to Pinterest →</span>
   </a>
 </div>
@@ -347,7 +386,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/3d-bow-nail-art-red-ribbon-french-tips-christmas-2025.webp" alt="3D bow nail art red ribbons white French tips Christmas gift wrap holiday manicure festive designs elegant nails 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/3d-bow-nail-art-red-ribbon-french-tips-christmas-2025.webp" alt="3D bow nail art red ribbons white French tips Christmas gift wrap holiday manicure festive designs elegant nails 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Bow Nail Art to Pinterest →</span>
   </a>
 </div>
@@ -362,7 +401,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/velvet-texture-christmas-nails-fuzzy-matte-red-green-2025.webp" alt="Velvet texture Christmas nails fuzzy matte red green cozy winter holiday manicure sweater inspired festive designs 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/velvet-texture-christmas-nails-fuzzy-matte-red-green-2025.webp" alt="Velvet texture Christmas nails fuzzy matte red green cozy winter holiday manicure sweater inspired festive designs 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Velvet Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -393,7 +432,7 @@ French manicures remain timelessly elegant and harder to mess up than intricate 
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/christmas-tutorial-2025.png" alt="Step by step red and gold Christmas nails with chrome accent tutorial" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="/images/blog/christmas-nails-2025/christmas-tutorial-2025.png" alt="Step by step red and gold Christmas nails with chrome accent tutorial" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Pin This Tutorial for Later →</span>
   </a>
 </div>

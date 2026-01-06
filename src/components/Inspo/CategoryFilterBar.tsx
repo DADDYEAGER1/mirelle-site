@@ -31,7 +31,7 @@ export default function CategoryFilterBar() {
 
   return (
     <section className="bg-[#f9fafb] border-b border-[#252220]/10 sticky top-0 z-40">
-      <div className="max-w-[1400px] mx-auto px-16 md:px-20 py-4">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4">
         <div className="flex items-center gap-6 overflow-x-auto scrollbar-hide">
           <button
             onClick={() => handleCategoryClick('all')}
@@ -72,6 +72,16 @@ export default function CategoryFilterBar() {
           ))}
         </div>
       </div>
+      
+      <style jsx>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </section>
   );
 }

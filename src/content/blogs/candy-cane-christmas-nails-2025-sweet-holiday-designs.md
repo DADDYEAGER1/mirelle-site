@@ -1,86 +1,189 @@
 ---
-slug: "candy-cane-christmas-nails-2025-sweet-holiday-designs"
-title: "Candy Cane Christmas Nails 2025: 50+ Sweet Holiday Designs"
-excerpt: "Discover 50+ candy cane Christmas nail designs for 2025, from easy DIY tutorials to stunning holiday nail art ideas for every skill level and nail length."
-date: "2025-11-22T10:00:00-04:00"
-dateModified: "2025-11-22"
-author: "MirellÉ Team"
-category: "Seasonal Nail Trends"
-tags: ["candy cane Christmas nails 2025", "candy cane nails", "candy cane nail art", "Christmas nail designs", "holiday nails", "red and white nails", "festive manicure", "candy cane stripes", "Christmas nail tutorial", "winter nail art"]
-image: "/images/blog/candy-cane-christmas-nails-festive-holiday-manicure.jpg"
-imageAlt: "Candy cane Christmas nails 2025 featuring festive red and white striped designs perfect for holiday celebrations"
-imageWidth: 1200
-imageHeight: 630
-readTime: "18 min"
-canonical: "https://mirelleinspo.com/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs"
-wordCount: 3650
-position: "cluster"
-parentPillar: "christmas-nail-designs-2025"
-relatedClusters: ["red-green-christmas-nails-2025", "short-christmas-nails-2025", "gold-silver-chrome-christmas-nails-2025", "white-christmas-nails-snowflake-designs-2025"]
-primaryKeyword: "candy cane Christmas nails 2025"
-searchIntent: "commercial"
-topicalBoundary: "Comprehensive guide to candy cane-themed Christmas nail designs, covering tutorials, design variations, techniques, and styling ideas for the 2025 holiday season"
-avoidKeywords: ["Santa nails", "reindeer nails", "snowflake nails only", "gingerbread nails"]
-clusteredWith: ["candy cane nails", "candy cane nail art", "Christmas manicure ideas"]
-tldr:
-  summary:
-    - "Candy cane nails feature iconic red and white striped designs perfect for Christmas 2025 celebrations"
-    - "Create them using tape, hand-painting, or stamping techniques in under 45 minutes at home"
-    - "Works beautifully on short and long nails with variations from classic stripes to glitter accents"
-    - "Mix techniques like French tips, swirls, and 3D effects for unique candy cane nail art"
-    - "Simple supplies needed: red polish, white polish, striping tape, and a detail brush"
-  keyTakeaways:
-    - "Red dominates 2025 trends"
-    - "Tape method easiest technique"
-    - "Works on any length"
-    - "45 minutes average time"
-    - "Gel lasts 2 weeks"
-  faqItems:
-    - question: "What are candy cane nails and why are they popular for Christmas"
-      answer: "Candy cane nails feature red and white striped designs inspired by classic peppermint candy canes. They are incredibly popular for Christmas because the iconic red and white color combination instantly evokes holiday cheer and festive spirit. The design works on any nail length or shape and can be customized from simple stripes to elaborate swirls, making them perfect for holiday parties, family gatherings, and seasonal celebrations throughout December."
-    - question: "How long does it take to do candy cane nails at home"
-      answer: "Creating candy cane nails at home typically takes 30 to 45 minutes total, including drying time. Using the tape method takes about 30 minutes for beginners, while hand-painting detailed stripes may take up to 45 minutes. Stamping is the fastest technique at just 20 minutes. If using gel polish, add 10 minutes for curing under a UV lamp. Your first attempt might take longer, but most people get faster with practice."
-    - question: "Can I do candy cane nail designs on short natural nails"
-      answer: "Absolutely, candy cane designs work beautifully on short natural nails. In fact, short nails are perfect for candy cane art because the smaller surface area makes stripes easier to paint and less overwhelming visually. Try vertical stripes on short square nails, diagonal stripes on short almond shapes, or simple candy cane accent nails on one or two fingers. Minimalist designs with just a few stripes look incredibly chic on shorter lengths."
-galleryImages:
-  - url: "/images/blog/classic-red-white-candy-cane-striped-nails.webp"
-    alt: "Classic candy cane nails with diagonal red and white stripes for traditional Christmas manicure"
-    width: 800
-    height: 800
-  - url: "/images/blog/candy-cane-french-tip-holiday-nail-design.webp"
-    alt: "Elegant candy cane French tip nails combining festive stripes with classic manicure style"
-    width: 800
-    height: 800
-  - url: "/images/blog/glitter-candy-cane-christmas-nail-art.webp"
-    alt: "Sparkling candy cane nails with red glitter accents for glamorous holiday parties"
-    width: 800
-    height: 800
+author: MirellÉ Team
+avoidKeywords:
+- Santa nails
+- reindeer nails
+- snowflake nails only
+- gingerbread nails
+canonical: https://mirelleinspo.com/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs
+category: Seasonal Nail Trends
+clusteredWith:
+- candy cane nails
+- candy cane nail art
+- Christmas manicure ideas
+date: '2025-11-22T10:00:00-04:00'
+dateModified: '2025-11-22'
+excerpt: Discover 50+ candy cane Christmas nail designs for 2025, from easy DIY tutorials
+  to stunning holiday nail art ideas for every skill level and nail length.
 faqItems:
-  - question: "What supplies do I need to create candy cane nails at home"
-    answer: "You need a white base polish, bright red polish, clear base coat, glossy top coat, and nail art tape or striping tape for clean lines. Optional supplies include a thin detail brush for hand-painting, dotting tools for details, and red or white glitter polish for accents. If using gel polish, you will also need a UV or LED lamp for curing. Most beginners find the tape method easiest and most foolproof for straight stripes."
-  - question: "What is the easiest method for creating perfect candy cane stripes"
-    answer: "The tape method is the easiest way to create perfect candy cane stripes. Apply white base color and let it dry completely for at least 10 minutes. Place thin strips of nail art tape diagonally across each nail where you want white stripes to remain. Paint red polish over the entire nail and tape. Immediately remove the tape while polish is still wet by pulling slowly at an angle. Seal with top coat once dry. This technique guarantees straight, clean lines every time."
-  - question: "Should I use gel polish or regular polish for candy cane nails"
-    answer: "Both work well, but gel polish lasts longer at two to three weeks compared to regular polish at five to seven days. Gel is ideal if you want your candy cane nails to last through the entire holiday season without chipping. However, regular polish is easier to remove, requires no UV lamp, and dries faster between coats. For beginners, start with regular polish to practice the technique, then upgrade to gel once you are confident in your stripe application skills."
-  - question: "How do I prevent red and white polish from mixing together"
-    answer: "The key is patience with drying time. Let your white base coat dry completely for 10 to 15 minutes before adding red stripes or tape. If hand-painting stripes, use thin coats and wait 5 minutes between colors. Work on one nail at a time rather than production-line style. Using quick-dry top coat between layers also helps seal each color. If using tape, remove it immediately while the top color is still wet to prevent pulling up dried layers underneath."
-  - question: "Can I add glitter or other embellishments to candy cane nails"
-    answer: "Absolutely, glitter and embellishments take candy cane nails to the next level. Add red or silver glitter polish over red stripes while still tacky, sprinkle loose glitter on wet top coat, or apply small rhinestones along stripe edges with nail glue. Gold foil accents, tiny snowflake decals, or white dots create dimensional effects. Apply embellishments before your final top coat, then seal everything with a thick glossy topcoat to lock them in place and prevent snagging on clothes or hair."
-  - question: "What nail shapes work best for candy cane designs"
-    answer: "Candy cane designs work on every nail shape, but each shape offers different visual effects. Square and squoval nails showcase horizontal or vertical stripes beautifully with clean lines. Almond and oval shapes make diagonal stripes look elongated and elegant. Stiletto and coffin nails provide more surface area for elaborate swirl designs or multiple stripe patterns. Short round nails look adorable with simple two or three stripe designs or candy cane accent nails on just the ring fingers."
-  - question: "How do I make candy cane nails last longer without chipping"
-    answer: "Start with proper nail prep by pushing back cuticles, buffing nail surface lightly, and wiping with rubbing alcohol to remove oils. Always use a quality base coat to protect nails and help polish adhere. Apply thin coats of polish rather than thick globs, and seal free edges by running polish across the nail tip. Use a thick glossy top coat and reapply every three days to maintain shine and prevent chips. Wear gloves when doing dishes or cleaning to protect your manicure from water and harsh chemicals."
-  - question: "Can I use nail stickers or stamping plates instead of hand-painting"
-    answer: "Yes, both options work great and save tons of time. Candy cane nail stickers or wraps apply in minutes and look professionally done with zero artistic skill required. Stamping plates with candy cane designs let you transfer perfect patterns using a stamper and special stamping polish. Stickers typically last five to seven days, while stamped designs last as long as your base polish. Both methods are perfect for beginners intimidated by hand-painting or anyone wanting quick holiday nails without the fuss."
-  - question: "What are some creative variations on traditional candy cane nails"
-    answer: "Try pink and white candy canes for a softer feminine look, mint green and white for a fresh twist, or blue and white for a winter wonderland vibe. Create candy cane French tips with striped tips only, paint candy cane swirls instead of straight stripes, or do negative space designs with candy cane stripes on bare nail. Mix candy cane nails with snowflakes on accent nails, add 3D candy cane charms, or create ombre candy cane fades from red to white for a modern interpretation."
-  - question: "How do I remove candy cane gel nails safely at home"
-    answer: "Soak cotton pads in pure acetone and place one on each nail. Wrap each finger in aluminum foil to seal in acetone and wait 10 to 15 minutes. Gently push off softened gel with an orange wood stick or cuticle pusher, never forcing or scraping aggressively. If gel does not budge easily, rewrap and wait another 5 minutes. Once removed, wash hands thoroughly, apply cuticle oil generously, and use a nail strengthener to repair any damage. Wait at least two days before applying a new manicure to let nails recover."
+- answer: You need a white base polish, bright red polish, clear base coat, glossy
+    top coat, and nail art tape or striping tape for clean lines. Optional supplies
+    include a thin detail brush for hand-painting, dotting tools for details, and
+    red or white glitter polish for accents. If using gel polish, you will also need
+    a UV or LED lamp for curing. Most beginners find the tape method easiest and most
+    foolproof for straight stripes.
+  question: What supplies do I need to create candy cane nails at home
+- answer: The tape method is the easiest way to create perfect candy cane stripes.
+    Apply white base color and let it dry completely for at least 10 minutes. Place
+    thin strips of nail art tape diagonally across each nail where you want white
+    stripes to remain. Paint red polish over the entire nail and tape. Immediately
+    remove the tape while polish is still wet by pulling slowly at an angle. Seal
+    with top coat once dry. This technique guarantees straight, clean lines every
+    time.
+  question: What is the easiest method for creating perfect candy cane stripes
+- answer: Both work well, but gel polish lasts longer at two to three weeks compared
+    to regular polish at five to seven days. Gel is ideal if you want your candy cane
+    nails to last through the entire holiday season without chipping. However, regular
+    polish is easier to remove, requires no UV lamp, and dries faster between coats.
+    For beginners, start with regular polish to practice the technique, then upgrade
+    to gel once you are confident in your stripe application skills.
+  question: Should I use gel polish or regular polish for candy cane nails
+- answer: The key is patience with drying time. Let your white base coat dry completely
+    for 10 to 15 minutes before adding red stripes or tape. If hand-painting stripes,
+    use thin coats and wait 5 minutes between colors. Work on one nail at a time rather
+    than production-line style. Using quick-dry top coat between layers also helps
+    seal each color. If using tape, remove it immediately while the top color is still
+    wet to prevent pulling up dried layers underneath.
+  question: How do I prevent red and white polish from mixing together
+- answer: Absolutely, glitter and embellishments take candy cane nails to the next
+    level. Add red or silver glitter polish over red stripes while still tacky, sprinkle
+    loose glitter on wet top coat, or apply small rhinestones along stripe edges with
+    nail glue. Gold foil accents, tiny snowflake decals, or white dots create dimensional
+    effects. Apply embellishments before your final top coat, then seal everything
+    with a thick glossy topcoat to lock them in place and prevent snagging on clothes
+    or hair.
+  question: Can I add glitter or other embellishments to candy cane nails
+- answer: Candy cane designs work on every nail shape, but each shape offers different
+    visual effects. Square and squoval nails showcase horizontal or vertical stripes
+    beautifully with clean lines. Almond and oval shapes make diagonal stripes look
+    elongated and elegant. Stiletto and coffin nails provide more surface area for
+    elaborate swirl designs or multiple stripe patterns. Short round nails look adorable
+    with simple two or three stripe designs or candy cane accent nails on just the
+    ring fingers.
+  question: What nail shapes work best for candy cane designs
+- answer: Start with proper nail prep by pushing back cuticles, buffing nail surface
+    lightly, and wiping with rubbing alcohol to remove oils. Always use a quality
+    base coat to protect nails and help polish adhere. Apply thin coats of polish
+    rather than thick globs, and seal free edges by running polish across the nail
+    tip. Use a thick glossy top coat and reapply every three days to maintain shine
+    and prevent chips. Wear gloves when doing dishes or cleaning to protect your manicure
+    from water and harsh chemicals.
+  question: How do I make candy cane nails last longer without chipping
+- answer: Yes, both options work great and save tons of time. Candy cane nail stickers
+    or wraps apply in minutes and look professionally done with zero artistic skill
+    required. Stamping plates with candy cane designs let you transfer perfect patterns
+    using a stamper and special stamping polish. Stickers typically last five to seven
+    days, while stamped designs last as long as your base polish. Both methods are
+    perfect for beginners intimidated by hand-painting or anyone wanting quick holiday
+    nails without the fuss.
+  question: Can I use nail stickers or stamping plates instead of hand-painting
+- answer: Try pink and white candy canes for a softer feminine look, mint green and
+    white for a fresh twist, or blue and white for a winter wonderland vibe. Create
+    candy cane French tips with striped tips only, paint candy cane swirls instead
+    of straight stripes, or do negative space designs with candy cane stripes on bare
+    nail. Mix candy cane nails with snowflakes on accent nails, add 3D candy cane
+    charms, or create ombre candy cane fades from red to white for a modern interpretation.
+  question: What are some creative variations on traditional candy cane nails
+- answer: Soak cotton pads in pure acetone and place one on each nail. Wrap each finger
+    in aluminum foil to seal in acetone and wait 10 to 15 minutes. Gently push off
+    softened gel with an orange wood stick or cuticle pusher, never forcing or scraping
+    aggressively. If gel does not budge easily, rewrap and wait another 5 minutes.
+    Once removed, wash hands thoroughly, apply cuticle oil generously, and use a nail
+    strengthener to repair any damage. Wait at least two days before applying a new
+    manicure to let nails recover.
+  question: How do I remove candy cane gel nails safely at home
+galleryImages:
+- alt: Classic candy cane nails with diagonal red and white stripes for traditional
+    Christmas manicure
+  height: 800
+  url: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/classic-red-white-candy-cane-striped-nails.webp
+  width: 800
+- alt: Elegant candy cane French tip nails combining festive stripes with classic
+    manicure style
+  height: 800
+  url: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-french-tip-holiday-nail-design.webp
+  width: 800
+- alt: Sparkling candy cane nails with red glitter accents for glamorous holiday parties
+  height: 800
+  url: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/glitter-candy-cane-christmas-nail-art.webp
+  width: 800
+image: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-christmas-nails-festive-holiday-manicure.jpg
+imageAlt: Candy cane Christmas nails 2025 featuring festive red and white striped
+  designs perfect for holiday celebrations
+imageHeight: 630
+imageWidth: 1200
+parentPillar: christmas-nail-designs-2025
+position: cluster
+primaryKeyword: candy cane Christmas nails 2025
+readTime: 18 min
+relatedClusters:
+- red-green-christmas-nails-2025
+- short-christmas-nails-2025
+- gold-silver-chrome-christmas-nails-2025
+- white-christmas-nails-snowflake-designs-2025
 sameAs:
-  - "https://www.pinterest.com/mirelle_inspo/"
-  - "https://www.instagram.com/mirelle_inspo"
-  - "https://twitter.com/mirelleinspo"
-  - "https://www.google.com/search?q=Mirell%C3%A9+Inspo"
+- https://www.pinterest.com/mirelle_inspo/
+- https://www.instagram.com/mirelle_inspo
+- https://twitter.com/mirelleinspo
+- https://www.google.com/search?q=Mirell%C3%A9+Inspo
+searchIntent: commercial
+slug: candy-cane-christmas-nails-2025-sweet-holiday-designs
+tags:
+- candy cane Christmas nails 2025
+- candy cane nails
+- candy cane nail art
+- Christmas nail designs
+- holiday nails
+- red and white nails
+- festive manicure
+- candy cane stripes
+- Christmas nail tutorial
+- winter nail art
+title: 'Candy Cane Christmas Nails 2025: 50+ Sweet Holiday Designs'
+tldr:
+  faqItems:
+  - answer: Candy cane nails feature red and white striped designs inspired by classic
+      peppermint candy canes. They are incredibly popular for Christmas because the
+      iconic red and white color combination instantly evokes holiday cheer and festive
+      spirit. The design works on any nail length or shape and can be customized from
+      simple stripes to elaborate swirls, making them perfect for holiday parties,
+      family gatherings, and seasonal celebrations throughout December.
+    question: What are candy cane nails and why are they popular for Christmas
+  - answer: Creating candy cane nails at home typically takes 30 to 45 minutes total,
+      including drying time. Using the tape method takes about 30 minutes for beginners,
+      while hand-painting detailed stripes may take up to 45 minutes. Stamping is
+      the fastest technique at just 20 minutes. If using gel polish, add 10 minutes
+      for curing under a UV lamp. Your first attempt might take longer, but most people
+      get faster with practice.
+    question: How long does it take to do candy cane nails at home
+  - answer: Absolutely, candy cane designs work beautifully on short natural nails.
+      In fact, short nails are perfect for candy cane art because the smaller surface
+      area makes stripes easier to paint and less overwhelming visually. Try vertical
+      stripes on short square nails, diagonal stripes on short almond shapes, or simple
+      candy cane accent nails on one or two fingers. Minimalist designs with just
+      a few stripes look incredibly chic on shorter lengths.
+    question: Can I do candy cane nail designs on short natural nails
+  keyTakeaways:
+  - Red dominates 2025 trends
+  - Tape method easiest technique
+  - Works on any length
+  - 45 minutes average time
+  - Gel lasts 2 weeks
+  summary:
+  - Candy cane nails feature iconic red and white striped designs perfect for Christmas
+    2025 celebrations
+  - Create them using tape, hand-painting, or stamping techniques in under 45 minutes
+    at home
+  - Works beautifully on short and long nails with variations from classic stripes
+    to glitter accents
+  - Mix techniques like French tips, swirls, and 3D effects for unique candy cane
+    nail art
+  - 'Simple supplies needed: red polish, white polish, striping tape, and a detail
+    brush'
+topicalBoundary: Comprehensive guide to candy cane-themed Christmas nail designs,
+  covering tutorials, design variations, techniques, and styling ideas for the 2025
+  holiday season
+wordCount: 3650
 ---
 
 Candy cane nails are the sweetest way to celebrate Christmas 2025. These iconic red and white striped designs instantly bring holiday cheer to your fingertips and work beautifully on any nail length or shape. Whether you want classic diagonal stripes, trendy French tips with candy cane accents, or glittery statement nails, this guide covers 50+ candy cane nail ideas plus step-by-step tutorials for every skill level.
@@ -98,7 +201,7 @@ Here's why candy cane nails are perfect for Christmas 2025. The red and white co
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/classic-red-white-candy-cane-striped-nails.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/classic-red-white-candy-cane-striped-nails.webp'
       alt='Classic candy cane nails with diagonal red and white stripes for traditional Christmas manicure'
       width='800'
       height='800'
@@ -132,7 +235,7 @@ The OG candy cane nail design never goes out of style. These feature diagonal re
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/diagonal-candy-cane-stripe-festive-manicure.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/diagonal-candy-cane-stripe-festive-manicure.webp'
       alt='Diagonal red and white candy cane striped nails perfect for Christmas 2025 celebrations'
       width='800'
       height='800'
@@ -160,7 +263,7 @@ French tips get a festive upgrade with candy cane patterns on the tips only.
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/candy-cane-french-tip-holiday-nail-design.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-french-tip-holiday-nail-design.webp'
       alt='Elegant candy cane French tip nails combining festive stripes with classic manicure style'
       width='800'
       height='800'
@@ -188,7 +291,7 @@ Everything's better with glitter, including candy cane nails.
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/glitter-candy-cane-christmas-nail-art.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/glitter-candy-cane-christmas-nail-art.webp'
       alt='Sparkling candy cane nails with red glitter accents for glamorous holiday parties'
       width='800'
       height='800'
@@ -216,7 +319,7 @@ Move beyond straight stripes with curved candy cane designs.
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/peppermint-swirl-candy-cane-nail-design.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/peppermint-swirl-candy-cane-nail-design.webp'
       alt='Creative peppermint swirl candy cane nails with curved red and white patterns'
       width='800'
       height='800'
@@ -244,7 +347,7 @@ Less is more with these simplified candy cane looks.
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/minimalist-candy-cane-accent-nail-design.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/minimalist-candy-cane-accent-nail-design.webp'
       alt='Simple minimalist candy cane accent nails with single red stripe on white base'
       width='800'
       height='800'
@@ -272,7 +375,7 @@ Take your candy cane nails to the next dimension.
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/3d-candy-cane-charm-nail-art.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/3d-candy-cane-charm-nail-art.webp'
       alt='Dimensional 3D candy cane nail art with realistic textured charms and embellishments'
       width='800'
       height='800'
@@ -330,7 +433,7 @@ Apply two coats of white polish to all nails, waiting 2 minutes between coats. W
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/candy-cane-nail-tape-technique-tutorial.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-nail-tape-technique-tutorial.webp'
       alt='Step by step candy cane nail tutorial showing tape method for perfect stripes'
       width='800'
       height='800'
@@ -373,7 +476,7 @@ Starting at the base of your nail, drag the brush diagonally toward the tip in o
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/hand-painted-candy-cane-nail-art-detail.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/hand-painted-candy-cane-nail-art-detail.webp'
       alt='Hand painted candy cane nail art showing detailed brush technique for custom stripes'
       width='800'
       height='800'
@@ -461,7 +564,7 @@ High-quality white polishes contain titanium dioxide pigment which provides bett
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/best-red-white-nail-polish-candy-cane.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/best-red-white-nail-polish-candy-cane.webp'
       alt='Top rated red and white nail polish bottles for creating perfect candy cane designs'
       width='800'
       height='800'
@@ -503,7 +606,7 @@ Short nails are actually perfect for candy cane art because the smaller surface 
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/short-natural-candy-cane-christmas-nails.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/short-natural-candy-cane-christmas-nails.webp'
       alt='Candy cane nail designs for short natural nails with easy beginner-friendly stripes'
       width='800'
       height='800'
@@ -559,7 +662,7 @@ Another approach: create outlined candy cane stripes where you paint just the ed
 <div style='margin: 2rem 0; text-align: center;'>
   <a href='https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-holiday-winter-nail-designs/' target='_blank' rel='noopener' aria-label='View more candy cane nail designs on Pinterest'>
     <img
-      src='/images/blog/negative-space-candy-cane-modern-nail-art.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/negative-space-candy-cane-modern-nail-art.webp'
       alt='Modern negative space candy cane nails with bare nail showing through striped design'
       width='800'
       height='800'

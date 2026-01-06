@@ -15,34 +15,21 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
   const [isDragging, setIsDragging] = useState(false);
   const dragStartX = useRef(0);
   const dragOffset = useRef(0);
-  const containerRef = useRef<HTMLDivElement>(null);
   
   const featuredCategories = categories.slice(0, 9);
-  
-  if (!featuredCategories || featuredCategories.length === 0) {
-    return null;
-  }
+  if (!featuredCategories || featuredCategories.length === 0) return null;
 
-  // Desktop: 3 cards per page
   const cardsPerPageDesktop = 3;
   const totalPagesDesktop = Math.ceil(featuredCategories.length / cardsPerPageDesktop);
-  
-  // Mobile: 1 card per page
-  const cardsPerPageMobile = 1;
-  const totalPagesMobile = featuredCategories.length;
 
   const handleNext = () => {
-    setCurrentPage(prev => {
-      const totalPages = window.innerWidth >= 768 ? totalPagesDesktop : totalPagesMobile;
-      return prev < totalPages - 1 ? prev + 1 : prev;
-    });
+    setCurrentPage(prev => prev < totalPagesDesktop - 1 ? prev + 1 : prev);
   };
   
   const handlePrev = () => {
     setCurrentPage(prev => prev > 0 ? prev - 1 : prev);
   };
 
-  // Touch/Drag handlers for smooth swipe
   const handleDragStart = (clientX: number) => {
     setIsDragging(true);
     dragStartX.current = clientX;
@@ -60,56 +47,18 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
     
     const threshold = 75;
     if (Math.abs(dragOffset.current) > threshold) {
-      if (dragOffset.current < 0) {
-        handleNext();
-      } else {
-        handlePrev();
-      }
+      if (dragOffset.current < 0) handleNext();
+      else handlePrev();
     }
     dragOffset.current = 0;
   };
 
-  // Mouse events
-  const handleMouseDown = (e: React.MouseEvent) => {
-    e.preventDefault();
-    handleDragStart(e.clientX);
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    handleDragMove(e.clientX);
-  };
-
-  const handleMouseUp = () => {
-    handleDragEnd();
-  };
-
-  const handleMouseLeave = () => {
-    if (isDragging) {
-      handleDragEnd();
-    }
-  };
-
-  // Touch events
-  const handleTouchStart = (e: React.TouchEvent) => {
-    handleDragStart(e.touches[0].clientX);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    handleDragMove(e.touches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    handleDragEnd();
-  };
-
-  // Calculate transform for desktop (3 cards + peek)
   const getDesktopTransform = () => {
     const baseTransform = currentPage * 100;
     const dragPercent = isDragging ? (dragOffset.current / window.innerWidth) * 100 : 0;
     return `translateX(-${baseTransform - dragPercent}%)`;
   };
 
-  // Calculate transform for mobile (1 card + peek)
   const getMobileTransform = () => {
     const baseTransform = currentPage * 90;
     const dragPercent = isDragging ? (dragOffset.current / window.innerWidth) * 90 : 0;
@@ -118,18 +67,14 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
 
   return (
     <section className="bg-background pt-16 md:pt-24 pb-8">
-      {/* Section Title with Lines and Arrows */}
-      <div className="px-3 md:px-6 lg:px-12 mb-8 md:mb-12">
-        {/* Top Line */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-8 md:mb-12">
         <div className="w-full h-[1px] bg-border-color" />
         
-        {/* Title and Arrows Row */}
         <div className="py-4 flex items-center justify-center relative">
           <h2 className="font-ui text-base md:text-lg text-foreground tracking-wider uppercase">
             SHOP THE EDITS
           </h2>
           
-          {/* Desktop Pagination with Arrows - Absolute positioned */}
           <div className="hidden md:flex items-center gap-4 absolute right-0">
             <button 
               onClick={handlePrev}
@@ -157,24 +102,21 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
           </div>
         </div>
         
-        {/* Bottom Line */}
         <div className="w-full h-[1px] bg-border-color" />
       </div>
       
-      {/* Carousel Container */}
-      <div className="relative px-3 md:px-6 lg:px-12">
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <div 
-          ref={containerRef}
           className="overflow-visible cursor-grab active:cursor-grabbing select-none"
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseLeave}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
+          onMouseDown={(e) => { e.preventDefault(); handleDragStart(e.clientX); }}
+          onMouseMove={(e) => handleDragMove(e.clientX)}
+          onMouseUp={handleDragEnd}
+          onMouseLeave={() => isDragging && handleDragEnd()}
+          onTouchStart={(e) => handleDragStart(e.touches[0].clientX)}
+          onTouchMove={(e) => handleDragMove(e.touches[0].clientX)}
+          onTouchEnd={handleDragEnd}
         >
-          {/* Desktop: 3 cards + 4th peeking */}
+          {/* Desktop */}
           <div className="hidden md:block overflow-hidden">
             <div 
               className="flex transition-transform ease-out"
@@ -184,17 +126,10 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
               }}
             >
               {Array.from({ length: totalPagesDesktop }).map((_, pageIndex) => (
-                <div 
-                  key={pageIndex}
-                  className="flex-shrink-0 w-full flex gap-6"
-                >
+                <div key={pageIndex} className="flex-shrink-0 w-full flex gap-6">
                   {featuredCategories.slice(pageIndex * cardsPerPageDesktop, (pageIndex + 1) * cardsPerPageDesktop).map((category) => (
-                    <div 
-                      key={category.slug}
-                      className="flex-shrink-0 w-[calc(33.33%-1rem)]"
-                    >
+                    <div key={category.slug} className="flex-shrink-0 w-[calc(33.33%-1rem)]">
                       <Link href={`/shop/${category.slug}`} className="block group">
-                        {/* Image - 4:3 Ratio */}
                         <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
                           <Image
                             src={category.heroImage}
@@ -205,25 +140,14 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
                             draggable={false}
                           />
                         </div>
-                        
-                        {/* Season */}
                         {category.season && (
                           <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
                             {category.season}
                           </p>
                         )}
-                        
-                        {/* Title */}
                         <h3 className="font-heading text-xl text-foreground mb-2 line-clamp-2">
                           {category.displayName}
                         </h3>
-                        
-                        {/* Description */}
-                        {category.description && (
-                          <p className="font-ui text-xs text-foreground/70 uppercase tracking-wider line-clamp-2">
-                            {category.description}
-                          </p>
-                        )}
                       </Link>
                     </div>
                   ))}
@@ -232,7 +156,7 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
             </div>
           </div>
 
-          {/* Mobile: 1 card + 2nd peeking */}
+          {/* Mobile */}
           <div 
             className="md:hidden flex transition-transform ease-out"
             style={{ 
@@ -241,12 +165,8 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
             }}
           >
             {featuredCategories.map((category) => (
-              <div 
-                key={category.slug}
-                className="flex-shrink-0 w-[90%] pr-4"
-              >
+              <div key={category.slug} className="flex-shrink-0 w-[90%] pr-4">
                 <Link href={`/shop/${category.slug}`} className="block group">
-                  {/* Image - 4:3 Ratio */}
                   <div className="relative w-full aspect-[4/3] mb-4 overflow-hidden">
                     <Image
                       src={category.heroImage}
@@ -257,25 +177,14 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
                       draggable={false}
                     />
                   </div>
-                  
-                  {/* Season */}
                   {category.season && (
                     <p className="font-ui uppercase text-xs text-foreground/70 mb-2 tracking-wider">
                       {category.season}
                     </p>
                   )}
-                  
-                  {/* Title */}
                   <h3 className="font-heading text-lg text-foreground mb-2 line-clamp-2">
                     {category.displayName}
                   </h3>
-                  
-                  {/* Description */}
-                  {category.description && (
-                    <p className="font-ui text-xs text-foreground/70 uppercase tracking-wider line-clamp-2">
-                      {category.description}
-                    </p>
-                  )}
                 </Link>
               </div>
             ))}
@@ -283,8 +192,7 @@ export default function ShopCarousel({ categories }: ShopCarouselProps) {
         </div>
       </div>
 
-      {/* Mobile Pagination - Dots below carousel */}
-      <div className="md:hidden flex justify-center gap-2 mt-6 px-3 md:px-6 lg:px-12">
+      <div className="md:hidden flex justify-center gap-2 mt-6 max-w-7xl mx-auto px-6 md:px-12">
         {featuredCategories.map((_, index) => (
           <button
             key={index}

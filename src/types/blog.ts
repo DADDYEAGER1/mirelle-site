@@ -1,35 +1,46 @@
 // src/types/blog.ts
 import { FAQItem, TutorialStep, VideoMetadata } from '@/lib/generateSchemas';
 
+export interface TutorialMetadata {
+  name: string;
+  description: string;
+  totalTime: string;
+  estimatedCost: {
+    currency: string;
+    value: string;
+  };
+  tools: string[];
+  supplies: string[];
+}
+
+export interface TLDR {
+  summary: string[];
+  faqs?: FAQ[];
+  creativeLine?: string;
+  keyTakeaways: string[];
+}
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
 export interface BlogMetadata {
   slug: string;
   title: string;
   excerpt: string;
-  tags: string[];
+  tags?: string[];
   image?: string;
   imageAlt?: string;
-  imageWidth?: number;       // 🆕 PHASE 3
-  imageHeight?: number;      // 🆕 PHASE 3
-  imageCaption?: string;     // 🆕 PHASE 3
+  imageWidth?: number;
+  imageHeight?: number;
+  imageCaption?: string;
   dateModified?: string;
+  url: string;
+  topicalMap?: any;
   tldr?: TLDR;
   faqItems?: FAQItem[];
-  url: string;
-  topicalMap?: any;           // Replace 'any' with proper type if you have one
-  keywordStrategy?: any;      // Replace 'any' with proper type if you have one
-  contentRelations?: any;     // Replace 'any' with proper type if you have one
-  seoMetrics?: any;  
-  
-  // Optional fields for backward compatibility
-  date: string;
-  author: string;
-  readTime: number | string;
-  category?: string;
-  galleryImages?: GalleryImage[];
-  canonical?: string;
-  updatedDate?: string;
-  wordCount?: number;
-  eventData?: {              // 🆕 ADD THIS
+  eventData?: {
     name: string;
     startDate: string;
     endDate: string;
@@ -37,40 +48,25 @@ export interface BlogMetadata {
     eventAttendanceMode: string;
     isVirtual: boolean;
   };
-}
-
-export interface KeywordStrategy {
-  avoidKeywords: string[];
-  clusteredWith: string[];
-  serpVerified: boolean;
-  serpOverlapScore: number;
-  lastCannibalCheck: string;
-}
-
-export interface ContentRelations {
-  linksToPostsCount: number;
-  relatedPostSlugs: string[];
-  competingPosts: string[];
-}
-
-export interface SeoMetrics {
-  targetRankPosition: number;
-  estimatedMonthlySearches: number;
-  difficulty: number;
-  lastRankCheck: string;
-}
-
-// ✅ Define TutorialMetadata locally (not imported)
-export interface TutorialMetadata {
-  name: string;
-  description: string;
-  totalTime: string;          // ✅ Required field (no ?)
-  estimatedCost: {
-    currency: string;
-    value: string;
-  };
-  tools: string[];
-  supplies: string[];
+  
+  date: string;
+  author: string;
+  readTime: number | string;
+  category?: string;
+  canonical?: string;
+  updatedDate?: string;
+  wordCount?: number;
+  
+  template?: 'center' | 'split-left' | 'split-right' | 'grid';
+  heroImages?: string[];
+  carouselImages?: { url: string; alt: string }[];
+  products?: {
+    image: string;
+    title: string;
+    price: string;
+    brand: string;
+    url: string;
+  }[];
 }
 
 export interface TopicalMap {
@@ -83,31 +79,10 @@ export interface TopicalMap {
   hierarchyLevel: number;
 }
 
-// Add this interface after imports, BEFORE BlogPost
-export interface TLDR {
-  summary: string[];
-  faqs?: FAQ[];           // Optional
-  creativeLine?: string;  // Optional  
-  keyTakeaways: string[];
-}
-
-// Also add FAQ interface
-export interface FAQ {
-  question: string;
-  answer: string;
-}
-
-// Rest of your types...
 export interface Category {
   name: string;
   slug: string;
   description: string;
-  count: number;
-}
-
-export interface Tag {
-  name: string;
-  slug: string;
   count: number;
 }
 
@@ -119,7 +94,6 @@ export interface GalleryImage {
   caption?: string;
 }
 
-
 export interface BlogPost {
   slug: string;
   title: string;
@@ -127,7 +101,7 @@ export interface BlogPost {
   content: string;
   date: string;
   author: string;
-  tags: string[];
+  tags?: string[];
   image?: string;
   imageAlt?: string;
   imageWidth?: number;
@@ -139,12 +113,13 @@ export interface BlogPost {
   category?: string;
   dateModified?: string;
   wordCount?: number;
+  galleryImages?: GalleryImage[];
+  topicalMap?: TopicalMap;
+  tldr?: TLDR;
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];
   tutorialMetadata?: TutorialMetadata;
   videoMetadata?: VideoMetadata;
-  galleryImages?: GalleryImage[];
-  tldr?: TLDR;
   eventData?: {
     name: string;
     startDate: string;
@@ -153,8 +128,16 @@ export interface BlogPost {
     eventAttendanceMode: string;
     isVirtual: boolean;
   };
-  topicalMap?: TopicalMap;
-  keywordStrategy?: KeywordStrategy;
-  contentRelations?: ContentRelations;
-  seoMetrics?: SeoMetrics;
+  
+  template?: 'center' | 'split-left' | 'split-right' | 'grid';
+  heroImages?: string[];
+  carouselImages?: { url: string; alt: string }[];
+  products?: {
+    image: string;
+    title: string;
+    price: string;
+    brand: string;
+    url: string;
+  }[];
+  coverImage: string;
 }

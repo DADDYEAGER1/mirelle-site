@@ -5,39 +5,33 @@ import GlassCard from '@/components/ui/GlassCard';
 
 export default function InlineNewsletterForm() {
   const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [name, setName] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
-    setIsSubmitting(true);
-    setStatus('idle');
+    setStatus('loading');
 
     try {
-      await fetch(process.env.NEXT_PUBLIC_GOOGLE_COMMENTS_SCRIPT_URL || '', {
+      const response = await fetch('/api/newsletter', {
         method: 'POST',
-        mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          email,
-          source: 'blog-inline',
-          timestamp: new Date().toISOString()
-        }),
+        body: JSON.stringify({ name, email }),
       });
 
-      setStatus('success');
-      setEmail('');
-
-      setTimeout(() => {
-        setStatus('idle');
-      }, 3000);
+      if (response.ok) {
+        setStatus('success');
+        setEmail('');
+        setName('');
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+      }
     } catch (error) {
       console.error('Newsletter signup error:', error);
       setStatus('error');
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
@@ -51,27 +45,35 @@ export default function InlineNewsletterForm() {
       </p>
       <form 
         onSubmit={handleSubmit}
-        className="flex flex-col sm:flex-row gap-3 w-full max-w-md"
+        className="flex flex-col gap-3 w-full max-w-md"
       >
+        <input
+          type="text"
+          placeholder="Your name (optional)"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          disabled={status === 'loading'}
+          className="px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all disabled:opacity-50"
+        />
         <input
           type="email"
           placeholder="Your email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          disabled={isSubmitting}
-          className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all disabled:opacity-50"
+          disabled={status === 'loading'}
+          className="px-4 py-3 rounded-lg border border-gray-300 focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition-all disabled:opacity-50"
         />
         <button 
           type="submit"
-          disabled={isSubmitting || status === 'success'}
+          disabled={status === 'loading' || status === 'success'}
           className={`px-6 py-3 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed ${
             status === 'success'
               ? 'bg-green-500 text-white'
               : 'bg-gradient-to-r from-pink-500 to-purple-500 text-white hover:shadow-lg'
           }`}
         >
-          {status === 'success' ? '✓ Subscribed!' : isSubmitting ? 'Subscribing...' : 'Subscribe'}
+          {status === 'success' ? '✓ Subscribed!' : status === 'loading' ? 'Subscribing...' : 'Subscribe'}
         </button>
       </form>
       {status === 'error' && (

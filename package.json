@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "prebuild": "node scripts/regenerate-metadata.js",
     "build": "next build --turbopack",
     "postbuild": "next-sitemap && node scripts/generate-all-sitemaps.js",
     "start": "next start",
@@ -38,8 +37,8 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",

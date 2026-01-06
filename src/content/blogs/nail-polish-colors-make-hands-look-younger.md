@@ -1,104 +1,192 @@
 ---
-slug: "nail-polish-colors-make-hands-look-younger"
-title: "What Nail Polish Colors Make You Look Younger: Complete Anti-Aging Guide (2025)"
-excerpt: "Discover which nail polish colors make hands look younger with expert-backed recommendations. Learn flattering shades, nail shapes, and 2025 trends for aging hands plus health warning signs to watch."
-date: "2025-11-28T14:30:00-04:00"
-dateModified: "2025-11-28"
-author: "MirellÉ Team"
-category: "Nail Care"
-tags: ["nail polish colors make you look younger", "best nail colors for aging hands", "anti-aging nail polish", "nail colors for mature hands", "youthful nail colors", "nail shape for aging hands", "rich girl nails 2025", "unhealthy nail colors", "nail polish for 60 year old woman", "hand anti-aging care"]
-image: "/images/blog/coral-peach-anti-aging-nail-polish-hands.jpg"
-imageAlt: "Coral and peach nail polish colors on mature hands showing youthful anti-aging effect with elegant oval nail shape"
-imageWidth: 1200
+author: MirellÉ Team
+canonical: https://mirelleinspo.com/blog/nail-polish-colors-make-hands-look-younger
+category: Nail Care
+date: '2025-11-28T14:30:00-04:00'
+dateModified: '2025-11-28'
+excerpt: Discover which nail polish colors make hands look younger with expert-backed
+  recommendations. Learn flattering shades, nail shapes, and 2025 trends for aging
+  hands plus health warning signs to watch.
+faqItems:
+- answer: Coral and peach tones with warm undertones are most recommended by celebrity
+    manicurists because they draw attention away from visible veins and age spots
+    while brightening the overall appearance of aging hands. Soft pinks, warm nudes,
+    and classic reds also work beautifully for creating a youthful look.
+  question: What nail color makes me look younger
+- answer: Oval nail shapes are considered most flattering for aging hands because
+    they elongate fingers, soften the hand silhouette, and create a naturally youthful
+    appearance. Almond shapes work similarly well, while round and squoval offer softer
+    alternatives. Avoid very long, stiletto, or harsh square shapes that can emphasize
+    hand aging.
+  question: What nail shape makes you look younger
+- answer: Yes, very dark colors like deep burgundy, black, or navy can emphasize visible
+    veins, wrinkles, and age spots on mature hands by creating stark contrast. While
+    dark shades can be elegant, lighter or medium-toned colors generally create a
+    more youthful appearance by minimizing the visibility of aging signs on hands.
+  question: Do dark nail colors make you look older
+- answer: Absolutely, red nail polish can be incredibly flattering on mature hands
+    when you choose the right shade. Opt for classic true reds or warm coral-reds
+    rather than blue-based burgundy reds. The key is selecting reds with warm undertones
+    that complement your skin tone and keep nails at a moderate length with an oval
+    or round shape.
+  question: Can I still wear red nail polish after 50
+- answer: Women in their 60s look most youthful in coral, peach, soft pinks, warm
+    nudes, and classic reds. These colors brighten the complexion and draw attention
+    away from aging signs. Choose shades with warm undertones rather than cool blue-based
+    tones, and pair with flattering oval or almond nail shapes for the best anti-aging
+    effect.
+  question: What color nails should a 60 year old wear
+- answer: Yes, French manicures remain trendy in 2025 but with modern updates. Classic
+    white tips are now softer with variations including nude-on-nude French, reverse
+    French, and colored tips. For mature hands, keep tips thin and subtle rather than
+    thick and stark for a more sophisticated and youthful appearance.
+  question: Are French tips still trendy in 2025
+- answer: Rich girl nails refer to the quiet luxury aesthetic featuring understated
+    elegance with perfect grooming, neutral tones, and subtle shine. This trend works
+    beautifully for mature hands because it emphasizes polish and sophistication over
+    flashy designs. Think glossy nude shades, soft pinks, and impeccable nail shape
+    rather than bold colors or heavy embellishments.
+  question: What are rich girl nails
+- answer: Avoid very dark colors like black or deep burgundy, extremely pale nudes
+    with blue undertones, bright neons, and stark white polishes. These shades can
+    emphasize visible veins, wrinkles, age spots, and make hands appear older. Blue-based
+    or cool-toned polishes also tend to be less flattering on aging skin compared
+    to warm-toned options.
+  question: What nail colors should I avoid after 40
+- answer: Yellow nails can indicate fungal infections, excessive nail polish use without
+    base coat causing staining, smoking, or in serious cases liver disease or diabetes.
+    If yellow discoloration persists after removing polish or does not improve within
+    two weeks, consult a dermatologist to rule out underlying health conditions requiring
+    medical treatment.
+  question: What does it mean when your nails are yellow
+- answer: Yes, nails can reveal important health warnings. Yellow nails may indicate
+    fungal infections or liver issues. Blue or purple nails suggest oxygen or circulation
+    problems. White nails can signal liver disease or anemia. Black streaks under
+    nails can be melanoma warning signs. Sudden changes in nail color or texture warrant
+    medical evaluation.
+  question: Can nails show signs of illness
+- answer: Oval is the most universally flattering nail shape for older hands because
+    it elongates fingers, softens the hand appearance, and draws the eye away from
+    wrinkles or visible veins. Almond shapes work similarly well for a slightly more
+    elegant look, while round shapes offer a softer, more natural alternative.
+  question: What is the most flattering nail shape for older hands
+- answer: It depends on the specific nude shade. Very pale nudes with pink or blue
+    undertones can wash out mature skin and emphasize aging. However, warm beige nudes,
+    peachy nudes, and taupe shades can be incredibly flattering. The key is choosing
+    nudes with warm golden or peachy undertones that complement your skin tone.
+  question: Are nude nails aging on mature hands
+- answer: Coral, peach, and warm orange-toned polishes are best at drawing attention
+    away from visible veins and age spots because they create brightness and warmth
+    that contrasts with blue-purple vein tones. Soft rose pinks and warm nudes also
+    work well by providing coverage without harsh contrast that emphasizes hand texture.
+  question: What nail color hides veins and age spots
+- answer: Both have benefits for aging nails. Gel polish lasts longer and requires
+    less frequent removal, reducing wear on brittle nails. However, regular polish
+    allows nails to breathe between applications and is gentler during removal. For
+    aging nails, consider alternating between gel and regular polish, always using
+    base coats and moisturizing afterward.
+  question: Should I get gel or regular polish for aging nails
+- answer: Spring 2025 nail colors focus on soft pastels with warm undertones including
+    peachy corals, butter yellows, soft lavenders, and creamy pinks. For mature hands,
+    stick with the warmer shades like peach, coral, and warm pink rather than cool-toned
+    pastels. These spring colors pair beautifully with the anti-aging color recommendations.
+  question: What are the colors for spring nails 2025
+galleryImages:
+- alt: Warm coral and peach nail polish shades on mature hands showing flattering
+    anti-aging effect with natural lighting
+  height: 800
+  url: /images/blog/nail-polish-colors-make-hands-look-younger/warm-coral-peach-nail-polish-aging-hands.jpg
+  width: 800
+- alt: Oval and almond nail shapes comparison on aging hands demonstrating finger-elongating
+    flattering effect
+  height: 800
+  url: /images/blog/nail-polish-colors-make-hands-look-younger/oval-almond-nail-shapes-mature-hands.jpg
+  width: 800
+- alt: Soft pink and warm nude nail polish creating youthful appearance on mature
+    skin hands
+  height: 800
+  url: /images/blog/nail-polish-colors-make-hands-look-younger/soft-pink-nude-youthful-manicure.jpg
+  width: 800
+image: /images/blog/nail-polish-colors-make-hands-look-younger/coral-peach-anti-aging-nail-polish-hands.jpg
+imageAlt: Coral and peach nail polish colors on mature hands showing youthful anti-aging
+  effect with elegant oval nail shape
 imageHeight: 630
-readTime: "16 min"
-canonical: "https://mirelleinspo.com/blog/nail-polish-colors-make-hands-look-younger"
-wordCount: 3650
-
-topicalMap:
-  position: "standalone"
-  parentPillar: null
-  relatedClusters: ["nail-care-guide", "skin-tones", "seasonal-trends"]
-  primaryKeyword: "nail polish colors make you look younger"
-  searchIntent: "informational-commercial"
-  topicalBoundary: "Comprehensive guide covering anti-aging nail colors, shapes, 2025 trends, health warnings, and complete hand care for mature women seeking youthful-looking hands"
-
+imageWidth: 1200
 keywordStrategy:
   avoidKeywords: []
-  clusteredWith: ["best nail colors for aging hands", "anti-aging nail polish colors", "nail shape makes you look younger", "youthful nail colors older women"]
-
-tldr:
-  summary:
-    - "Coral and peach tones are the number one expert-recommended colors for making aging hands look younger by drawing attention away from visible veins and age spots."
-    - "Oval and almond nail shapes create the most flattering, youthful appearance by elongating fingers and softening the overall hand silhouette naturally."
-    - "Avoid dark polishes like deep burgundy or black and very pale nudes with blue undertones as these emphasize wrinkles and visible hand aging."
-    - "Yellow, blue, or white nail discoloration can signal serious health issues from fungal infections to oxygen problems requiring immediate medical attention."
-    - "Combine the right polish color with proper hand care including daily SPF, cuticle oil, and moisturizing to achieve genuinely younger-looking hands beyond cosmetics."
-  keyTakeaways:
-    - "Coral peach tops recommendations"
-    - "Oval shapes elongate fingers"
-    - "Dark colors emphasize aging"
-    - "Monitor nail health warnings"
-    - "SPF protects hand skin"
-  faqItems:
-    - question: "What nail color makes me look younger"
-      answer: "Coral and peach tones with warm undertones are most recommended by celebrity manicurists because they draw attention away from visible veins and age spots while brightening the overall appearance of aging hands. Soft pinks, warm nudes, and classic reds also work beautifully for creating a youthful look."
-    - question: "What nail shape makes you look younger"
-      answer: "Oval nail shapes are considered most flattering for aging hands because they elongate fingers, soften the hand silhouette, and create a naturally youthful appearance. Almond shapes work similarly well, while round and squoval offer softer alternatives. Avoid very long, stiletto, or harsh square shapes that can emphasize hand aging."
-    - question: "Do dark nail colors make you look older"
-      answer: "Yes, very dark colors like deep burgundy, black, or navy can emphasize visible veins, wrinkles, and age spots on mature hands by creating stark contrast. While dark shades can be elegant, lighter or medium-toned colors generally create a more youthful appearance by minimizing the visibility of aging signs on hands."
-
-galleryImages:
-  - url: "/images/blog/warm-coral-peach-nail-polish-aging-hands.jpg"
-    alt: "Warm coral and peach nail polish shades on mature hands showing flattering anti-aging effect with natural lighting"
-    width: 800
-    height: 800
-  - url: "/images/blog/oval-almond-nail-shapes-mature-hands.jpg"
-    alt: "Oval and almond nail shapes comparison on aging hands demonstrating finger-elongating flattering effect"
-    width: 800
-    height: 800
-  - url: "/images/blog/soft-pink-nude-youthful-manicure.jpg"
-    alt: "Soft pink and warm nude nail polish creating youthful appearance on mature skin hands"
-    width: 800
-    height: 800
-
-faqItems:
-  - question: "What nail color makes me look younger"
-    answer: "Coral and peach tones with warm undertones are most recommended by celebrity manicurists because they draw attention away from visible veins and age spots while brightening the overall appearance of aging hands. Soft pinks, warm nudes, and classic reds also work beautifully for creating a youthful look."
-  - question: "What nail shape makes you look younger"
-    answer: "Oval nail shapes are considered most flattering for aging hands because they elongate fingers, soften the hand silhouette, and create a naturally youthful appearance. Almond shapes work similarly well, while round and squoval offer softer alternatives. Avoid very long, stiletto, or harsh square shapes that can emphasize hand aging."
-  - question: "Do dark nail colors make you look older"
-    answer: "Yes, very dark colors like deep burgundy, black, or navy can emphasize visible veins, wrinkles, and age spots on mature hands by creating stark contrast. While dark shades can be elegant, lighter or medium-toned colors generally create a more youthful appearance by minimizing the visibility of aging signs on hands."
-  - question: "Can I still wear red nail polish after 50"
-    answer: "Absolutely, red nail polish can be incredibly flattering on mature hands when you choose the right shade. Opt for classic true reds or warm coral-reds rather than blue-based burgundy reds. The key is selecting reds with warm undertones that complement your skin tone and keep nails at a moderate length with an oval or round shape."
-  - question: "What color nails should a 60 year old wear"
-    answer: "Women in their 60s look most youthful in coral, peach, soft pinks, warm nudes, and classic reds. These colors brighten the complexion and draw attention away from aging signs. Choose shades with warm undertones rather than cool blue-based tones, and pair with flattering oval or almond nail shapes for the best anti-aging effect."
-  - question: "Are French tips still trendy in 2025"
-    answer: "Yes, French manicures remain trendy in 2025 but with modern updates. Classic white tips are now softer with variations including nude-on-nude French, reverse French, and colored tips. For mature hands, keep tips thin and subtle rather than thick and stark for a more sophisticated and youthful appearance."
-  - question: "What are rich girl nails"
-    answer: "Rich girl nails refer to the quiet luxury aesthetic featuring understated elegance with perfect grooming, neutral tones, and subtle shine. This trend works beautifully for mature hands because it emphasizes polish and sophistication over flashy designs. Think glossy nude shades, soft pinks, and impeccable nail shape rather than bold colors or heavy embellishments."
-  - question: "What nail colors should I avoid after 40"
-    answer: "Avoid very dark colors like black or deep burgundy, extremely pale nudes with blue undertones, bright neons, and stark white polishes. These shades can emphasize visible veins, wrinkles, age spots, and make hands appear older. Blue-based or cool-toned polishes also tend to be less flattering on aging skin compared to warm-toned options."
-  - question: "What does it mean when your nails are yellow"
-    answer: "Yellow nails can indicate fungal infections, excessive nail polish use without base coat causing staining, smoking, or in serious cases liver disease or diabetes. If yellow discoloration persists after removing polish or does not improve within two weeks, consult a dermatologist to rule out underlying health conditions requiring medical treatment."
-  - question: "Can nails show signs of illness"
-    answer: "Yes, nails can reveal important health warnings. Yellow nails may indicate fungal infections or liver issues. Blue or purple nails suggest oxygen or circulation problems. White nails can signal liver disease or anemia. Black streaks under nails can be melanoma warning signs. Sudden changes in nail color or texture warrant medical evaluation."
-  - question: "What is the most flattering nail shape for older hands"
-    answer: "Oval is the most universally flattering nail shape for older hands because it elongates fingers, softens the hand appearance, and draws the eye away from wrinkles or visible veins. Almond shapes work similarly well for a slightly more elegant look, while round shapes offer a softer, more natural alternative."
-  - question: "Are nude nails aging on mature hands"
-    answer: "It depends on the specific nude shade. Very pale nudes with pink or blue undertones can wash out mature skin and emphasize aging. However, warm beige nudes, peachy nudes, and taupe shades can be incredibly flattering. The key is choosing nudes with warm golden or peachy undertones that complement your skin tone."
-  - question: "What nail color hides veins and age spots"
-    answer: "Coral, peach, and warm orange-toned polishes are best at drawing attention away from visible veins and age spots because they create brightness and warmth that contrasts with blue-purple vein tones. Soft rose pinks and warm nudes also work well by providing coverage without harsh contrast that emphasizes hand texture."
-  - question: "Should I get gel or regular polish for aging nails"
-    answer: "Both have benefits for aging nails. Gel polish lasts longer and requires less frequent removal, reducing wear on brittle nails. However, regular polish allows nails to breathe between applications and is gentler during removal. For aging nails, consider alternating between gel and regular polish, always using base coats and moisturizing afterward."
-  - question: "What are the colors for spring nails 2025"
-    answer: "Spring 2025 nail colors focus on soft pastels with warm undertones including peachy corals, butter yellows, soft lavenders, and creamy pinks. For mature hands, stick with the warmer shades like peach, coral, and warm pink rather than cool-toned pastels. These spring colors pair beautifully with the anti-aging color recommendations."
-
+  clusteredWith:
+  - best nail colors for aging hands
+  - anti-aging nail polish colors
+  - nail shape makes you look younger
+  - youthful nail colors older women
+readTime: 16 min
 sameAs:
-  - "https://www.pinterest.com/mirelle_inspo"
-  - "https://www.instagram.com/mirelle_inspo"
-  - "https://twitter.com/mirelleinspo"
-  - "https://www.google.com/search?q=Mirell%C3%A9+Inspo"
+- https://www.pinterest.com/mirelle_inspo
+- https://www.instagram.com/mirelle_inspo
+- https://twitter.com/mirelleinspo
+- https://www.google.com/search?q=Mirell%C3%A9+Inspo
+slug: nail-polish-colors-make-hands-look-younger
+tags:
+- nail polish colors make you look younger
+- best nail colors for aging hands
+- anti-aging nail polish
+- nail colors for mature hands
+- youthful nail colors
+- nail shape for aging hands
+- rich girl nails 2025
+- unhealthy nail colors
+- nail polish for 60 year old woman
+- hand anti-aging care
+title: 'What Nail Polish Colors Make You Look Younger: Complete Anti-Aging Guide (2025)'
+tldr:
+  faqItems:
+  - answer: Coral and peach tones with warm undertones are most recommended by celebrity
+      manicurists because they draw attention away from visible veins and age spots
+      while brightening the overall appearance of aging hands. Soft pinks, warm nudes,
+      and classic reds also work beautifully for creating a youthful look.
+    question: What nail color makes me look younger
+  - answer: Oval nail shapes are considered most flattering for aging hands because
+      they elongate fingers, soften the hand silhouette, and create a naturally youthful
+      appearance. Almond shapes work similarly well, while round and squoval offer
+      softer alternatives. Avoid very long, stiletto, or harsh square shapes that
+      can emphasize hand aging.
+    question: What nail shape makes you look younger
+  - answer: Yes, very dark colors like deep burgundy, black, or navy can emphasize
+      visible veins, wrinkles, and age spots on mature hands by creating stark contrast.
+      While dark shades can be elegant, lighter or medium-toned colors generally create
+      a more youthful appearance by minimizing the visibility of aging signs on hands.
+    question: Do dark nail colors make you look older
+  keyTakeaways:
+  - Coral peach tops recommendations
+  - Oval shapes elongate fingers
+  - Dark colors emphasize aging
+  - Monitor nail health warnings
+  - SPF protects hand skin
+  summary:
+  - Coral and peach tones are the number one expert-recommended colors for making
+    aging hands look younger by drawing attention away from visible veins and age
+    spots.
+  - Oval and almond nail shapes create the most flattering, youthful appearance by
+    elongating fingers and softening the overall hand silhouette naturally.
+  - Avoid dark polishes like deep burgundy or black and very pale nudes with blue
+    undertones as these emphasize wrinkles and visible hand aging.
+  - Yellow, blue, or white nail discoloration can signal serious health issues from
+    fungal infections to oxygen problems requiring immediate medical attention.
+  - Combine the right polish color with proper hand care including daily SPF, cuticle
+    oil, and moisturizing to achieve genuinely younger-looking hands beyond cosmetics.
+topicalMap:
+  parentPillar: null
+  position: standalone
+  primaryKeyword: nail polish colors make you look younger
+  relatedClusters:
+  - nail-care-guide
+  - skin-tones
+  - seasonal-trends
+  searchIntent: informational-commercial
+  topicalBoundary: Comprehensive guide covering anti-aging nail colors, shapes, 2025
+    trends, health warnings, and complete hand care for mature women seeking youthful-looking
+    hands
+wordCount: 3650
 ---
 
 Your hands tell a story—and sometimes they reveal more about your age than you'd prefer. While you might invest in anti-aging skincare for your face, your hands are often working against you with visible veins, age spots, and changing skin texture. Here's the encouraging news: the right nail polish colors can genuinely make your hands look years younger, and it's not about hiding or feeling self-conscious. Understanding which shades flatter mature hands gives you the confidence to showcase your style while drawing attention to polished, well-groomed nails rather than aging signs. This comprehensive guide breaks down exactly which nail polish colors make you look younger, which shades to avoid, the most flattering nail shapes for aging hands, and important health warning signs your nail color might reveal.
@@ -120,7 +208,7 @@ The relationship between nail color and hand perception also involves how the ey
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more anti-aging nail color inspiration on Pinterest'>
     <img
-      src='/images/blog/warm-coral-peach-nail-polish-aging-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/warm-coral-peach-nail-polish-aging-hands.jpg'
       alt='Warm coral and peach nail polish shades on mature hands showing flattering anti-aging effect with natural lighting'
       width='800'
       height='800'
@@ -160,7 +248,7 @@ When selecting your perfect coral or peach shade, hold bottles next to your skin
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more coral and peach nail polish inspiration on Pinterest'>
     <img
-      src='/images/blog/coral-salmon-peach-anti-aging-manicure.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/coral-salmon-peach-anti-aging-manicure.jpg'
       alt='Coral salmon and peach nail polish colors demonstrating flattering warm undertones on mature hands'
       width='800'
       height='800'
@@ -196,7 +284,7 @@ Red polish also offers the psychological benefit of confidence and presence. Whe
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more classic red nail polish ideas on Pinterest'>
     <img
-      src='/images/blog/classic-warm-red-nail-polish-mature-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/classic-warm-red-nail-polish-mature-hands.jpg'
       alt='Classic warm red nail polish on mature hands with elegant oval shape showing timeless sophistication'
       width='800'
       height='800'
@@ -248,7 +336,7 @@ Dark winter nail colors can be tempting during colder months when rich, cozy sha
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more flattering dark nail alternatives on Pinterest'>
     <img
-      src='/images/blog/dark-polish-aging-hands-comparison.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/dark-polish-aging-hands-comparison.jpg'
       alt='Dark burgundy nail polish versus medium warm tones on mature hands showing aging contrast effect'
       width='800'
       height='800'
@@ -310,7 +398,7 @@ Creating the perfect oval shape involves filing from the sides toward the center
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more oval nail shape inspiration on Pinterest'>
     <img
-      src='/images/blog/oval-almond-nail-shapes-mature-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/oval-almond-nail-shapes-mature-hands.jpg'
       alt='Oval and almond nail shapes comparison on aging hands demonstrating finger-elongating flattering effect'
       width='800'
       height='800'
@@ -382,7 +470,7 @@ Achieving the rich girl nail aesthetic on mature hands involves focusing on nail
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more rich girl nail inspiration on Pinterest'>
     <img
-      src='/images/blog/rich-girl-nails-quiet-luxury-mature-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/rich-girl-nails-quiet-luxury-mature-hands.jpg'
       alt='Rich girl nails quiet luxury aesthetic with nude polish and perfect grooming on mature hands'
       width='800'
       height='800'
@@ -452,7 +540,7 @@ Consider transitioning into spring colors gradually rather than making an abrupt
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View more spring nail color ideas on Pinterest'>
     <img
-      src='/images/blog/spring-peach-coral-warm-pastel-nails.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/spring-peach-coral-warm-pastel-nails.jpg'
       alt='Spring peach and coral nail polish colors with warm undertones flattering mature hands'
       width='800'
       height='800'
@@ -550,7 +638,7 @@ Understanding these warning signs doesn't mean becoming overly anxious about eve
 <div class='my-8 text-center'>
   <a href='https://in.pinterest.com/mirelle_inspo/' target='_blank' rel='noopener' aria-label='View nail health warning signs on Pinterest'>
     <img
-      src='/images/blog/unhealthy-nail-color-health-warning-signs.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/unhealthy-nail-color-health-warning-signs.jpg'
       alt='Unhealthy nail discoloration showing yellow nails blue nails and health warning signs requiring medical attention'
       width='800'
       height='800'

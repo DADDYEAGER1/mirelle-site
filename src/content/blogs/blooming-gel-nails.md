@@ -1,110 +1,157 @@
 ---
-slug: "blooming-gel-nails"
-title: "Blooming Gel Nails: Easy Watercolor Nail Art Tutorial 2025"
-excerpt: "Learn how to create stunning blooming gel nails at home with this beginner-friendly tutorial. Includes step-by-step instructions, 8 design ideas, common mistakes to avoid, and brand recommendations for perfect results."
-date: "2025-11-19T14:30:00-04:00"
-dateModified: "2025-11-19"
-author: "MirellÉ Team"
-category: "Tutorial"
-tags:
-  - "blooming-gel-nails"
-  - "blooming-gel-tutorial"
-  - "watercolor-nail-art"
-  - "gel-nail-designs"
-  - "diy-gel-nails"
-  - "marble-nails"
-  - "blooming-gel-for-beginners"
-  - "gel-nail-art-tutorial"
-  - "how-to-use-blooming-gel"
-  - "tortoiseshell-nails"
-image: "/images/blog/blooming-gel-nails-watercolor-pink-purple-gradient-hero.jpg"
-imageAlt: "Blooming gel nails featuring watercolor effect with pink and purple gradient on natural nail shape"
-imageWidth: 1200
+author: MirellÉ Team
+canonical: https://mirelleinspo.com/blog/blooming-gel-nails
+category: Tutorial
+date: '2025-11-19T14:30:00-04:00'
+dateModified: '2025-11-19'
+excerpt: Learn how to create stunning blooming gel nails at home with this beginner-friendly
+  tutorial. Includes step-by-step instructions, 8 design ideas, common mistakes to
+  avoid, and brand recommendations for perfect results.
+faqItems:
+- answer: Blooming gel is a specially formulated clear gel polish with thin viscosity
+    that allows gel colors to naturally disperse and spread on top of it creating
+    watercolor marble and abstract effects. Unlike regular gel polish it stays wet
+    longer before curing giving colors time to bloom.
+  question: What is blooming gel nail polish
+- answer: Apply and cure your base color first. Apply thin layer of blooming gel but
+    do not cure it. Immediately add gel polish dots or strokes on the uncured blooming
+    gel. Wait 10 to 30 seconds as colors naturally disperse. Cure under UV or LED
+    lamp for 60 seconds. Seal with top coat and cure again.
+  question: How do you use blooming gel step by step
+- answer: Never cure blooming gel before adding colors. Apply blooming gel over cured
+    base color leave it uncured add your design colors on top watch them bloom then
+    cure everything together. Curing blooming gel too early prevents the blooming
+    effect from working.
+  question: Do you cure blooming gel before or after adding color
+- answer: Blooming gel has much thinner viscosity than regular gel polish allowing
+    colors placed on top to spread and disperse naturally. Regular gel polish is thicker
+    and stays in place. Blooming gel is always clear while regular gel comes in colors.
+  question: What is the difference between blooming gel and regular gel polish
+- answer: No blooming gel only works with gel polish not regular lacquer. Regular
+    nail polish cannot be cured under UV or LED lamps and will not create the watercolor
+    blooming effect. You must use gel polish for both the blooming gel layer and color
+    layers.
+  question: Can you use regular nail polish with blooming gel
+- answer: Blooming gel disperses colors in 10 to 30 seconds after application. Thinner
+    blooming gel application blooms faster while thicker layers take longer. You control
+    the effect by watching the bloom and curing when you like the result before colors
+    over-spread.
+  question: How long does blooming gel take to bloom
+- answer: Top blooming gel brands include The GelBottle Inc for professional quality
+    Beetles for budget-friendly Amazon option Mylee for UK availability and Makartt
+    for mid-range quality. Some nail artists also use regular base coat as blooming
+    gel substitute with similar spreading effects.
+  question: What are the best brands of blooming gel
+- answer: Blooming gel nails last 2 to 4 weeks when properly applied with correct
+    prep base coat and top coat. Longevity matches regular gel manicures. Proper nail
+    prep including dehydrator and avoiding cuticle contact prevents premature lifting.
+  question: How long do blooming gel nails last
+- answer: Common causes include blooming gel applied too thick blocking dispersion
+    using gel polish that is too thick or old to spread properly working too slowly
+    allowing blooming gel to start curing before adding colors or accidentally curing
+    blooming gel layer before adding design.
+  question: Why is my blooming gel not spreading
+- answer: No blooming gel requires UV or LED lamp to cure and harden properly. It
+    will remain sticky and uncured without proper lamp curing. Budget LED lamps work
+    fine and cure in 60 seconds compared to 120 seconds for UV lamps.
+  question: Can you use blooming gel without a UV or LED lamp
+- answer: Yes blooming gel is safe for natural nails when used correctly with proper
+    prep and removal. Choose HEMA-free formulas if you have sensitivities. Always
+    use nail dehydrator before application and soak off gel properly with acetone
+    to prevent damage.
+  question: Is blooming gel safe for natural nails
+- answer: Yes blooming gel is beginner-friendly with practice. Start with simple designs
+    like watercolor swirls or basic flowers requiring just dotting tool and 2 to 3
+    colors. First attempts may look messy but technique improves quickly with each
+    try.
+  question: Can beginners do blooming gel nails at home
+- answer: Essential tools include UV or LED nail lamp blooming gel bottle gel polish
+    colors in 2 to 3 shades base coat and no-wipe top coat. Helpful tools include
+    dotting tool set nail art brushes cuticle pusher nail file and lint-free wipes.
+  question: What tools do you need for blooming gel nail art
+- answer: If colors over-spread into muddy mess cure immediately to stop blooming
+    then apply another thin blooming gel layer and re-do design working faster this
+    time. Prevention works better so work one nail at a time and cure as soon as bloom
+    looks good.
+  question: How do you fix blooming gel that spread too much
+- answer: Yes you can layer blooming gel for multi-dimensional designs. Cure first
+    blooming gel layer completely apply second thin blooming gel layer add new colors
+    and cure again. This creates depth and prevents color mixing between layers.
+  question: Can you layer blooming gel multiple times
+galleryImages:
+- alt: Easy blooming gel watercolor swirls in pink and blue perfect for beginners
+    at home
+  height: 800
+  url: /images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg
+  width: 800
+- alt: Blooming gel flower nail art with five-petal pink blossoms on nude base
+  height: 800
+  url: /images/blog/blooming-gel-nails/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg
+  width: 800
+- alt: Trendy aura nails created with blooming gel technique featuring purple to pink
+    gradient
+  height: 800
+  url: /images/blog/blooming-gel-nails/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg
+  width: 800
+image: /images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-pink-purple-gradient-hero.jpg
+imageAlt: Blooming gel nails featuring watercolor effect with pink and purple gradient
+  on natural nail shape
 imageHeight: 630
-readTime: "14 min"
-canonical: "https://mirelleinspo.com/blog/blooming-gel-nails"
-wordCount: 3124
-
-topicalMap:
-  position: "standalone"
-  parentPillar: null
-  relatedClusters: []
-  primaryKeyword: "blooming gel nails"
-  searchIntent: "informational"
-  topicalBoundary: "Complete tutorial on blooming gel technique, from basics through advanced designs, with troubleshooting"
-
+imageWidth: 1200
 keywordStrategy:
   avoidKeywords: []
   clusteredWith:
-    - "blooming-gel-nail-art"
-    - "how-to-use-blooming-gel"
-    - "blooming-gel-tutorial"
-    - "blooming-gel-for-beginners"
-    - "watercolor-effect-nails"
-
-tldr:
-  summary:
-    - "Blooming gel is a thin-viscosity clear gel polish that allows gel colors to disperse and create watercolor effects before curing"
-    - "Apply blooming gel over cured base color without curing it, add gel polish dots or strokes on top, watch colors bloom naturally in 10-30 seconds, then cure"
-    - "Works only with gel polish not regular lacquer and requires UV or LED lamp for curing each layer"
-    - "Common mistakes include applying blooming gel too thick causing clumpy designs, working on all nails at once before colors over-spread, and curing blooming gel before adding colors"
-    - "Best beginner designs are simple watercolor swirls and floral blooms requiring just dotting tool and 2-3 gel colors taking 30-45 minutes total"
-  keyTakeaways:
-    - "Blooming gel creates unique watercolor and marble effects by letting gel polish naturally disperse"
-    - "Technique requires patience working one nail at a time to control bloom timing"
-    - "Investing in quality blooming gel and UV lamp pays off with 2-4 week wear"
-
-galleryImages:
-  - url: "/images/blog/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg"
-    alt: "Easy blooming gel watercolor swirls in pink and blue perfect for beginners at home"
-    width: 800
-    height: 800
-  - url: "/images/blog/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg"
-    alt: "Blooming gel flower nail art with five-petal pink blossoms on nude base"
-    width: 800
-    height: 800
-  - url: "/images/blog/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg"
-    alt: "Trendy aura nails created with blooming gel technique featuring purple to pink gradient"
-    width: 800
-    height: 800
-
-faqItems:
-  - question: "What is blooming gel nail polish"
-    answer: "Blooming gel is a specially formulated clear gel polish with thin viscosity that allows gel colors to naturally disperse and spread on top of it creating watercolor marble and abstract effects. Unlike regular gel polish it stays wet longer before curing giving colors time to bloom."
-  - question: "How do you use blooming gel step by step"
-    answer: "Apply and cure your base color first. Apply thin layer of blooming gel but do not cure it. Immediately add gel polish dots or strokes on the uncured blooming gel. Wait 10 to 30 seconds as colors naturally disperse. Cure under UV or LED lamp for 60 seconds. Seal with top coat and cure again."
-  - question: "Do you cure blooming gel before or after adding color"
-    answer: "Never cure blooming gel before adding colors. Apply blooming gel over cured base color leave it uncured add your design colors on top watch them bloom then cure everything together. Curing blooming gel too early prevents the blooming effect from working."
-  - question: "What is the difference between blooming gel and regular gel polish"
-    answer: "Blooming gel has much thinner viscosity than regular gel polish allowing colors placed on top to spread and disperse naturally. Regular gel polish is thicker and stays in place. Blooming gel is always clear while regular gel comes in colors."
-  - question: "Can you use regular nail polish with blooming gel"
-    answer: "No blooming gel only works with gel polish not regular lacquer. Regular nail polish cannot be cured under UV or LED lamps and will not create the watercolor blooming effect. You must use gel polish for both the blooming gel layer and color layers."
-  - question: "How long does blooming gel take to bloom"
-    answer: "Blooming gel disperses colors in 10 to 30 seconds after application. Thinner blooming gel application blooms faster while thicker layers take longer. You control the effect by watching the bloom and curing when you like the result before colors over-spread."
-  - question: "What are the best brands of blooming gel"
-    answer: "Top blooming gel brands include The GelBottle Inc for professional quality Beetles for budget-friendly Amazon option Mylee for UK availability and Makartt for mid-range quality. Some nail artists also use regular base coat as blooming gel substitute with similar spreading effects."
-  - question: "How long do blooming gel nails last"
-    answer: "Blooming gel nails last 2 to 4 weeks when properly applied with correct prep base coat and top coat. Longevity matches regular gel manicures. Proper nail prep including dehydrator and avoiding cuticle contact prevents premature lifting."
-  - question: "Why is my blooming gel not spreading"
-    answer: "Common causes include blooming gel applied too thick blocking dispersion using gel polish that is too thick or old to spread properly working too slowly allowing blooming gel to start curing before adding colors or accidentally curing blooming gel layer before adding design."
-  - question: "Can you use blooming gel without a UV or LED lamp"
-    answer: "No blooming gel requires UV or LED lamp to cure and harden properly. It will remain sticky and uncured without proper lamp curing. Budget LED lamps work fine and cure in 60 seconds compared to 120 seconds for UV lamps."
-  - question: "Is blooming gel safe for natural nails"
-    answer: "Yes blooming gel is safe for natural nails when used correctly with proper prep and removal. Choose HEMA-free formulas if you have sensitivities. Always use nail dehydrator before application and soak off gel properly with acetone to prevent damage."
-  - question: "Can beginners do blooming gel nails at home"
-    answer: "Yes blooming gel is beginner-friendly with practice. Start with simple designs like watercolor swirls or basic flowers requiring just dotting tool and 2 to 3 colors. First attempts may look messy but technique improves quickly with each try."
-  - question: "What tools do you need for blooming gel nail art"
-    answer: "Essential tools include UV or LED nail lamp blooming gel bottle gel polish colors in 2 to 3 shades base coat and no-wipe top coat. Helpful tools include dotting tool set nail art brushes cuticle pusher nail file and lint-free wipes."
-  - question: "How do you fix blooming gel that spread too much"
-    answer: "If colors over-spread into muddy mess cure immediately to stop blooming then apply another thin blooming gel layer and re-do design working faster this time. Prevention works better so work one nail at a time and cure as soon as bloom looks good."
-  - question: "Can you layer blooming gel multiple times"
-    answer: "Yes you can layer blooming gel for multi-dimensional designs. Cure first blooming gel layer completely apply second thin blooming gel layer add new colors and cure again. This creates depth and prevents color mixing between layers."
-
+  - blooming-gel-nail-art
+  - how-to-use-blooming-gel
+  - blooming-gel-tutorial
+  - blooming-gel-for-beginners
+  - watercolor-effect-nails
+readTime: 14 min
 sameAs:
-  - "https://www.pinterest.com/mirelle_inspo"
-  - "https://www.instagram.com/mirelle_inspo"
-  - "https://twitter.com/mirelleinspo"
-  - "https://www.google.com/search?q=Mirell%C3%89+Inspo"
+- https://www.pinterest.com/mirelle_inspo
+- https://www.instagram.com/mirelle_inspo
+- https://twitter.com/mirelleinspo
+- https://www.google.com/search?q=Mirell%C3%89+Inspo
+slug: blooming-gel-nails
+tags:
+- blooming-gel-nails
+- blooming-gel-tutorial
+- watercolor-nail-art
+- gel-nail-designs
+- diy-gel-nails
+- marble-nails
+- blooming-gel-for-beginners
+- gel-nail-art-tutorial
+- how-to-use-blooming-gel
+- tortoiseshell-nails
+title: 'Blooming Gel Nails: Easy Watercolor Nail Art Tutorial 2025'
+tldr:
+  keyTakeaways:
+  - Blooming gel creates unique watercolor and marble effects by letting gel polish
+    naturally disperse
+  - Technique requires patience working one nail at a time to control bloom timing
+  - Investing in quality blooming gel and UV lamp pays off with 2-4 week wear
+  summary:
+  - Blooming gel is a thin-viscosity clear gel polish that allows gel colors to disperse
+    and create watercolor effects before curing
+  - Apply blooming gel over cured base color without curing it, add gel polish dots
+    or strokes on top, watch colors bloom naturally in 10-30 seconds, then cure
+  - Works only with gel polish not regular lacquer and requires UV or LED lamp for
+    curing each layer
+  - Common mistakes include applying blooming gel too thick causing clumpy designs,
+    working on all nails at once before colors over-spread, and curing blooming gel
+    before adding colors
+  - Best beginner designs are simple watercolor swirls and floral blooms requiring
+    just dotting tool and 2-3 gel colors taking 30-45 minutes total
+topicalMap:
+  parentPillar: null
+  position: standalone
+  primaryKeyword: blooming gel nails
+  relatedClusters: []
+  searchIntent: informational
+  topicalBoundary: Complete tutorial on blooming gel technique, from basics through
+    advanced designs, with troubleshooting
+wordCount: 3124
 ---
 
 ## What is Blooming Gel? (And Why Everyone's Obsessed)
@@ -174,7 +221,7 @@ Let's break down exactly what supplies you'll need before starting your first bl
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='View blooming gel product recommendations on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-tools-flatlay-bottles-lamp-dotting.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-tools-flatlay-bottles-lamp-dotting.jpg'
       alt='Blooming gel nail art essential tools including clear gel bottle dotting tools and UV lamp'
       width='800'
       height='800'
@@ -268,7 +315,7 @@ Wipe nails with lint-free pad soaked in nail prep dehydrator or rubbing alcohol.
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='View nail prep techniques on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-buffed-natural-prep-matte-surface.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-buffed-natural-prep-matte-surface.jpg'
       alt='Proper nail preparation for blooming gel showing buffed natural nails ready for base coat'
       width='800'
       height='800'
@@ -308,7 +355,7 @@ Work on only one nail at a time. Seriously, one nail. If you apply blooming gel 
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='See blooming gel application technique on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-brush-applying-clear-gel-pink-base.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-brush-applying-clear-gel-pink-base.jpg'
       alt='Applying thin layer of blooming gel over cured pink base coat before adding design'
       width='800'
       height='800'
@@ -346,7 +393,7 @@ If you want more intense color or a second layer of design, repeat steps 3-5: ap
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Watch blooming gel process videos on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-pink-blue-colors-dispersing-spreading.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-pink-blue-colors-dispersing-spreading.jpg'
       alt='Blooming gel watercolor effect in progress showing pink and blue gel dispersing naturally'
       width='800'
       height='800'
@@ -397,7 +444,7 @@ Apply white or nude base color and cure. Apply thin blooming gel to one nail. Dr
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Find watercolor swirl nail inspiration on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg'
       alt='Easy blooming gel watercolor swirls in pink and blue perfect for beginners at home'
       width='800'
       height='800'
@@ -426,7 +473,7 @@ Apply light-colored base and cure. Apply thin blooming gel to one nail. Use dott
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Browse floral blooming gel designs on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg'
       alt='Blooming gel flower nail art with five-petal pink blossoms on nude base'
       width='800'
       height='800'
@@ -455,7 +502,7 @@ Apply white base and cure. Apply thin blooming gel to one nail. Place a dot of y
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='See trendy aura nail designs on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg'
       alt='Trendy aura nails created with blooming gel technique featuring purple to pink gradient'
       width='800'
       height='800'
@@ -484,7 +531,7 @@ Apply light base and cure. Apply thin blooming gel to one nail. Use thin brush t
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='View marble nail art tutorials on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-white-gray-gold-marble-elegant.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-white-gray-gold-marble-elegant.jpg'
       alt='Elegant marble nails using blooming gel with white gray and gold veining details'
       width='800'
       height='800'
@@ -513,7 +560,7 @@ Apply nude or sheer pink base and cure. Apply thin blooming gel to one nail. Pla
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Discover tortoiseshell nail ideas on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-brown-orange-tortoiseshell-autumn.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-brown-orange-tortoiseshell-autumn.jpg'
       alt='Blooming gel tortoiseshell nails with brown orange and cream organic pattern perfect for fall'
       width='800'
       height='800'
@@ -542,7 +589,7 @@ Apply white base and cure. Apply thin blooming gel to one nail. Place dots of 3-
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Find tie-dye nail inspiration on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-rainbow-colors-tie-dye-retro.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-rainbow-colors-tie-dye-retro.jpg'
       alt='Fun tie-dye nails created with blooming gel featuring rainbow colors and retro swirls'
       width='800'
       height='800'
@@ -571,7 +618,7 @@ Apply base color and cure. Apply thin blooming gel to one nail. Use thin brush t
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='See crocodile print nail tutorials on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-crocodile-print-scales-advanced.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-crocodile-print-scales-advanced.jpg'
       alt='Advanced crocodile print nails using blooming gel with realistic scale texture pattern'
       width='800'
       height='800'
@@ -600,7 +647,7 @@ Apply base color and cure. Apply thin blooming gel to one nail. Layer dots, line
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Browse abstract nail art designs on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-abstract-art-multicolor-unique.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-abstract-art-multicolor-unique.jpg'
       alt='Unique abstract art nails with blooming gel technique featuring artistic color combinations'
       width='800'
       height='800'
@@ -645,7 +692,7 @@ Let's address the top five mistakes beginners make with blooming gel. If you've 
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Learn blooming gel troubleshooting on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails-timing-comparison-correct-overspread.jpg'
+      src='/images/blog/blooming-gel-nails/blooming-gel-nails-timing-comparison-correct-overspread.jpg'
       alt='Side by side comparison showing correct blooming gel timing versus over-spread mistake'
       width='800'
       height='800'

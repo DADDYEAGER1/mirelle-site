@@ -1,35 +1,70 @@
 ---
-title: 'Obsessed: 42 Thanksgiving Nails That Stop Traffic in 2025'
-excerpt: 'Discover 42 stunning Thanksgiving nail designs for 2025. From easy DIY ideas to salon-worthy art, find your perfect festive manicure with color tips and tutorials.'
+author: Mirellé Team
+canonical: https://mirelleinspo.com/blog/thanksgiving-nails-2025
 date: '2025-10-24T09:00:00-04:00'
-author: 'Mirellé Team'
-tags: ['thanksgiving nails', 'fall nails', 'thanksgiving nail designs', 'thanksgiving nail art', 'holiday nails', 'seasonal nails']
-image: '/images/blog/hero-thanksgiving-nails-2025.jpg'
-readTime: '10 min'
-slug: 'thanksgiving-nails-2025'
-canonical: 'https://mirelleinspo.com/blog/thanksgiving-nails-2025'
-imageAlt: 'Stunning Thanksgiving nail designs featuring burgundy, burnt orange and gold colors for fall 2025'
-imageWidth: 1200
-imageHeight: 630
 dateModified: '2025-10-24'
-wordCount: 2847
+excerpt: Discover 42 stunning Thanksgiving nail designs for 2025. From easy DIY ideas
+  to salon-worthy art, find your perfect festive manicure with color tips and tutorials.
 faqItems:
-  - question: 'What colors are best for Thanksgiving nails'
-    answer: 'Classic Thanksgiving nail colors include burgundy, burnt orange, mustard yellow, forest green, and warm browns. Gold and copper metallics add festive shimmer that complements rich fall tones perfectly. Top nail artists recommend mixing warm and cool tones for added depth and dimension in your holiday manicure.'
-  - question: 'How long before Thanksgiving should I get my nails done'
-    answer: 'Get Thanksgiving nails done 2-3 days before the holiday for gel polish or acrylics to ensure fresh, chip-free nails on the big day. This timing allows full curing and bonding. Regular polish should be applied 1-2 days before. Professional nail techs recommend booking early as salons fill up quickly in November.'
-  - question: 'How long do Thanksgiving nails last'
-    answer: 'Gel Thanksgiving nails last 2-3 weeks with proper care, while regular polish lasts 5-7 days. Acrylics can last 3-4 weeks but need fills every 2-3 weeks. Durability depends on daily activities and care routine. Nail professionals recommend daily cuticle oil and wearing gloves while cooking to extend wear time significantly.'
-  - question: 'Can you do Thanksgiving nails with short nails'
-    answer: 'Absolutely! Short nails are perfect for Thanksgiving designs and more practical for cooking and food prep. Simple designs like solid fall colors, accent nails, or minimalist leaf art work beautifully on shorter lengths. Professional manicurists note that short nails are less likely to chip during meal preparation activities.'
-  - question: 'How much do Thanksgiving nails cost at a salon'
-    answer: 'Thanksgiving nails typically cost between 35-60 dollars for gel manicure with nail art, 50-80 dollars for acrylics with designs, and 25-40 dollars for regular polish. Complex designs or 3D elements increase the price. Location and salon reputation affect cost. DIY at home costs 15-30 dollars for supplies lasting multiple manicures.'
-  - question: 'What nail shapes work best for Thanksgiving designs'
-    answer: 'Almond and coffin shapes showcase Thanksgiving designs beautifully with ample space for intricate art. Oval and square shapes work great for shorter nails and simpler designs. Stiletto suits bold, dramatic looks. Professional nail artists recommend choosing shapes based on your lifestyle during the holiday for practicality while cooking and hosting.'
-  - question: 'Are gel or regular polish better for Thanksgiving'
-    answer: 'Gel polish is better for Thanksgiving if you need nails to last through the holiday weekend without chipping. Regular polish is ideal for quick changes or DIY without special equipment. Gel requires UV curing and professional removal. Nail technicians recommend gel for hosting duties and heavy cooking, regular polish for quick festive changes.'
-  - question: 'How do I make my Thanksgiving nails last longer'
-    answer: 'Apply proper base coat, thin polish layers, and quality top coat for maximum longevity. Wear gloves while cooking, cleaning, and doing dishes. Apply cuticle oil daily to prevent lifting. Avoid hot water soaks and harsh chemicals. Professional tip: wrap the tips by swiping polish over the nail edge for a chip-resistant seal.'
+- answer: Classic Thanksgiving nail colors include burgundy, burnt orange, mustard
+    yellow, forest green, and warm browns. Gold and copper metallics add festive shimmer
+    that complements rich fall tones perfectly. Top nail artists recommend mixing
+    warm and cool tones for added depth and dimension in your holiday manicure.
+  question: What colors are best for Thanksgiving nails
+- answer: Get Thanksgiving nails done 2-3 days before the holiday for gel polish or
+    acrylics to ensure fresh, chip-free nails on the big day. This timing allows full
+    curing and bonding. Regular polish should be applied 1-2 days before. Professional
+    nail techs recommend booking early as salons fill up quickly in November.
+  question: How long before Thanksgiving should I get my nails done
+- answer: Gel Thanksgiving nails last 2-3 weeks with proper care, while regular polish
+    lasts 5-7 days. Acrylics can last 3-4 weeks but need fills every 2-3 weeks. Durability
+    depends on daily activities and care routine. Nail professionals recommend daily
+    cuticle oil and wearing gloves while cooking to extend wear time significantly.
+  question: How long do Thanksgiving nails last
+- answer: Absolutely! Short nails are perfect for Thanksgiving designs and more practical
+    for cooking and food prep. Simple designs like solid fall colors, accent nails,
+    or minimalist leaf art work beautifully on shorter lengths. Professional manicurists
+    note that short nails are less likely to chip during meal preparation activities.
+  question: Can you do Thanksgiving nails with short nails
+- answer: Thanksgiving nails typically cost between 35-60 dollars for gel manicure
+    with nail art, 50-80 dollars for acrylics with designs, and 25-40 dollars for
+    regular polish. Complex designs or 3D elements increase the price. Location and
+    salon reputation affect cost. DIY at home costs 15-30 dollars for supplies lasting
+    multiple manicures.
+  question: How much do Thanksgiving nails cost at a salon
+- answer: Almond and coffin shapes showcase Thanksgiving designs beautifully with
+    ample space for intricate art. Oval and square shapes work great for shorter nails
+    and simpler designs. Stiletto suits bold, dramatic looks. Professional nail artists
+    recommend choosing shapes based on your lifestyle during the holiday for practicality
+    while cooking and hosting.
+  question: What nail shapes work best for Thanksgiving designs
+- answer: Gel polish is better for Thanksgiving if you need nails to last through
+    the holiday weekend without chipping. Regular polish is ideal for quick changes
+    or DIY without special equipment. Gel requires UV curing and professional removal.
+    Nail technicians recommend gel for hosting duties and heavy cooking, regular polish
+    for quick festive changes.
+  question: Are gel or regular polish better for Thanksgiving
+- answer: 'Apply proper base coat, thin polish layers, and quality top coat for maximum
+    longevity. Wear gloves while cooking, cleaning, and doing dishes. Apply cuticle
+    oil daily to prevent lifting. Avoid hot water soaks and harsh chemicals. Professional
+    tip: wrap the tips by swiping polish over the nail edge for a chip-resistant seal.'
+  question: How do I make my Thanksgiving nails last longer
+image: /images/blog/thanksgiving-nails-2025/hero-thanksgiving-nails-2025.jpg
+imageAlt: Stunning Thanksgiving nail designs featuring burgundy, burnt orange and
+  gold colors for fall 2025
+imageHeight: 630
+imageWidth: 1200
+readTime: 10 min
+slug: thanksgiving-nails-2025
+tags:
+- thanksgiving nails
+- fall nails
+- thanksgiving nail designs
+- thanksgiving nail art
+- holiday nails
+- seasonal nails
+title: 'Obsessed: 42 Thanksgiving Nails That Stop Traffic in 2025'
+wordCount: 2847
 ---
 
 Thanksgiving nails just got a serious upgrade. We curated 42 stunning designs that work whether you're hosting the entire family feast or showing up with a store-bought pie and killer manicure (no judgment here).
@@ -66,7 +101,7 @@ Classic Thanksgiving nail colors include burgundy, burnt orange, mustard yellow,
 Professional tip from top manicurists: Mix warm and cool tones together for added dimension. Burgundy with sage green accents creates stunning depth. Check out <a href='/shop/fall' class='text-blue-600 hover:text-blue-800 underline'>our fall collection</a> for curated color sets.
 
 <a href='https://in.pinterest.com/pin/913034524500817644/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-nail-colors-2025.png' alt='Best thanksgiving nail colors including burgundy burnt orange and gold polish swatches' />
+  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-nail-colors-2025.png' alt='Best thanksgiving nail colors including burgundy burnt orange and gold polish swatches' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817644/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these Thanksgiving nail colors to Pinterest →</a></p>
 
@@ -111,7 +146,7 @@ We curated these simple designs perfect for nail art beginners or anyone short o
 Which design caught your eye first? Save your favorites for later!
 
 <a href='https://in.pinterest.com/pin/913034524500817669/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-short-nails.png' alt='Easy thanksgiving nail designs for short nails with fall colors' />
+  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-short-nails.png' alt='Easy thanksgiving nail designs for short nails with fall colors' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817669/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin these easy Thanksgiving nail designs →</a></p>
 
@@ -150,7 +185,7 @@ These designs require moderate skill but deliver impressive results:
 **30. Simple Florals** - Hand-painted fall flowers like chrysanthemums or daisies.
 
 <a href='https://in.pinterest.com/pin/913034524500817638/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-long-nails-almond.png' alt='Thanksgiving nails on long almond shaped nails with intricate fall art' />
+  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-long-nails-almond.png' alt='Thanksgiving nails on long almond shaped nails with intricate fall art' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817638/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these almond nail designs to Pinterest →</a></p>
 
@@ -185,7 +220,7 @@ These professional-level designs showcase serious nail artistry:
 Ready to try one of these show-stopping designs?
 
 <a href='https://in.pinterest.com/pin/913034524500817650/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-ombre-nails.png' alt='Thanksgiving ombre nails with fall color gradient from red to orange' />
+  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-ombre-nails.png' alt='Thanksgiving ombre nails with fall color gradient from red to orange' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817650/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin this ombre nail tutorial for later →</a></p>
 
@@ -217,7 +252,7 @@ Apply a thin layer of glossy top coat over all nails, making sure to cap the tip
 Professional tip: Imperfect leaves actually look more realistic than perfect ones. Embrace natural variations in your design!
 
 <a href='https://in.pinterest.com/pin/913034524500817625/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-nails-tutorial.png' alt='Step by step thanksgiving nail art tutorial showing leaf design technique' />
+  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-nails-tutorial.png' alt='Step by step thanksgiving nail art tutorial showing leaf design technique' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817625/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save this Thanksgiving nail tutorial →</a></p>
 ---

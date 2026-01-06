@@ -2,24 +2,45 @@
 
 import { useState, useRef, useEffect } from 'react';
 import FeatureBlogCard from './FeatureBlogCard';
-import { BlogMetadata } from '@/types/blog';
+import { ClusterGroup } from '@/lib/blog';
 
 interface CarouselSectionProps {
-  posts: BlogMetadata[];
-  title: string;
+  clusterGroup: ClusterGroup;
 }
 
-export default function CarouselSection({ posts, title }: CarouselSectionProps) {
+export default function CarouselSection({ clusterGroup }: CarouselSectionProps) {
+  const { pillar, clusters } = clusterGroup;
+  
+  // Don't render if less than 2 posts total (including pillar)
+  if (clusters.length < 1) {
+    return null;
+  }
+
+  // Include pillar post at the beginning
+  const allPosts = [pillar, ...clusters];
+
   const scrollRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [visibleCards, setVisibleCards] = useState(4); // Default desktop
 
-  const totalCards = posts.length;
+  const totalCards = allPosts.length;
+  const totalPages = Math.ceil(totalCards / visibleCards);
 
   const checkScroll = () => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      
+      // Calculate visible cards based on screen width
+      const windowWidth = window.innerWidth;
+      let cardsVisible = 4; // Desktop default
+      if (windowWidth < 640) cardsVisible = 1; // Mobile
+      else if (windowWidth < 768) cardsVisible = 2; // Small tablet
+      else if (windowWidth < 1024) cardsVisible = 3; // Tablet
+      
+      setVisibleCards(cardsVisible);
+      
       const cardWidth = scrollRef.current.querySelector('div')?.offsetWidth || 0;
       const currentCard = Math.round(scrollLeft / cardWidth);
       setCurrentIndex(currentCard);
@@ -33,9 +54,16 @@ export default function CarouselSection({ posts, title }: CarouselSectionProps) 
     const ref = scrollRef.current;
     if (ref) {
       ref.addEventListener('scroll', checkScroll);
-      return () => ref.removeEventListener('scroll', checkScroll);
+      window.addEventListener('resize', checkScroll);
+      return () => {
+        ref.removeEventListener('scroll', checkScroll);
+        window.removeEventListener('resize', checkScroll);
+      };
     }
   }, []);
+
+  // Extract clean pillar name (remove everything after colon if exists)
+  const cleanPillarTitle = pillar.title.split(':')[0].trim();
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -50,13 +78,17 @@ export default function CarouselSection({ posts, title }: CarouselSectionProps) 
   return (
     <section className="py-16 bg-white border-t border-gray-100">
       <div className="max-w-[1400px] mx-auto px-6 md:px-16 lg:px-20">
-        {/* Header with Navigation */}
+        {/* Header - Centered with Navigation */}
         <div className="flex items-center justify-between mb-8">
+          {/* Left spacer for balance */}
+          <div className="w-10 md:w-32"></div>
+          
+          {/* Centered Title */}
           <h2 
-            className="text-3xl md:text-4xl"
+            className="text-3xl md:text-4xl text-center flex-1"
             style={{ fontFamily: 'Larken, Georgia, serif' }}
           >
-            {title}
+            {cleanPillarTitle}
           </h2>
 
           {/* Page Counter - Desktop */}
@@ -73,10 +105,10 @@ export default function CarouselSection({ posts, title }: CarouselSectionProps) 
             </button>
 
             <span 
-              className="text-sm"
+              className="text-sm whitespace-nowrap"
               style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
             >
-              {currentIndex + 1} / {totalCards}
+              {Math.floor(currentIndex / visibleCards) + 1} / {totalPages}
             </span>
 
             <button
@@ -101,7 +133,7 @@ export default function CarouselSection({ posts, title }: CarouselSectionProps) 
             msOverflowStyle: 'none',
           }}
         >
-          {posts.map((post) => (
+          {allPosts.map((post) => (
             <div 
               key={post.slug}
               className="flex-shrink-0 w-[85%] sm:w-[45%] md:w-[32%] lg:w-[23%] snap-start"

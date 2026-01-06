@@ -5,7 +5,6 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 Disallow: /static/
-Disallow: /blog/tag/
 
 # GPTBot
 User-agent: GPTBot

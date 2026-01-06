@@ -59,7 +59,7 @@ faqItems:
     options like smoky marble, bronze chrome, or solid oxblood that complement fall
     through November.
   question: Can Halloween nail designs transition into November
-image: /images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-hero.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-hero.jpg
 imageAlt: Easy Halloween ghost and pumpkin nail designs with step by step tutorial
   for beginners 2025
 imageHeight: 630
@@ -88,7 +88,7 @@ For more seasonal nail inspiration, explore our <a href='/blog/christmas-nail-de
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/halloween-nails-2025/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-hero.jpg" alt="Collection of 35 easy Halloween nail designs for beginners featuring ghosts pumpkins spiderwebs and simple patterns for 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-hero.jpg" alt="Collection of 35 easy Halloween nail designs for beginners featuring ghosts pumpkins spiderwebs and simple patterns for 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save This Collection on Pinterest →</span>
   </a>
 </div>
@@ -107,7 +107,7 @@ The most popular color combinations remain classic black and orange, but 2025 in
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-ghost-simple.jpg" alt="Simple white ghost nail art with black dot eyes on nude base coat perfect for Halloween beginners" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-ghost-simple.jpg" alt="Simple white ghost nail art with black dot eyes on nude base coat perfect for Halloween beginners" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Watch Step-by-Step Tutorial →</span>
   </a>
 </div>
@@ -127,7 +127,7 @@ This design works on any nail length and requires supplies most people already o
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/halloween-spider-web-nails-easy.jpg" alt="Black spiderweb pattern on white french tip Halloween manicure for almond shaped nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/halloween-spider-web-nails-easy.jpg" alt="Black spiderweb pattern on white french tip Halloween manicure for almond shaped nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">See Full Tutorial →</span>
   </a>
 </div>
@@ -145,7 +145,7 @@ Apply nude or sheer pink base. Paint black French tips using guides for precisio
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/pumpkin-nail-art-halloween-orange.jpg" alt="Bright orange pumpkin nail design with brown stem and ridge details for easy Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/pumpkin-nail-art-halloween-orange.jpg" alt="Bright orange pumpkin nail design with brown stem and ridge details for easy Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">View Tutorial Steps →</span>
   </a>
 </div>
@@ -163,7 +163,7 @@ Paint nails bright orange using two coats for opacity. Once completely dry, use 
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/black-cat-halloween-nails-simple.jpg" alt="Minimalist black cat silhouette on nude nail base showing curved back and pointed ears for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/black-cat-halloween-nails-simple.jpg" alt="Minimalist black cat silhouette on nude nail base showing curved back and pointed ears for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Learn the Technique →</span>
   </a>
 </div>
@@ -181,7 +181,7 @@ Apply base color across all nails. On designated accent nail, use black polish t
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/candy-corn-halloween-nail-designs.jpg" alt="Classic candy corn striped Halloween nails in orange yellow white horizontal bands easy DIY design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/candy-corn-halloween-nail-designs.jpg" alt="Classic candy corn striped Halloween nails in orange yellow white horizontal bands easy DIY design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">See Tutorial →</span>
   </a>
 </div>
@@ -199,7 +199,7 @@ Divide nail into three mental sections. Paint bottom third white, middle third o
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/blood-drip-easy-halloween-nails.jpg" alt="Burgundy red blood drip effect from nail tips on nude base coat for dramatic Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/blood-drip-easy-halloween-nails.jpg" alt="Burgundy red blood drip effect from nail tips on nude base coat for dramatic Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Watch Application Method →</span>
   </a>
 </div>
@@ -217,7 +217,7 @@ Apply nude or pale pink base in two coats. Load thin brush with deep burgundy or
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/witch-hat-simple-halloween-nails.jpg" alt="Deep purple witch hat design with gold buckle detail on dark Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/witch-hat-simple-halloween-nails.jpg" alt="Deep purple witch hat design with gold buckle detail on dark Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">View Design Process →</span>
   </a>
 </div>
@@ -235,7 +235,7 @@ Paint all nails deep purple or plum shade. On accent nails, use contrasting blac
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/skeleton-hand-halloween-nail-art.jpg" alt="White skeleton bone pattern on black base showing finger bones and joints for spooky Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/skeleton-hand-halloween-nail-art.jpg" alt="White skeleton bone pattern on black base showing finger bones and joints for spooky Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Learn This Technique →</span>
   </a>
 </div>
@@ -253,7 +253,7 @@ Apply black polish in two to three coats for complete opacity. Using white polis
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/mummy-nails-halloween-easy-design.jpg" alt="White mummy bandage wraps with black eyes peeking through on beige Halloween nail base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/mummy-nails-halloween-easy-design.jpg" alt="White mummy bandage wraps with black eyes peeking through on beige Halloween nail base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">See Tutorial Steps →</span>
   </a>
 </div>
@@ -271,7 +271,7 @@ Apply nude or beige base coat. Using white polish, paint random diagonal stripes
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/frankenstein-halloween-nails-green.jpg" alt="Lime green Frankenstein nails with black stitch marks and bolt details for monster Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/frankenstein-halloween-nails-green.jpg" alt="Lime green Frankenstein nails with black stitch marks and bolt details for monster Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Watch Tutorial →</span>
   </a>
 </div>
@@ -289,7 +289,7 @@ Paint nails lime or mint green. Use black polish to draw two to three short hori
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/bat-silhouette-halloween-nail-art.jpg" alt="Black bat silhouettes flying across orange Halloween nail background with multiple sizes for depth" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/bat-silhouette-halloween-nail-art.jpg" alt="Black bat silhouettes flying across orange Halloween nail background with multiple sizes for depth" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">See Design Process →</span>
   </a>
 </div>
@@ -307,7 +307,7 @@ Apply base color such as orange, purple, or grey. Using black polish and thin br
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/orange-black-swirl-halloween-nails.jpg" alt="Swirled orange and black marble pattern Halloween nails created with toothpick technique on white base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/orange-black-swirl-halloween-nails.jpg" alt="Swirled orange and black marble pattern Halloween nails created with toothpick technique on white base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Learn Swirl Technique →</span>
   </a>
 </div>
@@ -325,7 +325,7 @@ Apply white or nude base. While still wet, drop orange and black polish directly
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/easy-halloween-nail-designs/glitter-pumpkin-halloween-nail-designs.jpg" alt="Orange glitter accent nail with brown pumpkin ridge details and green stem for sparkly Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/glitter-pumpkin-halloween-nail-designs.jpg" alt="Orange glitter accent nail with brown pumpkin ridge details and green stem for sparkly Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">View Tutorial →</span>
   </a>
 </div>

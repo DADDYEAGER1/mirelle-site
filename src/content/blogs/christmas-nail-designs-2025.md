@@ -65,19 +65,19 @@ galleryImages:
     gold chrome
   caption: 2025's most sophisticated Christmas color combinations
   height: 800
-  url: /images/blog/christmas-nails-2025/christmas-colors-2025.png
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-colors-2025.png
   width: 1200
 - alt: Christmas nail designs on different nail shapes almond square round coffin
   caption: Festive designs tailored for every nail shape
   height: 800
-  url: /images/blog/christmas-nails-2025/christmas-shapes-2025.png
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-shapes-2025.png
   width: 1200
 - alt: Step by step red and gold Christmas nails with chrome accent tutorial
   caption: Classic red and gold Christmas manicure technique
   height: 800
-  url: /images/blog/christmas-nails-2025/christmas-tutorial-2025.png
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-tutorial-2025.png
   width: 1200
-image: /images/blog/christmas-nails-2025/hero-christmas-nails-2025.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/hero-christmas-nails-2025.jpg
 imageAlt: Christmas nails 2025 featuring festive red, green, and chrome designs for
   holiday season
 imageHeight: 630
@@ -189,7 +189,7 @@ One nail salon we visited showed us their most-requested design board from last 
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/christmas-nails-2025/christmas-colors-2025.png" alt="Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-colors-2025.png" alt="Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save This Color Palette to Pinterest →</span>
   </a>
 </div>
@@ -202,7 +202,7 @@ We curated the most sophisticated color combinations that feel festive without o
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/navy-blue-rose-gold-christmas-nails-elegant-winter-2025.webp" alt="Navy blue rose gold Christmas nails elegant winter holiday manicure sophisticated festive designs chrome accents 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/navy-blue-rose-gold-christmas-nails-elegant-winter-2025.webp" alt="Navy blue rose gold Christmas nails elegant winter holiday manicure sophisticated festive designs chrome accents 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Navy Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -217,7 +217,7 @@ We curated the most sophisticated color combinations that feel festive without o
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/cat-eye-magnetic-christmas-nails-red-green-metallic-2025.webp" alt="Cat eye magnetic Christmas nails red green silver metallic shimmer holiday manicure festive nail art design 2025 trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/cat-eye-magnetic-christmas-nails-red-green-metallic-2025.webp" alt="Cat eye magnetic Christmas nails red green silver metallic shimmer holiday manicure festive nail art design 2025 trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Cat Eye Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -246,7 +246,7 @@ Chrome application intimidated us initially until we researched the actual proce
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/minimalist-micro-christmas-nail-art-french-tips-subtle.webp="Minimalist micro Christmas nail art French tips subtle snowflakes tiny festive designs professional holiday manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/minimalist-micro-christmas-nail-art-french-tips-subtle.webp="Minimalist micro Christmas nail art French tips subtle snowflakes tiny festive designs professional holiday manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Minimalist Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -271,7 +271,7 @@ Not everyone has professional nail training, and that's completely fine. We cura
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/christmas-nails-2025/christmas-shapes-2025.png" alt="Christmas nail designs on different nail shapes almond square round coffin" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-shapes-2025.png" alt="Christmas nail designs on different nail shapes almond square round coffin" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Explore Shape-Specific Designs on Pinterest →</span>
   </a>
 </div>
@@ -314,7 +314,7 @@ We discovered snowflake designs trending heavily on Pinterest with 100,000+ save
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/polka-dot-christmas-nails-red-green-gold-festive-2025.webp" alt="Polka dot Christmas nails red green gold white festive holiday manicure easy nail art design winter 2025 nail trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/polka-dot-christmas-nails-red-green-gold-festive-2025.webp" alt="Polka dot Christmas nails red green gold white festive holiday manicure easy nail art design winter 2025 nail trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Polka Dot Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -341,7 +341,7 @@ We avoided red-green combinations initially thinking they were too basic. After 
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/champagne-shard-glitter-christmas-nails-holographic-2025.webp" alt="Champagne shard glitter Christmas nails holographic geometric modern elegant holiday manicure festive sparkle 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/champagne-shard-glitter-christmas-nails-holographic-2025.webp" alt="Champagne shard glitter Christmas nails holographic geometric modern elegant holiday manicure festive sparkle 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Champagne Glitter Nails to Pinterest →</span>
   </a>
 </div>
@@ -354,7 +354,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/ombre-glitter-christmas-nails-gradient-red-gold-sparkle.webp" alt="Ombre glitter Christmas nails gradient red gold sparkle festive holiday manicure easy DIY nail art design winter 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/ombre-glitter-christmas-nails-gradient-red-gold-sparkle.webp" alt="Ombre glitter Christmas nails gradient red gold sparkle festive holiday manicure easy DIY nail art design winter 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Ombre Glitter Nails to Pinterest →</span>
   </a>
 </div>
@@ -371,7 +371,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/gingerbread-cookie-christmas-nails-brown-icing-candy-cane.webp" alt="Gingerbread cookie Christmas nails brown white icing candy cane stripes festive holiday nail art designs cozy winter" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/gingerbread-cookie-christmas-nails-brown-icing-candy-cane.webp" alt="Gingerbread cookie Christmas nails brown white icing candy cane stripes festive holiday nail art designs cozy winter" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Gingerbread Nail Designs to Pinterest →</span>
   </a>
 </div>
@@ -386,7 +386,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/3d-bow-nail-art-red-ribbon-french-tips-christmas-2025.webp" alt="3D bow nail art red ribbons white French tips Christmas gift wrap holiday manicure festive designs elegant nails 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/3d-bow-nail-art-red-ribbon-french-tips-christmas-2025.webp" alt="3D bow nail art red ribbons white French tips Christmas gift wrap holiday manicure festive designs elegant nails 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Bow Nail Art to Pinterest →</span>
   </a>
 </div>
@@ -401,7 +401,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="follow" class="block">
-    <img src="/images/blog/christmas-nails-2025/velvet-texture-christmas-nails-fuzzy-matte-red-green-2025.webp" alt="Velvet texture Christmas nails fuzzy matte red green cozy winter holiday manicure sweater inspired festive designs 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/velvet-texture-christmas-nails-fuzzy-matte-red-green-2025.webp" alt="Velvet texture Christmas nails fuzzy matte red green cozy winter holiday manicure sweater inspired festive designs 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Save Velvet Christmas Nails to Pinterest →</span>
   </a>
 </div>
@@ -432,7 +432,7 @@ French manicures remain timelessly elegant and harder to mess up than intricate 
 
 <div class="my-8 text-center">
   <a href="https://www.pinterest.com/mirelle_inspo/christmas-nails-2025-ideas/" target="_blank" rel="noopener" class="block">
-    <img src="/images/blog/christmas-nails-2025/christmas-tutorial-2025.png" alt="Step by step red and gold Christmas nails with chrome accent tutorial" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-tutorial-2025.png" alt="Step by step red and gold Christmas nails with chrome accent tutorial" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
     <span class="text-blue-600 underline mt-2 inline-block">Pin This Tutorial for Later →</span>
   </a>
 </div>

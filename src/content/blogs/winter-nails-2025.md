@@ -62,7 +62,7 @@ faqItems:
     or ombre effects add 10-20 dollars. DIY kits cost 80-150 dollars upfront but save
     money long-term, with potential savings of 500 dollars yearly.
   question: How much do winter nail designs cost at salons
-image: /images/blog/winter-nails-2025/hero-winter-nails-2025.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/winter-nails-2025/hero-winter-nails-2025.jpg
 imageAlt: Trending winter nail designs 2025 featuring mocha mousse chrome and snowflake
   art
 imageHeight: 630

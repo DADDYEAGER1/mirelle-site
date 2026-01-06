@@ -7,7 +7,7 @@ dateModified: "2026-01-05T13:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Tutorials"
 tags: ["velvet cat eye nails", "velvet texture nails", "burgundy cat eye", "matte shimmer nails", "deep red cat eye", "textured magnetic nails", "velvet valentine nails", "wine cat eye nails"]
-image: "/images/blog/velvet-cat-eye-valentine-nails/velvet-cat-eye-valentine-nails-burgundy-hero.webp"
+image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-cat-eye-valentine-nails-burgundy-hero.webp"
 imageAlt: "Velvet cat eye nails in deep burgundy with matte shimmer texture finish"
 imageWidth: 1080
 imageHeight: 1080
@@ -24,46 +24,46 @@ topicalMap:
   topicalBoundary: "Velvet cat eye magnetic technique and textured finish application for Valentine nail designs"
   hierarchyLevel: 2
 galleryImages:
-  - url: "/images/blog/velvet-cat-eye-valentine-nails/velvet-versus-regular-cat-eye-comparison.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-versus-regular-cat-eye-comparison.webp"
     alt: "Velvet cat eye versus regular cat eye showing diffused shimmer comparison"
     width: 800
     height: 800
-  - url: "/images/blog/velvet-cat-eye-valentine-nails/burgundy-wine-valentine-color-palette.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/burgundy-wine-valentine-color-palette.webp"
     alt: "Burgundy wine oxblood valentine color palette for velvet cat eye"
     width: 800
     height: 800
-  - url: "/images/blog/velvet-cat-eye-valentine-nails/magnetic-gel-polish-tools-layout.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/magnetic-gel-polish-tools-layout.webp"
     alt: "Magnetic gel polish and magnet wand tools for velvet technique"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/velvet-cat-eye-valentine-nails/parallel-magnet-hovering-technique-demonstration.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/parallel-magnet-hovering-technique-demonstration.webp"
     alt: "Parallel magnet hovering technique showing proper distance for particle diffusion"
-  - url: "/images/blog/velvet-cat-eye-valentine-nails/velvet-layering-intensity-comparison.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-layering-intensity-comparison.webp"
     alt: "Velvet cat eye layering showing depth build from one to three coats"
-  - url: "/images/blog/velvet-cat-eye-valentine-nails/concentrated-spots-versus-proper-diffusion.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/concentrated-spots-versus-proper-diffusion.webp"
     alt: "Common mistake showing concentrated shimmer spots versus proper velvet diffusion"
 tutorialSteps:
   - position: 1
     name: "Apply Base Foundation"
     text: "Apply gel base coat and cure completely. Optional: apply black base coat for maximum velvet intensity, or nude base for subtler effect. Cure thoroughly before magnetic polish application."
-    image: "/images/blog/velvet-cat-eye-valentine-nails/base-coat-black-foundation-velvet-nails.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/base-coat-black-foundation-velvet-nails.webp"
   - position: 2
     name: "Apply Magnetic Polish Layer"
     text: "Apply thin coat of burgundy or wine magnetic gel polish across entire nail. Work quickly—magnetic particles remain mobile only while polish stays wet. Avoid thick application that extends working time unpredictably."
-    image: "/images/blog/velvet-cat-eye-valentine-nails/magnetic-polish-thin-layer-application.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/magnetic-polish-thin-layer-application.webp"
   - position: 3
     name: "Position Magnet Parallel"
     text: "Hold magnet wand parallel to nail surface, 3-5mm above polish. Do not touch polish surface. Hover steadily maintaining consistent distance across entire nail area."
-    image: "/images/blog/velvet-cat-eye-valentine-nails/magnet-parallel-positioning-hover-distance.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/magnet-parallel-positioning-hover-distance.webp"
   - position: 4
     name: "Execute Side-to-Side Movement"
     text: "Slowly move magnet horizontally across nail in smooth side-to-side motion. Speed: approximately 2-3 seconds per complete pass. The movement disperses particles evenly for all-over velvet effect rather than concentrated line."
-    image: "/images/blog/velvet-cat-eye-valentine-nails/side-to-side-magnet-movement-technique.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/side-to-side-magnet-movement-technique.webp"
   - position: 5
     name: "Cure and Layer for Depth"
     text: "Cure immediately after magnetic manipulation. Apply second thin coat, repeat parallel magnet movement, cure again. Build velvet intensity through multiple thin layers rather than single thick application."
-    image: "/images/blog/velvet-cat-eye-valentine-nails/cure-layer-build-velvet-depth.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/cure-layer-build-velvet-depth.webp"
 tutorialMetadata:
   name: "Velvet Cat Eye Valentine Nail Tutorial"
   description: "Complete guide for creating textured matte-shimmer finish with magnetic diffusion technique"

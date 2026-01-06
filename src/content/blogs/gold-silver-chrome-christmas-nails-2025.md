@@ -63,21 +63,21 @@ galleryImages:
     finish without grainy texture
   caption: Mirror chrome perfection on gold base
   height: 800
-  url: /images/blog/gold-silver-chrome-christmas-nails-2025/mirror-chrome-gold-christmas-nails-almond-shape-perfect-reflection.jpg
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/mirror-chrome-gold-christmas-nails-almond-shape-perfect-reflection.jpg
   width: 1200
 - alt: silver chrome christmas nails with hand painted snowflake accent metallic mirror
     finish on square nails
   caption: Silver chrome with snowflake detail
   height: 800
-  url: /images/blog/gold-silver-chrome-christmas-nails-2025/silver-chrome-christmas-nails-snowflake-accent-metallic-finish.jpg
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/silver-chrome-christmas-nails-snowflake-accent-metallic-finish.jpg
   width: 1200
 - alt: rose gold chrome christmas nails with french tip gradient ombre metallic finish
     on coffin shape
   caption: Rose gold chrome gradient tips
   height: 800
-  url: /images/blog/gold-silver-chrome-christmas-nails-2025/rose-gold-chrome-christmas-nails-french-tip-gradient-ombre.jpg
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/rose-gold-chrome-christmas-nails-french-tip-gradient-ombre.jpg
   width: 1200
-image: /images/blog/gold-silver-chrome-christmas-nails-2025/gold-silver-chrome-christmas-nails-2025-hero.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/gold-silver-chrome-christmas-nails-2025-hero.jpg
 imageAlt: gold silver chrome christmas nails 2025 metallic mirror finish holiday manicure
   with shimmer accents
 imageHeight: 630
@@ -144,7 +144,7 @@ For Christmas specifically: chrome delivers that high-impact wow factor perfect 
 Most chrome application failures happen because people use regular top coat instead of no-wipe gel top coat. The sticky layer (called inhibition layer) is what chrome powder adheres to. Wipe that layer away or use regular polish and your powder has nothing to grip onto. This single mistake causes 90 percent of chrome fails.
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-vs-glitter-vs-metallic-nail-polish-comparison-finish-texture.jpg" alt="side by side comparison showing chrome powder mirror finish versus glitter sparkle versus metallic polish sheen texture differences" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-vs-glitter-vs-metallic-nail-polish-comparison-finish-texture.jpg" alt="side by side comparison showing chrome powder mirror finish versus glitter sparkle versus metallic polish sheen texture differences" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">✨ Know your finishes! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this</a> comparison guide! ✨</p>
 </div>
 
@@ -167,7 +167,7 @@ Chrome powder application follows specific steps in exact order. Skip one step o
 The most common mistake is curing the no-wipe top coat for full 60 seconds. This hardens the surface too much and powder can't adhere. Thirty seconds leaves it slightly tacky—that tackiness is essential. Set a timer. Don't guess. Those 30 seconds make or break your entire manicure and determine success or failure.
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-powder-application-tutorial-step-by-step-silicone-applicator.jpg" alt="chrome powder being applied to christmas nails with silicone applicator showing buffing technique step by step tutorial" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-powder-application-tutorial-step-by-step-silicone-applicator.jpg" alt="chrome powder being applied to christmas nails with silicone applicator showing buffing technique step by step tutorial" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">💿 Master the technique! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this</a> tutorial! 💿</p>
 </div>
 
@@ -204,7 +204,7 @@ Not capping free edges properly during sealing step. When applying final top coa
 Inconsistent base color underneath affects chrome appearance. Make sure base coat is completely opaque with no streaks or thin spots visible. Apply second coat if first coat looks uneven. Chrome reflects whatever is underneath so inconsistent base creates inconsistent chrome finish across all nails.
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-nails-troubleshooting-grainy-texture-fix-proper-buffing-technique.jpg" alt="fixing grainy chrome nail texture with proper buffing technique showing before and after mirror finish comparison" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-nails-troubleshooting-grainy-texture-fix-proper-buffing-technique.jpg" alt="fixing grainy chrome nail texture with proper buffing technique showing before and after mirror finish comparison" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🔧 Fix it fast! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin these</a> troubleshooting hacks! 🔧</p>
 </div>
 
@@ -225,7 +225,7 @@ Base color dramatically impacts final chrome appearance. Wrong base creates mudd
 **Gel polish base works better than regular polish** because it doesn't shrink or move under chrome powder. Regular polish continues curing under lamp heat which can cause cracking in chrome layer. If using regular polish, seal it with clear gel layer before proceeding with chrome application for stable base that won't shift.
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/mirror-chrome-gold-christmas-nails-almond-shape-perfect-reflection.jpg" alt="mirror chrome gold christmas nails on almond shape showing perfect reflection finish without grainy texture" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/mirror-chrome-gold-christmas-nails-almond-shape-perfect-reflection.jpg" alt="mirror chrome gold christmas nails on almond shape showing perfect reflection finish without grainy texture" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🖤 Black base perfection! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Try this</a> pro trick! 🖤</p>
 </div>
 
@@ -258,7 +258,7 @@ Every design tested with actual chrome powder application. No unrealistic AI-gen
 **10. Matte Chrome Finish** - Chrome with matte top coat for velvety metallic texture
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/silver-chrome-christmas-nails-snowflake-accent-metallic-finish.jpg" alt="silver chrome christmas nails with hand painted snowflake accent metallic mirror finish on square nails" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/silver-chrome-christmas-nails-snowflake-accent-metallic-finish.jpg" alt="silver chrome christmas nails with hand painted snowflake accent metallic mirror finish on square nails" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">❄️ Silver + snowflakes! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this</a> winter combo! ❄️</p>
 </div>
 
@@ -307,7 +307,7 @@ Every design tested with actual chrome powder application. No unrealistic AI-gen
 **30. Chrome Gradient Tips** - Natural with chrome fade starting 3mm from free edge
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/rose-gold-chrome-christmas-nails-french-tip-gradient-ombre.jpg" alt="rose gold chrome christmas nails with french tip gradient ombre metallic finish on coffin shape" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/rose-gold-chrome-christmas-nails-french-tip-gradient-ombre.jpg" alt="rose gold chrome christmas nails with french tip gradient ombre metallic finish on coffin shape" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🌹 Rose gold dreams! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this</a> romantic look! 🌹</p>
 </div>
 
@@ -379,7 +379,7 @@ Quality chrome powder makes the difference between mirror finish and glittery me
 **Avoid cheap eBay chrome powder** - Grainy pigments never achieve true mirror finish no matter your technique. Contains fillers and large particles. Creates glittery sparkle instead of smooth reflection. Wastes your time and creates frustration. Spend 15 dollars on quality powder that works first time rather than 5 dollars on powder that fails repeatedly.
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-powder-product-recommendations-quality-brands-application-tools.jpg" alt="quality chrome powder products and silicone application tools recommended for christmas nails mirror finish results" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-powder-product-recommendations-quality-brands-application-tools.jpg" alt="quality chrome powder products and silicone application tools recommended for christmas nails mirror finish results" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🛍️ Shop smart! <a href="https://amzn.to/49MPIhe" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this</a> product guide! 🛍️</p>
 </div>
 
@@ -400,7 +400,7 @@ Remove press-ons by soaking in acetone for 10 to 15 minutes then gently pushing 
 Choose designs with realistic chrome finish not obviously fake metallic stickers. Look for brands that use actual chrome powder in professional application before selling sets. Read reviews specifically mentioning mirror finish quality. Avoid ultra-cheap sets under 10 dollars which use cheap glittery coatings instead of true chrome.
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/metallic-press-on-christmas-nails-chrome-finish-application-tutorial.jpg" alt="metallic press on christmas nails with chrome mirror finish being applied showing sizing and glue application tutorial" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/metallic-press-on-christmas-nails-chrome-finish-application-tutorial.jpg" alt="metallic press on christmas nails with chrome mirror finish being applied showing sizing and glue application tutorial" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">⚡ Instant chrome! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Try press-ons</a> instead! ⚡</p>
 </div>
 
@@ -421,7 +421,7 @@ Wear gloves for dishes, cleaning, and prolonged water exposure. Water seeps unde
 Reapply top coat every 5 to 7 days to refresh protection layer and restore shine. Use regular gel top coat brushed over existing manicure. Cure for 60 seconds. This maintenance step costs 60 seconds but extends chrome finish through New Year's Eve without full removal and reapplication.
 
 <div class="my-8">
-  <img src="/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-christmas-nails-durability-tips-edge-sealing-top-coat-layers.jpg" alt="chrome christmas nails durability demonstration showing proper edge sealing technique and multiple top coat layers for longevity" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-christmas-nails-durability-tips-edge-sealing-top-coat-layers.jpg" alt="chrome christmas nails durability demonstration showing proper edge sealing technique and multiple top coat layers for longevity" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">⏱️ 14 day wear! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin these</a> longevity hacks! ⏱️</p>
 </div>
 

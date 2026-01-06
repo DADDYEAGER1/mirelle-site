@@ -61,7 +61,7 @@ faqItems:
     and Victorian elements. Think of vampire nails as a subset of gothic nail art
     styles.
   question: What is the difference between vampire nails and gothic nails
-image: /images/blog/vampire-nails-2025/hero-vampire-nails-2025.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/hero-vampire-nails-2025.jpg
 imageAlt: Vampire nails 2025 featuring blood red dripping effects and gothic black
   nail art designs
 imageHeight: 630
@@ -142,7 +142,7 @@ The first time someone requested vampire nails, we thought they meant subtle bur
 Most vampire nail tutorials online are either way too basic (just paint nails red, done) or ridiculously complicated with techniques that require professional training. We're here to give you the real deal - 30+ vampire nail designs that actually work, a step-by-step tutorial you can do at home, and all the insider tips from perfecting this look. We're talking blood red tips, dripping effects, coffin and stiletto shapes, gothic glam, and even how to make it work on short nails.
 
 <a href='https://in.pinterest.com/pin/913034524500836804/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/vampire-nail-colors-blood-red-black.png' alt='Vampire nail colors blood red and midnight black palette' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/vampire-nail-colors-blood-red-black.png' alt='Vampire nail colors blood red and midnight black palette' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836804/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Pin this color palette</a> to your vampire nail inspiration board!</p>
 
@@ -161,7 +161,7 @@ Another huge trend? **Mixing textures**. We're talking matte black bases with gl
 **Short vampire nails** are finally getting their moment. For years, everyone assumed you needed long stiletto claws to pull off the vampire look, but we're seeing more requests for <a href='https://www.mirelleinspo.com/topics/seasonal-trends' class='text-blue-600 hover:text-blue-800 underline'>short almond or oval vampire nails</a> with blood red polish and minimal art. It's way more practical for everyday life and still looks absolutely killer.
 
 <a href='https://in.pinterest.com/pin/913034524500836782/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/vampire-nail-designs-dripping-blood.png' alt='Dripping blood vampire nail design with red tips' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/vampire-nail-designs-dripping-blood.png' alt='Dripping blood vampire nail design with red tips' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836782/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Save this dripping blood design</a> for your next manicure!</p>
 
@@ -188,7 +188,7 @@ We've tested every vampire nail design imaginable. Here are the ones that consis
 **Blood Moon Nails:** Dark purple to black ombre base with a small red moon on accent nails. Add tiny gold stars or crosses for extra gothic romance vibes. This design is perfect for people who want vampire energy without being too literal about it.
 
 <a href='https://in.pinterest.com/pin/913034524500836749/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/coffin-shape-vampire-nails.png' alt='Coffin shaped vampire nails with gothic nail art' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/coffin-shape-vampire-nails.png' alt='Coffin shaped vampire nails with gothic nail art' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836749/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Pin this coffin shape design</a> to your gothic glam collection!</p>
 
@@ -209,7 +209,7 @@ We've tested every vampire nail design imaginable. Here are the ones that consis
 **Single Accent Vampire Nail:** All nails in classic blood red, but your ring finger goes full vampire with drips, fangs, bats, whatever. This lets you have your dramatic moment without overwhelming your whole hand.
 
 <a href='https://in.pinterest.com/pin/913034524500836765/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/stiletto-vampire-nails-fangs.png' alt='Stiletto vampire nails with fang accents and red polish' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/stiletto-vampire-nails-fangs.png' alt='Stiletto vampire nails with fang accents and red polish' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836765/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Save this stiletto fang look</a> for dramatic vampire vibes!</p>
 
@@ -234,7 +234,7 @@ Here's the honest take: you don't need to buy every shade. Start with one good b
 One more thing - always test your colors on a nail wheel or practice nail first. What looks perfect in the bottle can look completely different on your actual nails, especially with <a href='https://www.mirelleinspo.com/topics/skin-tones' class='text-blue-600 hover:text-blue-800 underline'>different skin tones</a>. Blood red can look gorgeous on one person and neon on another depending on undertones.
 
 <a href='https://in.pinterest.com/pin/913034524500836732/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/vampire-nail-tutorial-step-by-step.png' alt='Step by step vampire nail tutorial with gel polish' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/vampire-nail-tutorial-step-by-step.png' alt='Step by step vampire nail tutorial with gel polish' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836732/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Pin this tutorial</a> for your DIY vampire nail session!</p>
 
@@ -311,7 +311,7 @@ Massage cuticle oil into your cuticles and the skin around your nails. This make
 - **Polish flooding cuticles:** You're applying too close to the cuticle line. Leave a tiny gap.
 
 <a href='https://in.pinterest.com/pin/913034524500836706/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/gothic-vampire-nails-rhinestones.png' alt='Gothic vampire nails with rhinestones and metallic accents' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/gothic-vampire-nails-rhinestones.png' alt='Gothic vampire nails with rhinestones and metallic accents' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836706/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Save this gothic rhinestone look</a> to your vampire nail board!</p>
 
@@ -334,7 +334,7 @@ Not every nail shape works with the vampire aesthetic. Here's the real truth abo
 Real talk: your natural nail bed shape matters too. If you have wide nail beds, stiletto can sometimes look disproportionate. If you have narrow beds, coffin shape might look too elongated. Do what feels comfortable first, aesthetic second - because vampire nails that hurt or constantly break aren't worth it.
 
 <a href='https://in.pinterest.com/pin/913034524500836603/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/short-vampire-nails-almond-shape.png' alt='Short almond vampire nails with blood red manicure' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/short-vampire-nails-almond-shape.png' alt='Short almond vampire nails with blood red manicure' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836603/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Pin this short nail design</a> for wearable vampire vibes!</p>
 
@@ -367,7 +367,7 @@ Fix: Prevention: use liquid latex or petroleum jelly around cuticles before pain
 Fix: Coffin and stiletto shapes are structurally weaker at the narrow points. File them slightly thicker, avoid using nails as tools, and always cap with top coat. If you're constantly breaking, you might need to go shorter or switch to almond shape which is more durable.
 
 <a href='https://in.pinterest.com/pin/913034524500836650/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/vampire-nails-3d-embellishments.png' alt='Vampire nails with 3D bat embellishments and crosses' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/vampire-nails-3d-embellishments.png' alt='Vampire nails with 3D bat embellishments and crosses' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836650/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Save this 3D embellishment guide</a> for extra vampire drama!</p>
 
@@ -396,7 +396,7 @@ You don't need to spend $200 at the salon or buy professional-grade everything t
 The biggest lesson about products: expensive doesn't always equal better, and cheap doesn't always equal bad. Test products, read reviews from actual nail techs (not sponsored content), and don't be afraid to mix high and low price points. Some favorite manicures use $8 Beetles polish with $2 Amazon rhinestones and they look absolutely professional.
 
 <a href='https://in.pinterest.com/pin/913034524500836533/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/black-red-ombre-vampire-nails.png' alt='Black to red ombre vampire nail design with gradient' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/black-red-ombre-vampire-nails.png' alt='Black to red ombre vampire nail design with gradient' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836533/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Pin this ombre technique</a> for stunning gradient vampire nails!</p>
 
@@ -426,7 +426,7 @@ We've done vampire-inspired nails for weddings (burgundy ombre for fall weddings
 Remember, confidence is what makes any nail design work. If you love your vampire nails in March, rock them. Nobody gets to tell you that dark red nails are only for October.
 
 <a href='https://in.pinterest.com/pin/913034524500836582/' target='_blank' rel='noopener'>
-  <img src='/images/blog/vampire-nails-2025/vampire-nails-glitter-sparkle.png' alt='Sparkly vampire nails with red glitter and shimmer' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/vampire-nails-2025/vampire-nails-glitter-sparkle.png' alt='Sparkly vampire nails with red glitter and shimmer' />
 </a>
 <p class='text-center text-sm text-gray-600 mt-2'>📌 <a href='https://in.pinterest.com/pin/913034524500836582/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-semibold'>Save this glitter vampire look</a> for extra sparkle and drama!</p>
 

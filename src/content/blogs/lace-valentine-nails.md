@@ -7,7 +7,7 @@ dateModified: "2026-01-15T11:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Art"
 tags: ["lace valentine nails", "doily nails", "white lace nail art", "bridal valentine nails", "delicate nail patterns", "overlay nail design", "romantic lace nails", "intricate valentine nails"]
-image: "/images/blog/lace-valentine-nails/lace-valentine-nails-delicate-romantic-pattern.webp"
+image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-valentine-nails-delicate-romantic-pattern.webp"
 imageAlt: "Lace Valentine nails featuring intricate white overlay patterns with negative space on sheer pink base"
 imageWidth: 1080
 imageHeight: 1080
@@ -24,46 +24,46 @@ topicalMap:
   topicalBoundary: "Lace nail art techniques for Valentine's Day covering stamping, foil transfer, and hand-painting methods with pattern placement strategies"
   hierarchyLevel: 2
 galleryImages:
-  - url: "/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
     alt: "Side by side comparison of three lace nail techniques showing stamping foil and hand-painted results"
     width: 800
     height: 800
-  - url: "/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
     alt: "Essential stamping tools for lace Valentine nails including plates scraper and stamping polish"
     width: 800
     height: 800
-  - url: "/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
     alt: "Detailed stamping plate pattern pickup technique showing polish application and scraper motion"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
     alt: "Side by side comparison of three lace nail techniques showing stamping foil and hand-painted results"
-  - url: "/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
     alt: "Essential stamping tools for lace Valentine nails including plates scraper and stamping polish"
-  - url: "/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
     alt: "Detailed stamping plate pattern pickup technique showing polish application and scraper motion"
 tutorialSteps:
   - position: 1
     name: "Prepare Base Surface"
     text: "Apply sheer pink or nude base coat to all nails. Allow complete drying—minimum thirty minutes. Clean nail surface with alcohol wipe to remove oils that prevent pattern adhesion."
-    image: "/images/blog/lace-valentine-nails/lace-nail-base-preparation-sheer-pink.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-base-preparation-sheer-pink.webp"
   - position: 2
     name: "Load Stamping Plate"
     text: "Apply thick layer of white stamping polish to selected lace pattern on plate. Use scraper at forty-five degree angle to remove excess polish in single swift motion."
-    image: "/images/blog/lace-valentine-nails/lace-stamping-plate-polish-application.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-stamping-plate-polish-application.webp"
   - position: 3
     name: "Pattern Pickup"
     text: "Roll stamper across engraved pattern with firm pressure. Pattern transfers to stamper surface immediately. Check coverage before proceeding to nail transfer."
-    image: "/images/blog/lace-valentine-nails/lace-pattern-stamper-pickup-technique.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-stamper-pickup-technique.webp"
   - position: 4
     name: "Transfer to Nail"
     text: "Position stamper at desired angle on nail. Roll from cuticle to tip with consistent pressure. Pattern releases onto nail surface. Work quickly before polish dries on stamper."
-    image: "/images/blog/lace-valentine-nails/lace-pattern-transfer-nail-placement.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-transfer-nail-placement.webp"
   - position: 5
     name: "Seal Design"
     text: "Wait five minutes for pattern to cure. Apply thin layer of quick-dry top coat without flooding cuticles. Second coat after ten minutes ensures pattern preservation."
-    image: "/images/blog/lace-valentine-nails/lace-nail-topcoat-sealing-technique.webp"
+    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-topcoat-sealing-technique.webp"
 tutorialMetadata:
   name: "Lace Valentine Nail Stamping Tutorial"
   description: "Step-by-step stamping technique for achieving intricate lace patterns on Valentine nails using precision transfer methods"

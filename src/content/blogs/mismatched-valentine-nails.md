@@ -7,7 +7,7 @@ dateModified: "2026-01-15T10:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Art"
 tags: ["mismatched Valentine nails", "asymmetric nail art", "different nails each hand", "mix-match manicure", "multi-design Valentine nails", "eclectic nail art", "Skittles Valentine nails", "unmatched nail designs"]
-image: "/images/blog/mismatched-valentine-nails/mismatched-valentine-nails-asymmetric-design-2026.webp"
+image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/mismatched-valentine-nails-asymmetric-design-2026.webp"
 imageAlt: "Mismatched Valentine nails featuring cohesive asymmetric designs with coordinated color palette"
 imageWidth: 1080
 imageHeight: 1080
@@ -24,24 +24,24 @@ topicalMap:
   topicalBoundary: "Asymmetric nail art coordination strategies for Valentine's Day using color theory and intentional design principles"
   hierarchyLevel: 2
 galleryImages:
-  - url: "/images/blog/mismatched-valentine-nails/analogous-color-valentine-nail-coordination.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/analogous-color-valentine-nail-coordination.webp"
     alt: "Analogous color scheme Valentine nails demonstrating pink to coral to red gradient coordination"
     width: 800
     height: 800
-  - url: "/images/blog/mismatched-valentine-nails/monochrome-mismatch-valentine-manicure-tones.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/monochrome-mismatch-valentine-manicure-tones.webp"
     alt: "Monochrome mismatched Valentine nails showing different tones within same color family"
     width: 800
     height: 800
-  - url: "/images/blog/mismatched-valentine-nails/pattern-play-valentine-nails-cohesive-palette.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/pattern-play-valentine-nails-cohesive-palette.webp"
     alt: "Pattern mixing Valentine nail art with hearts lace and French tips in coordinated palette"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/mismatched-valentine-nails/analogous-color-valentine-nail-coordination.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/analogous-color-valentine-nail-coordination.webp"
     alt: "Analogous color scheme Valentine nails demonstrating pink to coral to red gradient coordination"
-  - url: "/images/blog/mismatched-valentine-nails/monochrome-mismatch-valentine-manicure-tones.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/monochrome-mismatch-valentine-manicure-tones.webp"
     alt: "Monochrome mismatched Valentine nails showing different tones within same color family"
-  - url: "/images/blog/mismatched-valentine-nails/pattern-play-valentine-nails-cohesive-palette.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/pattern-play-valentine-nails-cohesive-palette.webp"
     alt: "Pattern mixing Valentine nail art with hearts lace and French tips in coordinated palette"
 ---
 

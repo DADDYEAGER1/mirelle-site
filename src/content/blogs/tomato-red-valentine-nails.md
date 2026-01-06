@@ -7,7 +7,7 @@ dateModified: "2026-01-15T12:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Art"
 tags: ["tomato red nails", "orange-red manicure", "bold red Valentine nails", "modern red nails", "2026 red nail trend", "warm red polish", "coral-red nails", "contemporary Valentine nails"]
-image: "/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp"
+image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp"
 imageAlt: "Tomato red Valentine nails featuring vibrant orange-based warm red with glossy modern finish"
 imageWidth: 1080
 imageHeight: 1080
@@ -24,24 +24,24 @@ topicalMap:
   topicalBoundary: "Tomato red nail color for Valentine's Day 2026 covering warm undertone science, trend validation, and modern red alternatives to classic Valentine reds"
   hierarchyLevel: 2
 galleryImages:
-  - url: "/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
     alt: "Side by side comparison showing tomato red versus classic red nail polish undertone differences"
     width: 800
     height: 800
-  - url: "/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
     alt: "Tomato red nail polish swatches on warm medium and olive skin tones demonstrating flattering effect"
     width: 800
     height: 800
-  - url: "/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
     alt: "Color theory wheel showing tomato red positioning as orange-based red versus blue-based classic"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
     alt: "Side by side comparison showing tomato red versus classic red nail polish undertone differences"
-  - url: "/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
     alt: "Tomato red nail polish swatches on warm medium and olive skin tones demonstrating flattering effect"
-  - url: "/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
     alt: "Color theory wheel showing tomato red positioning as orange-based red versus blue-based classic"
 ---
 

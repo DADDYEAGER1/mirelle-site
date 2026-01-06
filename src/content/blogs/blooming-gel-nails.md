@@ -82,18 +82,18 @@ galleryImages:
 - alt: Easy blooming gel watercolor swirls in pink and blue perfect for beginners
     at home
   height: 800
-  url: /images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg
   width: 800
 - alt: Blooming gel flower nail art with five-petal pink blossoms on nude base
   height: 800
-  url: /images/blog/blooming-gel-nails/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg
   width: 800
 - alt: Trendy aura nails created with blooming gel technique featuring purple to pink
     gradient
   height: 800
-  url: /images/blog/blooming-gel-nails/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg
   width: 800
-image: /images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-pink-purple-gradient-hero.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-pink-purple-gradient-hero.jpg
 imageAlt: Blooming gel nails featuring watercolor effect with pink and purple gradient
   on natural nail shape
 imageHeight: 630
@@ -221,7 +221,7 @@ Let's break down exactly what supplies you'll need before starting your first bl
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='View blooming gel product recommendations on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-tools-flatlay-bottles-lamp-dotting.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-tools-flatlay-bottles-lamp-dotting.jpg'
       alt='Blooming gel nail art essential tools including clear gel bottle dotting tools and UV lamp'
       width='800'
       height='800'
@@ -315,7 +315,7 @@ Wipe nails with lint-free pad soaked in nail prep dehydrator or rubbing alcohol.
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='View nail prep techniques on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-buffed-natural-prep-matte-surface.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-buffed-natural-prep-matte-surface.jpg'
       alt='Proper nail preparation for blooming gel showing buffed natural nails ready for base coat'
       width='800'
       height='800'
@@ -355,7 +355,7 @@ Work on only one nail at a time. Seriously, one nail. If you apply blooming gel 
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='See blooming gel application technique on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-brush-applying-clear-gel-pink-base.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-brush-applying-clear-gel-pink-base.jpg'
       alt='Applying thin layer of blooming gel over cured pink base coat before adding design'
       width='800'
       height='800'
@@ -393,7 +393,7 @@ If you want more intense color or a second layer of design, repeat steps 3-5: ap
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Watch blooming gel process videos on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-pink-blue-colors-dispersing-spreading.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-pink-blue-colors-dispersing-spreading.jpg'
       alt='Blooming gel watercolor effect in progress showing pink and blue gel dispersing naturally'
       width='800'
       height='800'
@@ -444,7 +444,7 @@ Apply white or nude base color and cure. Apply thin blooming gel to one nail. Dr
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Find watercolor swirl nail inspiration on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-watercolor-swirls-pink-blue-beginner.jpg'
       alt='Easy blooming gel watercolor swirls in pink and blue perfect for beginners at home'
       width='800'
       height='800'
@@ -473,7 +473,7 @@ Apply light-colored base and cure. Apply thin blooming gel to one nail. Use dott
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Browse floral blooming gel designs on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-five-petal-pink-flowers-nude-base.jpg'
       alt='Blooming gel flower nail art with five-petal pink blossoms on nude base'
       width='800'
       height='800'
@@ -502,7 +502,7 @@ Apply white base and cure. Apply thin blooming gel to one nail. Place a dot of y
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='See trendy aura nail designs on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-purple-pink-aura-gradient-trendy.jpg'
       alt='Trendy aura nails created with blooming gel technique featuring purple to pink gradient'
       width='800'
       height='800'
@@ -531,7 +531,7 @@ Apply light base and cure. Apply thin blooming gel to one nail. Use thin brush t
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='View marble nail art tutorials on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-white-gray-gold-marble-elegant.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-white-gray-gold-marble-elegant.jpg'
       alt='Elegant marble nails using blooming gel with white gray and gold veining details'
       width='800'
       height='800'
@@ -560,7 +560,7 @@ Apply nude or sheer pink base and cure. Apply thin blooming gel to one nail. Pla
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Discover tortoiseshell nail ideas on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-brown-orange-tortoiseshell-autumn.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-brown-orange-tortoiseshell-autumn.jpg'
       alt='Blooming gel tortoiseshell nails with brown orange and cream organic pattern perfect for fall'
       width='800'
       height='800'
@@ -589,7 +589,7 @@ Apply white base and cure. Apply thin blooming gel to one nail. Place dots of 3-
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Find tie-dye nail inspiration on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-rainbow-colors-tie-dye-retro.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-rainbow-colors-tie-dye-retro.jpg'
       alt='Fun tie-dye nails created with blooming gel featuring rainbow colors and retro swirls'
       width='800'
       height='800'
@@ -618,7 +618,7 @@ Apply base color and cure. Apply thin blooming gel to one nail. Use thin brush t
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='See crocodile print nail tutorials on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-crocodile-print-scales-advanced.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-crocodile-print-scales-advanced.jpg'
       alt='Advanced crocodile print nails using blooming gel with realistic scale texture pattern'
       width='800'
       height='800'
@@ -647,7 +647,7 @@ Apply base color and cure. Apply thin blooming gel to one nail. Layer dots, line
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Browse abstract nail art designs on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-abstract-art-multicolor-unique.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-abstract-art-multicolor-unique.jpg'
       alt='Unique abstract art nails with blooming gel technique featuring artistic color combinations'
       width='800'
       height='800'
@@ -692,7 +692,7 @@ Let's address the top five mistakes beginners make with blooming gel. If you've 
 <div class='my-8 text-center'>
   <a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-easy-nail-art-guide/' target='_blank' rel='noopener nofollow' aria-label='Learn blooming gel troubleshooting on Pinterest'>
     <img
-      src='/images/blog/blooming-gel-nails/blooming-gel-nails-timing-comparison-correct-overspread.jpg'
+      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/blooming-gel-nails/blooming-gel-nails-timing-comparison-correct-overspread.jpg'
       alt='Side by side comparison showing correct blooming gel timing versus over-spread mistake'
       width='800'
       height='800'

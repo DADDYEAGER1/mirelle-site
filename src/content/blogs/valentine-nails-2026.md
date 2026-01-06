@@ -7,7 +7,7 @@ dateModified: "2026-01-04T09:00:00-05:00"
 author: "Mirellè Team"
 category: "Nail Trends"
 tags: ["valentine's day nails 2026", "valentine nails 2026", "red chrome nails", "pink cat eye nails", "valentine french tips", "aura nails", "lace nails", "jelly nails"]
-image: "/images/blog/valentine-nails-2026/valentines-day-2026-nail-trends-hero.webp"
+image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/valentines-day-2026-nail-trends-hero.webp"
 imageAlt: "Valentine's Day nails 2026 showcasing red chrome and pink designs"
 imageWidth: 1200
 imageHeight: 630
@@ -24,24 +24,24 @@ topicalMap:
   topicalBoundary: "Comprehensive overview of Valentine's Day nail trends for 2026"
   hierarchyLevel: 1
 galleryImages:
-  - url: "/images/blog/valentine-nails-2026/red-chrome-valentine-nails-liquid-metal.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/red-chrome-valentine-nails-liquid-metal.webp"
     alt: "Red chrome Valentine nails with molten metal finish"
     width: 800
     height: 800
-  - url: "/images/blog/valentine-nails-2026/pink-cat-eye-nails-magnetic-dimension.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/pink-cat-eye-nails-magnetic-dimension.webp"
     alt: "Pink cat eye nails with magnetic shimmer effect"
     width: 800
     height: 800
-  - url: "/images/blog/valentine-nails-2026/valentine-french-tip-micro-precision.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/valentine-french-tip-micro-precision.webp"
     alt: "Valentine French tip nails with micro precision lines"
     width: 800
     height: 800
 carouselImages:
-  - url: "/images/blog/valentine-nails-2026/aura-valentine-nails-diffused-gradient.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/aura-valentine-nails-diffused-gradient.webp"
     alt: "Aura Valentine nails with diffused pink gradient"
-  - url: "/images/blog/valentine-nails-2026/lace-valentine-nails-delicate-pattern.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/lace-valentine-nails-delicate-pattern.webp"
     alt: "Lace Valentine nails with intricate overlay design"
-  - url: "/images/blog/valentine-nails-2026/velvet-cat-eye-burgundy-texture.webp"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/velvet-cat-eye-burgundy-texture.webp"
     alt: "Velvet cat eye nails in burgundy with matte shimmer"
 ---
 

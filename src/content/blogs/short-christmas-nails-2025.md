@@ -63,21 +63,21 @@ galleryImages:
     design on natural length
   caption: Candy cane magic on short square nails
   height: 800
-  url: /images/blog/short-christmas-nails-2025/short-square-christmas-nails-red-candy-cane-stripes-minimal.webp
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-square-christmas-nails-red-candy-cane-stripes-minimal.webp
   width: 1200
 - alt: short oval christmas nails with forest green polish and gold snowflake accent
     nail natural length
   caption: Snowflake accent perfect for short ovals
   height: 800
-  url: /images/blog/short-christmas-nails-2025/short-oval-christmas-nails-green-gold-snowflake-accent.webp
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-oval-christmas-nails-green-gold-snowflake-accent.webp
   width: 1200
 - alt: short round christmas nails with nude base and tiny holly berry minimalist
     nail art natural length
   caption: Holly berries scaled for short round nails
   height: 800
-  url: /images/blog/short-christmas-nails-2025/short-round-christmas-nails-nude-holly-berry-minimalist.webp
+  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-round-christmas-nails-nude-holly-berry-minimalist.webp
   width: 1200
-image: /images/blog/short-christmas-nails-2025/short-christmas-nails-2025-hero.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-2025-hero.jpg
 imageAlt: short christmas nails 2025 easy festive designs natural nail length holiday
   manicure tutorials
 imageHeight: 630
@@ -140,7 +140,7 @@ Placement matters as much as size. Center designs vertically on the nail to crea
 Color choice impacts proportion too. Lighter shades with darker accents create dimension. Nude bases with colored tips elongate visually. Avoid painting the entire nail in dark matte colors which can make short nails appear even shorter and wider than they actually are.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-square-christmas-nails-red-candy-cane-stripes-minimal.webp" alt="short square christmas nails with red and white candy cane stripes minimal design on natural length" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-square-christmas-nails-red-candy-cane-stripes-minimal.webp" alt="short square christmas nails with red and white candy cane stripes minimal design on natural length" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🍬 Vertical stripes = instant length! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this trick</a> for perfect candy cane nails! 🍬</p>
 </div>
 
@@ -181,7 +181,7 @@ Push cuticles back gently using a wooden cuticle stick soaked in warm water. Nev
 Apply ridge-filling base coat in thin even strokes from cuticle to tip. Cap the free edge by running the brush along nail tip. This seals the edge where chips start. Let base coat dry 2 minutes before color application. Rushing this step causes peeling within 24 hours guaranteed.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-christmas-nails-natural-nail-prep-buffing-base-coat-application.webp" alt="short natural nails being prepped with buffing block and base coat application tutorial steps" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-natural-nail-prep-buffing-base-coat-application.webp" alt="short natural nails being prepped with buffing block and base coat application tutorial steps" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">💅 Proper prep = 10 day wear! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save this routine</a> for chip-free holidays! 💅</p>
 </div>
 
@@ -202,7 +202,7 @@ Avoid water for 2 hours after application which weakens the glue bond. Apply cut
 Choose press-on designs with small-scale patterns appropriate for short lengths. Large motifs look cut-off and incomplete. Micro Christmas elements, subtle glitter fades, and simple color blocks work best. Solid colors with one accent nail offer maximum versatility for multiple outfit changes throughout the holiday season.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/christmas-press-on-nails-short-length-application-tutorial-glue-method.webp" alt="christmas press on nails being applied to short natural nails with nail glue tutorial demonstrating sizing" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/christmas-press-on-nails-short-length-application-tutorial-glue-method.webp" alt="christmas press on nails being applied to short natural nails with nail glue tutorial demonstrating sizing" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">✨ Press-ons = instant perfection! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow for</a> more application hacks! ✨</p>
 </div>
 
@@ -237,7 +237,7 @@ Every design here is tested on natural short nails. No unrealistic Pinterest fai
 **10. Matte Sage Green** - Dusty sage matte finish, modern minimalist Christmas
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-oval-christmas-nails-green-gold-snowflake-accent.webp" alt="short oval christmas nails with forest green polish and gold snowflake accent nail natural length" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-oval-christmas-nails-green-gold-snowflake-accent.webp" alt="short oval christmas nails with forest green polish and gold snowflake accent nail natural length" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">❄️ Office-approved festive! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin these</a> professional holiday nails! ❄️</p>
 </div>
 
@@ -286,7 +286,7 @@ Every design here is tested on natural short nails. No unrealistic Pinterest fai
 **30. Metallic Chevrons** - Gold chevron pattern pointing toward tips on burgundy base
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-square-christmas-nails-gingerbread-design-brown-white-icing.webp" alt="short square christmas nails with cute gingerbread cookie design brown polish and white icing details" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-square-christmas-nails-gingerbread-design-brown-white-icing.webp" alt="short square christmas nails with cute gingerbread cookie design brown polish and white icing details" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🍪 Gingerbread cuteness! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Get this recipe</a> for cookie nail art! 🍪</p>
 </div>
 
@@ -335,7 +335,7 @@ Every design here is tested on natural short nails. No unrealistic Pinterest fai
 **50. Sugar Plum Fairy** - Pink and purple pastels with glitter and pearl accents
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-round-christmas-nails-nude-holly-berry-minimalist.webp" alt="short round christmas nails with nude base and tiny holly berry minimalist nail art natural length" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-round-christmas-nails-nude-holly-berry-minimalist.webp" alt="short round christmas nails with nude base and tiny holly berry minimalist nail art natural length" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🌿 Minimalist magic! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Save these</a> simple holiday nail ideas! 🌿</p>
 </div>
 
@@ -364,7 +364,7 @@ Use dark shades on accent nails only, not all ten fingers. Pair dark colors with
 **Solution: Strategic dark color placement with light balance**
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-christmas-nails-chipping-prevention-edge-sealing-tutorial-technique.webp" alt="short christmas nails edge sealing technique demonstration preventing chipping with proper top coat application" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-chipping-prevention-edge-sealing-tutorial-technique.webp" alt="short christmas nails edge sealing technique demonstration preventing chipping with proper top coat application" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🛡️ Never chip again! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Learn the hack</a> pros use! 🛡️</p>
 </div>
 
@@ -403,7 +403,7 @@ Use cuticle oil daily to prevent dryness and peeling around nail edges. Apply at
 Touch up chips immediately before they spread. Keep polish colors accessible for quick fixes. Dab small amount onto chip, smooth with brush, seal with top coat. This 60-second repair prevents needing complete removal and repainting which wastes time and product unnecessarily.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-christmas-nails-durability-longevity-top-coat-reapplication-tips.webp" alt="short christmas nails with top coat being reapplied for durability and extended wear longevity tips" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-durability-longevity-top-coat-reapplication-tips.webp" alt="short christmas nails with top coat being reapplied for durability and extended wear longevity tips" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">⏰ 14 day wear secret! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin this</a> maintenance routine! ⏰</p>
 </div>
 
@@ -422,7 +422,7 @@ Transition from office to party by adding rhinestones to existing solid manicure
 Choose base designs that work both places. Burgundy or forest green suits offices but looks festive at parties. Add temporary glitter tips with adhesive tabs that peel off easily. Use matte finish for day then add glossy top coat for night to transform the entire look with single product.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-christmas-nails-office-appropriate-burgundy-minimalist-professional.webp" alt="short christmas nails office appropriate design with burgundy polish and minimalist gold accent professional" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-office-appropriate-burgundy-minimalist-professional.webp" alt="short christmas nails office appropriate design with burgundy polish and minimalist gold accent professional" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">💼 Work-ready festive! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Get</a> professional holiday nail inspo! 💼</p>
 </div>
 
@@ -441,7 +441,7 @@ Your nail shape impacts which designs look best. These tips match Christmas nail
 **Round short nails:** Circular motifs like ornaments or wreaths. Dots and polka patterns. Centered single design elements. Avoid vertical lines that fight the curved shape. Curved french tips. Radiating designs from center point. Embrace the natural roundness rather than fighting it.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-square-christmas-nails-geometric-plaid-pattern-red-green.webp" alt="short square christmas nails with geometric plaid pattern in red and green perfect for straight edges" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-square-christmas-nails-geometric-plaid-pattern-red-green.webp" alt="short square christmas nails with geometric plaid pattern in red and green perfect for straight edges" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">📐 Shape matters! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Find your</a> perfect design match! 📐</p>
 </div>
 
@@ -464,7 +464,7 @@ For Christmas season specifically: Gel makes sense if you're busy with no time f
 Short nails actually chip less than long nails with both formulas since there's less tip exposure. This means regular polish performs better on short nails than on long nails, narrowing the gap between gel and regular durability significantly.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-christmas-nails-gel-polish-application-UV-lamp-curing-tutorial.webp" alt="short christmas nails with gel polish being cured under UV lamp application tutorial for long lasting wear" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-gel-polish-application-UV-lamp-curing-tutorial.webp" alt="short christmas nails with gel polish being cured under UV lamp application tutorial for long lasting wear" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">💡 Gel or regular? <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Compare both</a> for your lifestyle! 💡</p>
 </div>
 
@@ -489,7 +489,7 @@ Color selection impacts how short christmas nails photograph, coordinate with ou
 Avoid neon brights that look juvenile on short nails. Skip pure black which can appear harsh and heavy. Pass on extremely pale pastels that wash out against skin tones and lack festive impact during holiday season.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-christmas-nails-burgundy-wine-red-glossy-finish-elegant.webp" alt="short christmas nails painted in deep burgundy wine red with glossy finish elegant holiday color" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-burgundy-wine-red-glossy-finish-elegant.webp" alt="short christmas nails painted in deep burgundy wine red with glossy finish elegant holiday color" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">🍷 Burgundy perfection! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Pin your</a> favorite festive shades! 🍷</p>
 </div>
 
@@ -522,7 +522,7 @@ Paint nails with solid color base, two coats. While second coat is still slightl
 Apply base coat and let dry. Paint left half of each nail with red polish, right half with green. Use striping brush for clean vertical line down center. Let dry 5 minutes. Apply thin gold striping tape down center line where colors meet. Seal with top coat pressing tape edges down firmly.
 
 <div class="my-8">
-  <img src="/images/blog/short-christmas-nails-2025/short-christmas-nails-DIY-tutorial-snowflake-dotting-tool-technique.webp" alt="short christmas nails DIY tutorial showing snowflake being created with dotting tool step by step technique" class="w-full rounded-lg shadow-lg" />
+  <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-christmas-nails-2025/short-christmas-nails-DIY-tutorial-snowflake-dotting-tool-technique.webp" alt="short christmas nails DIY tutorial showing snowflake being created with dotting tool step by step technique" class="w-full rounded-lg shadow-lg" />
   <p class="text-center mt-3 text-sm text-gray-600">❄️ DIY made easy! <a href="https://pinterest.com/mirelle_inspo" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800 font-semibold underline">Follow along</a> with video tutorials! ❄️</p>
 </div>
 

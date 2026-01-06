@@ -49,7 +49,7 @@ faqItems:
     oil daily to prevent lifting. Avoid hot water soaks and harsh chemicals. Professional
     tip: wrap the tips by swiping polish over the nail edge for a chip-resistant seal.'
   question: How do I make my Thanksgiving nails last longer
-image: /images/blog/thanksgiving-nails-2025/hero-thanksgiving-nails-2025.jpg
+image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/thanksgiving-nails-2025/hero-thanksgiving-nails-2025.jpg
 imageAlt: Stunning Thanksgiving nail designs featuring burgundy, burnt orange and
   gold colors for fall 2025
 imageHeight: 630
@@ -101,7 +101,7 @@ Classic Thanksgiving nail colors include burgundy, burnt orange, mustard yellow,
 Professional tip from top manicurists: Mix warm and cool tones together for added dimension. Burgundy with sage green accents creates stunning depth. Check out <a href='/shop/fall' class='text-blue-600 hover:text-blue-800 underline'>our fall collection</a> for curated color sets.
 
 <a href='https://in.pinterest.com/pin/913034524500817644/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-nail-colors-2025.png' alt='Best thanksgiving nail colors including burgundy burnt orange and gold polish swatches' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/thanksgiving-nails-2025/thanksgiving-nail-colors-2025.png' alt='Best thanksgiving nail colors including burgundy burnt orange and gold polish swatches' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817644/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these Thanksgiving nail colors to Pinterest →</a></p>
 
@@ -146,7 +146,7 @@ We curated these simple designs perfect for nail art beginners or anyone short o
 Which design caught your eye first? Save your favorites for later!
 
 <a href='https://in.pinterest.com/pin/913034524500817669/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-short-nails.png' alt='Easy thanksgiving nail designs for short nails with fall colors' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/thanksgiving-nails-2025/thanksgiving-short-nails.png' alt='Easy thanksgiving nail designs for short nails with fall colors' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817669/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin these easy Thanksgiving nail designs →</a></p>
 
@@ -185,7 +185,7 @@ These designs require moderate skill but deliver impressive results:
 **30. Simple Florals** - Hand-painted fall flowers like chrysanthemums or daisies.
 
 <a href='https://in.pinterest.com/pin/913034524500817638/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-long-nails-almond.png' alt='Thanksgiving nails on long almond shaped nails with intricate fall art' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/thanksgiving-nails-2025/thanksgiving-long-nails-almond.png' alt='Thanksgiving nails on long almond shaped nails with intricate fall art' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817638/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these almond nail designs to Pinterest →</a></p>
 
@@ -220,7 +220,7 @@ These professional-level designs showcase serious nail artistry:
 Ready to try one of these show-stopping designs?
 
 <a href='https://in.pinterest.com/pin/913034524500817650/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-ombre-nails.png' alt='Thanksgiving ombre nails with fall color gradient from red to orange' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/thanksgiving-nails-2025/thanksgiving-ombre-nails.png' alt='Thanksgiving ombre nails with fall color gradient from red to orange' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817650/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin this ombre nail tutorial for later →</a></p>
 
@@ -252,7 +252,7 @@ Apply a thin layer of glossy top coat over all nails, making sure to cap the tip
 Professional tip: Imperfect leaves actually look more realistic than perfect ones. Embrace natural variations in your design!
 
 <a href='https://in.pinterest.com/pin/913034524500817625/' target='_blank' rel='noopener'>
-  <img src='/images/blog/thanksgiving-nails-2025/thanksgiving-nails-tutorial.png' alt='Step by step thanksgiving nail art tutorial showing leaf design technique' />
+  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/thanksgiving-nails-2025/thanksgiving-nails-tutorial.png' alt='Step by step thanksgiving nail art tutorial showing leaf design technique' />
 </a>
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500817625/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save this Thanksgiving nail tutorial →</a></p>
 ---

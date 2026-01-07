@@ -104,7 +104,8 @@ export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
       </div>
 
       {/* Article Content - Vogue Style Narrow Column */}
-      <div className="w-full flex justify-start">
+      <div className="w-full flex flex-col items-start">
+        {/* Narrow content container */}
         <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16 mt-12">
           
           {/* Breadcrumbs */}
@@ -135,11 +136,17 @@ export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
             )}
 
             <div dangerouslySetInnerHTML={{ __html: moreContent }} />
+          </article>
+        </div>
 
-            <div className="my-12">
-              <InlineNewsletter />
-            </div>
+        {/* Break out - Full width newsletter */}
+        <div className="w-full my-12">
+          <InlineNewsletter />
+        </div>
 
+        {/* Resume narrow content container */}
+        <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16">
+          <article className="prose-content-magazine">
             <div dangerouslySetInnerHTML={{ __html: remainingContent }} />
           </article>
         </div>

@@ -150,9 +150,7 @@ The winter nail scene is having a major moment. After analyzing what's trending 
 
 **Snowflake Nail Art Gets an Upgrade:** The 2025 version features delicate, intricate, almost lace-like designs. Professional nail artists are creating fine white lines on deep winter backgrounds—midnight blue, forest green, charcoal gray—that look elegant rather than cartoonish. The technique is more forgiving than it appears once you understand the method.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
-  <img src="images/blog/winter-nails-2025/winter-nails-2025-trends.webp" alt='Top trending winter nail designs 2025 featuring mocha mousse and chrome finishes' />
-</a>
+<img src="images/blog/winter-nails-2025/winter-nails-2025-trends.webp" alt='Top trending winter nail designs 2025 featuring mocha mousse and chrome finishes' />
 
 ---
 
@@ -194,9 +192,7 @@ Metallics reflect light dramatically, photographing beautifully and catching att
 
 Chrome shows imperfections easily, so nail prep needs to be flawless for professional results. The light-catching effect creates borderline hypnotic visual appeal that professional nail artists consistently recommend for special occasions.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
-  <img src="images/blog/winter-nails-2025/winter-nail-colors-palette.webp" alt='Complete winter nail color palette featuring mocha mousse jewel tones and metallics' />
-</a>
+<img src="images/blog/winter-nails-2025/winter-nail-colors-palette.webp" alt='Complete winter nail color palette featuring mocha mousse jewel tones and metallics' />
 
 ---
 
@@ -247,9 +243,7 @@ Drop two gel polish colors onto nail (like mocha and cream), use dotting tool to
 **13. Plaid Nail Art**
 Layered lines create cozy winter vibes. Start with neutral base, add vertical stripes in one color, horizontal stripes in another, cure. Use striping tape for clean lines. Pairs perfectly with winter fashion—check out <a href='https://www.mirelleinspo.com/topics/seasonal-trends' class='text-blue-600 hover:text-blue-800 underline'>more seasonal nail trends</a>.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
-  <img src="images/blog/winter-nails-2025/winter-nail-designs-easy.webp" alt='Easy winter nail designs perfect for beginners including mocha mousse and simple chrome accents' />
-</a>
+<img src="images/blog/winter-nails-2025/winter-nail-designs-easy.webp" alt='Easy winter nail designs perfect for beginners including mocha mousse and simple chrome accents' />
 
 ### Advanced Winter Nails (For Nail Art Enthusiasts)
 
@@ -277,9 +271,7 @@ Take viral glazed aesthetic (sheer, pearlescent, iridescent) using winter-approp
 **21. Geode Nail Art**
 Mimic geode crystal appearance using metallic foils, glitter, and gel polish in jewel tones. Requires layering different textures to create depth. This technique went viral last winter and returns stronger in 2025.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
-  <img src="images/blog/winter-nails-2025/winter-nail-designs-advanced.webp" alt='Advanced winter nail art including intricate snowflakes and chrome ombre techniques' />
-</a>
+<img src="images/blog/winter-nails-2025/winter-nail-designs-advanced.webp" alt='Advanced winter nail art including intricate snowflakes and chrome ombre techniques' />
 
 ### Quick & Easy Winter Nails (15 Minutes or Less)
 
@@ -387,9 +379,7 @@ Final step: Apply cuticle oil around each nail and massage in. Hydrates skin and
 
 This technique creates salon-quality snowflake nails at home for fraction of professional pricing. For more at-home techniques, explore our <a href='https://www.mirelleinspo.com/topics/at-home-hacks' class='text-blue-600 hover:text-blue-800 underline'>at-home hacks collection</a>.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
-  <img src="images/blog/winter-nails-2025/winter-snowflake-nail-tutorial.webp" alt='Step by step snowflake nail art tutorial showing technique for creating delicate winter designs' />
-</a>
+<img src="images/blog/winter-nails-2025/winter-snowflake-nail-tutorial.webp" alt='Step by step snowflake nail art tutorial showing technique for creating delicate winter designs' />
 
 ---
 
@@ -495,9 +485,7 @@ Absolutely! Deep jewel tones like burgundy, emerald, and sapphire are sophistica
 
 Basic gel manicures with winter colors typically cost 40-60 dollars, while intricate designs featuring snowflakes, chrome effects, or 3D elements run 70-100 dollars and up depending on complexity. Cat-eye magnetic effects or ombre techniques add 10-20 dollars to base pricing. DIY kits cost 80-150 dollars upfront for supplies but save money long-term, with potential yearly savings of 500 dollars or more compared to regular salon visits. Initial investment pays off after 3-4 at-home manicures.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
-  <img src="images/blog/winter-nails-2025/winter-nails-faq.webp" alt='Common winter nail questions answered with professional tips and techniques' />
-</a>
+<img src="images/blog/winter-nails-2025/winter-nails-faq.webp" alt='Common winter nail questions answered with professional tips and techniques' />
 
 ---
 
@@ -614,9 +602,7 @@ Winter weddings have specific nail aesthetics. Brides should go classic: elegant
 
 Wedding guests should match wedding formality. Formal black-tie weddings suit jewel tones, metallics, sophisticated designs. Casual winter weddings pair better with solid colors and fun accent nails. Bridal parties should coordinate with bride's vision—usually matching or complementary to bridesmaid dresses.
 
-<a href='https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/' target='_blank' rel='noopener'>
-  <img src="images/blog/winter-nails-2025/winter-nails-occasions.webp" alt='Winter nail designs for different occasions from work to parties' />
-</a>
+<img src="images/blog/winter-nails-2025/winter-nails-occasions.webp" alt='Winter nail designs for different occasions from work to parties' />
 
 ---
 

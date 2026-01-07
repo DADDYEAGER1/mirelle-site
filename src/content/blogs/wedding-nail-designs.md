@@ -78,9 +78,7 @@ Planning your bridal manicure might feel like just another checkbox on your mass
 
 We've curated insights from top nail artists, real brides, and beauty experts to bring you everything you need to know about wedding nail designs. From the perfect timing for your appointment to the hottest trends for 2025, this guide covers it all. Whether you're going for <a href='https://www.mirelleinspo.com/topics/nail-care-guide' class='text-blue-600 hover:text-blue-800 underline'>classic elegance</a> or something more modern, you'll find your perfect bridal look here.
 
-<a href='https://in.pinterest.com/pin/913034524500817905/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/classic-wedding-nail-designs.jpg' alt='Classic wedding nail designs featuring french manicure and elegant bridal styles' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/classic-wedding-nail-designs.jpg' alt='Classic wedding nail designs featuring french manicure and elegant bridal styles' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500817905/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these classic wedding nail designs →</a></p>
 
 ## What's Trending in Wedding Nail Designs Right Now
@@ -95,9 +93,7 @@ Wedding nail trends for 2025 are all about giving classic looks a fresh twist. W
 
 **Blush tones are the new neutral.** According to celebrity manicurist Ann McFerran, founder of Glamnetic, blush pink is the biggest bridal nail color for 2025. It's warmer than traditional baby pink and more interesting than basic nude - perfect for brides who want something classic with a modern edge.
 
-<a href='https://in.pinterest.com/pin/913034524500816459/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/modern-bridal-nails-2025.jpg' alt='Modern wedding nail designs with chrome accents and minimalist bridal art' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/modern-bridal-nails-2025.jpg' alt='Modern wedding nail designs with chrome accents and minimalist bridal art' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500816459/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Pin these modern bridal nail ideas →</a></p>
 
 ## When Should You Get Your Wedding Nails Done?
@@ -126,9 +122,7 @@ Goddess Maintenance nail salon experts recommend this same timeline: "We recomme
 
 If you're doing <a href='https://www.mirelleinspo.com/topics/at-home-hacks' class='text-blue-600 hover:text-blue-800 underline'>at-home nails</a>, schedule your DIY session for 2-3 days before. This gives you an extra day if you mess up and need to redo them.
 
-<a href='https://in.pinterest.com/pin/913034524500816452/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/gel-acrylic-wedding-nails-comparison.jpg' alt='Wedding nails gel versus acrylic comparison for bridal manicure durability' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/gel-acrylic-wedding-nails-comparison.jpg' alt='Wedding nails gel versus acrylic comparison for bridal manicure durability' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500816452/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save this gel vs acrylic guide →</a></p>
 
 ## Gel vs Acrylic: Which is Better for Weddings?
@@ -217,9 +211,7 @@ According to Pronovias wedding stylists: Hold polish bottles up to your hand in 
 
 **For dress matching:** Ivory dress = warmer nude, pure white dress = cooler pink or sheer white. Your dress color affects how your nail color photographs more than you'd think.
 
-<a href='https://in.pinterest.com/pin/913034524500816442/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/bridal-nails-skin-tone-guide.jpg' alt='Bridal nail color guide for different skin tones and wedding dress styles' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/bridal-nails-skin-tone-guide.jpg' alt='Bridal nail color guide for different skin tones and wedding dress styles' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500816442/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Pin this bridal color guide →</a></p>
 
 ## Wedding Nail Length: Finding Your Sweet Spot
@@ -286,9 +278,7 @@ Finish with top coat, again capping the free edge. This seals everything and add
 **Step 4: Post-Application Care**
 Avoid water for 2 hours after regular polish, 30 minutes after gel. Apply cuticle oil around the nail bed daily. Wear gloves for any cleaning or dish washing.
 
-<a href='https://in.pinterest.com/pin/913034524500816337/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/diy-wedding-nails-tutorial.jpg' alt='Step by step DIY wedding nail tutorial for at-home bridal manicure' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/diy-wedding-nails-tutorial.jpg' alt='Step by step DIY wedding nail tutorial for at-home bridal manicure' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500816337/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save this DIY wedding nail tutorial →</a></p>
 
 **Pro Tips from Nail Experts:**
@@ -373,9 +363,7 @@ Yes, schedule a trial 4-6 weeks before your wedding. This lets you test the desi
 
 High-quality press-ons can work for weddings if applied correctly. They are budget-friendly and removable for your honeymoon. Choose a reputable brand, apply 1-2 days before, and bring backup glue for emergencies.
 
-<a href='https://in.pinterest.com/pin/913034524500816325/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/wedding-nails-timing-schedule.jpg' alt='Wedding nail appointment timing calendar for perfect bridal manicure planning' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/wedding-nails-timing-schedule.jpg' alt='Wedding nail appointment timing calendar for perfect bridal manicure planning' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500816325/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Bookmark this wedding nail timing guide →</a></p>
 
 ## Real Wedding Nail Inspiration
@@ -428,9 +416,7 @@ If you're still planning other aspects of your wedding beauty routine, check out
 
 Now go book that nail appointment. Your future married self will thank you.
 
-<a href='https://in.pinterest.com/pin/913034524500816466/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/real-wedding-nail-inspiration.jpg' alt='Real wedding nail designs from brides featuring elegant bridal manicure styles' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/real-wedding-nail-inspiration.jpg' alt='Real wedding nail designs from brides featuring elegant bridal manicure styles' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500816466/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Pin these real wedding nail inspirations →</a></p>
 
 

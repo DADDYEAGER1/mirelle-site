@@ -1,36 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  
   // ✅ Image Optimization - LOCAL IMAGES PRIORITY + Remote fallback
   images: {
-    // Local images from public folder (PRIORITY)
-localPatterns: [
-  {
-    pathname: '/images/shop/**',
-    search: '',
-  },
-  {
-    pathname: '/images/**',
-    search: '',
-  },
-  {
-    pathname: '/**',  // ✅ ADD THIS - Allows all public folder files
-    search: '',
-  },
-],
-    // Modern image formats (60-70% smaller files)
+    domains: ['res.cloudinary.com', 'mirelleinspo.com', 'images.unsplash.com', 'm.media-amazon.com'],
+    
     formats: ['image/avif', 'image/webp'],
-    
-    // Cache optimized images for 1 year
     minimumCacheTTL: 31536000,
-    
-    // Responsive image sizes for different devices
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     
-    // Remote patterns (fallback for external images)
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
       {
         protocol: 'https',
         hostname: 'mirelleinspo.com',

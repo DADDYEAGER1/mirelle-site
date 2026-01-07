@@ -1,5 +1,4 @@
 // src/components/Homepage/Hero2Section.tsx
-import Image from 'next/image';
 import Link from 'next/link';
 import { getAllBlogPosts } from '@/lib/blog';
 import { getCategoryData } from '@/lib/shop';
@@ -25,13 +24,11 @@ export default async function Hero2Section() {
         <div className="flex-1 flex flex-col gap-4">
           {shopCategory1 && (
             <Link href={`/shop/${shopCategory1.slug}`} className="block group">
-              <div className="relative w-full aspect-square mb-2">
-                <Image
+              <div className="relative w-full aspect-square mb-2 overflow-hidden">
+                <img
                   src={shopCategory1.heroImage}
                   alt={shopCategory1.displayName}
-                  fill
-                  className="object-cover"
-                  sizes="25vw"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="font-heading text-sm text-foreground group-hover:opacity-70 transition-opacity">
@@ -42,13 +39,11 @@ export default async function Hero2Section() {
           
           {shopCategory2 && (
             <Link href={`/shop/${shopCategory2.slug}`} className="block group">
-              <div className="relative w-full aspect-square mb-2">
-                <Image
+              <div className="relative w-full aspect-square mb-2 overflow-hidden">
+                <img
                   src={shopCategory2.heroImage}
                   alt={shopCategory2.displayName}
-                  fill
-                  className="object-cover"
-                  sizes="25vw"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="font-heading text-sm text-foreground group-hover:opacity-70 transition-opacity">
@@ -62,14 +57,12 @@ export default async function Hero2Section() {
         <div className="flex-[2]">
           {tallPost && (
             <Link href={`/blog/${tallPost.slug}`} className="block group h-full">
-              <div className="relative w-full h-full mb-3">
+              <div className="relative w-full h-full mb-3 overflow-hidden">
                 {tallPost.image && (
-                  <Image
+                  <img
                     src={tallPost.image}
                     alt={tallPost.imageAlt || tallPost.title}
-                    fill
-                    className="object-cover"
-                    sizes="50vw"
+                    className="w-full h-full object-cover"
                   />
                 )}
               </div>
@@ -103,14 +96,12 @@ export default async function Hero2Section() {
                 </div>
                 
                 {/* Square Image Right */}
-                <div className="relative w-24 h-24 flex-shrink-0">
+                <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden">
                   {post.image && (
-                    <Image
+                    <img
                       src={post.image}
                       alt={post.imageAlt || post.title}
-                      fill
-                      className="object-cover"
-                      sizes="96px"
+                      className="w-full h-full object-cover"
                     />
                   )}
                 </div>
@@ -125,14 +116,12 @@ export default async function Hero2Section() {
         {/* Tall Post First */}
         {tallPost && (
           <Link href={`/blog/${tallPost.slug}`} className="block group">
-            <div className="relative w-full aspect-[4/5] mb-3">
+            <div className="relative w-full aspect-[4/5] mb-3 overflow-hidden">
               {tallPost.image && (
-                <Image
+                <img
                   src={tallPost.image}
                   alt={tallPost.imageAlt || tallPost.title}
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
+                  className="w-full h-full object-cover"
                 />
               )}
             </div>
@@ -145,13 +134,11 @@ export default async function Hero2Section() {
         {/* Shop Categories */}
         {shopCategory1 && (
           <Link href={`/shop/${shopCategory1.slug}`} className="block group">
-            <div className="relative w-full aspect-[4/3] mb-2">
-              <Image
+            <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">
+              <img
                 src={shopCategory1.heroImage}
                 alt={shopCategory1.displayName}
-                fill
-                className="object-cover"
-                sizes="100vw"
+                className="w-full h-full object-cover"
               />
             </div>
             <h3 className="font-heading text-base text-foreground group-hover:opacity-70 transition-opacity">
@@ -162,13 +149,11 @@ export default async function Hero2Section() {
         
         {shopCategory2 && (
           <Link href={`/shop/${shopCategory2.slug}`} className="block group">
-            <div className="relative w-full aspect-[4/3] mb-2">
-              <Image
+            <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">
+              <img
                 src={shopCategory2.heroImage}
                 alt={shopCategory2.displayName}
-                fill
-                className="object-cover"
-                sizes="100vw"
+                className="w-full h-full object-cover"
               />
             </div>
             <h3 className="font-heading text-base text-foreground group-hover:opacity-70 transition-opacity">
@@ -180,14 +165,12 @@ export default async function Hero2Section() {
         {/* Horizontal Blog Posts */}
         {horizontalPosts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
-            <div className="relative w-full aspect-[4/3] mb-2">
+            <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">
               {post.image && (
-                <Image
+                <img
                   src={post.image}
                   alt={post.imageAlt || post.title}
-                  fill
-                  className="object-cover"
-                  sizes="100vw"
+                  className="w-full h-full object-cover"
                 />
               )}
             </div>

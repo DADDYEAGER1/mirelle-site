@@ -86,12 +86,9 @@ For more seasonal nail inspiration, explore our <a href='/blog/christmas-nail-de
 
 ## What Makes Halloween Nail Designs Easy in 2025
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/halloween-nails-2025/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-hero.jpg" alt="Collection of 35 easy Halloween nail designs for beginners featuring ghosts pumpkins spiderwebs and simple patterns for 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">Save This Collection on Pinterest →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-hero.jpg" alt="Collection of 35 easy Halloween nail designs for beginners featuring ghosts pumpkins spiderwebs and simple patterns for 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Halloween nail trends in 2025 favor minimalism over complexity. Top nail artists are gravitating toward chrome finishes on simple shapes, matte black with single accent details, and negative space designs that let natural nails shine through. This shift makes Halloween nail art more accessible for beginners who previously felt intimidated by elaborate designs.
 
@@ -105,12 +102,9 @@ The most popular color combinations remain classic black and orange, but 2025 in
 
 ### 1. Classic Ghost Nails
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-ghost-simple.jpg" alt="Simple white ghost nail art with black dot eyes on nude base coat perfect for Halloween beginners" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">Watch Step-by-Step Tutorial →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/easy-halloween-nail-designs-ghost-simple.jpg" alt="Simple white ghost nail art with black dot eyes on nude base coat perfect for Halloween beginners" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Ghost nails rank as the most beginner-friendly Halloween design. The technique requires only white polish on nude or natural base, with tiny black dots for eyes. This design forgives imperfect shapes because ghosts are naturally irregular.
 
@@ -125,12 +119,9 @@ This design works on any nail length and requires supplies most people already o
 
 ### 2. Spider Web French Tips
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/halloween-spider-web-nails-easy.jpg" alt="Black spiderweb pattern on white french tip Halloween manicure for almond shaped nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">See Full Tutorial →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/halloween-spider-web-nails-easy.jpg" alt="Black spiderweb pattern on white french tip Halloween manicure for almond shaped nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 French tips gain Halloween flair with delicate spiderweb patterns drawn across black tips. This elegant design balances sophistication with seasonal celebration, making it suitable for both parties and professional settings.
 
@@ -143,12 +134,9 @@ Apply nude or sheer pink base. Paint black French tips using guides for precisio
 
 ### 3. Pumpkin Spice Details
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/pumpkin-nail-art-halloween-orange.jpg" alt="Bright orange pumpkin nail design with brown stem and ridge details for easy Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">View Tutorial Steps →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/pumpkin-nail-art-halloween-orange.jpg" alt="Bright orange pumpkin nail design with brown stem and ridge details for easy Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Pumpkin designs rank among the most forgiving Halloween nails because real pumpkins have irregular shapes. Imperfect vertical lines actually enhance authenticity rather than detract from the design.
 
@@ -161,12 +149,9 @@ Paint nails bright orange using two coats for opacity. Once completely dry, use 
 
 ### 4. Black Cat Silhouette
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/black-cat-halloween-nails-simple.jpg" alt="Minimalist black cat silhouette on nude nail base showing curved back and pointed ears for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">Learn the Technique →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/black-cat-halloween-nails-simple.jpg" alt="Minimalist black cat silhouette on nude nail base showing curved back and pointed ears for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Silhouettes eliminate the pressure of drawing facial features or fur details. This technique works beautifully on accent nails, allowing simpler solid colors on remaining fingers.
 
@@ -179,12 +164,9 @@ Apply base color across all nails. On designated accent nail, use black polish t
 
 ### 5. Candy Corn Stripes
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/candy-corn-halloween-nail-designs.jpg" alt="Classic candy corn striped Halloween nails in orange yellow white horizontal bands easy DIY design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">See Tutorial →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/candy-corn-halloween-nail-designs.jpg" alt="Classic candy corn striped Halloween nails in orange yellow white horizontal bands easy DIY design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Candy corn patterns deliver instant Halloween recognition through three simple horizontal color bands. Even slightly wobbly lines read as intentional given the casual nature of candy corn aesthetic.
 
@@ -197,12 +179,9 @@ Divide nail into three mental sections. Paint bottom third white, middle third o
 
 ### 6. Blood Drip Accent
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/blood-drip-easy-halloween-nails.jpg" alt="Burgundy red blood drip effect from nail tips on nude base coat for dramatic Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">Watch Application Method →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/blood-drip-easy-halloween-nails.jpg" alt="Burgundy red blood drip effect from nail tips on nude base coat for dramatic Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Blood drip designs look complex but rely on gravity to create realistic effects. This technique transforms simple manicures into dramatic Halloween statements with minimal artistic skill required.
 
@@ -215,12 +194,9 @@ Apply nude or pale pink base in two coats. Load thin brush with deep burgundy or
 
 ### 7. Purple Witch Aesthetic
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/witch-hat-simple-halloween-nails.jpg" alt="Deep purple witch hat design with gold buckle detail on dark Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">View Design Process →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/witch-hat-simple-halloween-nails.jpg" alt="Deep purple witch hat design with gold buckle detail on dark Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Purple delivers witch vibes without literal imagery. This color choice feels sophisticated and transitions well beyond Halloween into general fall wear.
 
@@ -233,12 +209,9 @@ Paint all nails deep purple or plum shade. On accent nails, use contrasting blac
 
 ### 8. Skeleton Bone Lines
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/skeleton-hand-halloween-nail-art.jpg" alt="White skeleton bone pattern on black base showing finger bones and joints for spooky Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">Learn This Technique →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/skeleton-hand-halloween-nail-art.jpg" alt="White skeleton bone pattern on black base showing finger bones and joints for spooky Halloween nails" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Skeleton designs intimidate beginners until they realize bones are just white lines on black base. Asymmetry actually enhances realism rather than detracting from design quality.
 
@@ -251,12 +224,9 @@ Apply black polish in two to three coats for complete opacity. Using white polis
 
 ### 9. Mummy Wrap Texture
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/mummy-nails-halloween-easy-design.jpg" alt="White mummy bandage wraps with black eyes peeking through on beige Halloween nail base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">See Tutorial Steps →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/mummy-nails-halloween-easy-design.jpg" alt="White mummy bandage wraps with black eyes peeking through on beige Halloween nail base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Mummy wraps embrace chaos. Random diagonal stripes actually look more authentic than organized patterns, making this one of the most forgiving easy Halloween nail designs.
 
@@ -269,12 +239,9 @@ Apply nude or beige base coat. Using white polish, paint random diagonal stripes
 
 ### 10. Frankenstein Stitches
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/frankenstein-halloween-nails-green.jpg" alt="Lime green Frankenstein nails with black stitch marks and bolt details for monster Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">Watch Tutorial →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/frankenstein-halloween-nails-green.jpg" alt="Lime green Frankenstein nails with black stitch marks and bolt details for monster Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Frankenstein designs work perfectly for Halloween nail art beginners. The monster aesthetic forgives imperfection since stitches should look rough and hand-sewn rather than precise.
 
@@ -287,12 +254,9 @@ Paint nails lime or mint green. Use black polish to draw two to three short hori
 
 ### 11. Bat Accent Details
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/bat-silhouette-halloween-nail-art.jpg" alt="Black bat silhouettes flying across orange Halloween nail background with multiple sizes for depth" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">See Design Process →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/bat-silhouette-halloween-nail-art.jpg" alt="Black bat silhouettes flying across orange Halloween nail background with multiple sizes for depth" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Bats simplify to basic W shapes with triangle wings. This geometric approach removes artistic pressure while delivering recognizable Halloween imagery.
 
@@ -305,12 +269,9 @@ Apply base color such as orange, purple, or grey. Using black polish and thin br
 
 ### 12. Orange Black Marble
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/orange-black-swirl-halloween-nails.jpg" alt="Swirled orange and black marble pattern Halloween nails created with toothpick technique on white base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">Learn Swirl Technique →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/orange-black-swirl-halloween-nails.jpg" alt="Swirled orange and black marble pattern Halloween nails created with toothpick technique on white base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Marble effects eliminate the possibility of mistakes since random swirls are the intended result. This technique ranks among the most stress-free easy Halloween nail designs.
 
@@ -323,12 +284,9 @@ Apply white or nude base. While still wet, drop orange and black polish directly
 
 ### 13. Glitter Pumpkin Feature
 
-<div class="my-8 text-center">
-  <a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" class="block">
-    <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/glitter-pumpkin-halloween-nail-designs.jpg" alt="Orange glitter accent nail with brown pumpkin ridge details and green stem for sparkly Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
-    <span class="text-blue-600 underline mt-2 inline-block">View Tutorial →</span>
-  </a>
-</div>
+
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/easy-halloween-nail-designs/glitter-pumpkin-halloween-nail-designs.jpg" alt="Orange glitter accent nail with brown pumpkin ridge details and green stem for sparkly Halloween manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+
 
 Glitter transforms basic designs into statement nails. The sparkle factor draws attention away from any minor imperfections in underlying design work.
 

@@ -1,11 +1,9 @@
 // src/components/Homepage/Hero1Section.tsx
-import Image from 'next/image';
 import Link from 'next/link';
 import { getBlogPost } from '@/lib/blog';
 
 export default async function Hero1Section() {
-  // Featured blog post - you can change the slug to feature different posts
-  const heroPost = await getBlogPost('blooming-gel-nails');
+  const heroPost = await getBlogPost('valentine-nails-2026');
   
   if (!heroPost) return null;
 
@@ -14,15 +12,13 @@ export default async function Hero1Section() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <Link href={`/blog/${heroPost.slug}`} className="block group">
           {/* Desktop: Full image */}
-          <div className="hidden md:block relative w-full aspect-[16/9] mb-6">
+          <div className="hidden md:block relative w-full aspect-[16/9] mb-6 overflow-hidden">
             {heroPost.image && (
-              <Image
+              <img
                 src={heroPost.image}
                 alt={heroPost.imageAlt || heroPost.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 1200px"
-                priority
+                className="w-full h-full object-cover"
+                loading="eager"
               />
             )}
           </div>
@@ -30,13 +26,11 @@ export default async function Hero1Section() {
           {/* Mobile: Cropped center focus */}
           <div className="md:hidden relative w-full aspect-[4/5] mb-4 overflow-hidden">
             {heroPost.image && (
-              <Image
+              <img
                 src={heroPost.image}
                 alt={heroPost.imageAlt || heroPost.title}
-                fill
-                className="object-cover object-center"
-                sizes="100vw"
-                priority
+                className="w-full h-full object-cover object-center"
+                loading="eager"
               />
             )}
           </div>

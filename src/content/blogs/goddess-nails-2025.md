@@ -136,7 +136,7 @@ If you've been living under a rock, goddess nails are this insanely opulent mani
 
 According to Pinterest's 2025 trend report, goddess nails saw a 760 percent increase in searches. Celebrities started rocking the look on red carpets, influencers couldn't get enough, and suddenly everyone wanted nails that screamed main character energy. We've curated insights from top nail artists and real trend data to bring you everything about this viral celestial manicure.
 
-<a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener"><img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/goddess-nails-2025-hero.jpg" alt="Goddess nails 2025 trend with gold leaf and pearl embellishments"></a>
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/goddess-nails-2025-hero.jpg" alt="Goddess nails 2025 trend with gold leaf and pearl embellishments">
 
 <p style="text-align: center; margin-top: 10px;"><a href="https://www.pinterest.com/mirelle_inspo/nail-tutorials-step-by-step-nail-art/" target="_blank" rel="noopener" style="color: #2563eb; text-decoration: underline; font-weight: 500;">💅 Discover goddess nail inspiration on Pinterest</a></p>
 
@@ -154,9 +154,7 @@ What makes this trend so appealing is the unapologetic maximalism. After years o
 
 The aesthetic also taps into something deeper than just pretty nails. Fashion experts at Bustle note there's a cultural moment happening where people are reclaiming feminine power, luxury, and self-expression through the "goddess energy aesthetic" movement. Goddess nails aren't apologetic or subtle - they make a statement.
 
-<a href='https://in.pinterest.com/pin/913034524500815953/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/gold-goddess-nails.jpg' alt='Gold goddess nails with metallic foil accents' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/gold-goddess-nails.jpg' alt='Gold goddess nails with metallic foil accents' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500815953/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these gold goddess nails to Pinterest →</a></p>
 
 ## What's Trending: The Goddess Nails Explosion
@@ -189,9 +187,7 @@ This is your foundational goddess look. Long almond or stiletto nails in metalli
 
 If Aphrodite did her nails, this is what she'd get. Start with a nude or soft pink base, then go absolutely wild with pearls. Different sizes, different placements, creating clusters and patterns. Some nail artists do full pearl encrusted accent nails while keeping others more minimal. Beauty experts emphasize that "pearls instantly make your goddess nails look more upscale and preppy."
 
-<a href='https://in.pinterest.com/pin/913034524500815943/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/pearl-embellished-goddess-nails.jpg' alt='Pearl embellished goddess nails with mixed sizes' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/pearl-embellished-goddess-nails.jpg' alt='Pearl embellished goddess nails with mixed sizes' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500815943/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Pin this pearl nail design for later →</a></p>
 
 ### Cat-Eye Goddess Nails
@@ -202,9 +198,7 @@ This is where celestial meets goddess. Cat-eye gel polish creates that magnetic 
 
 This is where you can get SUPER creative with storytelling. These designs incorporate actual Greek mythology elements - olive branch details painted in gold, laurel wreaths wrapped around the nail, little gold columns, even tiny painted scenes. Nail artists featured on Insider Mama create "delicate olive branch designs in gold over a white base, adding naturalistic elements that reference peace and victory in Greece."
 
-<a href='https://in.pinterest.com/pin/913034524500815928/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/greek-mythology-nail-art.jpg' alt='Greek mythology inspired goddess nail art' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/greek-mythology-nail-art.jpg' alt='Greek mythology inspired goddess nail art' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500815928/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save this Greek mythology nail art →</a></p>
 
 ### Long Stiletto Goddess Nails
@@ -219,9 +213,7 @@ Marble nails mixed with goddess elements = perfection. The technique involves cr
 
 This takes the goddess concept into full cosmic territory. Gold base with star details, constellation patterns picked out in tiny rhinestones or pearls, crescent moons, sun symbols. According to Ashlina Kaposta's goddess nail guide, cat-eye polish creates "a cosmic portal at your fingertips" when combined with celestial elements like starburst nail charms and moon decals.
 
-<a href='https://in.pinterest.com/pin/913034524500815922/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/celestial-gold-goddess-nails.jpg' alt='Celestial goddess nails with gold and star details' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/celestial-gold-goddess-nails.jpg' alt='Celestial goddess nails with gold and star details' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500815922/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Bookmark these celestial nails on Pinterest →</a></p>
 ### Maximalist Goddess Nails
 
@@ -235,9 +227,7 @@ Olive branches are a classic Greek symbol of peace and victory, translating gorg
 
 Subtle gradient from nude or soft pink at the cuticle blending into rich metallic gold at the tips. Add small pearls concentrated near the tips for extra drama. The ombre technique makes these feel slightly softer and more wearable for everyday while still delivering goddess energy. The gradient creates an optical illusion of endless length, elongating fingers even more than solid gold does.
 
-<a href='https://in.pinterest.com/pin/913034524500815916/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/long-stiletto-goddess-nails.jpg' alt='Long stiletto goddess nails with dramatic length' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/long-stiletto-goddess-nails.jpg' alt='Long stiletto goddess nails with dramatic length' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500815916/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these stiletto nail ideas to Pinterest →</a></p>
 
 ## How to Do Goddess Nails at Home: Complete Tutorial
@@ -268,9 +258,7 @@ Before starting, here's your essential shopping list with quality product recomm
 
 You also need basic tools: LED nail lamp (required for curing gel), tweezers with fine tips for placing gold leaf and pearls, nail file and buffer, alcohol or gel cleanser, and cuticle pusher. If you're adding length, grab some press-on nail tips or gel extension kit.
 
-<a href='http://in.pinterest.com/pin/913034524500815904/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/goddess-nails-tutorial-steps.jpg' alt='Goddess nails tutorial supplies and tools' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/goddess-nails-tutorial-steps.jpg' alt='Goddess nails tutorial supplies and tools' />
 <p class='text-center mt-4 mb-6'><a href='http://in.pinterest.com/pin/913034524500815904/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Pin this tutorial guide for later →</a></p>
 
 ### Step 1: Prep Your Canvas
@@ -319,9 +307,7 @@ Cure for 60 seconds. Now apply a second thick layer of gel top coat. Two layers 
 
 After curing, wipe the tacky layer with alcohol or gel cleanser. Your nails should feel completely smooth and glass-like, with all embellishments sealed underneath. The top coat layers create that glossy, expensive-looking finish that makes goddess nails photograph so beautifully.
 
-<a href='http://in.pinterest.com/pin/913034524500815870/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/olive-branch-goddess-nails.jpg' alt='Olive branch goddess nail design' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/olive-branch-goddess-nails.jpg' alt='Olive branch goddess nail design' />
 <p class='text-center mt-4 mb-6'><a href='http://in.pinterest.com/pin/913034524500815870/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save this olive branch design →</a></p>
 
 ## Goddess Nails for Different Occasions
@@ -338,9 +324,7 @@ One question we see constantly is whether goddess nails are too extra for regula
 
 **Work-appropriate goddess nails** are definitely possible if you work in a creative field. Stick with shorter almond shapes, minimal embellishments, maybe just gold leaf accent and one or two pearls per nail. Keep the color palette to rose gold or champagne gold which reads more neutral than bright yellow gold.
 
-<a href='https://in.pinterest.com/pin/913034524500815745/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/marble-goddess-nails.jpg' alt='Marble effect goddess nails with gold accents' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/marble-goddess-nails.jpg' alt='Marble effect goddess nails with gold accents' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500815745/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Pin these marble goddess nails →</a></p>
 
 ## Common Goddess Nails Mistakes (And How to Avoid Them)
@@ -381,9 +365,7 @@ So you've spent 2 hours creating these masterpieces. Now how do you make them ac
 
 **For removal**, soak cotton pads in acetone, place on each nail, wrap in foil, wait 15-20 minutes. The gel will dissolve and you can gently push everything off with an orange wood stick. Never pry or force anything - that damages your natural nails. After removal, buff nails gently, apply cuticle oil, and give your natural nails a break for a few days.
 
-<a href='https://in.pinterest.com/pin/913034524500815731/' target='_blank' rel='noopener'>
-  <img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/maximalist-goddess-nails.jpg' alt='Maximalist goddess nails with multiple embellishments' />
-</a>
+<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/goddess-nails-2025/maximalist-goddess-nails.jpg' alt='Maximalist goddess nails with multiple embellishments' />
 <p class='text-center mt-4 mb-6'><a href='https://in.pinterest.com/pin/913034524500815731/' target='_blank' rel='noopener' class='text-blue-600 hover:text-blue-800 underline font-medium'>Save these maximalist nail ideas →</a></p>
 
 ## Goddess Nails vs Other Trending Nail Styles

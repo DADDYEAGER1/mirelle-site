@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "generate:sitemaps": "node scripts/generate-all-sitemaps.js",
     "postbuild": "next-sitemap && node scripts/generate-all-sitemaps.js",
+    "sitemap": "npm run generate:sitemaps",
     "start": "next start",
     "lint": "eslint"
   },

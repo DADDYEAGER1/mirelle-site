@@ -6,7 +6,7 @@ module.exports = {
   changefreq: 'daily',
   priority: 0.7,
   
-  // ✅ Exclude non-public pages and dynamic content (they have their own sitemaps)
+  // ✅ Exclude dynamic content (they have their own sitemaps)
   exclude: [
     '/api/*',
     '/admin/*',
@@ -15,16 +15,17 @@ module.exports = {
     '/static/*',
     '/404',
     '/500',
-    '/blog/*',              // ⭐ Exclude all blog posts - they have their own sitemap
-    '/shop/*/[productId]',  // Exclude product detail pages
+    '/blog/*',              // Has sitemap-blog.xml
+    '/topics/*',            // Has sitemap-topics.xml (NEW)
+    '/posts/*',             // Has sitemap-posts.xml (NEW)
+    '/shop/*/[productId]',
     '/shop/christmas/*',
     '/shop/fall/*',
     '/shop/halloween/*',
     '/shop/new-year/*',
     '/shop/trendy/*',
     '/shop/winter/*',
-    '/topics/*',            // ⭐ Exclude topic pages - they have their own sitemap
-    '/inspo/*',             // ⭐ Exclude inspo pages - they have their own sitemap
+    '/inspo/*',             // Has sitemap-inspo.xml
   ],
   
   // ✅ Enhanced robots.txt
@@ -35,7 +36,7 @@ module.exports = {
         allow: '/',
         disallow: ['/api/', '/admin/', '/_next/', '/static/'],
       },
-      // AI + crawler specific rules
+      // AI crawlers
       { userAgent: 'GPTBot', allow: '/', crawlDelay: 1 },
       { userAgent: 'ChatGPT-User', allow: '/' },
       { userAgent: 'Claude-Web', allow: '/', crawlDelay: 1 },
@@ -60,7 +61,8 @@ module.exports = {
     ],
     additionalSitemaps: [
       'https://mirelleinspo.com/sitemap-blog.xml',
-      'https://mirelleinspo.com/sitemap-topics.xml',
+      'https://mirelleinspo.com/sitemap-topics.xml',        // NEW
+      'https://mirelleinspo.com/sitemap-posts.xml',         // NEW
       'https://mirelleinspo.com/sitemap-shop.xml',
       'https://mirelleinspo.com/sitemap-shop-products-index.xml',
       'https://mirelleinspo.com/sitemap-inspo.xml',
@@ -74,25 +76,28 @@ module.exports = {
     let changefreq = config.changefreq;
     let lastmod = config.autoLastmod ? new Date().toISOString() : undefined;
     
+    // Homepage
     if (path === '/') {
       priority = 1.0;
       changefreq = 'daily';
-    } else if (path === '/blog') {
+    } 
+    // Main section pages
+    else if (['/blog', '/shop', '/inspo'].includes(path)) {
       priority = 0.9;
       changefreq = 'daily';
-    } else if (path === '/shop') {
-      priority = 0.9;
-      changefreq = 'daily';
-    } else if (path === '/inspo') {
-      priority = 0.9;
-      changefreq = 'daily';
-    } else if (path === '/topics') {
+    }
+    // Topics and Posts listing pages (NEW)
+    else if (['/topics', '/posts'].includes(path)) {
       priority = 0.8;
       changefreq = 'weekly';
-    } else if (['/about', '/contact', '/brands', '/pinterest', '/work-with-us'].includes(path)) {
+    }
+    // Secondary pages
+    else if (['/about', '/contact', '/brands', '/pinterest', '/work-with-us'].includes(path)) {
       priority = 0.7;
-      changefreq: 'monthly';
-    } else if (['/privacy-policy', '/terms', '/subscribe'].includes(path)) {
+      changefreq = 'monthly';
+    } 
+    // Legal pages
+    else if (['/privacy-policy', '/terms', '/subscribe'].includes(path)) {
       priority = 0.5;
       changefreq = 'yearly';
     }
@@ -105,7 +110,4 @@ module.exports = {
       alternateRefs: config.alternateRefs ?? [],
     };
   },
-  
-  // ⭐ REMOVED additionalPaths - Blog posts are now in their own sitemap
-  // This ensures sitemap-0.xml only contains static pages
 };

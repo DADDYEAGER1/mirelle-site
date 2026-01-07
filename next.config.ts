@@ -1,19 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // ✅ Image Optimization - LOCAL IMAGES PRIORITY + Remote fallback
+  // ✅ Image Optimization - FIXED with wildcard patterns
   images: {
-    domains: ['res.cloudinary.com', 'mirelleinspo.com', 'images.unsplash.com', 'm.media-amazon.com'],
-    
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     
+    // Using remotePatterns with WILDCARD to allow all Cloudinary paths
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
+        // NO pathname restriction - allows ALL cloudinary paths
       },
       {
         protocol: 'https',
@@ -25,11 +25,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: '*.media-amazon.com',
+        hostname: 'm.media-amazon.com',
       },
       {
         protocol: 'https',
-        hostname: 'm.media-amazon.com',
+        hostname: '*.media-amazon.com',
       },
     ],
     
@@ -70,7 +70,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Cache shop images aggressively
       {
         source: "/images/shop/:path*",
         headers: [
@@ -80,7 +79,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Cache all other images
       {
         source: "/images/:path*",
         headers: [
@@ -90,7 +88,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Cache Next.js static assets
       {
         source: "/_next/static/:path*",
         headers: [
@@ -100,7 +97,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Cache optimized Next.js images
       {
         source: "/_next/image/:path*",
         headers: [

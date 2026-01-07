@@ -59,7 +59,7 @@ Valentine nails 2026 operate within a refined aesthetic framework. The maximalis
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/red-chrome-valentine-nails-liquid-metal.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/red-chrome-valentine-nails-liquid-metal.webp"
     alt='Red chrome Valentine nails with molten metal finish'
     width='800'
     height='800'
@@ -82,7 +82,7 @@ Red chrome Valentine nails deliver liquid metal surfaces that refract light into
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/pink-cat-eye-nails-magnetic-dimension.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/pink-cat-eye-nails-magnetic-dimension.webp"
     alt='Pink cat eye nails with magnetic shimmer effect'
     width='800'
     height='800'
@@ -105,7 +105,7 @@ The appeal lies in perceived three-dimensionality achieved through purely optica
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/valentine-french-tip-micro-precision.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/valentine-french-tip-micro-precision.webp"
     alt='Valentine French tip nails with micro precision lines'
     width='800'
     height='800'
@@ -126,7 +126,7 @@ Valentine French tip nails in 2026 abandon thick white smile lines for micro-pre
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/aura-valentine-nails-diffused-gradient.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/aura-valentine-nails-diffused-gradient.webp"
     alt='Aura Valentine nails with diffused pink gradient'
     width='800'
     height='800'
@@ -149,7 +149,7 @@ Aura Valentine nails employ controlled gradient blending that creates ethereal c
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/lace-valentine-nails-delicate-pattern.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/lace-valentine-nails-delicate-pattern.webp"
     alt='Lace Valentine nails with intricate overlay design'
     width='800'
     height='800'
@@ -172,7 +172,7 @@ Lace Valentine nails feature intricate overlay patterns that mimic textile detai
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/velvet-cat-eye-burgundy-texture.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/velvet-cat-eye-burgundy-texture.webp"
     alt='Velvet cat eye nails in burgundy with matte shimmer'
     width='800'
     height='800'
@@ -195,7 +195,7 @@ Velvet cat eye nails combine magnetic gel polish with matte top coat, creating a
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/tomato-red-valentine-nails-warm-tone.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/tomato-red-valentine-nails-warm-tone.webp"
     alt='Tomato red Valentine nails with warm orange undertones'
     width='800'
     height='800'
@@ -218,7 +218,7 @@ Tomato red nails bring orange-red undertones that distinguish themselves from co
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/3d-heart-valentine-nails-dimensional.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/3d-heart-valentine-nails-dimensional.webp"
     alt='3D heart Valentine nails with chrome embellishments'
     width='800'
     height='800'
@@ -241,7 +241,7 @@ Application proves straightforward compared to technique-heavy trends. Solid col
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/mismatched-valentine-nails-coordinated.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/mismatched-valentine-nails-coordinated.webp"
     alt='Mismatched Valentine nails with coordinated color palette'
     width='800'
     height='800'
@@ -264,7 +264,7 @@ Mismatched Valentine nails coordinate multiple designs across fingers while main
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/jelly-valentine-nails-translucent-finish.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/jelly-valentine-nails-translucent-finish.webp"
     alt='Jelly Valentine nails with translucent pink overlay'
     width='800'
     height='800'
@@ -289,7 +289,7 @@ The aesthetic recalls <a href="https://www.harpersbazaar.com/beauty/nails/a69676
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/valentine-nails-2026/valentine-nails-styling-occasion-guide.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/valentine-nails-styling-occasion-guide.webp"
     alt='Valentine nails styling guide for different occasions'
     width='800'
     height='800'

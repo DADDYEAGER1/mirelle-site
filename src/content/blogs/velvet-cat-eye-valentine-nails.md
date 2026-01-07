@@ -89,7 +89,7 @@ Understanding magnetic mechanics proves essential. <strong>Burgundy cat eye</str
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/velvet-versus-regular-cat-eye-comparison.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-versus-regular-cat-eye-comparison.webp"
     alt='Velvet cat eye versus regular cat eye showing diffused shimmer comparison'
     width='800'
     height='800'
@@ -114,7 +114,7 @@ Regular cat eye positions magnet perpendicular to nail surface, directly above w
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/burgundy-wine-valentine-color-palette.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/burgundy-wine-valentine-color-palette.webp"
     alt='Burgundy wine oxblood valentine color palette for velvet cat eye'
     width='800'
     height='800'
@@ -139,7 +139,7 @@ Burgundy represents ideal velvet Valentine shade. The deep wine tone provides su
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/magnetic-gel-polish-tools-layout.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/magnetic-gel-polish-tools-layout.webp"
     alt='Magnetic gel polish and magnet wand tools for velvet technique'
     width='800'
     height='800'
@@ -166,7 +166,7 @@ Magnetic gel polish represents most critical component. The formula must contain
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/parallel-magnet-hovering-technique-demonstration.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/parallel-magnet-hovering-technique-demonstration.webp"
     alt='Parallel magnet hovering technique showing proper distance for particle diffusion'
     width='800'
     height='800'
@@ -193,7 +193,7 @@ Begin with properly prepared natural nails or gel extensions. Apply gel base coa
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/velvet-layering-intensity-comparison.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-layering-intensity-comparison.webp"
     alt='Velvet cat eye layering showing depth build from one to three coats'
     width='800'
     height='800'
@@ -222,7 +222,7 @@ Hover distance consistency proves critical throughout magnet movement. Variable 
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/concentrated-spots-versus-proper-diffusion.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/concentrated-spots-versus-proper-diffusion.webp"
     alt='Common mistake showing concentrated shimmer spots versus proper velvet diffusion'
     width='800'
     height='800'
@@ -249,7 +249,7 @@ Weak velvet effect where finish appears barely different from regular shimmer po
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/topcoat-velvet-texture-preservation-guide.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/topcoat-velvet-texture-preservation-guide.webp"
     alt='Topcoat application showing velvet texture preservation with matte finish'
     width='800'
     height='800'
@@ -276,7 +276,7 @@ Romantic dinner contexts favor velvet's quiet luxury aesthetic. The matte-shimme
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/velvet-cat-eye-valentine-nails/velvet-valentine-nails-outfit-coordination.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-valentine-nails-outfit-coordination.webp"
     alt='Velvet cat eye nails styled with romantic Valentine dinner outfit and jewelry'
     width='800'
     height='800'

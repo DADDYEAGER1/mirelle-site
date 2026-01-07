@@ -91,7 +91,7 @@ Pink shade selection affects romantic positioning. Ballet pink and blush tones c
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-particle-alignment-magnetic-field.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-particle-alignment-magnetic-field.webp"
     alt='Magnetic particles aligning in pink gel polish creating dimensional cat eye shimmer effect'
     width='800'
     height='800'
@@ -112,7 +112,7 @@ Comparison to velvet cat eye clarifies distinction. Standard cat eye produces gl
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/cat-eye-magnet-tools-cylindrical-dual-ended-types.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/cat-eye-magnet-tools-cylindrical-dual-ended-types.webp"
     alt='Various cat eye magnet tools showing cylindrical rectangular and dual-ended magnetic wands'
     width='800'
     height='800'
@@ -137,7 +137,7 @@ Surface preparation determines particle adhesion quality. Buff natural nail gent
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/cat-eye-nail-preparation-base-coat-application.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/cat-eye-nail-preparation-base-coat-application.webp"
     alt='Nail surface preparation showing buffing dehydration and base coat for cat eye application'
     width='800'
     height='800'
@@ -160,7 +160,7 @@ Work one nail at time preventing premature particle settling. Magnetic particles
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-gel-application-even-coat.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-gel-application-even-coat.webp"
     alt='Pink magnetic gel polish application showing proper coat thickness and even coverage technique'
     width='800'
     height='800'
@@ -183,7 +183,7 @@ Immediately after application, proceed to magnetic manipulation. Do not pause. M
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/cat-eye-magnet-positioning-technique-distance.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/cat-eye-magnet-positioning-technique-distance.webp"
     alt='Cat eye magnet positioning showing proper two to three millimeter hover distance above nail'
     width='800'
     height='800'
@@ -208,7 +208,7 @@ Heart-shaped magnetic patterns suit Valentine context. Specialty heart magnets e
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/valentine-heart-cat-eye-paperclip-magnet-technique.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/valentine-heart-cat-eye-paperclip-magnet-technique.webp"
     alt='Heart-shaped cat eye design using paperclip magnet technique for Valentine nail art'
     width='800'
     height='800'
@@ -231,7 +231,7 @@ Gradient heart designs combine multiple pink shades. Apply lighter pink at cutic
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-shade-variations-light-medium-hot.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-shade-variations-light-medium-hot.webp"
     alt='Pink cat eye shade comparison showing light blush medium rose and hot fuchsia magnetic options'
     width='800'
     height='800'
@@ -256,7 +256,7 @@ Uneven particle distribution creates patchy shimmer. Cause: inconsistent gel coa
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/cat-eye-troubleshooting-weak-effect-uneven-particles.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/cat-eye-troubleshooting-weak-effect-uneven-particles.webp"
     alt='Cat eye troubleshooting showing common problems and solutions for weak magnetic effect'
     width='800'
     height='800'
@@ -281,7 +281,7 @@ Application technique prevents particle disruption. Pour small top coat amount o
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/cat-eye-top-coat-sealing-final-cure.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/cat-eye-top-coat-sealing-final-cure.webp"
     alt='Top coat application technique preserving magnetic cat eye shimmer with proper sealing'
     width='800'
     height='800'
@@ -306,7 +306,7 @@ Outfit coordination follows color temperature principles. Pink cat eye pairs nat
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-styling-outfit-coordination-occasions.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-styling-outfit-coordination-occasions.webp"
     alt='Pink cat eye Valentine nails styled for different occasions showing outfit coordination'
     width='800'
     height='800'

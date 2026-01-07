@@ -350,7 +350,7 @@ Every design tested with actual chrome powder application. No unrealistic AI-gen
 **50. Chrome Crystal** - Full chrome with crystal rhinestone cluster covering ring finger
 
 
-<img src="images/blog/gold-silver-chrome-christmas-nails-2025/gold-chrome-christmas-nails-burgundy-accent-mixed-metallic-design.webp" alt="gold chrome christmas nails mixed with burgundy polish accent nails creating elegant two tone metallic holiday design" class="w-full rounded-lg shadow-lg" />
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/gold-chrome-christmas-nails-burgundy-accent-mixed-metallic-design.webp" alt="gold chrome christmas nails mixed with burgundy polish accent nails creating elegant two tone metallic holiday design" class="w-full rounded-lg shadow-lg" />
 
 
 Browse our <a href='/shop/christmas' class='text-blue-600 hover:text-blue-800 underline'>Christmas nail supplies</a> for chrome powders and tools.

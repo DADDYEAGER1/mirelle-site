@@ -176,7 +176,7 @@ Your nail shape affects how your ring photographs, how your hands look in portra
 
 Pro tip from nail professionals: Bring your engagement ring to your trial appointment. You need to see how the shape looks with your ring, not just on bare hands.
 
-<img src="images/blog/wedding-nail-designs/wedding-nails-short-long-comparison.webp" alt="Wedding nail designs comparison showing short and long bridal manicure options"></a>
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/wedding-nail-designs/wedding-nails-short-long-comparison.webp" alt="Wedding nail designs comparison showing short and long bridal manicure options"></a>
 
 
 ## Choosing Colors Based on Your Skin Tone

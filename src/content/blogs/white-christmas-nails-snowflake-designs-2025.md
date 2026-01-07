@@ -363,7 +363,7 @@ Creating white christmas nails snowflake designs requires specific tools that ma
 **White and icy blue polish** in both regular and gel formulas. Having both allows flexibility. Gel lasts longer but requires UV lamp. Regular polish works immediately with no equipment. Buy quality brands to prevent streaking and yellowing issues requiring multiple coats and causing frustration.
 
 
-<img src="images/blog/white-christmas-nails-snowflake-designs-2025/snowflake-nail-art-tools-dotting-liner-brush-stamping-supplies.webp" alt="snowflake nail art tools including dotting tools liner brushes and stamping plates for white christmas winter nails" class="w-full rounded-lg shadow-lg" />
+<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/white-christmas-nails-snowflake-designs-2025/snowflake-nail-art-tools-dotting-liner-brush-stamping-supplies.webp" alt="snowflake nail art tools including dotting tools liner brushes and stamping plates for white christmas winter nails" class="w-full rounded-lg shadow-lg" />
 
 
 ---

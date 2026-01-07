@@ -91,7 +91,7 @@ The visual impact registers immediately. Standard red polish presents single-dim
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/red-chrome-vs-flat-polish-comparison-refraction.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/red-chrome-vs-flat-polish-comparison-refraction.webp"
     alt='Side by side comparison showing red chrome light refraction versus flat red polish finish'
     width='800'
     height='800'
@@ -114,7 +114,7 @@ No-wipe gel top coat serves critical function. Chrome powder requires tacky surf
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/chrome-powder-materials-silicone-applicator-tools.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/chrome-powder-materials-silicone-applicator-tools.webp"
     alt='Essential chrome nail materials including powder silicone applicator and no-wipe top coat'
     width='800'
     height='800'
@@ -137,7 +137,7 @@ Nail preparation establishes foundation. Buff natural nail surface to smooth can
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/chrome-powder-burnishing-technique-application.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/chrome-powder-burnishing-technique-application.webp"
     alt='Chrome powder burnishing technique showing silicone applicator creating mirror finish on red base'
     width='800'
     height='800'
@@ -164,7 +164,7 @@ Free edge preparation prevents premature chipping. File nail tips gently at fort
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/chrome-free-edge-sealing-encapsulation-technique.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/chrome-free-edge-sealing-encapsulation-technique.webp"
     alt='Free edge sealing technique for chrome nails demonstrating proper encapsulation method'
     width='800'
     height='800'
@@ -191,7 +191,7 @@ Chrome heart accents balance subtlety with Valentine symbolism. Apply nude or sh
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/chrome-valentine-design-variations-hearts-french-negative.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/chrome-valentine-design-variations-hearts-french-negative.webp"
     alt='Multiple chrome Valentine nail design variations showing hearts French tips and negative space'
     width='800'
     height='800'
@@ -216,7 +216,7 @@ Patchy adhesion stems from multiple potential causes. Over-cured no-wipe top coa
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/chrome-nail-troubleshooting-common-failures-fixes.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/chrome-nail-troubleshooting-common-failures-fixes.webp"
     alt='Chrome nail troubleshooting guide showing common failures and corrective techniques side by side'
     width='800'
     height='800'
@@ -239,7 +239,7 @@ Expected wear time ranges ten to fourteen days with proper technique. <strong>Me
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/chrome-nail-longevity-maintenance-protection-tips.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/chrome-nail-longevity-maintenance-protection-tips.webp"
     alt='Chrome nail maintenance showing protective measures and longevity extension techniques'
     width='800'
     height='800'
@@ -266,7 +266,7 @@ DIY cost breakdown: initial investment thirty to fifty dollars purchasing chrome
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/red-chrome-valentine-nails/chrome-nail-diy-home-application-setup-supplies.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/chrome-nail-diy-home-application-setup-supplies.webp"
     alt='Home DIY chrome nail setup showing all necessary supplies and tools for self-application'
     width='800'
     height='800'

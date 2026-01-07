@@ -61,7 +61,7 @@ Trend validation arrives through multiple channels. Professional manicurists rep
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
     alt='Side by side comparison showing tomato red versus classic red nail polish undertone differences'
     width='800'
     height='800'
@@ -84,7 +84,7 @@ The tomato descriptor references specific hue matching ripe tomato color at peak
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
     alt='Color theory wheel showing tomato red positioning as orange-based red versus blue-based classic'
     width='800'
     height='800'
@@ -107,7 +107,7 @@ Undertone distinctions extend beyond visual comparison. Blue-based classic reds 
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/valentine-red-comparison-modern-traditional-aesthetic.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/valentine-red-comparison-modern-traditional-aesthetic.webp"
     alt='Modern tomato red versus traditional Valentine red showing distinct aesthetic and emotional reads'
     width='800'
     height='800'
@@ -132,7 +132,7 @@ Medium to olive skin tones benefit most from tomato red selection. The warmth co
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
     alt='Tomato red nail polish swatches on warm medium and olive skin tones demonstrating flattering effect'
     width='800'
     height='800'
@@ -157,7 +157,7 @@ High-quality options include professional nail brands prioritizing pigment densi
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/tomato-red-polish-recommendations-valentine-2026.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-polish-recommendations-valentine-2026.webp"
     alt='Curated selection of tomato red nail polish bottles showing warm orange-based red shades for Valentine'
     width='800'
     height='800'
@@ -182,7 +182,7 @@ Avoid pairing tomato red nails with cool pink Valentine outfits—temperature cl
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/tomato-red-valentine-outfit-coordination-styling.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-valentine-outfit-coordination-styling.webp"
     alt='Tomato red nails styled with neutral Valentine outfit showing modern color coordination approach'
     width='800'
     height='800'
@@ -207,7 +207,7 @@ Philosophy matters. Traditional approach selects Valentine colors based on seaso
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/modern-traditional-valentine-red-philosophy-comparison.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/modern-traditional-valentine-red-philosophy-comparison.webp"
     alt='Visual comparison showing modern warm red versus traditional cool red Valentine nail philosophies'
     width='800'
     height='800'
@@ -232,7 +232,7 @@ Year-round versatility justifies tomato red investment. Unlike specific Valentin
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/tomato-red-valentine-nails/tomato-red-nails-year-round-versatile-styling.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-nails-year-round-versatile-styling.webp"
     alt='Tomato red nails shown in multiple seasonal contexts demonstrating year-round wearability beyond Valentine'
     width='800'
     height='800'

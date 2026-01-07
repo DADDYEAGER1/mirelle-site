@@ -91,7 +91,7 @@ Valentine-specific application distinguishes itself from bridal lace through col
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
     alt='Side by side comparison of three lace nail techniques showing stamping foil and hand-painted results'
     width='800'
     height='800'
@@ -114,7 +114,7 @@ Limitations include pattern restriction—designs limited to available stamping 
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
     alt='Essential stamping tools for lace Valentine nails including plates scraper and stamping polish'
     width='800'
     height='800'
@@ -139,7 +139,7 @@ Base coat selection matters—sheer pink, milky nude, soft blush bases allow lac
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/foil-transfer-supplies-lace-valentine-nails.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/foil-transfer-supplies-lace-valentine-nails.webp"
     alt='Foil transfer kit including adhesive gel metallic foils and applicator tools for lace nail art'
     width='800'
     height='800'
@@ -162,7 +162,7 @@ Base coat selection matters—sheer pink, milky nude, soft blush bases allow lac
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
     alt='Detailed stamping plate pattern pickup technique showing polish application and scraper motion'
     width='800'
     height='800'
@@ -187,7 +187,7 @@ Base coat selection matters—sheer pink, milky nude, soft blush bases allow lac
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/lace-pattern-placement-accent-negative-space-full.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-placement-accent-negative-space-full.webp"
     alt='Three lace pattern placement options showing accent nail negative space and full coverage designs'
     width='800'
     height='800'
@@ -208,7 +208,7 @@ Clean transfers require proper stamper pressure and timing. Press stamper firmly
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/lace-pattern-precision-clean-transfer-technique.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-precision-clean-transfer-technique.webp"
     alt='Clean versus smudged lace pattern transfers showing proper stamper pressure and timing technique'
     width='800'
     height='800'
@@ -233,7 +233,7 @@ Patchy foil coverage results from insufficient transfer pressure or wrinkled foi
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/lace-transfer-failures-fixes-troubleshooting-guide.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-transfer-failures-fixes-troubleshooting-guide.webp"
     alt='Visual troubleshooting guide showing common lace transfer failures and corrective techniques'
     width='800'
     height='800'
@@ -258,7 +258,7 @@ Pattern distortion on curved nails happens when stamper rolling motion doesn't f
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/lace-valentine-nails/lace-valentine-nails-occasion-styling-guide.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-valentine-nails-occasion-styling-guide.webp"
     alt='Styling guide showing lace Valentine nails for different occasions from casual to formal events'
     width='800'
     height='800'

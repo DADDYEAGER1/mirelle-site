@@ -61,7 +61,7 @@ The technique emerged from nail art communities seeking creative expression beyo
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/analogous-color-valentine-nail-coordination.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/analogous-color-valentine-nail-coordination.webp"
     alt='Analogous color scheme Valentine nails demonstrating pink to coral to red gradient coordination'
     width='800'
     height='800'
@@ -82,7 +82,7 @@ Complementary pairing introduces higher contrast. Red and green occupy opposite 
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/monochrome-mismatch-valentine-manicure-tones.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/monochrome-mismatch-valentine-manicure-tones.webp"
     alt='Monochrome mismatched Valentine nails showing different tones within same color family'
     width='800'
     height='800'
@@ -105,7 +105,7 @@ Grounding with neutral anchors offers fail-safe strategy. Designate three to fou
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/pattern-play-valentine-nails-cohesive-palette.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/pattern-play-valentine-nails-cohesive-palette.webp"
     alt='Pattern mixing Valentine nail art with hearts lace and French tips in coordinated palette'
     width='800'
     height='800'
@@ -120,7 +120,7 @@ Grounding with neutral anchors offers fail-safe strategy. Designate three to fou
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/texture-contrast-valentine-nails-chrome-matte-jelly.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/texture-contrast-valentine-nails-chrome-matte-jelly.webp"
     alt='Texture contrast mismatched nails featuring chrome matte and jelly finishes in burgundy tones'
     width='800'
     height='800'
@@ -139,7 +139,7 @@ Translated to ten nails: six nails maintain simple execution, three nails add mo
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/visual-weight-distribution-asymmetric-valentine-nails.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/visual-weight-distribution-asymmetric-valentine-nails.webp"
     alt='Visual weight balancing demonstration showing sixty thirty ten rule for mismatched nail designs'
     width='800'
     height='800'
@@ -162,7 +162,7 @@ Order of operations affects clean execution. Apply all base colors first. Allow 
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/mismatched-nail-application-technique-order-operations.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/mismatched-nail-application-technique-order-operations.webp"
     alt='Step-by-step application technique for clean asymmetric Valentine nail execution showing layering order'
     width='800'
     height='800'
@@ -185,7 +185,7 @@ Tools for clean asymmetry include dotting tools for precise heart placement, str
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/occasion-styling-mismatched-valentine-nails-guide.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/occasion-styling-mismatched-valentine-nails-guide.webp"
     alt='Occasion-specific styling guide for mismatched Valentine nails from casual to formal events'
     width='800'
     height='800'
@@ -208,7 +208,7 @@ Too many finishes create visual overload. Chrome plus matte plus glitter plus je
 
 <div class='my-8 text-center'>
   <img
-    src="images/blog/mismatched-valentine-nails/common-mistakes-mismatched-valentine-nails-avoid.webp"
+    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/common-mistakes-mismatched-valentine-nails-avoid.webp"
     alt='Visual examples of mismatched Valentine nail pitfalls including clashing undertones and finish overload'
     width='800'
     height='800'

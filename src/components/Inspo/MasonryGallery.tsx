@@ -61,7 +61,7 @@ export default function MasonryGallery({ images, onImageClick }: MasonryGalleryP
 
   return (
     <section className="py-12 bg-[#f9fafb]">
-      <div className="max-w-[1400px] mx-auto px-16 md:px-20">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         {/* Masonry Grid - Pinterest style */}
         <div className="columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
           {displayedImages.map((image, index) => (

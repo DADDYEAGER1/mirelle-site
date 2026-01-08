@@ -10,7 +10,7 @@ interface CategoryHeroProps {
 export default function CategoryHero({ designData }: CategoryHeroProps) {
   return (
     <section className="py-16 md:py-20 bg-[#f9fafb]">
-      <div className="max-w-[1400px] mx-auto px-16 md:px-20">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         {/* Breadcrumbs */}
         <nav className="mb-8">
           <ol className="flex items-center gap-2">

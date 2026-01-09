@@ -37,27 +37,25 @@ const LONG_READS_LINKS = [
 // Mobile Dropdown Component
 function MobileDropdown({ 
   title, 
-  links 
+  links,
+  isOpen,
+  onToggle 
 }: { 
   title: string; 
   links: Array<{ label: string; href: string }>;
+  isOpen: boolean;
+  onToggle: () => void;
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="border-b border-[#f9fafb]/20">
+    <div className="relative">
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-6 py-4 flex items-center justify-between text-left"
+        onClick={onToggle}
         style={{ fontFamily: 'General Sans, sans-serif' }}
+        className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity flex items-center gap-1"
       >
-        <span className="text-sm tracking-wider uppercase text-[#f9fafb]">
-          {title}
-        </span>
+        {title}
         <svg
-          className={`w-4 h-4 transition-transform duration-200 ${
-            isOpen ? 'rotate-180' : ''
-          }`}
+          className={`w-3 h-3 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -65,30 +63,41 @@ function MobileDropdown({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-96' : 'max-h-0'
-        }`}
-      >
-        <div className="px-6 pb-4 space-y-2">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              style={{ fontFamily: 'General Sans, sans-serif' }}
-              className="block py-2 text-sm text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      </div>
+      {isOpen && (
+        <>
+          {/* Backdrop */}
+          <div 
+            className="fixed inset-0 bg-black/50 z-40"
+            onClick={onToggle}
+          />
+          {/* Dropdown */}
+          <div className="absolute top-full left-0 mt-2 bg-[#252220] border border-[#f9fafb]/20 rounded shadow-2xl z-50 min-w-[200px]">
+            <div className="py-2">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={onToggle}
+                  style={{ fontFamily: 'General Sans, sans-serif' }}
+                  className="block px-4 py-2 text-sm text-[#f9fafb] hover:bg-[#f9fafb]/10 transition-colors whitespace-nowrap"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (name: string) => {
+    setOpenDropdown(openDropdown === name ? null : name);
+  };
 
   return (
     <header className="bg-[#252220]">
@@ -135,6 +144,14 @@ export default function Header() {
           <div className="container-standard mx-auto px-16">
             <div className="flex justify-center items-center h-12 gap-10">
               
+              <Link 
+                href="/about"
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+              >
+                ABOUT
+              </Link>
+
               {/* Articles Dropdown */}
               <div className="relative group">
                 <Link 
@@ -276,12 +293,12 @@ export default function Header() {
               </span>
             </Link>
 
-            {/* Right Side */}
-            <div className="flex items-center gap-4">
+            {/* Right Side - Newsletter Box */}
+            <div className="flex items-center gap-3">
               <a 
                 href="https://mirelleinspo.com/subscribe"
                 style={{ fontFamily: 'General Sans, sans-serif' }}
-                className="text-[10px] tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+                className="text-[10px] tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity border border-[#f9fafb] px-3 py-1.5"
               >
                 NEWSLETTER
               </a>
@@ -296,23 +313,65 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Dropdowns */}
-        <div className="border-b border-[#f9fafb]/20">
-          <MobileDropdown title="ARTICLES" links={ARTICLES_LINKS} />
-          <MobileDropdown title="SHOP" links={SHOP_LINKS} />
-          <MobileDropdown title="DESIGNS" links={DESIGNS_LINKS} />
-          <MobileDropdown title="LONG READS" links={LONG_READS_LINKS} />
-          
-          {/* Posts - No Dropdown */}
-          <Link 
-            href="/posts"
-            style={{ fontFamily: 'General Sans, sans-serif' }}
-            className="block px-6 py-4 text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity border-b border-[#f9fafb]/20"
-          >
-            POSTS
-          </Link>
+        {/* Horizontal Scrollable Navigation Row */}
+        <div className="border-b border-[#f9fafb]/20 overflow-x-auto scrollbar-hide">
+          <div className="flex gap-8 px-6 h-12 items-center whitespace-nowrap">
+            <Link 
+              href="/about"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              ABOUT
+            </Link>
+            
+            <MobileDropdown
+              title="ARTICLES"
+              links={ARTICLES_LINKS}
+              isOpen={openDropdown === 'articles'}
+              onToggle={() => toggleDropdown('articles')}
+            />
+            
+            <MobileDropdown
+              title="SHOP"
+              links={SHOP_LINKS}
+              isOpen={openDropdown === 'shop'}
+              onToggle={() => toggleDropdown('shop')}
+            />
+            
+            <MobileDropdown
+              title="DESIGNS"
+              links={DESIGNS_LINKS}
+              isOpen={openDropdown === 'designs'}
+              onToggle={() => toggleDropdown('designs')}
+            />
+            
+            <MobileDropdown
+              title="LONG READS"
+              links={LONG_READS_LINKS}
+              isOpen={openDropdown === 'longreads'}
+              onToggle={() => toggleDropdown('longreads')}
+            />
+            
+            <Link 
+              href="/posts"
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+            >
+              POSTS
+            </Link>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </header>
   );
 }

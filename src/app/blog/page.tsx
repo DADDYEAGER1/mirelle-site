@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import { getAllBlogPosts, getAllCategories, getPostsByCategory, getAllClusters, getStandalonePosts } from '@/lib/blog';
+import { getAllBlogPosts, getAllCategories, getPostsByCategory, getAllClusters, getStandalonePosts, getBlogPost } from '@/lib/blog';
+import { BlogMetadata } from '@/types/blog';
 import MainHeroSection from '@/components/Blog/MainHeroSection';
 import MustReadSection from '@/components/Blog/MustReadSection';
 import CarouselSection from '@/components/Blog/CarouselSection';
@@ -8,7 +9,7 @@ import NextPageButton from '@/components/Blog/NextPageButton';
 import BlogCategoryNav from '@/components/Blog/BlogCategoryNav';
 
 export const metadata: Metadata = {
-  title: "Nail Care Blog - Expert Tips & Trends | Mirellé",
+  title: "Nail Care Blog - Expert Tips & Trends | Mirellè",
   description: 'Discover trending nail tutorials, seasonal trends, and professional nail care advice. Step-by-step guides and inspiration.',
 };
 
@@ -25,20 +26,50 @@ export default async function BlogPage({ searchParams }: PageProps) {
   const selectedCategory = params.category;
 
   const allClusters = await getAllClusters();
-  
-  // Manual hero selection
-  const heroSlugs = [
-    'christmas-nail-designs-2025',
-    'halloween-nail-ideas-2025',
-    'winter-nails-2025',
-    'valentine-nails-2026',
-    'new-year-nails-2025'
-  ];
-  
   const allPosts = await getAllBlogPosts();
-  const heroPosts = heroSlugs
-    .map(slug => allPosts.find(p => p.slug === slug))
-    .filter(Boolean) as typeof allPosts;
+  
+  // ============================================
+  // HERO CLUSTER CONFIGURATION
+  // Change this slug to display a different cluster in hero
+  // ============================================
+  const heroClusterSlug = 'christmas-nail-designs-2025';
+  
+  // Get hero cluster posts
+  const getHeroClusterPosts = async (): Promise<BlogMetadata[]> => {
+    // Find the pillar post from allPosts (BlogMetadata)
+    const heroPillar = allPosts.find(post => post.slug === heroClusterSlug);
+    
+    if (!heroPillar) {
+      // Fallback to first 10 posts if cluster not found
+      return allPosts.slice(0, 10);
+    }
+    
+    // Find cluster posts for this pillar
+    const clusterPosts = allPosts.filter(post => 
+      post.topicalMap?.position === 'cluster' && 
+      (post.topicalMap?.parentPillar === `/blog/${heroClusterSlug}` || 
+       post.topicalMap?.parentPillar === heroClusterSlug)
+    );
+    
+    // Combine: pillar first, then cluster posts
+    const clusterFamily = [heroPillar, ...clusterPosts];
+    
+    // If we have fewer than 10, fill with recent posts
+    if (clusterFamily.length < 10) {
+      const needed = 10 - clusterFamily.length;
+      const clusterSlugs = clusterFamily.map(p => p.slug);
+      const recentPosts = allPosts
+        .filter(p => !clusterSlugs.includes(p.slug))
+        .slice(0, needed);
+      
+      return [...clusterFamily, ...recentPosts];
+    }
+    
+    // Return up to 10 posts
+    return clusterFamily.slice(0, 10);
+  };
+  
+  const heroPosts = await getHeroClusterPosts();
 
   // Category filtered page
   if (selectedCategory) {
@@ -95,13 +126,16 @@ export default async function BlogPage({ searchParams }: PageProps) {
         {/* Category Nav */}
         <BlogCategoryNav />
 
-        {/* Hero Posts */}
+        {/* Hero Posts - Cluster Based */}
         <MainHeroSection posts={heroPosts} />
 
-        {/* First 2 Cluster Carousels */}
-        {allClusters.slice(0, 2).map((cluster) => (
-          <CarouselSection key={cluster.pillar.slug} clusterGroup={cluster} />
-        ))}
+        {/* First 2 Cluster Carousels (excluding hero cluster) */}
+        {allClusters
+          .filter(cluster => cluster.pillar.slug !== heroClusterSlug)
+          .slice(0, 2)
+          .map((cluster) => (
+            <CarouselSection key={cluster.pillar.slug} clusterGroup={cluster} />
+          ))}
 
         {/* Must Read */}
         <MustReadSection posts={mustReadPosts} />
@@ -110,7 +144,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
         <LatestStoriesSection posts={latestPosts} />
 
         {/* Next Button */}
-        {(allClusters.length > 2 || standalonePosts.length > 9) && (
+        {(allClusters.length > 3 || standalonePosts.length > 9) && (
           <NextPageButton href="/blog?page=2" />
         )}
       </div>
@@ -119,7 +153,12 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
   // PAGE 2+
   const standalonePosts = await getStandalonePosts();
-  const remainingClusters = allClusters.slice(2);
+  
+  // Exclude hero cluster from remaining clusters
+  const remainingClusters = allClusters
+    .filter(cluster => cluster.pillar.slug !== heroClusterSlug)
+    .slice(2);
+    
   const clustersOnThisPage = remainingClusters.slice((currentPage - 2) * 2, (currentPage - 2) * 2 + 2);
   
   const postsPerPage = 12;

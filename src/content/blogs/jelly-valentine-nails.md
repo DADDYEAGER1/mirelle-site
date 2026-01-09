@@ -17,7 +17,7 @@ template: "split-left"
 wordCount: 1456
 topicalMap:
   position: "cluster"
-  parentPillar: "valentine-day-nails-2026"
+  parentPillar: "valentine-nails-2026"
   relatedClusters: ["valentine-french-tip-nails", "3d-heart-valentine-nails", "aura-valentine-nails"]
   primaryKeyword: "jelly valentine nails"
   searchIntent: "informational"

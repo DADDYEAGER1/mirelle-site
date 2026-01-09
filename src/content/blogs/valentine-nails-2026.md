@@ -12,7 +12,7 @@ imageAlt: "Valentine's Day nails 2026 showcasing red chrome and pink designs"
 imageWidth: 1200
 imageHeight: 630
 readTime: "8 min"
-canonical: "https://mirelleinspo.com/blog/valentine-day-nails-2026"
+canonical: "https://mirelleinspo.com/blog/valentine-nails-2026"
 template: "center"
 wordCount: 1612
 topicalMap:

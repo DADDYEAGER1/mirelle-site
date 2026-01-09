@@ -17,7 +17,7 @@ template: "split-left"
 wordCount: 1594
 topicalMap:
   position: "cluster"
-  parentPillar: "valentine-day-nails-2026"
+  parentPillar: "valentine-nails-2026"
   relatedClusters: ["pink-cat-eye-valentine-nails", "red-chrome-valentine-nails", "3d-heart-valentine-nails"]
   primaryKeyword: "velvet cat eye nails"
   searchIntent: "informational"
@@ -154,7 +154,7 @@ Deep red provides clearer Valentine reference while maintaining velvet capabilit
 
 Merlot and garnet occupy middle ground between burgundy and deep red. These reddish-purple undertones suit cool skin tones particularly well. The slight purple cast prevents colors from appearing too warm while maintaining romantic Valentine association. <a href="https://www.thegelbottle.us/valentines/66823-amore-cat-eye.html" target="_blank" rel="noopener">Burgundy cat eye formulations</a> frequently include merlot variations specifically for Valentine seasonal collections.
 
-Base coat strategy influences final velvet intensity. Black base coat underneath magnetic polish creates maximum depth—the darkness behind dispersed particles produces most dramatic dimensional effect. Nude base offers subtler approach where velvet shimmer appears more delicate. <a href="https://mirelleinspo.com/blog/valentine-day-nails-2026">Valentine nail options</a> accommodate both intensity preferences depending on occasion formality and personal style boldness.
+Base coat strategy influences final velvet intensity. Black base coat underneath magnetic polish creates maximum depth—the darkness behind dispersed particles produces most dramatic dimensional effect. Nude base offers subtler approach where velvet shimmer appears more delicate. <a href="https://mirelleinspo.com/blog/valentine-nails-2026">Valentine nail options</a> accommodate both intensity preferences depending on occasion formality and personal style boldness.
 
 ---
 

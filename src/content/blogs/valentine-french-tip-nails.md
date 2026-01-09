@@ -17,7 +17,7 @@ template: "split-left"
 wordCount: 1587
 topicalMap:
   position: "cluster"
-  parentPillar: "valentine-day-nails-2026"
+  parentPillar: "valentine-nails-2026"
   relatedClusters: ["red-chrome-valentine-nails", "3d-heart-valentine-nails", "pink-cat-eye-valentine-nails"]
   primaryKeyword: "valentine french tip nails"
   searchIntent: "informational"
@@ -70,7 +70,7 @@ This guide presents eight distinct <strong>Valentine French manicure</strong> va
 
 Valentine application accelerates this evolution through color as primary differentiator. Traditional white tips communicate bridal or professional neutrality. <strong>Red tip nails</strong> and <strong>pink French manicure Valentine</strong> variations inject emotional context while preserving structural elegance. The technique suits Valentine's specifically because romance pairs naturally with refinement—the careful precision required for clean smile lines metaphorically aligns with intentional romantic gestures.
 
-<a href="https://mirelleinspo.com/blog/valentine-day-nails-2026">Contemporary Valentine nail trends</a> demonstrate that sophistication and seasonal celebration need not conflict. French tips exemplify this principle. The negative space provides visual breathing room that prevents designs from reading as costume. Color concentration at tips creates focal points without covering entire nail surface. This restraint extends wearability beyond February 14—a persistent user concern when selecting Valentine nail designs.
+<a href="https://mirelleinspo.com/blog/valentine-nails-2026">Contemporary Valentine nail trends</a> demonstrate that sophistication and seasonal celebration need not conflict. French tips exemplify this principle. The negative space provides visual breathing room that prevents designs from reading as costume. Color concentration at tips creates focal points without covering entire nail surface. This restraint extends wearability beyond February 14—a persistent user concern when selecting Valentine nail designs.
 
 The precision requirement distinguishes French from other Valentine approaches. Achieving consistent smile line curves across ten nails demands steady hand control and proper tool selection. This technical threshold creates natural division: some French variations suit confident DIY users while others justify salon investment. The following sections address skill requirements honestly alongside aesthetic descriptions.
 

@@ -32,7 +32,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
   // HERO CLUSTER CONFIGURATION
   // Change this slug to display a different cluster in hero
   // ============================================
-  const heroClusterSlug = 'valentine-nails-2026';
+  const heroClusterSlug = 'christmas-nail-designs-2025';
   
   // Get hero cluster posts
   const getHeroClusterPosts = async (): Promise<BlogMetadata[]> => {
@@ -40,8 +40,8 @@ export default async function BlogPage({ searchParams }: PageProps) {
     const heroPillar = allPosts.find(post => post.slug === heroClusterSlug);
     
     if (!heroPillar) {
-      // Fallback to first 10 posts if cluster not found
-      return allPosts.slice(0, 10);
+      // Fallback to first 12 posts if cluster not found
+      return allPosts.slice(0, 12);
     }
     
     // Find cluster posts for this pillar
@@ -54,9 +54,9 @@ export default async function BlogPage({ searchParams }: PageProps) {
     // Combine: pillar first, then cluster posts
     const clusterFamily = [heroPillar, ...clusterPosts];
     
-    // If we have fewer than 10, fill with recent posts
-    if (clusterFamily.length < 10) {
-      const needed = 10 - clusterFamily.length;
+    // If we have fewer than 12, fill with recent posts
+    if (clusterFamily.length < 12) {
+      const needed = 12 - clusterFamily.length;
       const clusterSlugs = clusterFamily.map(p => p.slug);
       const recentPosts = allPosts
         .filter(p => !clusterSlugs.includes(p.slug))
@@ -65,8 +65,8 @@ export default async function BlogPage({ searchParams }: PageProps) {
       return [...clusterFamily, ...recentPosts];
     }
     
-    // Return up to 10 posts
-    return clusterFamily.slice(0, 10);
+    // Return up to 12 posts
+    return clusterFamily.slice(0, 12);
   };
   
   const heroPosts = await getHeroClusterPosts();

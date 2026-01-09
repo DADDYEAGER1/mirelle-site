@@ -67,7 +67,7 @@ export default async function Home() {
       <BlogCarousel posts={allBlogPosts} />
       
       {/* 6. Must Read Section - 4 Topics */}
-      <MustReadSection posts={allBlogPosts} />
+      <MustReadSection/>
       
       {/* 7. Shop Carousel - 6 Shop Categories */}
       {shopCategories.length > 0 && (

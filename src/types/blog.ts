@@ -71,13 +71,6 @@ export interface BlogMetadata {
 }
 
 export interface TopicalMap {
-  position: string;
-  parentPillar: string;
-  relatedClusters: string[];
-  primaryKeyword: string;
-  searchIntent: string;
-  topicalBoundary: string;
-  hierarchyLevel: number;
   position: 'pillar' | 'cluster' | 'standalone';
   parentPillar: string | null;
   relatedClusters: string[];

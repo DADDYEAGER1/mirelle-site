@@ -123,13 +123,8 @@ export default function Footer() {
           <AccordionSection title="Explore">
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Home
-                </Link>
-              </li>
-              <li>
                 <Link href="/blog" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Blog
+                  Articles
                 </Link>
               </li>
               <li>
@@ -138,46 +133,51 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/topics" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Topics
+                <Link href="/inspo" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Designs
                 </Link>
               </li>
               <li>
-                <Link href="/inspo" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Inspo Gallery
+                <Link href="/topics" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Long Reads
+                </Link>
+              </li>
+              <li>
+                <Link href="/posts" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Posts
                 </Link>
               </li>
             </ul>
           </AccordionSection>
 
-          {/* Inspo Section */}
-          <AccordionSection title="Inspo Gallery">
+          {/* Designs Section */}
+          <AccordionSection title="Designs">
             <ul className="space-y-3">
               <li>
-                <Link href="/inspo/chrome-metallic-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Chrome Metallic
+                <Link href="/inspo/valentine-nails-2026" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Valentine Nails 2026
                 </Link>
               </li>
               <li>
-                <Link href="/inspo/burgundy-wine-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Burgundy Wine
+                <Link href="/inspo/french-tip-nails-2026" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  French Tip Nails 2026
                 </Link>
               </li>
               <li>
-                <Link href="/inspo/chocolate-brown-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Chocolate Brown
+                <Link href="/inspo/almond-nails-2026" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Almond Nails 2026
                 </Link>
               </li>
               <li>
-                <Link href="/inspo/velvet-cat-eye-winter-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Velvet Cat Eye
+                <Link href="/inspo/coffin-ballerina-nails-2026" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Coffin Ballerina Nails 2026
                 </Link>
               </li>
             </ul>
           </AccordionSection>
 
-          {/* Popular Topics Section */}
-          <AccordionSection title="Popular Topics">
+          {/* Long Reads Section */}
+          <AccordionSection title="Long Reads">
             <ul className="space-y-3">
               <li>
                 <Link href="/topics/seasonal-trends" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
@@ -190,13 +190,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/topics/nail-art-guides" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Nail Art Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/topics/modern-women" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Professional Nails
+                </Link>
+              </li>
+              <li>
                 <Link href="/topics/at-home-hacks" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   At-Home Hacks
                 </Link>
               </li>
               <li>
-                <Link href="/topics/modern-women" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Modern Women
+                <Link href="/topics/skin-tones" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Skin Tones
                 </Link>
               </li>
             </ul>
@@ -233,27 +243,27 @@ export default function Footer() {
             </ul>
           </AccordionSection>
 
-          {/* Trending Topics Section */}
-          <AccordionSection title="Trending Topics">
+          {/* Trending Valentine Nails Section */}
+          <AccordionSection title="Trending Valentine Nails">
             <ul className="space-y-3">
               <li>
-                <Link href="/blog/christmas-nail-designs-2025" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Christmas Nail Designs
+                <Link href="/blog/valentine-nails-2026" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Valentine Nails 2026
                 </Link>
               </li>
               <li>
-                <Link href="/blog/short-christmas-nails-2025" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Short Christmas Nails
+                <Link href="/blog/pink-cat-eye-valentine-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Pink Cat Eye Valentine Nails
                 </Link>
               </li>
               <li>
-                <Link href="/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Candy Cane Designs
+                <Link href="/blog/tomato-red-valentine-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Tomato Red Valentine Nails
                 </Link>
               </li>
               <li>
-                <Link href="/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
-                  Character Nail Art
+                <Link href="/blog/valentine-french-tip-nails" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
+                  Valentine French Tip Nails
                 </Link>
               </li>
             </ul>

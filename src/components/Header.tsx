@@ -2,56 +2,111 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-const BLOG_LINKS = [
-  { label: 'Christmas Nails', href: '/blog/christmas-nail-designs-2025' },
-  { label: 'Seasonal Nails Ideas', href: '/topics/seasonal-trends' },
-  { label: 'Nail Art Guide 2025', href: '/topics/nail-art-guides' },
-  { label: 'Professional Women', href: '/topics/modern-women' },
-  { label: 'Browse All Topics', href: '/topics' },
+const ARTICLES_LINKS = [
+  { label: "Valentine's Trends", href: '/blog/valentine-nails-2026' },
+  { label: 'Younger-Looking Hands', href: '/blog/nail-polish-colors-make-hands-look-younger' },
+  { label: 'Blooming Gel Nails', href: '/blog/blooming-gel-nails' },
+  { label: 'Tomato Red Valentine Nails', href: '/blog/tomato-red-valentine-nails' },
+  { label: 'Browse All Articles', href: '/blog' },
 ];
 
 const SHOP_LINKS = [
-  { label: 'Christmas Nails', href: '/shop/christmas' },
+  { label: 'Valentine Designs', href: '/shop/valentine' },
   { label: 'Winter Designs', href: '/shop/winter' },
-  { label: 'Halloween Styles', href: '/shop/halloween' },
   { label: 'Trendy Collections', href: '/shop/trendy' },
+  { label: 'Fall Styles', href: '/shop/fall' },
   { label: 'View All Collections', href: '/shop' },
 ];
 
 const DESIGNS_LINKS = [
-  { label: 'Chrome Metallic Winter Nails', href: '/inspo/chrome-metallic-winter-nails' },
-  { label: 'Burgundy Wine Winter Nails', href: '/inspo/burgundy-wine-winter-nails' },
-  { label: 'Chocolate Brown Winter Nails', href: '/inspo/chocolate-brown-winter-nails' },
-  { label: 'Velvet Cat Eye Winter Nails', href: '/inspo/velvet-cat-eye-winter-nails' },
+  { label: 'Valentine Nails 2026', href: '/inspo/valentine-nails-2026' },
+  { label: 'French Tip Nails 2026', href: '/inspo/french-tip-nails-2026' },
+  { label: 'Almond Nails 2026', href: '/inspo/almond-nails-2026' },
+  { label: 'Coffin Ballerina Nails 2026', href: '/inspo/coffin-ballerina-nails-2026' },
   { label: 'View All Collections', href: '/inspo' },
 ];
 
-const TOPICS_LINKS = [
+const LONG_READS_LINKS = [
   { label: 'Seasonal Trends', href: '/topics/seasonal-trends' },
-  { label: 'Nail Art Guides', href: '/topics/nail-art-guides' },
-  { label: 'Modern Women', href: '/topics/modern-women' },
-  { label: 'Beauty Tips', href: '/topics/beauty-tips' },
-  { label: 'Browse All Topics', href: '/topics' },
+  { label: 'Nail Care Guide', href: '/topics/nail-care-guide' },
+  { label: 'Nail Art Guide', href: '/topics/nail-art-guides' },
+  { label: 'Professional Nails', href: '/topics/modern-women' },
+  { label: 'Browse All Long Reads', href: '/topics' },
 ];
 
+// Mobile Dropdown Component
+function MobileDropdown({ 
+  title, 
+  links 
+}: { 
+  title: string; 
+  links: Array<{ label: string; href: string }>;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border-b border-[#f9fafb]/20">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-6 py-4 flex items-center justify-between text-left"
+        style={{ fontFamily: 'General Sans, sans-serif' }}
+      >
+        <span className="text-sm tracking-wider uppercase text-[#f9fafb]">
+          {title}
+        </span>
+        <svg
+          className={`w-4 h-4 transition-transform duration-200 ${
+            isOpen ? 'rotate-180' : ''
+          }`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? 'max-h-96' : 'max-h-0'
+        }`}
+      >
+        <div className="px-6 pb-4 space-y-2">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              style={{ fontFamily: 'General Sans, sans-serif' }}
+              className="block py-2 text-sm text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="bg-[#252220]">
       {/* Desktop Header */}
       <div className="hidden md:block">
-        {/* Top Row - Newsletter, Work With Us, Search on Right */}
+        {/* Top Row - Newsletter, Work With Us */}
         <div className="border-b border-[#f9fafb]/20">
           <div className="container-standard mx-auto px-16">
             <div className="flex justify-center items-center h-16 relative">
               {/* Brand - Centered */}
               <Link href="/" className="flex items-center">
-              <span 
-                data-logo="true" 
-                style={{ fontFamily: 'Larken, Georgia, serif' }} 
-                className="text-3xl font-bold text-[#f9fafb]"
-              >
-                Mirellé
-              </span>
+                <span 
+                  data-logo="true" 
+                  style={{ fontFamily: 'Larken, Georgia, serif' }} 
+                  className="text-3xl font-bold text-[#f9fafb]"
+                >
+                  Mirellé
+                </span>
               </Link>
 
               {/* Right Links */}
@@ -79,35 +134,21 @@ export default function Header() {
         <nav className="border-b border-[#f9fafb]/20">
           <div className="container-standard mx-auto px-16">
             <div className="flex justify-center items-center h-12 gap-10">
-              <Link 
-                href="/"
-                style={{ fontFamily: 'General Sans, sans-serif' }}
-                className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-              >
-                HOME
-              </Link>
-              <Link 
-                href="/about"
-                style={{ fontFamily: 'General Sans, sans-serif' }}
-                className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-              >
-                ABOUT
-              </Link>
               
-              {/* Blog Dropdown - Full Width Style */}
+              {/* Articles Dropdown */}
               <div className="relative group">
                 <Link 
                   href="/blog"
                   style={{ fontFamily: 'General Sans, sans-serif' }}
                   className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
                 >
-                  BLOG
+                  ARTICLES
                 </Link>
                 <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
                   <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
                     <div className="max-w-7xl mx-auto px-16 py-12">
                       <div className="space-y-1">
-                        {BLOG_LINKS.map((link) => (
+                        {ARTICLES_LINKS.map((link) => (
                           <Link
                             key={link.href}
                             href={link.href}
@@ -123,7 +164,7 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Shop Dropdown - Full Width Style */}
+              {/* Shop Dropdown */}
               <div className="relative group">
                 <Link 
                   href="/shop"
@@ -152,14 +193,15 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Designs Dropdown - Full Width Style */}
+              {/* Designs Dropdown */}
               <div className="relative group">
-                <button 
+                <Link 
+                  href="/inspo"
                   style={{ fontFamily: 'General Sans, sans-serif' }}
                   className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
                 >
                   DESIGNS
-                </button>
+                </Link>
                 <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
                   <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
                     <div className="max-w-7xl mx-auto px-16 py-12">
@@ -180,19 +222,20 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Topics Dropdown - Full Width Style */}
+              {/* Long Reads Dropdown */}
               <div className="relative group">
-                <button 
+                <Link 
+                  href="/topics"
                   style={{ fontFamily: 'General Sans, sans-serif' }}
                   className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
                 >
-                  TOPICS
-                </button>
+                  LONG READS
+                </Link>
                 <div className="fixed left-0 right-0 top-[7.5rem] opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-500 ease-out z-50">
                   <div className="bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl">
                     <div className="max-w-7xl mx-auto px-16 py-12">
                       <div className="space-y-1">
-                        {TOPICS_LINKS.map((link) => (
+                        {LONG_READS_LINKS.map((link) => (
                           <Link
                             key={link.href}
                             href={link.href}
@@ -207,6 +250,15 @@ export default function Header() {
                   </div>
                 </div>
               </div>
+
+              {/* Posts - No Dropdown */}
+              <Link 
+                href="/posts"
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
+              >
+                POSTS
+              </Link>
             </div>
           </div>
         </nav>
@@ -244,64 +296,23 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Swipeable Navigation Row */}
-        <div className="border-b border-[#f9fafb]/20 overflow-x-auto scrollbar-hide">
-          <div className="flex gap-8 px-6 h-12 items-center whitespace-nowrap">
-            <Link 
-              href="/"
-              style={{ fontFamily: 'General Sans, sans-serif' }}
-              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-            >
-              HOME
-            </Link>
-            <Link 
-              href="/about"
-              style={{ fontFamily: 'General Sans, sans-serif' }}
-              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-            >
-              ABOUT
-            </Link>
-            <Link 
-              href="/blog"
-              style={{ fontFamily: 'General Sans, sans-serif' }}
-              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-            >
-              BLOG
-            </Link>
-            <Link 
-              href="/shop"
-              style={{ fontFamily: 'General Sans, sans-serif' }}
-              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-            >
-              SHOP
-            </Link>
-            <Link 
-              href="/inspo"
-              style={{ fontFamily: 'General Sans, sans-serif' }}
-              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-            >
-              DESIGNS
-            </Link>
-            <Link 
-              href="/topics"
-              style={{ fontFamily: 'General Sans, sans-serif' }}
-              className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
-            >
-              TOPICS
-            </Link>
-          </div>
+        {/* Mobile Dropdowns */}
+        <div className="border-b border-[#f9fafb]/20">
+          <MobileDropdown title="ARTICLES" links={ARTICLES_LINKS} />
+          <MobileDropdown title="SHOP" links={SHOP_LINKS} />
+          <MobileDropdown title="DESIGNS" links={DESIGNS_LINKS} />
+          <MobileDropdown title="LONG READS" links={LONG_READS_LINKS} />
+          
+          {/* Posts - No Dropdown */}
+          <Link 
+            href="/posts"
+            style={{ fontFamily: 'General Sans, sans-serif' }}
+            className="block px-6 py-4 text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity border-b border-[#f9fafb]/20"
+          >
+            POSTS
+          </Link>
         </div>
       </div>
-
-      <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
     </header>
   );
 }

@@ -143,8 +143,8 @@ tldr:
   - Essential tools include fine detail brush, dotting tool, and base colors in red,
     white, brown, black, and nude shades
 topicalMap:
-  parentPillar: null
-  position: standalone
+  parentPillar: /blog/christmas-nail-designs-2025
+  position: cluster
   primaryKeyword: santa reindeer gingerbread christmas nails
   relatedClusters:
   - christmas-nail-designs-2025

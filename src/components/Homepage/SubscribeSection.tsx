@@ -32,7 +32,7 @@ export default function SubscribeSection() {
   };
 
   return (
-    <section className="bg-white pt-8 pb-8">
+    <section className="bg-background pt-8 pb-8">
       {/* Desktop Layout */}
       <div className="hidden md:flex items-center justify-center gap-8 px-3 md:px-6 lg:px-12 py-4">
         {/* Image */}

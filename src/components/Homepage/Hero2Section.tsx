@@ -26,7 +26,7 @@ export default async function Hero2Section() {
     .filter(post => 
       post.topicalMap?.position === 'cluster' && 
       (post.topicalMap?.parentPillar === `/blog/${pillarPost.slug}` || 
-       post.topicalMap?.parentPillar === pillarPost.slug)
+      post.topicalMap?.parentPillar === pillarPost.slug)
     )
     .slice(0, 5);
 
@@ -127,7 +127,7 @@ export default async function Hero2Section() {
       </div>
       
       {/* Mobile: Vertical Stack */}
-      <div className="md:hidden flex flex-col gap-6 px-3 md:px-6 lg:px-12">
+      <div className="md:hidden flex flex-col gap-6 px-6 md:px-8 lg:px-12">
         {pillarPost && (
           <Link href={`/blog/${pillarPost.slug}`} className="block group">
             <div className="relative w-full aspect-[4/5] mb-3 overflow-hidden">

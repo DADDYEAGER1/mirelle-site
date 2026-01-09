@@ -77,17 +77,17 @@ export default async function PostPage({ params }: PageProps) {
   if (!post) notFound();
 
   // Split content for component placement
-  const contentSections = post.content.split(/\n\n/);
-  const totalSections = contentSections.length;
+  const contentSections = post.content.split(/(<h2[^>]*>)/);
+  const totalSections = Math.ceil(contentSections.length / 2);
 
-  const section1End = Math.floor(totalSections * 0.2);
-  const section2End = Math.floor(totalSections * 0.4);
-  const section3End = Math.floor(totalSections * 0.6);
+  const section1End = Math.max(2, Math.floor(totalSections * 0.25) * 2);
+  const section2End = Math.max(4, Math.floor(totalSections * 0.5) * 2);
+  const section3End = Math.max(6, Math.floor(totalSections * 0.75) * 2);
 
-  const firstSection = contentSections.slice(0, section1End).join('\n\n');
-  const middleSection = contentSections.slice(section1End, section2End).join('\n\n');
-  const moreContent = contentSections.slice(section2End, section3End).join('\n\n');
-  const remainingContent = contentSections.slice(section3End).join('\n\n');
+  const firstSection = contentSections.slice(0, section1End).join('');
+  const middleSection = contentSections.slice(section1End, section2End).join('');
+  const moreContent = contentSections.slice(section2End, section3End).join('');
+  const remainingContent = contentSections.slice(section3End).join('');
 
   // Generate schemas
   const articleSchema = {
@@ -153,24 +153,15 @@ export default async function PostPage({ params }: PageProps) {
       />
 
       <div className="min-h-screen bg-background">
-        {/* Main Content Container with Proper Padding */}
-        <div className="px-[6px] md:px-3 lg:px-[12px] py-8 md:py-12">
-          {/* Breadcrumbs */}
-          <div className="mb-6">
-            <Breadcrumbs
-              items={[{ label: 'Posts', href: '/posts' }]}
-              currentPage={post.title}
-              includeSchema={false}
-            />
-          </div>
-
+        {/* Hero Section - Fixed Padding: 6px mobile, 12px desktop */}
+        <div className="w-full px-[6px] md:px-[12px] py-8 md:py-12">
           {/* Category */}
           <p className="text-sm uppercase tracking-wide text-gray-700 mb-4">
             {post.category}
           </p>
 
           {/* Title */}
-          <h1 className="text-[36px] md:text-[42px] font-serif leading-tight mb-4">
+          <h1 className="font-heading text-[36px] md:text-[42px] leading-tight mb-4">
             {post.title}
           </h1>
 
@@ -186,7 +177,7 @@ export default async function PostPage({ params }: PageProps) {
             </time>
           </div>
 
-          {/* Hero Image - Left Aligned, Full Width */}
+          {/* Hero Image - Full Width within padding */}
           <div className="w-full mb-8">
             <img
               src={post.image}
@@ -194,30 +185,60 @@ export default async function PostPage({ params }: PageProps) {
               className="w-full h-auto"
             />
           </div>
-
-          {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: firstSection }} />
-
-            {post.carouselImages && post.carouselImages.length > 0 && (
-              <ImageCarousel images={post.carouselImages} />
-            )}
-
-            <div dangerouslySetInnerHTML={{ __html: middleSection }} />
-
-            {post.products && post.products.length > 0 && (
-              <ProductGrid products={post.products} layout="dual" />
-            )}
-
-            <div dangerouslySetInnerHTML={{ __html: moreContent }} />
-
-            <InlineNewsletter />
-
-            <div dangerouslySetInnerHTML={{ __html: remainingContent }} />
-          </article>
         </div>
 
-        {/* Full Width Sections with Brand Background */}
+        {/* Article Content - Magazine Style (Left-aligned, narrow column) */}
+        <div className="w-full flex flex-col items-start">
+          {/* Narrow content container */}
+          <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16">
+            
+            {/* Breadcrumbs */}
+            <div className="mb-8">
+              <Breadcrumbs
+                items={[{ label: 'Posts', href: '/posts' }]}
+                currentPage={post.title}
+                includeSchema={false}
+              />
+            </div>
+
+            {/* Article Content - Magazine prose styles */}
+            <article className="prose-content-magazine">
+              <div dangerouslySetInnerHTML={{ __html: firstSection }} />
+
+              {/* Carousel Images - INSIDE content container */}
+              {post.carouselImages && post.carouselImages.length > 0 && (
+                <div className="my-12">
+                  <ImageCarousel images={post.carouselImages} />
+                </div>
+              )}
+
+              <div dangerouslySetInnerHTML={{ __html: middleSection }} />
+
+              {/* Products - INSIDE content container */}
+              {post.products && post.products.length > 0 && (
+                <div className="my-12">
+                  <ProductGrid products={post.products} layout="dual" />
+                </div>
+              )}
+
+              <div dangerouslySetInnerHTML={{ __html: moreContent }} />
+            </article>
+          </div>
+
+          {/* Break out - Full width newsletter */}
+          <div className="w-full my-12">
+            <InlineNewsletter />
+          </div>
+
+          {/* Resume narrow content container */}
+          <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16">
+            <article className="prose-content-magazine">
+              <div dangerouslySetInnerHTML={{ __html: remainingContent }} />
+            </article>
+          </div>
+        </div>
+
+        {/* Full Width Sections */}
         <FinalNewsletter />
         <AboutEEAT />
         <ReadMoreSection currentSlug={post.slug} />

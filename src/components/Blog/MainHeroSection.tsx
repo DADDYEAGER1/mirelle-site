@@ -21,7 +21,7 @@ export default function MainHeroSection({ posts }: MainHeroSectionProps) {
   const rightPosts = displayPosts.slice(4, 12);
 
   return (
-    <section className="py-16 pb-24 bg-[#f9fafb] border-b border-gray-100">
+    <section className="py-16 pb-32 bg-[#f9fafb] border-b border-gray-100">
       <div className="max-w-[1400px] mx-auto px-6 md:px-16 lg:px-20">
         {/* Desktop: 3 Column Grid - 1:2:1 ratio */}
         <div className="hidden md:flex gap-4">
@@ -87,7 +87,7 @@ export default function MainHeroSection({ posts }: MainHeroSectionProps) {
           </div>
           
           {/* Right: 8 Horizontal Posts - 1 unit - IMAGE ON RIGHT */}
-          <div className="flex-1 flex flex-col gap-4">
+          <div className="flex-1 flex flex-col gap-3">
             {rightPosts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
                 <div className="flex gap-3 items-start">
@@ -112,7 +112,7 @@ export default function MainHeroSection({ posts }: MainHeroSectionProps) {
                   </div>
                   
                   {/* Square Image Right */}
-                  <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden">
+                  <div className="relative w-20 h-20 flex-shrink-0 overflow-hidden">
                     {post.image && (
                       <img
                         src={post.image}

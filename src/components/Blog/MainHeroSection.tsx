@@ -87,7 +87,7 @@ export default function MainHeroSection({ posts }: MainHeroSectionProps) {
           </div>
           
           {/* Right: 8 Horizontal Posts - 1 unit - IMAGE ON RIGHT */}
-          <div className="flex-1 flex flex-col gap-3">
+          <div className="flex-1 flex flex-col gap-6">
             {rightPosts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
                 <div className="flex gap-3 items-start">
@@ -112,7 +112,7 @@ export default function MainHeroSection({ posts }: MainHeroSectionProps) {
                   </div>
                   
                   {/* Square Image Right */}
-                  <div className="relative w-20 h-20 flex-shrink-0 overflow-hidden">
+                  <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden">
                     {post.image && (
                       <img
                         src={post.image}

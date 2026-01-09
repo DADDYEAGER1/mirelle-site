@@ -38,6 +38,7 @@ export interface BlogMetadata {
   dateModified?: string;
   url: string;
   topicalMap?: any;
+  navigationContext?: NavigationContext;
   tldr?: TLDR;
   faqItems?: FAQItem[];
   eventData?: {
@@ -77,7 +78,52 @@ export interface TopicalMap {
   searchIntent: string;
   topicalBoundary: string;
   hierarchyLevel: number;
+  position: 'pillar' | 'cluster' | 'standalone';
+  parentPillar: string | null;
+  relatedClusters: string[];
+  primaryKeyword: string;
+  searchIntent: 'informational' | 'transactional' | 'navigational' | 'commercial';
+  topicalBoundary: string;
+  hierarchyLevel: number;
+  
+  // NEW FIELDS - Add these
+  secondaryKeywords?: string[];  // Optional - won't break existing posts
+  contentType?: 'tutorial' | 'guide' | 'comparison' | 'showcase' | 'trend-analysis';
+  semanticRelationships?: {
+    technique?: string[];
+    style?: string[];
+    occasions?: string[];
+    relatedTechniques?: string[];
+  };
+  contentMetrics?: {
+    technicalComplexity?: 'beginner' | 'intermediate' | 'advanced';
+    timeToImplement?: string;
+    requiredSkills?: string[];
+    requiredTools?: string[];
+  };
+  childClusters?: Array<{
+    slug: string;
+    relationship?: string;
+    hierarchyLevel?: number;
+  }>;
 }
+
+// Add this new interface for navigation
+export interface NavigationContext {
+  pillarPost?: {
+    slug: string;
+    title: string;
+  };
+  previousPost?: {
+    slug: string;
+    title: string;
+  };
+  nextPost?: {
+    slug: string;
+    title: string;
+  };
+}
+
 
 export interface Category {
   name: string;
@@ -115,6 +161,7 @@ export interface BlogPost {
   wordCount?: number;
   galleryImages?: GalleryImage[];
   topicalMap?: TopicalMap;
+  navigationContext?: NavigationContext;
   tldr?: TLDR;
   faqItems?: FAQItem[];
   tutorialSteps?: TutorialStep[];

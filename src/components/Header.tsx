@@ -55,7 +55,7 @@ function MobileDropdown({
       >
         {title}
         <svg
-          className={`w-3 h-3 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-3 h-3 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -63,31 +63,38 @@ function MobileDropdown({
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-      {isOpen && (
-        <>
-          {/* Backdrop */}
-          <div 
-            className="fixed inset-0 bg-black/50 z-40"
-            onClick={onToggle}
-          />
-          {/* Dropdown */}
-          <div className="absolute top-full left-0 mt-2 bg-[#252220] border border-[#f9fafb]/20 rounded shadow-2xl z-50 min-w-[200px]">
-            <div className="py-2">
-              {links.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={onToggle}
-                  style={{ fontFamily: 'General Sans, sans-serif' }}
-                  className="block px-4 py-2 text-sm text-[#f9fafb] hover:bg-[#f9fafb]/10 transition-colors whitespace-nowrap"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+      {/* Backdrop */}
+      <div 
+        className={`fixed inset-0 bg-black/50 transition-opacity duration-300 ${
+          isOpen ? 'opacity-100 z-[100]' : 'opacity-0 pointer-events-none -z-10'
+        }`}
+        onClick={onToggle}
+      />
+      {/* Dropdown with Animation */}
+      <div 
+        className={`fixed left-0 right-0 bg-[#252220] border-b border-[#f9fafb]/20 shadow-2xl transition-all duration-500 ease-out ${
+          isOpen 
+            ? 'opacity-100 translate-y-0 z-[101]' 
+            : 'opacity-0 -translate-y-4 pointer-events-none -z-10'
+        }`}
+        style={{ top: '7.5rem' }}
+      >
+        <div className="max-w-7xl mx-auto px-6 py-8">
+          <div className="space-y-1">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={onToggle}
+                style={{ fontFamily: 'General Sans, sans-serif' }}
+                className="block py-3 text-base text-[#f9fafb] hover:opacity-70 hover:pl-2 transition-all duration-300"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
-        </>
-      )}
+        </div>
+      </div>
     </div>
   );
 }

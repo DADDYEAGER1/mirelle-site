@@ -4,7 +4,7 @@ title: "Valentine's Day Nails 2026: 10 Trends Worth Your Attention"
 excerpt: "Discover the defining Valentine's Day nails 2026 has to offer. From red chrome to jelly finishes, explore ten distinct trends reshaping romantic nail design this season."
 date: "2026-01-04T09:00:00-05:00"
 dateModified: "2026-01-04T09:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Trends"
 tags: ["valentine's day nails 2026", "valentine nails 2026", "red chrome nails", "pink cat eye nails", "valentine french tips", "aura nails", "lace nails", "jelly nails"]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-nails-2026/valentines-day-2026-nail-trends-hero.webp"

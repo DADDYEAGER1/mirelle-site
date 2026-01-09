@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     title: "Free 2026 Trend Guide + 20% Off - Join 50K+ Getting Weekly Secrets",
     description: "Weekly 2026 nail secrets: chrome, cat claw, square trends. Free guide + 20% welcome code. Exclusive designs, pro tips, discounts. 50K+ love it. Join now!",
     url: 'https://mirelleinspo.com/subscribe',
-    siteName: 'Mirellè Inspo',
+    siteName: 'Mirellé Inspo',
     type: 'website',
     images: [
       {
         url: 'https://mirelleinspo.com/og-subscribe-2026.png',
         width: 1200,
         height: 630,
-        alt: 'Join Mirellè Inspo newsletter for free 2026 nail trend guide and 20% off welcome gift',
+        alt: 'Join Mirellé Inspo newsletter for free 2026 nail trend guide and 20% off welcome gift',
       },
     ],
   },

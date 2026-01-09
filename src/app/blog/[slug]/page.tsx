@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   if (!post) {
     return {
-      title: 'Post Not Found - Mirellè',
+      title: 'Post Not Found - Mirellé',
       description: 'The blog post you are looking for does not exist.',
       robots: { index: false, follow: false },
     };
@@ -40,11 +40,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const imageAltText = post.imageAlt || post.title;
   
   return {
-    title: `${post.title} | Mirellè`,
-    description: post.excerpt || `Discover ${post.title} - expert nail tips, trends, and tutorials from Mirellè.`,
-    authors: [{ name: post.author || 'Mirellè' }],
-    creator: post.author || 'Mirellè',
-    publisher: 'Mirellè',
+    title: `${post.title} | Mirellé`,
+    description: post.excerpt || `Discover ${post.title} - expert nail tips, trends, and tutorials from Mirellé.`,
+    authors: [{ name: post.author || 'Mirellé' }],
+    creator: post.author || 'Mirellé',
+    publisher: 'Mirellé',
     alternates: { canonical: canonicalUrl },
     robots: {
       index: true,
@@ -59,11 +59,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       },
     },
     openGraph: {
-      title: `${post.title} | Mirellè`,
-      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirellè.`,
+      title: `${post.title} | Mirellé`,
+      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirellé.`,
       type: 'article',
       url: canonicalUrl,
-      siteName: 'Mirellè',
+      siteName: 'Mirellé',
       locale: 'en_US',
       images: [{
         url: imageUrl,
@@ -74,13 +74,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }],
       publishedTime: post.date,
       modifiedTime: post.date,
-      authors: [post.author || 'Mirellè'],
+      authors: [post.author || 'Mirellé'],
       section: post.category || 'Nail Care',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${post.title} | Mirellè`,
-      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirellè.`,
+      title: `${post.title} | Mirellé`,
+      description: post.excerpt || `Discover ${post.title} - expert nail inspiration from Mirellé.`,
       images: [imageUrl],
       creator: '@mirelleinspo',
       site: '@mirelleinspo',
@@ -88,7 +88,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     other: {
       'article:published_time': post.date,
       'article:modified_time': post.date,
-      'article:author': post.author || 'Mirellè',
+      'article:author': post.author || 'Mirellé',
       'article:section': post.category || 'Nail Care',
       'og:image:width': (post.imageWidth || 1200).toString(),
       'og:image:height': (post.imageHeight || 630).toString(),

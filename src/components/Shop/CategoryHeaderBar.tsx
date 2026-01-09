@@ -24,7 +24,7 @@ export default function CategoryHeaderBar({
 
         {/* Disclaimer */}
         <p className="font-body text-xs text-foreground/70 leading-relaxed border-t border-gray-200 pt-4">
-          All products featured on Mirellè are independently selected by our editors. 
+          All products featured on Mirellé are independently selected by our editors. 
           However, we may receive compensation from retailers and/or from purchases of 
           products through these links.
         </p>

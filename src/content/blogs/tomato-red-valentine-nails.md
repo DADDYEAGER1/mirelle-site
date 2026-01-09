@@ -4,7 +4,7 @@ title: "Tomato Red Valentine Nails: Warm Red 2026"
 excerpt: "Discover why tomato red nails dominate 2026 Valentine trends through warm undertone science and modern color theory that flatters medium to olive skin tones elegantly."
 date: "2026-01-15T12:00:00-05:00"
 dateModified: "2026-01-15T12:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Art"
 tags: ["tomato red nails", "orange-red manicure", "bold red Valentine nails", "modern red nails", "2026 red nail trend", "warm red polish", "coral-red nails", "contemporary Valentine nails"]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp"

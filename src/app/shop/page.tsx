@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Press-Ons from $3.99: 2026 Trending Styles (Chrome, Cat Claw, Square)',
     description: 'Salon nails in 10min! Chrome, cat claw, square & milky trends. Last 2-3 weeks, reusable 5-10x, zero damage. 200+ designs. Ships 24hrs.',
     url: 'https://mirelleinspo.com/shop',
-    siteName: 'Mirellè Inspo',
+    siteName: 'Mirellé Inspo',
     locale: 'en_US',
     type: 'website',
   },
@@ -70,7 +70,7 @@ export default async function ShopPage() {
             60+ curated designs starting at $3.99 • 2-week wear guaranteed • 
             Free shipping on orders $35+ • Easy 5-minute application
             <br />
-            <span className="text-sm">Curated by Mirellè editors</span>
+            <span className="text-sm">Curated by Mirellé editors</span>
           </p>
         </div>
 

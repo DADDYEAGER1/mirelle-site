@@ -14,15 +14,15 @@ import { getAllCategorySlugs, getCategoryData } from '@/lib/shop';
 import { getAllDesignSlugs, getDesignData, getDesignImages } from '@/lib/inspo';
 
 export const metadata: Metadata = {
-  title: 'Mirellè - Premium Nail Design & Inspiration',
+  title: 'Mirellé - Premium Nail Design & Inspiration',
   description: 'Discover trending nail designs, expert tutorials, and premium press-ons. Your destination for nail art inspiration.',
   keywords: 'nail designs, nail art, press on nails, nail inspiration, nail tutorials, trending nails',
   openGraph: {
-    title: 'Mirellè - Premium Nail Design & Inspiration',
+    title: 'Mirellé - Premium Nail Design & Inspiration',
     description: 'Discover trending nail designs, expert tutorials, and premium press-ons.',
     type: 'website',
     url: 'https://mirelleinspo.com',
-    siteName: 'Mirellè Inspo',
+    siteName: 'Mirellé Inspo',
   },
 };
 

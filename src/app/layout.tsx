@@ -8,8 +8,8 @@ import { generatePersonSchema } from '@/lib/generateSchemas';
 export const metadata: Metadata = {
   metadataBase: new URL('https://mirelleinspo.com'),
   title: {
-    default: "Mirellè Inspo | 1K+ Nail Designs Everyone's Saving for 2025-2026",
-    template: "%s | Mirellè Inspo"
+    default: "Mirellé Inspo | 1K+ Nail Designs Everyone's Saving for 2025-2026",
+    template: "%s | Mirellé Inspo"
   },
   description: "Get 1,000+ trending nail designs used by 50K+ nail lovers. Chrome, cat claw, milky pastels dominating 2026. DIY tutorials, seasonal collections, press-ons from $3.99. Save yours!",
   keywords: [
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     "Pinterest nail inspiration",
     "TikTok viral nails"
   ],
-  authors: [{ name: "Mirellè Inspo Team", url: "https://mirelleinspo.com/about" }],
-  creator: "Mirellè Inspo",
-  publisher: "Mirellè Inspo",
+  authors: [{ name: "Mirellé Inspo Team", url: "https://mirelleinspo.com/about" }],
+  creator: "Mirellé Inspo",
+  publisher: "Mirellé Inspo",
   formatDetection: {
     telephone: false,
     email: false,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     'pinterest-rich-pin': 'true',
     'pinterest:partner': 'true',
     
-    'og:site_name': 'Mirellè Inspo',
+    'og:site_name': 'Mirellé Inspo',
     'og:locale': 'en_US',
     'og:locale:alternate': 'en_GB',
   },
@@ -61,22 +61,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mirelleinspo.com",
-    siteName: "Mirellè Inspo",
-    title: "Mirellè Inspo | 1K+ Nail Designs Everyone's Saving for 2025-2026",
+    siteName: "Mirellé Inspo",
+    title: "Mirellé Inspo | 1K+ Nail Designs Everyone's Saving for 2025-2026",
     description: "Join 50K+ getting chrome, cat claw & milky pastel nails dominating 2026. Press-ons from $3.99, DIY tutorials, trending designs. Your next obsession awaits!",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mirellè Inspo - 1000+ trending nail designs for 2025-2026 including chrome, cat claw and square nails",
+        alt: "Mirellé Inspo - 1000+ trending nail designs for 2025-2026 including chrome, cat claw and square nails",
       },
     ],
   },
   
   twitter: {
     card: "summary_large_image",
-    title: "Mirellè Inspo | 1K+ Designs 50K+ Are Saving Right Now",
+    title: "Mirellé Inspo | 1K+ Designs 50K+ Are Saving Right Now",
     description: "Chrome, cat claw, milky pastels taking over 2026. Press-ons $3.99+, DIY tutorials, trending collections. Join 50K+ nail obsessed!",
     images: ["/twitter-image.jpg"],
     creator: "@mirelleinspo",

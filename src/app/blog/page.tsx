@@ -8,7 +8,7 @@ import NextPageButton from '@/components/Blog/NextPageButton';
 import BlogCategoryNav from '@/components/Blog/BlogCategoryNav';
 
 export const metadata: Metadata = {
-  title: "Nail Care Blog - Expert Tips & Trends | Mirellè",
+  title: "Nail Care Blog - Expert Tips & Trends | Mirellé",
   description: 'Discover trending nail tutorials, seasonal trends, and professional nail care advice. Step-by-step guides and inspiration.',
 };
 

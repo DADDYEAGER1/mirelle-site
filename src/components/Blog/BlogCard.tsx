@@ -43,7 +43,7 @@ export default function BlogCard({ post }: BlogCardProps) {
 
         {/* Author Byline */}
         <div className="text-xs text-gray-600 uppercase tracking-wide font-medium">
-          BY MIRELLÈ INSPO TEAM
+          BY Mirellé INSPO TEAM
         </div>
       </div>
     </Link>

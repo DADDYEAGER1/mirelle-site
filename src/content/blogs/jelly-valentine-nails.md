@@ -4,7 +4,7 @@ title: "Jelly Valentine Nails: A Study in Translucent Elegance"
 excerpt: "Master jelly Valentine nails through opacity control and layering techniques. Discover translucent Valentine designs, glass-like finishes, and sheer polish application for dimensional depth."
 date: "2026-01-05T14:00:00-05:00"
 dateModified: "2026-01-05T14:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Guides"
 tags: ["jelly valentine nails", "sheer heart nails", "translucent nail art", "milky pink base nails", "glass nail effect", "jelly gel nails valentine", "korean jelly nails", "see-through valentine nails"]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/jelly-valentine-nails-translucent-elegance-hero.webp"

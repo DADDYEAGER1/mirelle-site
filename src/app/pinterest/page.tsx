@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "2.5M+ Monthly Saves - Join 50K+ on Pinterest",
   description: "Follow @mirelle_inspo for 2026's hottest nail trends! 500+ boards: chrome, cat claw, square designs, milky pastels. 2.5M+ monthly views. Daily inspiration. Save now!",
-  keywords: "Mirellè Inspo Pinterest, nail trends Pinterest 2026, chrome nails Pinterest, cat claw nails, square nails inspiration, trending nail boards, DIY nail tutorials Pinterest, seasonal nail ideas, viral nail designs, Pinterest nail community, TikTok trending nails, nail art inspiration boards",
-  authors: [{ name: "Mirellè Inspo Team" }],
-  creator: "Mirellè Inspo",
-  publisher: "Mirellè Inspo",
+  keywords: "Mirellé Inspo Pinterest, nail trends Pinterest 2026, chrome nails Pinterest, cat claw nails, square nails inspiration, trending nail boards, DIY nail tutorials Pinterest, seasonal nail ideas, viral nail designs, Pinterest nail community, TikTok trending nails, nail art inspiration boards",
+  authors: [{ name: "Mirellé Inspo Team" }],
+  creator: "Mirellé Inspo",
+  publisher: "Mirellé Inspo",
   alternates: {
     canonical: "https://mirelleinspo.com/pinterest",
   },
@@ -22,18 +22,18 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Follow Mirellè Inspo on Pinterest - 2.5M+ Monthly Views",
+    title: "Follow Mirellé Inspo on Pinterest - 2.5M+ Monthly Views",
     description: "Join 50K+ on Pinterest for 2026's trending nails! 500+ boards: chrome, cat claw, square, milky pastels. 2.5M+ monthly views. Daily inspiration. Follow @mirelle_inspo!",
     type: "website",
     url: "https://mirelleinspo.com/pinterest",
-    siteName: "Mirellè Inspo",
+    siteName: "Mirellé Inspo",
     locale: "en_US",
     images: [
       {
         url: "https://mirelleinspo.com/og-pinterest-mirelle.png",
         width: 1200,
         height: 630,
-        alt: "Mirellè Inspo Pinterest profile featuring 2026 trending nail designs with 2.5M monthly views and 500+ boards",
+        alt: "Mirellé Inspo Pinterest profile featuring 2026 trending nail designs with 2.5M monthly views and 500+ boards",
         type: "image/png",
       },
     ],

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: '1K+ Designs Dominating 2026 - Chrome, Cat Claw & More',
     description: 'Discover trending nail designs with step-by-step tutorials: chrome, cat claw, square, milky pastels. New designs weekly.',
     url: 'https://mirelleinspo.com/inspo',
-    siteName: 'Mirellè Inspo',
+    siteName: 'Mirellé Inspo',
     type: 'website',
     images: [
       {

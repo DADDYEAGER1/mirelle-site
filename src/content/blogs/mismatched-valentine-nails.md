@@ -4,7 +4,7 @@ title: "Mismatched Valentine Nails: Cohesive Chaos"
 excerpt: "Master asymmetric nail art through color theory principles and intentional design strategies that transform visual chaos into refined Valentine elegance."
 date: "2026-01-15T10:00:00-05:00"
 dateModified: "2026-01-15T10:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Art"
 tags: ["mismatched Valentine nails", "asymmetric nail art", "different nails each hand", "mix-match manicure", "multi-design Valentine nails", "eclectic nail art", "Skittles Valentine nails", "unmatched nail designs"]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mismatched-valentine-nails/mismatched-valentine-nails-asymmetric-design-2026.webp"

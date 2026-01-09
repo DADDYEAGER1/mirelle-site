@@ -4,7 +4,7 @@ title: "Pink Cat Eye Valentine Nails: Magnetic Shimmer"
 excerpt: "Master pink cat eye nail technique through precise magnetic positioning and particle manipulation that creates dimensional Valentine shimmer with luminous depth."
 date: "2026-01-15T14:00:00-05:00"
 dateModified: "2026-01-15T14:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Art"
 tags: ["pink cat eye Valentine nails", "magnetic Valentine nails pink", "cat eye gel polish Valentine", "pink magnetic gel Valentine nails", "rose pink cat eye nails", "blush pink magnetic nails", "dimensional shimmer nails", "Valentine cat eye manicure"]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-valentine-nails-magnetic-shimmer.webp"

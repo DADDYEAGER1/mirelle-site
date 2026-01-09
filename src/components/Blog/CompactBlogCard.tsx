@@ -50,7 +50,7 @@ export default function CompactBlogCard({ post }: CompactBlogCardProps) {
           className="text-xs uppercase tracking-wide text-gray-600"
           style={{ fontFamily: 'General Sans, system-ui, sans-serif' }}
         >
-          BY {post.author || 'MIRELLÈ INSPO TEAM'}
+          BY {post.author || 'Mirellé INSPO TEAM'}
         </div>
       </div>
     </Link>

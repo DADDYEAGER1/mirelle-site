@@ -4,7 +4,7 @@ title: "Red Chrome Valentine Nails: Molten Metal"
 excerpt: "Master red chrome nail technique through precise burnishing methods and light refraction principles that transform flat Valentine red into liquid metal elegance."
 date: "2026-01-15T13:00:00-05:00"
 dateModified: "2026-01-15T13:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Art"
 tags: ["red chrome Valentine nails", "Valentine red chrome manicure", "metallic red Valentine nails", "chrome Valentine nail designs", "red mirror nails Valentine", "scarlet chrome nails", "molten red chrome nails", "chrome powder application"]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-chrome-valentine-nails/red-chrome-valentine-nails-molten-metal-finish.webp"

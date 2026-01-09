@@ -8,8 +8,8 @@ import { getDesignData } from '@/lib/inspo';
 export default async function Hero2Section() {
   // ========== CONFIGURATION ==========
   const SHOP_CATEGORY_SLUG = 'winter';      // Change to any shop category slug
-  const INSPO_CATEGORY_SLUG = 'valentine';   // Change to any inspo category slug
-  const PILLAR_POST_SLUG = 'valentines-nails-2026'; // Change to your pillar blog post slug
+  const INSPO_CATEGORY_SLUG = 'valentine-nails-2026';   // Change to any inspo category slug
+  const PILLAR_POST_SLUG = 'valentine-nails-2026'; // Change to your pillar blog post slug (NO 's')
   // ===================================
   
   const allPosts = await getAllBlogPosts();

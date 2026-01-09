@@ -20,7 +20,7 @@ export default function MustReadSection({ posts, topics }: MustReadSectionProps)
       <div className="max-w-7xl mx-auto px-6 mb-8">
         <div className="w-full h-[1px] bg-border-color mb-4" />
         <h2 className="font-heading text-2xl md:text-3xl text-foreground text-center">
-          MUST READ
+          LONG READS
         </h2>
         <div className="w-full h-[1px] bg-border-color mt-4" />
       </div>

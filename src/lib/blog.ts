@@ -94,6 +94,7 @@ export async function getAllBlogPosts(): Promise<BlogMetadata[]> {
           canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
           template: data.template || 'center',
           topicalMap: data.topicalMap,
+          navigationContext: data.navigationContext,
           url: `https://mirelleinspo.com/blog/${slug}`,
         } as BlogMetadata;
       })
@@ -150,6 +151,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       canonical: data.canonical || `https://mirelleinspo.com/blog/${slug}`,
       template: data.template || 'center',
       topicalMap: data.topicalMap,
+      navigationContext: data.navigationContext,
       carouselImages: data.carouselImages,
       products: data.products,
       coverImage: data.image || '/images/default-blog.jpg',

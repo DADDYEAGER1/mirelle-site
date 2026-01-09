@@ -5,15 +5,20 @@ import { getCategoryData } from '@/lib/shop';
 import { getDesignData } from '@/lib/inspo';
 
 export default async function Hero2Section() {
+  // ========== CONFIGURATION ==========
+  const SHOP_CATEGORY_SLUG = 'winter';      // Change to any shop category slug
+  const INSPO_CATEGORY_SLUG = 'valentine';   // Change to any inspo category slug
+  const PILLAR_POST_SLUG = 'valentine-nails-2026'; // Change to your pillar blog post slug
+  // ===================================
+  
   const allPosts = await getAllBlogPosts();
   
   // Left: 1 shop + 1 inspo category
-  const shopCategory = getCategoryData('christmas');
-  const inspoCategory = getDesignData('french-tips');
+  const shopCategory = getCategoryData(SHOP_CATEGORY_SLUG);
+  const inspoCategory = getDesignData(INSPO_CATEGORY_SLUG);
   
-  // Middle: Define the pillar post slug here
-  const PILLAR_SLUG = 'valentine-nails-2026'; // Change this to your desired pillar post slug
-  const pillarPost = allPosts.find(p => p.slug === PILLAR_SLUG) || allPosts[0];
+  // Middle: Pillar post
+  const pillarPost = allPosts.find(p => p.slug === PILLAR_POST_SLUG) || allPosts[0];
   
   // Right: Get cluster posts related to the pillar (max 3)
   const clusterPosts = allPosts

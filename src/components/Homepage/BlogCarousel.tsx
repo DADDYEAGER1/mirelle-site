@@ -85,7 +85,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
         
         <div className="py-4 flex items-center justify-center relative">
           <h2 className="font-ui text-base md:text-lg text-foreground tracking-wider uppercase">
-            LONG READS
+            ALMOND NAILS
           </h2>
           
           <div className="hidden md:flex items-center gap-4 absolute right-0">

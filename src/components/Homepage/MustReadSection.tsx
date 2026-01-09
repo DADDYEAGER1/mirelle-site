@@ -1,18 +1,12 @@
 // src/components/Homepage/MustReadSection.tsx
 import Image from 'next/image';
 import Link from 'next/link';
-import { BlogMetadata } from '@/types/blog';
-import { TopicMetadata } from '@/types/topic';
+import { getAllTopics } from '@/lib/topic';
 
-interface MustReadSectionProps {
-  posts?: BlogMetadata[];
-  topics?: TopicMetadata[];
-}
-
-export default function MustReadSection({ posts, topics }: MustReadSectionProps) {
-  // Use topics if provided, otherwise use posts
-  const items = topics ? topics.slice(0, 4) : (posts || []).slice(0, 4);
-  const linkPrefix = topics ? '/topics' : '/blog';
+export default async function MustReadSection() {
+  // Get latest 4 topics
+  const topics = await getAllTopics();
+  const items = topics.slice(0, 4);
 
   return (
     <section className="bg-background py-8 md:py-12">
@@ -30,7 +24,7 @@ export default function MustReadSection({ posts, topics }: MustReadSectionProps)
         {items.map((item) => (
           <Link 
             key={item.slug} 
-            href={`${linkPrefix}/${item.slug}`}
+            href={`/topics/${item.slug}`}
             className="block group"
           >
             <div className="flex flex-row gap-4">
@@ -76,7 +70,7 @@ export default function MustReadSection({ posts, topics }: MustReadSectionProps)
         {items.map((item) => (
           <Link 
             key={item.slug} 
-            href={`${linkPrefix}/${item.slug}`}
+            href={`/topics/${item.slug}`}
             className="block group"
           >
             <div className="flex flex-row gap-4">

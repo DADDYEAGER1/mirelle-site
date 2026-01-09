@@ -13,25 +13,25 @@ interface ExploreCard {
 
 const exploreCards: ExploreCard[] = [
   {
-    image: '/images/nail-care-guide.jpg',
+    image: '/images/topic/nail-care-guide.jpg',
     category: 'CARE',
     title: 'Essential Nail Care Tips',
     author: 'MIRELLÉ TEAM',
-    link: '/blog/nail-care-guide',
+    link: '/topics/nail-care-guide',
   },
   {
     image: '/images/nail-art-guide.jpg',
     category: 'TUTORIAL',
     title: 'Nail Art Techniques',
     author: 'MIRELLÉ TEAM',
-    link: '/blog/nail-art-techniques',
+    link: '/blog',
   },
   {
-    image: '/images/trending-designs.jpg',
+    image: '/images/topic/trending-designs.jpg',
     category: 'TRENDS',
     title: 'Latest Nail Trends 2026',
     author: 'MIRELLÉ TEAM',
-    link: '/blog/trends-2026',
+    link: '/topics/seasonal-trends',
   },
 ];
 

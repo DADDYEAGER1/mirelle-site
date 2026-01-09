@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import FeatureBlogCard from './FeatureBlogCard';
+import Link from 'next/link';
 import { BlogMetadata } from '@/types/blog';
 
 interface MainHeroSectionProps {
@@ -9,87 +8,192 @@ interface MainHeroSectionProps {
 }
 
 export default function MainHeroSection({ posts }: MainHeroSectionProps) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const checkScroll = () => {
-    if (scrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-      setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
-    }
-  };
-
-  useEffect(() => {
-    checkScroll();
-    const ref = scrollRef.current;
-    if (ref) {
-      ref.addEventListener('scroll', checkScroll);
-      return () => ref.removeEventListener('scroll', checkScroll);
-    }
-  }, []);
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollRef.current) {
-      const scrollAmount = scrollRef.current.clientWidth * 0.8;
-      scrollRef.current.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth',
-      });
-    }
-  };
-
-  // Take first 5 posts
-  const displayPosts = posts.slice(0, 5);
+  // Ensure we have exactly 10 posts (pillar + 9 clusters)
+  const displayPosts = posts.slice(0, 10);
+  
+  // Middle: Main pillar post (first post)
+  const pillarPost = displayPosts[0];
+  
+  // Left: 3 square posts (posts 1-3)
+  const leftPosts = displayPosts.slice(1, 4);
+  
+  // Right: 6 horizontal posts (posts 4-9)
+  const rightPosts = displayPosts.slice(4, 10);
 
   return (
     <section className="py-16 bg-[#f9fafb] border-b border-gray-100">
       <div className="max-w-[1400px] mx-auto px-6 md:px-16 lg:px-20">
-        <div className="relative">
-          {/* Scrollable Container */}
-          <div 
-            ref={scrollRef}
-            className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4"
-            style={{ 
-              scrollbarWidth: 'none',
-              msOverflowStyle: 'none',
-            }}
-          >
-            {displayPosts.map((post) => (
-              <div 
-                key={post.slug}
-                className="flex-shrink-0 w-[85%] sm:w-[45%] md:w-[32%] lg:w-[23%] snap-start"
-              >
-                <FeatureBlogCard post={post} />
-              </div>
+        {/* Desktop: 3 Column Grid - 1:2:1 ratio */}
+        <div className="hidden md:flex gap-4">
+          {/* Left: 3 Square Posts Stacked - 1 unit */}
+          <div className="flex-1 flex flex-col gap-4">
+            {leftPosts.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
+                <div className="relative w-full aspect-square mb-2 overflow-hidden">
+                  {post.image && (
+                    <img
+                      src={post.image}
+                      alt={post.imageAlt || post.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  )}
+                </div>
+                {post.category && (
+                  <p className="text-xs uppercase tracking-wider text-gray-600 mb-1">
+                    {post.category}
+                  </p>
+                )}
+                <h3 className="text-sm font-medium text-gray-900 group-hover:opacity-70 transition-opacity line-clamp-2">
+                  {post.title}
+                </h3>
+              </Link>
             ))}
           </div>
-
-          {/* Navigation Arrows - Desktop Only */}
-          {canScrollLeft && (
-            <button
-              onClick={() => scroll('left')}
-              className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors z-10"
-              aria-label="Scroll left"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
+          
+          {/* Middle: 1 Tall Pillar Post - 2 units */}
+          <div className="flex-[2]">
+            {pillarPost && (
+              <Link href={`/blog/${pillarPost.slug}`} className="block group h-full">
+                <div className="relative w-full h-full mb-3 overflow-hidden">
+                  {pillarPost.image && (
+                    <img
+                      src={pillarPost.image}
+                      alt={pillarPost.imageAlt || pillarPost.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  )}
+                </div>
+                {pillarPost.category && (
+                  <p className="text-xs uppercase tracking-wider text-gray-600 mb-2">
+                    {pillarPost.category}
+                  </p>
+                )}
+                <h3 
+                  className="text-2xl text-gray-900 group-hover:opacity-70 transition-opacity"
+                  style={{ fontFamily: 'Larken, Georgia, serif' }}
+                >
+                  {pillarPost.title}
+                </h3>
+                {pillarPost.author && (
+                  <p className="text-xs text-gray-600 mt-2 uppercase tracking-wider">
+                    BY {pillarPost.author.toUpperCase()}
+                  </p>
+                )}
+              </Link>
+            )}
+          </div>
+          
+          {/* Right: 6 Horizontal Posts - 1 unit - IMAGE ON RIGHT */}
+          <div className="flex-1 flex flex-col gap-6">
+            {rightPosts.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
+                <div className="flex gap-3 items-start">
+                  {/* Text Left */}
+                  <div className="flex-1 min-w-0">
+                    {post.category && (
+                      <p className="text-xs uppercase tracking-wider text-gray-600 mb-1">
+                        {post.category}
+                      </p>
+                    )}
+                    <h4 className="text-sm font-medium text-gray-900 group-hover:opacity-70 transition-opacity line-clamp-3">
+                      {post.title}
+                    </h4>
+                    {post.author && (
+                      <p className="text-xs text-gray-600 mt-1 uppercase tracking-wider">
+                        BY {post.author.toUpperCase()}
+                      </p>
+                    )}
+                  </div>
+                  
+                  {/* Square Image Right */}
+                  <div className="relative w-24 h-24 flex-shrink-0 overflow-hidden">
+                    {post.image && (
+                      <img
+                        src={post.image}
+                        alt={post.imageAlt || post.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    )}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+        
+        {/* Mobile: Vertical Stack */}
+        <div className="md:hidden flex flex-col gap-6">
+          {/* Pillar Post First */}
+          {pillarPost && (
+            <Link href={`/blog/${pillarPost.slug}`} className="block group">
+              <div className="relative w-full aspect-[4/5] mb-3 overflow-hidden">
+                {pillarPost.image && (
+                  <img
+                    src={pillarPost.image}
+                    alt={pillarPost.imageAlt || pillarPost.title}
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </div>
+              {pillarPost.category && (
+                <p className="text-xs uppercase tracking-wider text-gray-600 mb-2">
+                  {pillarPost.category}
+                </p>
+              )}
+              <h3 
+                className="text-xl text-gray-900"
+                style={{ fontFamily: 'Larken, Georgia, serif' }}
+              >
+                {pillarPost.title}
+              </h3>
+            </Link>
           )}
-
-          {canScrollRight && (
-            <button
-              onClick={() => scroll('right')}
-              className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 items-center justify-center bg-white rounded-full shadow-lg hover:bg-gray-50 transition-colors z-10"
-              aria-label="Scroll right"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          )}
+          
+          {/* Left Posts */}
+          {leftPosts.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
+              <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">
+                {post.image && (
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt || post.title}
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </div>
+              {post.category && (
+                <p className="text-xs uppercase tracking-wider text-gray-600 mb-1">
+                  {post.category}
+                </p>
+              )}
+              <h4 className="text-base font-medium text-gray-900">
+                {post.title}
+              </h4>
+            </Link>
+          ))}
+          
+          {/* Right Posts */}
+          {rightPosts.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
+              <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">
+                {post.image && (
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt || post.title}
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </div>
+              {post.category && (
+                <p className="text-xs uppercase tracking-wider text-gray-600 mb-1">
+                  {post.category}
+                </p>
+              )}
+              <h4 className="text-base font-medium text-gray-900">
+                {post.title}
+              </h4>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

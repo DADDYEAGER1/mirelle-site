@@ -4,45 +4,73 @@ title: "Jelly Valentine Nails: A Study in Translucent Elegance"
 excerpt: "Master jelly Valentine nails through opacity control and layering techniques. Discover translucent Valentine designs, glass-like finishes, and sheer polish application for dimensional depth."
 date: "2026-01-05T14:00:00-05:00"
 dateModified: "2026-01-05T14:00:00-05:00"
-author: "Mirellé Team"
+author: "Mirellè Team"
 category: "Nail Guides"
-tags: ["jelly valentine nails", "sheer heart nails", "translucent nail art", "milky pink base nails", "glass nail effect", "jelly gel nails valentine", "korean jelly nails", "see-through valentine nails"]
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/jelly-valentine-nails-translucent-elegance-hero.webp"
-imageAlt: "Jelly Valentine nails showing translucent pink with glass-like finish"
+tags: [
+  "jelly valentine nails",
+  "sheer heart nails",
+  "translucent nail art",
+  "milky pink base nails",
+  "glass nail effect",
+  "jelly gel nails valentine",
+  "korean jelly nails",
+  "see-through valentine nails"
+]
+image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp"
+imageAlt: "Tomato red Valentine nails featuring vibrant orange-based warm red with glossy modern finish"
 imageWidth: 1080
 imageHeight: 1080
 readTime: "7 min"
-canonical: "https://mirelleinspo.com/blog/jelly-valentine-nails"
+canonical: "https://mirelleinspo.com/blog/tomato-red-valentine-nails"
 template: "split-left"
-wordCount: 1456
+wordCount: 1400
 topicalMap:
   position: "cluster"
   parentPillar: "valentine-nails-2026"
-  relatedClusters: ["valentine-french-tip-nails", "3d-heart-valentine-nails", "aura-valentine-nails"]
-  primaryKeyword: "jelly valentine nails"
+  relatedClusters: [
+    "red-chrome-valentine-nails",
+    "velvet-cat-eye-valentine-nails",
+    "mismatched-valentine-nails"
+  ]
+  primaryKeyword: "tomato red nails"
+  secondaryKeywords: [
+    "orange-red manicure",
+    "warm red polish",
+    "2026 red nail trend",
+    "modern red nails"
+  ]
   searchIntent: "informational"
-  topicalBoundary: "Translucent nail techniques and opacity control for Valentine jelly polish designs"
+  contentType: "trend-analysis"
+  topicalBoundary: "Tomato red nail color for Valentine's Day 2026 covering warm undertone science, trend validation, and modern red alternatives to classic Valentine reds"
   hierarchyLevel: 2
+  semanticRelationships:
+    technique: ["color theory application", "undertone matching", "warm tone selection", "skin tone coordination"]
+    style: ["modern red", "orange-based red", "contemporary valentine", "vibrant finish", "glossy modern"]
+    occasions: ["trendy date", "modern valentine", "fashion-forward event", "statement look"]
+    relatedTechniques: ["classic red comparison", "cool vs warm reds", "color wheel positioning"]
+  contentMetrics:
+    technicalComplexity: "beginner"
+    timeToImplement: "20 min"
+    requiredSkills: ["basic polish application", "color selection", "skin tone awareness"]
+    requiredTools: ["tomato red polish", "base coat", "top coat", "cleanup brush"]
+navigationContext:
+  pillarPost:
+    slug: "valentine-nails-2026"
+    title: "Valentine's Day Nails 2026: 10 Trends Worth Your Attention"
 galleryImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/opacity-control-layering-progression-guide.webp"
-    alt: "Opacity control showing one coat to four coat jelly polish progression"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
+    alt: "Side by side comparison showing tomato red versus classic red nail polish undertone differences"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/milky-pink-valentine-jelly-palette.webp"
-    alt: "Milky pink sheer cranberry valentine jelly nail color palette"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
+    alt: "Tomato red nail polish swatches on warm medium and olive skin tones demonstrating flattering effect"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/jelly-french-tips-translucent-valentine.webp"
-    alt: "Jelly French tips with translucent pink on sheer nude base"
+  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
+    alt: "Color theory wheel showing tomato red positioning as orange-based red versus blue-based classic"
     width: 800
     height: 800
-carouselImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/sheer-single-tone-date-night-elegance.webp"
-    alt: "Sheer single tone jelly nails in one coat for date night elegance"
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/buildable-gradient-opacity-variation.webp"
-    alt: "Buildable gradient showing nail to nail opacity variation technique"
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/encased-hearts-jelly-suspension-layers.webp"
-    alt: "Encased heart embellishments suspended in translucent jelly layers"
+
 ---
 
 <strong>Jelly Valentine nails</strong> achieve dimensional elegance through controlled translucency that allows light passing through multiple sheer layers. The technique employs semi-transparent gel or polish formulations that build color gradually, creating glass-like finish where nail bed remains partially visible beneath tinted clarity. Unlike opaque Valentine designs that cover nails completely, <strong>jelly Valentine nails</strong> embrace transparency as aesthetic choice—the vulnerability of see-through color communicates romantic subtlety aligned with contemporary minimalism.

@@ -4,9 +4,18 @@ title: "Pink Cat Eye Valentine Nails: Magnetic Shimmer"
 excerpt: "Master pink cat eye nail technique through precise magnetic positioning and particle manipulation that creates dimensional Valentine shimmer with luminous depth."
 date: "2026-01-15T14:00:00-05:00"
 dateModified: "2026-01-15T14:00:00-05:00"
-author: "Mirellé Team"
+author: "Mirellè Team"
 category: "Nail Art"
-tags: ["pink cat eye Valentine nails", "magnetic Valentine nails pink", "cat eye gel polish Valentine", "pink magnetic gel Valentine nails", "rose pink cat eye nails", "blush pink magnetic nails", "dimensional shimmer nails", "Valentine cat eye manicure"]
+tags: [
+  "pink cat eye Valentine nails",
+  "magnetic Valentine nails pink",
+  "cat eye gel polish Valentine",
+  "pink magnetic gel Valentine nails",
+  "rose pink cat eye nails",
+  "blush pink magnetic nails",
+  "dimensional shimmer nails",
+  "Valentine cat eye manicure"
+]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-valentine-nails-magnetic-shimmer.webp"
 imageAlt: "Pink cat eye Valentine nails featuring dimensional magnetic shimmer with luminous light-reflecting effect"
 imageWidth: 1080
@@ -18,11 +27,36 @@ wordCount: 1600
 topicalMap:
   position: "cluster"
   parentPillar: "valentine-nails-2026"
-  relatedClusters: ["velvet-cat-eye-valentine-nails", "3d-heart-valentine-nails", "valentine-french-tip-nails"]
+  relatedClusters: [
+    "velvet-cat-eye-valentine-nails",
+    "3d-heart-valentine-nails",
+    "valentine-french-tip-nails"
+  ]
   primaryKeyword: "pink cat eye Valentine nails"
+  secondaryKeywords: [
+    "magnetic Valentine nails pink",
+    "cat eye gel polish Valentine",
+    "rose pink cat eye nails",
+    "dimensional shimmer nails"
+  ]
   searchIntent: "informational"
+  contentType: "tutorial"
   topicalBoundary: "Pink magnetic gel nail tutorial for Valentine's Day covering cat eye technique, magnet positioning, heart designs, and troubleshooting particle alignment"
   hierarchyLevel: 2
+  semanticRelationships:
+    technique: ["magnetic positioning", "particle manipulation", "dimensional shimmer", "magnet hovering", "flash cure timing"]
+    style: ["luminous depth", "light-reflecting effect", "rose pink", "blush pink", "cat eye line"]
+    occasions: ["romantic evening", "valentine date", "elegant dinner", "special occasion"]
+    relatedTechniques: ["velvet cat eye", "chrome finish", "magnetic gel application"]
+  contentMetrics:
+    technicalComplexity: "intermediate"
+    timeToImplement: "75 min"
+    requiredSkills: ["gel polish application", "magnet control", "curing timing", "particle alignment"]
+    requiredTools: ["pink magnetic gel", "cylindrical magnet", "LED lamp", "dual-ended cat eye magnet", "base coat", "top coat"]
+navigationContext:
+  pillarPost:
+    slug: "valentine-nails-2026"
+    title: "Valentine's Day Nails 2026: 10 Trends Worth Your Attention"
 galleryImages:
   - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/cat-eye-magnet-positioning-technique-distance.webp"
     alt: "Cat eye magnet positioning showing proper two to three millimeter hover distance above nail"
@@ -36,13 +70,6 @@ galleryImages:
     alt: "Heart-shaped cat eye design using paperclip magnet technique for Valentine nail art"
     width: 800
     height: 800
-carouselImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/cat-eye-magnet-positioning-technique-distance.webp"
-    alt: "Cat eye magnet positioning showing proper two to three millimeter hover distance above nail"
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-particle-alignment-magnetic-field.webp"
-    alt: "Magnetic particles aligning in pink gel polish creating dimensional cat eye shimmer effect"
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-cat-eye-valentine-nails/valentine-heart-cat-eye-paperclip-magnet-technique.webp"
-    alt: "Heart-shaped cat eye design using paperclip magnet technique for Valentine nail art"
 tutorialSteps:
   - position: 1
     name: "Prepare Nail Surface"
@@ -71,9 +98,22 @@ tutorialMetadata:
   estimatedCost:
     currency: "USD"
     value: "35"
-  tools: ["cylindrical magnet tool", "LED nail lamp", "dual-ended cat eye magnet", "paperclip for heart designs"]
-  supplies: ["pink magnetic gel polish", "gel base coat", "no-wipe gel top coat", "nail dehydrator", "cuticle oil"]
+  tools: [
+    "cylindrical magnet tool",
+    "LED nail lamp",
+    "dual-ended cat eye magnet",
+    "paperclip for heart designs"
+  ]
+  supplies: [
+    "pink magnetic gel polish",
+    "gel base coat",
+    "no-wipe gel top coat",
+    "nail dehydrator",
+    "cuticle oil"
+  ]
+
 ---
+
 
 <strong>Pink cat eye Valentine nails</strong> create dimensional shimmer through magnetic particle manipulation. The technique: iron particles suspended in gel polish align when magnet approaches creating luminous line that refracts light. <strong>Pink cat eye Valentine nails</strong> achieve depth impossible with standard polish—particles shift position producing multidimensional glow changing with viewing angle. <strong>Pink cat eye Valentine nails</strong> suit Valentine aesthetics through romantic pink palette combined with sophisticated light-play effect replacing flat color with dimensional elegance.
 

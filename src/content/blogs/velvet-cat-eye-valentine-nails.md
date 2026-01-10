@@ -4,9 +4,18 @@ title: "Velvet Cat Eye Nails: Master the Matte Shimmer Effect"
 excerpt: "Master velvet cat eye nails with magnetic diffusion techniques. Learn burgundy Valentine palettes, parallel magnet placement, and textured finish application for dimensional depth."
 date: "2026-01-05T13:00:00-05:00"
 dateModified: "2026-01-05T13:00:00-05:00"
-author: "Mirellé Team"
+author: "Mirellè Team"
 category: "Nail Tutorials"
-tags: ["velvet cat eye nails", "velvet texture nails", "burgundy cat eye", "matte shimmer nails", "deep red cat eye", "textured magnetic nails", "velvet valentine nails", "wine cat eye nails"]
+tags: [
+  "velvet cat eye nails",
+  "velvet texture nails",
+  "burgundy cat eye",
+  "matte shimmer nails",
+  "deep red cat eye",
+  "textured magnetic nails",
+  "velvet valentine nails",
+  "wine cat eye nails"
+]
 image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-cat-eye-valentine-nails-burgundy-hero.webp"
 imageAlt: "Velvet cat eye nails in deep burgundy with matte shimmer texture finish"
 imageWidth: 1080
@@ -18,11 +27,36 @@ wordCount: 1594
 topicalMap:
   position: "cluster"
   parentPillar: "valentine-nails-2026"
-  relatedClusters: ["pink-cat-eye-valentine-nails", "red-chrome-valentine-nails", "3d-heart-valentine-nails"]
+  relatedClusters: [
+    "pink-cat-eye-valentine-nails",
+    "red-chrome-valentine-nails",
+    "3d-heart-valentine-nails"
+  ]
   primaryKeyword: "velvet cat eye nails"
+  secondaryKeywords: [
+    "velvet texture nails",
+    "burgundy cat eye",
+    "matte shimmer nails",
+    "textured magnetic nails"
+  ]
   searchIntent: "informational"
+  contentType: "tutorial"
   topicalBoundary: "Velvet cat eye magnetic technique and textured finish application for Valentine nail designs"
   hierarchyLevel: 2
+  semanticRelationships:
+    technique: ["magnetic diffusion", "parallel magnet placement", "side-to-side movement", "layer building", "particle dispersion"]
+    style: ["velvet texture", "matte shimmer", "burgundy depth", "wine tones", "diffused shimmer"]
+    occasions: ["sophisticated valentine", "elegant evening", "luxe date night", "refined romance"]
+    relatedTechniques: ["pink cat eye", "chrome finish", "regular cat eye comparison"]
+  contentMetrics:
+    technicalComplexity: "advanced"
+    timeToImplement: "45 min"
+    requiredSkills: ["magnetic gel application", "parallel magnet control", "diffusion technique", "layer building"]
+    requiredTools: ["burgundy magnetic gel", "magnet wand", "LED lamp", "cleanup brush", "optional black base"]
+navigationContext:
+  pillarPost:
+    slug: "valentine-nails-2026"
+    title: "Valentine's Day Nails 2026: 10 Trends Worth Your Attention"
 galleryImages:
   - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-versus-regular-cat-eye-comparison.webp"
     alt: "Velvet cat eye versus regular cat eye showing diffused shimmer comparison"
@@ -36,13 +70,6 @@ galleryImages:
     alt: "Magnetic gel polish and magnet wand tools for velvet technique"
     width: 800
     height: 800
-carouselImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/parallel-magnet-hovering-technique-demonstration.webp"
-    alt: "Parallel magnet hovering technique showing proper distance for particle diffusion"
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/velvet-layering-intensity-comparison.webp"
-    alt: "Velvet cat eye layering showing depth build from one to three coats"
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/velvet-cat-eye-valentine-nails/concentrated-spots-versus-proper-diffusion.webp"
-    alt: "Common mistake showing concentrated shimmer spots versus proper velvet diffusion"
 tutorialSteps:
   - position: 1
     name: "Apply Base Foundation"
@@ -71,8 +98,19 @@ tutorialMetadata:
   estimatedCost:
     currency: "USD"
     value: "25"
-  tools: ["magnet wand", "LED cure lamp", "cleanup brush", "lint-free wipes"]
-  supplies: ["magnetic gel polish burgundy/wine", "gel base coat", "optional black base", "matte or glossy topcoat"]
+  tools: [
+    "magnet wand",
+    "LED cure lamp",
+    "cleanup brush",
+    "lint-free wipes"
+  ]
+  supplies: [
+    "magnetic gel polish burgundy/wine",
+    "gel base coat",
+    "optional black base",
+    "matte or glossy topcoat"
+  ]
+
 ---
 
 <strong>Velvet cat eye nails</strong> combine magnetic gel technology with textured finish application, creating dimensional surface that appears simultaneously matte and luminous. Unlike traditional cat eye that produces single reflective line, <strong>velvet texture nails</strong> diffuse magnetic particles across entire nail surface through parallel magnet movement. The technique generates all-over hazy shimmer resembling crushed velvet fabric—plush appearance where light refracts through textured depth rather than reflecting from glossy surface. <strong>Velvet cat eye nails</strong> for Valentine's emphasize deep burgundy, wine, and oxblood palettes that communicate sophisticated romance through understated dimensional richness.

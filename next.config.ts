@@ -174,8 +174,15 @@ const nextConfig: NextConfig = {
 
   productionBrowserSourceMaps: false,
 
+  // ✅ Ezoic ads.txt redirect
   async redirects() {
-    return [];
+    return [
+      {
+        source: '/ads.txt',
+        destination: 'https://srv.adstxtmanager.com/19390/mirelleinspo.com',
+        permanent: true,
+      },
+    ];
   },
 };
 

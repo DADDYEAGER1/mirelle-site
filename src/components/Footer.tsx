@@ -142,11 +142,11 @@ export default function Footer() {
                   Long Reads
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/posts" className="font-body text-[#f9fafb]/70 hover:text-[#f9fafb] transition-colors text-sm block">
                   Posts
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </AccordionSection>
 

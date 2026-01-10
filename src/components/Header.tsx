@@ -11,7 +11,7 @@ const ARTICLES_LINKS = [
 ];
 
 const SHOP_LINKS = [
-  { label: 'Valentine Designs', href: '/shop/valentine' },
+  // { label: 'Valentine Designs', href: '/shop/valentine' },
   { label: 'Winter Designs', href: '/shop/winter' },
   { label: 'Trendy Collections', href: '/shop/trendy' },
   { label: 'Fall Styles', href: '/shop/fall' },
@@ -276,13 +276,13 @@ export default function Header() {
               </div>
 
               {/* Posts - No Dropdown */}
-              <Link 
+              {/* <Link 
                 href="/posts"
                 style={{ fontFamily: 'General Sans, sans-serif' }}
                 className="text-sm tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
               >
                 POSTS
-              </Link>
+              </Link> */}
             </div>
           </div>
         </nav>
@@ -359,13 +359,13 @@ export default function Header() {
               onToggle={() => toggleDropdown('longreads')}
             />
             
-            <Link 
+            {/* <Link 
               href="/posts"
               style={{ fontFamily: 'General Sans, sans-serif' }}
               className="text-xs tracking-wider uppercase text-[#f9fafb] hover:opacity-70 transition-opacity"
             >
               POSTS
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

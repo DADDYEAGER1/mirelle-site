@@ -290,7 +290,7 @@ export default function HomePage() {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <Link 
-                href="/trends"
+                href="/topics/seasonal-trends"
                 className="group border border-foreground/10 p-8 hover:border-foreground/30 transition-all"
               >
                 <h3 className="font-heading text-xl text-foreground mb-3">Trends</h3>
@@ -303,7 +303,7 @@ export default function HomePage() {
               </Link>
 
               <Link 
-                href="/tutorials"
+                href="/topics/nail-art-guides"
                 className="group border border-foreground/10 p-8 hover:border-foreground/30 transition-all"
               >
                 <h3 className="font-heading text-xl text-foreground mb-3">Tutorials</h3>
@@ -316,7 +316,7 @@ export default function HomePage() {
               </Link>
 
               <Link 
-                href="/products"
+                href="/shop"
                 className="group border border-foreground/10 p-8 hover:border-foreground/30 transition-all"
               >
                 <h3 className="font-heading text-xl text-foreground mb-3">Products</h3>

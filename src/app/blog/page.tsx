@@ -124,7 +124,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
         </section>
 
         {/* Category Nav */}
-        <BlogCategoryNav />
+        {/* <BlogCategoryNav /> */}
 
         {/* Hero Posts - Cluster Based */}
         <MainHeroSection posts={heroPosts} />

@@ -91,7 +91,7 @@ export default async function InspoPage() {
         <InspoHero />
 
         {/* Category Filter Bar */}
-        <CategoryFilterBar />
+        {/* <CategoryFilterBar /> */}
 
         {/* This Week's Styles Carousel */}
         <FeaturedCarousel designs={designs.slice(0, 6)} />

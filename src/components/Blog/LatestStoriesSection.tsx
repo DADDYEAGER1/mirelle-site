@@ -14,7 +14,7 @@ export default function LatestStoriesSection({ posts }: LatestStoriesSectionProp
           className="text-3xl md:text-4xl text-center mb-12"
           style={{ fontFamily: 'Larken, Georgia, serif' }}
         >
-          — LATEST STORIES —
+          — LATEST ARTICLES —
         </h2>
 
         {/* Grid Layout - 3 columns on desktop with right whitespace */}

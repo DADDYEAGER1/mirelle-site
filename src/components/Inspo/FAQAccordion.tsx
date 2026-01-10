@@ -146,7 +146,7 @@ export function generateCategoryFAQs(categorySlug: string): FAQ[] {
     'coffin-ballerina-nails-2026': [
       {
         question: 'What is the difference between coffin and ballerina nails?',
-        answer: 'Coffin nails have sharper, more defined squared edges at the tip, while ballerina nails feature slightly softer, rounded corners. Both shapes have straight sides that taper to a flat tip. The difference is subtle—coffin is more dramatic and edgy, ballerina is softer and more feminine. Many people use the terms interchangeably.'
+        answer: 'Coffin nails have sharper, more defined squared edges at the tip, while ballerina nails feature slightly softer, rounded corners. Both shapes have straight sides that taper to a flat tip. The difference is subtle coffin is more dramatic and edgy, ballerina is softer and more feminine. Many people use the terms interchangeably.'
       },
       {
         question: 'Can I get coffin nails with short natural nails?',

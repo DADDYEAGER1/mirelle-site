@@ -501,7 +501,7 @@ Always let polish dry at least 3–5 minutes between coats.
 
 ### 2. Skipping Base Coat
 
-Base coat prevents staining and improves adhesion — never skip.
+Base coat prevents staining and improves adhesion   never skip.
 
 ### 3. Using Old or Separated Polish
 
@@ -533,7 +533,7 @@ Versatile for gradients, spiderweb tips, and vertical designs.
 
 ### Stiletto Nails
 
-Dramatic — ideal for blood drips, chrome finishes, and pointed tips.
+Dramatic   ideal for blood drips, chrome finishes, and pointed tips.
 
 ### Round Nails
 
@@ -571,7 +571,7 @@ See a dermatologist for discoloration or texture issues.
 
 ## Your Halloween Nail Journey
 
-Your Halloween nail journey begins with a single design — start simple and enjoy the process.  
+Your Halloween nail journey begins with a single design   start simple and enjoy the process.  
 These 35 easy Halloween nail designs offer something for every style and skill level.
 
 ---

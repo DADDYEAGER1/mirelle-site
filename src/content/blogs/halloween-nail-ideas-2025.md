@@ -264,7 +264,7 @@ A: Yes! Modern press-ons last 1-2 weeks with proper application. Perfect for ela
 
 **Q: What nail shape is best for Halloween designs?**
 
-A: Almond and coffin shapes offer most versatility. Almond works for minimalist and detailed designs, while coffin provides larger canvas for dramatic artwork. Every shape works—choose designs complementing your length.
+A: Almond and coffin shapes offer most versatility. Almond works for minimalist and detailed designs, while coffin provides larger canvas for dramatic artwork. Every shape works choose designs complementing your length.
 
 **Q: Can I do glow-in-the-dark Halloween nails at home?**
 
@@ -306,7 +306,7 @@ Explore our <a href="https://www.mirelleinspo.com/shop" class="text-blue-600 hov
 
 ## Final Thoughts
 
-Your Halloween nails are more than just a manicure—they're self-expression, conversation starters, and the perfect finishing touch to any spooky season look. Whether you choose minimalist ghost accents or go full-throttle with chrome vampire nails, pick designs that make you feel confident and festive.
+Your Halloween nails are more than just a manicure they're self-expression, conversation starters, and the perfect finishing touch to any spooky season look. Whether you choose minimalist ghost accents or go full-throttle with chrome vampire nails, pick designs that make you feel confident and festive.
 
 Remember: nail art doesn't have to be perfect to be impressive. Embrace the hand-painted, artsy quality that makes designs feel personal and unique.
 

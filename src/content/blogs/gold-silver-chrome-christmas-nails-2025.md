@@ -133,11 +133,11 @@ Whether you want full chrome mirror nails or subtle metallic accents, these 50 d
 
 The terms get thrown around interchangeably but gold silver chrome christmas nails use completely different products and techniques than glitter or metallic polish. Understanding the difference prevents buying wrong supplies and expecting results you'll never get.
 
-**Chrome powder** is fine pigment particles rubbed onto tacky gel top coat creating mirror reflection. The powder itself has no adhesive—it bonds to the sticky gel layer. Chrome appears smooth to touch with zero texture. Light reflects uniformly across the surface like looking in an actual mirror. Requires gel polish system and UV or LED lamp for curing.
+**Chrome powder** is fine pigment particles rubbed onto tacky gel top coat creating mirror reflection. The powder itself has no adhesive it bonds to the sticky gel layer. Chrome appears smooth to touch with zero texture. Light reflects uniformly across the surface like looking in an actual mirror. Requires gel polish system and UV or LED lamp for curing.
 
 **Glitter polish** contains sparkle particles suspended in liquid base that you paint on like regular polish. Each glitter piece reflects light individually creating scattered sparkle effect. Texture is bumpy and raised when you touch it. Works with regular or gel polish. Comes in bottles pre-mixed ready to apply without special techniques or equipment needed.
 
-**Metallic polish** is regular nail polish with metallic pigments mixed throughout the formula. Gives shiny finish but not mirror-like. More subtle than chrome with visible brush strokes. No special application required—just paint like any polish. Dries matte compared to chrome's reflective finish. Works on natural or gel nails without additional steps or curing lamps.
+**Metallic polish** is regular nail polish with metallic pigments mixed throughout the formula. Gives shiny finish but not mirror-like. More subtle than chrome with visible brush strokes. No special application required just paint like any polish. Dries matte compared to chrome's reflective finish. Works on natural or gel nails without additional steps or curing lamps.
 
 For Christmas specifically: chrome delivers that high-impact wow factor perfect for photos and parties. Glitter offers sparkle without technical skill requirements. Metallic polish provides understated shimmer appropriate for office environments while still feeling festive and holiday-appropriate.
 
@@ -163,7 +163,7 @@ Chrome powder application follows specific steps in exact order. Skip one step o
 
 **Step 5: Seal with regular gel top coat** - Apply thin layer of regular gel top coat (can be wipe or no-wipe formula). Avoid touching nail edges which causes lifting. Cure fully (60 seconds LED). Apply second top coat layer for extra protection. Cure again. This seals chrome and prevents rubbing off or chipping issues.
 
-The most common mistake is curing the no-wipe top coat for full 60 seconds. This hardens the surface too much and powder can't adhere. Thirty seconds leaves it slightly tacky—that tackiness is essential. Set a timer. Don't guess. Those 30 seconds make or break your entire manicure and determine success or failure.
+The most common mistake is curing the no-wipe top coat for full 60 seconds. This hardens the surface too much and powder can't adhere. Thirty seconds leaves it slightly tacky that tackiness is essential. Set a timer. Don't guess. Those 30 seconds make or break your entire manicure and determine success or failure.
 
 
 <img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gold-silver-chrome-christmas-nails-2025/chrome-powder-application-tutorial-step-by-step-silicone-applicator.jpg" alt="chrome powder being applied to christmas nails with silicone applicator showing buffing technique step by step tutorial" class="w-full rounded-lg shadow-lg" />

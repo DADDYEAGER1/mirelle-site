@@ -84,7 +84,7 @@ export function generateCategoryAbout(categorySlug: string): string {
       <p>Whether you prefer natural nails, gel extensions, or acrylic applications, almond shape flatters all finger types and skin tones. This universally flattering nail shape continues trending throughout 2026 as the perfect balance between elegance and practicality.</p>
     `,
     'coffin-ballerina-nails-2026': `
-      <p class="mb-4">Coffin nails, also known as ballerina nails, continue dominating fashion-forward nail trends in 2026 with their bold, dramatic silhouette. This distinctive shape features straight sides that taper to a flat, squared tip—creating striking statement nails perfect for showcasing intricate nail art, 3D embellishments, and trending finishes.</p>
+      <p class="mb-4">Coffin nails, also known as ballerina nails, continue dominating fashion-forward nail trends in 2026 with their bold, dramatic silhouette. This distinctive shape features straight sides that taper to a flat, squared tip creating striking statement nails perfect for showcasing intricate nail art, 3D embellishments, and trending finishes.</p>
       
       <p class="mb-4">The subtle difference between coffin and ballerina shapes lies in the tip softness. Coffin nails feature sharper, more defined squared edges, while ballerina nails have slightly softer, rounded corners. Both variations provide extended nail bed canvas ideal for complex designs including glass effects, chrome finishes, gothic elegance, and jeweled accents trending on runways and social media.</p>
       
@@ -106,7 +106,7 @@ export function generateCategoryAbout(categorySlug: string): string {
       <p>Valentine's nails in 2026 celebrate love through artistic expression, combining classic romance with innovative nail art techniques. Whether you prefer subtle elegance or bold romantic statements, this season offers endless inspiration for expressing love through beautiful nail art.</p>
     `,
     'ombre-gradient-nails-2026': `
-      <p class="mb-4">Ombré and gradient nail designs dominate 2026 trends with viral aura nails leading the aesthetic revolution. This technique creates seamless color transitions from light to dark, multiple color halos, or horizontal gradient effects—offering endless creative possibilities for nail artists and enthusiasts alike.</p>
+      <p class="mb-4">Ombré and gradient nail designs dominate 2026 trends with viral aura nails leading the aesthetic revolution. This technique creates seamless color transitions from light to dark, multiple color halos, or horizontal gradient effects offering endless creative possibilities for nail artists and enthusiasts alike.</p>
       
       <p class="mb-4">The aura nail trend, dubbed "Northern Lights nails," creates multi-dimensional glowing effects using 2-4 complementary colors blended in concentric halos. This ethereal technique works beautifully with sunset palettes (orange-pink-purple), galaxy themes (navy-purple-pink), and nature-inspired combinations (sage-mint-cream). The dimensional glow effect catches light beautifully, creating dynamic look that changes with movement and lighting.</p>
       
@@ -125,7 +125,7 @@ export function generateCategoryAbout(categorySlug: string): string {
       
       <p class="mb-4">Application techniques have evolved with striping tape ensuring perfectly straight lines, stamping plates creating intricate tip designs, and gel polish providing 2-3 week wear. For special occasions, glitter French tips add sparkle, ombré French creates soft color transitions, and embellished French incorporates pearls or rhinestones for luxury aesthetic.</p>
       
-      <p>French tips remain timelessly versatile choice suitable for brides, professionals, and classic elegance seekers. The technique's adaptability allows customization for any occasion—from barely-there micro tips for daily wear to dramatic colored or embellished tips for special events. In 2026, French tips prove that classics evolve while maintaining their essential sophistication.</p>
+      <p>French tips remain timelessly versatile choice suitable for brides, professionals, and classic elegance seekers. The technique's adaptability allows customization for any occasion from barely-there micro tips for daily wear to dramatic colored or embellished tips for special events. In 2026, French tips prove that classics evolve while maintaining their essential sophistication.</p>
     `
   };
 

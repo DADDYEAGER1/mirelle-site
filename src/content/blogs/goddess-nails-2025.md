@@ -171,7 +171,7 @@ Instagram hashtags tell the same story. The tag #goddessnails went from a few th
 
 **Greek mythology resurgence** - Shows like Percy Jackson, fashion runways doing ancient Greece collections, and home decor trends leaning into marble and gold accents. Goddess nails fit perfectly into that cultural zeitgeist.
 
-**Divine feminine energy** - Ashlina Kaposta, a lifestyle blogger specializing in goddess aesthetics, notes: "Goddess nails are more than a trend—they're a statement. This summer, dare to wear something divine." The trend connects to broader movements around feminine spirituality and self-expression.
+**Divine feminine energy** - Ashlina Kaposta, a lifestyle blogger specializing in goddess aesthetics, notes: "Goddess nails are more than a trend they're a statement. This summer, dare to wear something divine." The trend connects to broader movements around feminine spirituality and self-expression.
 
 The celebrity adoption definitely helped too. When beauty influencers and style icons showed up with pearl-studded gold nails, that was the mainstream stamp of approval. Suddenly it wasn't just a niche nail art trend anymore - it was EVERYWHERE.
 

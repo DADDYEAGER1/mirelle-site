@@ -1,65 +1,52 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // ✅ Image Optimization - FIXED with wildcard patterns
+  // ✅ Image Optimization
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 31536000,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    
-    // Using remotePatterns with WILDCARD to allow all Cloudinary paths
+
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        // NO pathname restriction - allows ALL cloudinary paths
+        protocol: "https",
+        hostname: "res.cloudinary.com",
       },
       {
-        protocol: 'https',
-        hostname: 'mirelleinspo.com',
+        protocol: "https",
+        hostname: "mirelleinspo.com",
       },
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
       {
-        protocol: 'https',
-        hostname: 'm.media-amazon.com',
+        protocol: "https",
+        hostname: "m.media-amazon.com",
       },
       {
-        protocol: 'https',
-        hostname: '*.media-amazon.com',
+        protocol: "https",
+        hostname: "*.media-amazon.com",
       },
     ],
-    
-    // Don't disable optimization
+
     unoptimized: false,
-    
-    // Allow SVG with security
     dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    contentDispositionType: "attachment",
+    contentSecurityPolicy:
+      "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // ✅ Headers for SEO, Security, and Caching
+  // ✅ Headers
   async headers() {
     return [
       {
         source: "/:path*",
         headers: [
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "X-XSS-Protection",
-            value: "1; mode=block",
-          },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "X-XSS-Protection", value: "1; mode=block" },
           {
             key: "Referrer-Policy",
             value: "strict-origin-when-cross-origin",
@@ -109,52 +96,49 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Enable SWR for ISR with optimized settings
+  // ISR tuning
   onDemandEntries: {
     maxInactiveAge: 60 * 1000,
     pagesBufferLength: 5,
   },
 
-  // Performance optimizations
   compress: true,
   generateEtags: true,
   trailingSlash: false,
   reactStrictMode: true,
 
-  // Experimental features
   experimental: {
     optimizePackageImports: ["lodash-es", "fuse.js"],
     optimizeCss: true,
   },
 
-  // Webpack optimization
   webpack: (config, { isServer, dev }) => {
     if (!isServer && !dev) {
       config.optimization = {
         ...config.optimization,
         splitChunks: {
-          chunks: 'all',
+          chunks: "all",
           cacheGroups: {
             default: false,
             vendors: false,
             vendor: {
-              name: 'vendor',
-              chunks: 'all',
+              name: "vendor",
+              chunks: "all",
               test: /node_modules/,
               priority: 20,
             },
             common: {
-              name: 'common',
+              name: "common",
               minChunks: 2,
-              chunks: 'all',
+              chunks: "all",
               priority: 10,
               reuseExistingChunk: true,
               enforce: true,
             },
             lib: {
               test: /[\\/]node_modules[\\/](react|react-dom|next)[\\/]/,
-              name: 'lib',
-              chunks: 'all',
+              name: "lib",
+              chunks: "all",
               priority: 30,
             },
           },
@@ -163,10 +147,9 @@ const nextConfig: NextConfig = {
       };
     }
 
-    // Handle SVGs as React components
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack'],
+      use: ["@svgr/webpack"],
     });
 
     return config;
@@ -174,21 +157,21 @@ const nextConfig: NextConfig = {
 
   productionBrowserSourceMaps: false,
 
-  // ✅ Redirects
+  // ✅ Redirects (301)
   async redirects() {
     return [
       {
-        source: '/ads.txt',
-        destination: 'https://srv.adstxtmanager.com/19390/mirelleinspo.com',
+        source: "/ads.txt",
+        destination: "https://srv.adstxtmanager.com/19390/mirelleinspo.com",
         permanent: true,
       },
       {
-        source: '/posts/test2',
-        destination: '/blog/valentine-nails-2026',
-        permanent: true, // 301
+        source: "/posts/test2",
+        destination: "/blog/valentine-nails-2026",
+        permanent: true,
       },
     ];
   },
-
+};
 
 export default nextConfig;

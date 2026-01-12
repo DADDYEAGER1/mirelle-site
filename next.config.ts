@@ -174,7 +174,7 @@ const nextConfig: NextConfig = {
 
   productionBrowserSourceMaps: false,
 
-  // ✅ Ezoic ads.txt redirect
+  // ✅ Redirects
   async redirects() {
     return [
       {
@@ -182,8 +182,13 @@ const nextConfig: NextConfig = {
         destination: 'https://srv.adstxtmanager.com/19390/mirelleinspo.com',
         permanent: true,
       },
+      {
+        source: '/posts/test2',
+        destination: '/blog/valentine-nails-2026',
+        permanent: true, // 301
+      },
     ];
   },
-};
+
 
 export default nextConfig;

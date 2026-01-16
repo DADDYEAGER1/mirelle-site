@@ -252,6 +252,8 @@ export default function RootLayout({
         
         {/* AdSense verification meta tag */}
         <meta name="google-adsense-account" content="ca-pub-1145734682794444" />
+        {/* Monetag verification meta tag */}
+        <meta name="monetag" content="e4064ffff6e5aa94ade00c5f4d0204f5"></meta>
       </head>
 
       <body 

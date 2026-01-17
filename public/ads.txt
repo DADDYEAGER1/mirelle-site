@@ -1,1 +1,5 @@
-# Redirect to Ezoic
+# Google AdSense
+google.com, pub-1145734682794444, DIRECT, f08c47fec0942fa0
+
+# Monetag
+monetag.com, 10479101, DIRECT

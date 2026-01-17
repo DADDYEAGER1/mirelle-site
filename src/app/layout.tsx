@@ -254,6 +254,8 @@ export default function RootLayout({
         <meta name="google-adsense-account" content="ca-pub-1145734682794444" />
         {/* Monetag verification meta tag */}
         <meta name="monetag" content="e4064ffff6e5aa94ade00c5f4d0204f5"></meta>
+        {/* popunder ads */}
+        <script>(function(s){s.dataset.zone='10479101',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
       </head>
 
       <body 

@@ -250,10 +250,22 @@ export default function RootLayout({
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
-        {/* AdSense verification meta tag */}
-        <meta name="google-adsense-account" content="ca-pub-1145734682794444" />
         {/* Monetag verification meta tag */}
         <meta name="monetag" content="e4064ffff6e5aa94ade00c5f4d0204f5" />
+        
+        {/* Monetag Pop-under Script */}
+        <Script
+          id="monetag-popunder"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(s){
+                s.dataset.zone="10479101";
+                s.src="https://al5sm.com/tag.min.js";
+              })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement("script")));
+            `,
+          }}
+        />
       </head>
 
       <body 
@@ -287,20 +299,6 @@ export default function RootLayout({
             });
           `}
         </Script>
-
-        {/* Monetag Pop-under Script */}
-        <Script
-          id="monetag-popunder"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(s){
-                s.dataset.zone="10479101";
-                s.src="https://al5sm.com/tag.min.js";
-              })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement("script")));
-            `,
-          }}
-        />
 
         {/* Ezoic Privacy Scripts */}
         {/* <Script

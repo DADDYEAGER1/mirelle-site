@@ -253,9 +253,8 @@ export default function RootLayout({
         {/* AdSense verification meta tag */}
         <meta name="google-adsense-account" content="ca-pub-1145734682794444" />
         {/* Monetag verification meta tag */}
-        <meta name="monetag" content="e4064ffff6e5aa94ade00c5f4d0204f5"></meta>
-        {/* popunder ads */}
-        <script>(function(s){s.dataset.zone="10479101",s.src="https://al5sm.com/tag.min.js"})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement("script")))</script>      </head>
+        <meta name="monetag" content="e4064ffff6e5aa94ade00c5f4d0204f5" />
+      </head>
 
       <body 
         className="antialiased"
@@ -288,26 +287,44 @@ export default function RootLayout({
             });
           `}
         </Script>
-          {/* Ezoic Privacy Scripts */}
-        <script
+
+        {/* Monetag Pop-under Script */}
+        <Script
+          id="monetag-popunder"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(s){
+                s.dataset.zone="10479101";
+                s.src="https://al5sm.com/tag.min.js";
+              })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement("script")));
+            `,
+          }}
+        />
+
+        {/* Ezoic Privacy Scripts */}
+        {/* <Script
           data-cfasync="false"
           src="https://cmp.gatekeeperconsent.com/min.js"
-        ></script>
-        <script
+          strategy="beforeInteractive"
+        />
+        <Script
           data-cfasync="false"
           src="https://the.gatekeeperconsent.com/cmp.min.js"
-        ></script>
+          strategy="beforeInteractive"
+        /> */}
 
-          {/* Ezoic Header Script */}
-        <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-        <script
+        {/* Ezoic Header Script */}
+        {/* <Script async src="//www.ezojs.com/ezoic/sa.min.js" />
+        <Script
+          id="ezoic-standalone"
           dangerouslySetInnerHTML={{
             __html: `
               window.ezstandalone = window.ezstandalone || {};
               ezstandalone.cmd = ezstandalone.cmd || [];
             `,
           }}
-        />
+        /> */}
 
         {/* Mobile web app meta */}
         <meta name="mobile-web-app-capable" content="yes" />

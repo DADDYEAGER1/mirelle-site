@@ -251,7 +251,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         
         {/* Monetag verification meta tag */}
-        <meta name="monetag" content="e4064ffff6e5aa94ade00c5f4d0204f5" />
+        {/* <meta name="monetag" content="e4064ffff6e5aa94ade00c5f4d0204f5" /> */}
         
         {/* Monetag Pop-under Script - COMMENTED OUT */}
         {/* <Script
@@ -268,7 +268,7 @@ export default function RootLayout({
         /> */}
         
         {/* Monetag New Script - Zone 10479464 */}
-        <Script
+        {/* <Script
           id="monetag-new-format"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
@@ -279,7 +279,7 @@ export default function RootLayout({
               })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement("script")));
             `,
           }}
-        />
+        /> */}
       </head>
 
       <body 

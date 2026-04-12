@@ -1,0 +1,291 @@
+{
+  "categories": {
+    "fall": {
+      "slug": "fall",
+      "name": "Fall Nail Collection",
+      "displayName": "Fall Nails",
+      "season": "Autumn",
+      "year": 2025,
+      "description": "Embrace autumn's warmth with rich mocha chrome, burgundy cat claw shapes, and cozy seasonal designs trending into 2026",
+      "heroImage": "/og-fall-2026-chrome-mocha.webp",
+      "gradientFrom": "amber-900",
+      "gradientVia": "orange-800",
+      "gradientTo": "red-900",
+      "emojis": ["🍂", "🍁", "🎃", "🌰"],
+      "ctas": ["Mocha Chrome", "Cozy Vibes", "Fall Glamour", "Harvest Beauty", "Warm Tones"],
+      "tldr": {
+        "summary": [
+          "53+ autumn designs: mocha chrome, burgundy cat claw, maple leaves trending 2026",
+          "Premium press-ons from $3.99 with free application kit",
+          "Last 2-3 weeks, reusable 5-10 times, zero nail damage",
+          "Ships within 24 hours for fall events and seasonal deadlines"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear guaranteed", "Easy 5-min removal"]
+      },
+      "seo": {
+        "ogImage": "/og-fall-2026-chrome-mocha.webp",
+        "title": "Fall Nails 2026: 53+ Mocha Chrome Press-Ons from $3.99",
+        "description": "Shop trending fall 2026! 53+ mocha chrome, burgundy cat claw & maple designs. Premium press-ons $3.99. Free ship $35+. Last 2-3wks. Ships 24hrs!",
+        "keywords": "fall nails 2026, mocha chrome nails, autumn cat claw nails, fall press on nails, burgundy nails trending, thanksgiving nails 2026, pumpkin nails, maple leaf designs, autumn manicure, fall nail art 2026, cheap fall press ons, mocha mousse nails, cozy fall chrome"
+      },
+      "relatedCategories": ["christmas", "new-year", "trendy", "winter"],
+      "testimonials": [
+        {
+          "name": "Sarah M.",
+          "review": "The mocha chrome Maple Leaf designs are STUNNING for fall 2026! Everyone asks where I got them.",
+          "product": "Mocha Chrome Maple Leaf Design"
+        },
+        {
+          "name": "Emily R.",
+          "review": "Perfect fall vibes! The burgundy cat claw shape is so trendy and comfortable. Lasted 3 weeks!",
+          "product": "Fall Cat Claw Collection"
+        },
+        {
+          "name": "Jessica L.",
+          "review": "Best press-ons I've tried! The warm chrome tones are perfect for autumn. Amazing quality for $3.99!",
+          "product": "Autumn Chrome Press-On Set"
+        }
+      ]
+    },
+
+    "christmas": {
+      "slug": "christmas",
+      "name": "Christmas Nail Collection",
+      "displayName": "Christmas Nails",
+      "season": "Winter Holiday",
+      "year": 2025,
+      "description": "Celebrate holidays with festive 2026 trends: chrome snowflakes, 3D embellished designs, velvet finishes",
+      "heroImage": "/og-christmas-2026-chrome-3d.webp",
+      "gradientFrom": "red-900",
+      "gradientVia": "green-800",
+      "gradientTo": "red-800",
+      "emojis": ["🎄", "🎅", "❄️", "🎁"],
+      "ctas": ["Chrome Sparkle", "Festive Cheer", "3D Magic", "Joyful Nails", "Velvet Glam"],
+      "tldr": {
+        "summary": [
+          "63+ festive 2026 designs: chrome snowflakes, 3D embellishments, velvet finishes",
+          "Premium press-ons from $3.99 with holiday application kit",
+          "Last through all holiday parties, reusable for NYE celebrations",
+          "Ships within 24 hours - perfect for last-minute holiday needs"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear guaranteed", "Reusable for NYE"]
+      },
+      "seo": {
+        "ogImage": "/og-christmas-2026-chrome-3d.webp",
+        "title": "Christmas Nails 2026: 63+ Chrome 3D Press-Ons from $3.99",
+        "description": "Shop trending Christmas 2026! 63+ chrome snowflakes, 3D embellished & velvet designs. Premium press-ons $3.99. Free ship $35+. Ships 24hrs!",
+        "keywords": "christmas nails 2026, chrome snowflake nails, 3D christmas press ons, velvet holiday nails, festive nail designs 2026, cheap christmas nails, red and green chrome, santa nails 2026, xmas manicure trending, holiday nail art, christmas press ons under $10, 3D embellished nails"
+      },
+      "relatedCategories": ["winter", "new-year", "trendy", "fall"],
+      "testimonials": [
+        {
+          "name": "Amanda K.",
+          "review": "The chrome snowflake 3D details are INCREDIBLE! Got so many compliments at every party.",
+          "product": "Chrome 3D Snowflake Collection"
+        },
+        {
+          "name": "Rachel P.",
+          "review": "These velvet finish Christmas nails are stunning! Lasted through 5 holiday parties. Worth every penny!",
+          "product": "Velvet Holiday Sparkle Set"
+        },
+        {
+          "name": "Nicole T.",
+          "review": "Perfect for Christmas AND reused them for NYE! The 3D embellishments stayed on perfectly. Amazing!",
+          "product": "Christmas 3D Press-Ons"
+        }
+      ]
+    },
+
+    "winter": {
+      "slug": "winter",
+      "name": "Winter Nail Collection",
+      "displayName": "Winter Nails",
+      "season": "Winter",
+      "year": 2025,
+      "description": "Elegant winter 2026 trends: icy chrome blues, cat claw shapes, mocha velvet, sheer milky finishes",
+      "heroImage": "/og-winter-2026-chrome-cat-claw.webp",
+      "gradientFrom": "blue-900",
+      "gradientVia": "cyan-800",
+      "gradientTo": "slate-900",
+      "emojis": ["❄️", "⛄", "🌨️", "☃️"],
+      "ctas": ["Icy Chrome", "Mocha Velvet", "Winter Wonder", "Cat Claw Chic", "Milky Glam"],
+      "tldr": {
+        "summary": [
+          "57+ icy 2026 designs: chrome blues, cat claw shapes, mocha velvet, sheer milky",
+          "Premium press-ons from $3.99 with winter care kit",
+          "Pantone 2026 mocha mousse included in collection",
+          "Ships within 24 hours for winter season perfection"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "2-3 week wear", "Trending 2026 colors"]
+      },
+      "seo": {
+        "ogImage": "/og-winter-2026-chrome-cat-claw.webp",
+        "title": "Winter Nails 2026: 57+ Icy Chrome Cat Claw Press-Ons $3.99",
+        "description": "Shop winter 2026 trends! 57+ icy chrome, cat claw shapes, mocha velvet & milky designs. Pantone 2026 included. Premium $3.99. Ships 24hrs!",
+        "keywords": "winter nails 2026, icy chrome nails, cat claw winter nails, mocha velvet nails, milky nail designs, snowflake press ons, frosted chrome nails, mocha mousse pantone 2026, blue winter nails, winter cat claw manicure, best winter press ons, chrome winter designs"
+      },
+      "relatedCategories": ["christmas", "fall", "trendy", "new-year"],
+      "testimonials": [
+        {
+          "name": "Lauren S.",
+          "review": "The icy chrome blues in cat claw shape are PERFECT for 2026! So trendy and comfortable.",
+          "product": "Icy Chrome Cat Claw Collection"
+        },
+        {
+          "name": "Michelle D.",
+          "review": "Obsessed with the mocha velvet! It's the Pantone 2026 color and looks so elegant. Lasted 3 weeks!",
+          "product": "Mocha Velvet Elegance Set"
+        },
+        {
+          "name": "Sophia G.",
+          "review": "Best winter nails ever! The milky sheer finish is so chic. Cat claw shape is trendy and practical!",
+          "product": "Winter Milky Cat Claw Press-Ons"
+        }
+      ]
+    },
+
+    "halloween": {
+      "slug": "halloween",
+      "name": "Halloween Nail Collection",
+      "displayName": "Halloween Nails",
+      "season": "Fall Holiday",
+      "year": 2025,
+      "description": "Spooky 2026 trends: chrome ghosts, 3D spider webs, cat claw shapes, gothic glam designs",
+      "heroImage": "/og-halloween-2026-chrome-3d.webp",
+      "gradientFrom": "orange-900",
+      "gradientVia": "purple-800",
+      "gradientTo": "black",
+      "emojis": ["🎃", "👻", "🦇", "🕷️"],
+      "ctas": ["Chrome Spooky", "3D Haunting", "Creepy Cute", "Gothic Glam", "Cat Claw Scary"],
+      "tldr": {
+        "summary": [
+          "47+ spooky 2026 designs: chrome ghosts, 3D webs, cat claw shapes, gothic glam",
+          "Premium press-ons from $3.99 with Halloween party kit",
+          "Last through all costume parties, perfect for TikTok content",
+          "Ships within 24 hours for last-minute costume needs"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "Party-proof 2-3wk wear", "TikTok-worthy designs"]
+      },
+      "seo": {
+        "ogImage": "/og-halloween-2026-chrome-3d.webp",
+        "title": "Halloween Nails 2026: 47+ Chrome 3D Spooky Press-Ons $3.99",
+        "description": "Shop Halloween 2026 trending! 47+ chrome ghosts, 3D webs, cat claw & gothic designs. Premium press-ons $3.99. Free ship $35+. Ships 24hrs!",
+        "keywords": "halloween nails 2026, chrome ghost nails, 3D spider web press ons, cat claw halloween nails, spooky nail designs 2026, gothic chrome nails, pumpkin press ons, halloween manicure trending, creepy cute nails, best halloween press ons 2026, cheap spooky nails, TikTok halloween nails"
+      },
+      "relatedCategories": ["fall", "trendy", "christmas", "new-year"],
+      "testimonials": [
+        {
+          "name": "Brittany H.",
+          "review": "The chrome ghost 3D details are INSANE! My TikTok Halloween nails video went viral. Everyone loved them!",
+          "product": "Chrome 3D Ghost Collection"
+        },
+        {
+          "name": "Ashley W.",
+          "review": "Got SO many compliments at every Halloween party! The cat claw shape is perfect for spooky vibes.",
+          "product": "Cat Claw Haunting Beauty Set"
+        },
+        {
+          "name": "Megan C.",
+          "review": "Perfect for Halloween! Gothic chrome lasted through 4 parties. Orange and black combo is iconic!",
+          "product": "Gothic Chrome Halloween Press-Ons"
+        }
+      ]
+    },
+
+    "new-year": {
+      "slug": "new-year",
+      "name": "New Year Nail Collection",
+      "displayName": "New Year Nails",
+      "season": "Winter Holiday",
+      "year": 2025,
+      "description": "Glamorous 2026 NYE trends: chrome glitter, cat claw shapes, 3D jewels, midnight sparkle magic",
+      "heroImage": "/og-new-year-2026-chrome-glitter.webp",
+      "gradientFrom": "yellow-600",
+      "gradientVia": "purple-800",
+      "gradientTo": "pink-900",
+      "emojis": ["🎉", "✨", "🥂", "🎊"],
+      "ctas": ["Chrome Sparkle", "Cat Claw Party", "3D Jewel Glam", "Midnight Magic", "Glitter Goals"],
+      "tldr": {
+        "summary": [
+          "43+ glamorous 2026 designs: chrome glitter, cat claw shapes, 3D jewels, midnight sparkle",
+          "Premium press-ons from $4.99 with NYE celebration kit",
+          "Complete kits for countdown to 2026 celebrations",
+          "Ships within 24 hours for last-minute party prep"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "Party-proof 2-3wk wear", "Reusable for events"]
+      },
+      "seo": {
+        "ogImage": "/og-new-year-2026-chrome-glitter.webp",
+        "title": "New Year Nails 2026: 43+ Chrome Glitter Cat Claw Press-Ons $4.99",
+        "description": "Ring in 2026 trending! 43+ chrome glitter, cat claw shapes, 3D jewels & sparkle designs. Premium press-ons $4.99. Free ship $35+. Ships 24hrs!",
+        "keywords": "new year nails 2026, nye chrome glitter press ons, cat claw party nails, 3D jewel nails, new years nail designs 2026, sparkle press ons, celebration nails trending, nye manicure 2026, best new year press ons, midnight chrome nails, cheap party nails, countdown 2026 nails"
+      },
+      "relatedCategories": ["winter", "trendy", "christmas", "fall"],
+      "testimonials": [
+        {
+          "name": "Victoria B.",
+          "review": "PERFECT for NYE 2026! The chrome glitter with 3D jewels was exactly what I needed. So glamorous!",
+          "product": "Chrome Glitter 3D Jewel Collection"
+        },
+        {
+          "name": "Olivia M.",
+          "review": "These cat claw sparkle nails made my New Year's celebration even more special! Lasted 3 weeks!",
+          "product": "Cat Claw Midnight Magic Set"
+        },
+        {
+          "name": "Taylor J.",
+          "review": "So glamorous! Everyone at the party asked where I got my nails. Chrome glitter is STUNNING!",
+          "product": "NYE Chrome Glitter Press-Ons"
+        }
+      ]
+    },
+
+    "trendy": {
+      "slug": "trendy",
+      "name": "Trendy Nail Collection",
+      "displayName": "Trendy Nails",
+      "season": "Year-round",
+      "year": 2025,
+      "description": "Latest 2026 trends: chrome finishes, cat claw shapes, square tips, milky pastels, 3D art, popsicle hues",
+      "heroImage": "/og-trendy-2026-chrome-cat-claw.webp",
+      "gradientFrom": "pink-600",
+      "gradientVia": "purple-600",
+      "gradientTo": "blue-600",
+      "emojis": ["💅", "✨", "💖", "🌟"],
+      "ctas": ["Chrome Trend", "Cat Claw Chic", "Square Goals", "Milky Magic", "3D Fashion"],
+      "tldr": {
+        "summary": [
+          "67+ viral 2026 designs: chrome, cat claw, square, milky pastels, 3D art, popsicle hues",
+          "Premium press-ons from $3.99 with trending style guide",
+          "TikTok & Pinterest viral styles updated weekly",
+          "Ships within 24 hours to stay ahead of trends"
+        ],
+        "keyTakeaways": ["Free shipping $35+", "Viral TikTok styles", "Weekly new drops"]
+      },
+      "seo": {
+        "ogImage": "/og-trendy-2026-chrome-cat-claw.webp",
+        "title": "Trending Nails 2026: 67+ Chrome Cat Claw Viral Press-Ons $3.99",
+        "description": "Shop viral 2026 trends! 67+ chrome, cat claw, square, milky & 3D designs. TikTok & Pinterest trending. Premium press-ons $3.99. Ships 24hrs!",
+        "keywords": "trending nails 2026, chrome nails trending, cat claw press ons, square nails viral, milky nail designs, latest nail trends 2026, trendy press on nails, viral TikTok nails, modern press ons, popular nails 2026, fashion nails, 3D nail art trending, popsicle nail colors, Pinterest trending nails"
+      },
+      "relatedCategories": ["fall", "winter", "christmas", "new-year"],
+      "testimonials": [
+        {
+          "name": "Isabella F.",
+          "review": "Always on trend! The chrome cat claw designs are exactly what's viral on TikTok right now. Love it!",
+          "product": "Chrome Cat Claw Trending Collection"
+        },
+        {
+          "name": "Ava N.",
+          "review": "Love keeping up with 2026 trends! These square milky designs are perfect. Get compliments daily!",
+          "product": "Square Milky Modern Chic Set"
+        },
+        {
+          "name": "Emma R.",
+          "review": "Fashion-forward 3D designs that everyone asks about! Highly recommend. Best press-ons I've tried!",
+          "product": "3D Art Trendy Press-Ons"
+        }
+      ]
+    }
+  }
+}

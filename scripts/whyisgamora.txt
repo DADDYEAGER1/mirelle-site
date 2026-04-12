@@ -1,0 +1,419 @@
+# Scripts Usage Guide
+
+**Quick reference for all blog management scripts**
+
+---
+
+## 📊 Content Audit Script
+
+### What It Is:
+Health checker for your blog content
+
+### What It Does When You Run It:
+- Scans all blog posts
+- Finds posts older than 12 months
+- Shows missing metadata fields
+- Displays posts without images
+- Calculates overall health score (0-100)
+
+### How To Run:
+```bash
+node scripts/content-audit.js
+```
+
+### Use Cases:
+- **Weekly:** Check which posts need updating
+- **Monthly:** Generate health reports
+- **Before publishing:** Know your baseline quality
+
+### Example Output:
+```
+📊 Total Posts: 11
+💯 Health Score: 85/100
+⏰ 3 posts need updating
+🚨 2 posts missing fields
+```
+
+---
+
+## 🔧 Add Schema Fields Script
+
+### What It Is:
+Automatically adds missing SEO fields to posts
+
+### What It Does When You Run It:
+- Adds `canonical` URLs if missing
+- Adds `imageWidth` and `imageHeight` (1200x630 default)
+- Calculates `wordCount` from content
+- Adds `dateModified` field
+
+### How To Run:
+```bash
+# Preview changes first
+node scripts/add-schema-fields.js --dry-run
+
+# Apply changes
+node scripts/add-schema-fields.js
+```
+
+### Use Cases:
+- **One-time:** Run once after setup
+- **After bulk import:** Added 10+ posts at once
+- **New field added:** Need to add it to all posts
+
+### What Gets Added:
+```yaml
+canonical: "https://mirelleinspo.com/blog/your-post"
+imageWidth: 1200
+imageHeight: 630
+wordCount: 2450
+dateModified: "2025-10-29"
+```
+
+---
+
+## 📂 Update Categories Bulk Script
+
+### What It Is:
+Rename categories across multiple posts at once
+
+### What It Does When You Run It:
+- Shows all current categories (with `--list`)
+- Finds posts with old category name
+- Renames to new category name
+- Updates all matching posts
+
+### How To Run:
+```bash
+# See all categories
+node scripts/update-categories-bulk.js --list
+
+# Preview rename
+node scripts/update-categories-bulk.js --from "Old Name" --to "New Name" --dry-run
+
+# Apply rename
+node scripts/update-categories-bulk.js --from "Old Name" --to "New Name"
+```
+
+### Use Cases:
+- **Rebranding:** "Nail Tips" → "Nail Care Guide"
+- **Fixing typos:** "Sesonal Trends" → "Seasonal Trends"
+- **Merging categories:** Combine similar categories
+
+### Example:
+```
+Found 8 posts with "Seasonal Nail Trends"
+Renaming to "Seasonal Trends"
+✅ Updated 8 posts
+```
+
+---
+
+## 🔄 Regenerate Metadata Script
+
+### What It Is:
+Sync markdown frontmatter to JSON files
+
+### What It Does When You Run It:
+- Creates backup of existing JSON files
+- Reads all markdown files
+- Extracts metadata from frontmatter
+- Writes to 8 JSON files (titles, excerpts, tags, etc.)
+
+### How To Run:
+```bash
+# Preview changes
+node scripts/regenerate-metadata.js --dry-run
+
+# Apply with backup
+node scripts/regenerate-metadata.js
+
+# Apply without backup (risky)
+node scripts/regenerate-metadata.js --no-backup
+```
+
+### Use Cases:
+- **After bulk edits:** Edited 5+ markdown files manually
+- **Corrupted JSON:** JSON files got messed up
+- **After import:** Imported posts from another platform
+
+### Files Updated:
+- `titles.json`
+- `excerpts.json`
+- `tags.json`
+- `images.json`
+- `imageAlts.json`
+- `dateModified.json`
+- `tldr.json`
+- `faqItems.json`
+
+---
+
+## 🖼️ Update Image Paths Script
+
+### What It Is:
+Bulk change image URLs across all posts
+
+### What It Does When You Run It:
+- Finds all image paths in markdown
+- Replaces old path with new path
+- Updates `images.json` metadata
+- Works with gallery images too
+
+### How To Run:
+```bash
+# Replace path
+node scripts/update-image-paths.js --from "/old/" --to "/new/" --dry-run
+node scripts/update-image-paths.js --from "/old/" --to "/new/"
+
+# Add CDN prefix
+node scripts/update-image-paths.js --prefix "https://cdn.example.com" --dry-run
+node scripts/update-image-paths.js --prefix "https://cdn.example.com"
+```
+
+### Use Cases:
+- **CDN migration:** Moving to Cloudflare/AWS
+- **Folder reorganization:** `/images/` → `/assets/images/`
+- **Domain change:** Old domain → new domain
+
+### Example:
+```
+Before: /images/blog/hero.jpg
+After:  https://cdn.mirelleinspo.com/images/blog/hero.jpg
+✅ Updated 11 posts
+```
+
+---
+
+## ✅ Validate Canonicals Script
+
+### What It Is:
+Check and fix canonical URL issues
+
+### What It Does When You Run It:
+- Checks all posts have canonical URLs
+- Validates URL format (https, correct domain)
+- Finds duplicate canonicals
+- Auto-fixes issues (with `--fix` flag)
+
+### How To Run:
+```bash
+# Check for issues
+node scripts/validate-canonicals.js
+
+# Auto-fix issues
+node scripts/validate-canonicals.js --fix
+```
+
+### Use Cases:
+- **One-time setup:** Run once to fix all URLs
+- **Monthly check:** Catch human errors
+- **After domain change:** Update all canonicals to new domain
+- **Before Google Search Console:** Ensure no duplicates
+
+### What It Finds:
+```
+❌ Missing canonicals: 2 posts
+⚠️ Wrong domain: 1 post
+🔴 Duplicates: 2 posts using same URL
+✅ Valid: 8 posts
+```
+
+---
+
+## 🔍 SEO Audit Script
+
+### What It Is:
+Comprehensive SEO quality checker
+
+### What It Does When You Run It:
+- Checks title length (50-60 chars optimal)
+- Checks description length (150-160 chars optimal)
+- Validates images (dimensions, alt text)
+- Checks schema fields (canonical, wordCount, etc.)
+- Analyzes heading structure (H1, H2, H3)
+- Counts internal links
+- Generates quality score per post
+
+### How To Run:
+```bash
+# Console output
+node scripts/seo-audit.js
+
+# Save full report
+node scripts/seo-audit.js --output seo-report.json
+```
+
+### Use Cases:
+- **Before publishing:** Check new post quality
+- **Weekly review:** Monitor content standards
+- **Writer training:** Show what "good SEO" looks like
+- **Client reports:** Prove content quality improvements
+
+### What It Checks:
+```
+✅ Title: 54 chars (optimal)
+⚠️ Description: 175 chars (too long)
+✅ Image: Present with alt text
+❌ Schema: Missing canonical
+⚠️ Headings: No H2 tags found
+⚠️ Links: No internal links
+```
+
+---
+
+## 📅 When To Run Each Script
+
+### One-Time (After Setup):
+```bash
+node scripts/add-schema-fields.js --fix
+node scripts/validate-canonicals.js --fix
+```
+
+### Weekly:
+```bash
+node scripts/content-audit.js
+node scripts/seo-audit.js
+```
+
+### Monthly:
+```bash
+node scripts/validate-canonicals.js
+```
+
+### As Needed:
+```bash
+# After editing many markdown files:
+node scripts/regenerate-metadata.js
+
+# When reorganizing categories:
+node scripts/update-categories-bulk.js --from "Old" --to "New"
+
+# When moving to CDN:
+node scripts/update-image-paths.js --prefix "https://cdn.example.com"
+```
+
+---
+
+## ⚠️ Important Rules
+
+### Always Use `--dry-run` First:
+```bash
+# ✅ Good practice
+node scripts/add-schema-fields.js --dry-run
+node scripts/add-schema-fields.js
+
+# ❌ Risky
+node scripts/add-schema-fields.js  # No preview
+```
+
+### Never Run During Deployment:
+- ❌ Don't add to `package.json` build scripts
+- ❌ Don't run in Vercel/Netlify deploy
+- ✅ Run locally before committing
+
+### Always Commit After Running:
+```bash
+node scripts/add-schema-fields.js
+git add .
+git commit -m "Added schema fields to all posts"
+git push
+```
+
+---
+
+## 🎯 Quick Reference Table
+
+| Script | What It Does | When To Use | Frequency |
+|--------|--------------|-------------|-----------|
+| `content-audit.js` | Health check | Content review | Weekly |
+| `add-schema-fields.js` | Add missing fields | After setup/import | One-time |
+| `update-categories-bulk.js` | Rename categories | Category reorganization | Rarely |
+| `regenerate-metadata.js` | Sync MD → JSON | After bulk edits | As needed |
+| `update-image-paths.js` | Change image URLs | CDN migration | One-time |
+| `validate-canonicals.js` | Check canonical URLs | URL validation | Monthly |
+| `seo-audit.js` | SEO quality check | Before publishing | Weekly |
+
+---
+
+## 💡 Pro Tips
+
+### 1. Start With Audit:
+```bash
+# Always know your baseline first
+node scripts/content-audit.js
+node scripts/seo-audit.js
+```
+
+### 2. Fix In Order:
+```bash
+# 1. URLs first (most critical)
+node scripts/validate-canonicals.js --fix
+
+# 2. Schema fields
+node scripts/add-schema-fields.js
+
+# 3. Check results
+node scripts/seo-audit.js
+```
+
+### 3. Save Reports:
+```bash
+# Track improvements over time
+node scripts/content-audit.js --output audit-$(date +%Y-%m-%d).json
+node scripts/seo-audit.js --output seo-$(date +%Y-%m-%d).json
+```
+
+### 4. Create Reminders:
+```
+Monday: Run content-audit.js
+Friday: Run seo-audit.js
+1st of month: Run validate-canonicals.js
+```
+
+---
+
+## 🆘 Troubleshooting
+
+### Script Won't Run:
+```bash
+# Make sure you're in project root
+cd /path/to/mirelle-site
+node scripts/content-audit.js
+```
+
+### "Cannot find module" Error:
+```bash
+# Install dependencies
+npm install gray-matter
+```
+
+### Changes Not Showing:
+```bash
+# Regenerate metadata after changes
+node scripts/regenerate-metadata.js
+```
+
+---
+
+## 📊 Success Metrics
+
+### Track These Over Time:
+
+**Content Audit:**
+- Health score: 62 → 89 (improved!)
+- Posts needing update: 8 → 2 (better!)
+
+**SEO Audit:**
+- Optimal posts: 5 → 9 (great!)
+- Critical errors: 4 → 0 (perfect!)
+
+**Canonical Validation:**
+- Issues found: 6 → 0 (clean!)
+
+---
+
+**Last Updated:** October 29, 2025  
+**Total Scripts:** 7  
+**Time To Learn:** 15 minutes  
+**Time Saved:** 30+ hours per year

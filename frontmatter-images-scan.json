@@ -1,0 +1,239 @@
+{
+  "summary": {
+    "scanDate": "2026-01-06T13:06:42.106Z",
+    "totalMdFiles": 33,
+    "totalImages": 134,
+    "missingImages": 38,
+    "existingImages": 96
+  },
+  "missingImages": [
+    {
+      "mdFile": "blogs\\halloween-nail-ideas-2025.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/halloween-nail-ideas-2025/halloweenhero.png",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\jelly-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/jelly-valentine-nails/jelly-valentine-nails-translucent-elegance-hero.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\lace-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/lace-valentine-nails/lace-valentine-nails-delicate-romantic-pattern.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\lace-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/lace-valentine-nails/lace-nail-base-preparation-sheer-pink.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\lace-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/lace-valentine-nails/lace-stamping-plate-polish-application.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\lace-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/lace-valentine-nails/lace-pattern-stamper-pickup-technique.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\lace-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/lace-valentine-nails/lace-pattern-transfer-nail-placement.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\lace-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/lace-valentine-nails/lace-nail-topcoat-sealing-technique.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\mismatched-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/mismatched-valentine-nails/mismatched-valentine-nails-asymmetric-design-2026.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\pink-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/pink-cat-eye-valentine-nails/pink-cat-eye-valentine-nails-magnetic-shimmer.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\pink-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/pink-cat-eye-valentine-nails/magnet-hover-distance-particle-manipulation-timing.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\pink-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/pink-cat-eye-valentine-nails/cat-eye-flash-cure-timing-particle-set.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\red-chrome-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/red-chrome-valentine-nails/red-chrome-valentine-nails-molten-metal-finish.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\red-chrome-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/red-chrome-valentine-nails/chrome-nail-base-preparation-dark-color.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\red-chrome-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/red-chrome-valentine-nails/chrome-powder-application-burnishing-circular-motion.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\red-chrome-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/red-chrome-valentine-nails/chrome-nail-light-reflection-test-mirror-finish.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\red-chrome-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/red-chrome-valentine-nails/chrome-nail-free-edge-filing-sealing.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\red-chrome-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/red-chrome-valentine-nails/chrome-nail-top-coat-sealing-curing.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\red-green-christmas-nails-2025.md",
+      "imageType": "unknown",
+      "imagePath": "/images/blog/red-green-christmas-nails-2025/matte-red-glossy-green-christmas-french-tip-snowflake-art.jpg",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\tomato-red-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-french-tip-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/valentine-french-tip-nails/valentine-french-tip-nails-modern-precision-hero.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/valentine-day-nails-2026/valentines-day-2026-nail-trends-hero.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "imageType": "gallery",
+      "imagePath": "/images/blog/valentine-day-nails-2026/red-chrome-valentine-nails-liquid-metal.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "imageType": "unknown",
+      "imagePath": "/images/blog/valentine-day-nails-2026/pink-cat-eye-nails-magnetic-dimension.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "imageType": "unknown",
+      "imagePath": "/images/blog/valentine-day-nails-2026/valentine-french-tip-micro-precision.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "imageType": "carousel",
+      "imagePath": "/images/blog/valentine-day-nails-2026/aura-valentine-nails-diffused-gradient.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "imageType": "carousel",
+      "imagePath": "/images/blog/valentine-day-nails-2026/lace-valentine-nails-delicate-pattern.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\valentine-nails-2026.md",
+      "imageType": "unknown",
+      "imagePath": "/images/blog/valentine-day-nails-2026/velvet-cat-eye-burgundy-texture.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\velvet-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/velvet-cat-eye-valentine-nails/velvet-cat-eye-valentine-nails-burgundy-hero.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\velvet-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/velvet-cat-eye-valentine-nails/base-coat-black-foundation-velvet-nails.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\velvet-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/velvet-cat-eye-valentine-nails/magnetic-polish-thin-layer-application.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\velvet-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/velvet-cat-eye-valentine-nails/magnet-parallel-positioning-hover-distance.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\velvet-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/velvet-cat-eye-valentine-nails/side-to-side-magnet-movement-technique.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "blogs\\velvet-cat-eye-valentine-nails.md",
+      "imageType": "hero",
+      "imagePath": "/images/blog/velvet-cat-eye-valentine-nails/cure-layer-build-velvet-depth.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "topics\\at-home-hacks.md",
+      "imageType": "hero",
+      "imagePath": "/images/topic/diy-nail-art-household-items-tape-sponge-toothpick-tools.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "topics\\nail-art-guides.md",
+      "imageType": "hero",
+      "imagePath": "/images/topic/beginner-nail-art-progression-simple-to-advanced-designs.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "topics\\nail-care-guide.md",
+      "imageType": "hero",
+      "imagePath": "/images/topic/healthy-strong-natural-nails-perfect-manicure-care-routine.webp",
+      "exists": false
+    },
+    {
+      "mdFile": "topics\\skin-tones.md",
+      "imageType": "hero",
+      "imagePath": "/images/topic/nail-colors-displayed-different-skin-tones-comparison-guide.webp",
+      "exists": false
+    }
+  ]
+}

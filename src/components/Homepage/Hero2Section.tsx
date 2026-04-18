@@ -2,31 +2,30 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllBlogPosts } from '@/lib/blog';
-import { getCategoryData } from '@/lib/shop';
 import { getDesignData } from '@/lib/inspo';
 
 export default async function Hero2Section() {
   // ========== CONFIGURATION ==========
-  const SHOP_CATEGORY_SLUG = 'winter';      // Change to any shop category slug
-  const INSPO_CATEGORY_SLUG = 'valentine-nails-2026';   // Change to any inspo category slug
-  const PILLAR_POST_SLUG = 'valentine-nails-2026'; // Change to your pillar blog post slug (NO 's')
+  const INSPO_CATEGORY_SLUG = 'valentine-nails-2026';    // Change to any inspo category slug
+  const INSPO_CATEGORY_SLUG_2 = 'almond-nails-2026';     // Change to any inspo category slug
+  const PILLAR_POST_SLUG = 'valentine-nails-2026';        // Change to your pillar blog post slug
   // ===================================
-  
+
   const allPosts = await getAllBlogPosts();
-  
-  // Left: 1 shop + 1 inspo category
-  const shopCategory = getCategoryData(SHOP_CATEGORY_SLUG);
+
+  // Left: 2 inspo categories
   const inspoCategory = getDesignData(INSPO_CATEGORY_SLUG);
-  
+  const inspoCategory2 = getDesignData(INSPO_CATEGORY_SLUG_2);
+
   // Middle: Pillar post
   const pillarPost = allPosts.find(p => p.slug === PILLAR_POST_SLUG) || allPosts[0];
-  
-  // Right: Get cluster posts related to the pillar (max 5 now)
+
+  // Right: Get cluster posts related to the pillar (max 5)
   const clusterPosts = allPosts
-    .filter(post => 
-      post.topicalMap?.position === 'cluster' && 
-      (post.topicalMap?.parentPillar === `/blog/${pillarPost.slug}` || 
-      post.topicalMap?.parentPillar === pillarPost.slug)
+    .filter(post =>
+      post.topicalMap?.position === 'cluster' &&
+      (post.topicalMap?.parentPillar === `/blog/${pillarPost.slug}` ||
+        post.topicalMap?.parentPillar === pillarPost.slug)
     )
     .slice(0, 5);
 
@@ -34,25 +33,25 @@ export default async function Hero2Section() {
     <section className="bg-background pt-16 md:pt-24 pb-8">
       {/* Desktop: 3 Column Grid */}
       <div className="hidden md:flex gap-4 max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
-        {/* Left: Shop + Inspo Stacked */}
+        {/* Left: 2 Inspo Categories Stacked */}
         <div className="w-1/4 flex flex-col gap-4">
-          {shopCategory && (
-            <Link href={`/shop/${shopCategory.slug}`} className="block group">
+          {inspoCategory2 && (
+            <Link href={`/inspo/${inspoCategory2.slug}`} className="block group">
               <div className="relative w-full aspect-square mb-2 overflow-hidden">
                 <Image
-                  src={shopCategory.heroImage}
-                  alt={shopCategory.displayName}
+                  src={inspoCategory2.heroImage}
+                  alt={inspoCategory2.displayName}
                   fill
                   className="object-cover"
                   sizes="25vw"
                 />
               </div>
               <h3 className="font-heading text-sm text-foreground group-hover:opacity-70 transition-opacity">
-                {shopCategory.displayName}
+                {inspoCategory2.displayName}
               </h3>
             </Link>
           )}
-          
+
           {inspoCategory && (
             <Link href={`/inspo/${inspoCategory.slug}`} className="block group">
               <div className="relative w-full aspect-square mb-2 overflow-hidden">
@@ -70,7 +69,7 @@ export default async function Hero2Section() {
             </Link>
           )}
         </div>
-        
+
         {/* Middle: Large Pillar Post */}
         <div className="w-2/4">
           {pillarPost && (
@@ -92,7 +91,7 @@ export default async function Hero2Section() {
             </Link>
           )}
         </div>
-        
+
         {/* Right: 5 Cluster Posts */}
         <div className="w-1/4 flex flex-col gap-6">
           {clusterPosts.map((post) => (
@@ -109,7 +108,7 @@ export default async function Hero2Section() {
                     />
                   )}
                 </div>
-                
+
                 <div className="flex-1 min-w-0">
                   {post.category && (
                     <p className="font-ui text-xs uppercase tracking-wider text-foreground/70 mb-1">
@@ -125,7 +124,7 @@ export default async function Hero2Section() {
           ))}
         </div>
       </div>
-      
+
       {/* Mobile: Vertical Stack */}
       <div className="md:hidden flex flex-col gap-6 px-6 md:px-8 lg:px-12">
         {pillarPost && (
@@ -146,24 +145,24 @@ export default async function Hero2Section() {
             </h3>
           </Link>
         )}
-        
-        {shopCategory && (
-          <Link href={`/shop/${shopCategory.slug}`} className="block group">
+
+        {inspoCategory2 && (
+          <Link href={`/inspo/${inspoCategory2.slug}`} className="block group">
             <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">
               <Image
-                src={shopCategory.heroImage}
-                alt={shopCategory.displayName}
+                src={inspoCategory2.heroImage}
+                alt={inspoCategory2.displayName}
                 fill
                 className="object-cover"
                 sizes="100vw"
               />
             </div>
             <h3 className="font-heading text-base text-foreground group-hover:opacity-70 transition-opacity">
-              {shopCategory.displayName}
+              {inspoCategory2.displayName}
             </h3>
           </Link>
         )}
-        
+
         {inspoCategory && (
           <Link href={`/inspo/${inspoCategory.slug}`} className="block group">
             <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">
@@ -180,7 +179,7 @@ export default async function Hero2Section() {
             </h3>
           </Link>
         )}
-        
+
         {clusterPosts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
             <div className="relative w-full aspect-[4/3] mb-2 overflow-hidden">

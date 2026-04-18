@@ -12,14 +12,6 @@ const CATEGORY_LABELS: Record<string, string> = {
   'about': 'About',
   'contact': 'Contact',
   
-  // Shop categories
-  'christmas': 'Christmas Nails',
-  'winter': 'Winter Designs',
-  'halloween': 'Halloween Styles',
-  'fall': 'Fall Collection',
-  'new-year': 'New Year',
-  'trendy': 'Trendy Collections',
-  
   // Topic categories
   'seasonal-trends': 'Seasonal Trends',
   'nail-care-guide': 'Nail Care Guide',
@@ -77,15 +69,6 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
 export function getBlogBreadcrumbs(postSlug: string): BreadcrumbItem[] {
   return [
     { label: 'Blog', href: '/blog' }
-  ];
-}
-
-/**
- * Get breadcrumb data for shop pages
- */
-export function getShopBreadcrumbs(category: string): BreadcrumbItem[] {
-  return [
-    { label: 'Shop', href: '/shop' }
   ];
 }
 

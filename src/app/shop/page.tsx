@@ -1,110 +1,167 @@
-import { Metadata } from 'next';
-import { getAllCategorySlugs, getCategoryData, getShowcaseProducts } from '@/lib/shop';
-import HeroCarousel from '@/components/Shop/HeroCarousel';
-import ShopCategoryNav from '@/components/Shop/ShopCategoryNav';
-import CategoryCard from '@/components/Shop/CategoryCard';
+// src/app/shop/page.tsx
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Press-Ons from $3.99: Chrome, Cat Claw & 2026 Trends',
-  description: 'Salon-quality press-ons in 10min. Chrome, cat claw, square & milky 2026 trends. Last 2-3 weeks, reusable 5-10x, zero damage. 200+ designs. Ships 24hrs. From $3.99!',
-  keywords: [
-    'press-on nails 2026',
-    'chrome press-ons',
-    'cat claw press-on nails',
-    'square press-on nails',
-    'cheap press-on nails',
-    'reusable press-ons',
-    'trending nail designs',
-    'salon quality press-ons',
-    'milky press-on nails',
-    'affordable nail art',
-  ],
-  openGraph: {
-    title: 'Press-Ons from $3.99: 2026 Trending Styles (Chrome, Cat Claw, Square)',
-    description: 'Salon nails in 10min! Chrome, cat claw, square & milky trends. Last 2-3 weeks, reusable 5-10x, zero damage. 200+ designs. Ships 24hrs.',
-    url: 'https://mirelleinspo.com/shop',
-    siteName: 'Mirellé Inspo',
-    locale: 'en_US',
-    type: 'website',
-  },
-  alternates: {
-    canonical: 'https://mirelleinspo.com/shop',
-  },
+  title: 'Shop — Mirellé',
+  description: 'We are curating the best nail products for you. Coming soon.',
 };
 
-export default async function ShopPage() {
-  const categorySlugs = getAllCategorySlugs();
-  const categories = categorySlugs
-    .map(slug => getCategoryData(slug))
-    .filter(Boolean);
-
-  // Get showcase products for carousel
-  const showcaseProducts = await getShowcaseProducts();
-  
-  // Map to carousel format with 8 images
-  const carouselImages = showcaseProducts.slice(0, 8).map(product => ({
-    url: product.image,
-    name: product.name,
-  }));
-
-  // Category hero images
-  const categoryHeroImages: { [key: string]: string } = {
-    'fall': showcaseProducts[0]?.image || '/fallsection.jpg',
-    'christmas': showcaseProducts[1]?.image || '/christmassection.jpg',
-    'winter': showcaseProducts[2]?.image || '/wintersection.jpg',
-    'halloween': showcaseProducts[3]?.image || '/halloweenbannerimg.jpg',
-    'new-year': showcaseProducts[4]?.image || '/newyearsection.jpeg',
-    'trendy': showcaseProducts[5]?.image || '/trendsection.jpg',
-  };
-
+export default function ShopPage() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="container-standard pt-20 pb-16 sm:pt-24 sm:pb-20">
-        {/* Title */}
-        <div className="text-center mb-12">
-          <h1 className="font-heading text-[36px] sm:text-[42px] leading-tight tracking-tight mb-4">
-            Press-On Nails
-          </h1>
-          <p className="font-body text-base sm:text-lg text-foreground/80 max-w-[800px] mx-auto leading-relaxed">
-            60+ curated designs starting at $3.99 • 2-week wear guaranteed • 
-            Free shipping on orders $35+ • Easy 5-minute application
-            <br />
-            <span className="text-sm">Curated by Mirellé editors</span>
-          </p>
-        </div>
-
-        {/* Vogue-style Carousel */}
-        <HeroCarousel images={carouselImages} />
-      </section>
-
-      {/* Horizontal Category Navigation */}
-      <ShopCategoryNav 
-        categories={categories.map(c => ({
-          slug: c!.slug,
-          displayName: c!.displayName,
-        }))} 
+    <main
+      style={{
+        minHeight: '100vh',
+        backgroundColor: '#252220',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '2rem',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Top border line */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '2.5rem',
+          left: '2.5rem',
+          right: '2.5rem',
+          height: '1px',
+          backgroundColor: 'rgba(249,250,251,0.15)',
+        }}
       />
 
-      {/* Category Grid */}
-      <section className="container-wide py-20 sm:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
-          {categories.map((category) => {
-            if (!category) return null;
-            
-            const categoryImage = categoryHeroImages[category.slug] || category.heroImage;
-            
-            return (
-              <CategoryCard
-                key={category.slug}
-                slug={category.slug}
-                displayName={category.displayName}
-                imageUrl={categoryImage}
-              />
-            );
-          })}
-        </div>
-      </section>
-    </div>
+      {/* Bottom border line */}
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '2.5rem',
+          left: '2.5rem',
+          right: '2.5rem',
+          height: '1px',
+          backgroundColor: 'rgba(249,250,251,0.15)',
+        }}
+      />
+
+      {/* Left border line */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '2.5rem',
+          bottom: '2.5rem',
+          left: '2.5rem',
+          width: '1px',
+          backgroundColor: 'rgba(249,250,251,0.15)',
+        }}
+      />
+
+      {/* Right border line */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '2.5rem',
+          bottom: '2.5rem',
+          right: '2.5rem',
+          width: '1px',
+          backgroundColor: 'rgba(249,250,251,0.15)',
+        }}
+      />
+
+      {/* Content */}
+      <div
+        style={{
+          textAlign: 'center',
+          maxWidth: '640px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '2rem',
+        }}
+      >
+        {/* Eyebrow label */}
+        <p
+          style={{
+            fontFamily: 'General Sans, sans-serif',
+            fontSize: '0.65rem',
+            letterSpacing: '0.25em',
+            textTransform: 'uppercase',
+            color: 'rgba(249,250,251,0.45)',
+            margin: 0,
+          }}
+        >
+          Mirellé Shop
+        </p>
+
+        {/* Divider */}
+        <div
+          style={{
+            width: '32px',
+            height: '1px',
+            backgroundColor: 'rgba(249,250,251,0.25)',
+          }}
+        />
+
+        {/* Main headline */}
+        <h1
+          style={{
+            fontFamily: 'Larken, Georgia, serif',
+            fontSize: 'clamp(2.2rem, 6vw, 4rem)',
+            fontWeight: 400,
+            color: '#f9fafb',
+            lineHeight: 1.15,
+            margin: 0,
+            letterSpacing: '-0.01em',
+          }}
+        >
+          Curating the best<br />
+          <em style={{ fontStyle: 'italic' }}>just for you.</em>
+        </h1>
+
+        {/* Subtext */}
+        <p
+          style={{
+            fontFamily: 'General Sans, sans-serif',
+            fontSize: '0.85rem',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: 'rgba(249,250,251,0.45)',
+            margin: 0,
+            lineHeight: 1.8,
+          }}
+        >
+          Something beautiful is on its way.
+          <br />
+          Opening soon.
+        </p>
+
+        {/* Divider */}
+        <div
+          style={{
+            width: '32px',
+            height: '1px',
+            backgroundColor: 'rgba(249,250,251,0.25)',
+          }}
+        />
+
+        {/* Back to home link */}
+        <a
+          href="/"
+          style={{
+            fontFamily: 'General Sans, sans-serif',
+            fontSize: '0.65rem',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: 'rgba(249,250,251,0.5)',
+            textDecoration: 'none',
+            borderBottom: '1px solid rgba(249,250,251,0.2)',
+            paddingBottom: '2px',
+          }}
+        >
+          Back to Home
+        </a>
+      </div>
+    </main>
   );
 }

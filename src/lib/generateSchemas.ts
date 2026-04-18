@@ -55,24 +55,6 @@ export interface SchemaConfig {
   // }; // ✅ NEW: For aggregate rating
 }
 
-// Product Schema Interfaces
-export interface ProductSchemaConfig {
-  name: string;
-  description: string;
-  url: string;
-  image?: string;
-}
-
-export interface CollectionSchemaConfig {
-  name: string;
-  description: string;
-  url: string;
-  breadcrumbs: Array<{
-    name: string;
-    url: string;
-  }>;
-}
-
 // ============================================
 // PERSON SCHEMA (Author)
 // ============================================
@@ -634,25 +616,6 @@ const breadcrumbSchema = {
   };
 }
 
-// Generate schemas for product/collection pages
-export function generateProductSchemas(config: ProductSchemaConfig) {
-  const productSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: config.name,
-    description: config.description,
-    url: config.url,
-    ...(config.image && {
-      image: {
-        '@type': 'ImageObject',
-        url: config.image,
-      },
-    }),
-  };
-
-  return { productSchema };
-}
-
 // ✅ NEW: Validation helper to ensure all required schema fields exist
 export function validateSchemaData(post: BlogPost): {
   valid: boolean;
@@ -673,29 +636,3 @@ export function validateSchemaData(post: BlogPost): {
   };
 }
 
-// Generate schemas for collection pages (shop categories)
-export function generateCollectionSchemas(config: CollectionSchemaConfig) {
-  const collectionSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
-    name: config.name,
-    description: config.description,
-    url: config.url,
-  };
-
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: config.breadcrumbs.map((crumb, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: crumb.name,
-      item: crumb.url,
-    })),
-  };
-
-  return {
-    collectionSchema,
-    breadcrumbSchema,
-  };
-}

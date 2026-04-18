@@ -11,10 +11,6 @@ const ARTICLES_LINKS = [
 ];
 
 const SHOP_LINKS = [
-  // { label: 'Valentine Designs', href: '/shop/valentine' },
-  { label: 'Winter Designs', href: '/shop/winter' },
-  { label: 'Trendy Collections', href: '/shop/trendy' },
-  { label: 'Fall Styles', href: '/shop/fall' },
   { label: 'View All Collections', href: '/shop' },
 ];
 

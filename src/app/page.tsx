@@ -45,7 +45,7 @@ export default async function Home() {
       {/* 1. Subscribe Section */}
       <SubscribeSection />
 
-      <TrendTimelineHero posts={allBlogPosts} />
+      {/* <TrendTimelineHero posts={allBlogPosts} /> */}
       
       {/* 2. Hero1 - Single Featured Blog Post */}
       <Hero1Section />

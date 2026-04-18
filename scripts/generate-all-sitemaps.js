@@ -75,7 +75,6 @@ function extractImagesFromMarkdown(content, slug, frontmatter, useCDN = true) {
   if (frontmatter.image) {
     let imageUrl = frontmatter.image;
     
-    // Convert to CDN URL if enabled
     if (useCDN) {
       if (imageUrl.startsWith('/images/')) {
         imageUrl = `${CLOUDINARY_BASE}/mirelleinspo${imageUrl}`;
@@ -126,7 +125,6 @@ function extractImagesFromMarkdown(content, slug, frontmatter, useCDN = true) {
     const altText = match[1];
     let imageUrl = match[2];
     
-    // Convert to CDN URL if enabled
     if (useCDN) {
       if (imageUrl.startsWith('/images/')) {
         imageUrl = `${CLOUDINARY_BASE}/mirelleinspo${imageUrl}`;
@@ -159,7 +157,6 @@ function extractImagesFromMarkdown(content, slug, frontmatter, useCDN = true) {
       if (srcMatch) {
         let imageUrl = srcMatch[1];
         
-        // Convert to CDN URL if enabled
         if (useCDN) {
           if (imageUrl.startsWith('/images/')) {
             imageUrl = `${CLOUDINARY_BASE}/mirelleinspo${imageUrl}`;
@@ -324,83 +321,7 @@ function generatePostsSitemap() {
 }
 
 // ========================================
-// 4️⃣ GENERATE SHOP SITEMAP
-// ========================================
-function generateShopSitemap() {
-  console.log('📄 Generating shop sitemap...');
-  
-  const categories = ['christmas', 'fall', 'halloween', 'new-year', 'trendy', 'winter'];
-  
-  const urls = [
-    {
-      loc: `${SITE_URL}/shop`,
-      changefreq: 'daily',
-      priority: 0.9,
-      lastmod: new Date().toISOString(),
-    },
-    ...categories.map(cat => ({
-      loc: `${SITE_URL}/shop/${cat}`,
-      changefreq: 'weekly',
-      priority: 0.8,
-      lastmod: new Date().toISOString(),
-    }))
-  ];
-  
-  const xml = createSitemap(urls);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-shop.xml'), xml);
-  console.log('✅ sitemap-shop.xml created');
-}
-
-// ========================================
-// 5️⃣ GENERATE SHOP PRODUCTS SITEMAPS
-// ========================================
-function generateShopProductsSitemaps() {
-  console.log('📄 Generating shop products sitemaps...');
-  
-  const categories = ['christmas', 'fall', 'halloween', 'new-year', 'trendy', 'winter'];
-  const productSitemaps = [];
-  
-  categories.forEach(category => {
-    try {
-      const productFile = path.join(process.cwd(), `src/content/shop-products/${category}.json`);
-      
-      if (!fs.existsSync(productFile)) {
-        console.warn(`⚠️  ${category}.json not found`);
-        return;
-      }
-      
-      const data = JSON.parse(fs.readFileSync(productFile, 'utf8'));
-      const products = Object.values(data.products || {});
-      
-      if (products.length === 0) return;
-      
-      const urls = products.map(product => ({
-        loc: `${SITE_URL}/shop/${category}/${product.slug}`,
-        changefreq: 'weekly',
-        priority: 0.7,
-        lastmod: new Date().toISOString(),
-      }));
-      
-      const xml = createSitemap(urls);
-      const filename = `sitemap-shop-products-${category}.xml`;
-      fs.writeFileSync(path.join(PUBLIC_DIR, filename), xml);
-      productSitemaps.push(filename);
-      console.log(`✅ ${filename} created (${products.length} products)`);
-      
-    } catch (error) {
-      console.error(`❌ Error: ${category}:`, error.message);
-    }
-  });
-  
-  if (productSitemaps.length > 0) {
-    const indexXml = createSitemapIndex(productSitemaps);
-    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-shop-products-index.xml'), indexXml);
-    console.log('✅ sitemap-shop-products-index.xml created');
-  }
-}
-
-// ========================================
-// 6️⃣ GENERATE INSPO SITEMAP
+// 4️⃣ GENERATE INSPO SITEMAP
 // ========================================
 function generateInspoSitemap() {
   console.log('📄 Generating inspo sitemap...');
@@ -434,7 +355,7 @@ function generateInspoSitemap() {
 }
 
 // ========================================
-// 7️⃣ GENERATE IMAGE SITEMAPS
+// 5️⃣ GENERATE IMAGE SITEMAPS
 // ========================================
 function generateImageSitemaps() {
   console.log('📸 Generating image sitemaps...');
@@ -443,7 +364,7 @@ function generateImageSitemaps() {
   const currentYear = new Date().getFullYear();
   const season = getCurrentSeason();
   
-  // 7a) Blog images from markdown files (CDN URLs)
+  // 5a) Blog images from markdown files (CDN URLs)
   try {
     const blogDir = path.join(process.cwd(), 'src/content/blogs');
     
@@ -461,12 +382,12 @@ function generateImageSitemaps() {
         const fileContent = fs.readFileSync(filePath, 'utf8');
         const { data, content } = matter(fileContent);
         
-        const images = extractImagesFromMarkdown(content, slug, data, true); // CDN enabled
+        const images = extractImagesFromMarkdown(content, slug, data, true);
         
         if (images.length > 0) {
           const cleanTitle = data.title || slug.replace(/-/g, ' ');
           
-          images.forEach((img, index) => {
+          images.forEach((img) => {
             const caption = img.alt || `${cleanTitle} - Professional nail art tutorial and design inspiration for ${currentYear}`;
             
             blogImages.push({
@@ -492,7 +413,7 @@ function generateImageSitemaps() {
     console.error('❌ Error generating blog images:', error.message);
   }
   
-  // 7b) Topic images from markdown files (LOCAL URLs - NO CDN)
+  // 5b) Topic images from markdown files (LOCAL URLs - NO CDN)
   try {
     const topicsDir = path.join(process.cwd(), 'src/content/topics');
     
@@ -510,13 +431,12 @@ function generateImageSitemaps() {
         const fileContent = fs.readFileSync(filePath, 'utf8');
         const { data, content } = matter(fileContent);
         
-        const images = extractImagesFromMarkdown(content, slug, data, false); // NO CDN
+        const images = extractImagesFromMarkdown(content, slug, data, false);
         
         if (images.length > 0) {
           const cleanTitle = data.title || slug.replace(/-/g, ' ');
           
-          images.forEach((img, index) => {
-            // Convert local path to full URL
+          images.forEach((img) => {
             let imageUrl = img.url;
             if (!imageUrl.startsWith('http')) {
               imageUrl = `${SITE_URL}${imageUrl}`;
@@ -547,52 +467,7 @@ function generateImageSitemaps() {
     console.error('❌ Error generating topic images:', error.message);
   }
   
-  // 7c) Shop product images (LOCAL - NO CDN conversion)
-  try {
-    const categories = ['christmas', 'fall', 'halloween', 'new-year', 'trendy', 'winter'];
-    const shopImages = [];
-    
-    categories.forEach(category => {
-      try {
-        const productFile = path.join(process.cwd(), `src/content/shop-products/${category}.json`);
-        
-        if (!fs.existsSync(productFile)) return;
-        
-        const data = JSON.parse(fs.readFileSync(productFile, 'utf8'));
-        const products = Object.values(data.products || {});
-        
-        products.forEach(product => {
-          if (!product.image) return;
-          
-          // Use image path AS-IS from JSON (no CDN conversion)
-          let imageUrl = product.image;
-          if (!imageUrl.startsWith('http')) {
-            imageUrl = `${SITE_URL}${imageUrl}`;
-          }
-          
-          shopImages.push({
-            pageUrl: `${SITE_URL}/shop/${category}/${product.slug}`,
-            imageUrl: imageUrl,
-            title: product.name || `${category} nail design`,
-            caption: product.imageAlt || product.description || `${product.name} - ${season} ${currentYear} collection`,
-          });
-        });
-      } catch (error) {
-        console.error(`   ❌ ${category}:`, error.message);
-      }
-    });
-    
-    if (shopImages.length > 0) {
-      const xml = createImageSitemap(shopImages);
-      fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-images-shop.xml'), xml);
-      imageSitemaps.push('sitemap-images-shop.xml');
-      console.log(`✅ sitemap-images-shop.xml (${shopImages.length} images)`);
-    }
-  } catch (error) {
-    console.error('❌ Error generating shop images:', error.message);
-  }
-  
-  // 7d) Inspo images (CDN URLs)
+  // 5c) Inspo images (CDN URLs)
   try {
     const inspoJsonDir = path.join(process.cwd(), 'src/content/inspo-images');
     
@@ -616,7 +491,6 @@ function generateImageSitemaps() {
             
             if (!imageUrl) return;
             
-            // Convert to CDN URL
             if (imageUrl.startsWith('/')) {
               imageUrl = `${CLOUDINARY_BASE}/mirelleinspo${imageUrl}`;
             } else if (!imageUrl.startsWith('http')) {
@@ -670,8 +544,6 @@ async function main() {
   generateBlogSitemap();
   generateTopicsSitemap();
   generatePostsSitemap();
-  generateShopSitemap();
-  generateShopProductsSitemaps();
   generateInspoSitemap();
   generateImageSitemaps();
   
@@ -680,13 +552,11 @@ async function main() {
   console.log('   • sitemap-blog.xml');
   console.log('   • sitemap-topics.xml');
   console.log('   • sitemap-posts.xml');
-  console.log('   • sitemap-shop.xml');
-  console.log('   • sitemap-shop-products-*.xml');
   console.log('   • sitemap-inspo.xml');
   console.log('   • sitemap-images-blog.xml (CDN)');
   console.log('   • sitemap-images-topics.xml (LOCAL)');
-  console.log('   • sitemap-images-shop.xml (LOCAL)');
   console.log('   • sitemap-images-inspo.xml (CDN)');
+  console.log('   • sitemap-images-index.xml');
 }
 
 main().catch(error => {

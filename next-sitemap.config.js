@@ -16,15 +16,8 @@ module.exports = {
     '/404',
     '/500',
     '/blog/*',              // Has sitemap-blog.xml
-    '/topics/*',            // Has sitemap-topics.xml (NEW)
-    '/posts/*',             // Has sitemap-posts.xml (NEW)
-    '/shop/*/[productId]',
-    '/shop/christmas/*',
-    '/shop/fall/*',
-    '/shop/halloween/*',
-    '/shop/new-year/*',
-    '/shop/trendy/*',
-    '/shop/winter/*',
+    '/topics/*',            // Has sitemap-topics.xml
+    '/posts/*',             // Has sitemap-posts.xml
     '/inspo/*',             // Has sitemap-inspo.xml
   ],
   
@@ -61,10 +54,8 @@ module.exports = {
     ],
     additionalSitemaps: [
       'https://mirelleinspo.com/sitemap-blog.xml',
-      'https://mirelleinspo.com/sitemap-topics.xml',        // NEW
-      'https://mirelleinspo.com/sitemap-posts.xml',         // NEW
-      'https://mirelleinspo.com/sitemap-shop.xml',
-      'https://mirelleinspo.com/sitemap-shop-products-index.xml',
+      'https://mirelleinspo.com/sitemap-topics.xml',
+      'https://mirelleinspo.com/sitemap-posts.xml',
       'https://mirelleinspo.com/sitemap-inspo.xml',
       'https://mirelleinspo.com/sitemap-images-index.xml',
     ],
@@ -86,7 +77,7 @@ module.exports = {
       priority = 0.9;
       changefreq = 'daily';
     }
-    // Topics and Posts listing pages (NEW)
+    // Topics and Posts listing pages
     else if (['/topics', '/posts'].includes(path)) {
       priority = 0.8;
       changefreq = 'weekly';

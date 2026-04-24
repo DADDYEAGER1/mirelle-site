@@ -1,16 +1,16 @@
 // src/components/Homepage/Hero1Section.tsx
 import Link from 'next/link';
-import { getBlogPost } from '@/lib/blog';
+import { getSpotlightPost } from '@/lib/spotlight';
 
 export default async function Hero1Section() {
-  const heroPost = await getBlogPost('valentine-nails-2026');
+  const heroPost = await getSpotlightPost('nailsbypeyton');
   
   if (!heroPost) return null;
 
   return (
     <section className="bg-background py-12 md:py-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <Link href={`/blog/${heroPost.slug}`} className="block group">
+        <Link href={`/spotlight/${heroPost.slug}`} className="block group">
           {/* Desktop: Full image */}
           <div className="hidden md:block relative w-full aspect-[16/9] mb-6 overflow-hidden">
             {heroPost.image && (

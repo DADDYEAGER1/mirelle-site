@@ -7,9 +7,8 @@ import { marked } from 'marked';
 // ── Renderer ─────────────────────────────────────────────────────────────────
 const renderer = new marked.Renderer();
 
-renderer.html = ({ text, raw }: { text?: string; raw?: string }) => {
-  const content = text ?? raw ?? '';
-  return content.replace(/src="images\//g, 'src="/images/');
+renderer.html = (html: string) => {
+  return html.replace(/src="images\//g, 'src="/images/');
 };
 
 renderer.image = ({ href, title, text }: { href: string; title: string | null; text: string }) => {

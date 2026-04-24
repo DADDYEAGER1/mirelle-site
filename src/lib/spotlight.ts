@@ -11,7 +11,7 @@ renderer.html = (html: string) => {
   return html.replace(/src="images\//g, 'src="/images/');
 };
 
-renderer.image = ({ href, title, text }: { href: string; title: string | null; text: string }) => {
+renderer.image = (href: string, title: string | null, text: string) => {
   const fixedHref = href.startsWith('images/') ? `/${href}` : href;
   const titleAttr = title ? ` title="${title}"` : '';
   return `<img src="${fixedHref}" alt="${text}"${titleAttr} loading="lazy" />`;

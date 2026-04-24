@@ -40,14 +40,14 @@ const SEASONS: Season[] = [
       {
         id: 'w1',
         name: 'VELVET NAILS',
-        description: 'Jewel-toned magnetic shimmer mimicking crushed velvet. Deep emerald, amethyst, navy — instantly luxe.',
+        description: 'Jewel-toned magnetic shimmer mimicking crushed velvet. Deep emerald, amethyst, navy instantly luxe.',
         category: 'trends',
         shopLink: '/shop/gel-polishes',
       },
       {
         id: 'w2',
         name: 'GLASS NAILS',
-        description: "Ultra-glossy translucent finish — like color locked beneath a sheet of glass. The clean girl's winter move.",
+        description: "Ultra-glossy translucent finish like color locked beneath a sheet of glass. The clean girl's winter move.",
         category: 'nail art',
       },
       {
@@ -64,8 +64,8 @@ const SEASONS: Season[] = [
     shortLabel: 'SPR',
     status: 'now',
     headline: 'Gingham, Florals & Clean Girl.',
-    sub: "Spring has spoken. Softness with intention — the season's nails are here.",
-    teaser: "Summer '26 — Sunset Nails & Neon Chrome is already building →",
+    sub: "Spring has spoken. Softness with intention the season's nails are here.",
+    teaser: "Summer '26 Sunset Nails & Neon Chrome is already building →",
     trends: [
       {
         id: 's1',
@@ -84,13 +84,13 @@ const SEASONS: Season[] = [
       {
         id: 's3',
         name: 'SOAP NAILS',
-        description: 'Sheer milky tints under a glycerine-level topcoat. Freshly moisturised, not manicured — quietly perfect.',
+        description: 'Sheer milky tints under a glycerine-level topcoat. Freshly moisturised, not manicured quietly perfect.',
         category: 'nail care',
       },
       {
         id: 's4',
         name: 'POLKA DOT REVIVAL',
-        description: 'Y2K nostalgia lands on nails. White on black, brown on baby blue — abstract, playful, zeitgeist.',
+        description: 'Y2K nostalgia lands on nails. White on black, brown on baby blue abstract, playful, zeitgeist.',
         category: 'nail art',
       },
     ],
@@ -106,13 +106,13 @@ const SEASONS: Season[] = [
       {
         id: 'su1',
         name: 'SUNSET NAILS',
-        description: 'Vibrant tropical gradient hues. The cocktail of manicures — all warmth, no apology.',
+        description: 'Vibrant tropical gradient hues. The cocktail of manicures all warmth, no apology.',
         category: 'trends',
       },
       {
         id: 'su2',
         name: 'NEON CHROME',
-        description: 'Iridescent chrome in electric shades. Pink, purple, blue — sparkling under the sun.',
+        description: 'Iridescent chrome in electric shades. Pink, purple, blue sparkling under the sun.',
         category: 'trends',
       },
       {
@@ -129,7 +129,7 @@ const SEASONS: Season[] = [
     shortLabel: 'FAL',
     status: 'upcoming',
     headline: 'Moody, Rich & Coming For You.',
-    sub: 'Dark season. Bold nails. Already on our radar — and yours.',
+    sub: 'Dark season. Bold nails. Already on our radar and yours.',
     trends: [
       {
         id: 'f1',
@@ -140,7 +140,7 @@ const SEASONS: Season[] = [
       {
         id: 'f2',
         name: 'MIDNIGHT BLUE',
-        description: 'Cool, deep, moody — the first color to signal the seasonal shift every year. It never misses.',
+        description: 'Cool, deep, moody the first color to signal the seasonal shift every year. It never misses.',
         category: 'seasonal',
       },
     ],
@@ -853,7 +853,7 @@ export default function TrendTimelineHero({ posts }: TrendTimelineHeroProps) {
         {!displaySeason.teaser && (
           <div className="tth-teaser">
             <p className="tth-teaser-text" style={{ fontStyle: 'normal', color: '#bbb', fontSize: '13px' }}>
-              {displaySeason.status === 'past' ? 'This season has passed. Explore what\'s current.' : 'Stay tuned — more drops incoming.'}
+              {displaySeason.status === 'past' ? 'This season has passed. Explore what\'s current.' : 'Stay tuned more drops incoming.'}
             </p>
             <span className="tth-teaser-link" onClick={() => handleSeasonClick('spring26')}>
               Back to Now →

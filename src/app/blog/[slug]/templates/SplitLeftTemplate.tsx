@@ -14,17 +14,18 @@ interface SplitLeftTemplateProps {
 }
 
 export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
-  const contentSections = post.content.split(/(<h2[^>]*>)/);
-  const totalSections = Math.ceil(contentSections.length / 2);
-  
-  const section1End = Math.max(2, Math.floor(totalSections * 0.25) * 2);
-  const section2End = Math.max(4, Math.floor(totalSections * 0.5) * 2);
-  const section3End = Math.max(6, Math.floor(totalSections * 0.75) * 2);
-  
-  const firstSection = contentSections.slice(0, section1End).join('');
-  const middleSection = contentSections.slice(section1End, section2End).join('');
-  const moreContent = contentSections.slice(section2End, section3End).join('');
-  const remainingContent = contentSections.slice(section3End).join('');
+  const h2Blocks = post.content.split(/(?=<h2[\s>])/);
+  const total = h2Blocks.length;
+
+  const q1 = Math.max(1, Math.floor(total * 0.25));
+  const q2 = Math.max(2, Math.floor(total * 0.5));
+  const q3 = Math.max(3, Math.floor(total * 0.75));
+
+  const firstSection     = h2Blocks.slice(0, q1).join('');
+  const middleSection    = h2Blocks.slice(q1, q2).join('');
+  const moreContent      = h2Blocks.slice(q2, q3).join('');
+  const remainingContent = h2Blocks.slice(q3).join('');
+
 
   return (
     <div className="min-h-screen bg-background">

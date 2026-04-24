@@ -7,23 +7,24 @@ import AboutEEAT from '@/components/Blog/AboutEEAT';
 import FinalNewsletter from '@/components/Blog/FinalNewsletter';
 import ReadMoreSection from '@/components/Blog/ReadMoreSection';
 
-interface SplitRightTemplateProps {
+import TableOfContents from '@/components/Blog/TableOfContents';  
+
+interface SplitLeftTemplateProps {
   post: BlogPost;
 }
 
-export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
-  const h2Blocks = post.content.split(/(?=<h2[\s>])/);
-  const total = h2Blocks.length;
+export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
+const h2Blocks = post.content.split(/(?=<h2[\s>])/);
+const total = h2Blocks.length;
 
-  const q1 = Math.max(1, Math.floor(total * 0.25));
-  const q2 = Math.max(2, Math.floor(total * 0.5));
-  const q3 = Math.max(3, Math.floor(total * 0.75));
+const q1 = Math.max(1, Math.floor(total * 0.25));
+const q2 = Math.max(2, Math.floor(total * 0.5));
+const q3 = Math.max(3, Math.floor(total * 0.75));
 
-  const firstSection     = h2Blocks.slice(0, q1).join('');
-  const middleSection    = h2Blocks.slice(q1, q2).join('');
-  const moreContent      = h2Blocks.slice(q2, q3).join('');
-  const remainingContent = h2Blocks.slice(q3).join('');
-
+const firstSection     = h2Blocks.slice(0, q1).join('');
+const middleSection    = h2Blocks.slice(q1, q2).join('');
+const moreContent      = h2Blocks.slice(q2, q3).join('');
+const remainingContent = h2Blocks.slice(q3).join('');
 
   return (
     <div className="min-h-screen bg-background">
@@ -32,22 +33,11 @@ export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
         <InlineNewsletter />
       </div>
 
-      {/* Hero - Split Right */}
+      {/* Hero - Split Left */}
       <div className="w-full">
         {/* Desktop: 50/50 split with brand colors */}
         <div className="hidden md:grid md:grid-cols-2 h-[600px]">
-          {/* LEFT SIDE - IMAGE with brand background */}
-          <div className="flex items-center justify-center p-12" style={{ backgroundColor: '#f9fafb' }}>
-            {post.image && (
-              <img
-                src={post.image}
-                alt={post.imageAlt || post.title}
-                className="max-w-full max-h-full object-contain"
-              />
-            )}
-          </div>
-
-          {/* RIGHT SIDE - METADATA with brand background */}
+          {/* LEFT SIDE - METADATA with brand background */}
           <div className="flex items-center justify-center p-12" style={{ backgroundColor: '#f9fafb' }}>
             <div className="text-center">
               {post.category && (
@@ -69,6 +59,17 @@ export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
                 })}
               </p>
             </div>
+          </div>
+
+          {/* RIGHT SIDE - IMAGE with brand background */}
+          <div className="flex items-center justify-center p-12" style={{ backgroundColor: '#f9fafb' }}>
+            {post.image && (
+              <img
+                src={post.image}
+                alt={post.imageAlt || post.title}
+                className="max-w-full max-h-full object-contain"
+              />
+            )}
           </div>
         </div>
 
@@ -105,18 +106,20 @@ export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
       </div>
 
       {/* Article Content - Vogue Style Narrow Column */}
-      <div className="w-full flex flex-col items-start">
+      <div className="w-full flex flex-col items-center">
         {/* Narrow content container */}
         <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16 mt-12">
           
           {/* Breadcrumbs */}
           <div className="mb-8">
             <Breadcrumbs
-              items={[{ label: 'Blog', href: '/blog' }]}
-              currentPage={post.title}
+              items={[{ label: 'Spotlight', href: '/spotlight' }]}              currentPage={post.title}
               includeSchema={false}
             />
           </div>
+          
+        
+          
 
           {/* Article Content - LEFT ALIGNED, 20px font */}
           <article className="prose-content-magazine">
@@ -130,11 +133,15 @@ export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
 
             <div dangerouslySetInnerHTML={{ __html: middleSection }} />
 
-            {post.products && post.products.length > 0 && (
-              <div className="my-12">
-                <ProductGrid products={post.products} count={2} indices={post.products.map((_, i) => i)} />
-              </div>
-            )}
+{post.products && post.products.length > 0 && (
+  <div className="my-12">
+    <ProductGrid 
+      products={post.products} 
+      count={2}
+      indices={post.products.map((_, i) => i)}
+    />
+  </div>
+)}
 
             <div dangerouslySetInnerHTML={{ __html: moreContent }} />
           </article>
@@ -156,7 +163,7 @@ export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
       {/* End Sections */}
       <AboutEEAT />
       <FinalNewsletter />
-      <ReadMoreSection currentSlug={post.slug} />
+      {/* <ReadMoreSection currentSlug={post.slug} /> */}
     </div>
   );
 }

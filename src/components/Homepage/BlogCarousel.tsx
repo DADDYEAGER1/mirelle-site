@@ -237,3 +237,5 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
     </section>
   );
 }
+
+

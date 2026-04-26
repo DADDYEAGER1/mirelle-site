@@ -6,9 +6,9 @@ import { getDesignData } from '@/lib/inspo';
 
 export default async function Hero2Section() {
   // ========== CONFIGURATION ==========
-  const INSPO_CATEGORY_SLUG = 'valentine-nails-2026';    // Change to any inspo category slug
+  const INSPO_CATEGORY_SLUG = 'coffin-ballerina-nails-2026'; // Change to any inspo category slug
   const INSPO_CATEGORY_SLUG_2 = 'almond-nails-2026';     // Change to any inspo category slug
-  const PILLAR_POST_SLUG = 'valentine-nails-2026';        // Change to your pillar blog post slug
+  const PILLAR_POST_SLUG = 'mothers-day-nail-ideas';         // Change to any pillar post slug
   // ===================================
 
   const allPosts = await getAllBlogPosts();

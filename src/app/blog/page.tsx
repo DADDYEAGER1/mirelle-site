@@ -32,7 +32,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
   // HERO CLUSTER CONFIGURATION
   // Change this slug to display a different cluster in hero
   // ============================================
-  const heroClusterSlug = 'valentine-nails-2026';
+  const heroClusterSlug = 'mothers-day-nail-ideas';
   
   // Get hero cluster posts
   const getHeroClusterPosts = async (): Promise<BlogMetadata[]> => {

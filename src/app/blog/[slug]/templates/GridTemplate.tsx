@@ -1,4 +1,5 @@
 import { BlogPost } from '@/types/blog';
+import { MDXRemote } from 'next-mdx-remote/rsc';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageCarousel from '@/components/Blog/ImageCarousel';
 import ProductGrid from '@/components/Blog/ProductGrid';
@@ -7,11 +8,59 @@ import AboutEEAT from '@/components/Blog/AboutEEAT';
 import FinalNewsletter from '@/components/Blog/FinalNewsletter';
 import ReadMoreSection from '@/components/Blog/ReadMoreSection';
 
-interface GridTemplateProps {
+interface SplitRightTemplateProps {
   post: BlogPost;
 }
 
-export default function GridTemplate({ post }: GridTemplateProps) {
+function renderContentWithProducts(
+  html: string,
+  products: BlogPost['products']
+): React.ReactNode {
+  if (!products || products.length === 0) {
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  }
+
+  const parts = html.split(/({{PRODUCTS:\d+:[\d,]+}})/g);
+
+  if (parts.length === 1) {
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  }
+
+  return (
+    <>
+      {parts.map((part, index) => {
+        const match = part.match(/^{{PRODUCTS:(\d+):([\d,]+)}}$/);
+        if (match) {
+          const count = parseInt(match[1]) as 1 | 2 | 4;
+          const indices = match[2].split(',').map((i) => parseInt(i.trim()));
+          if (![1, 2, 4].includes(count)) return null;
+          return (
+            <ProductGrid
+              key={index}
+              products={products}
+              count={count}
+              indices={indices}
+            />
+          );
+        }
+        return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
+      })}
+    </>
+  );
+}
+
+export default function SplitRightTemplate({ post }: SplitRightTemplateProps) {
+  const postProducts = post.products ?? [];
+
+  const mdxComponents = {
+    ProductGrid: (props: any) => (
+      <ProductGrid
+        {...props}
+        products={props.products ?? postProducts}
+      />
+    ),
+  };
+
   const h2Blocks = post.content.split(/(?=<h2[\s>])/);
   const total = h2Blocks.length;
 
@@ -24,7 +73,27 @@ export default function GridTemplate({ post }: GridTemplateProps) {
   const moreContent      = h2Blocks.slice(q2, q3).join('');
   const remainingContent = h2Blocks.slice(q3).join('');
 
+  // ── MDX path ────────────────────────────────────────────────────────────────
+  if (post.isMDX) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="w-full"><InlineNewsletter /></div>
+        <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16 mt-12">
+          <article className="prose-content-magazine">
+            <MDXRemote
+              source={post.content}
+              components={mdxComponents}
+            />
+          </article>
+        </div>
+        <AboutEEAT />
+        <FinalNewsletter />
+        <ReadMoreSection currentSlug={post.slug} />
+      </div>
+    );
+  }
 
+  // ── MD path ─────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen bg-background">
       <div className="w-full">
@@ -32,77 +101,74 @@ export default function GridTemplate({ post }: GridTemplateProps) {
       </div>
 
       <div className="w-full">
-        {/* Desktop: Grid hero with image overlay */}
-        <div className="hidden md:grid md:grid-cols-2 md:grid-rows-2 h-[600px]">
-          <div className="relative col-span-2 row-span-1 bg-gray-50 p-12 flex items-center justify-center">
+        <div className="hidden md:grid md:grid-cols-2 h-[600px]">
+          <div className="flex items-center justify-center p-12" style={{ backgroundColor: '#f9fafb' }}>
             {post.image && (
-              <>
-                <img
-                  src={post.image}
-                  alt={post.imageAlt || post.title}
-                  className="max-w-full max-h-full object-contain"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/50">
-                  <div className="text-center px-6 text-white">
-                    {post.category && (
-                      <p className="font-ui text-sm uppercase tracking-wider mb-4 text-white/90">
-                        {post.category}
-                      </p>
-                    )}
-                    <h1 className="font-heading text-4xl lg:text-5xl mb-4 text-white">
-                      {post.title}
-                    </h1>
-                    <p className="font-ui text-sm uppercase tracking-wide mb-2 text-white/90">
-                      BY {post.author}
-                    </p>
-                    <p className="font-ui text-sm text-white/80">
-                      {new Date(post.date).toLocaleDateString('en-US', { 
-                        year: 'numeric', month: 'long', day: 'numeric' 
-                      })}
-                    </p>
-                  </div>
-                </div>
-              </>
-            )}
-          </div>
-          <div className="bg-gray-100"></div>
-          <div className="bg-gray-200"></div>
-        </div>
-
-        {/* Mobile */}
-        <div className="md:hidden relative w-full">
-          {post.image && (
-            <>
               <img
                 src={post.image}
                 alt={post.imageAlt || post.title}
-                className="w-full h-auto"
+                className="max-w-full max-h-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/50 px-6">
-                <div className="text-center text-white">
-                  {post.category && (
-                    <p className="font-ui text-xs uppercase tracking-wider mb-3 text-white/90">
-                      {post.category}
-                    </p>
-                  )}
-                  <h1 className="font-heading text-3xl mb-3 text-white">{post.title}</h1>
-                  <p className="font-ui text-xs uppercase tracking-wide mb-2 text-white/90">
-                    BY {post.author}
-                  </p>
-                  <p className="font-ui text-xs text-white/80">
-                    {new Date(post.date).toLocaleDateString('en-US', { 
-                      year: 'numeric', month: 'long', day: 'numeric' 
-                    })}
-                  </p>
-                </div>
-              </div>
-            </>
+            )}
+          </div>
+
+          <div className="flex items-center justify-center p-12" style={{ backgroundColor: '#f9fafb' }}>
+            <div className="text-center">
+              {post.category && (
+                <p className="font-ui text-sm uppercase tracking-wider text-gray-600 mb-4">
+                  {post.category}
+                </p>
+              )}
+              <h1 className="font-heading text-[36px] md:text-[42px] leading-tight mb-4" style={{ color: '#252220' }}>
+                {post.title}
+              </h1>
+              <p className="font-ui text-sm uppercase tracking-wide mb-2" style={{ color: '#252220' }}>
+                BY {post.author}
+              </p>
+              <p className="font-ui text-sm text-gray-600">
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:hidden w-full">
+          <div className="text-center py-8 px-6" style={{ backgroundColor: '#f9fafb' }}>
+            {post.category && (
+              <p className="font-ui text-xs uppercase tracking-wider text-gray-600 mb-3">
+                {post.category}
+              </p>
+            )}
+            <h1 className="font-heading text-[36px] mb-3" style={{ color: '#252220' }}>
+              {post.title}
+            </h1>
+            <p className="font-ui text-xs uppercase tracking-wide mb-2" style={{ color: '#252220' }}>
+              BY {post.author}
+            </p>
+            <p className="font-ui text-xs text-gray-600">
+              {new Date(post.date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </p>
+          </div>
+          {post.image && (
+            <img
+              src={post.image}
+              alt={post.imageAlt || post.title}
+              className="w-full h-auto"
+            />
           )}
         </div>
       </div>
 
-      <div className="w-full">
-        <div className="px-6 md:pl-12 md:pr-[298px] lg:pl-16 lg:pr-[350px] mt-12">
+      <div className="w-full flex flex-col items-start">
+        <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16 mt-12">
           <div className="mb-8">
             <Breadcrumbs
               items={[{ label: 'Blog', href: '/blog' }]}
@@ -111,8 +177,8 @@ export default function GridTemplate({ post }: GridTemplateProps) {
             />
           </div>
 
-          <article className="prose-content prose-content-justified">
-            <div dangerouslySetInnerHTML={{ __html: firstSection }} />
+          <article className="prose-content-magazine">
+            {renderContentWithProducts(firstSection, post.products)}
 
             {post.carouselImages && post.carouselImages.length > 0 && (
               <div className="my-12">
@@ -120,30 +186,19 @@ export default function GridTemplate({ post }: GridTemplateProps) {
               </div>
             )}
 
-            <div dangerouslySetInnerHTML={{ __html: middleSection }} />
-
-            {post.products && post.products.length > 0 && (
-              <div className="my-12">
-              <ProductGrid products={post.products} count={2} indices={[0, 1]} />
-              </div>
-            )}
-
-            <div dangerouslySetInnerHTML={{ __html: moreContent }} />
-
-            <div className="my-12">
-              <InlineNewsletter />
-            </div>
-
-            <div dangerouslySetInnerHTML={{ __html: remainingContent }} />
+            {renderContentWithProducts(middleSection, post.products)}
+            {renderContentWithProducts(moreContent, post.products)}
           </article>
         </div>
 
-        <div className="hidden md:block fixed top-24 right-0 w-[298px] lg:w-[350px] h-screen bg-gray-100 border-l border-gray-200">
-          <div className="p-6">
-            <div className="bg-gray-200 h-[600px] flex items-center justify-center text-gray-500">
-              Ad Space
-            </div>
-          </div>
+        <div className="w-full my-12">
+          <InlineNewsletter />
+        </div>
+
+        <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16">
+          <article className="prose-content-magazine">
+            {renderContentWithProducts(remainingContent, post.products)}
+          </article>
         </div>
       </div>
 

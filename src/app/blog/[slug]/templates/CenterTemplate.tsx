@@ -1,4 +1,5 @@
 import { BlogPost } from '@/types/blog';
+import { MDXRemote } from 'next-mdx-remote/rsc';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageCarousel from '@/components/Blog/ImageCarousel';
 import ProductGrid from '@/components/Blog/ProductGrid';
@@ -12,65 +13,37 @@ interface CenterTemplateProps {
   post: BlogPost;
 }
 
-// Helper function to parse product placeholders
-function parseProductPlaceholders(content: string, products: BlogPost['products']) {
+function renderContentWithProducts(
+  html: string,
+  products: BlogPost['products']
+): React.ReactNode {
   if (!products || products.length === 0) {
-    return content;
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
   }
 
-  // Match pattern: {{PRODUCTS:count:indices}}
-  // Example: {{PRODUCTS:2:0,1}} or {{PRODUCTS:1:0}} or {{PRODUCTS:4:0,1,2,3}}
-  const productRegex = /\{\{PRODUCTS:(\d+):([\d,]+)\}\}/g;
+  const parts = html.split(/({{PRODUCTS:\d+:[\d,]+}})/g);
 
-  return content.replace(productRegex, (match, countStr, indicesStr) => {
-    const count = parseInt(countStr) as 1 | 2 | 4;
-    const indices = indicesStr.split(',').map((i: string) => parseInt(i.trim()));
-
-    // Validate count
-    if (![1, 2, 4].includes(count)) {
-      console.warn(`Invalid product count: ${count}. Must be 1, 2, or 4.`);
-      return match;
-    }
-
-    // Create a unique ID for this product grid
-    const gridId = `product-grid-${count}-${indices.join('-')}`;
-    
-    // Return a placeholder that we'll replace later
-    return `<div data-product-grid="${gridId}" data-count="${count}" data-indices="${indices.join(',')}"></div>`;
-  });
-}
-
-// Helper function to inject product grids into HTML
-function injectProductGrids(htmlContent: string, products: BlogPost['products']) {
-  if (!products || products.length === 0) {
-    return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
+  if (parts.length === 1) {
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
   }
 
-  // Split content by product grid placeholders
-  const parts = htmlContent.split(/(<div data-product-grid="[^"]*"[^>]*><\/div>)/);
-  
   return (
     <>
       {parts.map((part, index) => {
-        // Check if this part is a product grid placeholder
-        const match = part.match(/<div data-product-grid="[^"]*" data-count="(\d+)" data-indices="([^"]+)"><\/div>/);
-        
+        const match = part.match(/^{{PRODUCTS:(\d+):([\d,]+)}}$/);
         if (match) {
           const count = parseInt(match[1]) as 1 | 2 | 4;
-          const indices = match[2].split(',').map(i => parseInt(i.trim()));
-          
+          const indices = match[2].split(',').map((i) => parseInt(i.trim()));
+          if (![1, 2, 4].includes(count)) return null;
           return (
             <ProductGrid
-              key={`product-grid-${index}`}
+              key={index}
               products={products}
               count={count}
               indices={indices}
-              headingLevel="h2"
             />
           );
         }
-        
-        // Regular HTML content
         return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
       })}
     </>
@@ -78,7 +51,17 @@ function injectProductGrids(htmlContent: string, products: BlogPost['products'])
 }
 
 export default function CenterTemplate({ post }: CenterTemplateProps) {
-  // Parse product placeholders in content
+  const postProducts = post.products ?? [];
+
+  const mdxComponents = {
+    ProductGrid: (props: any) => (
+      <ProductGrid
+        {...props}
+        products={props.products ?? postProducts}
+      />
+    ),
+  };
+
   const h2Blocks = post.content.split(/(?=<h2[\s>])/);
   const total = h2Blocks.length;
 
@@ -91,17 +74,34 @@ export default function CenterTemplate({ post }: CenterTemplateProps) {
   const moreContent      = h2Blocks.slice(q2, q3).join('');
   const remainingContent = h2Blocks.slice(q3).join('');
 
+  // ── MDX path ────────────────────────────────────────────────────────────────
+  if (post.isMDX) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="w-full"><InlineNewsletter /></div>
+        <div className="w-full max-w-[700px] mx-auto px-6 md:px-12 mt-12">
+          <article className="prose-content-magazine">
+            <MDXRemote
+              source={post.content}
+              components={mdxComponents}
+            />
+          </article>
+        </div>
+        <AboutEEAT />
+        <FinalNewsletter />
+        <ReadMoreSection currentSlug={post.slug} />
+      </div>
+    );
+  }
 
+  // ── MD path ─────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen bg-background">
-      {/* Inline Newsletter */}
       <div className="w-full">
         <InlineNewsletter />
       </div>
 
-      {/* Hero Section */}
       <div className="w-full">
-        {/* Metadata Section with brand background */}
         <div className="text-center py-12 md:py-16 px-6" style={{ backgroundColor: '#f9fafb' }}>
           {post.category && (
             <p className="font-ui text-sm uppercase tracking-wider text-gray-600 mb-4">
@@ -115,15 +115,14 @@ export default function CenterTemplate({ post }: CenterTemplateProps) {
             BY {post.author}
           </p>
           <p className="font-ui text-sm text-gray-600">
-            {new Date(post.date).toLocaleDateString('en-US', { 
-              year: 'numeric', 
-              month: 'long', 
-              day: 'numeric' 
+            {new Date(post.date).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
             })}
           </p>
         </div>
 
-        {/* Hero Image - Full Width */}
         <div className="w-full">
           <img
             src={post.image}
@@ -133,11 +132,9 @@ export default function CenterTemplate({ post }: CenterTemplateProps) {
         </div>
       </div>
 
-      {/* Article Content - CENTERED on page, with TOC on right for desktop */}
       <div className="w-full flex justify-center mt-12">
         <div className="w-full max-w-7xl px-6 md:px-12 lg:px-16">
-          
-          {/* Breadcrumbs */}
+
           <div className="mb-8">
             <Breadcrumbs
               items={[{ label: 'Blog', href: '/blog' }]}
@@ -146,17 +143,14 @@ export default function CenterTemplate({ post }: CenterTemplateProps) {
             />
           </div>
 
-          {/* Mobile TOC - Shows only on mobile/tablet */}
           <div className="block lg:hidden mb-8">
             <TableOfContents content={post.content} />
           </div>
 
-          {/* Desktop Layout: Content + Sticky TOC */}
           <div className="flex gap-12 items-start">
-            {/* Main Content Column */}
             <div className="flex-1 max-w-[700px]">
               <article className="prose-content-magazine">
-                {injectProductGrids(firstSection, post.products)}
+                {renderContentWithProducts(firstSection, post.products)}
 
                 {post.carouselImages && post.carouselImages.length > 0 && (
                   <div className="my-12">
@@ -164,32 +158,28 @@ export default function CenterTemplate({ post }: CenterTemplateProps) {
                   </div>
                 )}
 
-                {injectProductGrids(middleSection, post.products)}
-                {injectProductGrids(moreContent, post.products)}
+                {renderContentWithProducts(middleSection, post.products)}
+                {renderContentWithProducts(moreContent, post.products)}
               </article>
             </div>
 
-            {/* Desktop TOC - Sticky on right side */}
             <aside className="hidden lg:block w-[280px] flex-shrink-0 self-start" style={{ position: 'sticky', top: '6rem' }}>
               <TableOfContents content={post.content} />
             </aside>
           </div>
 
-          {/* Break out - Full width newsletter */}
           <div className="w-full my-12 -mx-6 md:-mx-12 lg:-mx-16">
             <InlineNewsletter />
           </div>
 
-          {/* Resume content (without TOC since it's already shown) */}
           <div className="max-w-[700px]">
             <article className="prose-content-magazine">
-              {injectProductGrids(remainingContent, post.products)}
+              {renderContentWithProducts(remainingContent, post.products)}
             </article>
           </div>
         </div>
       </div>
 
-      {/* End Sections */}
       <AboutEEAT />
       <FinalNewsletter />
       <ReadMoreSection currentSlug={post.slug} />

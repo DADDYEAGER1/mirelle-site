@@ -1,4 +1,5 @@
 import { BlogPost } from '@/types/blog';
+import { MDXRemote } from 'next-mdx-remote/rsc';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ImageCarousel from '@/components/Blog/ImageCarousel';
 import ProductGrid from '@/components/Blog/ProductGrid';
@@ -6,14 +7,61 @@ import InlineNewsletter from '@/components/Blog/InlineNewsletter';
 import AboutEEAT from '@/components/Blog/AboutEEAT';
 import FinalNewsletter from '@/components/Blog/FinalNewsletter';
 import ReadMoreSection from '@/components/Blog/ReadMoreSection';
-
-import TableOfContents from '@/components/Blog/TableOfContents';  
+import TableOfContents from '@/components/Blog/TableOfContents';
 
 interface SplitLeftTemplateProps {
   post: BlogPost;
 }
 
+function renderContentWithProducts(
+  html: string,
+  products: BlogPost['products']
+): React.ReactNode {
+  if (!products || products.length === 0) {
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  }
+
+  const parts = html.split(/({{PRODUCTS:\d+:[\d,]+}})/g);
+
+  if (parts.length === 1) {
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  }
+
+  return (
+    <>
+      {parts.map((part, index) => {
+        const match = part.match(/^{{PRODUCTS:(\d+):([\d,]+)}}$/);
+        if (match) {
+          const count = parseInt(match[1]) as 1 | 2 | 4;
+          const indices = match[2].split(',').map((i) => parseInt(i.trim()));
+          if (![1, 2, 4].includes(count)) return null;
+          return (
+            <ProductGrid
+              key={index}
+              products={products}
+              count={count}
+              indices={indices}
+            />
+          );
+        }
+        return <div key={index} dangerouslySetInnerHTML={{ __html: part }} />;
+      })}
+    </>
+  );
+}
+
 export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
+  const postProducts = post.products ?? [];
+
+  const mdxComponents = {
+    ProductGrid: (props: any) => (
+      <ProductGrid
+        {...props}
+        products={props.products ?? postProducts}
+      />
+    ),
+  };
+
   const h2Blocks = post.content.split(/(?=<h2[\s>])/);
   const total = h2Blocks.length;
 
@@ -26,19 +74,35 @@ export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
   const moreContent      = h2Blocks.slice(q2, q3).join('');
   const remainingContent = h2Blocks.slice(q3).join('');
 
+  // ── MDX path ────────────────────────────────────────────────────────────────
+  if (post.isMDX) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="w-full"><InlineNewsletter /></div>
+        <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16 mt-12">
+          <article className="prose-content-magazine">
+            <MDXRemote
+              source={post.content}
+              components={mdxComponents}
+            />
+          </article>
+        </div>
+        <AboutEEAT />
+        <FinalNewsletter />
+        <ReadMoreSection currentSlug={post.slug} />
+      </div>
+    );
+  }
 
+  // ── MD path ─────────────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen bg-background">
-      {/* Inline Newsletter */}
       <div className="w-full">
         <InlineNewsletter />
       </div>
 
-      {/* Hero - Split Left */}
       <div className="w-full">
-        {/* Desktop: 50/50 split with brand colors */}
         <div className="hidden md:grid md:grid-cols-2 h-[600px]">
-          {/* LEFT SIDE - METADATA with brand background */}
           <div className="flex items-center justify-center p-12" style={{ backgroundColor: '#f9fafb' }}>
             <div className="text-center">
               {post.category && (
@@ -53,16 +117,15 @@ export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
                 BY {post.author}
               </p>
               <p className="font-ui text-sm text-gray-600">
-                {new Date(post.date).toLocaleDateString('en-US', { 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
                 })}
               </p>
             </div>
           </div>
 
-          {/* RIGHT SIDE - IMAGE with brand background */}
           <div className="flex items-center justify-center p-12" style={{ backgroundColor: '#f9fafb' }}>
             {post.image && (
               <img
@@ -74,7 +137,6 @@ export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
           </div>
         </div>
 
-        {/* Mobile: Stacked */}
         <div className="md:hidden w-full">
           <div className="text-center py-8 px-6" style={{ backgroundColor: '#f9fafb' }}>
             {post.category && (
@@ -89,10 +151,10 @@ export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
               BY {post.author}
             </p>
             <p className="font-ui text-xs text-gray-600">
-              {new Date(post.date).toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+              {new Date(post.date).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
               })}
             </p>
           </div>
@@ -106,12 +168,8 @@ export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
         </div>
       </div>
 
-      {/* Article Content - Vogue Style Narrow Column */}
       <div className="w-full flex flex-col items-start">
-        {/* Narrow content container */}
         <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16 mt-12">
-          
-          {/* Breadcrumbs */}
           <div className="mb-8">
             <Breadcrumbs
               items={[{ label: 'Blog', href: '/blog' }]}
@@ -119,12 +177,9 @@ export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
               includeSchema={false}
             />
           </div>
-          
-          
 
-          {/* Article Content - LEFT ALIGNED, 20px font */}
           <article className="prose-content-magazine">
-            <div dangerouslySetInnerHTML={{ __html: firstSection }} />
+            {renderContentWithProducts(firstSection, post.products)}
 
             {post.carouselImages && post.carouselImages.length > 0 && (
               <div className="my-12">
@@ -132,36 +187,22 @@ export default function SplitLeftTemplate({ post }: SplitLeftTemplateProps) {
               </div>
             )}
 
-            <div dangerouslySetInnerHTML={{ __html: middleSection }} />
-
-{post.products && post.products.length > 0 && (
-  <div className="my-12">
-    <ProductGrid 
-      products={post.products} 
-      count={2}
-      indices={post.products.map((_, i) => i)}
-    />
-  </div>
-)}
-
-            <div dangerouslySetInnerHTML={{ __html: moreContent }} />
+            {renderContentWithProducts(middleSection, post.products)}
+            {renderContentWithProducts(moreContent, post.products)}
           </article>
         </div>
 
-        {/* Break out - Full width newsletter */}
         <div className="w-full my-12">
           <InlineNewsletter />
         </div>
 
-        {/* Resume narrow content container */}
         <div className="w-full max-w-[700px] px-6 md:px-12 lg:px-16">
           <article className="prose-content-magazine">
-            <div dangerouslySetInnerHTML={{ __html: remainingContent }} />
+            {renderContentWithProducts(remainingContent, post.products)}
           </article>
         </div>
       </div>
 
-      {/* End Sections */}
       <AboutEEAT />
       <FinalNewsletter />
       <ReadMoreSection currentSlug={post.slug} />

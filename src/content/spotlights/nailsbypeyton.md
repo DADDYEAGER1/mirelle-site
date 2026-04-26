@@ -142,7 +142,7 @@ One honest note: because scents rotate monthly, whatever's available now won't a
   />
 </div>
 
-The pens ship across the USA. To order, DM her directly on Instagram or TikTok at <a href='https://www.instagram.com/nails_bypeytonn' target='_blank' rel='nofollow noopener'>@nails_bypeytonn</a>. Mention **Mirellé Inspo** in your message for 5% off your order.
+The pens ship across the USA. To order, DM her directly on Instagram or TikTok at <a href='https://www.tiktock.com/nails_bypeytonn' target='_blank' rel='nofollow noopener'>@nails_bypeytonn</a>. Mention **Mirellé Inspo** in your message for 5% off your order.
 
 ---
 

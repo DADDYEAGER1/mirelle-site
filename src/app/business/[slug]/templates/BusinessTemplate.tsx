@@ -46,7 +46,7 @@ function FAQAccordion({ faqs }: { faqs: BusinessPost['faqSchema'] }) {
 // ─── Main Template ─────────────────────────────────────────────────────────────
 
 export default function BusinessTemplate({ post, mdxSource }: BusinessTemplateProps) {
-  const emailSubject = encodeURIComponent(`Collaboration Enquiry — ${post.region}`);
+  const emailSubject = encodeURIComponent(`Collaboration Enquiry  ${post.region}`);
   const emailHref = `mailto:${post.contact.email}?subject=${emailSubject}`;
   const whatsappHref = post.contact.whatsapp
     ? `https://wa.me/${post.contact.whatsapp.replace(/\D/g, '')}`
@@ -58,7 +58,7 @@ export default function BusinessTemplate({ post, mdxSource }: BusinessTemplatePr
       {/* ── 1. HERO ──────────────────────────────────────────────────────────── */}
       <section className="w-full">
 
-        {/* Hero image — full width */}
+        {/* Hero image  full width */}
         {post.image && (
           <div className="w-full aspect-[16/7] relative overflow-hidden">
             <Image
@@ -186,7 +186,7 @@ export default function BusinessTemplate({ post, mdxSource }: BusinessTemplatePr
                 )}
               </article>
 
-              {/* About Mirellé — E-E-A-T trust block */}
+              {/* About Mirellé  E-E-A-T trust block */}
               <div className="border-t border-[#E0E0E0] pt-10">
                 <p className="font-ui text-ui uppercase tracking-wider text-[#666666] mb-4">
                   About Mirellé
@@ -196,8 +196,8 @@ export default function BusinessTemplate({ post, mdxSource }: BusinessTemplatePr
                 </h2>
                 <p className="font-body text-body text-foreground leading-relaxed">
                   Mirellé is a nail inspiration and editorial platform dedicated to the art,
-                  aesthetics, and culture of nails. We produce original content — trends,
-                  editorials, and campaign direction — for brands and salons that hold a
+                  aesthetics, and culture of nails. We produce original content  trends,
+                  editorials, and campaign direction  for brands and salons that hold a
                   standard. Based online, working globally.
                 </p>
               </div>
@@ -249,7 +249,7 @@ export default function BusinessTemplate({ post, mdxSource }: BusinessTemplatePr
                 Email Us
               </a>
 
-              {/* WhatsApp — plain link, no pre-fill */}
+              {/* WhatsApp  plain link, no pre-fill */}
               {whatsappHref && (
                 <a
                   href={whatsappHref}

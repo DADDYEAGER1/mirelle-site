@@ -43,7 +43,7 @@ topicalMap:
     - "gel-acrylic-biab-mothers-day-nails"
   primaryKeyword: "simple mother's day nails"
   searchIntent: "informational"
-  topicalBoundary: "Minimalist and understated nail design inspiration for Mother's Day — no nail art complexity, focused on sheer finishes, clean shapes, and quiet luxury aesthetics"
+  topicalBoundary: "Minimalist and understated nail design inspiration for Mother's Day  no nail art complexity, focused on sheer finishes, clean shapes, and quiet luxury aesthetics"
   hierarchyLevel: 2
   secondaryKeywords:
     - "simple Mother's Day manicure"
@@ -108,7 +108,7 @@ tldr:
   creativeLine: "The most expensive-looking manicure in the room is usually the one that did the least."
 ---
 
-There is a quiet confidence in choosing to do less. <strong>Simple mother's day nails</strong> have become one of the most searched manicure categories this spring — not because people are settling, but because they have finally worked out that restraint is its own kind of statement. The clean girl aesthetic, the quiet luxury movement, the soap nail renaissance: all of it points in the same direction. Simple mother's day nails are not a fallback. They are a choice.
+There is a quiet confidence in choosing to do less. <strong>Simple mother's day nails</strong> have become one of the most searched manicure categories this spring  not because people are settling, but because they have finally worked out that restraint is its own kind of statement. The clean girl aesthetic, the quiet luxury movement, the soap nail renaissance: all of it points in the same direction. Simple mother's day nails are not a fallback. They are a choice.
 
 If you have been searching for something that looks polished without requiring a nail art degree, you are in exactly the right place. This edit covers the minimalist designs genuinely worth your time in 2026, the colours doing the heavy lifting this season, and the shape decisions that make everything read as expensive. For even more inspiration across every style, <a href='/blog/mothers-day-nail-ideas'>browse the full collection of Mother's Day nail ideas</a>.
 
@@ -270,7 +270,7 @@ Colour gets most of the attention, but shape does at least as much work. A perfe
   />
 </div>
 
-Three shapes carry simple mother's day nails best. Soft square has straight sides with gently rounded corners, making it the most universally flattering and the easiest to maintain. Oval elongates the finger naturally and suits sheer finishes particularly well. Squoval sits between the two: structured without severity. All three work because they do not compete with the polish — they let the finish speak.
+Three shapes carry simple mother's day nails best. Soft square has straight sides with gently rounded corners, making it the most universally flattering and the easiest to maintain. Oval elongates the finger naturally and suits sheer finishes particularly well. Squoval sits between the two: structured without severity. All three work because they do not compete with the polish  they let the finish speak.
 
 Research confirms that <a href='https://www.glamsquad.com/blog/the-link-between-manicures-and-nail-health' target='_blank' rel='noopener'>how regular manicures support nail health</a> goes beyond aesthetics. A consistently shaped, maintained nail grows more evenly and holds polish significantly longer.
 
@@ -293,7 +293,7 @@ The gap between what someone pictures and what they describe at the salon is res
 
 For soap nails: *"A sheer, near-clear finish. No visible colour. Just gloss. Very clean."* For milky white: *"A soft white with some opacity. Not bright white, not cream. Milky. High gloss."* For micro French: *"A very thin tip, barely two millimetres, in off-white. Sheer nude base. Blurred edge, not crisp."* For glazed: *"Pearl powder over a milky base. Lit-from-within effect. Not metallic."*
 
-Always bring a reference image. No description is as reliable as a photograph. For home prep and aftercare, reviewing <a href='https://www.fda.gov/cosmetics/cosmetic-products/nail-care-products' target='_blank' rel='noopener'>nail product safety guidance</a> around ventilation when working with polish is worth a moment before your session. Simple mother's day nails are genuinely achievable at home — soap nails and milky white especially require minimal tools and forgive application imperfections.
+Always bring a reference image. No description is as reliable as a photograph. For home prep and aftercare, reviewing <a href='https://www.fda.gov/cosmetics/cosmetic-products/nail-care-products' target='_blank' rel='noopener'>nail product safety guidance</a> around ventilation when working with polish is worth a moment before your session. Simple mother's day nails are genuinely achievable at home  soap nails and milky white especially require minimal tools and forgive application imperfections.
 
 For a complete walkthrough from prep to finish, the <a href='/blog/mothers-day-nails-diy-tutorial'>step-by-step home tutorial</a> covers every stage in detail, including the mistakes most people make on the first coat.
 

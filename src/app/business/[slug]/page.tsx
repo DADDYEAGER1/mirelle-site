@@ -88,7 +88,7 @@ function generateBusinessSchemas(post: Awaited<ReturnType<typeof getBusinessPost
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: `Nail Editorial Services — ${post.region}`,
+      name: `Nail Editorial Services  ${post.region}`,
       itemListElement: post.services.map(service => ({
         '@type': 'Offer',
         itemOffered: {

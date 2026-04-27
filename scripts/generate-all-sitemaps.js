@@ -83,7 +83,7 @@ function extractImagesFromContent(content, slug, frontmatter, baseImagePath) {
     if (imageUrl.startsWith('http')) return imageUrl;
     // Absolute local path starting with /
     if (imageUrl.startsWith('/')) return `${SITE_URL}${imageUrl}`;
-    // Relative path — build from baseImagePath
+    // Relative path  build from baseImagePath
     return `${SITE_URL}${baseImagePath}/${imageUrl}`;
   }
 

@@ -6,14 +6,14 @@ import { getBusinessPostsByCountry } from '@/lib/business';
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: 'Work With Us — Mirellé Editorial',
+  title: 'Work With Us  Mirellé Editorial',
   description:
     'Mirellé is an editorial nail platform producing trend-led content, campaign direction, and nail art coverage for brands and salons across key global markets.',
   alternates: {
     canonical: 'https://mirelleinspo.com/business',
   },
   openGraph: {
-    title: 'Work With Us — Mirellé Editorial',
+    title: 'Work With Us  Mirellé Editorial',
     description:
       'Editorial nail content, campaign direction, and trend coverage for brands and salons worldwide.',
     url: 'https://mirelleinspo.com/business',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Work With Us — Mirellé Editorial',
+    title: 'Work With Us  Mirellé Editorial',
     description:
       'Editorial nail content, campaign direction, and trend coverage for brands and salons worldwide.',
   },

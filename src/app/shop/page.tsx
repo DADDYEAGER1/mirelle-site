@@ -2,7 +2,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shop — Mirellé',
+  title: 'Shop  Mirellé',
   description: 'We are curating the best nail products for you. Coming soon.',
 };
 

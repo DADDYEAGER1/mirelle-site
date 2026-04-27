@@ -147,7 +147,7 @@ images: {
   productionBrowserSourceMaps: false,
 
   // ✅ Redirects (301)
-  async redirects() {
+async redirects() {
     return [
       {
         source: "/ads.txt",
@@ -157,6 +157,17 @@ images: {
       {
         source: "/posts/test2",
         destination: "/blog/valentine-nails-2026",
+        permanent: true,
+      },
+      // 🆕 Shop removal redirects
+      {
+        source: "/shop",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/shop/:path*",
+        destination: "/",
         permanent: true,
       },
     ];

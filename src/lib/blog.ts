@@ -1,3 +1,4 @@
+import 'server-only';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -93,6 +94,7 @@ class BlogCache {
 }
 
 const blogCache = new BlogCache();
+blogCache.clear();
 
 // ─── Public API ───────────────────────────────────────────────────────────────
 

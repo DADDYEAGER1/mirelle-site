@@ -224,9 +224,8 @@ If Mum is considering doing this at home rather than booking a salon, our <a hre
     loading='lazy'
   />
 </div>
-
 ---
-<!-- 
+
 ## Which One Is Right for Mum?
 
 Three questions. Honest answers. One recommendation.
@@ -340,7 +339,7 @@ export const NailQuiz = () => {
 
 <NailQuiz />
 
---- -->
+---
 
 ## The Verdict: Our Pick for Each Mum Type
 

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Product } from '@/types/blog';
 
 interface ProductGridProps {
-  products: Product[];
+  products?: Product[];
   count: 1 | 2 | 4; // How many products per row
   indices: number[]; // Which products to show (0-based)
   headingLevel?: 'h2' | 'h3'; // For single product featured layout
@@ -182,7 +182,7 @@ function ProductCard({
 export default function ProductGrid({ products, count, indices, headingLevel = 'h2' }: ProductGridProps) {
   // Filter products based on indices
   const selectedProducts = indices
-    .map(idx => products[idx])
+    .map(idx => (products ?? [])[idx])
     .filter(Boolean);
 
   if (selectedProducts.length === 0) {

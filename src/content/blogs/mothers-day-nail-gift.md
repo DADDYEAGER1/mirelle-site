@@ -6,7 +6,7 @@ date: "2026-04-27T09:00:00-05:00"
 dateModified: "2026-04-27"
 author: "Mirellè Team"
 category: "Gift Guides"
-image: "public/images/blog/mothers-day-nail-gift/mothers-day-nail-gift-hero-manicure-kit-gift-box-melodysusie.webp"
+image: "/images/blog/mothers-day-nail-gift/mothers-day-nail-gift-hero-manicure-kit-gift-box-melodysusie.webp"
 imageAlt: "Mothers day nail gift showing MelodySusie manicure kit gift box with drill polish and accessories for home nail care"
 imageWidth: 800
 imageHeight: 800
@@ -113,17 +113,6 @@ Flowers are lovely. A <strong>mother's day nail gift</strong> she'll actually us
 The single biggest gifting mistake with nail products: buying for aspiration rather than reality. A professional-grade drill sitting unused in a drawer because it felt too complicated — that's a gift that missed. The better approach is to meet her where she actually is.
 
 Beginners need low vibration, minimal setup, and clear instructions. Intermediate users want more power and more accessories without the learning curve disappearing entirely. And then there are the mums who've already got the basics and want to upgrade to something genuinely better. MelodySusie's range maps onto all three. For anyone weighing up finishes before committing, <a href='/blog/gel-acrylic-biab-mothers-day-nails'>this breakdown of gel vs. acrylic vs. BIAB</a> is worth a read first.
-
-<div class='my-8 text-center'>
-  <img
-    src='public/images/blog/mothers-day-nail-gift/nail-gift-skill-level-guide-beginner-intermediate-pro-melodysusie-kits.webp'
-    alt='Nail gift skill level guide showing beginner intermediate and advanced MelodySusie kit options for Mothers Day gift selection'
-    width='800'
-    height='800'
-    class='rounded-lg shadow-lg mx-auto'
-    loading='lazy'
-  />
-</div>
 
 ---
 

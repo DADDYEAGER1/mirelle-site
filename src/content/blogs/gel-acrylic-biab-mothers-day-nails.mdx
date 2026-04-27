@@ -105,8 +105,6 @@ tags:
   - "nail system durability"
   - "structured gel manicure"
 ---
-<!-- 'use client';
-import { MDXRemote } from 'next-mdx-remote'; -->
 
 <strong>Gel mother's day nails</strong> are the first thing most people book: familiar, glossy, done in under an hour. But gel is not always the right answer. With Mother's Day falling on the second Sunday in May, the question is not just which system looks best. It is which one still looks best three Sundays from now, or survives the champagne brunch without chipping on the way home. <strong>Gel mother's day nails</strong>, acrylic sets, and BIAB overlays each serve a different Mum. Getting this decision wrong means a manicure that outlives its welcome, or worse, one that does not make it to the celebration at all.
 
@@ -123,7 +121,7 @@ This is not a generic nail guide. Every recommendation here is framed around one
   />
 </div>
 
----
+<hr className="my-8 border-gray-200" />
 
 ## The Stakes Are Different at Mother's Day
 
@@ -133,7 +131,7 @@ The decision splits into two camps. Mums treating themselves are weighing nail h
 
 One practical note before the breakdown: salons fill up fast in early May. Whatever system you choose, book the appointment as soon as possible. Waiting until the week before limits your options significantly. The best <a href='/blog/mothers-day-nail-ideas'>Mother's Day nail designs</a> deserve a technician who has time to do them properly.
 
----
+<hr className="my-8 border-gray-200" />
 
 ## What Each System Actually Does
 
@@ -156,7 +154,7 @@ The terminology is where most people get lost, and that confusion is worth clear
   />
 </div>
 
----
+<hr className="my-8 border-gray-200" />
 
 ## Durability Head-to-Head: What Lasts Past the Brunch Table
 
@@ -179,7 +177,7 @@ In a Mother's Day context, durability means something specific: the nails need t
   />
 </div>
 
----
+<hr className="my-8 border-gray-200" />
 
 ## Nail Health: Which One Is Kinder to Your Natural Nails
 
@@ -202,7 +200,7 @@ Acrylic can strip the nail surface if acid-based primers are used aggressively, 
   />
 </div>
 
----
+<hr className="my-8 border-gray-200" />
 
 ## Application Time and Cost: What to Expect Before You Book
 
@@ -224,122 +222,6 @@ If Mum is considering doing this at home rather than booking a salon, our <a hre
     loading='lazy'
   />
 </div>
----
-
-## Which One Is Right for Mum?
-
-Three questions. Honest answers. One recommendation.
-
-export const NailQuiz = () => {
-  const [answers, setAnswers] = useState({});
-  const [result, setResult] = useState(null);
-
-  const questions = [
-    {
-      id: 'q1',
-      text: 'How long do you need the nails to last?',
-      options: [
-        { label: 'Just through Mother\'s Day weekend', value: 'gel' },
-        { label: 'Two to three weeks without worrying', value: 'biab' },
-        { label: 'As long as humanly possible', value: 'acrylic' },
-      ],
-    },
-    {
-      id: 'q2',
-      text: 'What matters most to you?',
-      options: [
-        { label: 'Speed and affordability', value: 'gel' },
-        { label: 'Nail health and natural growth', value: 'biab' },
-        { label: 'Maximum length and structure', value: 'acrylic' },
-      ],
-    },
-    {
-      id: 'q3',
-      text: 'How would you describe your nails?',
-      options: [
-        { label: 'Naturally strong, I just want colour', value: 'gel' },
-        { label: 'Weak, thin, or prone to breaking', value: 'biab' },
-        { label: 'I want dramatic length, mine won\'t grow', value: 'acrylic' },
-      ],
-    },
-  ];
-
-  const results = {
-    gel: {
-      name: 'Gel Polish',
-      verdict: 'Best for Mums who want a quick, glossy update without commitment.',
-      detail: 'Lasts 10–14 days. Chip-resistant, soak-off removal, wide colour range.',
-      book: 'A standard gel manicure, allow 45–60 minutes.',
-    },
-    biab: {
-      name: 'BIAB (Builder in a Bottle)',
-      verdict: 'Best for Mums who want their natural nails to come out stronger than they went in.',
-      detail: 'Lasts 3–4 weeks with infills. Protective overlay, flexible, nail-healthy removal.',
-      book: 'A BIAB appointment, allow 60–90 minutes.',
-    },
-    acrylic: {
-      name: 'Acrylic',
-      verdict: 'Best for Mums who want length, structure, and a manicure that survives anything.',
-      detail: 'Lasts 3–4 weeks with fills. Most rigid, most durable, widest shape options.',
-      book: 'A full set with your nail technician; ask about infills at 2–3 weeks.',
-    },
-  };
-
-  const handleSelect = (qId, value) => {
-    const updated = { ...answers, [qId]: value };
-    setAnswers(updated);
-    if (Object.keys(updated).length === 3) {
-      const counts = { gel: 0, biab: 0, acrylic: 0 };
-      Object.values(updated).forEach(v => counts[v]++);
-      const max = Math.max(...Object.values(counts));
-      const winners = Object.keys(counts).filter(k => counts[k] === max);
-      setResult(winners.length === 1 ? winners[0] : 'biab');
-    }
-  };
-
-  const reset = () => { setAnswers({}); setResult(null); };
-
-  const answered = Object.keys(answers).length;
-
-  return (
-    <div className="rounded-2xl border border-pink-100 p-6 bg-white shadow-sm my-8">
-      {!result ? (
-        <>
-          {questions.map((q, i) => (
-            <div key={q.id} className="mb-6">
-              <p className="text-xs text-neutral-400 mb-1">Step {i + 1} of 3</p>
-              <p className="text-lg font-medium text-neutral-800 mb-3">{q.text}</p>
-              <div className="flex flex-wrap gap-2">
-                {q.options.map(opt => (
-                  <button
-                    key={opt.value}
-                    onClick={() => handleSelect(q.id, opt.value)}
-                    className={`rounded-full border px-4 py-2 text-sm transition ${answers[q.id] === opt.value ? 'border-pink-500 bg-pink-50 font-semibold' : 'border-neutral-200 hover:border-pink-400 hover:bg-pink-50'}`}
-                  >
-                    {opt.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ))}
-        </>
-      ) : (
-        <div className="rounded-2xl bg-pink-50 border border-pink-200 p-6 mt-2">
-          <p className="text-sm text-pink-400 font-medium mb-1">Your result</p>
-          <p className="text-xl font-bold text-pink-700 mb-2">{results[result].name}</p>
-          <p className="text-neutral-700 mb-1">{results[result].verdict}</p>
-          <p className="text-neutral-500 text-sm mb-1">{results[result].detail}</p>
-          <p className="text-neutral-500 text-sm"><strong>Book:</strong> {results[result].book}</p>
-          <button onClick={reset} className="mt-4 text-sm text-pink-500 underline">Start again</button>
-        </div>
-      )}
-    </div>
-  );
-};
-
-<NailQuiz />
-
----
 
 ## The Verdict: Our Pick for Each Mum Type
 
@@ -364,7 +246,7 @@ The one thing all three have in common: they deserve a good technician. Mother's
   />
 </div>
 
----
+<hr className="my-8 border-gray-200" />
 
 ## Book It Before the Window Closes
 

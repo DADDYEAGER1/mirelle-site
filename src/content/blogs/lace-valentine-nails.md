@@ -16,7 +16,7 @@ tags: [
   "romantic lace nails",
   "intricate valentine nails"
 ]
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-valentine-nails-delicate-romantic-pattern.webp"
+image: "/images/blog/lace-valentine-nails/lace-valentine-nails-delicate-romantic-pattern.webp"
 imageAlt: "Lace Valentine nails featuring intricate white overlay patterns with negative space on sheer pink base"
 imageWidth: 1080
 imageHeight: 1080
@@ -57,15 +57,15 @@ navigationContext:
     slug: "valentine-nails-2026"
     title: "Valentine's Day Nails 2026: 10 Trends Worth Your Attention"
 galleryImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
+  - url: "/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
     alt: "Side by side comparison of three lace nail techniques showing stamping foil and hand-painted results"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
+  - url: "/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
     alt: "Essential stamping tools for lace Valentine nails including plates scraper and stamping polish"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
+  - url: "/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
     alt: "Detailed stamping plate pattern pickup technique showing polish application and scraper motion"
     width: 800
     height: 800
@@ -73,23 +73,23 @@ tutorialSteps:
   - position: 1
     name: "Prepare Base Surface"
     text: "Apply sheer pink or nude base coat to all nails. Allow complete drying minimum thirty minutes. Clean nail surface with alcohol wipe to remove oils that prevent pattern adhesion."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-base-preparation-sheer-pink.webp"
+    image: "/images/blog/lace-valentine-nails/lace-nail-base-preparation-sheer-pink.webp"
   - position: 2
     name: "Load Stamping Plate"
     text: "Apply thick layer of white stamping polish to selected lace pattern on plate. Use scraper at forty-five degree angle to remove excess polish in single swift motion."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-stamping-plate-polish-application.webp"
+    image: "/images/blog/lace-valentine-nails/lace-stamping-plate-polish-application.webp"
   - position: 3
     name: "Pattern Pickup"
     text: "Roll stamper across engraved pattern with firm pressure. Pattern transfers to stamper surface immediately. Check coverage before proceeding to nail transfer."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-stamper-pickup-technique.webp"
+    image: "/images/blog/lace-valentine-nails/lace-pattern-stamper-pickup-technique.webp"
   - position: 4
     name: "Transfer to Nail"
     text: "Position stamper at desired angle on nail. Roll from cuticle to tip with consistent pressure. Pattern releases onto nail surface. Work quickly before polish dries on stamper."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-transfer-nail-placement.webp"
+    image: "/images/blog/lace-valentine-nails/lace-pattern-transfer-nail-placement.webp"
   - position: 5
     name: "Seal Design"
     text: "Wait five minutes for pattern to cure. Apply thin layer of quick-dry top coat without flooding cuticles. Second coat after ten minutes ensures pattern preservation."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-topcoat-sealing-technique.webp"
+    image: "/images/blog/lace-valentine-nails/lace-nail-topcoat-sealing-technique.webp"
 tutorialMetadata:
   name: "Lace Valentine Nail Stamping Tutorial"
   description: "Step-by-step stamping technique for achieving intricate lace patterns on Valentine nails using precision transfer methods"
@@ -130,7 +130,7 @@ Valentine-specific application distinguishes itself from bridal lace through col
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
+    src="/images/blog/lace-valentine-nails/lace-nail-technique-comparison-stamping-foil-handpainted.webp"
     alt='Side by side comparison of three lace nail techniques showing stamping foil and hand-painted results'
     width='800'
     height='800'
@@ -153,7 +153,7 @@ Limitations include pattern restriction designs limited to available stamping pl
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
+    src="/images/blog/lace-valentine-nails/stamping-tools-lace-valentine-nail-supplies.webp"
     alt='Essential stamping tools for lace Valentine nails including plates scraper and stamping polish'
     width='800'
     height='800'
@@ -178,7 +178,7 @@ Base coat selection matters sheer pink, milky nude, soft blush bases allow lace 
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/foil-transfer-supplies-lace-valentine-nails.webp"
+    src="/images/blog/lace-valentine-nails/foil-transfer-supplies-lace-valentine-nails.webp"
     alt='Foil transfer kit including adhesive gel metallic foils and applicator tools for lace nail art'
     width='800'
     height='800'
@@ -201,7 +201,7 @@ Base coat selection matters sheer pink, milky nude, soft blush bases allow lace 
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
+    src="/images/blog/lace-valentine-nails/lace-pattern-pickup-stamping-plate-technique.webp"
     alt='Detailed stamping plate pattern pickup technique showing polish application and scraper motion'
     width='800'
     height='800'
@@ -226,7 +226,7 @@ Base coat selection matters sheer pink, milky nude, soft blush bases allow lace 
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-placement-accent-negative-space-full.webp"
+    src="/images/blog/lace-valentine-nails/lace-pattern-placement-accent-negative-space-full.webp"
     alt='Three lace pattern placement options showing accent nail negative space and full coverage designs'
     width='800'
     height='800'
@@ -247,7 +247,7 @@ Clean transfers require proper stamper pressure and timing. Press stamper firmly
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-pattern-precision-clean-transfer-technique.webp"
+    src="/images/blog/lace-valentine-nails/lace-pattern-precision-clean-transfer-technique.webp"
     alt='Clean versus smudged lace pattern transfers showing proper stamper pressure and timing technique'
     width='800'
     height='800'
@@ -272,7 +272,7 @@ Patchy foil coverage results from insufficient transfer pressure or wrinkled foi
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-transfer-failures-fixes-troubleshooting-guide.webp"
+    src="/images/blog/lace-valentine-nails/lace-transfer-failures-fixes-troubleshooting-guide.webp"
     alt='Visual troubleshooting guide showing common lace transfer failures and corrective techniques'
     width='800'
     height='800'
@@ -297,7 +297,7 @@ Pattern distortion on curved nails happens when stamper rolling motion doesn't f
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/lace-valentine-nails/lace-valentine-nails-occasion-styling-guide.webp"
+    src="/images/blog/lace-valentine-nails/lace-valentine-nails-occasion-styling-guide.webp"
     alt='Styling guide showing lace Valentine nails for different occasions from casual to formal events'
     width='800'
     height='800'

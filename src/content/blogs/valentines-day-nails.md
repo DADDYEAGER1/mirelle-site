@@ -7,7 +7,7 @@ dateModified: "2026-01-25"
 author: "Mirellé Team"
 category: "Design Gallery"
 tags: ["valentines-day-nails", "valentine-nails", "valentine-nails-2026", "press-on-nails", "gel-nail-polish", "cat-eye-nails", "jelly-nails", "diy-valentine-nails"]
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/romantic-valentine-nails-pink-red-heart-designs-cat-eye-jelly-finish-trending-2026.webp"
+image: "/images/blog/valentines-day-nails/romantic-valentine-nails-pink-red-heart-designs-cat-eye-jelly-finish-trending-2026.webp"
 imageAlt: "valentines day nails showcasing trending 2026 styles with pink cat-eye press-ons and red jelly gel polish for romantic manicure"
 imageWidth: 1200
 imageHeight: 630
@@ -38,7 +38,7 @@ topicalMap:
     comparisonType: "roundup"
 
 products:
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/flush-acrylic-press-on-nails-pink-heart-romantic-jelly-glue-application.webp"
+  - image: "/images/blog/valentines-day-nails/flush-acrylic-press-on-nails-pink-heart-romantic-jelly-glue-application.webp"
     name: "Flush Acrylic Press On Nails Kits"
     price: "$9.99"
     link: "https://www.melodysusie.com/products/flush-acrylic-press-on-nails-kits?_pos=4&_sid=453a13b1b&_ss=r&aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
@@ -47,27 +47,27 @@ products:
       - "Key Features: 24 reusable nails in 15 sizes with complete DIY kit"
       - "Best For: First-time users wanting romantic pink with heart accents"
       - "Application: Natural fit, reusable after gentle removal"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/light-pink-cat-eye-press-on-nails-magnetic-dimensional-effect-spraying-technology.webp"
+  - image: "/images/blog/valentines-day-nails/light-pink-cat-eye-press-on-nails-magnetic-dimensional-effect-spraying-technology.webp"
     name: "Light Pink Cat Eye Press On Nails Kit"
     price: "$9.99"
     link: "https://www.melodysusie.com/products/light-pink-cat-eye-press-on-nails-kit?_pos=6&_sid=453a13b1b&_ss=r&aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/pink-heart-press-on-nails-romantic-valentine-design-cat-eye-velvet-finish.webp"
+  - image: "/images/blog/valentines-day-nails/pink-heart-press-on-nails-romantic-valentine-design-cat-eye-velvet-finish.webp"
     name: "Pink Heart Press On Nails Kit"
     price: "$9.99"
     link: "https://www.melodysusie.com/products/pink-heart-press-on-nails-kit?aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/cherry-press-on-nails-retro-cute-fruit-red-valentine-playful-design.webp"
+  - image: "/images/blog/valentines-day-nails/cherry-press-on-nails-retro-cute-fruit-red-valentine-playful-design.webp"
     name: "Cherry Press On Nails Kit"
     price: "$9.99"
     link: "https://www.melodysusie.com/products/cherry-press-on-nails-kit?aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/purple-heart-press-on-nails-unique-romantic-gradient-cat-eye-alternative-valentine.webp"
+  - image: "/images/blog/valentines-day-nails/purple-heart-press-on-nails-unique-romantic-gradient-cat-eye-alternative-valentine.webp"
     name: "Purple Heart Press On Nails Kit"
     price: "$9.99"
     link: "https://www.melodysusie.com/products/purple-heart-press-on-nails-kit?aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/white-cat-eye-press-on-nails-minimalist-subtle-heart-elegant-valentine-manicure.webp"
+  - image: "/images/blog/valentines-day-nails/white-cat-eye-press-on-nails-minimalist-subtle-heart-elegant-valentine-manicure.webp"
     name: "White Cat Eye Press On Nails Kit"
     price: "$9.99"
     link: "https://www.melodysusie.com/products/white-cat-eye-press-on-nails-kit?aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/valentines-evening-tpo-free-gel-polish-deep-red-classic-valentine-salon-quality.webp"
+  - image: "/images/blog/valentines-day-nails/valentines-evening-tpo-free-gel-polish-deep-red-classic-valentine-salon-quality.webp"
     name: "Valentine's Evening - TPO-Free Thick Gel Nail Polish"
     price: "$7.99"
     link: "https://www.melodysusie.com/products/valentines-evening-gel-nail-polish15ml?_pos=1&_sid=eb9b6bc8a&_ss=r&aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
@@ -76,15 +76,15 @@ products:
       - "Key Features: TPO-free EU-compliant formula with low odor"
       - "Best For: DIY gel enthusiasts wanting classic red with salon results"
       - "Application: Requires UV/LED lamp, base and top coat for best results"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/pink-diamond-jelly-gel-polish-buildable-sparkle-dimensional-romantic-valentine.webp"
+  - image: "/images/blog/valentines-day-nails/pink-diamond-jelly-gel-polish-buildable-sparkle-dimensional-romantic-valentine.webp"
     name: "Jeweliver Jelly TPO-Free Gel Polish 15ml - Pink Diamond"
     price: "$7.99"
     link: "https://www.melodysusie.com/products/jeweliver-jelly-gel-polish-15ml-pink-diamond-jdz63?aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/nude-pink-jelly-gel-polish-minimalist-soft-romantic-buildable-subtle-valentine.webp"
+  - image: "/images/blog/valentines-day-nails/nude-pink-jelly-gel-polish-minimalist-soft-romantic-buildable-subtle-valentine.webp"
     name: "Jeweliver Jelly TPO-Free Gel Nail Polish 15ml - Nude Pink"
     price: "$7.99"
     link: "https://www.melodysusie.com/products/jeweliver-jelly-gel-nail-polish-0-5-fl-oz-15ml-nude-pink-jm27?aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
-  - image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/pyrope-garnet-jelly-gel-polish-deep-jewel-tone-luxurious-purple-red-valentine.webp"
+  - image: "/images/blog/valentines-day-nails/pyrope-garnet-jelly-gel-polish-deep-jewel-tone-luxurious-purple-red-valentine.webp"
     name: "Jeweliver Jelly TPO-Free Gel Polish 15ml - Pyrope Garnet"
     price: "$7.99"
     link: "https://www.melodysusie.com/products/jeweliver-jelly-gel-polish-15ml-pyrope-garnet-jig28?_pos=51&_sid=eb9b6bc8a&_ss=r&aff=3711&utm_campaign=3711&utm_source=affiliate&utm_medium=kol"
@@ -102,15 +102,15 @@ faqSchema:
     answer: "Almond shapes offer romantic elegance. Square provides modern clean lines. Coffin works for dramatic looks with design space. Choose based on lifestyle: shorter lengths for active hands, longer for special occasions. Different shapes suit different aesthetics but personal preference matters most for comfortable wear."
 
 galleryImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/flush-acrylic-press-on-nails-pink-heart-romantic-jelly-glue-application.webp"
+  - url: "/images/blog/valentines-day-nails/flush-acrylic-press-on-nails-pink-heart-romantic-jelly-glue-application.webp"
     alt: "flush acrylic press on nails kit in pink with heart accents and jelly glue adhesive for romantic Valentine's Day manicure"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/light-pink-cat-eye-press-on-nails-magnetic-dimensional-effect-spraying-technology.webp"
+  - url: "/images/blog/valentines-day-nails/light-pink-cat-eye-press-on-nails-magnetic-dimensional-effect-spraying-technology.webp"
     alt: "light pink cat eye press on nails with magnetic dimensional effect created by advanced spraying technology for Valentine's"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/valentines-evening-tpo-free-gel-polish-deep-red-classic-valentine-salon-quality.webp"
+  - url: "/images/blog/valentines-day-nails/valentines-evening-tpo-free-gel-polish-deep-red-classic-valentine-salon-quality.webp"
     alt: "Valentine's Evening TPO-free gel nail polish in deep classic red shade for salon-quality romantic manicure at home"
     width: 800
     height: 800
@@ -124,7 +124,7 @@ This guide cuts through the noise. We're focusing on <strong>valentine nails 202
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/cat-eye-jelly-gel-valentine-nails-trending-2026-dimensional-finish-romantic-pink-red.webp'
+    src='/images/blog/valentines-day-nails/cat-eye-jelly-gel-valentine-nails-trending-2026-dimensional-finish-romantic-pink-red.webp'
     alt='trending 2026 Valentine nails featuring cat-eye magnetic effect and jelly gel dimensional finish in romantic pink and red shades'
     width='800'
     height='800'
@@ -268,7 +268,7 @@ Users consistently report realistic results that prompt the question "where did 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/valentine-press-on-nails-application-technique-jelly-glue-proper-sizing-tips.webp'
+    src='/images/blog/valentines-day-nails/valentine-press-on-nails-application-technique-jelly-glue-proper-sizing-tips.webp'
     alt='proper Valentine press-on nail application showing jelly glue technique and sizing selection for long-lasting romantic manicure'
     width='800'
     height='800'
@@ -317,7 +317,7 @@ Deep rich saturation sets this apart from standard red gel polish. Users verify 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/jelly-gel-nail-polish-application-buildable-layers-translucent-valentine-finish.webp'
+    src='/images/blog/valentines-day-nails/jelly-gel-nail-polish-application-buildable-layers-translucent-valentine-finish.webp'
     alt='jelly gel nail polish application showing buildable translucent layers for customizable Valentine nail intensity and depth'
     width='800'
     height='800'
@@ -366,7 +366,7 @@ For comprehensive <a href='https://mirelleinspo.com/topics/nail-care-guide'>nail
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/valentine-nail-prep-technique-proper-cuticle-care-nail-dehydration-application.webp'
+    src='/images/blog/valentines-day-nails/valentine-nail-prep-technique-proper-cuticle-care-nail-dehydration-application.webp'
     alt='proper Valentine nail prep showing cuticle care and nail dehydration technique for long-lasting manicure application'
     width='800'
     height='800'
@@ -389,7 +389,7 @@ Explore more Valentine's aesthetics in our <a href='/blog/best-valentine-nails'>
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/valentine-nail-styles-minimalist-bold-romantic-sophisticated-unique-aesthetic-options.webp'
+    src='/images/blog/valentines-day-nails/valentine-nail-styles-minimalist-bold-romantic-sophisticated-unique-aesthetic-options.webp'
     alt='Valentine nail styles showing minimalist white cat-eye, bold pink hearts, and sophisticated purple designs for different aesthetic preferences'
     width='800'
     height='800'
@@ -414,7 +414,7 @@ US-based availability with fast shipping becomes critical for Valentine's Day sp
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentines-day-nails/valentine-nail-product-quality-markers-tpo-free-formula-complete-kit-us-shipping.webp'
+    src='/images/blog/valentines-day-nails/valentine-nail-product-quality-markers-tpo-free-formula-complete-kit-us-shipping.webp'
     alt='Valentine nail product quality indicators showing TPO-free gel formula label, complete press-on kit contents, and fast US shipping'
     width='800'
     height='800'

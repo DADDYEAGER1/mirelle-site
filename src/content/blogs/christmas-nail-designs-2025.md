@@ -65,19 +65,19 @@ galleryImages:
     gold chrome
   caption: 2025's most sophisticated Christmas color combinations
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-colors-2025.png
+  url: /images/blog/christmas-nails-2025/christmas-colors-2025.png
   width: 1200
 - alt: Christmas nail designs on different nail shapes almond square round coffin
   caption: Festive designs tailored for every nail shape
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-shapes-2025.png
+  url: /images/blog/christmas-nails-2025/christmas-shapes-2025.png
   width: 1200
 - alt: Step by step red and gold Christmas nails with chrome accent tutorial
   caption: Classic red and gold Christmas manicure technique
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-tutorial-2025.png
+  url: /images/blog/christmas-nails-2025/christmas-tutorial-2025.png
   width: 1200
-image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/hero-christmas-nails-2025.jpg
+image: /images/blog/christmas-nails-2025/hero-christmas-nails-2025.jpg
 imageAlt: Christmas nails 2025 featuring festive red, green, and chrome designs for
   holiday season
 imageHeight: 630
@@ -188,7 +188,7 @@ One nail salon we visited showed us their most-requested design board from last 
 ## Modern Christmas Nail Color Combinations
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-colors-2025.png" alt="Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/christmas-colors-2025.png" alt="Modern Christmas nail color palette featuring burgundy sage green and rose gold chrome" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 We curated the most sophisticated color combinations that feel festive without overwhelming your entire look. These palettes work beautifully from December through January and coordinate with winter fashion trends.
@@ -198,7 +198,7 @@ We curated the most sophisticated color combinations that feel festive without o
 **Navy blue and rose gold chrome surprised everyone.** When we first spotted this combo, we were skeptical. After seeing hundreds of variations from professional nail artists, we're convinced it's one of the most underrated festive palettes. The deep blue feels wintery and elegant while rose gold adds just enough sparkle. Perfect for corporate professionals wanting <a href='https://www.mirelleinspo.com/topics/seasonal-trends' class='text-blue-600 hover:text-blue-800 underline'>subtle holiday vibes</a>.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/navy-blue-rose-gold-christmas-nails-elegant-winter-2025.webp" alt="Navy blue rose gold Christmas nails elegant winter holiday manicure sophisticated festive designs chrome accents 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/navy-blue-rose-gold-christmas-nails-elegant-winter-2025.webp" alt="Navy blue rose gold Christmas nails elegant winter holiday manicure sophisticated festive designs chrome accents 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 **Champagne gold and ivory screams luxury.** This palette dominates New Year's Eve nail bookings but works perfectly for the entire holiday season. Adding tiny gold foil accents or micro glitter on accent nails elevates the look further. We found this combination photographs gorgeously in holiday photos without competing with your outfit.
@@ -210,7 +210,7 @@ We curated the most sophisticated color combinations that feel festive without o
 ---
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/cat-eye-magnetic-christmas-nails-red-green-metallic-2025.webp" alt="Cat eye magnetic Christmas nails red green silver metallic shimmer holiday manicure festive nail art design 2025 trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/cat-eye-magnetic-christmas-nails-red-green-metallic-2025.webp" alt="Cat eye magnetic Christmas nails red green silver metallic shimmer holiday manicure festive nail art design 2025 trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 ---
@@ -236,7 +236,7 @@ Chrome application intimidated us initially until we researched the actual proce
 ## Easy DIY Christmas Nail Designs for Beginners
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/minimalist-micro-christmas-nail-art-french-tips-subtle.webp="Minimalist micro Christmas nail art French tips subtle snowflakes tiny festive designs professional holiday manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/minimalist-micro-christmas-nail-art-french-tips-subtle.webp="Minimalist micro Christmas nail art French tips subtle snowflakes tiny festive designs professional holiday manicure" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Not everyone has professional nail training, and that's completely fine. We curated the most foolproof festive designs that work beautifully even if you've never attempted nail art before.
@@ -258,7 +258,7 @@ Not everyone has professional nail training, and that's completely fine. We cura
 ## Christmas Nails for Different Nail Lengths and Shapes
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-shapes-2025.png" alt="Christmas nail designs on different nail shapes almond square round coffin" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/christmas-shapes-2025.png" alt="Christmas nail designs on different nail shapes almond square round coffin" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Your nail shape dramatically affects which festive designs actually work well. We researched design principles and consulted with professional nail artists to understand optimal approaches for each shape.
@@ -298,7 +298,7 @@ We discovered snowflake designs trending heavily on Pinterest with 100,000+ save
 ## Red and Green Christmas Nail Combinations
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/polka-dot-christmas-nails-red-green-gold-festive-2025.webp" alt="Polka dot Christmas nails red green gold white festive holiday manicure easy nail art design winter 2025 nail trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/polka-dot-christmas-nails-red-green-gold-festive-2025.webp" alt="Polka dot Christmas nails red green gold white festive holiday manicure easy nail art design winter 2025 nail trends" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Traditional red and green gets criticism for being too obvious, but executed well these classic colors create absolutely stunning results. We researched modern approaches that elevate the timeless palette.
@@ -322,7 +322,7 @@ We avoided red-green combinations initially thinking they were too basic. After 
 ## Glitter and Sparkle Christmas Nail Ideas
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/champagne-shard-glitter-christmas-nails-holographic-2025.webp" alt="Champagne shard glitter Christmas nails holographic geometric modern elegant holiday manicure festive sparkle 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/champagne-shard-glitter-christmas-nails-holographic-2025.webp" alt="Champagne shard glitter Christmas nails holographic geometric modern elegant holiday manicure festive sparkle 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Glitter dominates December manicures because nothing says celebration like sparkle. We tested countless glitter polishes to understand what separates excellent from mediocre.
@@ -332,7 +332,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 **Glitter accent nails only maintain wearability.** Solid color on most nails with full glitter on ring fingers or accent nails. This balance provides sparkle without overwhelming looks. Perfect for everyday festive vibes through the entire holiday season.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/ombre-glitter-christmas-nails-gradient-red-gold-sparkle.webp" alt="Ombre glitter Christmas nails gradient red gold sparkle festive holiday manicure easy DIY nail art design winter 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/ombre-glitter-christmas-nails-gradient-red-gold-sparkle.webp" alt="Ombre glitter Christmas nails gradient red gold sparkle festive holiday manicure easy DIY nail art design winter 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 **Glitter gradient tips create ombré sparkle effect.** Heavy glitter concentration at tips fading toward cuticles. Apply with makeup sponge for smoothest transitions. This technique works with any glitter color and creates expensive salon aesthetics.
@@ -346,7 +346,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 ---
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/gingerbread-cookie-christmas-nails-brown-icing-candy-cane.webp" alt="Gingerbread cookie Christmas nails brown white icing candy cane stripes festive holiday nail art designs cozy winter" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/gingerbread-cookie-christmas-nails-brown-icing-candy-cane.webp" alt="Gingerbread cookie Christmas nails brown white icing candy cane stripes festive holiday nail art designs cozy winter" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 ## 3D Christmas Nail Art and Embellishments
@@ -358,7 +358,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 **3D bows using acrylic or gel require advanced skills.** This technique isn't beginner-friendly but when executed well, tiny red or green bows on accent nails look like actual gift wrap. We found tutorials from professional nail artists showing this takes months of practice to master.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/3d-bow-nail-art-red-ribbon-french-tips-christmas-2025.webp" alt="3D bow nail art red ribbons white French tips Christmas gift wrap holiday manicure festive designs elegant nails 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/3d-bow-nail-art-red-ribbon-french-tips-christmas-2025.webp" alt="3D bow nail art red ribbons white French tips Christmas gift wrap holiday manicure festive designs elegant nails 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 **Caviar beads create textured bubble effects.** Apply over wet topcoat, let dry, seal carefully. They feel bumpy and interesting while looking unique. Most people remove these after special events because typing becomes annoying.
@@ -370,7 +370,7 @@ Glitter dominates December manicures because nothing says celebration like spark
 **Velvet powder creates fuzzy texture perfect for winter designs.** Apply over wet topcoat, press powder in, dust off excess. Creates soft matte fuzzy finish. Works beautifully for sweater-inspired designs or cozy winter aesthetics.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/velvet-texture-christmas-nails-fuzzy-matte-red-green-2025.webp" alt="Velvet texture Christmas nails fuzzy matte red green cozy winter holiday manicure sweater inspired festive designs 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/velvet-texture-christmas-nails-fuzzy-matte-red-green-2025.webp" alt="Velvet texture Christmas nails fuzzy matte red green cozy winter holiday manicure sweater inspired festive designs 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 ---
@@ -398,7 +398,7 @@ French manicures remain timelessly elegant and harder to mess up than intricate 
 ## Christmas Nails Tutorial: Classic Red and Gold Design
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/christmas-nails-2025/christmas-tutorial-2025.png" alt="Step by step red and gold Christmas nails with chrome accent tutorial" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/christmas-nails-2025/christmas-tutorial-2025.png" alt="Step by step red and gold Christmas nails with chrome accent tutorial" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 We're walking you through the most-requested elegant holiday design that works for literally any December event. This technique comes from professional nail artists who've perfected it over thousands of applications.

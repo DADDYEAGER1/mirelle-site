@@ -6,7 +6,7 @@ date: "2026-04-26T09:00:00-05:00"
 dateModified: "2026-04-26"
 author: "Mirellè Team"
 category: "Comparison"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/v1777226902/mirelleinspo/images/blog/gel-acrylic-biab-mothers-day-nails/gel-acrylic-biab-side-by-side-spring-pink-mothers-day-nail-comparison-hero.webp"
+image: "/images/blog/gel-acrylic-biab-mothers-day-nails/gel-acrylic-biab-side-by-side-spring-pink-mothers-day-nail-comparison-hero.webp"
 imageAlt: "Gel mothers day nails beside BIAB overlay and acrylic set in soft spring pinks for a complete Mothers Day nail comparison"
 imageWidth: 1200
 imageHeight: 630
@@ -114,7 +114,7 @@ This is not a generic nail guide. Every recommendation here is framed around one
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gel-acrylic-biab-mothers-day-nails/glossy-gel-polish-short-natural-nail-mothers-day-close-up-pink-manicure.webp'
+    src='/images/blog/gel-acrylic-biab-mothers-day-nails/glossy-gel-polish-short-natural-nail-mothers-day-close-up-pink-manicure.webp'
     alt='Gel mothers day nails close-up glossy finish on short natural nail in soft blush pink showing chip-resistant spring manicure'
     width='800'
     height='800'
@@ -147,7 +147,7 @@ The terminology is where most people get lost, and that confusion is worth clear
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gel-acrylic-biab-mothers-day-nails/biab-builder-gel-overlay-sheer-blush-natural-nail-structure-mothers-day-manicure.webp'
+    src='/images/blog/gel-acrylic-biab-mothers-day-nails/biab-builder-gel-overlay-sheer-blush-natural-nail-structure-mothers-day-manicure.webp'
     alt='BIAB builder gel overlay on natural nail in sheer blush showing structured protective finish for healthy Mothers Day manicure'
     width='800'
     height='800'
@@ -170,7 +170,7 @@ In a Mother's Day context, durability means something specific: the nails need t
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gel-acrylic-biab-mothers-day-nails/acrylic-nail-set-medium-length-mothers-day-colour-shaped-french-tip-spring.webp'
+    src='/images/blog/gel-acrylic-biab-mothers-day-nails/acrylic-nail-set-medium-length-mothers-day-colour-shaped-french-tip-spring.webp'
     alt='Acrylic nail set medium length Mothers Day spring colour showing shaped apex structure and hard durable finish for occasion'
     width='800'
     height='800'
@@ -193,7 +193,7 @@ Acrylic can strip the nail surface if acid-based primers are used aggressively, 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gel-acrylic-biab-mothers-day-nails/cuticle-oil-application-healthy-natural-nails-nail-bed-care-post-manicure-spring.webp'
+    src='/images/blog/gel-acrylic-biab-mothers-day-nails/cuticle-oil-application-healthy-natural-nails-nail-bed-care-post-manicure-spring.webp'
     alt='Cuticle oil on healthy nail bed post-manicure showing hydration routine for gel acrylic and BIAB nail health maintenance'
     width='800'
     height='800'
@@ -216,7 +216,7 @@ If Mum is considering doing this at home rather than booking a salon, our <a hre
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gel-acrylic-biab-mothers-day-nails/salon-nail-desk-spring-setting-booking-mothers-day-manicure-appointment-hands.webp'
+    src='/images/blog/gel-acrylic-biab-mothers-day-nails/salon-nail-desk-spring-setting-booking-mothers-day-manicure-appointment-hands.webp'
     alt='Salon nail desk spring setting showing hands at Mothers Day manicure appointment for gel BIAB or acrylic nail service booking'
     width='800'
     height='800'
@@ -356,7 +356,7 @@ The one thing all three have in common: they deserve a good technician. Mother's
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/gel-acrylic-biab-mothers-day-nails/biab-natural-nail-growth-before-after-overlay-protection-healthy-nail-bed-spring.webp'
+    src='/images/blog/gel-acrylic-biab-mothers-day-nails/biab-natural-nail-growth-before-after-overlay-protection-healthy-nail-bed-spring.webp'
     alt='Natural nail growth before and after BIAB overlay showing healthy nail bed improvement and protective finish Mothers Day'
     width='800'
     height='800'

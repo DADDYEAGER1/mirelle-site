@@ -6,7 +6,7 @@ date: "2026-04-26T09:00:00-05:00"
 dateModified: "2026-04-27"
 author: "Mirellè Team"
 category: "Inspo"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/mothers-day-nail-ideas-2026-50-plus-designs-florals-pastels-pearl-finish-inspo.webp"
+image: "/images/blog/mothers-day-nail-ideas/mothers-day-nail-ideas-2026-50-plus-designs-florals-pastels-pearl-finish-inspo.webp"
 imageAlt: "Mothers day nail ideas 2026 showing 50 plus curated designs from florals to milky pastels French tips and pearl finishes"
 imageWidth: 1200
 imageHeight: 800
@@ -132,7 +132,7 @@ The strongest <strong>mothers day nail ideas</strong> of 2026 share one quality:
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/mothers-day-nail-ideas-2026-milky-lavender-restraint-intention-spring-manicure.webp'
+    src='/images/blog/mothers-day-nail-ideas/mothers-day-nail-ideas-2026-milky-lavender-restraint-intention-spring-manicure.webp'
     alt='Mothers day nail ideas 2026 milky lavender with restraint and intention spring manicure showcasing sheer gloss on oval shape'
     width='800'
     height='800'
@@ -145,7 +145,7 @@ The strongest <strong>mothers day nail ideas</strong> of 2026 share one quality:
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/pearl-finish-squoval-shape-mothers-day-2026-sheer-base-modern-manicure-inspo.webp'
+    src='/images/blog/mothers-day-nail-ideas/pearl-finish-squoval-shape-mothers-day-2026-sheer-base-modern-manicure-inspo.webp'
     alt='Pearl finish squoval shape mothers day 2026 sheer base modern manicure inspiration with iridescent top coat shimmer'
     width='800'
     height='800'
@@ -158,7 +158,7 @@ The strongest <strong>mothers day nail ideas</strong> of 2026 share one quality:
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/opalescent-neutral-mothers-day-nail-2026-light-shifting-colour-almond-shaped.webp'
+    src='/images/blog/mothers-day-nail-ideas/opalescent-neutral-mothers-day-nail-2026-light-shifting-colour-almond-shaped.webp'
     alt='Opalescent neutral mothers day nail 2026 light shifting colour on almond shaped nails spring manicure subtle iridescent look'
     width='800'
     height='800'
@@ -177,7 +177,7 @@ Milky lavender is the season's breakout. Not lilac, not purple. A pale, grey-ton
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/milky-lavender-grey-toned-mothers-day-nail-colour-2026-oval-shaped-spring-nails.webp'
+    src='/images/blog/mothers-day-nail-ideas/milky-lavender-grey-toned-mothers-day-nail-colour-2026-oval-shaped-spring-nails.webp'
     alt='Milky lavender grey toned mothers day nail colour 2026 on oval shaped spring nails sheer gloss finish soft purple tone'
     width='800'
     height='800'
@@ -190,7 +190,7 @@ Milky lavender is the season's breakout. Not lilac, not purple. A pale, grey-ton
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/blush-nude-near-nude-pink-mothers-day-nail-colour-palette-spring-manicure-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/blush-nude-near-nude-pink-mothers-day-nail-colour-palette-spring-manicure-2026.webp'
     alt='Blush nude near nude pink mothers day nail colour palette spring manicure 2026 soft tones almond shape clean finish look'
     width='800'
     height='800'
@@ -203,7 +203,7 @@ Milky lavender is the season's breakout. Not lilac, not purple. A pale, grey-ton
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/warm-white-pearl-finish-mothers-day-nail-colour-opalescent-almond-shaped-nails.webp'
+    src='/images/blog/mothers-day-nail-ideas/warm-white-pearl-finish-mothers-day-nail-colour-opalescent-almond-shaped-nails.webp'
     alt='Warm white pearl finish mothers day nail colour opalescent almond shaped nails spring 2026 your nails but better look'
     width='800'
     height='800'
@@ -216,7 +216,7 @@ Milky lavender is the season's breakout. Not lilac, not purple. A pale, grey-ton
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/opalescent-shifting-neutral-mothers-day-nail-2026-light-catching-gloss-finish.webp'
+    src='/images/blog/mothers-day-nail-ideas/opalescent-shifting-neutral-mothers-day-nail-2026-light-catching-gloss-finish.webp'
     alt='Opalescent shifting neutral mothers day nail 2026 light catching gloss finish changes colour in sunlight spring manicure'
     width='800'
     height='800'
@@ -229,7 +229,7 @@ Milky lavender is the season's breakout. Not lilac, not purple. A pale, grey-ton
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/pastel-spring-nail-colour-palette-mothers-day-2026-lavender-blush-milky-white.webp'
+    src='/images/blog/mothers-day-nail-ideas/pastel-spring-nail-colour-palette-mothers-day-2026-lavender-blush-milky-white.webp'
     alt='Pastel spring nail colour palette mothers day 2026 showing lavender blush and milky white options on different nail shapes'
     width='800'
     height='800'
@@ -248,7 +248,7 @@ The botanical nail has grown up. Single hand-painted blooms on a neutral base, s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/3d-sculptural-gel-floral-mothers-day-nail-raised-petals-blush-soft-neutral-base.webp'
+    src='/images/blog/mothers-day-nail-ideas/3d-sculptural-gel-floral-mothers-day-nail-raised-petals-blush-soft-neutral-base.webp'
     alt='3D sculptural gel floral mothers day nail with raised petals in blush on soft neutral base almond shape spring 2026 look'
     width='800'
     height='800'
@@ -261,7 +261,7 @@ The botanical nail has grown up. Single hand-painted blooms on a neutral base, s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/single-hand-painted-bloom-botanical-mothers-day-nail-neutral-almond-shaped-base.webp'
+    src='/images/blog/mothers-day-nail-ideas/single-hand-painted-bloom-botanical-mothers-day-nail-neutral-almond-shaped-base.webp'
     alt='Single hand painted bloom botanical mothers day nail on neutral almond shaped base looks like a delicate botanical illustration'
     width='800'
     height='800'
@@ -274,7 +274,7 @@ The botanical nail has grown up. Single hand-painted blooms on a neutral base, s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/rose-petal-3d-gel-nail-art-mothers-day-2026-soft-pink-white-accent-nail-design.webp'
+    src='/images/blog/mothers-day-nail-ideas/rose-petal-3d-gel-nail-art-mothers-day-2026-soft-pink-white-accent-nail-design.webp'
     alt='Rose petal 3D gel nail art mothers day 2026 soft pink and white petals on accent nail design almond shape spring manicure'
     width='800'
     height='800'
@@ -287,7 +287,7 @@ The botanical nail has grown up. Single hand-painted blooms on a neutral base, s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/daisy-botanical-nail-art-mothers-day-2026-white-yellow-minimal-neutral-base-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/daisy-botanical-nail-art-mothers-day-2026-white-yellow-minimal-neutral-base-look.webp'
     alt='Daisy botanical nail art mothers day 2026 white and yellow minimal design on neutral base oval shape spring fresh look'
     width='800'
     height='800'
@@ -300,7 +300,7 @@ The botanical nail has grown up. Single hand-painted blooms on a neutral base, s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/peony-floral-gel-nail-mothers-day-2026-blush-pink-layered-petals-almond-shaped.webp'
+    src='/images/blog/mothers-day-nail-ideas/peony-floral-gel-nail-mothers-day-2026-blush-pink-layered-petals-almond-shaped.webp'
     alt='Peony floral gel nail mothers day 2026 blush pink layered petals on almond shaped nails full bloom sculptural spring design'
     width='800'
     height='800'
@@ -313,7 +313,7 @@ The botanical nail has grown up. Single hand-painted blooms on a neutral base, s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/lily-valley-may-birth-flower-nail-art-mothers-day-delicate-white-green-accent.webp'
+    src='/images/blog/mothers-day-nail-ideas/lily-valley-may-birth-flower-nail-art-mothers-day-delicate-white-green-accent.webp'
     alt='Lily of the valley may birth flower nail art mothers day delicate white and green painted accent nail spring 2026 design'
     width='800'
     height='800'
@@ -326,7 +326,7 @@ The botanical nail has grown up. Single hand-painted blooms on a neutral base, s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/minimalist-botanical-line-art-nail-mothers-day-neutral-base-oval-shaped-spring.webp'
+    src='/images/blog/mothers-day-nail-ideas/minimalist-botanical-line-art-nail-mothers-day-neutral-base-oval-shaped-spring.webp'
     alt='Minimalist botanical line art nail mothers day neutral base oval shaped nails spring 2026 single stem painted fine detail'
     width='800'
     height='800'
@@ -345,7 +345,7 @@ The French manicure has just been edited. Thinner at the free edge, sometimes ba
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/modern-french-tip-squoval-thin-line-mothers-day-nail-2026-spring-manicure-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/modern-french-tip-squoval-thin-line-mothers-day-nail-2026-spring-manicure-look.webp'
     alt='Modern french tip squoval thin line mothers day nail 2026 spring manicure look clean white free edge updated classic style'
     width='800'
     height='800'
@@ -358,7 +358,7 @@ The French manicure has just been edited. Thinner at the free edge, sometimes ba
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/baby-boomer-ombre-nude-white-gradient-mothers-day-nail-almond-shaped-nails-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/baby-boomer-ombre-nude-white-gradient-mothers-day-nail-almond-shaped-nails-2026.webp'
     alt='Baby boomer ombre nude to white gradient mothers day nail on almond shaped nails 2026 soft transition polished spring look'
     width='800'
     height='800'
@@ -371,7 +371,7 @@ The French manicure has just been edited. Thinner at the free edge, sometimes ba
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/soap-nail-ultra-sheer-gloss-mothers-day-2026-milky-base-oval-shaped-fresh-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/soap-nail-ultra-sheer-gloss-mothers-day-2026-milky-base-oval-shaped-fresh-look.webp'
     alt='Soap nail ultra sheer gloss mothers day 2026 milky base on oval shaped nails fresh perpetually clean look spring manicure'
     width='800'
     height='800'
@@ -384,7 +384,7 @@ The French manicure has just been edited. Thinner at the free edge, sometimes ba
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/glazed-donut-finish-mothers-day-nail-2026-high-gloss-dimensional-sheer-milk-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/glazed-donut-finish-mothers-day-nail-2026-high-gloss-dimensional-sheer-milk-look.webp'
     alt='Glazed donut finish mothers day nail 2026 high gloss dimensional sheer milky look rich luminous spring manicure almond nails'
     width='800'
     height='800'
@@ -397,7 +397,7 @@ The French manicure has just been edited. Thinner at the free edge, sometimes ba
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/milky-white-glossy-mothers-day-nail-squoval-shape-clean-fresh-spring-2026-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/milky-white-glossy-mothers-day-nail-squoval-shape-clean-fresh-spring-2026-look.webp'
     alt='Milky white glossy mothers day nail squoval shape clean fresh spring 2026 look simple sheer base high shine finish nails'
     width='800'
     height='800'
@@ -410,7 +410,7 @@ The French manicure has just been edited. Thinner at the free edge, sometimes ba
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/sheer-pink-french-tip-mothers-day-nail-soft-white-free-edge-modern-update-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/sheer-pink-french-tip-mothers-day-nail-soft-white-free-edge-modern-update-2026.webp'
     alt='Sheer pink french tip mothers day nail with soft white free edge modern update 2026 oval shape spring manicure elegant look'
     width='800'
     height='800'
@@ -429,7 +429,7 @@ Short nails hold up better through a full day of celebrating. In 2026, the short
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/short-squoval-mothers-day-nail-milky-base-2026-practical-polished-spring-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/short-squoval-mothers-day-nail-milky-base-2026-practical-polished-spring-look.webp'
     alt='Short squoval mothers day nail milky base 2026 practical polished spring look clean finish on natural length nails everyday'
     width='800'
     height='800'
@@ -442,7 +442,7 @@ Short nails hold up better through a full day of celebrating. In 2026, the short
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/short-almond-nail-mothers-day-2026-pearl-accent-minimal-blush-base-spring-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/short-almond-nail-mothers-day-2026-pearl-accent-minimal-blush-base-spring-look.webp'
     alt='Short almond nail mothers day 2026 pearl accent on minimal blush base spring look elegant short length manicure soft finish'
     width='800'
     height='800'
@@ -455,7 +455,7 @@ Short nails hold up better through a full day of celebrating. In 2026, the short
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/short-oval-nail-mothers-day-botanical-accent-neutral-base-spring-manicure-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/short-oval-nail-mothers-day-botanical-accent-neutral-base-spring-manicure-2026.webp'
     alt='Short oval nail mothers day botanical accent on neutral base spring manicure 2026 single painted flower short natural length'
     width='800'
     height='800'
@@ -468,7 +468,7 @@ Short nails hold up better through a full day of celebrating. In 2026, the short
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/matching-mother-daughter-blush-pink-set-mothers-day-2026-coordinated-nail-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/matching-mother-daughter-blush-pink-set-mothers-day-2026-coordinated-nail-look.webp'
     alt='Matching mother daughter blush pink set mothers day 2026 coordinated nail look same colour family different finishes spring'
     width='800'
     height='800'
@@ -481,7 +481,7 @@ Short nails hold up better through a full day of celebrating. In 2026, the short
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/mother-daughter-lavender-pearl-nail-set-mothers-day-2026-coordinated-spring-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/mother-daughter-lavender-pearl-nail-set-mothers-day-2026-coordinated-spring-look.webp'
     alt='Mother daughter lavender pearl nail set mothers day 2026 coordinated spring look shared palette different nail art details'
     width='800'
     height='800'
@@ -494,7 +494,7 @@ Short nails hold up better through a full day of celebrating. In 2026, the short
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/birth-flower-initial-accent-nail-personalised-mothers-day-manicure-subtle-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/birth-flower-initial-accent-nail-personalised-mothers-day-manicure-subtle-2026.webp'
     alt='Birth flower initial accent nail personalised mothers day manicure subtle 2026 meaningful detail ring finger accent nail art'
     width='800'
     height='800'
@@ -507,7 +507,7 @@ Short nails hold up better through a full day of celebrating. In 2026, the short
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/lily-valley-initial-accent-nail-art-mothers-day-meaningful-personal-detail-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/lily-valley-initial-accent-nail-art-mothers-day-meaningful-personal-detail-2026.webp'
     alt='Lily of the valley initial accent nail art mothers day meaningful personal detail 2026 delicate painted white green initial'
     width='800'
     height='800'
@@ -526,7 +526,7 @@ Less is genuinely more here. A single chrome accent nail on a nude base. Negativ
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/chrome-accent-nail-nude-base-minimal-mothers-day-nail-2026-simple-spring-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/chrome-accent-nail-nude-base-minimal-mothers-day-nail-2026-simple-spring-look.webp'
     alt='Chrome accent nail on nude base minimal mothers day nail 2026 simple spring look single metallic finger rest stays clean'
     width='800'
     height='800'
@@ -539,7 +539,7 @@ Less is genuinely more here. A single chrome accent nail on a nude base. Negativ
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/negative-space-thin-line-detail-minimal-mothers-day-nail-squoval-spring-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/negative-space-thin-line-detail-minimal-mothers-day-nail-squoval-spring-2026.webp'
     alt='Negative space thin line detail minimal mothers day nail on squoval shape spring 2026 architectural clean graphic design look'
     width='800'
     height='800'
@@ -552,7 +552,7 @@ Less is genuinely more here. A single chrome accent nail on a nude base. Negativ
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/soft-ombre-barely-there-gradient-minimal-mothers-day-nail-spring-2026-manicure.webp'
+    src='/images/blog/mothers-day-nail-ideas/soft-ombre-barely-there-gradient-minimal-mothers-day-nail-spring-2026-manicure.webp'
     alt='Soft ombre barely there gradient minimal mothers day nail spring 2026 manicure nude to blush transition so subtle it whispers'
     width='800'
     height='800'
@@ -565,7 +565,7 @@ Less is genuinely more here. A single chrome accent nail on a nude base. Negativ
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/single-pearl-accent-milky-base-simple-mothers-day-nail-2026-minimal-spring-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/single-pearl-accent-milky-base-simple-mothers-day-nail-2026-minimal-spring-look.webp'
     alt='Single pearl accent on milky base simple mothers day nail 2026 minimal spring look one embellishment does all the talking'
     width='800'
     height='800'
@@ -584,7 +584,7 @@ Some looks do not belong to a trend cycle. A soft blush ombre with a pearl top c
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/blush-ombre-pearl-top-coat-almond-nail-mothers-day-2026-elegant-classy-spring.webp'
+    src='/images/blog/mothers-day-nail-ideas/blush-ombre-pearl-top-coat-almond-nail-mothers-day-2026-elegant-classy-spring.webp'
     alt='Blush ombre with pearl top coat on almond nail mothers day 2026 elegant classy spring look soft gradient luminous finish'
     width='800'
     height='800'
@@ -597,7 +597,7 @@ Some looks do not belong to a trend cycle. A soft blush ombre with a pearl top c
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/warm-neutral-crystal-cuticle-detail-mothers-day-nail-2026-elegant-refined-look.webp'
+    src='/images/blog/mothers-day-nail-ideas/warm-neutral-crystal-cuticle-detail-mothers-day-nail-2026-elegant-refined-look.webp'
     alt='Warm neutral crystal cuticle detail mothers day nail 2026 elegant refined look single rhinestone at base of nail subtle luxury'
     width='800'
     height='800'
@@ -610,7 +610,7 @@ Some looks do not belong to a trend cycle. A soft blush ombre with a pearl top c
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/muted-rose-almond-shape-mothers-day-nail-timeless-elegant-spring-2026-manicure.webp'
+    src='/images/blog/mothers-day-nail-ideas/muted-rose-almond-shape-mothers-day-nail-timeless-elegant-spring-2026-manicure.webp'
     alt='Muted rose almond shape mothers day nail timeless elegant spring 2026 manicure sophisticated dusty pink clean finish refined'
     width='800'
     height='800'
@@ -623,7 +623,7 @@ Some looks do not belong to a trend cycle. A soft blush ombre with a pearl top c
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/soft-lavender-pearl-shimmer-elegant-mothers-day-nail-almond-shaped-nails-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/soft-lavender-pearl-shimmer-elegant-mothers-day-nail-almond-shaped-nails-2026.webp'
     alt='Soft lavender pearl shimmer elegant mothers day nail on almond shaped nails 2026 luminous iridescent finish refined spring look'
     width='800'
     height='800'
@@ -636,7 +636,7 @@ Some looks do not belong to a trend cycle. A soft blush ombre with a pearl top c
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/nude-blush-ombre-mothers-day-nail-classy-refined-spring-2026-almond-shaped-nails.webp'
+    src='/images/blog/mothers-day-nail-ideas/nude-blush-ombre-mothers-day-nail-classy-refined-spring-2026-almond-shaped-nails.webp'
     alt='Nude blush ombre mothers day nail classy refined spring 2026 on almond shaped nails seamless gradient polish timeless finish'
     width='800'
     height='800'
@@ -655,7 +655,7 @@ Longevity comes down to prep: base coat, thin layers, top coat applied to the fr
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/gel-manicure-mothers-day-nail-longevity-base-coat-top-coat-prep-spring-2026.webp'
+    src='/images/blog/mothers-day-nail-ideas/gel-manicure-mothers-day-nail-longevity-base-coat-top-coat-prep-spring-2026.webp'
     alt='Gel manicure mothers day nail longevity showing base coat top coat prep spring 2026 layers applied correctly for lasting wear'
     width='800'
     height='800'
@@ -668,7 +668,7 @@ Longevity comes down to prep: base coat, thin layers, top coat applied to the fr
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/biab-overlay-mothers-day-nail-2026-durable-natural-look-builder-in-bottle-set.webp'
+    src='/images/blog/mothers-day-nail-ideas/biab-overlay-mothers-day-nail-2026-durable-natural-look-builder-in-bottle-set.webp'
     alt='BIAB overlay mothers day nail 2026 durable natural look builder in a bottle set showing strength and flexibility for daily wear'
     width='800'
     height='800'
@@ -681,7 +681,7 @@ Longevity comes down to prep: base coat, thin layers, top coat applied to the fr
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-ideas/cuticle-care-nail-prep-mothers-day-manicure-2026-healthy-nail-bed-base-coat.webp'
+    src='/images/blog/mothers-day-nail-ideas/cuticle-care-nail-prep-mothers-day-manicure-2026-healthy-nail-bed-base-coat.webp'
     alt='Cuticle care nail prep for mothers day manicure 2026 showing healthy nail bed base coat application before colour is applied'
     width='800'
     height='800'

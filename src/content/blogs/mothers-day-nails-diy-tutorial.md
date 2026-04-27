@@ -6,7 +6,7 @@ date: "2026-04-26T00:00:00-05:00"
 dateModified: "2026-04-26"
 author: "Mirellè Team"
 category: "Tutorial"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/v1777226569/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/pearl-glaze-soap-nail-chrome-pigment-iridescent-finish-glossy-light-catching-closeup.webp"
+image: "/images/blog/mothers-day-nails-diy-tutorial/pearl-glaze-soap-nail-chrome-pigment-iridescent-finish-glossy-light-catching-closeup.webp"
 imageAlt: "Mother's day nails DIY flat lay showing five completed pastel nail designs with spring flowers and ribbon styling"
 imageWidth: 1200
 imageHeight: 630
@@ -105,27 +105,27 @@ tutorialSteps:
   - position: 1
     name: "Prep Your Nails"
     text: "Wipe each nail with an alcohol wipe or nail dehydrator to remove oils. Push back cuticles gently with a cuticle pusher. File to your preferred shape — squoval or almond work best for these designs. Apply one thin layer of base coat and allow to dry fully before any colour."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/nail-prep-dehydration-cuticle-push-base-coat-application-step-guide.webp"
+    image: "/images/blog/mothers-day-nails-diy-tutorial/nail-prep-dehydration-cuticle-push-base-coat-application-step-guide.webp"
   - position: 2
     name: "Design 1 — Pastel French Tip"
     text: "Apply one thin coat of nude or sheer base colour. Allow to dry. Place a guide strip or small piece of tape just below the tip. Apply your pastel colour (blush, lavender, or butter yellow) in two thin coats over the tip only. Remove the tape while the polish is still slightly wet for a clean line. Seal with top coat."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/pastel-french-tip-lavender-blush-nude-base-guide-strip-technique-closeup.webp"
+    image: "/images/blog/mothers-day-nails-diy-tutorial/pastel-french-tip-lavender-blush-nude-base-guide-strip-technique-closeup.webp"
   - position: 3
     name: "Design 2 — Watercolour Floral Dots"
     text: "Apply a soft nude or blush base (two thin coats). Let dry completely. Dip your dotting tool or toothpick into pink polish and press four or five dots in a loose petal circle on your accent nail. Add a small green dot at the centre with a separate toothpick. The dots do not need to be perfect — slight variation reads as watercolour. Seal with top coat."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/watercolour-floral-dot-method-pink-daisy-blush-base-dotting-tool-nail-art.webp"
+    image: "/images/blog/mothers-day-nails-diy-tutorial/watercolour-floral-dot-method-pink-daisy-blush-base-dotting-tool-nail-art.webp"
   - position: 4
     name: "Design 3 — Heart Accent Nail"
     text: "Paint all nails in a coordinating nude or soft pink (two thin coats). On one accent nail, use your dotting tool to place two overlapping dots of red or pastel polish side by side at the top of the nail — close together so they just touch. Drag each dot downward to a point to form the heart shape. Clean up edges with a nail remover pen. Seal."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/heart-accent-nail-pastel-red-dotting-tool-two-dot-method-nude-coordinating-hand.webp"
+    image: "/images/blog/mothers-day-nails-diy-tutorial/heart-accent-nail-pastel-red-dotting-tool-two-dot-method-nude-coordinating-hand.webp"
   - position: 5
     name: "Design 4 — Pastel Ombré Fade"
     text: "Apply a white or very pale base coat first — this makes the pastels pop. While dry, paint two pastel shades (pink and lavender work well) side by side on a makeup sponge with a small gap of overlap between them. Dab the sponge onto the nail in short, light pressing motions. Build up three to four layers, letting each one dry slightly before the next. Clean edges with a cleanup brush dipped in acetone. Seal with top coat."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/pastel-ombre-sponge-fade-pink-lavender-spring-manicure-soft-light-photography.webp"
+    image: "/images/blog/mothers-day-nails-diy-tutorial/pastel-ombre-sponge-fade-pink-lavender-spring-manicure-soft-light-photography.webp"
   - position: 6
     name: "Design 5 — Pearl Glaze / Soap Nail"
     text: "Apply a sheer nude or soft pink base (two thin coats). Allow to dry fully — this step is non-negotiable for chrome pigment adhesion. Dip a small eyeshadow brush or your fingertip into chrome powder pigment and rub it gently across the nail surface using circular motions. You will see the iridescent pearl effect develop as you work. Seal immediately with a glossy top coat. No UV lamp required."
-    image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/pearl-glaze-soap-nail-chrome-pigment-iridescent-finish-glossy-light-catching-closeup.webp"
+    image: "/images/blog/mothers-day-nails-diy-tutorial/pearl-glaze-soap-nail-chrome-pigment-iridescent-finish-glossy-light-catching-closeup.webp"
 
 faqItems:
   - question: "How long does a DIY Mother's Day manicure last?"
@@ -182,7 +182,7 @@ Most DIY manicures fail here, not at the design stage. Skipped prep is the prima
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/nail-prep-dehydration-cuticle-push-base-coat-application-step-guide.webp'
+    src='/images/blog/mothers-day-nails-diy-tutorial/nail-prep-dehydration-cuticle-push-base-coat-application-step-guide.webp'
     alt='Nail prep step showing alcohol wipe dehydration, cuticle pushing, and base coat application for at-home mother day manicure'
     width='800'
     height='800'
@@ -209,7 +209,7 @@ The 2026 update to the classic French tip swaps the white for blush, lavender, o
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/pastel-french-tip-lavender-blush-nude-base-guide-strip-technique-closeup.webp'
+    src='/images/blog/mothers-day-nails-diy-tutorial/pastel-french-tip-lavender-blush-nude-base-guide-strip-technique-closeup.webp'
     alt='Pastel French tip nails close-up showing lavender and blush coloured tips on nude base with clean tape guide strip line result'
     width='800'
     height='800'
@@ -236,7 +236,7 @@ No fine brush skills needed. The dot method creates a soft, watercolour-style fl
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/watercolour-floral-dot-method-pink-daisy-blush-base-dotting-tool-nail-art.webp'
+    src='/images/blog/mothers-day-nails-diy-tutorial/watercolour-floral-dot-method-pink-daisy-blush-base-dotting-tool-nail-art.webp'
     alt='Watercolour floral dot nail art close-up showing soft pink daisy petal cluster on blush base made with dotting tool beginner method'
     width='800'
     height='800'
@@ -265,7 +265,7 @@ Heart designs dominate Mother's Day nail searches every year. They are also one 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/heart-accent-nail-pastel-red-dotting-tool-two-dot-method-nude-coordinating-hand.webp'
+    src='/images/blog/mothers-day-nails-diy-tutorial/heart-accent-nail-pastel-red-dotting-tool-two-dot-method-nude-coordinating-hand.webp'
     alt='Heart accent nail showing pastel red two-dot drag method result on one nail with coordinating nude polish on remaining fingers'
     width='800'
     height='800'
@@ -292,7 +292,7 @@ The sponge ombré method requires no professional tools — just a makeup sponge
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/pastel-ombre-sponge-fade-pink-lavender-spring-manicure-soft-light-photography.webp'
+    src='/images/blog/mothers-day-nails-diy-tutorial/pastel-ombre-sponge-fade-pink-lavender-spring-manicure-soft-light-photography.webp'
     alt='Pastel ombré sponge fade nails showing soft pink to lavender gradient across both hands in spring natural light photography'
     width='800'
     height='800'
@@ -317,7 +317,7 @@ Pearl and glazed nails are the dominant manicure trend of 2026 — the soap nail
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nails-diy-tutorial/pearl-glaze-soap-nail-chrome-pigment-iridescent-finish-glossy-light-catching-closeup.webp'
+    src='/images/blog/mothers-day-nails-diy-tutorial/pearl-glaze-soap-nail-chrome-pigment-iridescent-finish-glossy-light-catching-closeup.webp'
     alt='Pearl glaze soap nail close-up showing iridescent chrome pigment finish on sheer nude base with glossy top coat light-catching sheen'
     width='800'
     height='800'

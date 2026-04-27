@@ -62,20 +62,20 @@ galleryImages:
     almond shaped nails
   caption: 'Burgundy and emerald: the sophisticated color duo of 2025'
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/burgundy-emerald-christmas-nails-gold-leaf-accents-almond-shape.jpg
+  url: /images/blog/red-green-christmas-nails-2025/burgundy-emerald-christmas-nails-gold-leaf-accents-almond-shape.jpg
   width: 1200
 - alt: candy cane stripe christmas nails red and white on green base for short square
     nails
   caption: Classic candy cane stripes reimagined on forest green
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/candy-cane-stripe-christmas-nails-red-white-green-base-square.jpg
+  url: /images/blog/red-green-christmas-nails-2025/candy-cane-stripe-christmas-nails-red-white-green-base-square.jpg
   width: 1200
 - alt: matte red and glossy green christmas french tip nails with snowflake nail art
   caption: Mixing matte and glossy finishes adds dimension
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/matte-red-glossy-green-christmas-french-tip-snowflake-art.jpg
+  url: /images/blog/red-green-christmas-nails-2025/matte-red-glossy-green-christmas-french-tip-snowflake-art.jpg
   width: 1200
-image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/red-green-christmas-nails-2025-hero.jpg
+image: /images/blog/red-green-christmas-nails-2025/red-green-christmas-nails-2025-hero.jpg
 imageAlt: red and green christmas nails 2025 festive holiday manicure designs with
   candy cane stripes
 imageHeight: 630
@@ -173,7 +173,7 @@ The key is choosing shades with similar depth and saturation. When both colors a
 We recommend alternating fingers rather than mixing both colors on the same nail for this elegant approach. Paint your thumb, middle, and pinky in burgundy, then use emerald for your index and ring fingers. This creates a balanced look that feels intentional and polished.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/burgundy-emerald-christmas-nails-gold-leaf-accents-almond-shape.jpg" alt="elegant burgundy and emerald green christmas nails with gold leaf accents on almond shaped nails" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/burgundy-emerald-christmas-nails-gold-leaf-accents-almond-shape.jpg" alt="elegant burgundy and emerald green christmas nails with gold leaf accents on almond shaped nails" class="w-full rounded-lg shadow-lg" />
 
 
 ### 2. Classic Candy Cane Stripes
@@ -203,7 +203,7 @@ Use a makeup sponge to create the gradient effect. Apply both colors side by sid
 The gradient can run vertically from cuticle to tip or horizontally across all five nails. Vertical gradients on individual nails feel more wearable for everyday life, while horizontal gradients across your hand create a dramatic statement perfect for holiday photos.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/red-green-ombre-gradient-christmas-nails-vertical-blend.jpg" alt="red to green ombre gradient christmas nails with vertical color blend on almond shape" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/red-green-ombre-gradient-christmas-nails-vertical-blend.jpg" alt="red to green ombre gradient christmas nails with vertical color blend on almond shape" class="w-full rounded-lg shadow-lg" />
 
 
 ### 5. Red and Green French Tips with a Twist
@@ -215,12 +215,12 @@ Paint a sheer pink or nude base, then create french tips using alternating red a
 For extra holiday flair, add a thin gold line at the boundary between the base and the colored tips. This subtle detail elevates the design from simple to stunning without requiring advanced nail art skills.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/red-green-french-tip-christmas-nails-gold-line-accent.jpg" alt="alternating red and green french tip christmas nails with gold line accent on nude base" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/red-green-french-tip-christmas-nails-gold-line-accent.jpg" alt="alternating red and green french tip christmas nails with gold line accent on nude base" class="w-full rounded-lg shadow-lg" />
 
 
 Discover more french tip variations in our <a href='/blog/new-year-nails-2025' class='text-blue-600 hover:text-blue-800 underline'>New Year nails collection</a> that transitions perfectly from Christmas.
 
-![Candy cane stripe christmas nails on green base](https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/candy-cane-stripe-christmas-nails-red-white-green-base-square.jpg)
+![Candy cane stripe christmas nails on green base](/images/blog/red-green-christmas-nails-2025/candy-cane-stripe-christmas-nails-red-white-green-base-square.jpg)
 
 ---
 
@@ -237,7 +237,7 @@ OPI Big Apple Red and China Glaze Ruby Pumps are beloved formulas that nail enth
 This shade works on all skin tones and nail lengths. It is particularly striking on shorter square nails where the boldness of the color makes a statement without needing elaborate nail art.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/classic-candy-apple-red-christmas-nails-short-square-shape.jpg" alt="classic bright candy apple red christmas nails with glossy finish on short square nails" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/classic-candy-apple-red-christmas-nails-short-square-shape.jpg" alt="classic bright candy apple red christmas nails with glossy finish on short square nails" class="w-full rounded-lg shadow-lg" />
 
 
 ### Deep Burgundy Wine
@@ -249,7 +249,7 @@ We love how burgundy looks in matte finish. The velvety texture enhances the lux
 Cherry mocha shades that blend burgundy with brown undertones are particularly trendy for 2025. These warm-toned reds complement gold jewelry beautifully and look stunning with neutral winter wardrobe staples like camel coats and cream sweaters.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/deep-burgundy-wine-christmas-nails-matte-finish-gold-accent.jpg" alt="deep burgundy wine red christmas nails with matte finish and gold leaf accent coffin shape" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/deep-burgundy-wine-christmas-nails-matte-finish-gold-accent.jpg" alt="deep burgundy wine red christmas nails with matte finish and gold leaf accent coffin shape" class="w-full rounded-lg shadow-lg" />
 
 
 ### Crimson Red with Shimmer
@@ -275,7 +275,7 @@ Forest green works beautifully as either the dominant color or as an accent. Pai
 Essie Off Tropic and OPI Stay Off the Lawn are professional-grade formulas that deliver smooth, even application. The key with dark greens is applying thin coats to avoid streaking and allowing adequate drying time between layers.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/forest-green-christmas-nails-traditional-evergreen-shade-glossy.jpg" alt="deep forest green christmas nails with glossy finish traditional evergreen shade on oval nails" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/forest-green-christmas-nails-traditional-evergreen-shade-glossy.jpg" alt="deep forest green christmas nails with glossy finish traditional evergreen shade on oval nails" class="w-full rounded-lg shadow-lg" />
 
 
 ### Emerald for Modern Sophistication
@@ -287,7 +287,7 @@ The intensity of emerald makes it ideal for accent nails rather than full covera
 Emerald looks particularly stunning with chrome powder or metallic finishes. The reflective quality enhances the jewel-tone nature of the color, making your nails look like actual gemstones.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/emerald-green-christmas-nails-chrome-finish-jewel-tone-almond.jpg" alt="bright emerald green christmas nails with chrome metallic finish jewel tone on almond shape" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/emerald-green-christmas-nails-chrome-finish-jewel-tone-almond.jpg" alt="bright emerald green christmas nails with chrome metallic finish jewel tone on almond shape" class="w-full rounded-lg shadow-lg" />
 
 
 ### Sage Green for Unexpected Elegance
@@ -299,7 +299,7 @@ Pair sage with deeper brick reds or burgundy rather than bright candy apple reds
 This color works beautifully in matte finish, enhancing its sophisticated vibe. Sage green is ideal for office-appropriate Christmas nails that read festive without being too bold or attention-grabbing.
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/red-green-christmas-nails-2025/sage-green-christmas-nails-matte-dusty-modern-minimalist-short.jpg" alt="sage green matte christmas nails dusty modern minimalist design on short square nails" class="w-full rounded-lg shadow-lg" />
+<img src="/images/blog/red-green-christmas-nails-2025/sage-green-christmas-nails-matte-dusty-modern-minimalist-short.jpg" alt="sage green matte christmas nails dusty modern minimalist design on short square nails" class="w-full rounded-lg shadow-lg" />
 
 
 Explore our <a href='/shop/winter' class='text-blue-600 hover:text-blue-800 underline'>winter nail polish collection</a> for more seasonal green shades.

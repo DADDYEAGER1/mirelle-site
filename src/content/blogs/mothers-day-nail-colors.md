@@ -6,7 +6,7 @@ date: "2026-05-01T09:00:00-05:00"
 dateModified: "2026-05-01"
 author: "Mirellè Team"
 category: "Nail Colours"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/mothers-day-nail-colors-spring-manicure-blush-lavender-hero-flatlay.webp"
+image: "/images/blog/mothers-day-nail-colors/mothers-day-nail-colors-spring-manicure-blush-lavender-hero-flatlay.webp"
 imageAlt: "Mother's day nail colors featuring blush pink and lavender spring manicure flatlay with soft pastel shades for the occasion"
 imageWidth: 800
 imageHeight: 800
@@ -97,7 +97,7 @@ This guide moves through the key colour families: what they say, who they flatte
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/mothers-day-nail-colors-spring-manicure-blush-lavender-hero-flatlay.webp'
+    src='/images/blog/mothers-day-nail-colors/mothers-day-nail-colors-spring-manicure-blush-lavender-hero-flatlay.webp'
     alt='Mother's day nail colors featuring blush pink and lavender spring manicure flatlay with soft pastel shades for the occasion'
     width='800'
     height='800'
@@ -116,7 +116,7 @@ According to <a href='https://artnailnyc.com/2025/10/13/what-your-nail-colors-re
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/nail-color-psychology-emotional-meaning-spring-shade-palette-guide.webp'
+    src='/images/blog/mothers-day-nail-colors/nail-color-psychology-emotional-meaning-spring-shade-palette-guide.webp'
     alt='Nail color psychology chart showing emotional meaning of blush pink lavender nude red coral and champagne for spring occasions'
     width='800'
     height='800'
@@ -135,7 +135,7 @@ For skin tone guidance: blush with a peachy undertone suits warm complexions bea
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/blush-pink-sheer-jelly-finish-nail-polish-spring-flattering-warm-cool-skin.webp'
+    src='/images/blog/mothers-day-nail-colors/blush-pink-sheer-jelly-finish-nail-polish-spring-flattering-warm-cool-skin.webp'
     alt='Blush pink sheer jelly finish nail polish swatches on warm and cool skin tones showing flattering coverage and glass-like luminosity'
     width='800'
     height='800'
@@ -154,7 +154,7 @@ Both sit at a neutral point in the colour spectrum — not so warm they clash wi
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/lavender-lilac-mauve-nail-shade-comparison-spring-2026-cool-neutral-tones.webp'
+    src='/images/blog/mothers-day-nail-colors/lavender-lilac-mauve-nail-shade-comparison-spring-2026-cool-neutral-tones.webp'
     alt='Lavender lilac and mauve nail shade comparison showing cool to warm spectrum variations for spring 2026 manicure colour selection'
     width='800'
     height='800'
@@ -173,7 +173,7 @@ The key is choosing the right nude for your skin tone. A nude that matches exact
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/nude-cream-nail-polish-skin-tone-matching-warm-cool-beige-taupe-swatches.webp'
+    src='/images/blog/mothers-day-nail-colors/nude-cream-nail-polish-skin-tone-matching-warm-cool-beige-taupe-swatches.webp'
     alt='Nude cream nail polish swatches showing warm beige cool taupe and skin-tone matching options for Mother's Day manicure elongating effect'
     width='800'
     height='800'
@@ -192,7 +192,7 @@ On Mother's Day, red reads as a celebration of self — entirely in keeping with
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/red-nail-polish-shade-range-classic-berry-tomato-rose-mothers-day-appropriate.webp'
+    src='/images/blog/mothers-day-nail-colors/red-nail-polish-shade-range-classic-berry-tomato-rose-mothers-day-appropriate.webp'
     alt='Red nail polish shade range showing classic berry tomato and deep rose variations suitable for Mother's Day occasion in cream finish'
     width='800'
     height='800'
@@ -211,7 +211,7 @@ Both are strongest on warm and neutral undertones. On cool undertones, a pink-le
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/coral-peach-pastel-nail-polish-spring-warm-skin-tone-vibrant-outdoor-manicure.webp'
+    src='/images/blog/mothers-day-nail-colors/coral-peach-pastel-nail-polish-spring-warm-skin-tone-vibrant-outdoor-manicure.webp'
     alt='Coral and peach pastel nail polish shades on warm skin tones showing spring vibrancy and outdoor photography performance for Mother's Day'
     width='800'
     height='800'
@@ -230,7 +230,7 @@ White nails in 2026 are not the stark clinical white of years past — the trend
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/champagne-shimmer-milky-white-sheer-nail-polish-2026-spring-minimalist-modern.webp'
+    src='/images/blog/mothers-day-nail-colors/champagne-shimmer-milky-white-sheer-nail-polish-2026-spring-minimalist-modern.webp'
     alt='Champagne shimmer and milky white sheer nail polish 2026 spring minimalist choices showing luminous finish and modern clean manicure aesthetic'
     width='800'
     height='800'
@@ -253,7 +253,7 @@ The undertone question is simpler than it looks. Check the veins on the inside o
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/skin-undertone-nail-color-guide-warm-cool-neutral-vein-check-shade-matching.webp'
+    src='/images/blog/mothers-day-nail-colors/skin-undertone-nail-color-guide-warm-cool-neutral-vein-check-shade-matching.webp'
     alt='Skin undertone nail color guide showing warm cool and neutral undertone vein check method with recommended Mother's Day shade pairings'
     width='800'
     height='800'
@@ -276,7 +276,7 @@ The same <strong>nail colour psychology</strong> that governs shade choice exten
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-colors/nail-polish-finish-comparison-glossy-matte-shimmer-blush-nude-champagne-spring.webp'
+    src='/images/blog/mothers-day-nail-colors/nail-polish-finish-comparison-glossy-matte-shimmer-blush-nude-champagne-spring.webp'
     alt='Nail polish finish comparison showing glossy matte and shimmer effects on blush nude and champagne shades for spring Mother's Day manicure'
     width='800'
     height='800'

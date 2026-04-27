@@ -95,19 +95,19 @@ galleryImages:
 - alt: Warm coral and peach nail polish shades on mature hands showing flattering
     anti-aging effect with natural lighting
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/warm-coral-peach-nail-polish-aging-hands.jpg
+  url: /images/blog/nail-polish-colors-make-hands-look-younger/warm-coral-peach-nail-polish-aging-hands.jpg
   width: 800
 - alt: Oval and almond nail shapes comparison on aging hands demonstrating finger-elongating
     flattering effect
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/oval-almond-nail-shapes-mature-hands.jpg
+  url: /images/blog/nail-polish-colors-make-hands-look-younger/oval-almond-nail-shapes-mature-hands.jpg
   width: 800
 - alt: Soft pink and warm nude nail polish creating youthful appearance on mature
     skin hands
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/soft-pink-nude-youthful-manicure.jpg
+  url: /images/blog/nail-polish-colors-make-hands-look-younger/soft-pink-nude-youthful-manicure.jpg
   width: 800
-image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/coral-peach-anti-aging-nail-polish-hands.jpg
+image: /images/blog/nail-polish-colors-make-hands-look-younger/coral-peach-anti-aging-nail-polish-hands.jpg
 imageAlt: Coral and peach nail polish colors on mature hands showing youthful anti-aging
   effect with elegant oval nail shape
 imageHeight: 630
@@ -207,7 +207,7 @@ The relationship between nail color and hand perception also involves how the ey
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/warm-coral-peach-nail-polish-aging-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/warm-coral-peach-nail-polish-aging-hands.jpg'
       alt='Warm coral and peach nail polish shades on mature hands showing flattering anti-aging effect with natural lighting'
       width='800'
       height='800'
@@ -242,7 +242,7 @@ When selecting your perfect coral or peach shade, hold bottles next to your skin
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/coral-salmon-peach-anti-aging-manicure.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/coral-salmon-peach-anti-aging-manicure.jpg'
       alt='Coral salmon and peach nail polish colors demonstrating flattering warm undertones on mature hands'
       width='800'
       height='800'
@@ -273,7 +273,7 @@ Red polish also offers the psychological benefit of confidence and presence. Whe
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/classic-warm-red-nail-polish-mature-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/classic-warm-red-nail-polish-mature-hands.jpg'
       alt='Classic warm red nail polish on mature hands with elegant oval shape showing timeless sophistication'
       width='800'
       height='800'
@@ -320,7 +320,7 @@ Dark winter nail colors can be tempting during colder months when rich, cozy sha
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/dark-polish-aging-hands-comparison.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/dark-polish-aging-hands-comparison.jpg'
       alt='Dark burgundy nail polish versus medium warm tones on mature hands showing aging contrast effect'
       width='800'
       height='800'
@@ -377,7 +377,7 @@ Creating the perfect oval shape involves filing from the sides toward the center
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/oval-almond-nail-shapes-mature-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/oval-almond-nail-shapes-mature-hands.jpg'
       alt='Oval and almond nail shapes comparison on aging hands demonstrating finger-elongating flattering effect'
       width='800'
       height='800'
@@ -444,7 +444,7 @@ Achieving the rich girl nail aesthetic on mature hands involves focusing on nail
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/rich-girl-nails-quiet-luxury-mature-hands.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/rich-girl-nails-quiet-luxury-mature-hands.jpg'
       alt='Rich girl nails quiet luxury aesthetic with nude polish and perfect grooming on mature hands'
       width='800'
       height='800'
@@ -509,7 +509,7 @@ Consider transitioning into spring colors gradually rather than making an abrupt
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/spring-peach-coral-warm-pastel-nails.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/spring-peach-coral-warm-pastel-nails.jpg'
       alt='Spring peach and coral nail polish colors with warm undertones flattering mature hands'
       width='800'
       height='800'
@@ -602,7 +602,7 @@ Understanding these warning signs doesn't mean becoming overly anxious about eve
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/nail-polish-colors-make-hands-look-younger/unhealthy-nail-color-health-warning-signs.jpg'
+      src='/images/blog/nail-polish-colors-make-hands-look-younger/unhealthy-nail-color-health-warning-signs.jpg'
       alt='Unhealthy nail discoloration showing yellow nails blue nails and health warning signs requiring medical attention'
       width='800'
       height='800'

@@ -16,7 +16,7 @@ tags: [
   "korean jelly nails",
   "see-through valentine nails"
 ]
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp"
+image: "/images/blog/tomato-red-valentine-nails/tomato-red-valentine-nails-modern-warm-2026.webp"
 imageAlt: "Tomato red Valentine nails featuring vibrant orange-based warm red with glossy modern finish"
 imageWidth: 1080
 imageHeight: 1080
@@ -58,15 +58,15 @@ navigationContext:
     slug: "valentine-nails-2026"
     title: "Valentine's Day Nails 2026: 10 Trends Worth Your Attention"
 galleryImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
+  - url: "/images/blog/tomato-red-valentine-nails/tomato-red-vs-classic-red-nail-comparison.webp"
     alt: "Side by side comparison showing tomato red versus classic red nail polish undertone differences"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
+  - url: "/images/blog/tomato-red-valentine-nails/tomato-red-skin-tone-warm-medium-olive.webp"
     alt: "Tomato red nail polish swatches on warm medium and olive skin tones demonstrating flattering effect"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
+  - url: "/images/blog/tomato-red-valentine-nails/color-wheel-tomato-red-positioning-orange-base.webp"
     alt: "Color theory wheel showing tomato red positioning as orange-based red versus blue-based classic"
     width: 800
     height: 800
@@ -87,7 +87,7 @@ The appeal centers on opacity mastery. <strong>Translucent nail art</strong> req
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/opacity-control-layering-progression-guide.webp"
+    src="/images/blog/jelly-valentine-nails/opacity-control-layering-progression-guide.webp"
     alt='Opacity control showing one coat to four coat jelly polish progression'
     width='800'
     height='800'
@@ -112,7 +112,7 @@ Layering mechanics govern final appearance predictably. Single coat application 
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/milky-pink-valentine-jelly-palette.webp"
+    src="/images/blog/jelly-valentine-nails/milky-pink-valentine-jelly-palette.webp"
     alt='Milky pink sheer cranberry valentine jelly nail color palette'
     width='800'
     height='800'
@@ -137,7 +137,7 @@ Milky pink represents quintessential jelly Valentine shade. The color spans blus
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/jelly-french-tips-translucent-valentine.webp"
+    src="/images/blog/jelly-valentine-nails/jelly-french-tips-translucent-valentine.webp"
     alt='Jelly French tips with translucent pink on sheer nude base'
     width='800'
     height='800'
@@ -164,7 +164,7 @@ Sheer single-tone application employs one to two coats creating ultra-translucen
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/sheer-single-tone-date-night-elegance.webp"
+    src="/images/blog/jelly-valentine-nails/sheer-single-tone-date-night-elegance.webp"
     alt='Sheer single tone jelly nails in one coat for date night elegance'
     width='800'
     height='800'
@@ -189,7 +189,7 @@ Nail bed preparation requires thorough buffing eliminating ridges and texture ir
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/buildable-gradient-opacity-variation.webp"
+    src="/images/blog/jelly-valentine-nails/buildable-gradient-opacity-variation.webp"
     alt='Buildable gradient showing nail to nail opacity variation technique'
     width='800'
     height='800'
@@ -214,7 +214,7 @@ Heart placement strategies divide into three approaches preserving jelly aesthet
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/encased-hearts-jelly-suspension-layers.webp"
+    src="/images/blog/jelly-valentine-nails/encased-hearts-jelly-suspension-layers.webp"
     alt='Encased heart embellishments suspended in translucent jelly layers'
     width='800'
     height='800'
@@ -239,7 +239,7 @@ First date romance benefits from one to two coat ultra-sheer application. The ba
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/jelly-valentine-nails/watercolor-bloom-jelly-valentine-detail.webp"
+    src="/images/blog/jelly-valentine-nails/watercolor-bloom-jelly-valentine-detail.webp"
     alt='Watercolor blooming technique creating diffused valentine color in jelly base'
     width='800'
     height='800'

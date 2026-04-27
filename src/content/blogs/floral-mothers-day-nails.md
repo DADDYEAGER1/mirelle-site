@@ -6,7 +6,7 @@ date: "2026-04-26T09:00:00-05:00"
 dateModified: "2026-04-26"
 author: "Mirellè Team"
 category: "Nail Inspiration"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/floral-mothers-day-nails-rose-daisy-peony-editorial-split-hero-blush.webp"
+image: "/images/blog/floral-mothers-day-nails/floral-mothers-day-nails-rose-daisy-peony-editorial-split-hero-blush.webp"
 imageAlt: "Floral mothers day nails featuring rose daisy and peony designs on blush almond nails for a romantic spring manicure"
 imageWidth: 800
 imageHeight: 800
@@ -132,7 +132,7 @@ The 2026 shift worth noting: this year's floral nails are moving decisively away
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/spring-2026-botanical-nail-art-airy-fine-line-floral-trend-overview-blush.webp'
+    src='/images/blog/floral-mothers-day-nails/spring-2026-botanical-nail-art-airy-fine-line-floral-trend-overview-blush.webp'
     alt='Spring 2026 botanical nail art showing fine line floral designs and airy translucent motifs across soft blush almond nails'
     width='800'
     height='800'
@@ -153,7 +153,7 @@ Translated to nails, that range of meaning becomes a design decision. A single d
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/hand-painted-rose-nail-art-red-pink-nude-base-colour-mothers-day-range.webp'
+    src='/images/blog/floral-mothers-day-nails/hand-painted-rose-nail-art-red-pink-nude-base-colour-mothers-day-range.webp'
     alt='Hand painted rose nail art showing red pink and nude base colour variations for mothers day manicure colour range comparison'
     width='800'
     height='800'
@@ -174,7 +174,7 @@ Daisies are not the second choice — they are the smart choice for anyone attem
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/daisy-nail-art-dotting-tool-technique-white-petals-yellow-centre-spring-diy.webp'
+    src='/images/blog/floral-mothers-day-nails/daisy-nail-art-dotting-tool-technique-white-petals-yellow-centre-spring-diy.webp'
     alt='Daisy nail art technique using dotting tool showing white petals and yellow centre on blush pink base for spring manicure'
     width='800'
     height='800'
@@ -195,7 +195,7 @@ Peonies carry a specific weight in the <a href="https://thursd.com/articles/flow
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/peony-nail-art-layered-petal-blush-pink-oval-nails-salon-finish-detail.webp'
+    src='/images/blog/floral-mothers-day-nails/peony-nail-art-layered-petal-blush-pink-oval-nails-salon-finish-detail.webp'
     alt='Peony nail art showing layered petal construction in blush pink on oval nails with salon level detail and gradient blending'
     width='800'
     height='800'
@@ -216,7 +216,7 @@ The watercolour approach is having a moment, and it suits the 2026 aesthetic wel
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/watercolour-floral-nails-blush-lavender-sage-colour-diffusion-spring-manicure.webp'
+    src='/images/blog/floral-mothers-day-nails/watercolour-floral-nails-blush-lavender-sage-colour-diffusion-spring-manicure.webp'
     alt='Watercolour floral nails showing blush lavender and sage colour diffusion technique for impressionist spring mothers day manicure'
     width='800'
     height='800'
@@ -237,7 +237,7 @@ Few things photograph like 3D floral nails. The dimension, the shadow, the petal
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/3d-sculpted-acrylic-floral-nail-art-raised-petal-texture-salon-spring-technique.webp'
+    src='/images/blog/floral-mothers-day-nails/3d-sculpted-acrylic-floral-nail-art-raised-petal-texture-salon-spring-technique.webp'
     alt='3D sculpted acrylic floral nail art showing raised petal texture and dimensional blooms on soft white nail base salon technique'
     width='800'
     height='800'
@@ -258,7 +258,7 @@ For those who want to try a version at home: thick builder gel, applied in small
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/micro-floral-nail-art-tiny-rose-daisy-ring-finger-accent-nail-nude-base.webp'
+    src='/images/blog/floral-mothers-day-nails/micro-floral-nail-art-tiny-rose-daisy-ring-finger-accent-nail-nude-base.webp'
     alt='Micro floral nail art showing tiny rose and daisy designs on ring finger accent nail with nude base and fine brush detail work'
     width='800'
     height='800'
@@ -279,7 +279,7 @@ The base coat decision shapes everything else. A poorly chosen base competes wit
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/best-base-colours-floral-nail-art-blush-nude-white-sage-swatch-comparison.webp'
+    src='/images/blog/floral-mothers-day-nails/best-base-colours-floral-nail-art-blush-nude-white-sage-swatch-comparison.webp'
     alt='Best base colours for floral nail art showing blush nude soft white and sage green polish swatches for mothers day manicure'
     width='800'
     height='800'
@@ -308,7 +308,7 @@ The idea that <strong>spring floral nails Mother's Day</strong> designs only wor
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/floral-nail-designs-short-nails-oval-squoval-micro-daisy-accent-nail-length.webp'
+    src='/images/blog/floral-mothers-day-nails/floral-nail-designs-short-nails-oval-squoval-micro-daisy-accent-nail-length.webp'
     alt='Floral nail designs on short oval and squoval nails showing micro daisy and single bloom accent nail designs for shorter lengths'
     width='800'
     height='800'
@@ -335,7 +335,7 @@ The most common complaint about hand-painted florals is longevity. The detail wo
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/floral-mothers-day-nails/floral-nail-art-longevity-tips-no-wipe-top-coat-thin-layer-technique-guide.webp'
+    src='/images/blog/floral-mothers-day-nails/floral-nail-art-longevity-tips-no-wipe-top-coat-thin-layer-technique-guide.webp'
     alt='Floral nail art longevity technique showing no wipe top coat application and thin layering method for hand painted floral designs'
     width='800'
     height='800'

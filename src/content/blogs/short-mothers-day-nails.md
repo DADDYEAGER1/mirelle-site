@@ -6,7 +6,7 @@ date: "2026-04-26T00:00:00-05:00"
 dateModified: "2026-04-26"
 author: "Mirellè Team"
 category: "Inspo"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/short-mothers-day-nails-elegant-squoval-pearl-glaze-hero-brunch-ready.webp"
+image: "/images/blog/short-mothers-day-nails/short-mothers-day-nails-elegant-squoval-pearl-glaze-hero-brunch-ready.webp"
 imageAlt: "Short mothers day nails in a pearl glaze finish on squoval shape showing elegant manicure ideal for brunch and family celebration photos"
 imageWidth: 800
 imageHeight: 800
@@ -87,7 +87,7 @@ This is the edit for the mom who keeps her nails short by necessity. Whether tha
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/squoval-round-oval-short-nail-shape-comparison-spring-2026-squoval-manicure-guide.webp'
+    src='/images/blog/short-mothers-day-nails/squoval-round-oval-short-nail-shape-comparison-spring-2026-squoval-manicure-guide.webp'
     alt='Squoval round and oval short nail shape comparison side by side on natural nails showing best spring 2026 silhouettes for Mothers Day'
     width='800'
     height='800'
@@ -114,7 +114,7 @@ Oval works beautifully for narrower nail beds, creating the illusion of length t
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/squoval-shape-filed-short-nail-free-edge-softened-corner-spring-manicure-detail.webp'
+    src='/images/blog/short-mothers-day-nails/squoval-shape-filed-short-nail-free-edge-softened-corner-spring-manicure-detail.webp'
     alt='Squoval shaped short nail showing filed free edge with softened corners and clean natural nail bed for spring 2026 manicure preparation'
     width='800'
     height='800'
@@ -133,7 +133,7 @@ For Mother's Day, an ivory or soft champagne micro-tip reads as quietly elegant.
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/micro-french-tip-ivory-champagne-short-squoval-nail-free-edge-closeup-spring.webp'
+    src='/images/blog/short-mothers-day-nails/micro-french-tip-ivory-champagne-short-squoval-nail-free-edge-closeup-spring.webp'
     alt='Micro French tip in ivory and champagne on short squoval nails showing whisper thin free edge line for elegant spring manicure result'
     width='800'
     height='800'
@@ -152,7 +152,7 @@ The glazed donut nail translated well to shorter lengths because the finish does
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/pearl-glaze-iridescent-milky-chrome-powder-finish-short-oval-nails-mothers-day.webp'
+    src='/images/blog/short-mothers-day-nails/pearl-glaze-iridescent-milky-chrome-powder-finish-short-oval-nails-mothers-day.webp'
     alt='Pearl glaze iridescent milky finish on short oval nails reflecting light softly ideal for Mothers Day celebration and family photos'
     width='800'
     height='800'
@@ -171,7 +171,7 @@ Blush-to-ivory or soft lavender into a milky base: both palettes photograph well
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/soft-pastel-gradient-ombre-blush-lavender-sponge-technique-short-nails-spring-2026.webp'
+    src='/images/blog/short-mothers-day-nails/soft-pastel-gradient-ombre-blush-lavender-sponge-technique-short-nails-spring-2026.webp'
     alt='Soft pastel gradient ombre using sponge technique on short nails blending blush and lavender spring 2026 shades for Mothers Day'
     width='800'
     height='800'
@@ -190,7 +190,7 @@ A five-petal dot flower created with a dotting tool on the ring finger is propor
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/tiny-floral-accent-ring-finger-short-nails-dot-petal-white-blush-detail-spring.webp'
+    src='/images/blog/short-mothers-day-nails/tiny-floral-accent-ring-finger-short-nails-dot-petal-white-blush-detail-spring.webp'
     alt='Tiny floral accent on ring finger of short nails using dot petal technique in white and blush on sheer nude base for spring celebration'
     width='800'
     height='800'
@@ -207,7 +207,7 @@ Negative space on short nails is a design language that most nail content barely
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/negative-space-nail-design-short-nails-bare-natural-nail-exposed-minimalist-stripe.webp'
+    src='/images/blog/short-mothers-day-nails/negative-space-nail-design-short-nails-bare-natural-nail-exposed-minimalist-stripe.webp'
     alt='Negative space nail design on short natural nails with exposed bare nail sections and thin colour line creating minimalist elongated effect'
     width='800'
     height='800'
@@ -220,7 +220,7 @@ On colour: sheer nudes and milky bases create a continuous visual line from skin
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/milky-nude-sheer-blush-dusty-mauve-colour-palette-swatches-short-nail-bed-length.webp'
+    src='/images/blog/short-mothers-day-nails/milky-nude-sheer-blush-dusty-mauve-colour-palette-swatches-short-nail-bed-length.webp'
     alt='Milky nude sheer blush and dusty mauve colour palette swatches on short nail bed showing how each shade affects perceived nail length'
     width='800'
     height='800'
@@ -239,7 +239,7 @@ Wipe each nail with an acetone-free cleanser immediately before your base coat. 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/nail-prep-cuticle-oil-acetone-free-wipe-clean-natural-nail-surface-before-polish.webp'
+    src='/images/blog/short-mothers-day-nails/nail-prep-cuticle-oil-acetone-free-wipe-clean-natural-nail-surface-before-polish.webp'
     alt='Nail prep routine showing cuticle oil application followed by acetone wipe to clean natural nail surface before polish for lasting manicure'
     width='800'
     height='800'
@@ -258,7 +258,7 @@ Place the brush at the centre of the nail just above the cuticle, press lightly 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/short-mothers-day-nails/thin-coat-polish-technique-short-nail-application-clean-edges-precise-brush-stroke.webp'
+    src='/images/blog/short-mothers-day-nails/thin-coat-polish-technique-short-nail-application-clean-edges-precise-brush-stroke.webp'
     alt='Thin coat nail polish application technique on short nails showing precise brush control and clean edge result with no flooding or skin contact'
     width='800'
     height='800'

@@ -66,7 +66,7 @@ faqItems:
     bottle for mess-free application. Keep a lint roller nearby to clean up sparkle
     fallout for easy cleanup.
   question: How do I prevent glitter from getting everywhere during application
-image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/hero-new-year-nails-2025.jpg
+image: /images/blog/new-year-nails-2025/hero-new-year-nails-2025.jpg
 imageAlt: New Year nails 2025 featuring metallic silver chrome and gold glitter designs
   for NYE celebrations
 imageHeight: 630
@@ -101,7 +101,7 @@ Color-wise, we're seeing a gorgeous shift toward **champagne neutrals, rose gold
 
 Want to explore more <a href='https://www.mirelleinspo.com/topics/seasonal-trends' class='text-blue-600 hover:text-blue-800 underline'>seasonal nail trends</a>? We've got guides for every celebration throughout the year.
 
-<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/silver-chrome-nye-nails.png' alt='Stunning silver chrome new year nails 2025 with champagne glitter accents and metallic finish' />
+<img src='/images/blog/new-year-nails-2025/silver-chrome-nye-nails.png' alt='Stunning silver chrome new year nails 2025 with champagne glitter accents and metallic finish' />
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500842440/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save these silver chrome NYE nails →</a></p>
 
 ---
@@ -156,7 +156,7 @@ Gold nails are the ultimate New Year luxury statement. They scream celebration, 
 
 **20. Gold French with Rhinestones:** Classic French tips in gold instead of white, with a single rhinestone at each cuticle. Classy with just enough bling.
 
-<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/gold-glitter-manicure.png' alt='Gold metallic manicure with confetti nail art perfect for NYE celebration' />
+<img src='/images/blog/new-year-nails-2025/gold-glitter-manicure.png' alt='Gold metallic manicure with confetti nail art perfect for NYE celebration' />
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500842448/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin this gold glitter manicure →</a></p>
 
 ### Glitter and Sparkle Overload
@@ -183,7 +183,7 @@ If you believe more is more and subtlety is for other people, this section is yo
 
 **30. Mixed Texture Glitter:** Combine fine glitter with chunky pieces for depth and dimension. It looks professionally designed even when it's DIY.
 
-<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/glitter-gradient-nails.png' alt='Glitter gradient new year nails with silver and gold sparkle ombre effect' />
+<img src='/images/blog/new-year-nails-2025/glitter-gradient-nails.png' alt='Glitter gradient new year nails with silver and gold sparkle ombre effect' />
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500842541/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save this glitter gradient tutorial →</a></p>
 
 ### Minimalist Elegant Designs
@@ -243,7 +243,7 @@ For those who want nails to be the main character of every NYE photo. These desi
 
 Check out our <a href='https://www.mirelleinspo.com/shop/new-year' class='text-blue-600 hover:text-blue-800 underline'>New Year nail supplies</a> for all the products you need to create these designs.
 
-<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/bold-statement-nye-nails.png' alt='Bold metallic nail art with geometric patterns and mixed chrome finishes for NYE' />
+<img src='/images/blog/new-year-nails-2025/bold-statement-nye-nails.png' alt='Bold metallic nail art with geometric patterns and mixed chrome finishes for NYE' />
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500842487/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin these bold statement nails →</a></p>
 ---
 
@@ -261,7 +261,7 @@ Push back cuticles gently with a cuticle pusher. Don't cut them unless professio
 
 Clean nails thoroughly with rubbing alcohol on a lint-free wipe. This removes all oils, dust, and moisture that prevent gel from adhering properly. Nails should feel slightly dry and squeaky clean. If they feel oily or slippery, wipe again.
 
-<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/nail-prep-tutorial.png' alt='Step-by-step nail prep tutorial showing buffing and cleaning process' />
+<img src='/images/blog/new-year-nails-2025/nail-prep-tutorial.png' alt='Step-by-step nail prep tutorial showing buffing and cleaning process' />
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500842558/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Save this nail prep guide →</a></p>
 
 ### Apply Base Coat (Your Insurance Policy)
@@ -278,7 +278,7 @@ Keep first coat thin - you can see through it and that's totally fine. Cure for 
 
 For chrome powder application, do this after color but before top coat. Apply a no-wipe top coat, cure for 30 seconds only (you want it slightly tacky), then rub chrome powder onto the nail with a silicone applicator until you get that mirror finish. Dust off excess powder with a fluffy brush.
 
-<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/metallic-polish-application.png' alt='Tutorial showing metallic gel polish application technique with proper brush strokes' />
+<img src='/images/blog/new-year-nails-2025/metallic-polish-application.png' alt='Tutorial showing metallic gel polish application technique with proper brush strokes' />
 <p style='text-align: center; margin-top: 1rem; margin-bottom: 1.5rem;'><a href='https://in.pinterest.com/pin/913034524500842585/' target='_blank' rel='noopener' style='color: #2563eb; text-decoration: underline; font-weight: 500;'>Pin this application technique →</a></p>
 
 ### Add Special Effects (Where the Magic Happens)
@@ -339,7 +339,7 @@ After testing hundreds of products across thousands of applications, these are t
 
 For complete product recommendations across all categories, check out our <a href='https://www.mirelleinspo.com/shop' class='text-blue-600 hover:text-blue-800 underline'>curated shop</a> with everything we actually use and trust.
 
-<img src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/new-year-nails-2025/nail-faq-troubleshooting.png' alt='FAQ troubleshooting guide showing common New Year nail problems and solutions' />
+<img src='/images/blog/new-year-nails-2025/nail-faq-troubleshooting.png' alt='FAQ troubleshooting guide showing common New Year nail problems and solutions' />
 ---
 
 ## How to Make Your New Year Nails Last All Night (And Beyond)

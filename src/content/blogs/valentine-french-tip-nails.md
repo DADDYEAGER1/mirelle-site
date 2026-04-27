@@ -16,7 +16,7 @@ tags: [
   "romantic french tip nails",
   "modern french manicure"
 ]
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/valentine-french-tip-nails-modern-precision-hero.webp"
+image: "/images/blog/valentine-french-tip-nails/valentine-french-tip-nails-modern-precision-hero.webp"
 imageAlt: "Valentine French tip nails showing red and pink tip variations with precision"
 imageWidth: 1080
 imageHeight: 1080
@@ -58,15 +58,15 @@ navigationContext:
     slug: "valentine-nails-2026"
     title: "Valentine's Day Nails 2026: 10 Trends Worth Your Attention"
 galleryImages:
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/classic-red-french-tips-valentine-bold.webp"
+  - url: "/images/blog/valentine-french-tip-nails/classic-red-french-tips-valentine-bold.webp"
     alt: "Classic red French tips replacing traditional white with bold valentine color"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/micro-french-tips-minimalist-valentine-line.webp"
+  - url: "/images/blog/valentine-french-tip-nails/micro-french-tips-minimalist-valentine-line.webp"
     alt: "Micro French tips showing ultra-thin valentine nail line precision"
     width: 800
     height: 800
-  - url: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/heart-shaped-french-tips-romantic-curve.webp"
+  - url: "/images/blog/valentine-french-tip-nails/heart-shaped-french-tips-romantic-curve.webp"
     alt: "Heart-shaped French tips with romantic curved tip geometry"
     width: 800
     height: 800
@@ -87,7 +87,7 @@ This guide presents eight distinct <strong>Valentine French manicure</strong> va
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/classic-red-french-tips-valentine-bold.webp"
+    src="/images/blog/valentine-french-tip-nails/classic-red-french-tips-valentine-bold.webp"
     alt='Classic red French tips replacing traditional white with bold valentine color'
     width='800'
     height='800'
@@ -112,7 +112,7 @@ The appeal lies in immediate recognition combined with unexpected color choice. 
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/micro-french-tips-minimalist-valentine-line.webp"
+    src="/images/blog/valentine-french-tip-nails/micro-french-tips-minimalist-valentine-line.webp"
     alt='Micro French tips showing ultra-thin valentine nail line precision'
     width='800'
     height='800'
@@ -137,7 +137,7 @@ The precision requirement increases proportionally as line width decreases. Achi
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/heart-shaped-french-tips-romantic-curve.webp"
+    src="/images/blog/valentine-french-tip-nails/heart-shaped-french-tips-romantic-curve.webp"
     alt='Heart-shaped French tips with romantic curved tip geometry'
     width='800'
     height='800'
@@ -164,7 +164,7 @@ The visual impact depends entirely on execution precision. Asymmetrical curves o
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/pink-french-tips-soft-blush-variation.webp"
+    src="/images/blog/valentine-french-tip-nails/pink-french-tips-soft-blush-variation.webp"
     alt='Pink French tips in soft blush shade for romantic valentine manicure'
     width='800'
     height='800'
@@ -191,7 +191,7 @@ Shade selection within pink family significantly impacts final aesthetic. Blush 
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/double-french-tips-layered-precision-design.webp"
+    src="/images/blog/valentine-french-tip-nails/double-french-tips-layered-precision-design.webp"
     alt='Double French tips showing two-tone layered valentine nail precision'
     width='800'
     height='800'
@@ -218,7 +218,7 @@ The technique demands exceptional accuracy for two reasons. First, both lines re
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/ombre-french-tips-gradient-valentine-blend.webp"
+    src="/images/blog/valentine-french-tip-nails/ombre-french-tips-gradient-valentine-blend.webp"
     alt='Ombré French tips with pink to red gradient valentine transition'
     width='800'
     height='800'
@@ -245,7 +245,7 @@ The gradient quality requires different skill set than standard French. Rather t
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/french-tips-heart-accents-playful-design.webp"
+    src="/images/blog/valentine-french-tip-nails/french-tips-heart-accents-playful-design.webp"
     alt='French tips with small heart accents showing balanced nail art placement'
     width='800'
     height='800'
@@ -272,7 +272,7 @@ The design succeeds through restraint too many hearts overwhelm French subtlety.
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/colored-base-french-tips-bold-reversal.webp"
+    src="/images/blog/valentine-french-tip-nails/colored-base-french-tips-bold-reversal.webp"
     alt='Colored base French tips with pink or red base and white contrast tips'
     width='800'
     height='800'
@@ -299,7 +299,7 @@ The technique challenges French conventions while honoring structural principles
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/french-tip-precision-tools-guide-placement.webp"
+    src="/images/blog/valentine-french-tip-nails/french-tip-precision-tools-guide-placement.webp"
     alt='French tip precision tools showing guides and brush techniques for accuracy'
     width='800'
     height='800'
@@ -326,7 +326,7 @@ Guide tape or stencils provide significant advantage for consistent smile line c
 
 <div class='my-8 text-center'>
   <img
-    src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/valentine-french-tip-nails/french-tip-longevity-maintenance-care.webp"
+    src="/images/blog/valentine-french-tip-nails/french-tip-longevity-maintenance-care.webp"
     alt='French tip longevity showing topcoat refresh and edge protection maintenance'
     width='800'
     height='800'

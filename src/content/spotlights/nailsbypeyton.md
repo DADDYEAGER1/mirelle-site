@@ -6,7 +6,7 @@ date: "2026-03-05T09:00:00-05:00"
 dateModified: "2026-03-05"
 author: "Mirellé Team"
 category: "Spotlight"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/v1777039308/peyton-combs-nail-studio-shelby-township-michigan-pink-flower-wall-neon-sign_qjg8hd.jpg"
+image: "/images/spotlights/nailsbypeyton/peyton-combs-nail-studio-shelby-township-michigan-pink-flower-wall-neon-sign_qjg8hd.jpg"
 imageAlt: "Peyton Combs nail studio Shelby Township Michigan featuring pink flower wall neon nails sign and full gel polish collection shelves"
 imageWidth: 800
 imageHeight: 800
@@ -31,7 +31,7 @@ She works Monday through Friday  a focused schedule that reflects the seriousnes
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777038171/peyton-combs-custom-black-white-french-tip-bow-polka-dot-nail-art-almond-shape_1_bsnrhx.webp'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-custom-black-white-french-tip-bow-polka-dot-nail-art-almond-shape_1_bsnrhx.webp'
     alt='Peyton Combs nail studio Shelby Township Michigan featuring pink flower wall neon nails sign and full gel polish collection shelves'
     width='800'
     height='800'
@@ -50,7 +50,7 @@ It's worth noting she's still building her client base in <strong>Shelby Townshi
 
 <!-- <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777038171/peyton-combs-custom-black-white-french-tip-bow-polka-dot-nail-art-almond-shape_1_bsnrhx.webp'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-custom-black-white-french-tip-bow-polka-dot-nail-art-almond-shape_1_bsnrhx.webp'
     alt='Custom black and white French tip almond nails with hand painted bow and polka dot nail art by Peyton Combs Shelby Township Michigan'
     width='800'
     height='800'
@@ -61,7 +61,7 @@ It's worth noting she's still building her client base in <strong>Shelby Townshi
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777040007/peyton-combs-hot-pink-gel-full-set-heart-nail-art-custom-design-michigan-nail-tech_dvysua.jpg'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-hot-pink-gel-full-set-heart-nail-art-custom-design-michigan-nail-tech_dvysua.jpg'
     alt='Hot pink gel full set with layered heart nail art design by Peyton Combs custom nail tech Shelby Township Michigan'
     width='800'
     height='800'
@@ -72,7 +72,7 @@ It's worth noting she's still building her client base in <strong>Shelby Townshi
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777039903/peyton-combs-red-lace-bow-custom-nail-art-almond-gel-set-michigan-nail-tech-detail_i22nzt.webp'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-red-lace-bow-custom-nail-art-almond-gel-set-michigan-nail-tech-detail_i22nzt.webp'
     alt='Red gel almond nails with hand painted snowflake holiday nail art by Peyton Combs Michigan nail artist Shelby Township'
     width='800'
     height='800'
@@ -133,7 +133,7 @@ One honest note: because scents rotate monthly, whatever's available now won't a
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777038173/peyton-combs-handmade-cuticle-oil-pens-valentines-flatlay-mica-shimmer-small-batch_jaa4gw.webp'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-handmade-cuticle-oil-pens-valentines-flatlay-mica-shimmer-small-batch_jaa4gw.webp'
     alt='Peyton Combs handmade cuticle oil pens flatlay with mica shimmer small batch natural formula scented collection ships USA wide'
     width='800'
     height='800'
@@ -154,7 +154,7 @@ For the cuticle oils, DM @nails_bypeytonn on Instagram or TikTok. She ships anyw
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777038170/peyton-combs-red-gel-almond-nails-hand-painted-snowflake-holiday-nail-art-michigan_tcyxcc.webp'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-red-gel-almond-nails-hand-painted-snowflake-holiday-nail-art-michigan_tcyxcc.webp'
     alt='Red lace bow detailed custom almond gel nail set by Peyton Combs Shelby Township Michigan nail tech intricate hand painted art'
     width='800'
     height='800'
@@ -165,7 +165,7 @@ For the cuticle oils, DM @nails_bypeytonn on Instagram or TikTok. She ships anyw
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777038168/peyton-combs-handmade-press-on-nail-set-pink-holographic-bag-custom-nail-art-michigan_rnjkcs.webp'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-handmade-press-on-nail-set-pink-holographic-bag-custom-nail-art-michigan_rnjkcs.webp'
     alt='Peyton Combs handmade press on nail set pink holographic packaging custom nail art small business Shelby Township Michigan'
     width='800'
     height='800'
@@ -176,7 +176,7 @@ For the cuticle oils, DM @nails_bypeytonn on Instagram or TikTok. She ships anyw
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/v1777038172/peyton-combs-nails-by-peyton-easter-collection-press-on-sets-cuticle-oil-menu-michigan_q3hqbz.webp'
+    src='/images/spotlights/nailsbypeyton/peyton-combs-nails-by-peyton-easter-collection-press-on-sets-cuticle-oil-menu-michigan_q3hqbz.webp'
     alt='Nails by Peyton Easter collection menu press on nail sets and natural cuticle oil pens Shelby Township Michigan small business'
     width='800'
     height='800'

@@ -6,7 +6,7 @@ date: "2026-04-26T09:00:00-05:00"
 dateModified: "2026-05-02"
 author: "Mirellè Team"
 category: "TRENDS"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/mothers-day-nails-2026-spring-manicure-trend-overview-hero-shot.webp"
+image: "/images/blog/mothers-day-nail-trends-2026/mothers-day-nails-2026-spring-manicure-trend-overview-hero-shot.webp"
 imageAlt: "Mothers day nails 2026 showing cat eye magnetic finish milky white and butter yellow spring manicure trends laid flat"
 imageWidth: 1200
 imageHeight: 800
@@ -107,7 +107,7 @@ Here's exactly what's in, what's out, and how to ask for it.
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/mothers-day-nails-2026-spring-manicure-trend-overview-hero-shot.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/mothers-day-nails-2026-spring-manicure-trend-overview-hero-shot.webp'
     alt='Mothers day nails 2026 showing cat eye magnetic finish milky white and butter yellow spring manicure trends laid flat'
     width='800'
     height='800'
@@ -126,7 +126,7 @@ This is the landscape your <strong>spring manicure Mother's Day 2026</strong> si
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/refined-minimalism-vs-maximalist-nail-art-spring-2026-trend-shift.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/refined-minimalism-vs-maximalist-nail-art-spring-2026-trend-shift.webp'
     alt='Refined minimalism spring 2026 nail trend comparison showing clean magnetic finish against heavily embellished maximalist set'
     width='800'
     height='800'
@@ -147,7 +147,7 @@ For the salon, ask for: cat eye gel in a soft rose, champagne, or dusty lilac. R
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/cat-eye-magnetic-gel-satinmag-watermag-spring-2026-technique-guide.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/cat-eye-magnetic-gel-satinmag-watermag-spring-2026-technique-guide.webp'
     alt='Cat eye magnetic gel satinmag and watermag finish comparison on almond nails showing dimensional shimmer spring 2026 manicure'
     width='800'
     height='800'
@@ -168,7 +168,7 @@ What makes this version work for Mother's Day specifically is exactly that restr
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/micro-floral-botanical-nail-art-delicate-daisy-peony-sheer-base-spring.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/micro-floral-botanical-nail-art-delicate-daisy-peony-sheer-base-spring.webp'
     alt='Micro floral botanical nail art showing delicate daisy and peony hand painted details on sheer milky base spring 2026 manicure'
     width='800'
     height='800'
@@ -189,7 +189,7 @@ Milky tones are also expanding beyond straight white. According to <a href='http
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/milk-bath-nails-creamy-white-sheer-lavender-peach-spring-2026-clean.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/milk-bath-nails-creamy-white-sheer-lavender-peach-spring-2026-clean.webp'
     alt='Milk bath nails in creamy white sheer lavender and peach tones showing clean girl evolution from soap nails spring 2026'
     width='800'
     height='800'
@@ -210,7 +210,7 @@ Blush and lavender remain the dependable classics in the pastel palette — they
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/butter-yellow-blush-lavender-pastel-nail-palette-spring-2026-swatches.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/butter-yellow-blush-lavender-pastel-nail-palette-spring-2026-swatches.webp'
     alt='Butter yellow blush and lavender pastel nail palette swatches spring 2026 showing muted creamy tones for Mothers Day manicure'
     width='800'
     height='800'
@@ -229,7 +229,7 @@ For <a href='https://www.thezoereport.com/beauty/spring-2026-nail-trends' target
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/glazed-chrome-iridescent-pearlescent-blush-nude-spring-2026-finish.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/glazed-chrome-iridescent-pearlescent-blush-nude-spring-2026-finish.webp'
     alt='Glazed chrome iridescent pearlescent finish on blush nude base spring 2026 showing soft light catching nail effect Mothers Day'
     width='800'
     height='800'
@@ -250,7 +250,7 @@ For <strong>trending Mother's Day nail art 2026</strong>, the clear through-line
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/nail-trends-out-spring-2026-junk-nails-vs-refined-minimalism-comparison.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/nail-trends-out-spring-2026-junk-nails-vs-refined-minimalism-comparison.webp'
     alt='Nail trends out spring 2026 showing junk nail maximalism comparison against refined minimalist cat eye and milk bath current looks'
     width='800'
     height='800'
@@ -277,7 +277,7 @@ The abundance of options is real, and it helps to have an edit. Here's a quick f
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/mothers-day-2026-trend-match-style-guide-five-nail-looks-comparison.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/mothers-day-2026-trend-match-style-guide-five-nail-looks-comparison.webp'
     alt='Mothers Day 2026 trend style guide showing five nail looks milk bath cat eye butter yellow micro floral and glazed chrome options'
     width='800'
     height='800'
@@ -304,7 +304,7 @@ For glazed iridescent chrome: say "pearlescent chrome overlay" on whatever base 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/nail-tech-terminology-guide-cat-eye-milk-bath-butter-yellow-salon-request.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/nail-tech-terminology-guide-cat-eye-milk-bath-butter-yellow-salon-request.webp'
     alt='Nail tech terminology guide showing cat eye milk bath butter yellow and glazed chrome reference images for salon communication 2026'
     width='800'
     height='800'
@@ -327,7 +327,7 @@ Ultra-sharp shapes — stiletto, extreme coffin — are clearly out for this sea
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/almond-squoval-nail-shape-spring-2026-trending-shape-comparison-guide.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/almond-squoval-nail-shape-spring-2026-trending-shape-comparison-guide.webp'
     alt='Almond and squoval nail shape comparison spring 2026 showing trending silhouettes against short medium and longer nail lengths'
     width='800'
     height='800'
@@ -358,7 +358,7 @@ For everything from classic florals to minimal designs across 50+ looks, <a href
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-trends-2026/mothers-day-2026-photo-ready-manicure-glazed-cat-eye-brunch-flat-lay.webp'
+    src='/images/blog/mothers-day-nail-trends-2026/mothers-day-2026-photo-ready-manicure-glazed-cat-eye-brunch-flat-lay.webp'
     alt='Mothers Day 2026 photo ready manicure flat lay showing glazed cat eye finish coffee cup spring flowers brunch table setting'
     width='800'
     height='800'

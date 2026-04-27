@@ -6,7 +6,7 @@ date: "2026-04-26T08:00:00-05:00"
 dateModified: "2026-04-26"
 author: "Mirellè Team"
 category: "Inspo"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/milky-white-simple-mothers-day-nails-split-left-hero-square.webp"
+image: "/images/blog/simple-mothers-day-nails/milky-white-simple-mothers-day-nails-split-left-hero-square.webp"
 imageAlt: "Simple mothers day nails in milky white sheer finish with glazed luminous coating on soft square almond shape for spring"
 imageWidth: 800
 imageHeight: 800
@@ -120,7 +120,7 @@ The shift has been building for a few years, but 2026 is the season it solidifie
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/quiet-luxury-minimalist-manicure-spring-2026-clean-girl-aesthetic-nail-trend.webp'
+    src='/images/blog/simple-mothers-day-nails/quiet-luxury-minimalist-manicure-spring-2026-clean-girl-aesthetic-nail-trend.webp'
     alt='Quiet luxury minimalist manicure spring 2026 showing clean girl aesthetic with sheer nude polish and natural nail finish on oval'
     width='800'
     height='800'
@@ -141,7 +141,7 @@ Four colours are carrying minimalist manicures this season, and each earns its p
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/spring-2026-minimal-nail-colour-palette-blush-nude-lavender-butter-yellow-swatches.webp'
+    src='/images/blog/simple-mothers-day-nails/spring-2026-minimal-nail-colour-palette-blush-nude-lavender-butter-yellow-swatches.webp'
     alt='Spring 2026 minimal nail colour palette showing blush nude creamy lavender and butter yellow polish swatches across varied skin tones'
     width='800'
     height='800'
@@ -162,7 +162,7 @@ Soap nails are exactly what they sound like. A finish so clean and translucent i
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/soap-nails-translucent-sheer-finish-natural-nail-plate-glossy-veil-cuticle-care.webp'
+    src='/images/blog/simple-mothers-day-nails/soap-nails-translucent-sheer-finish-natural-nail-plate-glossy-veil-cuticle-care.webp'
     alt='Soap nails translucent sheer finish showing natural nail plate with glossy veil coating and clean cuticle line on well-shaped oval nails'
     width='800'
     height='800'
@@ -183,7 +183,7 @@ The original French manicure never really left. It just got edited. The micro Fr
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/micro-french-tip-ultra-thin-white-band-sheer-nude-base-blurred-edge-soft-square.webp'
+    src='/images/blog/simple-mothers-day-nails/micro-french-tip-ultra-thin-white-band-sheer-nude-base-blurred-edge-soft-square.webp'
     alt='Micro French tip showing ultra thin white band on sheer nude base with blurred soft edge finish on soft square nail shape spring 2026'
     width='800'
     height='800'
@@ -202,7 +202,7 @@ If soap nails are about invisibility, milky white and glazed finishes are about 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/milky-white-glazed-donut-nails-pearl-chrome-powder-luminous-spring-light-almond.webp'
+    src='/images/blog/simple-mothers-day-nails/milky-white-glazed-donut-nails-pearl-chrome-powder-luminous-spring-light-almond.webp'
     alt='Milky white glazed donut nails with pearl chrome powder showing luminous lit-from-within spring light effect on almond nail shape'
     width='800'
     height='800'
@@ -221,7 +221,7 @@ Not every simple mother's day manicure needs to be about sheerness or soft colou
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/negative-space-nail-art-delicate-single-stripe-line-art-bare-nail-plate-squoval.webp'
+    src='/images/blog/simple-mothers-day-nails/negative-space-nail-art-delicate-single-stripe-line-art-bare-nail-plate-squoval.webp'
     alt='Negative space nail art with delicate single fine stripe line art on bare nail plate squoval shape minimal spring design editorial'
     width='800'
     height='800'
@@ -242,7 +242,7 @@ Soft ombre sits at the more involved end of simple. It requires a sponge and a s
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/soft-ombre-nails-blush-milky-white-gradient-sponge-technique-tonal-blend-spring.webp'
+    src='/images/blog/simple-mothers-day-nails/soft-ombre-nails-blush-milky-white-gradient-sponge-technique-tonal-blend-spring.webp'
     alt='Soft ombre nails showing blush to milky white gradient achieved with sponge technique tonal blend on natural oval nail shape spring'
     width='800'
     height='800'
@@ -261,7 +261,7 @@ Colour gets most of the attention, but shape does at least as much work. A perfe
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/nail-shape-guide-soft-square-oval-squoval-minimalist-spring-manicure-comparison.webp'
+    src='/images/blog/simple-mothers-day-nails/nail-shape-guide-soft-square-oval-squoval-minimalist-spring-manicure-comparison.webp'
     alt='Nail shape guide comparing soft square oval and squoval shapes for minimalist spring manicure showing which reads most expensive'
     width='800'
     height='800'
@@ -282,7 +282,7 @@ The gap between what someone pictures and what they describe at the salon is res
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/salon-nail-brief-reference-photo-minimalist-manicure-technician-consultation-guide.webp'
+    src='/images/blog/simple-mothers-day-nails/salon-nail-brief-reference-photo-minimalist-manicure-technician-consultation-guide.webp'
     alt='Salon nail brief showing reference photo for minimalist manicure consultation with nail technician for simple mothers day nails look'
     width='800'
     height='800'
@@ -305,7 +305,7 @@ The most expensive-looking manicure in any room is usually the one that made the
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/simple-mothers-day-nails/minimal-mothers-day-manicure-final-look-clean-glossy-topcoat-elegant-spring-finish.webp'
+    src='/images/blog/simple-mothers-day-nails/minimal-mothers-day-manicure-final-look-clean-glossy-topcoat-elegant-spring-finish.webp'
     alt='Minimal mothers day manicure final look showing clean glossy topcoat on soft square nails elegant spring finish simple and considered'
     width='800'
     height='800'

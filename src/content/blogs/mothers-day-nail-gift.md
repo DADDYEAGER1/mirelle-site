@@ -6,7 +6,7 @@ date: "2026-04-26T09:00:00-05:00"
 dateModified: "2026-04-26"
 author: "Mirellè Team"
 category: "Gift Guides"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/v1777226303/mirelleinspo/images/blog/mothers-day-nail-gift/P-PLUS30GT-nail-lamp-gel-polish-kit-pink.webp"
+image: "/images/blog/mothers-day-nail-gift/P-PLUS30GT-nail-lamp-gel-polish-kit-pink.webp"
 imageAlt: "Mothers day nail gift flatlay showing polish sets and drill gift boxes styled with spring florals on a marble surface"
 imageWidth: 800
 imageHeight: 800
@@ -231,7 +231,7 @@ The challenge, of course, is knowing what to buy. Gel set or drill kit? Beginner
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/relaxed-home-manicure-setup-mum-gel-polish-spring-sunday-routine.webp'
+    src='/images/blog/mothers-day-nail-gift/relaxed-home-manicure-setup-mum-gel-polish-spring-sunday-routine.webp'
     alt='Relaxed home manicure setup showing mum applying gel polish at kitchen table with spring light and nail care tools arranged nearby'
     width='800'
     height='800'
@@ -252,7 +252,7 @@ A <strong>nail gift box</strong> also solves the "she has everything" problem. I
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/nail-gift-box-presentation-ribbon-melodysusie-mothers-day-packaging.webp'
+    src='/images/blog/mothers-day-nail-gift/nail-gift-box-presentation-ribbon-melodysusie-mothers-day-packaging.webp'
     alt='Nail gift box with ribbon packaging showing MelodySusie mothers day presentation box open with drill accessories and polishes inside'
     width='800'
     height='800'
@@ -275,7 +275,7 @@ The persona framework below does all that sorting for you. Find her, pick her pr
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/experience-level-nail-gift-guide-beginner-hobbyist-colour-lover-chart.webp'
+    src='/images/blog/mothers-day-nail-gift/experience-level-nail-gift-guide-beginner-hobbyist-colour-lover-chart.webp'
     alt='Experience level nail gift selection guide showing beginner drill kit hobbyist upgrade and colour lover polish set options side by side'
     width='800'
     height='800'
@@ -292,7 +292,7 @@ MelodySusie has built their Mother's Day range around something most nail gift g
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/melodysusie-full-product-range-six-nail-gifts-mothers-day-2026-lineup.webp'
+    src='/images/blog/mothers-day-nail-gift/melodysusie-full-product-range-six-nail-gifts-mothers-day-2026-lineup.webp'
     alt='MelodySusie full mothers day nail gift range showing six products including drill boxes gel polish sets and lamp kit arranged together'
     width='800'
     height='800'
@@ -317,7 +317,7 @@ The SC320A steps it up. A stronger motor, a more professional feel in the hand, 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/sc330g-beginner-nail-drill-gift-box-open-bits-accessories-included.webp'
+    src='/images/blog/mothers-day-nail-gift/sc330g-beginner-nail-drill-gift-box-open-bits-accessories-included.webp'
     alt='SC330G beginner nail drill gift box open showing drill handpiece sanding bands nail bits and accessories arranged in fitted packaging'
     width='800'
     height='800'
@@ -342,7 +342,7 @@ The P-PLUS30GT kit pairs a UV/LED nail lamp with a curated gel polish collection
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/sm320g-rechargeable-nail-drill-cordless-use-35000rpm-professional-home.webp'
+    src='/images/blog/mothers-day-nail-gift/sm320g-rechargeable-nail-drill-cordless-use-35000rpm-professional-home.webp'
     alt='SM320G rechargeable nail drill in use cordless showing 35000RPM handpiece during nail shaping without cable on clean table surface'
     width='800'
     height='800'
@@ -369,7 +369,7 @@ The Dopamine Set gives her 12 vibrant shades (was $99.99, now $69.99) — the co
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/fleurwee-plant-based-gel-polish-dopamine-macarons-set-hema-free-spring-shades.webp'
+    src='/images/blog/mothers-day-nail-gift/fleurwee-plant-based-gel-polish-dopamine-macarons-set-hema-free-spring-shades.webp'
     alt='Fleurwee plant based gel polish Dopamine and Fun Macarons sets showing twelve vibrant and six pastel HEMA free spring shades side by side'
     width='800'
     height='800'
@@ -390,7 +390,7 @@ Packaging matters too, more than most guides acknowledge. A drill that arrives i
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/nail-gift-checklist-quality-indicators-formula-packaging-skill-level-match.webp'
+    src='/images/blog/mothers-day-nail-gift/nail-gift-checklist-quality-indicators-formula-packaging-skill-level-match.webp'
     alt='Nail gift quality checklist showing formula safety packaging presentation skill level matching and brand credibility indicators for informed buying'
     width='800'
     height='800'
@@ -411,7 +411,7 @@ If the drill she wants is currently showing a longer lead time, the Fleurwee pol
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/mothers-day-nail-gift/mothers-day-delivery-timeline-calendar-order-deadline-april-may-2026.webp'
+    src='/images/blog/mothers-day-nail-gift/mothers-day-delivery-timeline-calendar-order-deadline-april-may-2026.webp'
     alt='Mothers day nail gift delivery timeline calendar showing order deadline dates for April and May 2026 with standard and express shipping windows'
     width='800'
     height='800'

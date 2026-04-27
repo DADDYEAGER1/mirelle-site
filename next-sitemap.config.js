@@ -19,6 +19,8 @@ module.exports = {
     '/topics/*',            // Has sitemap-topics.xml
     '/posts/*',             // Has sitemap-posts.xml
     '/inspo/*',             // Has sitemap-inspo.xml
+    '/spotlights/*',   // 🆕
+    '/business/*',     // 🆕
   ],
   
   // ✅ Enhanced robots.txt
@@ -58,6 +60,8 @@ module.exports = {
       'https://mirelleinspo.com/sitemap-posts.xml',
       'https://mirelleinspo.com/sitemap-inspo.xml',
       'https://mirelleinspo.com/sitemap-images-index.xml',
+      'https://mirelleinspo.com/sitemap-spotlights.xml',  // 🆕
+      'https://mirelleinspo.com/sitemap-business.xml',
     ],
   },
   

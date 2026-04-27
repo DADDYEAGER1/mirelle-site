@@ -4,7 +4,7 @@ excerpt: "We curated 35 trending Halloween nail designs for 2025, from minimalis
 date: "2025-09-30T10:00:00-04:00"
 author: "Mirellé Team"
 tags: ["halloween-nails", "seasonal-nails", "fall-nail-art", "spooky-manicures", "october-2025"]
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenhero.png"
+image: "/images/blog/halloween-nail-ideas-2025/halloweenhero.png"
 readTime: "6 min"
 slug: "halloween-nail-ideas-2025"
 canonical: "https://mirelleinspo.com/blog/halloween-nail-ideas-2025"
@@ -52,7 +52,7 @@ This year, Halloween nail designs are pushing boundaries with unexpected color c
 ### 1. Single Ghost Accent Nail
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog1.png" alt="Single ghost accent nail design for Halloween 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog1.png" alt="Single ghost accent nail design for Halloween 2025" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 A classic French manicure with one playful ghost painted on your ring finger. Perfect for beginners.
@@ -64,7 +64,7 @@ A classic French manicure with one playful ghost painted on your ring finger. Pe
 ### 2. Black French Tips
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog2.png" alt="Black French tip manicure Halloween nail ideas" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog2.png" alt="Black French tip manicure Halloween nail ideas" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Swap white tips for glossy or matte black. Instantly Halloween-ready and works beyond October 31st.
@@ -77,7 +77,7 @@ Swap white tips for glossy or matte black. Instantly Halloween-ready and works b
 
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog3.png" alt="Spider web nail art corner design for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog3.png" alt="Spider web nail art corner design for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Paint delicate spider webs in just one corner using a thin brush. Pair with nude or soft orange bases.
@@ -89,7 +89,7 @@ Paint delicate spider webs in just one corner using a thin brush. Pair with nude
 ### 4. Orange Tips with Nude Base
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog4.png" alt="Orange French tip Halloween nail design on nude base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog4.png" alt="Orange French tip Halloween nail design on nude base" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Classic and chic. Vibrant orange on just the tips captures autumn vibes perfectly.
@@ -101,7 +101,7 @@ Classic and chic. Vibrant orange on just the tips captures autumn vibes perfectl
 ### 5. Matte Black with Chrome Accent
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog5.png" alt="Matte black Halloween nails with glossy accent" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog5.png" alt="Matte black Halloween nails with glossy accent" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Coat nails in matte black polish and add one chrome or glossy accent nail for contrast.
@@ -113,7 +113,7 @@ Coat nails in matte black polish and add one chrome or glossy accent nail for co
 ### 6. Smiling Pumpkin Faces
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog6.png" alt="Cute pumpkin face Halloween nail art design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog6.png" alt="Cute pumpkin face Halloween nail art design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Mini jack-o'-lantern faces on orange bases. Adorable and instantly recognizable.
@@ -125,7 +125,7 @@ Mini jack-o'-lantern faces on orange bases. Adorable and instantly recognizable.
 ### 7. Blood Drip Tips
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog9.png" alt="Blood drip Halloween vampire nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog9.png" alt="Blood drip Halloween vampire nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Nude base with glossy red "blood" dripping from tips. Vampire vibes guaranteed.
@@ -137,7 +137,7 @@ Nude base with glossy red "blood" dripping from tips. Vampire vibes guaranteed.
 ### 8. Red Chrome with Black Accents
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog10.png" alt="Red chrome Halloween nails with black geometric accents" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog10.png" alt="Red chrome Halloween nails with black geometric accents" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Blood-red chrome finish with matte black tips or geometric patterns. Runway-ready.
@@ -149,7 +149,7 @@ Blood-red chrome finish with matte black tips or geometric patterns. Runway-read
 ### 9. Orange-to-Black Aura Gradient
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog7.png" alt="Orange to black aura gradient Halloween nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog7.png" alt="Orange to black aura gradient Halloween nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Soft gradient blending orange into black. Very 2025.
@@ -161,7 +161,7 @@ Soft gradient blending orange into black. Very 2025.
 ### 10. Glow-in-the-Dark Ghosts
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog8.png" alt="Glow in the dark ghost Halloween nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog8.png" alt="Glow in the dark ghost Halloween nail design" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 Special glow polish creates ghosts that appear only in darkness. Ultimate party trick.
@@ -173,7 +173,7 @@ Special glow polish creates ghosts that appear only in darkness. Ultimate party 
 ## DIY Tutorial: Easy Spider Web Nails in 5 Steps
 
 
-<img src="https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/halloween-nail-ideas-2025/halloweenblog11.png" alt="Step by step spider web nail art tutorial for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
+<img src="/images/blog/halloween-nail-ideas-2025/halloweenblog11.png" alt="Step by step spider web nail art tutorial for Halloween" class="rounded-lg shadow-lg mx-auto hover:opacity-90 transition-opacity" />
 
 
 **What You'll Need:**

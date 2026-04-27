@@ -68,18 +68,18 @@ galleryImages:
     polish base
   caption: Classic Santa face design perfect for accent nails
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/cute-santa-face-nail-art-red-white-design.jpg
+  url: /images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/cute-santa-face-nail-art-red-white-design.jpg
   width: 800
 - alt: Rudolph reindeer nail art featuring brown face, black antlers, and glossy red
     nose
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/rudolph-red-nose-reindeer-christmas-nail-design.jpg
+  url: /images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/rudolph-red-nose-reindeer-christmas-nail-design.jpg
   width: 800
 - alt: Gingerbread man nail design with brown base and white icing decorative details
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/gingerbread-cookie-nail-art-brown-white-icing.jpg
+  url: /images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/gingerbread-cookie-nail-art-brown-white-icing.jpg
   width: 800
-image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/festive-christmas-character-nail-art-santa-reindeer-gingerbread.jpg
+image: /images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/festive-christmas-character-nail-art-santa-reindeer-gingerbread.jpg
 imageAlt: Santa, Rudolph reindeer, and gingerbread man character nail art designs
   for Christmas 2025 holiday manicure
 imageHeight: 630
@@ -168,7 +168,7 @@ This guide breaks down everything you need to create Santa, reindeer, and ginger
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-art-santa-reindeer-gingerbread-2026-trends.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-art-santa-reindeer-gingerbread-2026-trends.jpg'
       alt='Santa, Rudolph reindeer, and gingerbread man character nail art designs for Christmas 2025 holiday manicure'
       width='800'
       height='800'
@@ -193,7 +193,7 @@ With white polish and your finest brush, add simple icing decorations. Two dots 
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/simple-gingerbread-man-nail-art-beginner-friendly.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/simple-gingerbread-man-nail-art-beginner-friendly.jpg'
       alt='Simple gingerbread man nail art outline with brown shape and white icing dots'
       width='800'
       height='800'
@@ -229,7 +229,7 @@ Red or green candy details add pops of color. Think buttons in red or a green bo
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/decorated-gingerbread-nail-art-detailed-icing.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/decorated-gingerbread-nail-art-detailed-icing.jpg'
       alt='Decorated gingerbread man nail art with intricate white icing patterns and colorful candy details'
       width='800'
       height='800'
@@ -274,7 +274,7 @@ Test your brown on paper or a nail wheel before committing. The color should rea
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-art-essential-tools-brushes.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-art-essential-tools-brushes.jpg'
       alt='Essential nail art tools for character designs including fine detail brushes, dotting tools, and polish colors'
       width='800'
       height='800'
@@ -318,7 +318,7 @@ What you probably DON'T need: fan brushes, thick shading brushes, curved brushes
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/best-nail-polish-colors-christmas-character-art.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/best-nail-polish-colors-christmas-character-art.jpg'
       alt='Best nail polish color swatches for Santa, Rudolph, and gingerbread character nail art'
       width='800'
       height='800'
@@ -365,7 +365,7 @@ These alternatives cost basically nothing and work surprisingly well for beginne
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/mix-match-christmas-character-nails-santa-rudolph-gingerbread.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/mix-match-christmas-character-nails-santa-rudolph-gingerbread.jpg'
       alt='Mix and match Christmas nail set featuring Santa on ring finger, Rudolph on middle finger, coordinated with red polish'
       width='800'
       height='800'
@@ -388,7 +388,7 @@ Beginners should stick with accent nail strategy. It's easier to execute well an
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/accent-nail-strategy-character-placement-guide.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/accent-nail-strategy-character-placement-guide.jpg'
       alt='Accent nail strategy guide showing optimal character placement on different fingers'
       width='800'
       height='800'
@@ -436,7 +436,7 @@ Character nails pair beautifully with complementary Christmas motifs.
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/character-nails-with-snowflake-candy-cane-patterns.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/character-nails-with-snowflake-candy-cane-patterns.jpg'
       alt='Christmas character nails combined with snowflakes and candy cane stripe patterns'
       width='800'
       height='800'
@@ -455,7 +455,7 @@ The trick is choosing secondary elements that share colors with your characters.
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-stickers-press-on-alternatives.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-stickers-press-on-alternatives.jpg'
       alt='Christmas character nail stickers and press-on nail alternatives for easy DIY holiday manicure'
       width='800'
       height='800'
@@ -482,7 +482,7 @@ The biggest advantage is consistency. Every Santa face looks identical with perf
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/nail-sticker-application-tutorial-step-by-step.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/nail-sticker-application-tutorial-step-by-step.jpg'
       alt='Step-by-step tutorial showing how to apply Christmas character nail stickers properly'
       width='800'
       height='800'
@@ -539,7 +539,7 @@ Nobody can tell which parts are stickers versus hand-painted once you seal every
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/long-lasting-christmas-character-nail-art-tips.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/long-lasting-christmas-character-nail-art-tips.jpg'
       alt='Professional tips for making Christmas character nail art last longer through holidays'
       width='800'
       height='800'
@@ -608,7 +608,7 @@ For gel nails, touch-ups are trickier. Plan to keep gel character nails for thei
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nails-short-medium-long-comparison.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nails-short-medium-long-comparison.jpg'
       alt='Christmas character nail art adapted for short, medium, and long nail lengths'
       width='800'
       height='800'
@@ -627,7 +627,7 @@ Celebrity nail artist <strong>Tom Bachik</strong> shared that character nails cr
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/trending-2025-christmas-character-nail-art-social-media.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/trending-2025-christmas-character-nail-art-social-media.jpg'
       alt='Trending Christmas character nail art designs popular on social media for holiday season 2025'
       width='800'
       height='800'
@@ -648,7 +648,7 @@ Here's what makes 2025 different. This year sees a shift toward <em>simplified c
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/cute-santa-face-nail-art-red-white-design.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/cute-santa-face-nail-art-red-white-design.jpg'
       alt='Adorable Santa Claus face nail art with rosy cheeks and white beard on red polish base'
       width='800'
       height='800'
@@ -671,7 +671,7 @@ Finish with a small white dot at the triangle tip for the pom-pom. Use your dott
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/simple-santa-hat-nail-design-beginner-tutorial.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/simple-santa-hat-nail-design-beginner-tutorial.jpg'
       alt='Simple Santa hat accent nail design tutorial for beginners with red triangle and white trim'
       width='800'
       height='800'
@@ -702,7 +702,7 @@ For Santa's hat, paint a red curved line across the top of the nail above the fa
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/intermediate-santa-face-nail-art-step-by-step.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/intermediate-santa-face-nail-art-step-by-step.jpg'
       alt='Intermediate level Santa face nail art showing facial features and beard details'
       width='800'
       height='800'
@@ -737,7 +737,7 @@ This level demands 45 minutes to an hour of focused work. It's absolutely show-s
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/rudolph-red-nose-reindeer-christmas-nail-design.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/rudolph-red-nose-reindeer-christmas-nail-design.jpg'
       alt='Rudolph reindeer nail art featuring brown face, black antlers, and glossy red nose'
       width='800'
       height='800'
@@ -760,7 +760,7 @@ Two main branches pointing upward with 2-3 smaller offshoots creates an instant 
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/minimalist-reindeer-antler-silhouette-nail-art.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/minimalist-reindeer-antler-silhouette-nail-art.jpg'
       alt='Minimalist reindeer antler silhouette nail design on nude base polish'
       width='800'
       height='800'
@@ -789,7 +789,7 @@ Optional addition: tiny white dots in the eyes for shine and a pink oval inside 
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/cute-rudolph-face-nail-design-red-nose-antlers.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/cute-rudolph-face-nail-design-red-nose-antlers.jpg'
       alt='Cute Rudolph face nail design with brown color, black antlers, and shiny red nose'
       width='800'
       height='800'
@@ -824,7 +824,7 @@ Apply extra top coat only on the nose area using your dotting tool. Add 2-3 coat
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/glossy-3d-rudolph-nose-technique-tutorial.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/glossy-3d-rudolph-nose-technique-tutorial.jpg'
       alt='Tutorial showing how to create glossy 3D effect on Rudolph red nose nail art'
       width='800'
       height='800'
@@ -845,7 +845,7 @@ For gel polish users, apply clear gel specifically on the nose and cure. The thi
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/gingerbread-cookie-nail-art-brown-white-icing.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/gingerbread-cookie-nail-art-brown-white-icing.jpg'
       alt='Gingerbread man nail design with brown base and white icing decorative details'
       width='800'
       height='800'
@@ -870,7 +870,7 @@ With white polish and your finest brush, add simple icing decorations. Two dots 
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/simple-gingerbread-man-nail-art-beginner-friendly.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/simple-gingerbread-man-nail-art-beginner-friendly.jpg'
       alt='Simple gingerbread man nail art outline with brown shape and white icing dots'
       width='800'
       height='800'
@@ -906,7 +906,7 @@ Red or green candy details add pops of color. Think buttons in red or a green bo
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/decorated-gingerbread-nail-art-detailed-icing.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/decorated-gingerbread-nail-art-detailed-icing.jpg'
       alt='Decorated gingerbread man nail art with intricate white icing patterns and colorful candy details'
       width='800'
       height='800'
@@ -931,7 +931,7 @@ This design requires steady hands and patience. Each tiny detail needs to dry be
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/advanced-gingerbread-house-nail-art-design.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/advanced-gingerbread-house-nail-art-design.jpg'
       alt='Advanced gingerbread house nail art with detailed roof, windows, and candy decorations'
       width='800'
       height='800'
@@ -962,7 +962,7 @@ Test your brown on paper or a nail wheel before committing. The color should rea
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-art-essential-tools-brushes.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/christmas-character-nail-art-essential-tools-brushes.jpg'
       alt='Essential nail art tools for character designs including fine detail brushes, dotting tools, and polish colors'
       width='800'
       height='800'
@@ -1006,7 +1006,7 @@ What you probably DON'T need: fan brushes, thick shading brushes, curved brushes
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/best-nail-polish-colors-christmas-character-art.jpg'
+      src='/images/blog/santa-reindeer-gingerbread-christmas-nails-2025-character-nail-art/best-nail-polish-colors-christmas-character-art.jpg'
       alt='Best nail polish color swatches for Santa, Rudolph, and gingerbread character nail art'
       width='800'
       height='800'

@@ -96,18 +96,18 @@ galleryImages:
 - alt: Classic candy cane nails with diagonal red and white stripes for traditional
     Christmas manicure
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/classic-red-white-candy-cane-striped-nails.webp
+  url: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/classic-red-white-candy-cane-striped-nails.webp
   width: 800
 - alt: Elegant candy cane French tip nails combining festive stripes with classic
     manicure style
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-french-tip-holiday-nail-design.webp
+  url: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-french-tip-holiday-nail-design.webp
   width: 800
 - alt: Sparkling candy cane nails with red glitter accents for glamorous holiday parties
   height: 800
-  url: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/glitter-candy-cane-christmas-nail-art.webp
+  url: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/glitter-candy-cane-christmas-nail-art.webp
   width: 800
-image: https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-christmas-nails-festive-holiday-manicure.jpg
+image: /images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-christmas-nails-festive-holiday-manicure.jpg
 imageAlt: Candy cane Christmas nails 2025 featuring festive red and white striped
   designs perfect for holiday celebrations
 imageHeight: 630
@@ -200,7 +200,7 @@ Here's why candy cane nails are perfect for Christmas 2025. The red and white co
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/classic-red-white-candy-cane-striped-nails.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/classic-red-white-candy-cane-striped-nails.webp'
       alt='Classic candy cane nails with diagonal red and white stripes for traditional Christmas manicure'
       width='800'
       height='800'
@@ -229,7 +229,7 @@ The OG candy cane nail design never goes out of style. These feature diagonal re
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/diagonal-candy-cane-stripe-festive-manicure.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/diagonal-candy-cane-stripe-festive-manicure.webp'
       alt='Diagonal red and white candy cane striped nails perfect for Christmas 2025 celebrations'
       width='800'
       height='800'
@@ -252,7 +252,7 @@ French tips get a festive upgrade with candy cane patterns on the tips only.
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-french-tip-holiday-nail-design.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-french-tip-holiday-nail-design.webp'
       alt='Elegant candy cane French tip nails combining festive stripes with classic manicure style'
       width='800'
       height='800'
@@ -275,7 +275,7 @@ Everything's better with glitter, including candy cane nails.
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/glitter-candy-cane-christmas-nail-art.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/glitter-candy-cane-christmas-nail-art.webp'
       alt='Sparkling candy cane nails with red glitter accents for glamorous holiday parties'
       width='800'
       height='800'
@@ -298,7 +298,7 @@ Move beyond straight stripes with curved candy cane designs.
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/peppermint-swirl-candy-cane-nail-design.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/peppermint-swirl-candy-cane-nail-design.webp'
       alt='Creative peppermint swirl candy cane nails with curved red and white patterns'
       width='800'
       height='800'
@@ -321,7 +321,7 @@ Less is more with these simplified candy cane looks.
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/minimalist-candy-cane-accent-nail-design.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/minimalist-candy-cane-accent-nail-design.webp'
       alt='Simple minimalist candy cane accent nails with single red stripe on white base'
       width='800'
       height='800'
@@ -344,7 +344,7 @@ Take your candy cane nails to the next dimension.
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/3d-candy-cane-charm-nail-art.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/3d-candy-cane-charm-nail-art.webp'
       alt='Dimensional 3D candy cane nail art with realistic textured charms and embellishments'
       width='800'
       height='800'
@@ -397,7 +397,7 @@ Apply two coats of white polish to all nails, waiting 2 minutes between coats. W
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-nail-tape-technique-tutorial.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/candy-cane-nail-tape-technique-tutorial.webp'
       alt='Step by step candy cane nail tutorial showing tape method for perfect stripes'
       width='800'
       height='800'
@@ -435,7 +435,7 @@ Starting at the base of your nail, drag the brush diagonally toward the tip in o
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/hand-painted-candy-cane-nail-art-detail.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/hand-painted-candy-cane-nail-art-detail.webp'
       alt='Hand painted candy cane nail art showing detailed brush technique for custom stripes'
       width='800'
       height='800'
@@ -518,7 +518,7 @@ High-quality white polishes contain titanium dioxide pigment which provides bett
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/best-red-white-nail-polish-candy-cane.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/best-red-white-nail-polish-candy-cane.webp'
       alt='Top rated red and white nail polish bottles for creating perfect candy cane designs'
       width='800'
       height='800'
@@ -555,7 +555,7 @@ Short nails are actually perfect for candy cane art because the smaller surface 
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/short-natural-candy-cane-christmas-nails.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/short-natural-candy-cane-christmas-nails.webp'
       alt='Candy cane nail designs for short natural nails with easy beginner-friendly stripes'
       width='800'
       height='800'
@@ -606,7 +606,7 @@ Another approach: create outlined candy cane stripes where you paint just the ed
 
 
 <img
-      src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/negative-space-candy-cane-modern-nail-art.webp'
+      src='/images/blog/candy-cane-christmas-nails-2025-sweet-holiday-designs/negative-space-candy-cane-modern-nail-art.webp'
       alt='Modern negative space candy cane nails with bare nail showing through striped design'
       width='800'
       height='800'

@@ -6,7 +6,7 @@ date: "2026-04-26T00:00:00-05:00"
 dateModified: "2026-04-26"
 author: "Mirellè Team"
 category: "Nail Inspiration"
-image: "https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/pink-lavender-mothers-day-nails-pastel-duo-hero-square-manicure-inspo.webp"
+image: "/images/blog/pink-lavender-mothers-day-nails/pink-lavender-mothers-day-nails-pastel-duo-hero-square-manicure-inspo.webp"
 imageAlt: "Pink mothers day nails in blush and lavender pastel duo showing soft romantic manicure perfect for spring celebration"
 imageCaption: "The pink and lavender pairing: soft, symbolic, and endlessly flattering."
 imageWidth: 800
@@ -90,7 +90,7 @@ From a purely visual standpoint, they are complementary in value without being c
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/blush-pink-lavender-nail-swatch-colour-pairing-pastel-duo-spring-manicure.webp'
+    src='/images/blog/pink-lavender-mothers-day-nails/blush-pink-lavender-nail-swatch-colour-pairing-pastel-duo-spring-manicure.webp'
     alt='Blush pink and lavender nail polish swatches side by side showing soft pastel colour pairing for spring mothers day manicure'
     width='800'
     height='800'
@@ -111,7 +111,7 @@ Wearing both together is a considered choice. It is not accidental sweetness —
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/lavender-pink-nail-colour-meaning-symbolism-mothers-day-devotion-calm.webp'
+    src='/images/blog/pink-lavender-mothers-day-nails/lavender-pink-nail-colour-meaning-symbolism-mothers-day-devotion-calm.webp'
     alt='Lavender and pink nails on hand showing colour symbolism of devotion and calm for mothers day spring occasion nail art'
     width='800'
     height='800'
@@ -136,7 +136,7 @@ If you are booking rather than DIYing, bring reference photos and describe your 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/skin-tone-shade-guide-blush-lavender-pink-nail-undertone-matching-swatches.webp'
+    src='/images/blog/pink-lavender-mothers-day-nails/skin-tone-shade-guide-blush-lavender-pink-nail-undertone-matching-swatches.webp'
     alt='Skin tone shade guide showing blush pink and lavender nail swatches matched to fair medium and deep complexions for mothers day'
     width='800'
     height='800'
@@ -161,7 +161,7 @@ The range within this colour pairing is wider than it first appears. Blush pink 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/pink-lavender-mothers-day-nail-design-ideas-brunch-family-photo-occasion-set.webp'
+    src='/images/blog/pink-lavender-mothers-day-nails/pink-lavender-mothers-day-nail-design-ideas-brunch-family-photo-occasion-set.webp'
     alt='Pink and lavender mothers day nail designs showing four occasion styles from casual brunch ombre to formal alternating accent set'
     width='800'
     height='800'
@@ -186,7 +186,7 @@ The same blush pink lavender nail set reads entirely differently depending on fi
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/nail-finish-comparison-glossy-matte-chrome-aura-lavender-pink-pastel-set.webp'
+    src='/images/blog/pink-lavender-mothers-day-nails/nail-finish-comparison-glossy-matte-chrome-aura-lavender-pink-pastel-set.webp'
     alt='Nail finish comparison showing glossy matte chrome and lavender aura effect on pink and lavender pastel mothers day manicure set'
     width='800'
     height='800'
@@ -209,7 +209,7 @@ If you are drawn to florals but want to stay on the cleaner end: try a blooming 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/floral-accent-nail-pink-rose-lavender-base-single-nail-art-mothers-day.webp'
+    src='/images/blog/pink-lavender-mothers-day-nails/floral-accent-nail-pink-rose-lavender-base-single-nail-art-mothers-day.webp'
     alt='Floral accent nail showing hand-painted pink rose on single lavender base nail with clean blush pink set for mothers day design'
     width='800'
     height='800'
@@ -234,7 +234,7 @@ Shape changes everything. Pastel nails in pink and lavender read differently on 
 
 <div class='my-8 text-center'>
   <img
-    src='https://res.cloudinary.com/de1yf0iuo/image/upload/mirelleinspo/images/blog/pink-lavender-mothers-day-nails/nail-shape-guide-oval-almond-squoval-round-pink-lavender-pastel-comparison.webp'
+    src='/images/blog/pink-lavender-mothers-day-nails/nail-shape-guide-oval-almond-squoval-round-pink-lavender-pastel-comparison.webp'
     alt='Nail shape guide comparing oval almond squoval and round shapes on pink and lavender pastel manicure for mothers day celebration'
     width='800'
     height='800'

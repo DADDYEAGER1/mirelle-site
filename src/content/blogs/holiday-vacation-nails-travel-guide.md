@@ -385,7 +385,7 @@ Metallic silver and gunmetal gray give modern, edgy vibes perfect for contempora
 
 **Mountain and Ski Resort Getaways**
 
-Deep jewel tones reign for mountain vacations. Ruby red, sapphire blue, emerald green, and amethyst purple look stunning against snow and evergreens. These colors work equally well on ski slopes and at après-ski lounges. Winter nail collections provide mountain-appropriate color inspiration.
+Deep jewel tones reign for mountain vacations. Ruby red, sapphire blue, emerald green, and amethyst purple look stunning against snow and evergreens. These colors work equally well on ski slopes and at aprés-ski lounges. Winter nail collections provide mountain-appropriate color inspiration.
 
 Glazed finishes in soft pinks or nudes work perfectly for ski trips. Subtle shimmer looks sophisticated yet practical, hides minor wear from gloves, and complements every winter outfit. This is the top recommendation for low-maintenance mountain nails.
 

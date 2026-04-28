@@ -4,7 +4,7 @@ title: "Jelly Valentine Nails: A Study in Translucent Elegance"
 excerpt: "Master jelly Valentine nails through opacity control and layering techniques. Discover translucent Valentine designs, glass-like finishes, and sheer polish application for dimensional depth."
 date: "2026-01-05T14:00:00-05:00"
 dateModified: "2026-01-05T14:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Guides"
 tags: [
   "jelly valentine nails",

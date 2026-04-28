@@ -4,7 +4,7 @@ title: "Valentine French Tip Nails: Modern Takes on Classic Precision"
 excerpt: "Master Valentine French tip nails with modern variations. From micro tips to heart-shaped curves, discover precision techniques for romantic nail designs that extend beyond February."
 date: "2026-01-05T12:00:00-05:00"
 dateModified: "2026-01-05T12:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Guides"
 tags: [
   "valentine french tip nails",

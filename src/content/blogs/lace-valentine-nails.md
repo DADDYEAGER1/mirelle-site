@@ -4,7 +4,7 @@ title: "Lace Valentine Nails: Pattern Precision"
 excerpt: "Master three lace nail techniques through detailed method comparisons and precision transfer strategies that achieve delicate romantic elegance for Valentine occasions."
 date: "2026-01-15T11:00:00-05:00"
 dateModified: "2026-01-15T11:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Art"
 tags: [
   "lace valentine nails",

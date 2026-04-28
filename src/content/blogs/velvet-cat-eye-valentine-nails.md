@@ -4,7 +4,7 @@ title: "Velvet Cat Eye Nails: Master the Matte Shimmer Effect"
 excerpt: "Master velvet cat eye nails with magnetic diffusion techniques. Learn burgundy Valentine palettes, parallel magnet placement, and textured finish application for dimensional depth."
 date: "2026-01-05T13:00:00-05:00"
 dateModified: "2026-01-05T13:00:00-05:00"
-author: "Mirellè Team"
+author: "Mirellé Team"
 category: "Nail Tutorials"
 tags: [
   "velvet cat eye nails",
